@@ -1,0 +1,55 @@
+# AVDELINGSSJEF_LEDERSTOTTE_OG_PERSONALSAKER STILLINGSUTLYSNING
+
+Status: avledet produksjonsartefakt v1
+
+## Metadata
+
+- role_id: `R-03`
+- unit_id: `U-02`
+- styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+- local_status: krever_lokal_tilpasning_for_publisering
+
+## Kort annonsetekst
+
+Vi soker en avdelingssjef som kan lede kommunens arbeid med lederstotte og personalsaker med hoy faglig trygghet og tydelig prosessforstaelse. Rollen passer for deg som kan kombinere arbeidsrett, lederradgivning og operativ styring i et krevende HR-miljo.
+
+## Formaal med stillingen
+
+Sikre robust lederstotte i personalsaker, arbeidsrettslige lop og omstillingsprosesser gjennom tydelig prioritering, dokumentasjon og eskalering.
+
+## Hovedansvar
+
+- lede team og leveranser innen personalsaker, IA og juridisk koordinering
+- sikre at saker har riktig prosesseier, dokumentflyt og neste steg
+- gi ledere tydelig stotte uten a overta deres beslutningsansvar
+- bidra i omstillingslop med kontroll pa prosess, medvirkning og risiko
+
+## Must-have kvalifikasjoner
+
+- relevant hoyere utdanning
+- solid erfaring med HR-lederstotte, personalsaker eller arbeidsrettslig oppfolging
+- erfaring med ledelse, prioritering og kvalitetssikring av faglige leveranser
+- god forstaelse for dokumentasjon, personvern og offentlig beslutningslogikk
+
+## Onskede tilleggskvalifikasjoner
+
+- erfaring fra kommunal eller annen offentlig virksomhet
+- erfaring med handtering av hoyrisiko personalsaker eller omstillingsspor
+- erfaring med tett samspill med tillitsvalgte, vernetjeneste og juridiske miljoer
+
+## System- og arbeidsflate
+
+- kvalitetssystem, sak- og arkivlosning og relevante HR-dataflater
+- tett samarbeid med HR-jurist, HR-radgivere, IA-radgiver og HR-sjef
+
+## Forste 12 maneder
+
+- stramme inn saksflyt og handover i komplekse personalsaker
+- sikre felles praksis for lederstotte, dokumentasjon og eskalering
+- bidra til tydelig styring av omstillingslop med hoy konfliktgrad
+
+## Lokal verifikasjon for publisering
+
+- verifiser tittel, lederansvar og hvilken juridisk stotte som ligger i rollen
+- verifiser om rollen har formelt personalansvar
+- verifiser lokale krav til erfaring fra offentlig sektor

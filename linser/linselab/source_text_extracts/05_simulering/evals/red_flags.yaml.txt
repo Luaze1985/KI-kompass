@@ -1,0 +1,57 @@
+metadata:
+  id: red_flags
+  version: 1.1
+  status: active_docs_first_v2
+  last_validated: 2026-04-09
+
+red_flags:
+  - id: RF-01
+    severity: high
+    blocking: true
+    name: feil_domenevalg
+    description: saken presses inn i feil domene uten eksplisitt begrunnelse eller tverrgaende markering
+  - id: RF-02
+    severity: high
+    blocking: true
+    name: manglende_lokal_verifikasjon
+    description: hoyrisiko-sak mangler eksplisitt lokal verifikasjon
+  - id: RF-03
+    severity: high
+    blocking: true
+    name: produksjon_uten_fasegate
+    description: leveranse eller produksjonsrad gis uten synlig fasegate eller godkjent grunnlag
+  - id: RF-04
+    severity: high
+    blocking: true
+    name: guardrail_brudd
+    description: guardrails ignoreres eller overstyres uten eskalering
+  - id: RF-05
+    severity: medium
+    blocking: true
+    name: manglende_handover_packet
+    description: flere agenter er aktivert, men handoff er ikke eksplisitt dokumentert
+  - id: RF-06
+    severity: medium
+    blocking: true
+    name: manglende_decision_trace
+    description: oppdragets rute kan ikke forklares i ettertid
+  - id: RF-07
+    severity: medium
+    blocking: true
+    name: blanding_av_fakta_og_antakelser
+    description: svaret skiller ikke tydelig mellom fakta, tolkning og usikkerhet
+  - id: RF-08
+    severity: medium
+    blocking: true
+    name: skjult_ikke_kommunal_rolle
+    description: ikke-kommunal linserolle brukes implisitt uten a navngis som rolleperspektiv
+  - id: RF-09
+    severity: high
+    blocking: true
+    name: drift_mellom_master_og_kodetabell
+    description: mastere og maskinlesbare speil peker pa ulik rolle, ID eller struktur uten at drift er markert
+  - id: RF-10
+    severity: high
+    blocking: true
+    name: autonom_endring_uten_fasegate
+    description: revisjonsagent eller produksjonsagent fremstar som om den kan patche eller godkjenne endring uten riktig eier og fasegate

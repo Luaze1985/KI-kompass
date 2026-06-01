@@ -1,0 +1,68 @@
+# DUBLETTER_OG_KONFLIKTER
+
+## Eksakte dubletter
+
+### `AI_ Kognitiv Utvidelse i Kommunal Sektor.docx`
+- Dublett: `AI_ Kognitiv Utvidelse i Kommunal Sektor(1).docx`
+- Mastervalg: `AI_ Kognitiv Utvidelse i Kommunal Sektor.docx`
+- Tiltak: Dublett flyttet til karantene.
+
+## Nesten-dubletter og konkurrerende sannhetskilder
+
+### Gruppe L
+- Konkurrerende filer:
+  - `gruppe-l-samlet.md`
+  - `gruppe-l-operasjonalisering/gruppe-l-komplett.md`
+  - `Gruppe beslutning.docx`
+- Mastervalg:
+  - `gruppe-l-samlet.md` som strukturmaster
+- Begrunnelse:
+  - dekker flest operative linser
+  - kobler linser til faser og samspill
+  - er allerede i Markdown
+- Fases ut som aktive sannhetskilder:
+  - `gruppe-l-komplett.md` beholdes som referanse
+  - `Gruppe beslutning.docx` arkiveres som konsolidert kilde
+
+### HR-tvillingen
+- Konkurrerende filer:
+  - `HR/HR tvillingorgansiasjon.docx`
+  - `HR/HR tvilling etter roller og oppgaver.docx`
+  - `HR/Nyeste versjon -digital tvilling HR.docx`
+  - `HR/Kvalitetssikret  digital organisasjon.docx`
+  - `HR/Dokument uten navn.docx`
+- Mastervalg:
+  - `01_organisasjonsmodell/HR_PILOT.md`
+  - `03_agentroller/ROLLEKATALOG.md`
+  - `03_agentroller/HR_TVILLING_GUARDRAILS.md`
+- Begrunnelse:
+  - roller, guardrails og organisasjonslogikk er splittet i tydelige styringsdokumenter
+  - ingen `.docx` er lenger aktiv sannhetskilde
+- Fases ut som aktive sannhetskilder:
+  - alle HR-`.docx` flyttes til arkiv eller referanse
+
+## Parallelle sannhetskilder som er redusert
+
+### Linsebibliotek
+- Aktiv master:
+  - `02_linser/LINSEINDEKS.md`
+  - `02_linser/KJERNELINSER.md`
+  - `02_linser/GRUPPE_L_STRUKTURMASTER.md`
+- Referanse, ikke master:
+  - `Alle linser -siste.docx`
+  - `Kjernelinser_Niva1_til_Niva4.docx`
+  - `Linse 2 økonom.docx`
+
+### HR-domene
+- Aktiv master:
+  - `01_organisasjonsmodell/HR_PILOT.md`
+  - `03_agentroller/ROLLEKATALOG.md`
+  - `03_agentroller/HR_TVILLING_GUARDRAILS.md`
+- Referanse og arkiv:
+  - teknisk ontologi, eldre kvalitetsversjon og konsoliderte `.docx`
+
+## Konflikter som fortsatt ma handteres senere
+
+- `Alle linser -siste.docx` inneholder trolig mer detaljert per-linse-innhold enn dagens Markdown-mastere.
+- `Kjernelinser_Niva1_til_Niva4.docx` peker mot et mer modent spesifikasjonsniva enn resten av plattformen.
+- HR-piloten mangler fortsatt et eksplisitt, maskinlesbart dataskjema for roller, prosesser, systemer, risiko og kontroller.

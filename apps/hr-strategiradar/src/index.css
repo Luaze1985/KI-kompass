@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* ── Flat Windows/Kommune Desktop Palette ── */
+  --bg-app: #f1f5f9; /* Flat light gray background */
+  --bg-sidebar: #ffffff; /* Clean solid white panels */
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --bg-input: #ffffff;
+  --bg-panel: #f8fafc;
+
+  --text-primary: #0f172a; /* Solid dark text */
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --text-sidebar: #334155;
+  --text-sidebar-active: #0f172a;
+
+  --border: #cbd5e1; /* Solid, crisp borders */
+  --border-light: #e2e8f0;
+  --border-focus: #0284c7;
+
+  /* Compass zone flat tints */
+  --zone-green: #ecfdf5;
+  --zone-yellow: #fffbeb;
+  --zone-orange: #fff7ed;
+  --zone-red: #fef2f2;
+
+  /* Solid Municipal Blue primary (Segoe UI/Fluent style) */
+  --accent: #0284c7;
+  --accent-hover: #0369a1;
+
+  /* Sizing - Flat rectangular standard */
+  --radius: 4px;
+  --radius-lg: 6px;
+  --sidebar-w: 260px;
+  --touch-min: 40px;
+
+  /* Typography - Segoe UI / Inter standard */
+  font-family: 'Segoe UI', 'Inter', -apple-system, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  color-scheme: light;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Segoe UI', 'Inter', -apple-system, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-app);
+  min-height: 100vh;
+}
+
+/* ── Typography scale (4 nivåer) ── */
+/* XL: 1.25rem/700 — sidetitler og stegoverskrifter  */
+/* LG: 1rem/600    — kortoverskrifter (h3)           */
+/* BASE: 0.875rem  — labels (600) og brødtekst (400) */
+/* SM: 0.75rem/500 — merker og badges                */
+
+/* ── Utility ── */
+.small { font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5; }
+.muted { color: var(--text-muted); }
+.text-gradient {
+  color: var(--accent-hover); /* Replaced gradient with solid blue */
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.15);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.3);
+}

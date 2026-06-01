@@ -1,0 +1,102 @@
+project: Linselab merge control
+status: populated
+purpose: Classify inventoried source items into lenses, advisor profiles, frames, models, stances, heuristics, teaching material, case material, governance rules, or source-only references.
+rules:
+  - Register instrument candidates before normalizing or merging them.
+  - Keep source_id references back to SOURCE_REGISTER.yml.
+  - Do not mark an instrument active here. Active status belongs in ACTIVE_LIBRARY_INDEX.md after case testing.
+instrument_candidates:
+  - id: linselab-linse-prompt-standard
+    name: Linse Prompt Standard
+    type: governance_standard
+    source_id: registers/LINSE_PROMPT_STANDARD.md
+    draft_file: registers/LINSE_PROMPT_STANDARD.md
+    status: draft
+  - id: A4
+    name: Orkestratoren
+    type: lens
+    source_id: source_text_extracts/02_linser/LINSEINDEKS.md.txt
+    draft_file: registers/drafts/a4-orkestratoren.md
+    status: draft
+  - id: persona-board-advisor
+    name: Styre- og styringsrådgiveren
+    type: advisor_profile
+    source_id: personanexus-main.zip/examples/identities/high-trust-board-advisor.yaml
+    draft_file: registers/drafts/board-advisor.md
+    maps_to_lens_id: K1
+    mapping_register_ref: registers/PERSONANEXUS_PROFILE_MAPPING.yml
+    status: draft
+  - id: af-layered-prompt-architecture
+    name: Lagdelt promptarkitektur
+    type: architecture_reference
+    source_id: agentforge-main/docs/layered-prompt-architecture.md
+    draft_file: registers/AGENTFORGE_METHOD_DRAFTS.yml
+    status: draft
+  - id: persona-lex
+    name: Juridisk grensevurderer
+    type: advisor_profile
+    source_id: personanexus-main.zip/examples/identities/legal-advisor.yaml
+    draft_file: registers/drafts/lex.md
+    maps_to_lens_id: D1
+    mapping_register_ref: registers/PERSONANEXUS_PROFILE_MAPPING.yml
+    status: draft
+  - id: persona-fable
+    name: Fortellingsrådgiveren
+    type: advisor_profile
+    source_id: personanexus-main.zip/examples/identities/storyteller.yaml
+    draft_file: registers/drafts/fable.md
+    maps_to_lens_id: H3
+    mapping_register_ref: registers/PERSONANEXUS_PROFILE_MAPPING.yml
+    status: draft
+  - id: persona-beacon
+    name: Krisekoordinatoren
+    type: advisor_profile
+    source_id: personanexus-main.zip/examples/identities/crisis-responder.yaml
+    draft_file: registers/drafts/beacon.md
+    maps_to_lens_id: D2
+    mapping_register_ref: registers/PERSONANEXUS_PROFILE_MAPPING.yml
+    status: draft
+  - id: persona-coral
+    name: Mottaks- og eskaleringsrådgiveren
+    type: advisor_profile
+    source_id: personanexus-main.zip/examples/identities/support-team.yaml
+    draft_file: registers/drafts/coral.md
+    maps_to_lens_id: L2
+    mapping_register_ref: registers/PERSONANEXUS_PROFILE_MAPPING.yml
+    status: draft
+  - id: af-methodology-extraction
+    name: Metodikk-ekstraksjon for linser og advisor-profiler
+    type: workflow_or_quality_method
+    source_id: agentforge-main/src/agentforge/extraction/prompts.py
+    draft_file: registers/AGENTFORGE_METHOD_DRAFTS.yml
+    status: draft
+  - id: af-handoff-graph-template
+    name: Deterministisk handoff-graf
+    type: handoff_schema
+    source_id: agentforge-main/src/agentforge/department/handoffs.py
+    draft_file: registers/AGENTFORGE_METHOD_DRAFTS.yml
+    status: draft
+  - id: af-guardrail-gate-checklist
+    name: Kvalitetsgate for guardrails
+    type: quality_gate
+    source_id: agentforge-main/src/agentforge/analysis/guardrail_auditor.py
+    draft_file: registers/AGENTFORGE_METHOD_DRAFTS.yml
+    status: draft
+  - id: af-draft-review-gap-checks
+    name: Draft-review for linser og profiler
+    type: quality_review_gate
+    source_id: agentforge-main/src/agentforge/analysis/skill_reviewer.py
+    draft_file: registers/AGENTFORGE_METHOD_DRAFTS.yml
+    status: draft
+  - id: af-case-evaluator-llm-judge
+    name: Case-test evaluator
+    type: case_test_evaluator
+    source_id: agentforge-main/src/agentforge/testing/evaluator.py
+    draft_file: registers/AGENTFORGE_METHOD_DRAFTS.yml
+    status: draft
+  - id: af-gap-analyzer
+    name: Hullanalyse for advisor-pakker
+    type: coverage_gap_heuristic
+    source_id: agentforge-main/src/agentforge/analysis/gap_analyzer.py
+    draft_file: registers/AGENTFORGE_METHOD_DRAFTS.yml
+    status: draft

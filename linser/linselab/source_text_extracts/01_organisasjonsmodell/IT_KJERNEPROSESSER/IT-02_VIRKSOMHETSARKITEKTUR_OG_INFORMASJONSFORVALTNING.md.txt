@@ -1,0 +1,70 @@
+# IT-02 VIRKSOMHETSARKITEKTUR OG INFORMASJONSFORVALTNING
+
+## Formaal
+
+Skape et felles grunnlag for hvordan informasjon, prosesser, systemer og ansvar henger sammen pa tvers av kommunen.
+
+## Eier og roller
+
+- prosesseier: virksomhetsarkitekt eller tilsvarende
+- hovedutforer: arkitektur- og informasjonsforvaltningsfunksjon
+- stotte: systemeiere, sikkerhet, fagdomener, dokument- og dataansvarlige
+- eskaleres til: ledelse ved konflikt om standard, ansvar eller tverrgaende prioritering
+
+## Trigger
+
+- behov for ny eller endret losning
+- svak oversikt over data, ansvar eller prosessflyt
+- krav om bedre informasjonsforvaltning eller "orden i eget hus"
+
+## Input
+
+- systemoversikt og informasjonsobjekter
+- prosessbeskrivelser
+- ansvarskart og avhengigheter
+- krav fra sikkerhet, styring eller fagdomene
+
+## Output
+
+- tydelig kobling mellom prosess, informasjon og system
+- avklarte arkitekturvalg eller prinsipper
+- forslag til standardisering, forbedring eller avgrensning
+
+## Hovedforlop
+
+1. Avklar hva som skal beskrives eller besluttes.
+2. Kartlegg informasjon, prosess og systemkoblinger.
+3. Synliggjor avhengigheter, dubletter og manglende eierskap.
+4. Vurder konsekvenser av arkitekturvalg.
+5. Lever beslutningsgrunnlag eller felles modell for videre arbeid.
+
+## Viktigste risikoer
+
+- shadow IT og lokale workarounds uten oversikt
+- informasjon uten tydelig eier
+- arkitektur beskrives uten kobling til faktisk drift
+- sentrale standarder overstyrer lokal virkelighet
+
+## Kontrollhandlinger
+
+- krev tydelig eier per informasjons- og systemobjekt
+- skill mellom maalarkitektur og dagens praksis
+- verifiser konsekvenser lokalt før standardisering
+- dokumenter hva som er prinsipp, og hva som er lokal tilpasning
+
+## Systemer og referanser
+
+- DigiOrden og arbeid med orden i eget hus
+- felles kommunal arkitektur
+- lokale system- og dataoversikter
+
+## Handover
+
+- handover_in: fra innforingsbehov, arkitektursporsmal eller styringssignal
+- handover_out: til beslutningsnotat, arkitekturmote eller forbedringslop
+
+## Lokal verifikasjon
+
+- bekreft at modell og ansvar stemmer med faktisk praksis
+- bekreft hvilke data og prosesser som er mest kritiske
+- bekreft at arkitekturvalg er gjennomforbare i de berorte omradene

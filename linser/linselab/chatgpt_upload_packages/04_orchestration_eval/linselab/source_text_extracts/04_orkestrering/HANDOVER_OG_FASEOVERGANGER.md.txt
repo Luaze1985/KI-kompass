@@ -1,0 +1,76 @@
+# HANDOVER_OG_FASEOVERGANGER
+
+## Felles format for alle faser
+
+Hver fase skal beskrives med:
+
+- `trigger`
+- `eier`
+- `maal`
+- `faser`
+- `gate for neste fase`
+- `hva som er forskning`
+- `hva som er prototype`
+- `hva som er produksjon`
+
+## 1. Forskning
+
+- `trigger`: nytt problem, svak kunnskapsdekning eller behov for utforskning
+- `eier`: dirigent eller oppdragsansvarlig
+- `maal`: samle innsikt og hypotesegrunnlag
+- `faser`: avgrensning -> kildeinnhenting -> forelopig syntese
+- `gate for neste fase`: vi vet nok til a teste et konkret oppsett
+- `hva som er forskning`: brede antakelser, sammenligning, referansejakt
+- `hva som er prototype`: ikke aktuelt enna
+- `hva som er produksjon`: ikke tillatt
+
+## 2. Prototype / MVP
+
+- `trigger`: forskningen peker mot et mulig oppsett
+- `eier`: ansvarlig for arbeidslopet
+- `maal`: teste struktur, kontrakt eller mal raskt
+- `faser`: design -> enkel test -> laeringsnotat
+- `gate for neste fase`: oppsettet viser verdi og har tydelige begrensninger
+- `hva som er forskning`: nytt grunnlag kan fortsatt hentes inn
+- `hva som er prototype`: alt som kun er laget for a laere
+- `hva som er produksjon`: skal ikke love stabil leveranse
+
+## 3. Pilot
+
+- `trigger`: prototypen er verdt a prove i avgrenset praksis
+- `eier`: domeneeier, for eksempel HR
+- `maal`: lokal validasjon i ekte kontekst
+- `faser`: pilotoppsett -> avgrenset bruk -> evaluering
+- `gate for neste fase`: lokal verifikasjon er gjennomfort og ansvar er avklart
+- `hva som er forskning`: tilleggssporsmal som dukker opp i pilot
+- `hva som er prototype`: uferdige deler merkes tydelig
+- `hva som er produksjon`: bare avgrensede, godkjente leveranser
+
+## 4. Produksjon
+
+- `trigger`: pilot er godkjent for repeterbar bruk
+- `eier`: lokal faglig eier
+- `maal`: stabilt lop for beslutningsstotte, mote eller leveranse
+- `faser`: oppdragsinntak -> produksjon -> kvalitetssjekk -> levering -> oppfolging
+- `gate for neste fase`: neste runde eller revisjon
+- `hva som er forskning`: ny utforskning ma skilles ut
+- `hva som er prototype`: nye forslag ma testes separat
+- `hva som er produksjon`: bare godkjent innhold og godkjente handovers
+
+## 5. Revisjon
+
+- `trigger`: drift, hull eller friksjon oppdages etter pilot eller produksjon
+- `eier`: dirigent ved oppstart, forbedringskoordinator ved avslutning
+- `maal`: foresla forbedringer uten autonom patching
+- `faser`: scope -> kildeaudit -> eval -> prioritering -> eskalering
+- `gate for neste fase`: forslagene har tydelig eier, begrunnelse og fasegate
+- `hva som er forskning`: nye antakelser eller kilder som ma innhentes forst
+- `hva som er prototype`: nye revisjonsregler eller playbooks som ikke er testet
+- `hva som er produksjon`: bare revisjonsnotat og eskaleringsspor, ikke autonome endringer
+
+## Handover-regler
+
+- ingen fase skal overleveres uten eksplisitt eier
+- usikkerhet skal alltid overleveres, ikke skjules
+- faseovergang krever at input, output og lokal verifikasjon er dokumentert
+- dersom grunnlaget er tynt, skal saken tilbake til forskning eller prototype

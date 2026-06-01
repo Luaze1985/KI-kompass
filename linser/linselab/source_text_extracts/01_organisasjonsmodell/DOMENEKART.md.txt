@@ -1,0 +1,120 @@
+# DOMENEKART
+
+## Formaal
+
+Dette kartet skiller mellom:
+
+- felles plattform for hele tvillingsorganisasjonen
+- rollelag utenfor kommunestrukturen
+- domener i stab
+- domener utenfor stab
+- hva som er aktiv pilot na
+- hva som bare skal jobbes med senere
+
+## Viktig prinsipp
+
+HR er forste operative pilot. HR er ikke lik "hele staben", og staben er ikke lik "hele tvillingsorganisasjonen".
+
+## Niva 1: Felles plattform
+
+Dette laget gjelder alle domener, uansett hvor de horer hjemme:
+
+- styringslogikk
+- linsebibliotek
+- agentroller og kontrakter
+- arbeidslop for simulering, beslutningsstotte, moter og produksjon
+- maler og kunnskapsbase
+
+Dette er ikke et domene. Dette er infrastrukturen alle domener skal bruke.
+
+## Niva 1.5: Rollelag utenfor kommunestrukturen
+
+Mellom plattformen og kommunedomenene ligger et eget rollelag for linser som har tydelig funksjon, men som ikke skal bli kommunedomener eller stabsomrader.
+
+Dette laget brukes for:
+
+- meta- og synteseroller
+- etiske, samfunnspolitiske og kritiske roller
+- forsknings-, analyse-, teknologi- og designroller
+- operasjonaliseringsroller som hjelper saker fra beslutning til praksis
+
+Master for dette laget er `02_linser/LINSEKARTLAG_IKKE_KOMMUNALE_ROLLER.md`.
+
+## Niva 2: Stabsdomener
+
+Dette er domener som typisk jobber tett pa styring, samordning, kontroll eller stottefunksjoner.
+
+### Aktivt na
+
+- Organisasjon og teknologi
+  - status: `PARENTDOMENE`
+  - aktivt underdomene: HR og arbeidsgiver
+    - status: `AKTIV_PILOT`
+    - mastere finnes og brukes na
+  - kartlagt randsonelag rundt HR
+    - status: `AKTIVERES_VED_BEHOV`
+    - master: `02_linser/HR_RANDSONER_OG_LINSEPAKKER.md`
+    - inkluderer kommuneadvokaten, lonn, politikk og administrasjon, anskaffelser, personvern og strategisk styring nar HR-saker krysser mandatgrense
+  - aktivt stabsomrade: IT og digitalisering
+    - status: `AKTIVT_STABSOMRADE_V1`
+    - mastere finnes og brukes na
+
+- Okonomi og virksomhetsstyring
+  - status: `AKTIVT_DOMENEOPPSETT_V1`
+  - mastere finnes og brukes na
+
+### Skal kunne bygges senere
+
+- kommuneadvokat / juridisk funksjon
+  - status: `SENERE_SPESIALDOMENE`
+- organisasjon, teknologi og digital forvaltning utover HR
+  - status: `NESTE_STEG`
+- kommunikasjon / intern samhandling / innbyggerdialog nar det er relevant som stabsfunksjon
+  - status: `SENERE_DOMENE`
+
+## Niva 3: Domenene utenfor stab
+
+Disse skal ikke tvinges inn i stab bare fordi plattformen bygges derfra.
+
+Eksempler pa senere operative domener:
+
+- oppvekst
+- helse og mestring
+- kultur og innbyggerdialog
+- by- og stedsutvikling
+- NAV og naering
+- andre fag- eller tjenesteomrader
+
+Status for disse na:
+
+- `SENERE_DOMENE`
+- de skal ikke ha egne operative mastere for tidlig
+- de skal bare bygges nar det finnes tydelig eier, prosessbehov og lokal verifikasjon
+
+## Niva 4: Domeneinstanser
+
+Nar et nytt domene faktisk skal bygges, skal det fa:
+
+1. ett pilotdokument
+2. ett prosesskart
+3. relevante prosesskort
+4. guardrails
+5. kobling til aktuelle linser
+6. tydelig eier og fasegate
+
+Hvis dette ikke finnes, er domenet ikke aktivt. Da skal det sta som senere arbeid, ikke blandes inn i aktiv drift.
+
+## Praktisk styringsregel
+
+- alt som er felles, blir i plattformen
+- alt som er HR-spesifikt, blir i HR-piloten
+- alt som er senere stabsdomener, blir bare navngitt her inntil de faktisk bygges
+- alt som er senere fagdomener utenfor stab, holdes utenfor stabsmappa til de far eget domeneoppsett
+
+## Hva dette betyr for deg
+
+- du trenger ikke putte resten av linsene inn i HR eller stab
+- du kan bygge videre pa hele stabsarkitekturen senere uten a rote til HR-piloten
+- du kan ogsa bygge domener utenfor stab senere med samme plattform, uten a starte pa nytt
+- anbefalt domenevalg og rekkefolge ligger i `01_organisasjonsmodell/ANBEFALT_DOMENEPORTFOLJE.md`
+- stabsomradene og nokkelrollene ligger i `01_organisasjonsmodell/STABSARKITEKTUR.md` og `03_agentroller/STABSOMRAADER_OG_NOKKELROLLER.md`

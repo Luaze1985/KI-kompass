@@ -1,0 +1,20 @@
+# CHANGE_LOG HR OG ARBEIDSGIVER
+
+## 2026-04-09
+
+- la inn kanonisk rolle- og kompetansemaster for HR-piloten
+- la inn egen master for rekruttering og stillingsutlysninger
+- opprettet nye operative maler for rollekort, kompetansematriser, utlysninger, kandidatvurdering og onboarding
+- opprettet ferdigutfylte stillingsutlysninger for alle kanoniske HR-roller
+- la inn YAML- og CSV-kodetabeller for enheter, roller, prosesser, skills, systemer, artefakter, regelverk, risikoer og maler
+- utvidet agentregister og workflowregister med revisjonsagenter og revisjonslop
+- koblet HR-prosesskortene P-01, P-02, P-04 og P-05 til oppdatert eksternt og internt grunnlag
+
+## 2026-04-05
+
+- la inn package manifest for aktiv HR-pakke
+- koblet HR-pakken til domeneregister, agentregister og workflow-register
+- la inn docs-first v2-sporbarhet via `task_envelope`, `handover_packet` og `decision_trace`
+- koblet HR-testsettet til nytt eval-lag
+- la inn eget randsonelag rundt HR med kommuneadvokaten som eksplisitt spesialfunksjon
+- gjorde `02_linser/HR_RANDSONER_OG_LINSEPAKKER.md` til del av aktiv promptflate for HR-pakken

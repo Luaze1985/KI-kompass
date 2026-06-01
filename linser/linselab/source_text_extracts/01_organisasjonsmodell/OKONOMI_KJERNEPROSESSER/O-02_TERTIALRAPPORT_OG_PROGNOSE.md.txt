@@ -1,0 +1,70 @@
+# O-02 TERTIALRAPPORT OG PROGNOSE
+
+## Formaal
+
+Levere kort, presis og handlingsrettet oppfolging av status, avvik og prognose i riktig rytme.
+
+## Eier og roller
+
+- prosesseier: virksomhetsstyring eller controllerfunksjon
+- hovedutforer: controller i samspill med budsjett- og resultateiere
+- stotte: okonomidirektor, analysefunksjon, relevante omradeledere
+- eskaleres til: toppledelse nar avvik eller risiko overstiger lokal handtering
+
+## Trigger
+
+- tertial, manedsoppfolging eller annen fast styringsrytme
+- vesentlig avvik i okonomi eller resultat
+- behov for justert prognose
+
+## Input
+
+- oppdaterte regnskaps- og aktivitetsdata
+- sist vedtatte rammer
+- lokale forklaringer pa avvik
+- tidligere tiltak og forventet effekt
+
+## Output
+
+- kort avviksbilde
+- oppdatert prognose
+- foreslatt oppfolgingsspor med ansvar og frist
+
+## Hovedforlop
+
+1. Samle oppdaterte tall og status.
+2. Skilj mellom faktisk avvik og forelopig signal.
+3. Vurder sannsynlig utvikling resten av perioden.
+4. Foresla korrigerende tiltak eller behov for ny beslutning.
+5. Syntetiser til styringsklar rapportering.
+
+## Viktigste risikoer
+
+- prognose bygges pa uavklarte antakelser
+- avvik beskrives uten eier eller tiltak
+- rapporteringen blir bakoverskuende og ikke handlingsrettet
+- like data tolkes ulikt i ulike omrader
+
+## Kontrollhandlinger
+
+- krev dato, eier og kilde pa alle tall
+- marker antakelser eksplisitt
+- skill mellom observasjon, forklaring og anbefaling
+- sjekk at tiltak faktisk kan paavirke avviket
+
+## Systemer og referanser
+
+- Styringsportalen
+- ERP eller regnskapsgrunnlag
+- lokal tertial- og oppfolgingspraksis
+
+## Handover
+
+- handover_in: fra faste oppfolgingspunkter eller eskalert avvik
+- handover_out: til styringsmote, beslutningsnotat eller tiltaksspor
+
+## Lokal verifikasjon
+
+- bekreft at talluttrekket er oppdatert
+- bekreft hvem som eier avviket
+- bekreft at prognosen er lokalt kvalitetssikret

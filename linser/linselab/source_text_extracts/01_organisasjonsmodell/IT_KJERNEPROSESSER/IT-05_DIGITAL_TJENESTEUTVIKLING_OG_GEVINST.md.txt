@@ -1,0 +1,70 @@
+# IT-05 DIGITAL TJENESTEUTVIKLING OG GEVINSTOPPFOLGING
+
+## Formaal
+
+Koble digital forbedring til faktisk tjenesteverdi, brukerbehov og gevinster som kan fanges opp i drift.
+
+## Eier og roller
+
+- prosesseier: digitaliseringsleder eller tjenesteeier
+- hovedutforer: produkt- eller tjenesteansvarlig i samspill med fagdomene
+- stotte: design, arkitektur, drift, analyse og sikkerhet
+- eskaleres til: ledelse ved stor tverrgaende effekt eller uklar gevinstlogikk
+
+## Trigger
+
+- nytt digitaliseringstiltak
+- behov for forbedret brukerreise eller arbeidsflyt
+- svak gevinst eller lav adopsjon av losning
+
+## Input
+
+- tjenestebehov og problemforstaelse
+- dagens bruker- eller arbeidsflyt
+- tekniske muligheter og begrensninger
+- forventet gevinst og maaleopplegg
+
+## Output
+
+- anbefalt digitaliseringstiltak eller forbedringslop
+- tydelig gevinsthypotese og eier
+- forslag til pilot, innforing og oppfolging
+
+## Hovedforlop
+
+1. Avklar hvilket problem som faktisk skal loses.
+2. Kartlegg brukerfriksjon, arbeidsflyt og tekniske avhengigheter.
+3. Vurder tiltak, risiko og forventet gevinst.
+4. Test om gevinstforutsetninger holder i faktisk praksis.
+5. Lever styringsklart grunnlag med eier og oppfolging.
+
+## Viktigste risikoer
+
+- digitalisering brukes som losning uten tydelig problem
+- gevinst beskrives for generelt
+- tjenesteutvikling skjer uten drift og brukerstoette
+- adopsjon og opplaering undervurderes
+
+## Kontrollhandlinger
+
+- krev tydelig problemdefinisjon
+- koble gevinst til indikator, eier og tidspunkt
+- skill mellom prototype, pilot og produksjon
+- bruk service- og operasjonaliseringslinser aktivt
+
+## Systemer og referanser
+
+- relevante felleslosninger og fagsystemer
+- lokale utviklings- eller forbedringsspor
+- gevinst- og oppfolgingsgrunnlag
+
+## Handover
+
+- handover_in: fra forbedringsbehov, tjenesteeier eller digitaliseringsinitiativ
+- handover_out: til simulering, beslutningsnotat, innforingslop eller leveranseutkast
+
+## Lokal verifikasjon
+
+- bekreft hva som faktisk er problemet
+- bekreft at gevinst og maaleopplegg er realistisk
+- bekreft at fagdomene og IT faktisk eier tiltaket sammen

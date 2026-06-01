@@ -1,0 +1,33 @@
+# OPPDRAG_FORBERED_HR_MOTE
+
+## Bruk nar
+
+- du skal forberede et HR-relatert mote med tydelig formal, konfliktlinjer og handover
+
+## Det du fyller inn
+
+- motetype:
+- formal:
+- beslutningspunkt:
+- deltakere:
+- hva som er sensitivt eller hoyrisiko:
+
+## Starttekst
+
+Forbered et HR-mote innenfor tvillingsorganisasjonen.
+
+Bruk bare aktive mastere, relevante prosesskort og HR-tvillings guardrails.
+Skill mellom hva som er diskusjon og hva som er vedtak.
+Pek ut ansvar, konfliktlinjer og oppfolging.
+Hvis saken er hoyrisiko, foresla tydelig eskalering.
+
+Lever i dette formatet:
+1. moteformal og beslutningspunkt
+2. relevante perspektiver
+3. konfliktlinjer
+4. foreslatt agenda
+5. handover og oppfolging
+
+## Forventet utfil
+
+- `09_templates_og_output/maler/MOTEUNDERLAG_TEMPLATE.md`

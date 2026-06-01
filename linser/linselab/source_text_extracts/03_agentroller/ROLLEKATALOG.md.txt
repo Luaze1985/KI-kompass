@@ -1,0 +1,103 @@
+# ROLLEKATALOG
+
+## Formaal
+
+Denne katalogen skiller mellom:
+
+- tvillingsorganisasjonens operative agentroller
+- linseroller utenfor kommunestrukturen
+- HR-pilotens faktiske domeneroller
+
+## A. Agentroller i tvillingsorganisasjonen
+
+### Dirigenten
+- type: toppnivaa-ruter
+- ansvar: velge lop, linser og agenter
+- output: oppdragsoppsett og aktiveringsplan
+
+### Den virtuelle stabssjefen
+- type: syntese- og beslutningsagent
+- ansvar: samle funn, prioritere, foresla neste steg
+- output: beslutningsnotat, anbefaling og ansvarslinje
+
+### Linseagent
+- type: analyseagent
+- ansvar: levere ett perspektiv av gangen
+- output: funn, risiko, usikkerhet og anbefalte tiltak innen egen linse
+
+### Gruppe L-agent
+- type: operativ gjennomforingsagent
+- ansvar: oversette analyse til praksis
+- output: mikrooppgaver, realistisk drift, brukeropplevelse, maktbilde eller reversibilitet
+
+### HR-tvillingen
+- type: domeneagent
+- ansvar: svare innen HR-domenet med guardrails
+- output: kort HR-rad, avgrensning, usikkerhet og evt. eskalering
+
+### Produksjonsagent
+- type: leveranseagent
+- ansvar: omforme godkjent grunnlag til konkret output
+- output: utkast, oversikt, notat eller malbasert leveranse
+
+### Kildevokteren
+- type: kilde- og synkagent
+- ansvar: finne drift mellom mastere, modell og kodetabeller
+- output: avviksliste, patchforslag og anbefalt eier
+
+### Evalrevisoren
+- type: eval- og kontrollagent
+- ansvar: vurdere output mot evalmatrise, red flags og fasegater
+- output: revisjonsnotat, blokkere og kvalitetssignal
+
+### Forbedringskoordinatoren
+- type: prioriterings- og eskaleringsagent
+- ansvar: samle revisjonsfunn, prioritere forbedringer og route videre til riktig lop
+- output: prioritert forbedringsliste, handover og anbefalt neste oppdrag
+
+## B. Linseroller utenfor kommunestrukturen
+
+Dette er ikke kommunedomener og heller ikke faste bokser i kommunens organisasjonskart. De er aktive plattformroller som brukes nar saken krever et ekstra perspektiv.
+
+Hovedfamilier:
+
+- meta- og synteseroller
+- normative og samfunnspolitiske roller
+- menneske-, kultur- og samfunnsroller
+- faglige ekspertroller
+- endrings- og leveranseroller
+- offentlighets- og utfordrerroller
+- operasjonaliseringsroller
+
+Master for disse rollene ligger i `02_linser/LINSEKARTLAG_IKKE_KOMMUNALE_ROLLER.md`.
+
+## C. HR-pilotens domeneroller
+
+### Ledelse
+- HR-sjef
+- Avdelingssjef Lederstotte og Personalsaker
+- Avdelingssjef Rekruttering og Kompetanse
+
+### Stabsfunksjoner
+- Forhandlingsradgiver
+- HMS-radgiver
+
+### Radgiver- og spesialistroller
+- HR-radgiver
+- HR-jurist
+- IA-radgiver
+- Rekrutteringsradgiver
+- Kompetanseradgiver
+- E-laeringsradgiver
+- Laerlingkoordinator
+- Radgiver for leder- og organisasjonsutvikling
+
+Kanonisk detaljmaster for disse rollene ligger i `01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md`.
+
+## D. Bruk av rollekatalogen
+
+- Dirigenten bruker katalogen for a velge riktig domene- og agentblanding.
+- HR-tvillingen bruker katalogen for a finne riktig eskaleringspunkt.
+- Produksjons- og moteflyt bruker katalogen for a peke ut ansvar og handover.
+- Revisjonsagentene bruker katalogen for a finne riktig eier nar drift eller hull avdekkes.
+- Ikke-kommunale linseroller brukes for a utvide blikket uten a lage nye kommunedomener.

@@ -1,0 +1,11 @@
+risk_id,name,master_ref
+RSK-01,uklar_beslutningsrett,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+RSK-02,mangelfull_dokumentasjon,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+RSK-03,for_sen_medvirkning,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+RSK-04,personvernbrudd,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+RSK-05,analyse_uten_operativ_forankring,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+RSK-06,svak_systembruk,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+RSK-07,kandidatfrafall_i_rekruttering,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+RSK-08,frafall_i_laerlingeordning,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+RSK-09,rolle_drift_mellom_master_og_utlysning,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+RSK-10,produksjon_uten_godkjent_fasegate,10_kunnskapsbase/modeller/hr_pilot_v1.yaml

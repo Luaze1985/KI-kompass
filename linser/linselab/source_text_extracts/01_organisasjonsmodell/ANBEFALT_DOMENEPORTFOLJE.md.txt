@@ -1,0 +1,322 @@
+# ANBEFALT_DOMENEPORTFOLJE
+
+## Formaal
+
+Denne filen velger anbefalte domener for tvillingsorganisasjonen basert pa:
+
+- kommunestruktur i Kristiansand kommune
+- vanlig organisering i store norske kommuner
+- fagomrader i det lokale materialet
+- hele linsebiblioteket slik det er beskrevet i `10_kunnskapsbase/referanser/alle_linser_siste.docx`
+
+## Hovedkonklusjon
+
+Linsene skal ikke bli domener i seg selv. De er felles analysekapabiliteter.
+
+Den riktige domenestrukturen er derfor ikke "en domeneinstans per linse", men:
+
+1. en felles plattform
+2. noen fa store kommunedomener
+3. underdomener der det faktisk finnes roller, prosesser og eierskap
+
+HR blir dermed:
+
+- et aktivt underdomene
+- under parent-domenet `Organisasjon og teknologi`
+- ikke lik hele staben
+
+## Domenevalg v1
+
+### Niva 0: Felles plattform
+
+Dette er ikke et domene, men infrastrukturen alle domener bruker:
+
+- styring
+- linser
+- agentkontrakter
+- arbeidslop
+- maler
+- kunnskapsbase
+
+### Niva 1: Kommunedomener
+
+Dette er anbefalte hoveddomener for hele tvillingsorganisasjonen:
+
+1. Organisasjon og teknologi
+2. Okonomi og virksomhetsstyring
+3. Helse og mestring
+4. Oppvekst
+5. By- og stedsutvikling
+6. Kultur og innbyggerdialog
+7. Naering og NAV
+
+## Begrunnelse for valget
+
+### Hvorfor disse domenene
+
+- de matcher faktisk kommunestruktur bedre enn en stab/linje-deling alene
+- de er store nok til a vaere meningsfulle tvillingomrader
+- de kan romme underdomener uten at arkitekturen sprekker
+- de kan bruke samme plattform og linser pa tvers
+
+### Hvorfor ikke velge flere sma domener na
+
+- for mange sma domener for tidlig vil lage parallelle sannhetskilder
+- flere av de lokale filene beskriver roller og funksjoner, men ikke sterke nok operative mastere for egne domener ennå
+- mange temaer i linsebiblioteket er analyseperspektiver, ikke organisatoriske enheter
+
+## Parent og underdomener
+
+### 1. Organisasjon og teknologi
+
+Status:
+
+- `PARENTDOMENE`
+
+Anbefalte underdomener:
+
+- HR og arbeidsgiver
+  - status: `AKTIV_PILOT`
+- IT og digitalisering
+  - status: `AKTIVT_STABSOMRADE_V1`
+- Politikk og administrasjon
+  - status: `NESTE_STABSOMRADE`
+- Lonn
+  - status: `TIDLIG_SENERE_STABSOMRADE`
+
+Hvorfor:
+
+- HR ligger allerede lokalt under dette omradet
+- lokalt materiale viser sterk kobling mellom HR, ERP, systemforvaltning, IA, digitalisering og arkitektur
+- dette parent-domenet gir deg et sted a plassere resten av stabsnare funksjoner uten a blande dem inn i HR
+
+### 2. Okonomi og virksomhetsstyring
+
+Status:
+
+- `AKTIVT_DOMENEOPPSETT_V1`
+
+Typiske underdomener:
+
+- strategi, analyse og styring
+- anskaffelser
+- forskning og utvikling
+
+Hvorfor:
+
+- dette er et stabilt kommunedomene
+- det kobler sterkt til beslutningsstotte, prioritering og styring
+- det er et naturlig andre domene etter HR fordi det binder sammen ressursbruk, oppfolging og prioritering pa tvers
+
+### 3. Helse og mestring
+
+Status:
+
+- `TIDLIG_FAGDOMENE`
+
+Typiske underdomener:
+
+- helse og omsorgstjenester
+- forvaltning og koordinering
+- naervaers- og bemanningsutfordringer
+- helseteknologi og tjenesteflyt
+
+Hvorfor:
+
+- lokalt materiale peker pa hoy kompleksitet, bemanningspress, IA, teknologi og omstilling
+- dette domenet gir stor verdi til simulering, kapasitetsanalyse og operativ realitetstest
+
+### 4. Oppvekst
+
+Status:
+
+- `TIDLIG_FAGDOMENE`
+
+Typiske underdomener:
+
+- skole
+- barnehage
+- livsmestring og forebygging
+- tverrfaglig barn- og unge-arbeid
+
+Hvorfor:
+
+- dette er et klassisk hoveddomene i store kommuner
+- det passer godt med linser som bruker, kultur, etikk, tjenestedesign og forstelinjerealisme
+
+### 5. By- og stedsutvikling
+
+Status:
+
+- `MELLOMLANGT_STEG`
+
+Typiske underdomener:
+
+- plan og bygg
+- eiendom
+- teknisk infrastruktur
+- klima, beredskap og samfunnsutvikling der det passer lokalt
+
+Hvorfor:
+
+- domenet er sterkt pa juss, prosjekt, risiko, system og offentlighet
+- det bor ikke blandes inn i stab, men ha egen senere tvillinglogikk
+
+### 6. Kultur og innbyggerdialog
+
+Status:
+
+- `MELLOMLANGT_STEG`
+
+Typiske underdomener:
+
+- innbyggertorg og kontaktflater
+- dialog, frivillighet og samskaping
+- kultur og samfunnsdeltakelse
+
+Hvorfor:
+
+- dette domenet krever tydelig bruker-, kommunikasjon- og legitimitetslogikk
+- det er annerledes enn HR og okonomi og bor ikke bygges med samme kontrakter uten tilpasning
+
+### 7. Naering og NAV
+
+Status:
+
+- `AVKLAR_LOKALT_FORST`
+
+Hvorfor:
+
+- lokalt materiale peker i retning av et eget domene
+- men det finnes samtidig strukturdrift mellom organisasjonsside oppdatert 10. juni 2025 og okonomiplan 2026-2029
+- dette domenet bor derfor bygges etter lokal verifikasjon av faktisk organisering
+
+## Linser til domener
+
+### Plattformlinser som brukes nesten overalt
+
+- gruppe A
+- gruppe B
+- gruppe G
+- gruppe K
+- gruppe L
+
+### Sentrale linser per domene
+
+#### Organisasjon og teknologi
+
+- D3 Personvernombudet
+- D4 Sikkerhetsradgiveren
+- D5 Kvalitetsradgiveren
+- F1 Endringslederen
+- I1 AI/Teknologi-eksperten
+- I2 Ingenioren
+- I3 Service designeren
+- G4 Data scientist
+- K1 Den virtuelle stabssjefen
+- L1, L2, L7
+
+#### HR og arbeidsgiver
+
+- F4 HR-eksperten
+- D1 Juristen
+- D6 HMS-radgiveren
+- E1 Psykologen
+- E2 Sosiologen
+- E5 Identitets- og mangfoldlederen
+- F1 Endringslederen
+- K1
+- L1, L2, L6, L7
+
+#### Okonomi og virksomhetsstyring
+
+- C1 Samfunnsokonomen
+- C2 Okonomen
+- C3 Politiske okonom
+- G2 Policy analyst
+- G4 Data scientist
+- D2 Risikostyringseksperten
+- D5 Kvalitetsradgiveren
+- K1
+- L1, L6, L7
+
+#### Helse og mestring
+
+- B1 Etiske filosof
+- D6 HMS-radgiveren
+- E1 Psykologen
+- E5 Identitets- og mangfoldlederen
+- H1 Kommunikasjonseksperten
+- I3 Service designeren
+- G4 Data scientist
+- K1
+- L2, L3, L5, L7
+
+#### Oppvekst
+
+- B1 Etiske filosof
+- B4 Tjenestelederen
+- E1 Psykologen
+- E2 Sosiologen
+- E5 Identitets- og mangfoldlederen
+- G1 Forskeren
+- H1 Kommunikasjonseksperten
+- I3 Service designeren
+- K1
+- L2, L3, L7
+
+#### By- og stedsutvikling
+
+- A1 Systemteoretikeren
+- A3 Intergovernance-forvalteren
+- C1 Samfunnsokonomen
+- D1 Juristen
+- D2 Risikostyringseksperten
+- G2 Policy analyst
+- H2 Journalisten
+- I2 Ingenioren
+- K1
+- L1, L6, L7
+
+#### Kultur og innbyggerdialog
+
+- B2 Politisk teoretiker
+- B4 Tjenestelederen
+- E3 Kulturanalytikeren
+- H1 Kommunikasjonseksperten
+- H2 Journalisten
+- H3 Narrativ-analytikeren
+- I3 Service designeren
+- K1
+- L3, L6
+
+#### Naering og NAV
+
+- C1 Samfunnsokonomen
+- C3 Politiske okonom
+- E2 Sosiologen
+- F5 Konsulenten
+- G2 Policy analyst
+- H1 Kommunikasjonseksperten
+- K1
+- L2, L3, L6, L7
+
+## Anbefalt byggeorden
+
+1. HR og arbeidsgiver
+   - status: ferdigstilles na som pilot
+2. Okonomi og virksomhetsstyring
+   - status: aktivt domeneoppsett v1 er etablert
+3. Organisasjon og teknologi som parentdomene med underdomene digitalisering/arkitektur
+   - status: anbefalt etter okonomidomenet
+4. Helse og mestring
+5. Oppvekst
+6. By- og stedsutvikling
+7. Kultur og innbyggerdialog
+8. Naering og NAV etter lokal avklaring
+
+## Styringsregel for videre arbeid
+
+- nye domener skal velges fra denne portefoljen, ikke fra tilfeldige temaer
+- nye underdomener skal bare opprettes under et parentdomene
+- ingen ny domeneinstansiering uten eier, prosesskart, guardrails og fasegate

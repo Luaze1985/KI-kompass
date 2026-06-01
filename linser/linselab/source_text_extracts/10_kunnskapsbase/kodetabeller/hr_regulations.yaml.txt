@@ -1,0 +1,34 @@
+metadata:
+  id: hr_regulations
+  version: 1.0
+  status: derived_from_markdown_master
+  master_ref: 10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+
+regulations:
+  - regulation_id: REG-01
+    name: arbeidsmiljoloven
+    source_url: https://lovdata.no/
+  - regulation_id: REG-02
+    name: forvaltningsloven
+    source_url: https://lovdata.no/
+  - regulation_id: REG-03
+    name: offentlighetsloven
+    source_url: https://lovdata.no/
+  - regulation_id: REG-04
+    name: hovedtariffavtalen_KS
+    source_url: https://www.ks.no/
+  - regulation_id: REG-05
+    name: hovedavtalen_KS
+    source_url: https://www.ks.no/
+  - regulation_id: REG-06
+    name: GDPR_og_informasjonssikkerhet
+    source_url: https://www.datatilsynet.no/
+  - regulation_id: REG-07
+    name: internkontrollforskriften
+    source_url: https://www.arbeidstilsynet.no/hms/internkontroll/
+  - regulation_id: REG-08
+    name: opplaringslova_og_regelverk_for_laerebedrift
+    source_url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/larling/
+  - regulation_id: REG-09
+    name: kvalifikasjonsprinsippet_i_kommunal_rekruttering
+    source_url: https://www.ks.no/fagomrader/arbeidsgiverpolitikk/inkluderende-arbeidsliv-ia/unntak-fra-kvalifikasjonsprinsippet/

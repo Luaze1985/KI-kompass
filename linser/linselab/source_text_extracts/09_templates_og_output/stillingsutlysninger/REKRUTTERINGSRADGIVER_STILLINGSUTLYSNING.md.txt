@@ -1,0 +1,55 @@
+# REKRUTTERINGSRADGIVER STILLINGSUTLYSNING
+
+Status: avledet produksjonsartefakt v1
+
+## Metadata
+
+- role_id: `R-09`
+- unit_id: `U-03`
+- styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+- local_status: krever_lokal_tilpasning_for_publisering
+
+## Kort annonsetekst
+
+Vi soker en rekrutteringsradgiver som kan hjelpe kommunen a tiltrekke og velge riktig kompetanse pa en profesjonell og sporbar mate. Rollen krever at du kan kombinere struktur, kandidatforstaelse og god prosesskontroll i krevende rekrutteringslop.
+
+## Formaal med stillingen
+
+Sikre at kommunens rekrutteringsprosesser holder hoy kvalitet fra behovsavklaring til tilbud, med tydelig kravprofil, kandidatopplevelse og dokumentert vurderingsgrunnlag.
+
+## Hovedansvar
+
+- kvalitetssikre behovsbeskrivelser, kravprofiler og stillingsutlysninger
+- stotte ledere i screening, intervjuoppsett og kandidatvurdering
+- holde sammen kandidatlop, dokumentasjon og begrunnelse i ansettelsessaker
+- bidra til forbedring av kanalvalg, prosessfart og arbeidsmetodikk
+
+## Must-have kvalifikasjoner
+
+- relevant hoyere utdanning
+- erfaring med rekruttering, search eller talent acquisition
+- god forstaelse for kvalifikasjonsprinsippet og dokumentert vurderingspraksis
+- evne til a skrive presise utlysninger og strukturere intervju- og vurderingslop
+
+## Onskede tilleggskvalifikasjoner
+
+- erfaring fra kommunal eller annen offentlig rekruttering
+- erfaring med kritiske lederrekrutteringer eller smaa kandidatmarkeder
+- erfaring med employer branding eller kandidatopplevelse
+
+## System- og arbeidsflate
+
+- rekrutteringsplattform, kompetansesystem og relevante styringsdata
+- tett samarbeid med ansettende ledere, avdelingssjef og HR-ledelse
+
+## Forste 12 maneder
+
+- bidra til raskere og tydeligere rekrutteringslop i kritiske saker
+- standardisere koblingen mellom kravprofil, intervjuguide og kandidatmatrise
+- styrke kvaliteten pa begrunnelser og kandidatkommunikasjon
+
+## Lokal verifikasjon for publisering
+
+- verifiser lokal praksis for search, tester og referanseinnhenting
+- verifiser hvilke sektorer eller lederomrader rollen skal dekke
+- verifiser hvilke systemnavn og kanalvalg som brukes lokalt

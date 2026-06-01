@@ -1,0 +1,47 @@
+[
+  {
+    "source_id": "LV-SRC-ARBEIDSTILSYNET-ARBEIDSTID",
+    "source_type": "official",
+    "title": "Arbeidstid",
+    "url": "https://www.arbeidstilsynet.no/arbeidsforhold/arbeidstid/",
+    "publisher": "Arbeidstilsynet",
+    "retrieved_at": "2026-05-18",
+    "review_status": "approved"
+  },
+  {
+    "source_id": "LV-SRC-KS-SFS",
+    "source_type": "agreement",
+    "title": "Sentrale forbundsvise saeravtaler og arbeidstid i kommunal sektor",
+    "url": "https://www.ks.no/fagomrader/lonn-og-tariff/tariffavtaler/",
+    "publisher": "KS",
+    "retrieved_at": "2026-05-18",
+    "review_status": "approved"
+  },
+  {
+    "source_id": "LV-SRC-STAMI-ARBEIDSTID",
+    "source_type": "research",
+    "title": "Arbeidstid, arbeidsmiljo og helse",
+    "url": "https://stami.no/",
+    "publisher": "STAMI",
+    "retrieved_at": "2026-05-18",
+    "review_status": "approved"
+  },
+  {
+    "source_id": "LV-SRC-FAFO-HELSEARBEIDSTID",
+    "source_type": "research",
+    "title": "Arbeidstid og organisering i helse- og omsorgssektoren",
+    "url": "https://www.fafo.no/",
+    "publisher": "Fafo",
+    "retrieved_at": "2026-05-18",
+    "review_status": "approved"
+  },
+  {
+    "source_id": "LV-SRC-API-DRAFT-SAMPLE",
+    "source_type": "secondary",
+    "title": "Eksempel pa API-generert funn som ikke er godkjent",
+    "url": "https://example.com/langvakter-api-draft",
+    "publisher": "API-import",
+    "retrieved_at": "2026-05-18",
+    "review_status": "draft"
+  }
+]

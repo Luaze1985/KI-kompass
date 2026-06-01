@@ -1,0 +1,41 @@
+# BESLUTNINGSLOP
+
+## trigger
+- behov for anbefaling, prioritering eller beslutningsnotat
+
+## eier
+- dirigenten starter
+- den virtuelle stabssjefen eier syntesen
+
+## maal
+- levere et kort, sporbar og handlingsrettet beslutningsgrunnlag
+
+## faser
+
+1. Avgrensning
+   - hva skal besluttes, av hvem, og innen hvilken tid
+2. Perspektivarbeid
+   - relevante linser analyserer saken
+3. Operativ kobling
+   - Gruppe L vurderer gjennomforing, reversering og kapasitet
+4. Domeneavklaring
+   - HR-tvillingen brukes dersom saken ligger i HR-domene
+5. Syntese
+   - stabssjef skriver anbefaling med ansvar og neste steg
+
+## gate for neste fase
+- anbefaling, usikkerhet, ansvar og verifikasjonsbehov er tydelig formulert
+
+## hva som er forskning
+- ekstern innhenting som trengs for a fylle kunnskapshull
+
+## hva som er prototype
+- nye mater a strukturere beslutningsnotat eller agentsekvenser
+
+## hva som er produksjon
+- ferdige beslutningsnotat og prioriteringer som er lokalt kvalitetssikret
+
+## lokal verifikasjon
+- bekreft riktig beslutningseier
+- sjekk at anbefalingen ikke overstyrer faglige eller juridiske grenser
+- sjekk at hoyrisiko-sporsmal er verifisert lokalt

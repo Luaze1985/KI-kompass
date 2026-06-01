@@ -1,0 +1,16 @@
+skill_id,name,category,description,ks_ref,nav_ref,arbeidstilsynet_ref,udir_ref
+SK-01,arbeidsrett_og_saksbehandling,juridisk_og_prosess,anvende arbeidsrett og sakslogikk uten a blande rad og vedtak,,,,
+SK-02,rekrutteringsdesign_og_kvalifikasjonsprinsipp,rekruttering,bygge kravprofil utlysning og kandidatvurdering med sporbar begrunnelse,https://www.ks.no/fagomrader/arbeidsgiverpolitikk/inkluderende-arbeidsliv-ia/unntak-fra-kvalifikasjonsprinsippet/,,,
+SK-03,kompetanseplanlegging_og_portefoljestyring,kompetanse,koble behov tiltak og prioritering i samme portefoljebilde,https://www.ks.no/fagomrader/arbeidsgiverpolitikk/kompetanse-og-rekruttering/verktoy---strategisk-kompetanseplanlegging,,,
+SK-04,laerlingforvaltning_og_fagopplaering,opplaering,koordinere laerlinglop kontrakter oppfolging og kontakt mot fylkeskommune,,,,https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/larling/
+SK-05,systematisk_hms_og_internkontroll,HMS,koble risiko tiltak og lederoppfolging i et tydelig HMS-spor,,,https://www.arbeidstilsynet.no/hms/internkontroll/,
+SK-06,ia_og_sykefravaersoppfolging,IA,veilede i oppfolgingsplan dialogmote og tilrettelegging med riktig rollefordeling,,https://www.nav.no/arbeidsgiver/oppfolging-sykmeldte,,
+SK-07,forhandling_og_partssamarbeid,arbeidsgiverpolitikk,handtere forhandling og medvirkning i samsvar med avtaleverk,,,,
+SK-08,klarsprak_og_mottakertilpasning,kommunikasjon,skrive korte tydelige og mottakertilpassede leveranser,,,,
+SK-09,dataforstaelse_og_hr_kpi,analyse,bruke styringsdata og indikatorer til prioritering og forbedring,https://www.ks.no/fagomrader/arbeidsgiverpolitikk/kompetanse-og-rekruttering/verktoy---strategisk-kompetanseplanlegging,,,
+SK-10,lederstotte_og_organisasjonsutvikling,utvikling,omsette organisatoriske behov til tydelig lederstotte og gjennomforbare tiltak,https://www.ks.no/fagomrader/arbeidsgiverpolitikk/kompetanse-og-rekruttering/verktoy---strategisk-kompetanseplanlegging,,,
+SK-11,personvern_og_informasjonshygiene,kontroll,sikre riktig handtering av personopplysninger og dokumentflyt,,,,
+SK-12,digital_systembruk_og_dokumentasjon,drift,bruke HR-systemer kvalitetssystem og arkivspor riktig,,,,
+SK-13,intervjumetodikk_og_kandidatopplevelse,rekruttering,gjennomfore strukturert intervju og kandidatoppfolging,https://www.ks.no/fagomrader/arbeidsgiverpolitikk/inkluderende-arbeidsliv-ia/unntak-fra-kvalifikasjonsprinsippet/,,,
+SK-14,onboarding_og_laeringsdesign,opplaering,strukturere onboarding og opplaering i tydelige lop med malgruppe og oppfolging,,,,https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/larling/
+SK-15,endringsledelse_og_medvirkning,endring,lede eller stotte endringslop med tydelig medvirkning og handover,https://www.ks.no/fagomrader/arbeidsgiverpolitikk/kompetanse-og-rekruttering/verktoy---strategisk-kompetanseplanlegging,,,

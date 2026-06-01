@@ -1,0 +1,85 @@
+# FASEGATE_SJEKKLISTER
+
+## Formaal
+
+Disse sjekklistene brukes for a avgjore om et lop kan ga videre fra forskning til prototype, fra prototype til pilot, og fra pilot til produksjon.
+
+## Felles hardkrav
+
+- beslutningsrett er eksplisitt pekt ut
+- forskning, prototype og produksjon holdes tydelig adskilt
+- handover har eier, input og output
+- lokal verifikasjon er synlig, ikke utsatt til senere
+- usikkerhet er markert, ikke skjult
+
+## Gate 1: forskning -> prototype
+
+### Maa vaere sant
+
+- problemet er avgrenset nok til a testes
+- det finnes et tydelig laeringsmaal
+- relevante kilder er identifisert
+- det er klart hva som bare er hypotese
+
+### Maa ikke vaere sant
+
+- noen omtaler dette som ferdig leveranse
+- beslutningsansvar er uklart
+- sensitivt eller hoyrisiko innhold blandes inn uten eier
+
+## Gate 2: prototype -> pilot
+
+### Maa vaere sant
+
+- prototypen har vist konkret verdi i minst ett testscenario
+- begrensninger og svakheter er eksplisitt dokumentert
+- domeneeier er kjent
+- lokal kontekst og klientkapabilitet er vurdert
+
+### Maa ikke vaere sant
+
+- MVP behandles som produksjonslofte
+- gjennomforingsansvar mangler
+- plattformlogikk brukes som detaljstyring av lokal praksis
+
+## Gate 3: pilot -> produksjon
+
+### Maa vaere sant
+
+- lokal verifikasjon er gjennomfort
+- relevante prosesseiere bekrefter at oppsettet er brukbart
+- svarformat, mal og handover fungerer i praksis
+- hoyrisiko sporsmal har tydelig eskaleringsspor
+- det er klart hvem som vedlikeholder innholdet
+
+### Maa ikke vaere sant
+
+- pilot bygger pa usjekkede sentrale antakelser
+- det finnes parallelle sannhetskilder for samme funksjon
+- brukerne ma gjette hva som er forskning og hva som er produksjon
+
+## Gate 4: produksjon -> revisjon
+
+### Maa utlose revisjon
+
+- lokal praksis har endret seg
+- prosesseier er endret
+- malene skaper friksjon eller feil handover
+- guardrails brytes eller omgas
+- brukerne begynner a lage egne parallelle filer
+- kildevokteren finner drift mellom master og kodetabell
+- evalrevisoren finner red flags som blokkerer trygg viderebruk
+
+### Revisjonsregel i v1
+
+- revisjonsagentene skal foresla og eskalere, ikke patch direkte
+- revisjon skal ende i tydelig eier, prioritert forbedringsliste og anbefalt oppdragsinngang
+
+## Minimal godkjenningslogg
+
+- dato:
+- gate:
+- vurdert av:
+- beslutning:
+- hva gjenstar:
+- neste revisjonspunkt:

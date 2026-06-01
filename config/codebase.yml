@@ -1,0 +1,15 @@
+{
+  "selected_codebase_profile": "typescript_app",
+  "repo_shape": "single_app_workspace",
+  "primary_language": "TypeScript",
+  "framework": "local_webapp_or_simple_typescript_prototype_candidate",
+  "test_command": "not_selected_yet",
+  "run_command": "not_selected_yet",
+  "deploy_surface": "not_selected_yet",
+  "status": "candidate_not_bootstrapped",
+  "notes": [
+    "Dette låser ikke framework før bygging.",
+    "Claude-grillingen lukket MVP-format til lokal webapp/prototype.",
+    "typescript_app er fortsatt kandidat, men enklere prototype bør vurderes før framework låses."
+  ]
+}

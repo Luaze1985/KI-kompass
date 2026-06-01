@@ -1,0 +1,43 @@
+metadata:
+  id: hr_systems
+  version: 1.0
+  status: derived_from_markdown_master
+  master_ref: 10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+
+systems:
+  - system_id: S-01
+    name: Styringsportalen_eller_tilsvarende
+    purpose: virksomhetsstyring_og_noekkeltall
+    local_status: maa_verifiseres_lokalt
+  - system_id: S-02
+    name: ERP_X_eller_tilsvarende
+    purpose: loenn_fravaer_personaldata
+    local_status: maa_verifiseres_lokalt
+  - system_id: S-03
+    name: EQS_eller_tilsvarende
+    purpose: kvalitetssystem_avvik_hms_prosedyrer
+    local_status: maa_verifiseres_lokalt
+  - system_id: S-04
+    name: P360_eller_tilsvarende
+    purpose: sak_og_arkiv
+    local_status: maa_verifiseres_lokalt
+  - system_id: S-05
+    name: ACOS_Webcruiter_eller_tilsvarende
+    purpose: rekrutteringsplattform
+    local_status: maa_verifiseres_lokalt
+  - system_id: S-06
+    name: KS_Kunnskap_eller_laringsplattform
+    purpose: kurs_og_kompetanseplattform
+    local_status: maa_verifiseres_lokalt
+  - system_id: S-07
+    name: Dossier_eller_kompetansesystem
+    purpose: kompetansestyring
+    local_status: maa_verifiseres_lokalt
+  - system_id: S-08
+    name: OLKWeb_eller_tilsvarende
+    purpose: laerlingeoppfolging
+    local_status: maa_verifiseres_lokalt
+  - system_id: S-09
+    name: NAV_Dine_sykmeldte_eller_tilsvarende
+    purpose: sykefravaersoppfolging_og_dialogmoter
+    local_status: maa_verifiseres_lokalt

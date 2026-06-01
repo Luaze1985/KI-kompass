@@ -1,0 +1,27 @@
+# KANDIDATVURDERING_OG_INTERVJUGUIDE TEMPLATE
+
+Status: prototype-mal v1
+
+## Rolle og kravprofil
+
+- role_id:
+- rolle:
+- ansettende_leder:
+
+## Vurderingskriterier
+
+- krav som ma oppfylles:
+- styrkende tillegg:
+- forhold som ma verifiseres i referanse eller case:
+
+## Intervjuguide
+
+1. [sporsmal koblet til ansvar]
+2. [sporsmal koblet til skill]
+3. [sporsmal koblet til samarbeid eller handover]
+
+## Beslutningsspor
+
+- begrunnelse for valg:
+- begrunnelse for ikke-valg:
+- lokal_verifikasjon:

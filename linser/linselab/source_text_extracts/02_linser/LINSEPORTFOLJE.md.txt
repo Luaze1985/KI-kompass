@@ -1,0 +1,84 @@
+# LINSEPORTFOLJE
+
+## Formaal
+
+Denne filen skiller mellom:
+
+- linser som er felles plattformkapabilitet
+- linser som ofte brukes i stabsdomener
+- linser som oftere aktiveres i operative fagdomener
+- linser som bare skal instansieres senere
+
+## Hovedregel
+
+En linse er ikke det samme som et domene.
+
+- en linse er et perspektiv eller en analysekapabilitet
+- et domene er et fagomrade med roller, prosesser, guardrails og eierskap
+
+Derfor skal ikke alle linser "bo i stab". De fleste skal bo i plattformen og aktiveres der de trengs.
+
+## 1. Felles kjernelinser
+
+Disse er plattformlinser som kan brukes pa tvers av stab og linje:
+
+- gruppe A: systemforstaelse og helhet
+- gruppe B: verdier, etikk og legitimitet
+- gruppe G: kunnskap og analyse
+- gruppe K: syntese og beslutning
+- gruppe L: operasjonalisering
+
+Disse horer hjemme i plattformen, ikke i ett enkelt domene.
+
+## 2. Stabsnaere linser
+
+Disse brukes ofte i stabsdomener, men eies fortsatt av plattformen:
+
+- gruppe D: juss, risiko og kontroll
+- deler av gruppe F: endring og gjennomforing
+- deler av gruppe H: kommunikasjon og offentlighet
+- deler av gruppe I: teknologi og design
+
+Eksempel:
+
+- `D1 Juristen` er en felles linse
+- `HR-jurist` er en domenerolle i HR
+- en senere juridisk tvilling i kommuneadvokatsporet vil vaere et eget domene, ikke samme ting som linsen `D1`
+
+## 3. Operative domenelinser
+
+Noen linser blir viktigere i fagdomener utenfor stab, for eksempel:
+
+- brukerperspektiv
+- forstelinje- og driftsrealisme
+- tjenesteflyt
+- lokal kapasitet og friksjon
+
+Disse skal ikke presses inn i stab bare fordi de finnes i biblioteket.
+
+## 4. Instansiering senere
+
+En linse skal bare instansieres i et nytt domene nar:
+
+- domenet har tydelig eier
+- det finnes faktiske prosesser a koble den til
+- det er behov for egne guardrails eller outputkrav
+- lokal verifikasjon er planlagt
+
+Hvis ikke, blir linsen vaerende som generell plattformkapabilitet.
+
+## 5. Rollelag utenfor kommunestrukturen
+
+Noen linser er verken kommunedomener, stabsomrader eller faste kommunefagroller. De skal likevel ha en tydelig plass i arkitekturen.
+
+- disse samles i `02_linser/LINSEKARTLAG_IKKE_KOMMUNALE_ROLLER.md`
+- de brukes som aktive rolleperspektiver i oppdrag, ikke som bokser i organisasjonskartet
+- typiske eksempler er systemroller, etiske roller, forskerroller, utfordrerroller og operasjonaliseringsroller
+
+## Praktisk konsekvens
+
+- `02_linser` er biblioteket for hele systemet
+- `01_organisasjonsmodell` er der et konkret domene faktisk bygges
+- nye domener utenfor HR skal ikke starte med a kopiere hele biblioteket
+- de skal hente inn bare relevante linser og knytte dem til prosesser og roller
+- ikke-kommunale linser med tydelig rolle skal hentes fra eget kartlag, ikke presses inn i kommuneportefoljen

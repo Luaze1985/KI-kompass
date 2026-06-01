@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentForge</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li><strong>AgentForge</strong></li>
+            </ul>
+            <ul>
+                <li><a href="#extract" class="nav-link" data-tab="extract">Extract</a></li>
+                <li><a href="#forge" class="nav-link" data-tab="forge">Forge</a></li>
+                <li><a href="#batch" class="nav-link" data-tab="batch">Batch</a></li>
+                <li><a href="#culture" class="nav-link" data-tab="culture">Culture</a></li>
+                <li><a href="#tools" class="nav-link" data-tab="tools">Agent Tools</a></li>
+                <li><a href="#settings" class="nav-link" data-tab="settings">Settings</a></li>
+                <li><button id="theme-toggle" class="outline secondary theme-toggle-btn" title="Toggle dark mode">&#9789;</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- ===== EXTRACT TAB ===== -->
+        <section id="tab-extract" class="tab-content">
+            <h2>Extract Skills</h2>
+            <p>Upload a job description to extract skills, role info, and personality traits.</p>
+            <form id="extract-form">
+                <label>Job Description File
+                    <input type="file" name="file" accept=".txt,.md,.pdf,.docx" required>
+                </label>
+                <label>Model
+                    <select name="model">
+                        <optgroup label="Anthropic">
+                            <option value="claude-sonnet-4-20250514" selected>Claude Sonnet 4</option>
+                            <option value="claude-haiku-4-5-20251001">Claude Haiku 4.5</option>
+                        </optgroup>
+                        <optgroup label="OpenAI">
+                            <option value="gpt-4o">GPT-4o</option>
+                            <option value="gpt-4o-mini">GPT-4o Mini</option>
+                        </optgroup>
+                    </select>
+                </label>
+                <details>
+                    <summary>Salary Range (optional)</summary>
+                    <div class="grid">
+                        <label>Min Annual Salary ($)
+                            <input type="number" name="salary_min" placeholder="e.g. 80000" min="0" step="1000">
+                        </label>
+                        <label>Max Annual Salary ($)
+                            <input type="number" name="salary_max" placeholder="e.g. 120000" min="0" step="1000">
+                        </label>
+                    </div>
+                    <small>Provide a salary range to see an estimated agent value. If the JD includes salary, it will be extracted automatically.</small>
+                </details>
+                <button type="submit" id="extract-btn">Extract Skills</button>
+            </form>
+            <div id="extract-results" class="results-area" hidden></div>
+            <div id="extract-empty" class="empty-state">
+                <div class="empty-state-icon">&#128270;</div>
+                <div class="empty-state-title">No extraction yet</div>
+                <div class="empty-state-text">Upload a job description file above to extract skills, role information, and personality traits.</div>
+            </div>
+        </section>
+
+        <!-- ===== FORGE TAB ===== -->
+        <section id="tab-forge" class="tab-content" hidden>
+            <div class="forge-hero">
+                <h2>Forge a Claude Code Skill</h2>
+                <p class="forge-subtitle">Upload a job description &rarr; get a ready-to-use <code>SKILL.md</code> for Claude Code</p>
+            </div>
+
+            <!-- What you get -->
+            <div class="forge-outcome">
+                <div class="outcome-card" title="A markdown file with YAML frontmatter containing the agent's identity, triggers, competencies, and workflows">
+                    <div class="outcome-icon">&#128196;</div>
+                    <div class="outcome-label">SKILL.md</div>
+                    <div class="outcome-desc">Claude Code skill with YAML frontmatter, personality, competencies, and workflows</div>
+                </div>
+                <div class="outcome-arrow">&rarr;</div>
+                <div class="outcome-card" title="The Claude Code skills directory in your project. Claude auto-invokes skills based on their description keywords.">
+                    <div class="outcome-icon">&#128193;</div>
+                    <div class="outcome-label">.claude/skills/</div>
+                    <div class="outcome-desc">Drop the file in and Claude instantly gains the role's expertise</div>
+                </div>
+            </div>
+
+            <!-- Wizard steps -->
+            <div class="forge-wizard">
+                <!-- Step indicators -->
+                <div class="wizard-steps">
+                    <div class="wizard-step active" data-step="1">
+                        <span class="wizard-step-num">1</span>
+                        <span class="wizard-step-label">Upload</span>
+                    </div>
+                    <div class="wizard-step-connector"></div>
+                    <div class="wizard-step" data-step="2">
+                        <span class="wizard-step-num">2</span>
+                        <span class="wizard-step-label">Configure</span>
+                    </div>
+                    <div class="wizard-step-connector"></div>
+                    <div class="wizard-step" data-step="3">
+                        <span class="wizard-step-num">3</span>
+                        <span class="wizard-step-label">Forge</span>
+                    </div>
+                    <div class="wizard-step-connector"></div>
+                    <div class="wizard-step" data-step="4">
+                        <span class="wizard-step-num">4</span>
+                        <span class="wizard-step-label">Download</span>
+                    </div>
+                </div>
+
+                <form id="forge-form">
+                    <!-- Step 1: Upload -->
+                    <div class="wizard-panel" id="forge-step-1">
+                        <h3>Upload Job Description</h3>
+                        <p>Supported formats: .txt, .md, .pdf, .docx</p>
+                        <div class="upload-zone" id="forge-dropzone">
+                            <div class="upload-zone-icon">&#128206;</div>
+                            <div class="upload-zone-text">Drag &amp; drop a file here</div>
+                            <div class="upload-zone-browse">or <span class="upload-zone-browse-link">browse to upload</span></div>
+                            <input type="file" name="file" accept=".txt,.md,.pdf,.docx" required id="forge-file-input">
+                            <div class="upload-zone-filename" id="forge-filename" hidden></div>
+                        </div>
+                        <div class="wizard-nav">
+                            <span></span>
+                            <button type="button" class="wizard-next-btn" id="forge-next-1" disabled>Next: Configure &rarr;</button>
+                        </div>
+                        <div class="forge-import-divider">
+                            <span>or</span>
+                        </div>
+                        <div class="forge-import-section">
+                            <h4>Import Existing Identity</h4>
+                            <p>Have a PersonaNexus identity YAML? Import it to refine and re-export.</p>
+                            <div class="forge-import-row">
+                                <input type="file" accept=".yaml,.yml" id="forge-import-file" hidden>
+                                <button type="button" class="forge-import-btn secondary outline" id="forge-import-btn">Import Identity YAML</button>
+                                <span class="forge-import-filename" id="forge-import-filename"></span>
+                            </div>
+                            <div id="forge-import-status"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Configure -->
+                    <div class="wizard-panel" id="forge-step-2" hidden>
+                        <h3>Configure Pipeline</h3>
+                        <div class="config-grid">
+                            <div class="config-card">
+                                <label class="config-label" title="Controls which pipeline stages run. Default includes culture mapping and gap analysis.">Pipeline Mode <span class="info-icon" aria-label="Controls which stages run">&#9432;</span></label>
+                                <select name="mode">
+                                    <option value="default" selected>Default &mdash; full analysis</option>
+                                    <option value="quick">Quick &mdash; skip culture &amp; gap analysis</option>
+                                    <option value="deep">Deep &mdash; per-skill scoring</option>
+                                </select>
+                                <small class="config-hint">Default is recommended for most use cases</small>
+                            </div>
+                            <div class="config-card">
+                                <label class="config-label" title="The LLM used for extraction and generation. Claude Sonnet 4 produces the most detailed skills.">Model <span class="info-icon" aria-label="Which LLM to use">&#9432;</span></label>
+                                <select name="model">
+                                    <optgroup label="Anthropic">
+                                        <option value="claude-sonnet-4-20250514" selected>Claude Sonnet 4</option>
+                                        <option value="claude-haiku-4-5-20251001">Claude Haiku 4.5</option>
+                                    </optgroup>
+                                    <optgroup label="OpenAI">
+                                        <option value="gpt-4o">GPT-4o</option>
+                                        <option value="gpt-4o-mini">GPT-4o Mini</option>
+                                    </optgroup>
+                                </select>
+                                <small class="config-hint">Claude Sonnet 4 gives the best results</small>
+                            </div>
+                            <div class="config-card">
+                                <label class="config-label" title="Choose the output format for the generated skill. Claude Code uses YAML frontmatter with personality and methodology. ClawHub uses a concise, action-oriented format with runtime metadata for the OpenClaw registry.">Output Format <span class="info-icon" aria-label="Skill output target">&#9432;</span></label>
+                                <select name="output_format">
+                                    <option value="claude_code" selected>Claude Code Skill</option>
+                                    <option value="clawhub">ClawHub Skill (OpenClaw)</option>
+                                    <option value="personanexus">PersonaNexus Deployment Package</option>
+                                    <option value="both">Both Formats</option>
+                                </select>
+                                <small class="config-hint">PersonaNexus packages include identity YAML, compiled prompt, manifest, README, and optional skills</small>
+                            </div>
+                        </div>
+
+                        <!-- Personality Sliders -->
+                        <div class="personality-section">
+                            <div class="personality-header">
+                                <h4>Personality <span class="info-icon" title="Shape the agent's communication style. The pipeline will extract suggested values from the JD &mdash; these sliders let you override them. Leave untouched to use auto-detected values.">&#9432;</span></h4>
+                                <button type="button" class="secondary outline personality-reset-btn" id="trait-reset-btn" title="Reset all sliders to auto-detect">Reset</button>
+                            </div>
+                            <div class="trait-sliders" id="trait-sliders">
+                                <!-- Populated by JS -->
+                            </div>
+                            <input type="hidden" name="trait_overrides" id="trait-overrides-input" value="">
+                        </div>
+
+                        <!-- Anonymize -->
+                        <div class="config-anonymize">
+                            <label class="config-label-inline" title="Replace company names, people, and addresses with generic equivalents. Useful for sharing skills without exposing the source organization.">
+                                <input type="checkbox" name="anonymize" value="true">
+                                Anonymize company names <span class="info-icon">&#9432;</span>
+                            </label>
+                            <small class="config-hint">Replaces company names, people, and addresses with generic equivalents (e.g. &ldquo;Mastercard&rdquo; &rarr; &ldquo;a large fintech company&rdquo;)</small>
+                        </div>
+
+                        <!-- Enhance Quality -->
+                        <details class="config-enhance">
+                            <summary>Enhance Skill Quality <span class="info-icon" title="Providing real-world examples and frameworks dramatically improves the generated skill. Without these, the pipeline infers methodology from the JD alone &mdash; which produces generic workflows instead of expert decision-making rules.">&#9432;</span></summary>
+                            <div class="enhance-quality-section">
+                                <div class="enhance-field">
+                                    <label class="config-label" title="Paste a real work sample, describe how you actually approach a typical task, or share a before/after example. This grounds the skill in actual practice rather than JD abstractions.">Real-World Examples <span class="info-icon">&#9432;</span></label>
+                                    <textarea name="user_examples" rows="4" placeholder="e.g. When I evaluate a new codebase, I start by checking open issues sorted by reactions, then cross-reference with release notes to see what's already addressed. I categorize gaps by severity and effort before recommending changes..."></textarea>
+                                    <small class="config-hint">How do you actually do this job? Describe your real workflow, paste a work sample, or share decision criteria you use</small>
+                                </div>
+                                <div class="enhance-field">
+                                    <label class="config-label" title="List the specific frameworks, templates, checklists, or methodologies used in this role. These become concrete output templates in the generated skill.">Frameworks &amp; Methodologies <span class="info-icon">&#9432;</span></label>
+                                    <textarea name="user_frameworks" rows="4" placeholder="e.g. We use Architecture Decision Records (ADRs) for design choices, RICE scoring for prioritization, and a custom code review checklist that checks for security, performance, maintainability, and test coverage..."></textarea>
+                                    <small class="config-hint">What templates, checklists, or frameworks does this role use? These become output scaffolds in the skill</small>
+                                </div>
+                                <div class="enhance-notice">
+                                    <small>&#9432; Without examples and frameworks, the skill builder infers methodology from the job description alone. The result will have generic workflows instead of expert decision-making rules. Providing even brief inputs here significantly improves quality.</small>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="config-advanced">
+                            <summary>Advanced Options</summary>
+                            <div class="config-grid">
+                                <div class="config-card">
+                                    <label class="config-label" title="A YAML file defining organizational values and communication norms. Applies trait deltas on top of extracted personality.">Culture File <span class="info-icon">&#9432;</span></label>
+                                    <input type="file" name="culture_file" accept=".yaml,.yml">
+                                    <small class="config-hint">Optional YAML culture profile to shape personality</small>
+                                </div>
+                                <div class="config-card">
+                                    <label class="config-label" title="Used to calculate estimated annual value and ROI of the AI agent versus the human role cost.">Salary Range <span class="info-icon">&#9432;</span></label>
+                                    <div class="salary-row">
+                                        <input type="number" name="salary_min" placeholder="Min $" min="0" step="1000">
+                                        <span class="salary-dash">&ndash;</span>
+                                        <input type="number" name="salary_max" placeholder="Max $" min="0" step="1000">
+                                    </div>
+                                    <small class="config-hint">For agent value estimation (auto-detected from JD if present)</small>
+                                </div>
+                            </div>
+                        </details>
+                        <div class="wizard-nav">
+                            <button type="button" class="wizard-back-btn" id="forge-back-2">&larr; Back</button>
+                            <button type="button" class="wizard-next-btn" id="forge-next-2" title="Start the forge pipeline with current settings">Forge It &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Progress -->
+                    <div class="wizard-panel" id="forge-step-3" hidden>
+                        <h3>Forging Your Skill...</h3>
+                        <div class="forge-progress-track">
+                            <div id="forge-stages" class="forge-stages-list"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Results -->
+                    <div class="wizard-panel" id="forge-step-4" hidden>
+                        <div id="forge-results" class="results-area"></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- ===== BATCH TAB ===== -->
+        <section id="tab-batch" class="tab-content" hidden>
+            <h2>Batch Process</h2>
+            <p>Process multiple job descriptions at once.</p>
+            <form id="batch-form">
+                <label>Job Description Files
+                    <input type="file" name="files" accept=".txt,.md,.pdf,.docx" multiple required>
+                </label>
+                <div class="grid">
+                    <label>Model
+                        <select name="model">
+                            <optgroup label="Anthropic">
+                                <option value="claude-sonnet-4-20250514" selected>Claude Sonnet 4</option>
+                                <option value="claude-haiku-4-5-20251001">Claude Haiku 4.5</option>
+                            </optgroup>
+                            <optgroup label="OpenAI">
+                                <option value="gpt-4o">GPT-4o</option>
+                                <option value="gpt-4o-mini">GPT-4o Mini</option>
+                            </optgroup>
+                        </select>
+                    </label>
+                    <label>Parallel Workers
+                        <input type="number" name="parallel" value="1" min="1" max="8">
+                    </label>
+                </div>
+                <label>Culture File (optional)
+                    <input type="file" name="culture_file" accept=".yaml,.yml">
+                </label>
+                <button type="submit" id="batch-btn">Start Batch</button>
+            </form>
+            <div id="batch-progress" class="progress-area" hidden>
+                <h3>Batch Progress</h3>
+                <progress id="batch-bar" value="0" max="100"></progress>
+                <p id="batch-status"></p>
+            </div>
+            <div id="batch-results" class="results-area" hidden></div>
+            <div id="batch-empty" class="empty-state">
+                <div class="empty-state-icon">&#128218;</div>
+                <div class="empty-state-title">No batch jobs</div>
+                <div class="empty-state-text">Select multiple job description files to process them all at once in parallel.</div>
+            </div>
+        </section>
+
+        <!-- ===== CULTURE TAB ===== -->
+        <section id="tab-culture" class="tab-content" hidden>
+            <h2>Culture Profiles</h2>
+
+            <h3>Built-in Templates</h3>
+            <div id="culture-templates" class="card-grid"></div>
+
+            <hr>
+
+            <h3>Parse Culture File</h3>
+            <form id="culture-parse-form">
+                <div class="grid">
+                    <label>Culture File (.yaml or .md)
+                        <input type="file" name="file" accept=".yaml,.yml,.md" required>
+                    </label>
+                    <label>Model (for .md parsing)
+                        <select name="model">
+                            <optgroup label="Anthropic">
+                                <option value="claude-sonnet-4-20250514" selected>Claude Sonnet 4</option>
+                                <option value="claude-haiku-4-5-20251001">Claude Haiku 4.5</option>
+                            </optgroup>
+                            <optgroup label="OpenAI">
+                                <option value="gpt-4o">GPT-4o</option>
+                                <option value="gpt-4o-mini">GPT-4o Mini</option>
+                            </optgroup>
+                        </select>
+                    </label>
+                </div>
+                <button type="submit">Parse Culture</button>
+            </form>
+            <div id="culture-parse-results" class="results-area" hidden></div>
+
+            <hr>
+
+            <h3>Convert to Mixin</h3>
+            <form id="culture-mixin-form">
+                <label>CultureProfile YAML
+                    <input type="file" name="file" accept=".yaml,.yml" required>
+                </label>
+                <button type="submit">Convert to Mixin</button>
+            </form>
+            <div id="culture-mixin-results" class="results-area" hidden></div>
+        </section>
+
+        <!-- ===== AGENT TOOLS TAB ===== -->
+        <section id="tab-tools" class="tab-content" hidden>
+            <h2>Agent Tools</h2>
+            <p>View and configure which tools, MCP servers, and workflows your agent needs.</p>
+
+            <!-- Job selector -->
+            <div class="tools-job-selector">
+                <label>Select a completed forge job
+                    <select id="tools-job-select">
+                        <option value="">-- Select a forge job --</option>
+                    </select>
+                </label>
+                <div class="tools-job-actions">
+                    <button type="button" id="tools-generate-btn" class="secondary" disabled>Generate Tool Profile</button>
+                    <button type="button" id="tools-refresh-btn" class="outline secondary">Refresh Jobs</button>
+                </div>
+            </div>
+
+            <!-- Results area -->
+            <div id="tools-results" class="results-area" hidden>
+                <!-- Tool inventory -->
+                <div id="tools-inventory" class="tools-section"></div>
+
+                <!-- Usage patterns / workflows -->
+                <div id="tools-patterns" class="tools-section"></div>
+
+                <!-- MCP config export -->
+                <div id="tools-mcp-config" class="tools-section"></div>
+            </div>
+
+            <div id="tools-empty" class="empty-state">
+                <div class="empty-state-icon">&#128295;</div>
+                <div class="empty-state-title">No tool profile yet</div>
+                <div class="empty-state-text">Complete a forge job first, then select it here to generate or view the agent's tool profile.</div>
+            </div>
+        </section>
+
+        <!-- ===== SETTINGS TAB ===== -->
+        <section id="tab-settings" class="tab-content" hidden>
+            <h2>Settings</h2>
+            <form id="settings-form">
+                <label>API Key
+                    <input type="password" name="api_key" placeholder="sk-ant-... or sk-...">
+                </label>
+                <button type="button" id="validate-key-btn" class="secondary outline">Validate Key</button>
+                <span id="key-status"></span>
+
+                <label>Default Model
+                    <select name="default_model">
+                        <optgroup label="Anthropic">
+                            <option value="claude-sonnet-4-20250514">Claude Sonnet 4</option>
+                            <option value="claude-haiku-4-5-20251001">Claude Haiku 4.5</option>
+                        </optgroup>
+                        <optgroup label="OpenAI">
+                            <option value="gpt-4o">GPT-4o</option>
+                            <option value="gpt-4o-mini">GPT-4o Mini</option>
+                        </optgroup>
+                    </select>
+                </label>
+                <label>Default Output Directory
+                    <input type="text" name="output_dir" value=".">
+                </label>
+                <label>Default Batch Parallel Workers
+                    <input type="number" name="batch_parallel" value="1" min="1" max="8">
+                </label>
+                <button type="submit">Save Settings</button>
+            </form>
+            <div id="settings-status"></div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <small>AgentForge &mdash; Transform job descriptions into AI agent blueprints</small>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

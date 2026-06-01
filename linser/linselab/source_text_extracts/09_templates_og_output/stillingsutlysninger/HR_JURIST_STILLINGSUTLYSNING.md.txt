@@ -1,0 +1,55 @@
+# HR_JURIST STILLINGSUTLYSNING
+
+Status: avledet produksjonsartefakt v1
+
+## Metadata
+
+- role_id: `R-06`
+- unit_id: `U-02`
+- styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+- local_status: krever_lokal_tilpasning_for_publisering
+
+## Kort annonsetekst
+
+Vi soker en HR-jurist som kan sikre juridisk kvalitet i personalsaker, omstilling og arbeidsgiverutovelse. Rollen krever hoy faglig trygghet, godt prosessblikk og evne til a omsette juss til handlingsrettet stotte i en stor organisasjon.
+
+## Formaal med stillingen
+
+Sikre at kommunen handterer komplekse personalsaker og omstillingslop med riktig juridisk kvalitet, tydelig rolleavklaring og gjennomforbar prosess.
+
+## Hovedansvar
+
+- kvalitetssikre juridiske spor i personalsaker og omstillingsprosesser
+- avgrense hva som er HR-rad, juridisk vurdering og formelt vedtak
+- bidra med tydelige risikobilder og kontrollpunkter til ledere og HR
+- samarbeide med kommuneadvokat ved prinsipielle eller tvistesensitive saker
+
+## Must-have kvalifikasjoner
+
+- juridisk embetseksamen eller master i rettsvitenskap
+- relevant erfaring med arbeidsrett, forvaltningsrett eller offentlig arbeidsgiverjuss
+- evne til a skrive klart, presist og sporbarhetssikkert
+- god forstaelse for dokumentasjon, personvern og beslutningsprosesser i offentlig sektor
+
+## Onskede tilleggskvalifikasjoner
+
+- erfaring fra kommunal sektor eller annen stor offentlig virksomhet
+- erfaring med droftingsmoter, omstilling eller tvistenare personalsaker
+- erfaring med a veilede ledere og HR-fagmiljo
+
+## System- og arbeidsflate
+
+- sak- og arkivlosning, kvalitetssystem og relevante HR-prosesser
+- tett samarbeid med HR-sjef, avdelingssjef, HR-radgivere og kommuneadvokat
+
+## Forste 12 maneder
+
+- bidra til tydeligere juridisk eierlinje i komplekse saker
+- styrke kvaliteten pa handover og dokumentgrunnlag
+- redusere risiko for prosessfeil i personalsaker og omstillingslop
+
+## Lokal verifikasjon for publisering
+
+- verifiser lokal fullmakt og grense mot kommuneadvokaten
+- verifiser om rollen ogsa skal dekke andre juridiske fagomrader
+- verifiser krav til prosedyreerfaring eller tvistehandtering

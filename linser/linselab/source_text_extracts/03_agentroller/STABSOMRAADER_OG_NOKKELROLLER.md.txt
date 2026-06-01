@@ -1,0 +1,183 @@
+# STABSOMRAADER_OG_NOKKELROLLER
+
+## Formaal
+
+Denne filen velger hvilke nokkelroller som bor med i hvert stabsomrade. Den bygger ikke full rollekatalog for alle, men peker ut det minste settet som gir mening for videre tvillingbygging.
+
+## A. HR og arbeidsgiver
+
+Status: `AKTIV_PILOT`
+
+Nokkelroller:
+
+- HR-sjef
+- avdelingssjef lederstotte og personalsaker
+- avdelingssjef rekruttering og kompetanse
+- HR-jurist
+- forhandlingsradgiver
+- HMS-radgiver
+- HR-radgiver
+- rekrutteringsradgiver
+- kompetanseradgiver
+- e-laeringsradgiver
+- radgiver for leder- og organisasjonsutvikling
+- laerlingkoordinator
+- IA-radgiver
+
+Kanonisk detaljmaster: `01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md`
+
+## B. Strategi, analyse og styring
+
+Status: `AKTIVT_DOMENEOPPSETT_V1`
+
+Nokkelroller:
+
+- okonomidirektor
+- leder for strategi, analyse og styring
+- virksomhetsstyringsansvarlig
+- controller / okonomiradgiver
+- analyseansvarlig
+- portefoljeansvarlig
+- tiltakseier / omradeleder
+
+## C. IT og digitalisering
+
+Status: `AKTIVT_STABSOMRADE_V1`
+
+Nokkelroller:
+
+- digitaliseringssjef eller tilsvarende leder
+- virksomhetsarkitekt
+- system- eller tjenesteeier for felleslosninger
+- prosjekt- og innforingsleder
+- leder for drift og plattform
+- servicedesk- og brukerstotteansvarlig
+- informasjonssikkerhetsansvarlig
+
+Hvorfor disse:
+
+- dette er rollene som binder sammen teknologi, arkitektur, drift, sikkerhet og faktisk tjenesteverdi
+- disse rollene matcher linser om teknologi, design, kvalitet, sikkerhet og operasjonalisering
+
+## D. Politikk og administrasjon
+
+Status: `NESTE_STABSOMRADE`
+
+Nokkelroller:
+
+- leder for politikk og administrasjon
+- leder for politisk- og administrativt sekretariat
+- dokumentsenterleder
+- arkiv- og journalansvarlig
+- innsyns- og offentlighetskompetanse
+- mote- og utvalgssekretariat
+
+Hvorfor disse:
+
+- dette omradet handler om sakslop, journal, innsyn, politisk flyt og administrativ kvalitet
+- rollene gir et klart domene for prosess, kontroll, offentlighet og beslutningsstotte
+
+## E. Lonn
+
+Status: `TIDLIG_SENERE_STABSOMRADE`
+
+Nokkelroller:
+
+- lonnsleder
+- fagradgiver lonn
+- systemforvalter personal- og lonnssystem
+- kvalitets- og etterkontrollrolle
+- avviks- og feilhandaeringsansvarlig
+
+Hvorfor disse:
+
+- nytt personal-, regnskaps- og lonnssystem gjor dette til et viktig, men mer transaksjonsnaert omrade
+- omradet bor bygges nar system- og prosessgrunnlaget er mer stabilt
+
+## F. Anskaffelser
+
+Status: `NESTE_STABSOMRADE`
+
+Nokkelroller:
+
+- anskaffelsesleder
+- kategoriansvarlig
+- kontraktsforvalter
+- radgiver for innovative anskaffelser
+- jurist eller juridisk kobling for anskaffelser
+
+Hvorfor disse:
+
+- anskaffelser er et eget styrings- og gjennomforingsomrade med tydelige lovkrav, kostnadsvirkning og innovasjonspotensial
+
+## G. Forskning og utvikling
+
+Status: `SENERE_STABSOMRADE`
+
+Nokkelroller:
+
+- leder for forskning og utvikling
+- radgiver for ekstern finansiering
+- portefolje- eller programstotte
+- evaluerings- og kunnskapsansvarlig
+- koblingsrolle mot strategi og analyse
+
+## H. Kommuneadvokaten
+
+Status: `SENTRAL_SPESIALFUNKSJON`
+
+Nokkelroller:
+
+- kommuneadvokat
+- fagansvarlig arbeidsrett / forvaltning / anskaffelser der det er relevant
+- prosedyre- og tvistespesialist
+
+## I. HR-organisasjonens randsoner i v1
+
+Disse brukes rundt HR-piloten uten at de blir egne HR-roller eller fullverdige nye domener i denne etappen.
+
+### Kommuneadvokaten
+
+- kommuneadvokat
+- fagansvarlig arbeidsrett eller forvaltningsrett
+- prosedyre- og tvistespesialist
+
+### Lonn og personaladministrasjon
+
+- lonnsleder
+- fagradgiver lonn
+- systemforvalter for personal- og lonnssystem
+- etterkontroll- eller kvalitetsrolle
+
+### Politikk og administrasjon
+
+- leder for politikk og administrasjon
+- politisk og administrativt sekretariat
+- arkiv- og journalansvarlig
+- innsyns- og offentlighetskompetanse
+
+### Anskaffelser og kontraktsoppfolging
+
+- anskaffelsesleder
+- kategoriansvarlig
+- kontraktsforvalter
+- juridisk koblingsrolle
+
+### Personvern, sikkerhet og systemforvaltning
+
+- personvernombud
+- informasjonssikkerhetsansvarlig
+- systemeier eller systemforvalter for HR-losing
+
+### Strategi, analyse og virksomhetsstyring
+
+- leder for strategi, analyse og styring
+- virksomhetsstyringsansvarlig
+- controller eller okonomiradgiver
+- analyseansvarlig
+
+## Styringsregel
+
+- nokkelroller velges ut fra linsebehov og prosessansvar, ikke bare tittel
+- et stabsomrade skal ha fa, tydelige roller i v1
+- detaljroller og historiske varianter kommer senere

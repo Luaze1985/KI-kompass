@@ -1,0 +1,265 @@
+# HR_RANDSONER_OG_LINSEPAKKER
+
+## Formaal
+
+Denne filen bygger et eget randsonelag rundt HR-organisasjonen. Laget brukes nar en HR-sak glir ut av ren HR-faglighet og krever juridisk, administrativ, lonnsmessig, styringsmessig eller systemmessig medspill.
+
+## Hovedregel
+
+- HR og arbeidsgiver er fortsatt aktivt domene
+- randsonene rundt HR bygges ikke som fulle nye domener i denne etappen
+- de bygges som tydelige linsepakker med nokkelroller, triggere og handover-logikk
+- kommuneadvokaten er ikke en del av HR, men en sentral spesialfunksjon som ma kunne aktiveres raskt rundt HR-saker
+
+## Nar randsonelag skal aktiveres
+
+Randsonelag rundt HR skal aktiveres nar minst ett av disse forholdene oppstar:
+
+- saken krysser fra HR-rad til juridisk vurdering eller tvist
+- saken krever lonns- eller systemkontroll utover HRs vanlige mandat
+- saken far politisk, mediemessig eller offentlighetsmessig sensitivitet
+- saken griper inn i anskaffelser, kontrakter eller leverandorforhold
+- saken krever tverrgaende prioritering, analyse eller budsjettmessig konsekvensvurdering
+
+## Pakke 1: Kommuneadvokaten
+
+Status: `AKTIVERES_VED_BEHOV`
+
+Brukes nar:
+
+- personalsaken kan ende i tvist, klage eller prosess
+- det er behov for prinsipiell rettsavklaring
+- arbeidsgiverhandlinger far hoy rettssikkerhets- eller hjemmelsrisiko
+- HR-saken har kobling til anskaffelser, kontrakter eller formelle reaksjoner
+
+Nokkelroller:
+
+- kommuneadvokat
+- fagansvarlig arbeidsrett eller forvaltningsrett
+- prosedyre- og tvistespesialist
+
+Kjernelinser:
+
+- D1 Juristen
+- D2 Risikostyringseksperten
+- B1 Etiske filosof
+- B2 Politisk teoretiker
+- K1 Den virtuelle stabssjefen
+- L6 Maktkartleggeren
+
+Utvides ved behov med:
+
+- D5 Kvalitetsradgiveren
+- H2 Journalisten
+- J1 Kritisk venn
+- L7 Reverseringslinsen
+
+Typisk handover:
+
+- HR-tvillingen eller dirigenten sender `handover_packet` til juridisk spor
+- kommuneadvokatspakken returnerer avgrensning, rettslig risiko, prosesskrav og anbefalt eskalering
+
+## Pakke 2: Lonn og personaladministrasjon
+
+Status: `AKTIVERES_VED_BEHOV`
+
+Brukes nar:
+
+- HR-saken inneholder feil i lonn, tillegg, fravaersgrunnlag eller etterbetaling
+- ny praksis krever kontroll mot personal- og lonnssystem
+- lederstotte eller personalsak far direkte lonns- og registreringskonsekvenser
+
+Nokkelroller:
+
+- lonnsleder
+- fagradgiver lonn
+- systemforvalter for personal- og lonnssystem
+- etterkontroll- eller kvalitetsrolle
+
+Kjernelinser:
+
+- C2 Okonomen
+- D1 Juristen
+- D3 Personvernombudet
+- D5 Kvalitetsradgiveren
+- I1 AI/Teknologi-eksperten
+- G4 Data scientist
+- K1 Den virtuelle stabssjefen
+- L1 Oppgaveatomisten
+- L2 Forstelinjelederen
+
+Utvides ved behov med:
+
+- D6 HMS-radgiveren
+- L7 Reverseringslinsen
+
+Typisk handover:
+
+- HR-tvillingen holder sakseierskap
+- lonnspakken kvalitetssikrer tall, regelanvendelse, registrering og kontrollpunkter
+
+## Pakke 3: Politikk og administrasjon
+
+Status: `AKTIVERES_VED_BEHOV`
+
+Brukes nar:
+
+- arbeidsgiversaker blir politisk sensitive
+- HR-saker krever riktig journal, innsynsforstaelse eller formell saksflyt
+- personalsaker far stor offentlig oppmerksomhet eller prinsipiell betydning
+
+Nokkelroller:
+
+- leder for politikk og administrasjon
+- politisk og administrativt sekretariat
+- arkiv- og journalansvarlig
+- innsyns- og offentlighetskompetanse
+
+Kjernelinser:
+
+- D1 Juristen
+- D5 Kvalitetsradgiveren
+- H1 Kommunikasjonseksperten
+- H2 Journalisten
+- B2 Politisk teoretiker
+- A3 Intergovernance-forvalteren
+- K1 Den virtuelle stabssjefen
+- L1 Oppgaveatomisten
+- L6 Maktkartleggeren
+
+Utvides ved behov med:
+
+- H3 Narrativ-analytikeren
+- J1 Kritisk venn
+
+Typisk handover:
+
+- HR eller stabssjefen ber om formalisering av sakslop, innsynsbilde eller politisk risiko
+- pakken returnerer krav til prosess, offentlighet og mottakerlogikk
+
+## Pakke 4: Anskaffelser og kontraktsoppfolging
+
+Status: `AKTIVERES_VED_BEHOV`
+
+Brukes nar:
+
+- HR-saken berorer HR-systemer, konsulentbruk, rammeavtaler eller leverandorforhold
+- det trengs kontraktsendring, forlengelse eller avklaringer om ansvar
+- kompetanse- eller opplaeringstiltak har anskaffelsesmessig side
+
+Nokkelroller:
+
+- anskaffelsesleder
+- kategoriansvarlig
+- kontraktsforvalter
+- juridisk kobling mot anskaffelser
+
+Kjernelinser:
+
+- D1 Juristen
+- C1 Samfunnsokonomen
+- C2 Okonomen
+- F5 Konsulenten
+- I3 Service designeren
+- D5 Kvalitetsradgiveren
+- K1 Den virtuelle stabssjefen
+- L1 Oppgaveatomisten
+- L6 Maktkartleggeren
+- L7 Reverseringslinsen
+
+Utvides ved behov med:
+
+- D2 Risikostyringseksperten
+- J1 Kritisk venn
+
+Typisk handover:
+
+- HR eller IT utloser pakken nar tiltak krever leverandorendring eller kontraktsstyring
+- pakken returnerer handlingsrom, anskaffelsesrisiko og neste kontrollpunkt
+
+## Pakke 5: Personvern, sikkerhet og systemforvaltning
+
+Status: `AKTIVERES_VED_BEHOV`
+
+Brukes nar:
+
+- HR-saken inneholder sensitive personopplysninger eller nye datakilder
+- det vurderes AI-stotte, automatisering eller ny systembruk i HR
+- tilgangsstyring, logging eller datakvalitet er usikker
+
+Nokkelroller:
+
+- personvernombud
+- informasjonssikkerhetsansvarlig
+- systemeier eller systemforvalter for HR-losing
+
+Kjernelinser:
+
+- D3 Personvernombudet
+- D4 Sikkerhetsradgiveren
+- I1 AI/Teknologi-eksperten
+- I2 Ingenioren
+- D5 Kvalitetsradgiveren
+- G4 Data scientist
+- K1 Den virtuelle stabssjefen
+- L1 Oppgaveatomisten
+- L7 Reverseringslinsen
+
+Utvides ved behov med:
+
+- D2 Risikostyringseksperten
+- H1 Kommunikasjonseksperten
+
+Typisk handover:
+
+- HR-tvillingen eller dirigenten utloser denne pakken for a kontrollere databehandling og systemrisiko
+- pakken returnerer lovlighet, sikkerhetskrav, minstekontroller og om saken ma stoppes
+
+## Pakke 6: Strategi, analyse og virksomhetsstyring
+
+Status: `AKTIVERES_VED_BEHOV`
+
+Brukes nar:
+
+- HR-saken krever budsjettmessig prioritering, portefoljevalg eller effektvurdering
+- sykefravaer, turnover, kompetansegap eller bemanning ma leses pa styringsniva
+- saken krever sammenlikning mellom tiltak, kostnad og forventet gevinst
+
+Nokkelroller:
+
+- leder for strategi, analyse og styring
+- virksomhetsstyringsansvarlig
+- controller eller okonomiradgiver
+- analyseansvarlig
+
+Kjernelinser:
+
+- C1 Samfunnsokonomen
+- C2 Okonomen
+- C4 Livsfase- og kjonnsokonomen
+- G2 Policy analyst
+- G4 Data scientist
+- D2 Risikostyringseksperten
+- K1 Den virtuelle stabssjefen
+- L1 Oppgaveatomisten
+- L5 Tidsarkitekten
+- L6 Maktkartleggeren
+- L7 Reverseringslinsen
+
+Utvides ved behov med:
+
+- A1 Systemteoretikeren
+- H3 Narrativ-analytikeren
+
+Typisk handover:
+
+- HR eller dirigenten ber om konsekvensbilde, prioriteringslogikk eller gevinstvurdering
+- pakken returnerer styringsspor, usikkerhet og mulige beslutningsgater
+
+## Praktisk styringsregel
+
+- randsonelag rundt HR skal brukes som linsepakker, ikke som skjulte nye domener
+- bare de pakkene som faktisk trengs skal aktiveres
+- hoyrisikosaker skal alltid ha `handover_packet` og `decision_trace`
+- juridisk eller systemmessig randsonestotte opphever ikke lokal beslutningsrett
+- kommuneadvokaten skal brukes nar saken krever det, ikke som standard for alle krevende HR-saker

@@ -1,0 +1,114 @@
+# MAALARKITEKTUR
+
+## Tvillingsorganisasjonen som system
+
+Tvillingsorganisasjonen skal vaere et operativt system, ikke bare et innholdsbibliotek. Den skal kombinere:
+
+- robuste styringsfiler
+- et gjenbrukbart linsebibliotek
+- tydelige agentroller med beslutningsrett
+- eksplisitte faseoverganger
+- et domene-tvillinglag
+- arbeidslop for simulering, beslutningsstotte, moter og produksjon
+
+## Lag som ma finnes
+
+### 1. Styringslag
+- definerer formaal, spilleregler, kildehierarki og beslutningsrett
+
+### 2. Organisasjonsmodell
+- beskriver tvillingsorganisasjonen som system
+- definerer hva som er forskning, prototype, pilot og produksjon
+- beskriver HR som forste operative pilotdomene
+
+### 3. Linseplattform
+- indeks over linser, konfliktmatrise, triggere og kjernelinser
+- Gruppe L som operativt koblingslag mellom analyse og drift
+
+### 4. Agentroller og kontrakter
+- dirigent som toppnivaa-ruter
+- virtuell stabssjef som syntese- og beslutningsagent
+- linseagenter for analyse
+- operative agenter for gjennomforing, moter og produksjon
+- HR-tvilling som domeneagent med guardrails
+
+### 5. Arbeidslop
+- simulering
+- beslutningsstotte
+- moter og samhandling
+- produksjon og leveranser
+
+### 6. Kunnskapsbase
+- referanser
+- konsoliderte kilder
+- arkiv for utfaset materiale
+- karantene for slettkandidater
+
+## Roller og agenttyper som trengs
+
+### Dirigenten
+- tar imot oppdrag
+- bestemmer hvilket lop som skal brukes
+- velger relevante linser og agenter
+- har ikke siste beslutningsord i faglig anbefaling
+
+### Den virtuelle stabssjefen
+- samler funn
+- prioriterer
+- skriver beslutningsnotat og neste steg
+- er ikke generell orkestrator
+
+### Linseagenter
+- leverer perspektivspesifikk analyse
+- skal ikke blande roller eller skrive endelig beslutning alene
+
+### Gruppe L-agenter
+- oversetter analyse til gjennomforbar praksis
+- brukes som operativt lag mellom analyse og drift
+
+### HR-tvillingen
+- svarer innenfor avgrenset HR-domene
+- bruker intern modell som sannhetskilde
+- eskalerer ved juss, personopplysninger eller manglende grunnlag
+
+## Hvordan kunnskap, moter, simulering og produksjon henger sammen
+
+1. Kunnskapsbasen gir grunnlag for rolleforstaelse, guardrails og referanser.
+2. Dirigenten velger arbeidslop basert pa oppdragstype.
+3. Linser og HR-tvilling analyserer eller simulerer fra ulike vinkler.
+4. Stabssjefen samler funn til anbefaling eller handlingsgrunnlag.
+5. Mote- og produksjonslop bruker samme kontrakter og fasegater.
+
+## Svar paa de viktigste sporsmalene
+
+### Hva er prosjektets egentlige kjerne?
+- styrt bruk av linser og domene-tvillinger for a skape beslutningsdyktig, sporbar og operativ samhandling
+
+### Hvilke filer er styrende, og hvilke er bare stotte?
+- styrende: Markdown-mastere i `00_styring`, `01_organisasjonsmodell`, `02_linser`, `03_agentroller`, `04_orkestrering`
+- stotte: referansedokumenter i `10_kunnskapsbase/referanser`
+- utfaset: eldre konkurrenter i `90_arkiv`
+
+### Finnes det for mange parallelle sannhetskilder?
+- ja ved start
+- nei som designmaal etter denne ombyggingen
+
+### Er linser bare innholdsbibliotek, eller operative byggesteiner?
+- de er operative byggesteiner, men bare nar de styres av dirigent, kontrakter og fasegater
+
+### Manglet prosjektet tydelige kontrakter mellom dirigent, spesialagenter, moter, simulering og produksjon?
+- ja
+- dette er na lukket med egne styringsdokumenter i `04_orkestrering`, `05_simulering`, `06_beslutningsstotte`, `07_moter` og `08_produksjon`
+
+### Hvilke deler skal sta som robuste kjernedeler?
+- styringslogikk
+- linseindeks
+- kjernelinser
+- Gruppe L
+- agentkontrakter
+- HR-guardrails
+
+### Hvilke deler er eksperimentelle eller kontekstavhengige?
+- tekniske ontologispor
+- spesifikke per-linse-fordypninger i `.docx`
+- utkast til outputformat som ikke ennå er testet i drift

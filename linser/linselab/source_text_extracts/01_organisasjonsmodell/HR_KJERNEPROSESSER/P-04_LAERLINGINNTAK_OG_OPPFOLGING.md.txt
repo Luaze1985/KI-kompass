@@ -1,0 +1,73 @@
+# P-04 LAERLINGINNTAK OG OPPFOLGING
+
+## Formaal
+
+Sikre at kommunen fungerer som en robust laerebedrift med god rekruttering, tydelig oppfolging og hoy gjennomforingsgrad.
+
+## Eier og roller
+
+- prosesseier: laerlingkoordinator
+- hovedutforer: laerlingkoordinator og lokale veiledere
+- stotte: avdelingssjef rekruttering og kompetanse, enhetsledere, fylkeskommunen
+- eskaleres til: HR-sjef ved kontrakt, kvalitet eller omdommerisiko
+
+## Trigger
+
+- nytt inntak av laerlinger
+- behov for oppfolging av eksisterende laerling
+- risiko for frafall eller svake laerelop
+
+## Input
+
+- planlagt antall plasser og fagomrader
+- sokermasse og utvelgelseskriterier
+- tilgjengelige laeresteder og veiledere
+- status pa laerekontrakt, arbeidsavtale og faglop
+
+## Output
+
+- inntaksplan
+- oppfolgingslop per laerling
+- oversikt over tiltak, faglig progresjon, kontraktsstatus og neste milepael
+
+## Hovedforlop
+
+1. Avklar inntaksbehov, plasser og laeresteder.
+2. Koordiner utlysning, utvelgelse, laerekontrakt og arbeidsavtale.
+3. Etabler veilederkontakt, oppfolgingsrytme og tydelig kontaktflate mot fylkeskommune eller opplaeringskontor.
+4. Folg opp progresjon, trivsel og risiko for frafall.
+5. Forbered fagprove og avslutning med laering tilbake til systemet.
+
+## Viktigste risikoer
+
+- svake eller uklare laeresteder
+- mangelfull veilederoppfolging
+- fristbrudd mot fylkeskommune eller proveapparat
+- lav trivsel eller hoyt frafall
+
+## Kontrollhandlinger
+
+- bruk fast arshjul for kontrakt, samlinger og fagprove
+- hold oppdatert oversikt over veiledere og kontaktpunkter
+- fang opp avvik tidlig i faste oppfolgingssamtaler
+- skill tydelig mellom laerekontrakt, arbeidsavtale og lokal oppfolgingsplan
+- dokumenter status og ansvar ved hvert kontrollpunkt
+
+## Systemer og referanser
+
+- OLKWeb eller tilsvarende laerlingeoppfolging
+- Webcruiter for inntak
+- KS Kunnskap for felles kurs og opplaering
+- Udirs regelverk for laerling og laerebedrift brukes som stotte for kontrakt og oppfolging
+
+## Handover
+
+- handover_in: fra dirigent eller HR-pilot ved behov for inntak eller oppfolging
+- handover_out: til moteunderlag, oppfolgingsplan eller leveranseutkast til laerested
+
+## Lokal verifikasjon
+
+- bekreft at laeresteder faktisk har kapasitet
+- bekreft at kontrakts- og provefrister er riktige
+- bekreft lokal arbeidsdeling mellom HR, laerested og fylkeskommune
+- bekreft at oppfolgingen bygger pa reelle lokale forhold

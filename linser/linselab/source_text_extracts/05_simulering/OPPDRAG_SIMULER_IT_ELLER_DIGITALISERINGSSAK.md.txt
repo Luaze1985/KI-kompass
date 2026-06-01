@@ -1,0 +1,25 @@
+# OPPDRAG_SIMULER_IT_ELLER_DIGITALISERINGSSAK
+
+## Bruk nar
+
+- du vil simulere en digitaliseringssak, systeminnforing eller arkitekturendring
+
+## Det du fyller inn
+
+- scenario:
+- beslutningspunkt:
+- berorte systemer eller tjenester:
+- sikre fakta:
+- usikre avhengigheter:
+
+## Starttekst
+
+Simuler denne IT- eller digitaliseringssaken innenfor stabsomradet IT og digitalisering.
+
+Bruk bare aktive mastere, relevant prosesskort og gjeldende guardrails.
+Skill tydelig mellom teknisk fakta, organisatorisk konsekvens og anbefaling.
+Vis minst to realistiske handlingsalternativer.
+
+## Forventet utfil
+
+- `09_templates_og_output/maler/SIMULERINGSNOTAT_TEMPLATE.md`

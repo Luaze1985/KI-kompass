@@ -1,0 +1,87 @@
+# HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER
+
+## Formaal
+
+Denne masteren standardiserer hvordan HR-piloten skriver stillingsutlysninger, kandidatgrunnlag og onboardingutkast for HR-rollene.
+Stillingsutlysningene i `09_templates_og_output/stillingsutlysninger/` er avledede produksjonsartefakter og skal ikke brukes som egen sannhetskilde.
+
+## Kilde- og styringsregel
+
+- `HR_ROLLE_OG_KOMPETANSEMASTER.md` definerer rolleinnholdet
+- `P-02_STRATEGISK_REKRUTTERING.md` definerer prosessen
+- `STILLINGSUTLYSNING_TEMPLATE.md` definerer standardstrukturen
+- kandidatvurdering skal bruke samme kravbilde som utlysningen
+- lokale lonnsspenn, arbeidssted, turnus, arbeidsgiverprofil og publiseringskanaler skal verifiseres lokalt
+
+## Ekstern forankring som skal brukes med lokal verifikasjon
+
+- KS: strategisk kompetanseplanlegging som grunnlag for behovsbeskrivelse og prioritering
+- KS: kvalifikasjonsprinsippet og dokumentert begrunnelse i kommunal rekruttering
+- SSB/Klass: `styrk08_ref` brukes som stottefelt, ikke som automatisk fasit
+- Udir: laerlinglop skal handtere baade laerekontrakt og arbeidsavtale
+- NAV og Arbeidstilsynet brukes som stotte for onboarding og HMS-naer startoppfolging nar rollen krever det
+
+## Felles krav til alle HR-utlysninger
+
+- hver utlysning skal ha `role_id`, enhet og kanonisk rollebetegnelse
+- formal med stillingen skal stemme med rolle- og kompetansemasteren
+- hovedansvar skal vare konkret og kunne spores til faktiske prosesser
+- must-have kvalifikasjoner skal vaere korte, etterprovbare og ikke blande inn personlige preferanser som krav
+- onskede tilleggskvalifikasjoner skal ikke undergrave kvalifikasjonsprinsippet
+- alle utlysninger skal pare med kandidatvurdering og intervjuguide i samme kravbilde
+- alle utlysninger skal ha egen blokk for lokal verifikasjon for publisering
+
+## Standard felter i v1
+
+- `role_id`
+- `unit_id`
+- `styrk08_ref`
+- `local_status`
+- `formaal_med_stillingen`
+- `hovedansvar`
+- `must_have_kvalifikasjoner`
+- `onskede_tilleggskvalifikasjoner`
+- `system_og_arbeidsflate`
+- `forste_12_maneder`
+- `lokal_verifikasjon_for_publisering`
+
+## Standard kandidatvurdering i v1
+
+- kravprofil og utlysning skal speile hverandre ord for ord pa kjernekrav
+- intervjusporsmal skal knyttes til skill- og ansvarsbildet, ikke generiske magefolinger
+- vurderingsmatrise skal skille mellom:
+  - oppfyller krav
+  - styrkende tilleggskompetanse
+  - forhold som ma avklares i referanser eller case
+- begrunnelse for valg og avslag skal kunne forklares med samme kriteriesett
+
+## Standard onboarding i v1
+
+- onboardingutkast skal kobles til `ART-09` og `TMP-11`
+- forste 30 dager: rolleforstaelse, systemtilganger, handover og viktigste kontaktpunkter
+- forste 60 dager: leveranser, prioriterte prosesser og lokal praksis
+- forste 90 dager: forbedringsforslag, utviklingsbehov og stabil drift
+
+## Rolle-til-utlysningskart
+
+- `R-02` -> `09_templates_og_output/stillingsutlysninger/HR_SJEF_STILLINGSUTLYSNING.md`
+- `R-03` -> `09_templates_og_output/stillingsutlysninger/AVDELINGSSJEF_LEDERSTOTTE_OG_PERSONALSAKER_STILLINGSUTLYSNING.md`
+- `R-04` -> `09_templates_og_output/stillingsutlysninger/AVDELINGSSJEF_REKRUTTERING_OG_KOMPETANSE_STILLINGSUTLYSNING.md`
+- `R-05` -> `09_templates_og_output/stillingsutlysninger/HR_RADGIVER_STILLINGSUTLYSNING.md`
+- `R-06` -> `09_templates_og_output/stillingsutlysninger/HR_JURIST_STILLINGSUTLYSNING.md`
+- `R-07` -> `09_templates_og_output/stillingsutlysninger/FORHANDLINGSRADGIVER_STILLINGSUTLYSNING.md`
+- `R-08` -> `09_templates_og_output/stillingsutlysninger/HMS_RADGIVER_STILLINGSUTLYSNING.md`
+- `R-09` -> `09_templates_og_output/stillingsutlysninger/REKRUTTERINGSRADGIVER_STILLINGSUTLYSNING.md`
+- `R-10` -> `09_templates_og_output/stillingsutlysninger/LAERLINGKOORDINATOR_STILLINGSUTLYSNING.md`
+- `R-11` -> `09_templates_og_output/stillingsutlysninger/KOMPETANSERADGIVER_STILLINGSUTLYSNING.md`
+- `R-12` -> `09_templates_og_output/stillingsutlysninger/E_LAERINGSRADGIVER_STILLINGSUTLYSNING.md`
+- `R-13` -> `09_templates_og_output/stillingsutlysninger/IA_RADGIVER_STILLINGSUTLYSNING.md`
+- `R-14` -> `09_templates_og_output/stillingsutlysninger/LEDER_OG_ORGANISASJONSUTVIKLER_STILLINGSUTLYSNING.md`
+
+## Lokal verifikasjon for rekrutteringssporet
+
+- verifiser lokal arbeidsgiverprofil, stillingskode og lonnsspenn
+- verifiser hvem som er ansettende leder og beslutningseier
+- verifiser hvilke systemnavn som faktisk brukes lokalt
+- verifiser om search, tester eller eksterne vurderingsleverandorer er tillatt lokalt
+- verifiser om utlysningen og kriteriene skal droftes i andre fora for den publiseres

@@ -1,0 +1,106 @@
+# OPPDRAGSFORMAT OG TRACE
+
+## Formaal
+
+Denne filen standardiserer det tynne kontrollaget som brukes i docs-first v2.
+
+Regel:
+
+- Markdown er fortsatt menneskelig master
+- disse objektene brukes for sporbarhet, handoff og evaluering
+- hvis prose og kontrollag spriker, vinner aktiv Markdown-master
+
+## 1. task_envelope
+
+`task_envelope` beskriver oppdraget slik at dirigenten og de andre agentene starter fra samme state.
+
+Felt:
+
+- `oppdrag_id`
+- `domene`
+- `arbeidslop`
+- `maal`
+- `risikoniva`
+- `bestillerrolle`
+- `kildereferanser`
+- `lokal_verifikasjon_pakrevd`
+- `relevante_guardrails`
+
+Bruk:
+
+- opprettes ved start av hvert aktivt arbeidslop
+- skal alltid finnes for simulering, beslutningsstotte, mote og produksjon
+
+## 2. handover_packet
+
+`handover_packet` standardiserer hva som sendes mellom agenter.
+
+Felt:
+
+- `fra_agent`
+- `til_agent`
+- `begrunnelse`
+- `forventet_output`
+- `aapne_sporsmal`
+- `lokal_verifikasjon`
+- `vedlagte_funn`
+
+Bruk:
+
+- brukes ved alle eksplisitte handovers
+- skal gjore det mulig a se hvorfor neste agent ble aktivert
+- skal markere hva som fortsatt er uklart
+
+## 3. decision_trace
+
+`decision_trace` er sporbarhetslaget for hvorfor et oppdrag fikk akkurat den ruten det fikk.
+
+Felt:
+
+- `trace_id`
+- `oppdrag_id`
+- `steg`
+- `aktiv_agent`
+- `valgte_linser`
+- `forkastede_linser`
+- `begrunnelse`
+- `godkjenner`
+- `tidspunkt`
+
+Bruk:
+
+- skal brukes i alle hoyrisiko-saker
+- skal brukes i alle evalscenarioer i docs-first v2
+- skal forklare domenevalg, linsevalg og viktige handoffs
+
+## Minimumskrav per arbeidslop
+
+### Simulering
+
+- `task_envelope`
+- minst ett `handover_packet`
+- `decision_trace`
+
+### Beslutningsstotte
+
+- `task_envelope`
+- `decision_trace`
+- `handover_packet` hvis flere agenter er aktivert
+
+### Mote
+
+- `task_envelope`
+- `decision_trace`
+- `handover_packet` mellom analyse og produksjon
+
+### Produksjon
+
+- `task_envelope`
+- `handover_packet` fra syntese til leveranse
+- `decision_trace`
+
+## Styringsregel
+
+- dirigenten oppretter eller fullforer `task_envelope`
+- hver aktiv handover skal bli eksplisitt som `handover_packet`
+- stabssjefen skal kunne lese `decision_trace` og forklare oppdragsruten i ettertid

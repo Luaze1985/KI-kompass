@@ -1,0 +1,8 @@
+# CHANGE_LOG IT OG DIGITALISERING
+
+## 2026-04-05
+
+- la inn package manifest for aktivt IT- og digitaliseringsomrade
+- koblet pakken til nytt kontrollag for domener, agenter og arbeidslop
+- la inn docs-first v2-sporbarhet via `task_envelope`, `handover_packet` og `decision_trace`
+- koblet IT-testsettet til nytt eval-lag

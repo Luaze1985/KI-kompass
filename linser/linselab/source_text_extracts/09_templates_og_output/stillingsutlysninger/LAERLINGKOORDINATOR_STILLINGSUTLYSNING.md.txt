@@ -1,0 +1,55 @@
+# LAERLINGKOORDINATOR STILLINGSUTLYSNING
+
+Status: avledet produksjonsartefakt v1
+
+## Metadata
+
+- role_id: `R-10`
+- unit_id: `U-03`
+- styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+- local_status: krever_lokal_tilpasning_for_publisering
+
+## Kort annonsetekst
+
+Vi soker en laerlingkoordinator som kan sikre at kommunen er en robust og attraktiv laerebedrift. Rollen krever at du kan koordinere inntak, kontrakter, oppfolging og samspill med laeresteder, veiledere og fylkeskommune.
+
+## Formaal med stillingen
+
+Sikre gode og gjennomforbare laerlinglop fra inntak til fagprove, med tydelig ansvar, oppfolging og dokumentasjon.
+
+## Hovedansvar
+
+- planlegge og koordinere inntak av laerlinger i ulike fag
+- sikre riktig oppsett for laerekontrakt, arbeidsavtale og lokal oppfolgingsplan
+- stotte laeresteder og veiledere i oppfolging, trivsel og progresjon
+- fange opp risiko for frafall og sette inn tiltak tidlig
+
+## Must-have kvalifikasjoner
+
+- relevant hoyere utdanning eller tilsvarende erfaring med fagopplaering
+- erfaring med laerlingoppfolging, opplaering eller koordinering av utdanningslop
+- god administrativ og relasjonell gjennomforingsevne
+- evne til a holde oversikt over frister, kontrakter og kontaktpunkter
+
+## Onskede tilleggskvalifikasjoner
+
+- erfaring fra offentlig sektor eller stor laerebedrift
+- erfaring med samspill med fylkeskommune eller fagopplaeringskontor
+- erfaring med ungdomsoppfolging, veilederstotte eller onboarding
+
+## System- og arbeidsflate
+
+- laerlingeoppfolging, rekrutteringsplattform og opplaeringslosninger
+- tett samarbeid med laeresteder, veiledere, enhetsledere og fylkeskommune
+
+## Forste 12 maneder
+
+- fa oversikt over laereplasser, kontraktsstatus og veilederkapasitet
+- styrke kvaliteten i oppfolging og tidlig risikofangst
+- standardisere hvordan laerlinglop dokumenteres og overleveres
+
+## Lokal verifikasjon for publisering
+
+- verifiser hvilke fag kommunen tilbyr laereplasser i
+- verifiser lokal kontaktflate mot fylkeskommune eller opplaeringskontor
+- verifiser hvilke systemer som faktisk brukes for kontrakt og oppfolging

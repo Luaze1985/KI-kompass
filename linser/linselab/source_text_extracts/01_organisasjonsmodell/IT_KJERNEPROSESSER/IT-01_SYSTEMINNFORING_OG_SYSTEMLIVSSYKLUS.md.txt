@@ -1,0 +1,70 @@
+# IT-01 TVERRGAENDE SYSTEMINNFORING OG SYSTEMLIVSSYKLUS
+
+## Formaal
+
+Sikre at innforing, videreutvikling og utfasing av felleslosninger skjer med tydelig eier, realistisk gjennomforing og sporbar handover til drift.
+
+## Eier og roller
+
+- prosesseier: system- eller tjenesteeier med innforingsansvar
+- hovedutforer: prosjekt- eller innforingsleder
+- stotte: virksomhetsarkitekt, drift, brukerstoette, informasjonssikkerhet, relevante fagdomener
+- eskaleres til: direktorniva ved stor tverrgaende risiko eller hoy angrekostnad
+
+## Trigger
+
+- nytt system eller stor oppgradering
+- behov for utfasing av gammel losning
+- tverrgaende innforing som paavirker flere omrader
+
+## Input
+
+- behovsbeskrivelse og malbilde
+- systemlandskap og avhengigheter
+- opplaerings- og innforingsbehov
+- risiko, kostnad og forventet gevinst
+
+## Output
+
+- anbefalt innforingslop
+- tydelig eierbilde
+- handover til drift, opplaering og oppfolging
+
+## Hovedforlop
+
+1. Avklar behov, eier og hva som faktisk skal endres.
+2. Kartlegg avhengigheter, integrasjoner og lokal belastning.
+3. Planlegg innforing, opplaering og overgang til drift.
+4. Test gevinstforutsetninger mot faktisk brukskontekst.
+5. Lever beslutningsklart grunnlag og tydelig handover.
+
+## Viktigste risikoer
+
+- uklar systemeier
+- innforing uten drift- og opplaeringskapasitet
+- gevinst antas uten faktisk endring i arbeidsflyt
+- skjulte avhengigheter i andre omrader
+
+## Kontrollhandlinger
+
+- skill mellom prosjektansvar og varig eieransvar
+- bruk Gruppe L for operativ realitetstest
+- koble inn sikkerhet og personvern tidlig
+- planlegg eksplisitt overgang fra innforing til drift
+
+## Systemer og referanser
+
+- ERP-, EPJ- eller annen felleslosning der relevant
+- lokale prosjekt- og portefoljeoversikter
+- arkitektur- og informasjonsforvaltningsspor
+
+## Handover
+
+- handover_in: fra digitaliseringsbehov, prosjekt eller ledelsesbestilling
+- handover_out: til beslutningsnotat, innforingsmote, driftsoppfolging eller leveranseutkast
+
+## Lokal verifikasjon
+
+- bekreft systemeier og tjenesteeier
+- bekreft hvilke omrader som faktisk blir berort
+- bekreft at opplaerings- og driftsbehov er realistisk vurdert

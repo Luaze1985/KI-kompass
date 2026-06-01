@@ -1,0 +1,41 @@
+# MOTEUNDERLAG TEMPLATE
+
+Status: prototype-mal v1
+
+## Motegrunnlag
+
+- formal:
+- beslutningspunkt:
+- deltakerroller:
+- moteleder:
+
+## Forberedelse
+
+- relevante kilder:
+- hva deltakerne ma lese:
+- hvilke deler er diskusjon:
+- hvilke deler er vedtak:
+
+## Perspektiver
+
+- HR-perspektiv:
+- linseperspektiv:
+- operativ realitetstest:
+
+## Konfliktlinjer
+
+- konflikt 1:
+- konflikt 2:
+
+## Foreslatt agenda
+
+1. avklar formal og beslutningsrett
+2. gaa gjennom fakta og usikkerhet
+3. droeft alternativer
+4. land ansvar og neste steg
+
+## Oppfolging
+
+- referatformat:
+- handover:
+- lokal verifikasjon:

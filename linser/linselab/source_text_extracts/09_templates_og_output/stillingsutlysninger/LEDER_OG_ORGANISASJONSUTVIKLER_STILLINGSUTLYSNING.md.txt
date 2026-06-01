@@ -1,0 +1,55 @@
+# LEDER_OG_ORGANISASJONSUTVIKLER STILLINGSUTLYSNING
+
+Status: avledet produksjonsartefakt v1
+
+## Metadata
+
+- role_id: `R-14`
+- unit_id: `U-03`
+- styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+- local_status: krever_lokal_tilpasning_for_publisering
+
+## Kort annonsetekst
+
+Vi soker en radgiver for leder- og organisasjonsutvikling som kan omsette strategiske behov til konkrete utviklingslop for ledere, team og organisasjon. Rollen krever at du kan kombinere fasilitering, utviklingsdesign og operativ gjennomforing i offentlig kontekst.
+
+## Formaal med stillingen
+
+Utvikle og gjennomfore tiltak som styrker ledelse, samarbeid, organisasjonskultur og gjennomforingsevne i kommunen.
+
+## Hovedansvar
+
+- designe og fasilitere utviklingslop for ledere, team og organisasjon
+- koble kultur, struktur og kompetanse i samme gjennomforingsbilde
+- bidra med operativ realitetstest i utviklings- og omstillingslop
+- gi beslutningsgrunnlag om hva som trengs for a fa tiltak til a virke lokalt
+
+## Must-have kvalifikasjoner
+
+- relevant hoyere utdanning
+- erfaring med lederutvikling, organisasjonsutvikling eller endringsarbeid
+- erfaring med fasilitering, prosessledelse og gjennomforing i komplekse organisasjoner
+- evne til a oversette strategiske behov til konkrete tiltak og handover
+
+## Onskede tilleggskvalifikasjoner
+
+- erfaring fra kommunal sektor eller annen stor offentlig virksomhet
+- erfaring med omstillingslop, kulturarbeid eller teamutvikling
+- erfaring med evaluering av utviklingstiltak og forbedringsarbeid
+
+## System- og arbeidsflate
+
+- kompetanseplattform, styringsunderlag og lokale samhandlingsflater
+- tett samarbeid med kompetanseradgiver, HR-ledelse og linjeledere
+
+## Forste 12 maneder
+
+- bidra til tydeligere gjennomforing i prioriterte leder- og utviklingstiltak
+- standardisere hvordan utviklingslop beskrives, eies og folges opp
+- koble lederutvikling tettere til organisasjonens faktiske endringsbehov
+
+## Lokal verifikasjon for publisering
+
+- verifiser om rollen heter radgiver, spesialradgiver eller seniorradgiver lokalt
+- verifiser om rollen skal fasilitere selv eller primart styre eksterne leverandorer
+- verifiser hvilke sektorer eller temaer som skal prioriteres forst

@@ -1,0 +1,36 @@
+# OPPDRAG_PRODUSER_HR_LEVERANSE
+
+## Bruk nar
+
+- du skal produsere et konkret HR-utkast som bygger pa godkjent grunnlag
+- du skal skrive utlysning, rollekort, kompetansematrise, kandidatvurdering eller onboardingutkast fra kanoniske mastere
+
+## Det du fyller inn
+
+- mottaker:
+- leveransetype:
+- formal:
+- frist:
+- hvilket beslutningsgrunnlag eller prosesskort som gjelder:
+- hvilken rolle-ID eller prosess-ID som styrer innholdet:
+
+## Starttekst
+
+Produser et HR-leveranseutkast innenfor tvillingsorganisasjonen.
+
+Bruk bare aktive mastere, godkjent beslutningsgrunnlag og relevant prosesskort.
+Nar leveransen gjelder rekruttering eller rolleutforming, bruk ogsa `HR_ROLLE_OG_KOMPETANSEMASTER.md` og `HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER.md`.
+Ikke legg til nytt faglig innhold som ikke kan spores.
+Marker tydelig hva som ma verifiseres lokalt for at utkastet skal kunne brukes.
+
+Lever i dette formatet:
+1. kort formal og mottaker
+2. hovedinnhold
+3. viktige forbehold
+4. kvalitetssjekk
+5. handover og etterspor
+
+## Forventet utfil
+
+- `09_templates_og_output/maler/LEVERANSEUTKAST_TEMPLATE.md`
+- eller relevant mal i `09_templates_og_output/maler/` dersom leveransetype krever det

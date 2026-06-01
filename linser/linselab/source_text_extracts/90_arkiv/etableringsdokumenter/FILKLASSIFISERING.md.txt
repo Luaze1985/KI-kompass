@@ -1,0 +1,22 @@
+# FILKLASSIFISERING
+
+| Opprinnelig sti | Kategori | Ny plassering / status | Kort begrunnelse |
+|---|---|---|---|
+| `_SYSTEM.md` | `BEHOLD_KJERNE` | `00_styring/SYSTEMINSTRUKS.md` | Hovedinstruks for hvordan linsebiblioteket brukes. |
+| `_INDEKS.md` | `BEHOLD_KJERNE` | `02_linser/LINSEINDEKS.md` | Aktiv master for grupper, triggere og konfliktmatrise. |
+| `_HURTIGVALG.md` | `BEHOLD_KJERNE` | `02_linser/KJERNELINSER.md` | Operativ kjerne med de viktigste linsene. |
+| `gruppe-l-samlet.md` | `KONSOLIDER` | `02_linser/GRUPPE_L_STRUKTURMASTER.md` | Beste strukturmaster for Gruppe L fordi den dekker sju operative linser og fasekoblinger. |
+| `gruppe-l-operasjonalisering/gruppe-l-komplett.md` | `BEHOLD_REFERANSE` | `10_kunnskapsbase/referanser/GRUPPE_L_KILDEKOMPLETT.md` | Viktig kildegrunnlag, men ikke aktiv master. |
+| `Gruppe beslutning.docx` | `KONSOLIDER` | `90_arkiv/konsolidert_kilde/gruppe_beslutning.docx` | Gruppe L-kilde som er absorbert av strukturmaster og agentkontrakter. |
+| `Alle linser -siste.docx` | `BEHOLD_REFERANSE` | `10_kunnskapsbase/referanser/alle_linser_siste.docx` | Stor referansekilde med per-linse-innhold som ikke er splittet ut i dette passet. |
+| `Kjernelinser_Niva1_til_Niva4.docx` | `BEHOLD_REFERANSE` | `10_kunnskapsbase/referanser/kjernelinser_niva1_til_niva4.docx` | Viktig referanse for prompt-til-spesifikasjon og agentmodning. |
+| `Linse 2 økonom.docx` | `BEHOLD_REFERANSE` | `10_kunnskapsbase/referanser/linse_2_okonom.docx` | Spesialisert dybdereferanse, ikke styrende arkitektur. |
+| `AI_ Kognitiv Utvidelse i Kommunal Sektor.docx` | `BEHOLD_REFERANSE` | `10_kunnskapsbase/referanser/ai_kognitiv_utvidelse_i_kommunal_sektor.docx` | Konseptuell referanse for human-AI samarbeid, orkestrering og modenhet. |
+| `AI_ Kognitiv Utvidelse i Kommunal Sektor(1).docx` | `SLETT_KANDIDAT` | `99_karantene/slettkandidater/ai_kognitiv_utvidelse_i_kommunal_sektor_duplikat.docx` | Eksakt dublett av annen fil. |
+| `Dokument uten navn.docx` | `SLETT_KANDIDAT` | `99_karantene/slettkandidater/dokument_uten_navn_tom.docx` | Tom fil uten innhold. |
+| `HR/Dokument uten navn.docx` | `KONSOLIDER` | `90_arkiv/konsolidert_kilde/hr_ontologisk_kunnskapsbibliotek.docx` | Ontologisk kilde som er absorbert i HR-pilot og kunnskapsbasebeskrivelse. |
+| `HR/HR skos digital tvilling versjon a.docx` | `BEHOLD_REFERANSE` | `10_kunnskapsbase/referanser/hr_skos_digital_tvilling_versjon_a.docx` | Tekniske SKOS-/ontologispor som fortsatt er nyttige som referanse. |
+| `HR/HR tvilling etter roller og oppgaver.docx` | `KONSOLIDER` | `90_arkiv/konsolidert_kilde/hr_tvilling_etter_roller_og_oppgaver.docx` | Primarkilde for domeneroller og oppgaver, na konsolidert i rollekatalog. |
+| `HR/HR tvillingorgansiasjon.docx` | `KONSOLIDER` | `90_arkiv/konsolidert_kilde/hr_tvillingorganisasjon.docx` | Primarkilde for tvillinglogikk og organisasjonsmodell, na konsolidert i HR-pilot. |
+| `HR/Kvalitetssikret  digital organisasjon.docx` | `ARKIVER` | `90_arkiv/eldre_konkurrenter/kvalitetssikret_digital_organisasjon.docx` | Eldre konkurrerende HR-versjon som fases ut til fordel for nyere variant. |
+| `HR/Nyeste versjon -digital tvilling HR.docx` | `KONSOLIDER` | `90_arkiv/konsolidert_kilde/nyeste_versjon_digital_tvilling_hr.docx` | Aktiv kilde for guardrails og svarformat, na gjort om til Markdown-master. |

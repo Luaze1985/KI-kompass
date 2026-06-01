@@ -1,0 +1,77 @@
+# P-02 STRATEGISK REKRUTTERING
+
+## Formaal
+
+Sikre profesjonell rekruttering av nokkelroller med tydelig kravprofil, god kandidatopplevelse og etterlevelse av kvalifikasjonsprinsippet.
+
+## Eier og roller
+
+- prosesseier: rekrutteringsradgiver
+- hovedutforer: ansettende leder
+- stotte: avdelingssjef rekruttering og kompetanse, HR-radgiver, kommunikasjonsradgiver
+- eskaleres til: HR-jurist ved tvist, habilitet eller lovtolkning
+
+## Trigger
+
+- ledig nokkelrolle
+- strategisk kompetansegap
+- behov for ny eller endret stillingsprofil
+
+## Input
+
+- behovsbeskrivelse og kravprofil
+- organisasjonsmal og kompetansebehov
+- budsjett- og tidsrammer
+- lokal vurdering av marked og employer branding
+- rolle- og kompetansemaster for aktuell rolle
+
+## Output
+
+- anbefalt rekrutteringsstrategi
+- strukturert kandidatlop
+- ferdig eller nesten ferdig stillingsutlysning
+- dokumentert grunnlag for valg og eventuelt avslag
+
+## Hovedforlop
+
+1. Avklar behov, rolleprofil og beslutningseier.
+2. Koble rolleprofil til kanonisk rolle, skills og artefakter.
+3. Velg kanal, fremdrift og vurderingstilnaerming.
+4. Stott leder gjennom utlysning, screening, kandidatmatrise og intervjuoppsett.
+5. Kvalitetssikre vurdering mot kvalifikasjonsprinsippet og dokumenter begrunnelse.
+6. Avslutt med tilbud, dokumentasjon og etterspor for laering.
+
+## Viktigste risikoer
+
+- uklar kravprofil
+- svak kandidatopplevelse
+- brudd pa likebehandling eller kvalifikasjonsprinsippet
+- treg prosess som mister gode kandidater
+
+## Kontrollhandlinger
+
+- bruk standard vurderingskriterier for alle kandidater
+- bruk samme kravbilde i kravprofil, utlysning og kandidatvurdering
+- sikre dokumentert begrunnelse for valg
+- hold roller og habilitet eksplisitte
+- verifiser at leder og HR bruker samme prosessbilde
+
+## Systemer og referanser
+
+- ACOS Webcruiter for prosess og dokumentasjon
+- Dossier og KS Kunnskap for kompetansespor
+- relevant lovverk og interne rekrutteringsrutiner
+- `HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER.md` for felles struktur
+- `09_templates_og_output/stillingsutlysninger/` for avledede produksjonsutkast
+
+## Handover
+
+- handover_in: fra dirigent, linjeleder eller HR-pilot ved rekrutteringsbehov
+- handover_out: til beslutningsnotat, moteunderlag eller leveranseutkast for utlysning
+
+## Lokal verifikasjon
+
+- bekreft hjemmel, budsjett og beslutningsrett
+- bekreft at utlysningstekst og vurderingskriterier samsvarer
+- bekreft lokal stillingskode, arbeidsgiverprofil og eventuelle search- eller testloper
+- bekreft at valget kan forklares og forsvares lokalt

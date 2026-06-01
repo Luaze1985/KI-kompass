@@ -1,0 +1,39 @@
+# BESLUTNINGSNOTAT TEMPLATE
+
+Status: prototype-mal v1
+
+## Sak
+
+- hva skal besluttes:
+- beslutningseier:
+- frist:
+
+## Kort anbefaling
+
+- anbefalt valg:
+- hvorfor:
+- sikkerhetsniva:
+
+## Beslutningsgrunnlag
+
+- viktigste funn:
+- relevante prosesskort:
+- relevante roller:
+
+## Alternativer
+
+- alternativ A:
+- alternativ B:
+- alternativ C:
+
+## Risiko og kontroll
+
+- hovedrisiko:
+- kontrollhandling:
+- hva som krever lokal verifikasjon:
+
+## Ansvar og neste steg
+
+- ansvarlig rolle:
+- neste handling:
+- handover til:

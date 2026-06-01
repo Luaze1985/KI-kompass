@@ -1,0 +1,130 @@
+# LINSEKARTLAG FOR IKKE-KOMMUNALE ROLLER
+
+## Formaal
+
+Denne filen samler linsene som ikke skal modelleres som kommunedomener, stabsomrader eller faste kommunale fagroller, men som likevel har en tydelig rolle i tvillingsorganisasjonen.
+
+Dette er med andre ord ikke "resten som ble til overs". Dette er et eget rollelag i plattformen.
+
+## Hovedregel
+
+- disse linsene bor i plattformen, ikke i kommunekartet
+- de brukes som rolleperspektiver i analyse, syntese, stresstest og operasjonalisering
+- de kan kombineres med kommuneroller, men skal ikke forveksles med dem
+- de skal ikke bli egne domener bare fordi de er viktige
+
+## Avgrensning mot kommunenaere linser
+
+Dette kartlaget tar ikke med linser som allerede er naturlige kommunenaere fag- eller stabsroller:
+
+- C2 Okonomen
+- D1 Juristen
+- D2 Risikostyringseksperten
+- D3 Personvernombudet
+- D4 Sikkerhetsradgiveren
+- D5 Kvalitetsradgiveren
+- D6 HMS-radgiveren
+- F4 HR-eksperten
+
+Disse holdes fortsatt i kommune- og stabsnaere koblinger.
+
+## Rollelag 1: Meta- og synteseroller
+
+| ID | Linse | Rolle i tvillingen | Typisk aktivering |
+|----|-------|--------------------|-------------------|
+| A1 | Systemteoretikeren | ser helhet, avhengigheter og feedback | nar saken spenner pa tvers av flere enheter eller tiltak |
+| A2 | Organisasjonsteoretikeren | leser struktur, ansvar, styring og samordning | nar roller, ansvar eller organisasjonsdesign er uklart |
+| A3 | Intergovernance-forvalteren | ser staten, kommunen, nettverk og avtaleflater samlet | nar saken krysser styringsniva eller eksterne aktorer |
+| A4 | Orkestratoren | setter sammen flere perspektiver til ett styrt analyseoppsett | nar dirigenten trenger et design for oppdraget |
+| G5 | Det kognitive sinnet | holder syntese, hypoteser og beslutningskvalitet oppe | nar det er mange funn, hoy usikkerhet eller motstrid |
+| K1 | Den virtuelle stabssjefen | samler beslutningsgrunnlag og prioriterer neste steg | i sluttfasen av beslutningsstotte og styringslop |
+| K2 | Ledelsesstrategen | kobler enkeltsaker til retning, maal og styringslogikk | nar saken ma forankres i strategi og ledelse |
+
+## Rollelag 2: Normative og samfunnspolitiske roller
+
+| ID | Linse | Rolle i tvillingen | Typisk aktivering |
+|----|-------|--------------------|-------------------|
+| B1 | Etiske filosof | provar tiltak mot rettferdighet, ansvar og skade/nytte | nar noen taper, noen belastes eller tillit star pa spill |
+| B2 | Politisk teoretiker | vurderer legitimitet, maktfordeling og demokratisk forankring | nar saken berorer politisk handlingsrom eller offentlig legitimitet |
+| B3 | Konfuciansk leder | tester langsiktighet, moralsk forbildelighet og rolleansvar | nar ledelse, kultur og normdannelse er sentralt |
+| B4 | Tjenestelederen | holder brukerforpliktelse, tjenende lederskap og relasjonelt ansvar oppe | nar ledelse skal vare tydelig, men ikke sentrere seg selv |
+| C3 | Politiske okonom | leser interesser, makt og budsjett som konfliktflate | nar fordeling, prioritering og interessespill er viktig |
+| J3 | Tillitsvalgt (Akademikerne) | representerer medbestemmelse, arbeidslivslogikk og ansattperspektiv | nar endring, omstilling eller arbeidsforhold er i spill |
+
+## Rollelag 3: Menneske-, kultur- og samfunnsroller
+
+| ID | Linse | Rolle i tvillingen | Typisk aktivering |
+|----|-------|--------------------|-------------------|
+| E1 | Psykologen | ser motivasjon, bias, reaksjoner og trygghet | nar adferd, motstand eller belastning betyr mye |
+| E2 | Sosiologen | leser grupper, makt, ulikhet og sosiale strukturer | nar saken virker ulikt pa ulike grupper |
+| E3 | Kulturanalytikeren | fanger normer, uskrevne regler og symbolske signaler | nar "slik gjor vi det her" styrer mer enn formelle planer |
+| E4 | Kollektivistisk leder | holder gruppeharmoni, relasjoner og kollektiv handling oppe | nar laget ma fungere over tid, ikke bare levere fort |
+| E5 | Identitets- og mangfoldlederen | ser inkludering, tilhorighet og sosial identitet | nar mangfold, representasjon eller psykologisk trygghet er viktige |
+| E6 | Neurologen | ser kognitiv belastning, laering og informasjonskapasitet | nar opplegg er for komplisert, for tett eller for krevende |
+| G3 | Historikeren | henter fram spor, erfaringer og gamle monster | nar saken ligner noe organisasjonen har provd for |
+
+## Rollelag 4: Faglige ekspertroller
+
+| ID | Linse | Rolle i tvillingen | Typisk aktivering |
+|----|-------|--------------------|-------------------|
+| C1 | Samfunnsokonomen | provar tiltak mot samfunnsnytte, alternativkostnad og prioritering | nar ressursbruk ma vurderes utover budsjettteknikk |
+| C4 | Livsfase- og kjonnsokonomen | ser arbeid, livslop, fravar, pensjon og fordelingsvirkninger | nar arbeidsliv, helse eller seniorpolitikk star i sentrum |
+| G1 | Forskeren | sikrer evidens, metode og riktig bruk av usikkerhet | nar kunnskapsgrunnlaget er svakt eller omstridt |
+| G2 | Policy analyst | sammenligner alternativer og bygger anbefalinger med kriterier | nar flere veivalg er plausible og ma vurderes ryddig |
+| G4 | Data scientist | leser indikatorer, datakvalitet, bias og malelogikk | nar saken hviler pa tall, modeller eller oppfolging |
+| I1 | AI/Teknologi-eksperten | vurderer digitalisering, data, automatisering og AI-risiko | nar teknologi er selve losningen eller en sterk driver |
+| I2 | Ingenioren | optimaliserer prosess, flyt, standard og teknisk robusthet | nar friksjon, overganger og driftsstabilitet er viktige |
+| I3 | Service designeren | oversetter behov til brukerreise, tjenesteflyt og prototyper | nar opplevelse, sammenheng og innbyggerlogikk ma med |
+
+## Rollelag 5: Endrings- og leveranseroller
+
+| ID | Linse | Rolle i tvillingen | Typisk aktivering |
+|----|-------|--------------------|-------------------|
+| F1 | Endringslederen | holder forankring, motstand og adopsjon oppe | nar tiltak krever faktisk at folk gjor noe nytt |
+| F2 | Transformasjonslederen | holder visjon, energi og utviklingsretning levende | nar organisasjonen ma mobiliseres, ikke bare instrueres |
+| F3 | Prosjektlederen | gjor retning om til plan, milepaler og leveranselogikk | nar saken ma styres som et konkret lop |
+| F5 | Konsulenten | presser fram forbedring, effektivisering og gevinstrealisering | nar organisasjonen trenger framdrift og ryddearbeid |
+
+## Rollelag 6: Offentlighets- og utfordrerroller
+
+| ID | Linse | Rolle i tvillingen | Typisk aktivering |
+|----|-------|--------------------|-------------------|
+| H1 | Kommunikasjonseksperten | sikrer klarhet, mottakerforstaelse og budskapsdisiplin | nar saken skal forklares, forankres eller oversettes |
+| H2 | Journalisten | provar saken mot innsyn, gransking og offentlig eksponering | nar risiko for kritiske sporsmal og offentlig press er hoy |
+| H3 | Narrativ-analytikeren | fanger fortellinger, frames og symbolske konflikter | nar ulike tolkninger av samme sak kolliderer |
+| J1 | Kritisk venn | angriper svakheter, antakelser og hull i logikken | som fast stresstest for beslutningsgrunnlag |
+| J2 | Geookonomen | fanger eksterne sjokk, avhengigheter og stormaktslogikk | nar forsyning, teknologi eller geopolitikk kan treffe saken |
+
+## Rollelag 7: Operasjonaliseringsroller
+
+| ID | Linse | Rolle i tvillingen | Typisk aktivering |
+|----|-------|--------------------|-------------------|
+| L1 | Oppgaveatomisten | bryter tiltak ned i minste meningsfulle handlinger | nar noe ma bli gjorerbart pa gulvet |
+| L2 | Forstelinjelederen | tester kapasitet, arbeidshverdag og realistiske workarounds | nar tiltaket skal fungere med faktiske folk og systemer |
+| L3 | Brukeren | holder sarbarhet, verdighet og livslogikk oppe | nar tjenesten moter innbyggeren direkte |
+| L4 | Pragmatikeren | definerer godt nok, prioritering og framdrift under knapphet | nar alt ikke kan optimaliseres samtidig |
+| L5 | Tidsarkitekten | gjor tidshorisont, laasing og revurderingspunkt eksplisitt | nar kort og lang sikt trekker i ulike retninger |
+| L6 | Maktkartleggeren | finner vetomakt, allianser og stille motstand | nar gjennomforing avhenger av reell, ikke formell makt |
+| L7 | Reverseringslinsen | testar angrekostnad, pilotmulighet og kursendring | nar beslutningen kan bli dyr eller vanskelig a angre |
+
+## Standard bruk av kartlaget
+
+Bruk ikke disse rollene som et tilfeldig menykart. Standardoppsett er:
+
+1. en kommunerolle eller domenerolle som eier saken
+2. en eller to ikke-kommunale ekspert- eller metaroller som utvider blikket
+3. minst en utfordrerrolle ved hoy risiko eller hoy synlighet
+4. minst en operasjonaliseringsrolle hvis noe faktisk skal innfores
+
+## Styringsregler
+
+- ingen av disse linsene skal bli eget kommunedomene alene
+- hvis en linse blir varig koblet til et konkret fagomrade, skjer det i domeneoppsettet, ikke ved a flytte selve linsen
+- dirigenten velger rollelag, ikke bare enkeltlinser
+- stabssjefen skal alltid vite hvilken kommunerolle som eier saken, og hvilke ikke-kommunale roller som bare analyserer den
+
+## Kobling til resten av arkitekturen
+
+- kommunedomener og stabsomrader ligger i `01_organisasjonsmodell`
+- kommune- og stabsnaere linsekoblinger ligger i `02_linser/DOMENE_TIL_LINSEKOBLING.md` og `02_linser/STABSOMRAADE_TIL_LINSER.md`
+- dette kartlaget er tillegget som fanger resten av linsebiblioteket uten a presse det inn i kommunen

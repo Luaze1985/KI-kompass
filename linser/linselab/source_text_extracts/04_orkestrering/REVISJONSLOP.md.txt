@@ -1,0 +1,42 @@
+# REVISJONSLOP
+
+## trigger
+- behov for a rette drift, evaluere kvalitet eller standardisere forbedringsforslag etter pilot eller produksjon
+
+## eier
+- dirigenten initierer
+- forbedringskoordinatoren avslutter med prioritert forbedringsbilde
+
+## maal
+- avdekke drift mellom mastere, kodetabeller, templates og workflows uten a gjore autonome endringer
+
+## faser
+
+1. Inntak
+   - avklar hvilket omrade som skal revideres, hvorfor og mot hvilke mastere
+2. Kilde- og synkaudit
+   - kildevokteren sjekker mastere, modeller, YAML og CSV
+3. Eval og red flags
+   - evalrevisoren vurderer funn mot evalmatrise, red flags og fasegater
+4. Prioritering
+   - forbedringskoordinatoren sorterer forslag i stopp, rett, standardiser
+5. Eskalering
+   - forslag sendes til riktig eier eller riktig arbeidslop med handover_packet
+
+## gate for neste fase
+- revisjonsnotat, prioritert forbedringsliste og anbefalt eier er eksplisitt
+- ingen forslag presenteres som ferdige endringer uten lokal godkjenning
+
+## hva som er forskning
+- ny referansejakt eller analyse som trengs fordi master mangler dekning
+
+## hva som er prototype
+- nye revisjonsregler, evaldimensjoner eller playbooks som enna ikke er verifisert
+
+## hva som er produksjon
+- bare revisjonsnotat, patchforslag og eskaleringsspor som peker tilbake til godkjente mastere
+
+## lokal verifikasjon
+- bekreft hvem som eier omradet som skal revideres
+- bekreft om drift faktisk er en feil eller et lokalt avvik
+- bekreft at hoyrisiko forslag ikke gjennomfores uten riktig fasegate

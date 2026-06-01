@@ -1,0 +1,127 @@
+metadata:
+  id: hr_skills
+  version: 1.0
+  status: derived_from_markdown_master
+  master_ref: 01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md
+
+skills:
+  - skill_id: SK-01
+    name: arbeidsrett_og_saksbehandling
+    category: juridisk_og_prosess
+    description: anvende arbeidsrett og sakslogikk uten a blande rad og vedtak
+    ks_ref: ""
+    nav_ref: ""
+    arbeidstilsynet_ref: ""
+    udir_ref: ""
+  - skill_id: SK-02
+    name: rekrutteringsdesign_og_kvalifikasjonsprinsipp
+    category: rekruttering
+    description: bygge kravprofil, utlysning og kandidatvurdering med sporbar begrunnelse
+    ks_ref: https://www.ks.no/fagomrader/arbeidsgiverpolitikk/inkluderende-arbeidsliv-ia/unntak-fra-kvalifikasjonsprinsippet/
+    nav_ref: ""
+    arbeidstilsynet_ref: ""
+    udir_ref: ""
+  - skill_id: SK-03
+    name: kompetanseplanlegging_og_portefoljestyring
+    category: kompetanse
+    description: koble behov, tiltak og prioritering i samme portefoljebilde
+    ks_ref: https://www.ks.no/fagomrader/arbeidsgiverpolitikk/kompetanse-og-rekruttering/verktoy---strategisk-kompetanseplanlegging
+    nav_ref: ""
+    arbeidstilsynet_ref: ""
+    udir_ref: ""
+  - skill_id: SK-04
+    name: laerlingforvaltning_og_fagopplaering
+    category: opplaering
+    description: koordinere laerlinglop, kontrakter, oppfolging og kontakt mot fylkeskommune
+    ks_ref: ""
+    nav_ref: ""
+    arbeidstilsynet_ref: ""
+    udir_ref: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/larling/
+  - skill_id: SK-05
+    name: systematisk_hms_og_internkontroll
+    category: HMS
+    description: koble risiko, tiltak og lederoppfolging i et tydelig HMS-spor
+    ks_ref: ""
+    nav_ref: ""
+    arbeidstilsynet_ref: https://www.arbeidstilsynet.no/hms/internkontroll/
+    udir_ref: ""
+  - skill_id: SK-06
+    name: ia_og_sykefravaersoppfolging
+    category: IA
+    description: veilede i oppfolgingsplan, dialogmote og tilrettelegging med riktig rollefordeling
+    ks_ref: ""
+    nav_ref: https://www.nav.no/arbeidsgiver/oppfolging-sykmeldte
+    arbeidstilsynet_ref: ""
+    udir_ref: ""
+  - skill_id: SK-07
+    name: forhandling_og_partssamarbeid
+    category: arbeidsgiverpolitikk
+    description: handtere forhandling og medvirkning i samsvar med avtaleverk
+    ks_ref: ""
+    nav_ref: ""
+    arbeidstilsynet_ref: ""
+    udir_ref: ""
+  - skill_id: SK-08
+    name: klarsprak_og_mottakertilpasning
+    category: kommunikasjon
+    description: skrive korte, tydelige og mottakertilpassede leveranser
+    ks_ref: ""
+    nav_ref: ""
+    arbeidstilsynet_ref: ""
+    udir_ref: ""
+  - skill_id: SK-09
+    name: dataforstaelse_og_hr_kpi
+    category: analyse
+    description: bruke styringsdata og indikatorer til prioritering og forbedring
+    ks_ref: https://www.ks.no/fagomrader/arbeidsgiverpolitikk/kompetanse-og-rekruttering/verktoy---strategisk-kompetanseplanlegging
+    nav_ref: ""
+    arbeidstilsynet_ref: ""
+    udir_ref: ""
+  - skill_id: SK-10
+    name: lederstotte_og_organisasjonsutvikling
+    category: utvikling
+    description: omsette organisatoriske behov til tydelig lederstotte og gjennomforbare tiltak
+    ks_ref: https://www.ks.no/fagomrader/arbeidsgiverpolitikk/kompetanse-og-rekruttering/verktoy---strategisk-kompetanseplanlegging
+    nav_ref: ""
+    arbeidstilsynet_ref: ""
+    udir_ref: ""
+  - skill_id: SK-11
+    name: personvern_og_informasjonshygiene
+    category: kontroll
+    description: sikre riktig handtering av personopplysninger og dokumentflyt
+    ks_ref: ""
+    nav_ref: ""
+    arbeidstilsynet_ref: ""
+    udir_ref: ""
+  - skill_id: SK-12
+    name: digital_systembruk_og_dokumentasjon
+    category: drift
+    description: bruke HR-systemer, kvalitetssystem og arkivspor riktig
+    ks_ref: ""
+    nav_ref: ""
+    arbeidstilsynet_ref: ""
+    udir_ref: ""
+  - skill_id: SK-13
+    name: intervjumetodikk_og_kandidatopplevelse
+    category: rekruttering
+    description: gjennomfore strukturert intervju og kandidatoppfolging
+    ks_ref: https://www.ks.no/fagomrader/arbeidsgiverpolitikk/inkluderende-arbeidsliv-ia/unntak-fra-kvalifikasjonsprinsippet/
+    nav_ref: ""
+    arbeidstilsynet_ref: ""
+    udir_ref: ""
+  - skill_id: SK-14
+    name: onboarding_og_laeringsdesign
+    category: opplaering
+    description: strukturere onboarding og opplaering i tydelige lop med malgruppe og oppfolging
+    ks_ref: ""
+    nav_ref: ""
+    arbeidstilsynet_ref: ""
+    udir_ref: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/larling/
+  - skill_id: SK-15
+    name: endringsledelse_og_medvirkning
+    category: endring
+    description: lede eller stotte endringslop med tydelig medvirkning og handover
+    ks_ref: https://www.ks.no/fagomrader/arbeidsgiverpolitikk/kompetanse-og-rekruttering/verktoy---strategisk-kompetanseplanlegging
+    nav_ref: ""
+    arbeidstilsynet_ref: ""
+    udir_ref: ""

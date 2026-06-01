@@ -1,0 +1,407 @@
+---
+tittel: Linseindeks - Struktur og Konfliktmatrise
+versjon: 2.0
+dato: 2025-01-22
+antall_linser: 52
+antall_grupper: 12
+---
+
+> Merk: Aktiv prosjektstruktur er flyttet til `00_styring`-`10_kunnskapsbase`. Den historiske mappeseksjonen lenger ned er beholdt som referansespor, ikke som gjeldende struktur.
+
+> Merk: Ved lokal praksis, driftshverdag, HR, HMS, implementering eller beslutninger som pavirker mennesker, bruk ogsa `learning_os/state/context/menneskelig_erfaringskompetanse_master.md` for a markere antakelse, erfaringsgap, lokal verifikasjon og mulig konsekvens.
+
+# LINSEBIBLIOTEK FOR OFFENTLIG FORVALTNING
+
+## DEL 1: GRUPPERING AV LINSER
+
+### GRUPPE A: Systemforståelse og helhet
+Linser som ser på helheten, sammenhenger og kompleksitet.
+
+| ID | Linse | Kjernefokus | Standardvekt |
+|----|-------|-------------|--------------|
+| A1 | Systemteoretikeren | Feedback-loops, avhengigheter, helhet | 0.18 |
+| A2 | Organisasjonsteoretikeren | Struktur, roller, ansvar, styring | 0.18 |
+| A3 | Intergovernance-forvalteren | Flernivåstyring, stat-kommune, nettverk | 0.25 |
+| A4 | Orkestratoren | Strategisk syntese, leverage points | 0.30 |
+
+---
+
+### GRUPPE B: Verdier, etikk og legitimitet
+Linser som vurderer normative spørsmål og demokratisk forankring.
+
+| ID | Linse | Kjernefokus | Standardvekt |
+|----|-------|-------------|--------------|
+| B1 | Etiske filosof | Verdikonflikter, rettferdighet, integritet | 0.18 |
+| B2 | Politisk teoretiker | Demokrati, legitimitet, maktfordeling | 0.25 |
+| B3 | Konfuciansk leder | Moral, harmoni, langsiktighet, rollemodell | 0.20 |
+| B4 | Tjenestelederen | Servant leadership, bruker først, empati | 0.20 |
+
+---
+
+### GRUPPE C: Økonomi og ressurser
+Linser som vurderer kostnader, nytte og ressursbruk.
+
+| ID | Linse | Kjernefokus | Standardvekt |
+|----|-------|-------------|--------------|
+| C1 | Samfunnsøkonomen | Kost-nytte, insentiver, alternativkostnad | 0.25 |
+| C2 | Økonomen | Budsjett, regnskap, finansiell kontroll | 0.25 |
+| C3 | Politiske økonom | Makt, interesser, budsjett som maktkamp | 0.25 |
+| C4 | Livsfase- og kjønnsøkonomen | Sykefravær, pensjon, bærekraftig arbeidsliv | 0.25 |
+
+---
+
+### GRUPPE D: Juss, risiko og kontroll
+Linser som sikrer etterlevelse, sikkerhet og kvalitet.
+
+| ID | Linse | Kjernefokus | Standardvekt |
+|----|-------|-------------|--------------|
+| D1 | Juristen | Hjemmel, prosesskrav, rettssikkerhet | 0.35 |
+| D2 | Risikostyringseksperten | Trusler, sårbarheter, beredskap | 0.35 |
+| D3 | Personvernombudet | GDPR, behandlingsgrunnlag, dataminimering | 0.35 |
+| D4 | Sikkerhetsrådgiveren | Informasjonssikkerhet, tilgang, logging | 0.35 |
+| D5 | Kvalitetsrådgiveren | Prosesser, avvik, internkontroll | 0.35 |
+| D6 | HMS-rådgiveren | Arbeidsmiljø, fysisk/psykososial risiko | 0.35 |
+
+---
+
+### GRUPPE E: Mennesker og atferd
+Linser som forstår motivasjon, kultur og sosiale dynamikker.
+
+| ID | Linse | Kjernefokus | Standardvekt |
+|----|-------|-------------|--------------|
+| E1 | Psykologen | Atferd, motivasjon, kognitive bias | 0.18 |
+| E2 | Sosiologen | Sosiale strukturer, makt, ulikhet | 0.18 |
+| E3 | Kulturanalytikeren | Normer, verdier, usynlige koder | 0.18 |
+| E4 | Kollektivistisk leder | Gruppeharmoni, konsensus, relasjoner | 0.20 |
+| E5 | Identitets- og mangfoldlederen | Sosial identitet, inkludering, tilhørighet | 0.25 |
+| E6 | Neurologen | Kognitiv belastning, læring, hjernefunksjon | 0.18 |
+
+---
+
+### GRUPPE F: Endring og gjennomføring
+Linser som fokuserer på implementering og adopsjon.
+
+| ID | Linse | Kjernefokus | Standardvekt |
+|----|-------|-------------|--------------|
+| F1 | Endringslederen | Visjon, motstand, forankring | 0.20 |
+| F2 | Transformasjonslederen | Inspirasjon, mobilisering, utvikling | 0.20 |
+| F3 | Prosjektlederen | Leveranse, plan, milepæler, risiko | 0.22 |
+| F4 | HR-eksperten | Bemanning, kompetanse, arbeidsrett | 0.20 |
+| F5 | Konsulenten | Effektivisering, forbedring, gevinst | 0.22 |
+
+---
+
+### GRUPPE G: Kunnskap og analyse
+Linser som sikrer faktagrunnlag og metodisk kvalitet.
+
+| ID | Linse | Kjernefokus | Standardvekt |
+|----|-------|-------------|--------------|
+| G1 | Forskeren | Evidens, metode, usikkerhet | 0.18 |
+| G2 | Policy analyst | Alternativer, kriterier, anbefaling | 0.25 |
+| G3 | Historikeren | Kontekst, læring, mønstre fra fortiden | 0.18 |
+| G4 | Data scientist | Data, indikatorer, bias, måling | 0.22 |
+| G5 | Det kognitive sinnet | Syntese, kreativitet, beslutningskvalitet | 0.25 |
+
+---
+
+### GRUPPE H: Kommunikasjon og offentlighet
+Linser som vurderer budskap, mottaker og eksponering.
+
+| ID | Linse | Kjernefokus | Standardvekt |
+|----|-------|-------------|--------------|
+| H1 | Kommunikasjonseksperten | Budskap, målgruppe, klarhet | 0.20 |
+| H2 | Journalisten | Kritisk tilsyn, innsyn, offentlighet | 0.18 |
+| H3 | Narrativ-analytikeren | Framing, ideologi, vinnere/tapere | 0.20 |
+
+---
+
+### GRUPPE I: Teknologi og design
+Linser som vurderer tekniske løsninger og brukeropplevelse.
+
+| ID | Linse | Kjernefokus | Standardvekt |
+|----|-------|-------------|--------------|
+| I1 | AI/Teknologi-eksperten | Digitalisering, AI, databehov, risiko | 0.22 |
+| I2 | Ingeniøren | Prosessoptimalisering, flyt, standarder | 0.22 |
+| I3 | Service designeren | Brukerreise, smertepunkter, prototyping | 0.22 |
+
+---
+
+### GRUPPE J: Kritikk og kvalitetssikring
+Linser som utfordrer og stresstester.
+
+| ID | Linse | Kjernefokus | Standardvekt |
+|----|-------|-------------|--------------|
+| J1 | Kritisk venn | Svakheter, hull, forutsetninger | 0.18 |
+| J2 | Geoøkonomen | Blindsoner, neokolonialisme, stormakter | 0.20 |
+| J3 | Tillitsvalgt (Akademikerne) | Ansattes perspektiv, medbestemmelse | 0.18 |
+
+---
+
+### GRUPPE K: Syntese og beslutning
+Linser som samler tråder og lager handlingsplan.
+
+| ID | Linse | Kjernefokus | Standardvekt |
+|----|-------|-------------|--------------|
+| K1 | Den virtuelle stabssjefen | Beslutningsnotat, prioritering, ansvar | 0.30 |
+| K2 | Ledelsesstrategen | Mål, retning, strategisk sammenheng | 0.18 |
+
+---
+
+### GRUPPE L: Operasjonalisering (NY)
+Linser som fyller gapet mellom beslutning og virkelighet.
+
+| ID | Linse | Kjernefokus | Standardvekt |
+|----|-------|-------------|--------------|
+| L1 | Oppgaveatomisten | Mikrooppgaver, sekvens, friksjon | 0.25 |
+| L2 | Førstelinjelederen | Operativ realisme, kapasitet, workarounds | 0.22 |
+| L3 | Brukeren | Innbyggerperspektiv, sårbarhet, verdighet | 0.22 |
+| L4 | Pragmatikeren | Godt nok, prioritering under knapphet, framdrift | 0.20 |
+| L5 | Tidsarkitekten | Tidshorisont, laasinger, revurderingspunkt | 0.22 |
+| L6 | Maktkartleggeren | Vetomakt, interesser, allianser | 0.25 |
+| L7 | Reverseringslinsen | Angrekostnad, pilot, fleksibilitet | 0.22 |
+
+---
+
+## DEL 2: KONFLIKTMATRISE
+
+### Hovedkonflikter (forutsigbare spenninger)
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         KONFLIKTMATRISE                                  │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│   EFFEKTIVITET ←────────────────────────────────→ RETTFERDIGHET         │
+│   (Samfunnsøkonom, Konsulent, Ingeniør)          (Etiker, Sosiolog)     │
+│                                                                          │
+│   TEMPO/HANDLEKRAFT ←───────────────────────────→ GRUNDIGHET            │
+│   (Konsulent, Prosjektleder)                     (Jurist, Forsker)      │
+│                                                                          │
+│   STANDARDISERING ←─────────────────────────────→ TILPASNING            │
+│   (Kvalitetsrådgiver, Ingeniør)                  (Service designer,     │
+│                                                   Kulturanalytiker)      │
+│                                                                          │
+│   KONTROLL ←────────────────────────────────────→ TILLIT/AUTONOMI       │
+│   (Jurist, Risiko, Personvern)                   (Tjenesteleder,        │
+│                                                   Transformasjonsleder)  │
+│                                                                          │
+│   INNOVASJON ←──────────────────────────────────→ COMPLIANCE            │
+│   (AI-ekspert, Endringsleder)                    (Jurist, HMS, Kvalitet)│
+│                                                                          │
+│   KORTSIKTIG RESULTAT ←─────────────────────────→ LANGSIKTIG BÆREKRAFT  │
+│   (Økonom, Prosjektleder)                        (Systemteoretiker,     │
+│                                                   Konfuciansk leder)     │
+│                                                                          │
+│   INDIVIDFOKUS ←────────────────────────────────→ KOLLEKTIVFOKUS        │
+│   (HR-ekspert, Psykolog)                         (Kollektivistisk leder,│
+│                                                   Sosiolog)              │
+│                                                                          │
+│   INTERN OPTIMERING ←───────────────────────────→ EKSTERN LEGITIMITET   │
+│   (Ingeniør, Økonom)                             (Journalist, Politiker) │
+│                                                                          │
+│   MIKRO (detalj) ←──────────────────────────────→ MAKRO (helhet)        │
+│   (Oppgaveatomist, Førstelinje)                  (Systemteoretiker,     │
+│                                                   Strateg)               │
+│                                                                          │
+│   REALPOLITIKK ←────────────────────────────────→ PRINSIPPER            │
+│   (Maktkartlegger, Politisk økonom)              (Etiker, Jurist)       │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### Detaljert konfliktliste
+
+| Konfliktpar | Linse A | Linse B | Spenningens natur | Håndtering |
+|-------------|---------|---------|-------------------|------------|
+| K01 | Samfunnsøkonom | Etisk filosof | Effektivitet vs. rettferdighet | Eksplisitt avveining med begrunnelse |
+| K02 | Jurist | Konsulent | Grundighet vs. tempo | Proporsjonalitet etter risiko |
+| K03 | Jurist | AI-ekspert | Forsiktighet vs. innovasjon | Sandbox/pilot før full utrulling |
+| K04 | Personvernombud | Data scientist | Dataminimering vs. analysebehov | Anonymisering, formålsbegrensning |
+| K05 | Risikostyringsekspert | Endringsleder | Sikkerhet vs. endringsfart | Risikobasert tilnærming |
+| K06 | Kvalitetsrådgiver | Service designer | Standardprosess vs. brukertilpasning | Differensiert tjenestenivå |
+| K07 | HR-ekspert | Økonom | Ansattes ve vs. kostnadskutt | Langsiktig kost-nytte inkl. turnover |
+| K08 | Tillitsvalgt | Konsulent | Medbestemmelse vs. effektivisering | Tidlig involvering, reell dialog |
+| K09 | Politisk teoretiker | Prosjektleder | Bred forankring vs. leveransefokus | Definerte beslutningspunkter |
+| K10 | Systemteoretiker | Ingeniør | Helhet vs. forenkling | Iterativ tilnærming, pilotprosjekt |
+| K11 | Kulturanalytiker | Endringsleder | Respekt for eksisterende vs. nytt | Endringsnarrativ som bygger bro |
+| K12 | Sosiolog | Samfunnsøkonom | Fordelingseffekter vs. total nytte | Kompenserende tiltak for tapere |
+| K13 | Historiker | Transformasjonsleder | Lære av fortid vs. skape nytt | Anerkjenn historie, men ikke fanget |
+| K14 | Forskeren | Policy analyst | Usikkerhet vs. handlekraft | Beslutning under usikkerhet, revisjonspunkt |
+| K15 | Journalist | Kommunikasjonsekspert | Kritisk gransking vs. styrt budskap | Proaktiv åpenhet reduserer risiko |
+| K16 | Oppgaveatomist | Systemteoretiker | Mikro vs. makro | System først, atomisering etterpå |
+| K17 | Førstelinjelederen | Konsulent | Realisme vs. ideal | Test idealer mot operativ kapasitet |
+| K18 | Maktkartleggeren | Etiker | Realpolitikk vs. prinsipper | Kartlegg makt, naviger etisk |
+| K19 | Reverseringslinsen | Transformasjonsleder | Fleksibilitet vs. forpliktelse | Forpliktelse til mål, fleksibilitet i metode |
+| K20 | Brukeren | Ingeniør | Opplevelse vs. effektivitet | Design for 80%, støtte for 20% |
+
+---
+
+## DEL 3: BRUKSMØNSTRE
+
+### Mønster 1: Hurtigsjekk (2-3 linser)
+For enkle saker eller første gjennomlesing.
+
+**Standard kombinasjon:**
+- Juristen (hjemmel og risiko)
+- En faglinse relevant for tema
+- Kritisk venn (svakheter)
+
+---
+
+### Mønster 2: Fullstendig utredning (8-12 linser)
+For saker som skal til politisk behandling.
+
+**Anbefalt sekvens:**
+1. **Systemteoretiker** → Forstå helheten først
+2. **Jurist** → Avklar handlingsrom
+3. **Samfunnsøkonom** → Kost-nytte
+4. **Etisk filosof** → Verdikonflikter
+5. **Maktkartlegger** → Hvem kan stoppe?
+6. **Reverseringslinsen** → Kan vi angre?
+7. **Oppgaveatomist** → Hva er stegene?
+8. **Førstelinjeleder** → Gjennomførbart?
+9. **Brukeren** → Hvordan oppleves det?
+10. **Kritisk venn** → Stresstest
+11. **Stabssjef** → Syntese og anbefaling
+
+---
+
+### Mønster 3: Implementeringsfokus (Gruppe L)
+Når beslutningen er tatt og du skal gjennomføre.
+
+**Bruk disse i sekvens:**
+1. **Maktkartlegger** → Hvem må med?
+2. **Reverseringslinsen** → Pilotmulighet?
+3. **Oppgaveatomist** → Mikrooppgaver
+4. **Førstelinjeleder** → Kapasitetssjekk
+5. **Brukeren** → Brukertest
+
+---
+
+### Mønster 4: Politisk sensitiv sak
+Når det er mange interesser og risiko for motstand.
+
+**Bruk disse:**
+- Maktkartlegger (hvem kan stoppe?)
+- Narrativ-analytikeren (hvilke fortellinger kolliderer?)
+- Politisk teoretiker (legitimitet)
+- Etiker (prinsipper)
+- Kommunikasjonsekspert (budskap)
+
+---
+
+## DEL 4: INDEKS FOR TRIGGERE
+
+### Automatisk linsevalg basert på nøkkelord i dokument
+
+| Trigger-ord | Aktiverer linse(r) |
+|-------------|-------------------|
+| personopplysninger, GDPR, samtykke | Personvernombud |
+| budsjett, kostnad, effektivisering | Økonom, Samfunnsøkonom |
+| vedtak, klage, hjemmel, forskrift | Jurist |
+| risiko, sårbarhet, beredskap | Risikostyringsekspert |
+| omstilling, nedbemanning, endring | Endringsleder, HR-ekspert, Tillitsvalgt |
+| digitalisering, AI, automatisering | AI/Teknologi-ekspert |
+| brukerreise, tjeneste, opplevelse | Service designer, Brukeren (L3) |
+| sykefravær, arbeidsmiljø, HMS | HMS-rådgiver |
+| strategi, mål, visjon | Ledelsesstrategen |
+| stat, kommune, samarbeid, avtale | Intergovernance-forvalteren |
+| etikk, verdier, rettferdighet | Etisk filosof |
+| kultur, normer, "slik gjør vi det" | Kulturanalytiker |
+| evidens, forskning, effekt | Forskeren |
+| motstand, interesser, konflikt | Narrativ-analytiker, Maktkartlegger |
+| media, innsyn, offentlighet | Journalist |
+| mangfold, inkludering, likestilling | Identitets- og mangfoldleder |
+| pensjon, AFP, senior, livsfase | Livsfase- og kjønnsøkonom |
+| internasjonal, eksport, sanksjoner | Geoøkonom |
+| implementering, gjennomføring | Oppgaveatomist, Førstelinjeleder |
+| pilot, test, reversering | Reverseringslinsen |
+| interessenter, forankring, støtte | Maktkartlegger |
+| innbygger, søker, sårbar | Brukeren (L3) |
+| kapasitet, bemanning, ressurser | Førstelinjeleder |
+
+---
+
+## DEL 5: POLARITETSKART FOR HOVEDSPENNINGER
+
+### Polaritet 1: Effektivitet ↔ Rettferdighet
+
+```
+┌────────────────────────────────────────────────────────────────┐
+│                    STØRRE FORMÅL:                              │
+│         Bærekraftige tjenester som tjener alle                 │
+├────────────────────────────────────────────────────────────────┤
+│  EFFEKTIVITET (+)              │  RETTFERDIGHET (+)            │
+│  • Mer tjeneste per krone      │  • Alle får lik tilgang       │
+│  • Raskere saksbehandling      │  • Svake grupper ivaretas     │
+│  • Frigjør ressurser           │  • Tillit til systemet        │
+├────────────────────────────────┼───────────────────────────────┤
+│  EFFEKTIVITET (-)              │  RETTFERDIGHET (-)            │
+│  Overfokus gir:                │  Overfokus gir:               │
+│  • Svake grupper faller ut     │  • Ressurssløsing             │
+│  • Standardløsninger passer få │  • Lange køer for alle        │
+│  • Tap av tillit               │  • Byråkratisk treghet        │
+├────────────────────────────────────────────────────────────────┤
+│                    DYPERE FRYKT:                               │
+│    System som verken leverer eller er rettferdig               │
+└────────────────────────────────────────────────────────────────┘
+
+TIDLIG VARSEL (effektivitetsdrift): Klager fra sårbare grupper øker
+TIDLIG VARSEL (rettferdighetsdrift): Ventetider/kostnader eskalerer
+```
+
+---
+
+### Polaritet 2: Mikro ↔ Makro (NY)
+
+```
+┌────────────────────────────────────────────────────────────────┐
+│                    STØRRE FORMÅL:                              │
+│       Beslutninger som både er gjennomtenkte og gjennomførbare │
+├────────────────────────────────────────────────────────────────┤
+│  MIKRO (+)                     │  MAKRO (+)                    │
+│  • Konkret og handlingsrettet  │  • Ser sammenhenger           │
+│  • Avdekker praktiske hull     │  • Unngår suboptimering       │
+│  • Realistiske tidsestimater   │  • Strategisk forankret       │
+├────────────────────────────────┼───────────────────────────────┤
+│  MIKRO (-)                     │  MAKRO (-)                    │
+│  Overfokus gir:                │  Overfokus gir:               │
+│  • Mister helheten             │  • Vage formuleringer         │
+│  • Drukner i detaljer          │  • "Noen må bare fikse det"   │
+│  • Analyse-paralyse            │  • Implementeringssvikt       │
+├────────────────────────────────────────────────────────────────┤
+│                    DYPERE FRYKT:                               │
+│   Planer som enten er umulige å forstå eller umulige å utføre  │
+└────────────────────────────────────────────────────────────────┘
+
+TIDLIG VARSEL (mikrodrift): Mister strategisk retning
+TIDLIG VARSEL (makrodrift): Implementering feiler i praksis
+```
+
+---
+
+## DEL 6: MAPPESTRUKTUR FOR CLAUDE PROJECT
+
+```
+/linser-prosjekt
+│
+├── _SYSTEM.md                    # Prosjektinstrukser til Claude
+├── _INDEKS.md                    # Denne filen - oversikt og matrise
+├── _HURTIGVALG.md                # De 15 viktigste linsene i full tekst
+│
+├── /gruppe-a-system/             # Systemforståelse
+├── /gruppe-b-verdier/            # Verdier og etikk
+├── /gruppe-c-okonomi/            # Økonomi
+├── /gruppe-d-kontroll/           # Juss, risiko, kontroll
+├── /gruppe-e-mennesker/          # Mennesker og atferd
+├── /gruppe-f-endring/            # Endring og gjennomføring
+├── /gruppe-g-kunnskap/           # Kunnskap og analyse
+├── /gruppe-h-kommunikasjon/      # Kommunikasjon
+├── /gruppe-i-teknologi/          # Teknologi og design
+├── /gruppe-j-kritikk/            # Kritikk og kvalitetssikring
+├── /gruppe-k-syntese/            # Syntese og beslutning
+└── /gruppe-l-operasjonalisering/ # Operasjonalisering (NY)
+    └── gruppe-l-komplett.md      # 5 linser med full teori
+```

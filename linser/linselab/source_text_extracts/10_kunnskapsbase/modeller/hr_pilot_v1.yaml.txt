@@ -1,0 +1,490 @@
+metadata:
+  id: hr_pilot_v1
+  version: 1.1
+  status: pilot
+  last_validated: 2026-04-09
+  source_policy: markdown_master_is_truth
+  source_masters:
+    - 00_styring/SYSTEMINSTRUKS.md
+    - 01_organisasjonsmodell/HR_PILOT.md
+    - 01_organisasjonsmodell/HR_PROSESSOVERSIKT.md
+    - 01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md
+    - 01_organisasjonsmodell/HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER.md
+    - 03_agentroller/ROLLEKATALOG.md
+    - 03_agentroller/HR_TVILLING_GUARDRAILS.md
+    - 04_orkestrering/AGENTKONTRAKTER.md
+    - 04_orkestrering/AGENT_PLAYBOOKS.md
+
+organization:
+  domain: HR
+  municipality_type: stor_norsk_kommune
+  hr_function:
+    primary_goal: gi beslutningsdyktig og sporbar HR-stotte
+    pilot_scope:
+      - simulering
+      - beslutningsstotte
+      - moter
+      - produksjon
+      - revisjon
+  units:
+    - id: U-01
+      name: HR_ledelse
+      lead_role: R-02
+      local_status: aktiv_pilot
+    - id: U-02
+      name: HR_lederstotte_og_personalsaker
+      lead_role: R-03
+      local_status: aktiv_pilot
+    - id: U-03
+      name: HR_rekruttering_og_kompetanse
+      lead_role: R-04
+      local_status: aktiv_pilot
+    - id: U-04
+      name: HR_stabsfunksjoner
+      lead_role: R-02
+      local_status: aktiv_pilot
+
+guardrails:
+  no_sensitive_personal_data: true
+  no_legal_conclusions_without_owner: true
+  single_source_of_truth: markdown_master
+  derived_outputs_not_truth: true
+  escalate_on_missing_grounding: true
+  max_followup_questions: 1
+
+roles:
+  - id: R-02
+    name: HR-sjef
+    category: domain_role
+    unit_id: U-01
+    reports_to: organisasjonsdirektor
+    key_processes: [P-08]
+    must_have_skills: [SK-01, SK-03, SK-07, SK-09, SK-15]
+    should_have_skills: [SK-08, SK-10, SK-12]
+    artifacts: [ART-10, ART-11, ART-12]
+    risks: [RSK-01, RSK-02, RSK-03, RSK-05]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - id: R-03
+    name: avdelingssjef_lederstotte_og_personalsaker
+    category: domain_role
+    unit_id: U-02
+    reports_to: R-02
+    key_processes: [P-03, P-08]
+    must_have_skills: [SK-01, SK-06, SK-10, SK-11, SK-15]
+    should_have_skills: [SK-08, SK-09, SK-12]
+    artifacts: [ART-06, ART-10, ART-11, ART-12]
+    risks: [RSK-01, RSK-02, RSK-04]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - id: R-04
+    name: avdelingssjef_rekruttering_og_kompetanse
+    category: domain_role
+    unit_id: U-03
+    reports_to: R-02
+    key_processes: [P-06]
+    must_have_skills: [SK-02, SK-03, SK-09, SK-10, SK-15]
+    should_have_skills: [SK-08, SK-12, SK-13, SK-14]
+    artifacts: [ART-01, ART-02, ART-03, ART-09, ART-10]
+    risks: [RSK-02, RSK-05, RSK-07]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - id: R-05
+    name: HR-radgiver
+    category: domain_role
+    unit_id: U-02
+    reports_to: R-03
+    key_processes: [P-01, P-03]
+    must_have_skills: [SK-01, SK-08, SK-11, SK-12]
+    should_have_skills: [SK-06, SK-10, SK-15]
+    artifacts: [ART-05, ART-06, ART-10, ART-11]
+    risks: [RSK-01, RSK-02, RSK-04]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - id: R-06
+    name: HR-jurist
+    category: domain_role
+    unit_id: U-02
+    reports_to: R-02
+    key_processes: [P-03]
+    must_have_skills: [SK-01, SK-07, SK-11, SK-12, SK-15]
+    should_have_skills: [SK-08, SK-10]
+    artifacts: [ART-06, ART-10, ART-11]
+    risks: [RSK-01, RSK-02, RSK-04]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - id: R-07
+    name: forhandlingsradgiver
+    category: domain_role
+    unit_id: U-04
+    reports_to: R-02
+    key_processes: [P-08]
+    must_have_skills: [SK-01, SK-07, SK-08, SK-15]
+    should_have_skills: [SK-09, SK-12]
+    artifacts: [ART-06, ART-10, ART-11]
+    risks: [RSK-01, RSK-02, RSK-03]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - id: R-08
+    name: HMS-radgiver
+    category: domain_role
+    unit_id: U-04
+    reports_to: R-02
+    key_processes: [P-05]
+    must_have_skills: [SK-05, SK-08, SK-09, SK-12]
+    should_have_skills: [SK-06, SK-11, SK-15]
+    artifacts: [ART-06, ART-07, ART-10, ART-11]
+    risks: [RSK-03, RSK-05, RSK-06]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - id: R-09
+    name: rekrutteringsradgiver
+    category: domain_role
+    unit_id: U-03
+    reports_to: R-04
+    key_processes: [P-02]
+    must_have_skills: [SK-02, SK-08, SK-12, SK-13]
+    should_have_skills: [SK-03, SK-09, SK-11]
+    artifacts: [ART-01, ART-02, ART-03, ART-04]
+    risks: [RSK-02, RSK-07]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - id: R-10
+    name: laerlingkoordinator
+    category: domain_role
+    unit_id: U-03
+    reports_to: R-04
+    key_processes: [P-04]
+    must_have_skills: [SK-04, SK-08, SK-12, SK-14]
+    should_have_skills: [SK-02, SK-09, SK-10]
+    artifacts: [ART-02, ART-08, ART-09]
+    risks: [RSK-02, RSK-08]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - id: R-11
+    name: kompetanseradgiver
+    category: domain_role
+    unit_id: U-03
+    reports_to: R-04
+    key_processes: [P-06]
+    must_have_skills: [SK-03, SK-09, SK-10, SK-14]
+    should_have_skills: [SK-08, SK-12, SK-15]
+    artifacts: [ART-09, ART-10, ART-11]
+    risks: [RSK-05, RSK-06]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - id: R-12
+    name: e_laeringsradgiver
+    category: domain_role
+    unit_id: U-03
+    reports_to: R-04
+    key_processes: [P-06]
+    must_have_skills: [SK-08, SK-12, SK-14]
+    should_have_skills: [SK-03, SK-09, SK-10]
+    artifacts: [ART-09, ART-10]
+    risks: [RSK-05, RSK-06]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - id: R-13
+    name: IA-radgiver
+    category: domain_role
+    unit_id: U-02
+    reports_to: R-03
+    key_processes: [P-01]
+    must_have_skills: [SK-06, SK-08, SK-11, SK-12]
+    should_have_skills: [SK-05, SK-09, SK-10]
+    artifacts: [ART-05, ART-06, ART-10, ART-11]
+    risks: [RSK-02, RSK-04, RSK-05]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - id: R-14
+    name: radgiver_for_leder_og_organisasjonsutvikling
+    category: domain_role
+    unit_id: U-03
+    reports_to: R-04
+    key_processes: [P-06, P-08]
+    must_have_skills: [SK-10, SK-14, SK-15]
+    should_have_skills: [SK-03, SK-08, SK-09, SK-12]
+    artifacts: [ART-09, ART-10, ART-11]
+    risks: [RSK-03, RSK-05, RSK-06]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+
+agent_roles:
+  - id: A-01
+    name: dirigenten
+    type: top_level_router
+  - id: A-02
+    name: den_virtuelle_stabssjefen
+    type: synthesis_and_decision
+  - id: A-03
+    name: linseagent
+    type: perspective_analysis
+  - id: A-04
+    name: gruppe_l_agent
+    type: operational_translation
+  - id: A-05
+    name: HR-tvillingen
+    type: domain_agent
+  - id: A-06
+    name: produksjonsagent
+    type: delivery_agent
+  - id: A-07
+    name: kildevokteren
+    type: source_sync_review
+  - id: A-08
+    name: evalrevisoren
+    type: evaluation_and_gate_review
+  - id: A-09
+    name: forbedringskoordinatoren
+    type: improvement_prioritization
+
+skills:
+  - id: SK-01
+    name: arbeidsrett_og_saksbehandling
+  - id: SK-02
+    name: rekrutteringsdesign_og_kvalifikasjonsprinsipp
+  - id: SK-03
+    name: kompetanseplanlegging_og_portefoljestyring
+  - id: SK-04
+    name: laerlingforvaltning_og_fagopplaering
+  - id: SK-05
+    name: systematisk_hms_og_internkontroll
+  - id: SK-06
+    name: ia_og_sykefravaersoppfolging
+  - id: SK-07
+    name: forhandling_og_partssamarbeid
+  - id: SK-08
+    name: klarsprak_og_mottakertilpasning
+  - id: SK-09
+    name: dataforstaelse_og_hr_kpi
+  - id: SK-10
+    name: lederstotte_og_organisasjonsutvikling
+  - id: SK-11
+    name: personvern_og_informasjonshygiene
+  - id: SK-12
+    name: digital_systembruk_og_dokumentasjon
+  - id: SK-13
+    name: intervjumetodikk_og_kandidatopplevelse
+  - id: SK-14
+    name: onboarding_og_laeringsdesign
+  - id: SK-15
+    name: endringsledelse_og_medvirkning
+
+systems:
+  - id: S-01
+    name: Styringsportalen_eller_tilsvarende
+    purpose: virksomhetsstyring_og_noekkeltall
+    local_status: maa_verifiseres_lokalt
+  - id: S-02
+    name: ERP_X_eller_tilsvarende
+    purpose: loenn_fravaer_personaldata
+    local_status: maa_verifiseres_lokalt
+  - id: S-03
+    name: EQS_eller_tilsvarende
+    purpose: kvalitetssystem_avvik_hms_prosedyrer
+    local_status: maa_verifiseres_lokalt
+  - id: S-04
+    name: P360_eller_tilsvarende
+    purpose: sak_og_arkiv
+    local_status: maa_verifiseres_lokalt
+  - id: S-05
+    name: ACOS_Webcruiter_eller_tilsvarende
+    purpose: rekrutteringsplattform
+    local_status: maa_verifiseres_lokalt
+  - id: S-06
+    name: KS_Kunnskap_eller_laringsplattform
+    purpose: kurs_og_kompetanseplattform
+    local_status: maa_verifiseres_lokalt
+  - id: S-07
+    name: Dossier_eller_kompetansesystem
+    purpose: kompetansestyring
+    local_status: maa_verifiseres_lokalt
+  - id: S-08
+    name: OLKWeb_eller_tilsvarende
+    purpose: laerlingeoppfolging
+    local_status: maa_verifiseres_lokalt
+  - id: S-09
+    name: NAV_Dine_sykmeldte_eller_tilsvarende
+    purpose: sykefravaersoppfolging_og_dialogmoter
+    local_status: maa_verifiseres_lokalt
+
+regulations:
+  - id: REG-01
+    name: arbeidsmiljoloven
+  - id: REG-02
+    name: forvaltningsloven
+  - id: REG-03
+    name: offentlighetsloven
+  - id: REG-04
+    name: hovedtariffavtalen_KS
+  - id: REG-05
+    name: hovedavtalen_KS
+  - id: REG-06
+    name: GDPR_og_informasjonssikkerhet
+  - id: REG-07
+    name: internkontrollforskriften
+  - id: REG-08
+    name: opplaringslova_og_regelverk_for_laerebedrift
+  - id: REG-09
+    name: kvalifikasjonsprinsippet_i_kommunal_rekruttering
+
+risks:
+  - id: RSK-01
+    name: uklar_beslutningsrett
+  - id: RSK-02
+    name: mangelfull_dokumentasjon
+  - id: RSK-03
+    name: for_sen_medvirkning
+  - id: RSK-04
+    name: personvernbrudd
+  - id: RSK-05
+    name: analyse_uten_operativ_forankring
+  - id: RSK-06
+    name: svak_systembruk
+  - id: RSK-07
+    name: kandidatfrafall_i_rekruttering
+  - id: RSK-08
+    name: frafall_i_laerlingeordning
+  - id: RSK-09
+    name: rolle_drift_mellom_master_og_utlysning
+  - id: RSK-10
+    name: produksjon_uten_godkjent_fasegate
+
+controls:
+  - id: CTRL-01
+    name: eksplisitt_prosesseier
+  - id: CTRL-02
+    name: dokumentert_handover
+  - id: CTRL-03
+    name: lokal_verifikasjon_for_gate
+  - id: CTRL-04
+    name: guardrail_eskalering_til_riktig_rolle
+  - id: CTRL-05
+    name: bruk_av_standardmaler
+  - id: CTRL-06
+    name: skille_mellom_fakta_antakelse_anbefaling
+  - id: CTRL-07
+    name: master_foer_kodetabell
+  - id: CTRL-08
+    name: avledet_output_ikke_sannhetskilde
+
+artifacts:
+  - id: ART-01
+    name: kravprofil_og_behovsbeskrivelse
+  - id: ART-02
+    name: stillingsutlysning
+  - id: ART-03
+    name: kandidatmatrise
+  - id: ART-04
+    name: intervjuguide
+  - id: ART-05
+    name: oppfolgingsplan_sykefravaer
+  - id: ART-06
+    name: handover_og_saksnotat
+  - id: ART-07
+    name: hms_risikovurdering_og_tiltaksplan
+  - id: ART-08
+    name: laerekontrakt_og_arbeidsavtale_sjekkliste
+  - id: ART-09
+    name: onboarding_30_60_90_plan
+  - id: ART-10
+    name: beslutningsnotat_hr
+  - id: ART-11
+    name: moteunderlag_hr
+  - id: ART-12
+    name: prosesskort_hr
+
+templates:
+  - id: TMP-01
+    name: SIMULERINGSNOTAT_TEMPLATE
+  - id: TMP-02
+    name: BESLUTNINGSNOTAT_TEMPLATE
+  - id: TMP-03
+    name: MOTEUNDERLAG_TEMPLATE
+  - id: TMP-04
+    name: LEVERANSEUTKAST_TEMPLATE
+  - id: TMP-05
+    name: HR_RAD_TEMPLATE
+  - id: TMP-06
+    name: PROSESSKORT_TEMPLATE
+  - id: TMP-07
+    name: ROLLEKORT_TEMPLATE
+  - id: TMP-08
+    name: KOMPETANSEMATRISE_TEMPLATE
+  - id: TMP-09
+    name: STILLINGSUTLYSNING_TEMPLATE
+  - id: TMP-10
+    name: KANDIDATVURDERING_OG_INTERVJUGUIDE_TEMPLATE
+  - id: TMP-11
+    name: ONBOARDING_30_60_90_TEMPLATE
+
+processes:
+  - id: P-01
+    name: sykefravaersoppfolging
+    owner_role: R-13
+    supporting_roles: [R-05, R-06, R-08]
+    systems: [S-01, S-02, S-03, S-09]
+    regulations: [REG-01, REG-06]
+    risks: [RSK-02, RSK-04, RSK-05]
+    controls: [CTRL-01, CTRL-02, CTRL-03, CTRL-06]
+    artifacts: [ART-05, ART-06]
+    nav_ref: https://www.nav.no/arbeidsgiver/oppfolging-sykmeldte
+  - id: P-02
+    name: strategisk_rekruttering
+    owner_role: R-09
+    supporting_roles: [R-04, R-05]
+    systems: [S-05, S-07]
+    regulations: [REG-02, REG-03, REG-06, REG-09]
+    risks: [RSK-02, RSK-07]
+    controls: [CTRL-01, CTRL-03, CTRL-05, CTRL-06, CTRL-08]
+    artifacts: [ART-01, ART-02, ART-03, ART-04]
+    ks_ref: https://www.ks.no/fagomrader/arbeidsgiverpolitikk/inkluderende-arbeidsliv-ia/unntak-fra-kvalifikasjonsprinsippet/
+  - id: P-03
+    name: kompleks_personalsak
+    owner_role: R-06
+    supporting_roles: [R-03, R-05]
+    systems: [S-03, S-04]
+    regulations: [REG-01, REG-02, REG-05, REG-06]
+    risks: [RSK-01, RSK-02, RSK-04]
+    controls: [CTRL-01, CTRL-02, CTRL-03, CTRL-04]
+    artifacts: [ART-06, ART-10, ART-11]
+  - id: P-04
+    name: laerlinginntak_og_oppfolging
+    owner_role: R-10
+    supporting_roles: [R-04]
+    systems: [S-05, S-06, S-08]
+    regulations: [REG-02, REG-06, REG-08]
+    risks: [RSK-02, RSK-08]
+    controls: [CTRL-01, CTRL-02, CTRL-05]
+    artifacts: [ART-02, ART-08, ART-09]
+    udir_ref: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/larling/
+  - id: P-05
+    name: systematisk_HMS_arbeid
+    owner_role: R-08
+    supporting_roles: [R-02]
+    systems: [S-01, S-02, S-03]
+    regulations: [REG-01, REG-06, REG-07]
+    risks: [RSK-03, RSK-05, RSK-06]
+    controls: [CTRL-01, CTRL-02, CTRL-03]
+    artifacts: [ART-06, ART-07]
+    arbeidstilsynet_ref: https://www.arbeidstilsynet.no/hms/internkontroll/
+  - id: P-06
+    name: lederutviklingsportefolje
+    owner_role: R-04
+    supporting_roles: [R-11, R-12, R-14]
+    systems: [S-01, S-06, S-07]
+    regulations: [REG-06]
+    risks: [RSK-05, RSK-06]
+    controls: [CTRL-01, CTRL-03, CTRL-05]
+    artifacts: [ART-09, ART-10, ART-11]
+    ks_ref: https://www.ks.no/fagomrader/arbeidsgiverpolitikk/kompetanse-og-rekruttering/verktoy---strategisk-kompetanseplanlegging
+  - id: P-08
+    name: omstillingsprosess
+    owner_role: R-03
+    supporting_roles: [R-06, R-07, R-08, R-14]
+    systems: [S-01, S-03, S-04]
+    regulations: [REG-01, REG-02, REG-04, REG-05, REG-06]
+    risks: [RSK-01, RSK-02, RSK-03, RSK-05]
+    controls: [CTRL-01, CTRL-02, CTRL-03, CTRL-04, CTRL-06]
+    artifacts: [ART-06, ART-10, ART-11, ART-12]

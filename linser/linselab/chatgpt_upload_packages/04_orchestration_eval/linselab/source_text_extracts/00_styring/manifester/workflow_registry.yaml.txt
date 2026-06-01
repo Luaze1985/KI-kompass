@@ -1,0 +1,65 @@
+metadata:
+  id: workflow_registry
+  version: 1.1
+  status: active_docs_first_v2
+  last_validated: 2026-04-09
+  markdown_master_refs:
+    - 05_simulering/SIMULERINGSLOP.md
+    - 06_beslutningsstotte/BESLUTNINGSLOP.md
+    - 07_moter/MOTEFLYT.md
+    - 08_produksjon/PRODUKSJONSLOP.md
+    - 04_orkestrering/REVISJONSLOP.md
+  packet_ref: 04_orkestrering/OPPDRAGSFORMAT_OG_TRACE.md
+
+shared_objects:
+  task_envelope_required: true
+  handover_packet_required: true
+  decision_trace_required: true
+  markdown_master_wins_over_registry: true
+
+workflows:
+  - id: simulering
+    trigger: hypotese_scenario_eller_alternativvurdering
+    start_state: task_envelope
+    end_state: simuleringsnotat_med_decision_trace
+    steps:
+      - { id: s1, agent: dirigenten, output: route_plan }
+      - { id: s2, agent: linseagent, output: perspektivvurdering }
+      - { id: s3, agent: gruppe_l_agent, output: operativ_realisme_og_handover }
+      - { id: s4, agent: den_virtuelle_stabssjefen, output: syntese_og_anbefalt_retning }
+  - id: beslutningsstotte
+    trigger: behov_for_kort_og_sporbart_beslutningsgrunnlag
+    start_state: task_envelope
+    end_state: beslutningsnotat_med_decision_trace
+    steps:
+      - { id: b1, agent: dirigenten, output: route_plan }
+      - { id: b2, agent: linseagent, output: faglige_funn }
+      - { id: b3, agent: den_virtuelle_stabssjefen, output: prioritering_og_anbefaling }
+      - { id: b4, agent: gruppe_l_agent, output: gjennomforingskontroll_ved_behov }
+  - id: mote
+    trigger: behov_for_forberedelse_av_drofting_styring_eller_ledelsesavklaring
+    start_state: task_envelope
+    end_state: moteunderlag_med_decision_trace
+    steps:
+      - { id: m1, agent: dirigenten, output: route_plan }
+      - { id: m2, agent: linseagent, output: konfliktlinjer_og_risiko }
+      - { id: m3, agent: den_virtuelle_stabssjefen, output: agenda_ansvar_og_neste_steg }
+      - { id: m4, agent: produksjonsagent, output: moteunderlag }
+  - id: produksjon
+    trigger: behov_for_utkast_leveranse_eller_strukturert_output
+    start_state: task_envelope
+    end_state: leveranseutkast_med_decision_trace
+    steps:
+      - { id: p1, agent: dirigenten, output: route_plan }
+      - { id: p2, agent: den_virtuelle_stabssjefen, output: godkjent_grunnlag }
+      - { id: p3, agent: produksjonsagent, output: leveranseutkast }
+      - { id: p4, agent: gruppe_l_agent, output: handover_og_implementeringssjekk_ved_behov }
+  - id: revisjon
+    trigger: behov_for_a_finne_drift_hull_eller_forbedringsforslag
+    start_state: task_envelope
+    end_state: revisjonsnotat_med_decision_trace
+    steps:
+      - { id: r1, agent: dirigenten, output: route_plan }
+      - { id: r2, agent: kildevokteren, output: avviksliste_og_patchforslag }
+      - { id: r3, agent: evalrevisoren, output: revisjonsnotat_og_red_flags }
+      - { id: r4, agent: forbedringskoordinatoren, output: prioritert_forbedringsliste }

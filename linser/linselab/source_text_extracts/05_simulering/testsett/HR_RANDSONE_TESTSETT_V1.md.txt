@@ -1,0 +1,52 @@
+# HR_RANDSONE_TESTSETT_V1
+
+## Formaal
+
+Dette testsettet prover om HR-piloten aktiverer riktige randsoner nar saker glir over i juss, lonn, offentlighet, styring eller systemforvaltning.
+
+## Bruksregel
+
+- HR skal fortsatt vaere prosesseier hvis saken primart er en HR-sak
+- randsoner skal aktiveres med tydelig `handover_packet`
+- det skal vaere synlig hvorfor saken ikke kan loses i HR alene
+
+## Scenario 1
+
+- id: `HR-RAND-01`
+- tittel: personalsak med mulig oppsigelse og varslet tvist
+- primarloep: beslutningsstotte
+- maal: avklare om saken ma eskaleres til kommuneadvokaten og hvilke kontrollpunkter som gjelder
+- forventet aktivering: dirigent, HR-tvillingen, stabssjef, juridisk randsonespor
+- forventet linser: F4, D1, D2, B1, L6
+- forventet output: kort beslutningsnotat med rettslig risiko, prosesskrav og neste eier
+- lokal verifikasjon: bekreft faktum, dokumentgrunnlag og lokal juridisk beslutningsrett
+
+## Scenario 2
+
+- id: `HR-RAND-02`
+- tittel: feil i variable tillegg etter endring i personal- og lonnssystem
+- primarloep: simulering
+- maal: avdekke hva som er HR-problem, hva som er lonnsproblem og hva som er systemproblem
+- forventet aktivering: dirigent, HR-tvillingen, lonnsspor, systemforvaltning, Gruppe L
+- forventet linser: C2, D3, D5, I1, L1, L2
+- forventet output: simuleringsnotat med kontrollpunkter, ansvarsdeling og reverserbare strakstiltak
+- lokal verifikasjon: bekreft datakilder, antall berorte ansatte og faktisk systemeier
+
+## Scenario 3
+
+- id: `HR-RAND-03`
+- tittel: politisk sensitiv arbeidsgiverpolicy med innsynsforesporsel
+- primarloep: mote
+- maal: forberede ledelsesmote med riktig handover mellom HR, politikk og administrasjon og kommunikasjon
+- forventet aktivering: dirigent, HR-tvillingen, stabssjef, politikk- og administrasjonsspor
+- forventet linser: D1, H1, H2, B2, L6
+- forventet output: moteunderlag med prosesskrav, offentlighetsbilde og anbefalt budskapslinje
+- lokal verifikasjon: bekreft saksstatus, journalplikt og hvem som faktisk er talsperson
+
+## Enkel pass-fail
+
+- ble HR beholdt som primar prosesseier der det var riktig
+- ble riktig randsonespor aktivert
+- ble `handover_packet` gjort eksplisitt
+- ble juridisk, offentlighetsmessig eller systemmessig risiko synlig
+- ble lokal verifikasjon beholdt som krav

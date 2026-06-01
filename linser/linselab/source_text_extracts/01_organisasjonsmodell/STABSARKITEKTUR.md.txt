@@ -1,0 +1,122 @@
+# STABSARKITEKTUR
+
+## Formaal
+
+Denne filen beskriver stabsarkitekturen som lag mellom felles plattform og konkrete domener. Den brukes for a avgjore hvilke stabsomrader som skal bygges videre, og hvilke nokkelroller som ma med.
+
+## Kildegrunnlag og avklaringsnivaa
+
+Denne oversikten bygger pa:
+
+- lokal arkitektur og domenevalg i prosjektet
+- administrativ organisering publisert av Kristiansand kommune, sist endret 5. mars 2025
+- 1. tertialrapport 2025
+- okonomiplan 2026-2029
+
+## Hovedprinsipp
+
+Stabsarkitekturen skal ikke bygges som en kopi av organisasjonskartet alene. Den skal bygges som:
+
+- stabsomrader med faktisk styrings- og stottefunksjon
+- med tydelige nokkelroller
+- med relevante linsesett
+- og med klar avgrensning mot fagdomener utenfor stab
+
+## Anbefalte stabsomrader v1
+
+### A. Organisasjon og teknologi
+
+Dette parent-sporet bor deles i fire stabsomrader:
+
+1. HR og arbeidsgiver
+   - status: `AKTIV_PILOT`
+2. IT og digitalisering
+   - status: `AKTIVT_STABSOMRADE_V1`
+3. Politikk og administrasjon
+   - status: `NESTE_STABSOMRADE`
+4. Lonn
+   - status: `TIDLIG_SENERE_STABSOMRADE`
+
+## Begrunnelse
+
+- dette matcher tjenesteomradene som er beskrevet i okonomiplan 2026-2029
+- det skiller tydelig mellom menneske/arbeidsgiver, teknologi, politisk-administrativ flyt og transaksjonsnaer stotte
+- det hindrer at HR blir sekkepost for hele organisasjonsspor
+
+### B. Okonomi og virksomhetsstyring
+
+Dette parent-sporet bor deles i tre stabsomrader:
+
+1. Strategi, analyse og styring
+   - status: `AKTIVT_DOMENEOPPSETT_V1`
+2. Anskaffelser
+   - status: `NESTE_STABSOMRADE`
+3. Forskning og utvikling
+   - status: `SENERE_STABSOMRADE`
+
+## Begrunnelse
+
+- tertialrapport 2025 beskriver at Strategi og Virksomhetsstyring er slatt sammen til `Strategi, analyse og styring`
+- Forskning og utvikling er flyttet inn under samme omrade
+- Innkjop er omdopt til Anskaffelser og har tydelig nok faglig egenart til a vaere eget stabsomrade
+
+### C. Direkte under kommunedirektoren
+
+Disse bor holdes som sentrale spesialfunksjoner, ikke blandes inn i de to parent-domene som vanlige underdomener:
+
+1. Kommuneadvokaten
+   - status: `SENTRAL_SPESIALFUNKSJON`
+2. kommunedirektorens ledelses- og samordningsspor
+   - status: `SENERE_AVKLARING`
+
+## Begrunnelse
+
+- okonomiplan 2026-2029 beskriver at funksjonen som assisterende kommunedirektor ble avviklet og at Kommuneadvokaten ble lagt direkte under kommunedirektoren
+- dette bor ikke presses inn i HR eller okonomisporet
+
+## HR-organisasjonens randsoner i v1
+
+Disse skal vaere klare som linsepakker rundt HR-organisasjonen, uten at de blir fullverdige aktive domener i denne etappen:
+
+1. Kommuneadvokaten
+   - status: `KARTLAGT_RANDSONEPAKKE`
+2. Lonn og personaladministrasjon
+   - status: `KARTLAGT_RANDSONEPAKKE`
+3. Politikk og administrasjon
+   - status: `KARTLAGT_RANDSONEPAKKE`
+4. Anskaffelser og kontraktsoppfolging
+   - status: `KARTLAGT_RANDSONEPAKKE`
+5. Personvern, sikkerhet og systemforvaltning
+   - status: `KARTLAGT_RANDSONEPAKKE`
+6. Strategi, analyse og virksomhetsstyring
+   - status: `KARTLAGT_RANDSONEPAKKE`
+
+Master for dette laget er `02_linser/HR_RANDSONER_OG_LINSEPAKKER.md`.
+
+## Hva som skal med i første stabsarkitektur
+
+### Skal med na
+
+- HR og arbeidsgiver
+- Strategi, analyse og styring / okonomi og virksomhetsstyring
+- IT og digitalisering
+- kartlagt randsonelag rundt HR-organisasjonen
+- samlet oversikt over alle andre stabsomrader
+- nokkelroller og linsesett for hvert stabsomrade
+
+### Skal bygges neste
+
+- Politikk og administrasjon
+- Anskaffelser
+
+### Skal bare avgrenses forelopig
+
+- Lonn
+- Forskning og utvikling
+- eventuelt kommunedirektorens eget samordningsspor
+
+## Styringsregel
+
+- et stabsomrade skal ikke bygges fullt ut bare fordi det finnes pa organisasjonskartet
+- det ma ha tydelig rollegrunnlag, prosessbehov og linsebehov
+- hvis det ikke finnes, blir det staende som kartlagt, men ikke aktivt oppsett

@@ -1,0 +1,70 @@
+# O-04 PORTEFOLJEPRIORITERING OG INVESTERINGSVURDERING
+
+## Formaal
+
+Gi et robust grunnlag for a prioritere mellom tiltak, prosjekter og investeringer nar alt ikke kan gjores samtidig.
+
+## Eier og roller
+
+- prosesseier: portefoljeansvarlig eller direktorniva
+- hovedutforer: virksomhetsstyring i samspill med prosjekteiere
+- stotte: okonomifunksjon, relevante domeneeierroller, stabssjef
+- eskaleres til: toppledelse ved stor tverrgaende avhengighet eller hoy angrekostnad
+
+## Trigger
+
+- flere konkurrerende tiltak
+- behov for investeringsvurdering
+- krav om omprioritering i portefolje
+
+## Input
+
+- tiltaksliste eller prosjektportefolje
+- kostnadsrammer og gevinster
+- avhengigheter, kapasitet og tidskritikalitet
+- risiko og angrekostnad
+
+## Output
+
+- prioriteringsrekkefolge
+- tydelig begrunnelse for hva som gaar na, senere eller ut
+- anbefalt handover til gjennomforing
+
+## Hovedforlop
+
+1. Avklar beslutningskriterier og tidsramme.
+2. Kartlegg tiltak, kostnad, gevinst og avhengigheter.
+3. Bruk relevante linser for verdi, risiko, kapasitet og reversibilitet.
+4. Prioriter og marker hva som ma vente eller stoppes.
+5. Lever beslutningsklart grunnlag med tydelig ansvar.
+
+## Viktigste risikoer
+
+- for mange tiltak uten faktisk prioritering
+- skjulte avhengigheter eller felleskostnader
+- lav reversibilitet uten at det er tydelig
+- beslutning tas uten kapasitet til gjennomforing
+
+## Kontrollhandlinger
+
+- bruk eksplisitte kriterier for prioritering
+- koble hvert tiltak til eier, kostnad og forventet gevinst
+- bruk Gruppe L for operativ realitetstest
+- marker hva som er hoy angrekostnad
+
+## Systemer og referanser
+
+- portefoljeoversikter og styringsgrunnlag
+- Styringsportalen
+- investerings- eller tiltakslister lokalt
+
+## Handover
+
+- handover_in: fra ledelse, portefoljearena eller budsjettbehov
+- handover_out: til beslutningsnotat, styringsmote eller tiltaksspor
+
+## Lokal verifikasjon
+
+- bekreft at alle relevante tiltak faktisk er med
+- bekreft kriteriene for prioritering
+- bekreft kapasitet og avhengigheter med lokale eiere

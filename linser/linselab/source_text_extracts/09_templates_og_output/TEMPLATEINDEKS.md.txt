@@ -1,0 +1,72 @@
+# TEMPLATEINDEKS
+
+## Formaal
+
+Denne indeksen viser hvilke operative maler som er opprettet i v1, og hvordan de skal brukes uten a skape nye parallelle sannhetskilder.
+
+## Aktive v1-maler
+
+### 1. Simuleringsnotat
+- bruk: scenario, antakelser, konfliktpunkter, syntese
+- fil: `maler/SIMULERINGSNOTAT_TEMPLATE.md`
+
+### 2. Beslutningsnotat
+- bruk: anbefaling, prioritering, ansvar, neste steg
+- fil: `maler/BESLUTNINGSNOTAT_TEMPLATE.md`
+
+### 3. Moteunderlag
+- bruk: agenda, roller, konfliktlinjer, oppfolgingspunkter
+- fil: `maler/MOTEUNDERLAG_TEMPLATE.md`
+
+### 4. Leveranseutkast
+- bruk: produksjon av korte operative dokumenter
+- fil: `maler/LEVERANSEUTKAST_TEMPLATE.md`
+
+### 5. HR-rad
+- bruk: kort domenerad med guardrails, usikkerhet og eskalering
+- fil: `maler/HR_RAD_TEMPLATE.md`
+
+### 6. Prosesskort
+- bruk: standardstruktur for nye eller reviderte prosessmastere
+- fil: `maler/PROSESSKORT_TEMPLATE.md`
+
+### 7. Rollekort
+- bruk: standardisert rollebilde med ansvar, skills, risiko og eskalering
+- fil: `maler/ROLLEKORT_TEMPLATE.md`
+
+### 8. Kompetansematrise
+- bruk: must-have og should-have skills, vurdering og onboardingkobling
+- fil: `maler/KOMPETANSEMATRISE_TEMPLATE.md`
+
+### 9. Stillingsutlysning
+- bruk: standard stillingsutlysning for HR-rollene
+- fil: `maler/STILLINGSUTLYSNING_TEMPLATE.md`
+
+### 10. Kandidatvurdering og intervjuguide
+- bruk: felles kriteriesett, intervjusporsmal og beslutningsspor
+- fil: `maler/KANDIDATVURDERING_OG_INTERVJUGUIDE_TEMPLATE.md`
+
+### 11. Onboarding 30-60-90
+- bruk: strukturert oppstart for nye medarbeidere og laeringslop
+- fil: `maler/ONBOARDING_30_60_90_TEMPLATE.md`
+
+## Avledede produksjonsartefakter
+
+- ferdigutfylte HR-utlysninger ligger i `stillingsutlysninger/STILLINGSUTLYSNINGSINDEKS.md`
+- disse skal brukes som leveransegrunnlag, men ikke som egen sannhetskilde
+
+## Designkrav
+
+- malene skal bygge pa aktive masterkilder
+- malene skal vaere korte, tydelige og sporbare
+- malene skal stotte handover, ikke skjule den
+- prototype-maler skal merkes tydelig
+- produksjonsagenten skal ikke bruke en mal som overstyrer prosesseier eller guardrails
+
+## Bruksrekkefolge
+
+1. velg arbeidslop
+2. hent relevant prosesskort
+3. velg mal
+4. fyll bare innhold som kan spores til master eller godkjent referanse
+5. merk hva som ma verifiseres lokalt

@@ -1,0 +1,70 @@
+# IT-04 PLATTFORM, DRIFT OG BRUKERSTOTTE
+
+## Formaal
+
+Sikre stabil, etterproevbar og tjenestenaer drift av felles plattformer og brukerstoette.
+
+## Eier og roller
+
+- prosesseier: leder for drift og plattform
+- hovedutforer: drifts- og brukerstoettefunksjon
+- stotte: systemeiere, sikkerhet, leverandorer, relevante lokale superbrukere
+- eskaleres til: ledelse ved langvarig svikt eller alvorlig kontinuitetsrisiko
+
+## Trigger
+
+- driftsproblem eller kapasitetsutfordring
+- behov for endring i plattform eller tilgang
+- gjentakende brukerfriksjon eller supportvolum
+
+## Input
+
+- status pa plattform eller tjeneste
+- feilbildet og berorte brukergrupper
+- kapasitets- og stabilitetsdata
+- kjente avhengigheter og endringsbehov
+
+## Output
+
+- prioritert tiltaksbilde
+- tydelig skille mellom strakstiltak, varig forbedring og opplaeringsbehov
+- oppfolgingsspor med ansvar
+
+## Hovedforlop
+
+1. Avklar hva som svikter eller skal forbedres.
+2. Kartlegg konsekvens for brukere, drift og tjenesteproduksjon.
+3. Skill mellom hendelse, rotarsak og varig forbedring.
+4. Vurder behov for endring, opplaering eller kapasitetstiltak.
+5. Lever kort og handlingsrettet oppfolging.
+
+## Viktigste risikoer
+
+- drift maales kun teknisk og ikke i brukeropplevelse
+- supportvolum skjuler dypere systemsvikt
+- endringer gjores uten vurdering av sideeffekter
+- kapasitet og kompetanse undervurderes
+
+## Kontrollhandlinger
+
+- se drift og brukerstoette i sammenheng
+- marker hvilke feil som krever strukturell endring
+- bruk trender, ikke bare enkeltavvik
+- koble forbedringer til ansvarlig system- eller tjenesteeier
+
+## Systemer og referanser
+
+- plattform- og driftsoversikter
+- support- og hendelsesspor
+- lokale avtaler og leverandorgrensesnitt
+
+## Handover
+
+- handover_in: fra driftsbehov, brukerstoette eller ledelsesbestilling
+- handover_out: til forbedringslop, beslutningsnotat eller oppfolgingsmote
+
+## Lokal verifikasjon
+
+- bekreft hvilke brukere og tjenester som faktisk rammes
+- bekreft om problemet er lokalt, tverrgaende eller leverandorbundet
+- bekreft at foreslatte tiltak matcher faktisk kapasitet

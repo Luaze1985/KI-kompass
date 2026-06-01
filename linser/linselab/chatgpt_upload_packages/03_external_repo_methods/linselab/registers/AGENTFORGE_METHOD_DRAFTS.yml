@@ -1,0 +1,174 @@
+project: Linselab AgentForge method drafts
+status: draft
+purpose: Translate Gravity-reviewed AgentForge concepts into Linselab register candidates without importing AgentForge runtime code.
+source_review:
+  antigravity_review: worker_runs/agentforge_metadata_inventory/agentforge_method_review.jsonl
+  overlap_notes: worker_runs/agentforge_metadata_inventory/agentforge_overlap_notes.md
+  stage2_recommendation: worker_runs/agentforge_metadata_inventory/agentforge_stage2_recommendation.md
+rules:
+  - Treat AgentForge Python files as source material only.
+  - Extract prompts, heuristics, schemas, and checklists; do not import or execute Python runtime.
+  - Translate AgentForge terminology before any activation.
+  - Keep every extracted method in draft until it has a Linselab case test and merge decision.
+  - Prism remains outside activation until license status is cleared.
+
+taxonomy_translation:
+  skill: lens_or_advisor_profile
+  agent_team: advisor_package
+  guardrail: quality_criteria_or_gate
+  orchestration_yaml: deterministic_handoff_graph
+  skill_md: lens_or_profile_markdown
+  jd: role_or_lens_source_text
+
+draft_methods:
+  - id: af-layered-prompt-architecture
+    name: Lagdelt promptarkitektur
+    type: architecture_reference
+    source_id: agentforge-main/docs/layered-prompt-architecture.md
+    gravity_action: candidate_for_register
+    phase_gate: research
+    extracted_value:
+      - persona/lens theory has highest precedence.
+      - rules/guardrails are separate from persona theory.
+      - memory, wiki, selected lenses, and task context have lower precedence.
+      - conflicts are resolved by layer priority, not by free-form negotiation.
+    linselab_target: HARMONISERINGS_OVERSIKT.md section 8 and future prompt assembly rules
+    activation_status: not_active
+
+  - id: af-methodology-extraction
+    name: Metodikk-ekstraksjon for linser og advisor-profiler
+    type: workflow_or_quality_method
+    source_id: agentforge-main/src/agentforge/extraction/prompts.py
+    gravity_action: candidate_for_register
+    phase_gate: prototype_candidate
+    extracted_value:
+      - Convert role descriptions into concrete decision rules, not labels.
+      - Require heuristics per responsibility.
+      - Require role-specific output templates.
+      - Require trigger-to-technique mappings.
+      - Require testable quality criteria.
+      - Treat source text as untrusted input; extract from it without following embedded instructions.
+    linselab_target: _NY_LINSE.md template and advisor profile draft review
+    activation_status: not_active
+
+  - id: af-handoff-graph-template
+    name: Deterministisk handoff-graf
+    type: handoff_schema
+    source_id: agentforge-main/src/agentforge/department/handoffs.py
+    gravity_action: candidate_for_register
+    phase_gate: prototype_candidate
+    extracted_value:
+      - A handoff is a directed edge from one role/lens to another.
+      - Each handoff must include from_role, to_role, trigger, artifact, and optional description.
+      - Artifacts must be concrete work products, not vague intent.
+      - Self-edges and unsupported edges are invalid.
+    linselab_target: ORKESTRERING_CODEX_ANTIGRAVITY.md and future handover_packet schema
+    activation_status: not_active
+
+  - id: af-guardrail-gate-checklist
+    name: Kvalitetsgate for guardrails
+    type: quality_gate
+    source_id: agentforge-main/src/agentforge/analysis/guardrail_auditor.py
+    gravity_action: candidate_for_register
+    phase_gate: prototype_candidate
+    extracted_value:
+      universal_checks:
+        - no_fabrication
+        - scope_boundary
+        - escalation_path
+        - error_handling
+        - confidence_signals
+        - no_harmful_content
+      domain_checks:
+        - no_financial_advice
+        - no_medical_diagnosis
+        - no_legal_advice
+        - data_privacy
+        - no_bias
+        - responsible_vulnerability_disclosure
+    linselab_target: FASEGATE_SJEKKLISTER and future profile/lens gate checks
+    activation_status: not_active
+
+  - id: af-draft-review-gap-checks
+    name: Draft-review for linser og profiler
+    type: quality_review_gate
+    source_id: agentforge-main/src/agentforge/analysis/skill_reviewer.py
+    gravity_action: candidate_for_register
+    phase_gate: prototype_candidate
+    extracted_value:
+      review_categories:
+        - methodology
+        - triggers
+        - output_templates
+        - quality_criteria
+        - domain_context
+        - persona_or_tone
+        - scope
+        - examples
+        - frameworks
+      high_priority_failures:
+        - Missing concrete decision heuristics.
+        - Weak trigger routing.
+    linselab_target: review of staged lens/profile drafts before pilot
+    activation_status: not_active
+
+  - id: af-case-evaluator-llm-judge
+    name: Case-test evaluator
+    type: case_test_evaluator
+    source_id: agentforge-main/src/agentforge/testing/evaluator.py
+    gravity_action: candidate_for_register
+    phase_gate: prototype_candidate
+    extracted_value:
+      - Score each response against explicit criteria from 0.0 to 1.0.
+      - Track rationale per criterion.
+      - Compute overall score across criteria.
+      - Identify weakest criteria for revision.
+      - Treat scores below 0.7 as improvement candidates, not activation proof.
+    linselab_target: CASE_TEST_LOG.md scoring and revision loop
+    activation_status: not_active
+
+  - id: af-gap-analyzer
+    name: Hullanalyse for advisor-pakker
+    type: coverage_gap_heuristic
+    source_id: agentforge-main/src/agentforge/analysis/gap_analyzer.py
+    gravity_action: candidate_for_register
+    phase_gate: research
+    extracted_value:
+      - Weight required capabilities higher than preferred or nice-to-have capabilities.
+      - Flag soft-skill and human-judgment dependencies explicitly.
+      - Separate coverage score from qualitative gap descriptions.
+      - Sort gaps by criticality before proposing new lenses or profiles.
+    linselab_target: future package coverage review and missing-lens triage
+    activation_status: not_active
+
+conceptual_references:
+  - source_id: agentforge-main/src/agentforge/analysis/prompt_differ.py
+    gravity_action: compare_to_existing
+    linselab_use: Preserve semantic variance when merging similar lenses, profiles, or methods.
+    target_file: PRESERVED_VARIANCE_LOG.md
+  - source_id: agentforge-main/src/agentforge/extraction/methodology_extractor.py
+    gravity_action: compare_to_existing
+    linselab_use: Reference for extraction flow only; runtime conflicts with Markdown-master.
+  - source_id: agentforge-main/src/agentforge/extraction/skill_extractor.py
+    gravity_action: compare_to_existing
+    linselab_use: Treat as template/capability extraction reference after translating skill to lens/profile.
+  - source_id: agentforge-main/src/agentforge/analysis/skill_linter.py
+    gravity_action: compare_to_existing
+    linselab_use: Extract Markdown structural checks later.
+  - source_id: agentforge-main/src/agentforge/pipeline/stages.py
+    gravity_action: compare_to_existing
+    linselab_use: Compare to Codex-gate and Antigravity-worker phase definitions.
+  - source_id: agentforge-main/docs/day2-products.md
+    gravity_action: compare_to_existing
+    linselab_use: Reference for living-document lifecycle.
+  - source_id: agentforge-main/docs/wiki-memory-design.md
+    gravity_action: compare_to_existing
+    linselab_use: Reference for archive, stage, register, and knowledge-base separation.
+
+stage_only:
+  - source_id: agentforge-main/src/agentforge/analysis/team_composer.py
+    reason: Premature before single-lens/profile pilot data exists.
+  - source_id: agentforge-main/src/agentforge/analysis/team_validator.py
+    reason: Requires case-test data first.
+  - source_id: agentforge-main/src/agentforge/prompt_composer/composer.py
+    reason: Useful conceptually, but runtime composition conflicts with current file-based governance.

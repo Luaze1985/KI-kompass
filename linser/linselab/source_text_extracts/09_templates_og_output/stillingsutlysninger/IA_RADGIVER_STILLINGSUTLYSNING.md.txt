@@ -1,0 +1,55 @@
+# IA_RADGIVER STILLINGSUTLYSNING
+
+Status: avledet produksjonsartefakt v1
+
+## Metadata
+
+- role_id: `R-13`
+- unit_id: `U-02`
+- styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+- local_status: krever_lokal_tilpasning_for_publisering
+
+## Kort annonsetekst
+
+Vi soker en IA-radgiver som kan hjelpe ledere med narvaersarbeid, tilrettelegging og sykefravaersoppfolging pa en trygg og strukturert mate. Rollen krever at du kombinerer prosessforstaelse, relasjonell trygghet og tydelig handover til riktig fagspor.
+
+## Formaal med stillingen
+
+Veilede ledere og HR i narvaersarbeid og sykefravaersoppfolging uten a overskride grenser for personvern, behandling av sensitive opplysninger eller juridisk vurdering.
+
+## Hovedansvar
+
+- veilede i oppfolgingsplan, dialogmoter og tilrettelegging
+- bidra til tydelig rollefordeling mellom leder, HR, HMS, BHT og NAV
+- fange opp nar saker trenger juridisk eller organisatorisk eskalering
+- bidra til en praksis der tiltak, frister og neste steg er tydelige
+
+## Must-have kvalifikasjoner
+
+- relevant hoyere utdanning
+- erfaring med IA-arbeid, sykefravaersoppfolging eller arbeidsmiljoarbeid
+- god forstaelse for tilrettelegging, samarbeid med NAV og dokumentert oppfolging
+- evne til a veilede ledere i krevende saker pa en konkret mate
+
+## Onskede tilleggskvalifikasjoner
+
+- erfaring fra offentlig sektor eller stor virksomhet
+- erfaring med samarbeid med BHT, NAV Arbeidslivssenter eller vernetjeneste
+- erfaring med analyse av fravaersmønstre og forebyggende tiltak
+
+## System- og arbeidsflate
+
+- relevante HR- og fravaerssystemer, kvalitetssystem og NAV-relaterte arbeidsflater
+- tett samarbeid med ledere, HMS-radgiver, HR-radgiver og HR-jurist
+
+## Forste 12 maneder
+
+- styrke kvaliteten i oppfolgingsplaner og rollefordeling i fravaerssaker
+- bidra til bedre kobling mellom narvaersarbeid, dokumentasjon og handover
+- tydeliggjore nar saker skal bli i IA-sporet og nar de ma eskaleres
+
+## Lokal verifikasjon for publisering
+
+- verifiser lokal praksis for samarbeid med NAV og BHT
+- verifiser hvilke systemer som faktisk brukes til fravaersoppfolging
+- verifiser om rollen ogsa dekker andre oppgaver enn IA og sykefravaer

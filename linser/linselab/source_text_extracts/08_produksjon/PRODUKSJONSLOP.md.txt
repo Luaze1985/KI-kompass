@@ -1,0 +1,44 @@
+# PRODUKSJONSLOP
+
+## trigger
+- behov for konkret leveranse basert pa godkjent grunnlag
+
+## eier
+- produksjonsagent eller lokal leveranseeier
+
+## maal
+- produsere leveranser som er sporbare tilbake til godkjent kunnskapsgrunnlag og avklarte beslutninger
+
+## faser
+
+1. Inntak
+   - avklar mottaker, format, frist og godkjenningsniva
+2. Kildekontroll
+   - bruk bare aktive mastere og godkjente referanser
+   - koble rollebaserte leveranser til kanonisk rolle- og rekrutteringsmaster
+3. Utkast
+   - produser forste leveranseversjon
+4. Kvalitetssjekk
+   - sjekk sprak, sporbarhet, ansvar og eventuelle guardrails
+5. Levering
+   - lever til riktig mottaker
+6. Etterspor
+   - noter hva som ma forbedres eller verifiseres senere
+
+## gate for neste fase
+- leveransen oppfyller formatkrav, sporbarhet og lokal verifikasjon
+
+## hva som er forskning
+- tilleggskilder eller antakelser som ikke var avklart ved produksjonsstart
+
+## hva som er prototype
+- nye leveranseformer eller maler som enna ikke er godkjent
+
+## hva som er produksjon
+- notat, underlag eller leveranse som bygger pa godkjent kontrakt og masterkilder
+- inkluderer avledede rollekort, kompetansematriser, stillingsutlysninger, kandidatvurderinger og onboardingutkast
+
+## lokal verifikasjon
+- bekreft mottaker og formal
+- bekreft at sensitivt eller uavklart innhold er handtert riktig
+- bekreft at produksjonsutkast ikke smyger inn nye beslutninger

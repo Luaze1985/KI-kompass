@@ -1,0 +1,70 @@
+# IT-03 DIGITAL SIKKERHET OG HENDELSESHAANDTERING
+
+## Formaal
+
+Sikre at digitale hendelser, sårbarheter og sikkerhetskrav handteres med riktig alvor, riktig eier og tydelig kobling mellom forebygging og respons.
+
+## Eier og roller
+
+- prosesseier: informasjonssikkerhetsansvarlig
+- hovedutforer: sikkerhetsfunksjon i samspill med drift og systemeier
+- stotte: beredskap, virksomhetsarkitektur, personvern og berorte fagdomener
+- eskaleres til: ledelse eller kriseledelse ved stor konsekvens
+
+## Trigger
+
+- sikkerhetshendelse eller avvik
+- ny sårbarhet eller trussel
+- behov for vurdering av tilgang, logging eller risikoniva
+
+## Input
+
+- hendelsesbilde eller sårbarhet
+- berorte systemer og tjenester
+- eksisterende kontroller og tilgangsmodeller
+- vurdering av konsekvens for drift og innbyggere
+
+## Output
+
+- prioritert hendelses- eller tiltaksbilde
+- tydelig eier og eskaleringsspor
+- forslag til kontroll- og oppfolgingstiltak
+
+## Hovedforlop
+
+1. Avklar hendelse, omfang og berorte tjenester.
+2. Skill mellom teknisk funn, faktisk konsekvens og antatt risiko.
+3. Koble inn riktige roller for respons og beslutning.
+4. Prioriter tiltak for stabilisering, begrensning og laering.
+5. Etterspor hendelsen til forbedret kontroll og praksis.
+
+## Viktigste risikoer
+
+- teknisk alvor misforstaaes eller undervurderes
+- sikkerhet behandles isolert fra tjenestekonsekvens
+- hendelser lukkes uten laering
+- uklar grense mellom sikkerhet, personvern og drift
+
+## Kontrollhandlinger
+
+- ha eksplisitt hendelseseier
+- dokumenter berorte systemer, brukere og tjenester
+- koble sikkerhet til faktisk tjenesteverdi og kontinuitet
+- etterspor tiltak og ansvar etter hendelse
+
+## Systemer og referanser
+
+- lokale sikkerhets- og beredskapsrutiner
+- hendelses- og tilgangsspor der relevant
+- styringsgrunnlag for sikkerhet og digital beredskap
+
+## Handover
+
+- handover_in: fra hendelse, avvik eller sikkerhetsvurdering
+- handover_out: til ledelsesmote, tiltaksspor, driftsoppfolging eller leveranseutkast
+
+## Lokal verifikasjon
+
+- bekreft alvorlighetsgrad og omfang
+- bekreft hvem som faktisk eier responsen
+- bekreft at forebygging og laering folges opp etter hendelsen

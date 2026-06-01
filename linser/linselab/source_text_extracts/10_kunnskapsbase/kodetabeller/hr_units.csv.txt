@@ -1,0 +1,5 @@
+unit_id,name,lead_role,local_status,master_ref
+U-01,HR_ledelse,R-02,aktiv_pilot,01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md
+U-02,HR_lederstotte_og_personalsaker,R-03,aktiv_pilot,01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md
+U-03,HR_rekruttering_og_kompetanse,R-04,aktiv_pilot,01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md
+U-04,HR_stabsfunksjoner,R-02,aktiv_pilot,01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md

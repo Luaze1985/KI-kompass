@@ -1,0 +1,228 @@
+metadata:
+  id: scenario_catalog
+  version: 1.1
+  status: active_docs_first_v2
+  last_validated: 2026-04-09
+
+scenarios:
+  - id: HR-SIM-01
+    source_file: 05_simulering/testsett/HR_TESTSETT_V1.md
+    required_domain: hr_og_arbeidsgiver
+    primary_workflow: simulering
+    required_agents: [dirigenten, HR_tvillingen, gruppe_l_agent, den_virtuelle_stabssjefen]
+    required_lenses: [F4, D6, L1, L2]
+    required_guardrails: [03_agentroller/HR_TVILLING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: HR-BES-02
+    source_file: 05_simulering/testsett/HR_TESTSETT_V1.md
+    required_domain: hr_og_arbeidsgiver
+    primary_workflow: beslutningsstotte
+    required_agents: [dirigenten, HR_tvillingen, den_virtuelle_stabssjefen]
+    required_lenses: [F4, D1, L7]
+    required_guardrails: [03_agentroller/HR_TVILLING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: HR-MOT-03
+    source_file: 05_simulering/testsett/HR_TESTSETT_V1.md
+    required_domain: hr_og_arbeidsgiver
+    primary_workflow: mote
+    required_agents: [dirigenten, den_virtuelle_stabssjefen, produksjonsagent]
+    required_lenses: [D1, J1, L6]
+    required_guardrails: [03_agentroller/HR_TVILLING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: HR-PROD-04
+    source_file: 05_simulering/testsett/HR_TESTSETT_V1.md
+    required_domain: hr_og_arbeidsgiver
+    primary_workflow: produksjon
+    required_agents: [dirigenten, HR_tvillingen, produksjonsagent]
+    required_lenses: [F4, L1]
+    required_guardrails: [03_agentroller/HR_TVILLING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: HR-SIM-05
+    source_file: 05_simulering/testsett/HR_TESTSETT_V1.md
+    required_domain: hr_og_arbeidsgiver
+    primary_workflow: simulering
+    required_agents: [dirigenten, HR_tvillingen, gruppe_l_agent, den_virtuelle_stabssjefen]
+    required_lenses: [F1, D1, L6, L7]
+    required_guardrails: [03_agentroller/HR_TVILLING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: HR-MOT-06
+    source_file: 05_simulering/testsett/HR_TESTSETT_V1.md
+    required_domain: hr_og_arbeidsgiver
+    primary_workflow: mote
+    required_agents: [dirigenten, den_virtuelle_stabssjefen, produksjonsagent]
+    required_lenses: [D6, D5, L1]
+    required_guardrails: [03_agentroller/HR_TVILLING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: HR-PROD-07
+    source_file: 05_simulering/testsett/HR_TESTSETT_V1.md
+    required_domain: hr_og_arbeidsgiver
+    primary_workflow: produksjon
+    required_agents: [dirigenten, HR_tvillingen, produksjonsagent]
+    required_lenses: [F4, L1]
+    required_guardrails: [03_agentroller/HR_TVILLING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: HR-PROD-08
+    source_file: 05_simulering/testsett/HR_TESTSETT_V1.md
+    required_domain: hr_og_arbeidsgiver
+    primary_workflow: produksjon
+    required_agents: [dirigenten, HR_tvillingen, den_virtuelle_stabssjefen, produksjonsagent]
+    required_lenses: [F4, D1, H1, L1]
+    required_guardrails: [03_agentroller/HR_TVILLING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: HR-PROD-09
+    source_file: 05_simulering/testsett/HR_TESTSETT_V1.md
+    required_domain: hr_og_arbeidsgiver
+    primary_workflow: produksjon
+    required_agents: [dirigenten, HR_tvillingen, produksjonsagent]
+    required_lenses: [F4, L1]
+    required_guardrails: [03_agentroller/HR_TVILLING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: HR-RAND-01
+    source_file: 05_simulering/testsett/HR_RANDSONE_TESTSETT_V1.md
+    required_domain: hr_og_arbeidsgiver
+    primary_workflow: beslutningsstotte
+    required_agents: [dirigenten, HR_tvillingen, den_virtuelle_stabssjefen]
+    required_lenses: [F4, D1, D2, B1, L6]
+    required_guardrails: [03_agentroller/HR_TVILLING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: HR-RAND-02
+    source_file: 05_simulering/testsett/HR_RANDSONE_TESTSETT_V1.md
+    required_domain: hr_og_arbeidsgiver
+    primary_workflow: simulering
+    required_agents: [dirigenten, HR_tvillingen, gruppe_l_agent, den_virtuelle_stabssjefen]
+    required_lenses: [C2, D3, D5, I1, L1, L2]
+    required_guardrails:
+      - 03_agentroller/HR_TVILLING_GUARDRAILS.md
+      - 03_agentroller/IT_OG_DIGITALISERING_GUARDRAILS.md
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: HR-RAND-03
+    source_file: 05_simulering/testsett/HR_RANDSONE_TESTSETT_V1.md
+    required_domain: hr_og_arbeidsgiver
+    primary_workflow: mote
+    required_agents: [dirigenten, HR_tvillingen, den_virtuelle_stabssjefen, produksjonsagent]
+    required_lenses: [D1, H1, H2, B2, L6]
+    required_guardrails: [03_agentroller/HR_TVILLING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: REV-01
+    source_file: 05_simulering/testsett/REVISJON_TESTSETT_V1.md
+    required_domain: tverrgaende
+    primary_workflow: revisjon
+    required_agents: [dirigenten, kildevokteren, evalrevisoren, forbedringskoordinatoren]
+    required_lenses: [D5, J1, L1]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: REV-02
+    source_file: 05_simulering/testsett/REVISJON_TESTSETT_V1.md
+    required_domain: tverrgaende
+    primary_workflow: revisjon
+    required_agents: [dirigenten, kildevokteren, evalrevisoren, forbedringskoordinatoren]
+    required_lenses: [D5, J1, L1]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: REV-03
+    source_file: 05_simulering/testsett/REVISJON_TESTSETT_V1.md
+    required_domain: tverrgaende
+    primary_workflow: revisjon
+    required_agents: [dirigenten, kildevokteren, evalrevisoren, forbedringskoordinatoren]
+    required_lenses: [D5, J1, L1]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: REV-04
+    source_file: 05_simulering/testsett/REVISJON_TESTSETT_V1.md
+    required_domain: tverrgaende
+    primary_workflow: revisjon
+    required_agents: [dirigenten, kildevokteren, evalrevisoren, forbedringskoordinatoren]
+    required_lenses: [D5, J1, L1]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: OKO-SIM-01
+    source_file: 05_simulering/testsett/OKONOMI_TESTSETT_V1.md
+    required_domain: okonomi_og_virksomhetsstyring
+    primary_workflow: simulering
+    required_agents: [dirigenten, linseagent, gruppe_l_agent, den_virtuelle_stabssjefen]
+    required_lenses: [C1, C2, L6, L7]
+    required_guardrails: [03_agentroller/OKONOMI_OG_VIRKSOMHETSSTYRING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: OKO-BES-02
+    source_file: 05_simulering/testsett/OKONOMI_TESTSETT_V1.md
+    required_domain: okonomi_og_virksomhetsstyring
+    primary_workflow: beslutningsstotte
+    required_agents: [dirigenten, linseagent, den_virtuelle_stabssjefen]
+    required_lenses: [C2, D2, K1]
+    required_guardrails: [03_agentroller/OKONOMI_OG_VIRKSOMHETSSTYRING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: OKO-MOT-03
+    source_file: 05_simulering/testsett/OKONOMI_TESTSETT_V1.md
+    required_domain: okonomi_og_virksomhetsstyring
+    primary_workflow: mote
+    required_agents: [dirigenten, den_virtuelle_stabssjefen, produksjonsagent]
+    required_lenses: [G4, J1, L1]
+    required_guardrails: [03_agentroller/OKONOMI_OG_VIRKSOMHETSSTYRING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: IT-SIM-01
+    source_file: 05_simulering/testsett/IT_OG_DIGITALISERING_TESTSETT_V1.md
+    required_domain: it_og_digitalisering
+    primary_workflow: simulering
+    required_agents: [dirigenten, linseagent, gruppe_l_agent, den_virtuelle_stabssjefen]
+    required_lenses: [I1, I2, L1, L2]
+    required_guardrails: [03_agentroller/IT_OG_DIGITALISERING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: IT-BES-02
+    source_file: 05_simulering/testsett/IT_OG_DIGITALISERING_TESTSETT_V1.md
+    required_domain: it_og_digitalisering
+    primary_workflow: beslutningsstotte
+    required_agents: [dirigenten, linseagent, den_virtuelle_stabssjefen]
+    required_lenses: [I1, D3, D4, K1]
+    required_guardrails: [03_agentroller/IT_OG_DIGITALISERING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: IT-MOT-03
+    source_file: 05_simulering/testsett/IT_OG_DIGITALISERING_TESTSETT_V1.md
+    required_domain: it_og_digitalisering
+    primary_workflow: mote
+    required_agents: [dirigenten, den_virtuelle_stabssjefen, produksjonsagent]
+    required_lenses: [D4, J1, L6]
+    required_guardrails: [03_agentroller/IT_OG_DIGITALISERING_GUARDRAILS.md]
+    requires_local_verification: true
+    requires_decision_trace: true
+  - id: CROSS-BES-01
+    source_file: 05_simulering/testsett/TVERRGAENDE_TESTSETT_V1.md
+    required_domain: tverrgaende
+    primary_workflow: beslutningsstotte
+    required_agents: [dirigenten, linseagent, den_virtuelle_stabssjefen]
+    required_lenses: [B2, C3, H3, J1, L6]
+    required_guardrails:
+      - 03_agentroller/HR_TVILLING_GUARDRAILS.md
+      - 03_agentroller/IT_OG_DIGITALISERING_GUARDRAILS.md
+    requires_local_verification: true
+    requires_decision_trace: true
+    requires_non_municipal_roles: true
+  - id: CROSS-SIM-02
+    source_file: 05_simulering/testsett/TVERRGAENDE_TESTSETT_V1.md
+    required_domain: tverrgaende
+    primary_workflow: simulering
+    required_agents: [dirigenten, linseagent, gruppe_l_agent, den_virtuelle_stabssjefen]
+    required_lenses: [B1, G1, I1, J1, L5, L7]
+    required_guardrails:
+      - 03_agentroller/HR_TVILLING_GUARDRAILS.md
+      - 03_agentroller/OKONOMI_OG_VIRKSOMHETSSTYRING_GUARDRAILS.md
+      - 03_agentroller/IT_OG_DIGITALISERING_GUARDRAILS.md
+    requires_local_verification: true
+    requires_decision_trace: true
+    requires_non_municipal_roles: true

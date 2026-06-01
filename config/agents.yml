@@ -1,0 +1,11 @@
+{
+  "selected_agent_pack": "architect_builder_verifier",
+  "roles": [
+    "architect",
+    "builder",
+    "verifier"
+  ],
+  "handoff_policy": "explicit_architect_to_builder_to_verifier",
+  "write_scope_policy": "role_scoped_primary_write_owner",
+  "status": "candidate_for_mvp_sprint"
+}

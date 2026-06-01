@@ -1,0 +1,95 @@
+# PROMPT_SURFACE_INDEX
+
+## Formaal
+
+Denne filen avgrenser hvilke filer som faktisk styrer agentadferd i docs-first v2.
+
+Hovedregel:
+
+- bare filer listet her eller i aktive `package_manifest.yaml` regnes som aktiv promptflate
+- hvis en fil ikke er listet, er den referanse, arkiv, bakgrunn eller backlog
+- hvis prose og kontrollag spriker, vinner aktiv Markdown-master
+
+## 1. Felles promptflate
+
+Disse filene styrer hele tvillingsorganisasjonen:
+
+- `00_styring/SYSTEMINSTRUKS.md`
+- `00_styring/AKTIV_OVERSIKT.md`
+- `00_styring/manifester/lens_registry.yaml`
+- `00_styring/manifester/domain_registry.yaml`
+- `00_styring/manifester/agent_registry.yaml`
+- `00_styring/manifester/workflow_registry.yaml`
+- `01_organisasjonsmodell/DOMENEKART.md`
+- `02_linser/LINSEINDEKS.md`
+- `02_linser/LINSEKARTLAG_IKKE_KOMMUNALE_ROLLER.md`
+- `03_agentroller/ROLLEKATALOG.md`
+- `04_orkestrering/AGENTKONTRAKTER.md`
+- `04_orkestrering/AGENT_PLAYBOOKS.md`
+- `04_orkestrering/OPPDRAGSFORMAT_OG_TRACE.md`
+- `04_orkestrering/REVISJONSLOP.md`
+- `04_orkestrering/OPPDRAG_KJOR_REVISJON.md`
+
+## 2. Aktiv pakke: HR og arbeidsgiver
+
+Pakken styres av:
+
+- `00_styring/pakker/hr_og_arbeidsgiver/package_manifest.yaml`
+- `01_organisasjonsmodell/HR_PILOT.md`
+- `01_organisasjonsmodell/HR_PROSESSOVERSIKT.md`
+- `01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md`
+- `01_organisasjonsmodell/HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER.md`
+- `02_linser/HR_RANDSONER_OG_LINSEPAKKER.md`
+- `03_agentroller/HR_TVILLING_GUARDRAILS.md`
+- `05_simulering/OPPDRAG_SIMULER_HR_SAK.md`
+- `06_beslutningsstotte/OPPDRAG_SKRIV_BESLUTNINGSNOTAT.md`
+- `07_moter/OPPDRAG_FORBERED_HR_MOTE.md`
+- `08_produksjon/OPPDRAG_PRODUSER_HR_LEVERANSE.md`
+
+## 3. Aktiv pakke: Okonomi og virksomhetsstyring
+
+Pakken styres av:
+
+- `00_styring/pakker/okonomi_og_virksomhetsstyring/package_manifest.yaml`
+- `01_organisasjonsmodell/OKONOMI_OG_VIRKSOMHETSSTYRING_PILOT.md`
+- `01_organisasjonsmodell/OKONOMI_PROSESSOVERSIKT.md`
+- `03_agentroller/OKONOMI_OG_VIRKSOMHETSSTYRING_GUARDRAILS.md`
+- `05_simulering/OPPDRAG_SIMULER_OKONOMI_ELLER_STYRINGSSAK.md`
+- `06_beslutningsstotte/OPPDRAG_SKRIV_OKONOMI_BESLUTNINGSNOTAT.md`
+- `07_moter/OPPDRAG_FORBERED_STYRINGSMOTE.md`
+- `08_produksjon/OPPDRAG_PRODUSER_STYRINGSLEVERANSE.md`
+
+## 4. Aktiv pakke: IT og digitalisering
+
+Pakken styres av:
+
+- `00_styring/pakker/it_og_digitalisering/package_manifest.yaml`
+- `01_organisasjonsmodell/IT_OG_DIGITALISERING_PILOT.md`
+- `01_organisasjonsmodell/IT_PROSESSOVERSIKT.md`
+- `03_agentroller/IT_OG_DIGITALISERING_GUARDRAILS.md`
+- `05_simulering/OPPDRAG_SIMULER_IT_ELLER_DIGITALISERINGSSAK.md`
+- `06_beslutningsstotte/OPPDRAG_SKRIV_IT_BESLUTNINGSNOTAT.md`
+- `07_moter/OPPDRAG_FORBERED_DIGITALISERINGSMOTE.md`
+- `08_produksjon/OPPDRAG_PRODUSER_DIGITALISERINGSLEVERANSE.md`
+
+## 5. Output- og evalflate
+
+Disse filene former hvordan kvalitet kontrolleres, men de er ikke primar sannhetskilde alene:
+
+- `09_templates_og_output/TEMPLATEINDEKS.md`
+- `09_templates_og_output/maler/*.md`
+- `09_templates_og_output/stillingsutlysninger/*.md`
+- `05_simulering/testsett/*.md`
+- `05_simulering/evals/scenario_catalog.yaml`
+- `05_simulering/evals/eval_matrix.yaml`
+- `05_simulering/evals/red_flags.yaml`
+- `10_kunnskapsbase/kodetabeller/*.yaml`
+
+## 6. Utenfor aktiv promptflate
+
+Disse skal normalt ikke styre agentadferd direkte:
+
+- `10_kunnskapsbase/referanser/`
+- `90_arkiv/`
+- `99_karantene/`
+- filer som ikke star i et aktivt package manifest

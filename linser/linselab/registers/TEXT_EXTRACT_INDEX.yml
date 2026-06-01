@@ -1,0 +1,1426 @@
+generated: 2026-05-18T04:48:51.723990+00:00
+source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+extract_root: source_text_extracts
+items:
+  -
+    source_id: SRC-FILE-0001
+    relative_path: 00_styring/AKTIV_OVERSIKT.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/00_styring/AKTIV_OVERSIKT.md.txt
+    characters: 4514
+    lines: 83
+    error: null
+  -
+    source_id: SRC-FILE-0002
+    relative_path: 00_styring/manifester/agent_registry.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/00_styring/manifester/agent_registry.yaml.txt
+    characters: 3600
+    lines: 65
+    error: null
+  -
+    source_id: SRC-FILE-0003
+    relative_path: 00_styring/manifester/domain_registry.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/00_styring/manifester/domain_registry.yaml.txt
+    characters: 2708
+    lines: 52
+    error: null
+  -
+    source_id: SRC-FILE-0004
+    relative_path: 00_styring/manifester/lens_registry.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/00_styring/manifester/lens_registry.yaml.txt
+    characters: 12515
+    lines: 88
+    error: null
+  -
+    source_id: SRC-FILE-0005
+    relative_path: 00_styring/manifester/workflow_registry.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/00_styring/manifester/workflow_registry.yaml.txt
+    characters: 2902
+    lines: 66
+    error: null
+  -
+    source_id: SRC-FILE-0006
+    relative_path: 00_styring/pakker/hr_og_arbeidsgiver/change_log.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/00_styring/pakker/hr_og_arbeidsgiver/change_log.md.txt
+    characters: 1111
+    lines: 21
+    error: null
+  -
+    source_id: SRC-FILE-0007
+    relative_path: 00_styring/pakker/hr_og_arbeidsgiver/package_manifest.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/00_styring/pakker/hr_og_arbeidsgiver/package_manifest.yaml.txt
+    characters: 2332
+    lines: 57
+    error: null
+  -
+    source_id: SRC-FILE-0008
+    relative_path: 00_styring/pakker/it_og_digitalisering/change_log.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/00_styring/pakker/it_og_digitalisering/change_log.md.txt
+    characters: 321
+    lines: 9
+    error: null
+  -
+    source_id: SRC-FILE-0009
+    relative_path: 00_styring/pakker/it_og_digitalisering/package_manifest.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/00_styring/pakker/it_og_digitalisering/package_manifest.yaml.txt
+    characters: 1404
+    lines: 39
+    error: null
+  -
+    source_id: SRC-FILE-0010
+    relative_path: 00_styring/pakker/okonomi_og_virksomhetsstyring/change_log.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/00_styring/pakker/okonomi_og_virksomhetsstyring/change_log.md.txt
+    characters: 333
+    lines: 9
+    error: null
+  -
+    source_id: SRC-FILE-0011
+    relative_path: 00_styring/pakker/okonomi_og_virksomhetsstyring/package_manifest.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/00_styring/pakker/okonomi_og_virksomhetsstyring/package_manifest.yaml.txt
+    characters: 1444
+    lines: 39
+    error: null
+  -
+    source_id: SRC-FILE-0012
+    relative_path: 00_styring/prompt_surface_index.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/00_styring/prompt_surface_index.md.txt
+    characters: 3435
+    lines: 96
+    error: null
+  -
+    source_id: SRC-FILE-0013
+    relative_path: 00_styring/SYSTEMINSTRUKS.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/00_styring/SYSTEMINSTRUKS.md.txt
+    characters: 4526
+    lines: 144
+    error: null
+  -
+    source_id: SRC-FILE-0014
+    relative_path: 01_organisasjonsmodell/ANBEFALT_DOMENEPORTFOLJE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/ANBEFALT_DOMENEPORTFOLJE.md.txt
+    characters: 7115
+    lines: 323
+    error: null
+  -
+    source_id: SRC-FILE-0015
+    relative_path: 01_organisasjonsmodell/DOMENEKART.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/DOMENEKART.md.txt
+    characters: 3920
+    lines: 121
+    error: null
+  -
+    source_id: SRC-FILE-0016
+    relative_path: 01_organisasjonsmodell/HR_KJERNEPROSESSER/P-01_SYKEFRAVAERSOPPFOLGING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/HR_KJERNEPROSESSER/P-01_SYKEFRAVAERSOPPFOLGING.md.txt
+    characters: 2668
+    lines: 77
+    error: null
+  -
+    source_id: SRC-FILE-0017
+    relative_path: 01_organisasjonsmodell/HR_KJERNEPROSESSER/P-02_STRATEGISK_REKRUTTERING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/HR_KJERNEPROSESSER/P-02_STRATEGISK_REKRUTTERING.md.txt
+    characters: 2536
+    lines: 78
+    error: null
+  -
+    source_id: SRC-FILE-0018
+    relative_path: 01_organisasjonsmodell/HR_KJERNEPROSESSER/P-03_KOMPLEKS_PERSONALSAK.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/HR_KJERNEPROSESSER/P-03_KOMPLEKS_PERSONALSAK.md.txt
+    characters: 1900
+    lines: 71
+    error: null
+  -
+    source_id: SRC-FILE-0019
+    relative_path: 01_organisasjonsmodell/HR_KJERNEPROSESSER/P-04_LAERLINGINNTAK_OG_OPPFOLGING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/HR_KJERNEPROSESSER/P-04_LAERLINGINNTAK_OG_OPPFOLGING.md.txt
+    characters: 2402
+    lines: 74
+    error: null
+  -
+    source_id: SRC-FILE-0020
+    relative_path: 01_organisasjonsmodell/HR_KJERNEPROSESSER/P-05_SYSTEMATISK_HMS_ARBEID.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/HR_KJERNEPROSESSER/P-05_SYSTEMATISK_HMS_ARBEID.md.txt
+    characters: 2265
+    lines: 74
+    error: null
+  -
+    source_id: SRC-FILE-0021
+    relative_path: 01_organisasjonsmodell/HR_KJERNEPROSESSER/P-06_LEDERUTVIKLINGSPORTFOLJE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/HR_KJERNEPROSESSER/P-06_LEDERUTVIKLINGSPORTFOLJE.md.txt
+    characters: 2142
+    lines: 71
+    error: null
+  -
+    source_id: SRC-FILE-0022
+    relative_path: 01_organisasjonsmodell/HR_KJERNEPROSESSER/P-08_OMSTILLINGSPROSESS.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/HR_KJERNEPROSESSER/P-08_OMSTILLINGSPROSESS.md.txt
+    characters: 2180
+    lines: 71
+    error: null
+  -
+    source_id: SRC-FILE-0023
+    relative_path: 01_organisasjonsmodell/HR_PILOT.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/HR_PILOT.md.txt
+    characters: 3065
+    lines: 103
+    error: null
+  -
+    source_id: SRC-FILE-0024
+    relative_path: 01_organisasjonsmodell/HR_PROSESSOVERSIKT.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/HR_PROSESSOVERSIKT.md.txt
+    characters: 2475
+    lines: 61
+    error: null
+  -
+    source_id: SRC-FILE-0025
+    relative_path: 01_organisasjonsmodell/HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER.md.txt
+    characters: 4573
+    lines: 88
+    error: null
+  -
+    source_id: SRC-FILE-0026
+    relative_path: 01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md.txt
+    characters: 16612
+    lines: 410
+    error: null
+  -
+    source_id: SRC-FILE-0027
+    relative_path: 01_organisasjonsmodell/IT_KJERNEPROSESSER/IT-01_SYSTEMINNFORING_OG_SYSTEMLIVSSYKLUS.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/IT_KJERNEPROSESSER/IT-01_SYSTEMINNFORING_OG_SYSTEMLIVSSYKLUS.md.txt
+    characters: 2145
+    lines: 71
+    error: null
+  -
+    source_id: SRC-FILE-0028
+    relative_path: 01_organisasjonsmodell/IT_KJERNEPROSESSER/IT-02_VIRKSOMHETSARKITEKTUR_OG_INFORMASJONSFORVALTNING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/IT_KJERNEPROSESSER/IT-02_VIRKSOMHETSARKITEKTUR_OG_INFORMASJONSFORVALTNING.md.txt
+    characters: 2223
+    lines: 71
+    error: null
+  -
+    source_id: SRC-FILE-0029
+    relative_path: 01_organisasjonsmodell/IT_KJERNEPROSESSER/IT-03_DIGITAL_SIKKERHET_OG_HENDELSESHAANDTERING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/IT_KJERNEPROSESSER/IT-03_DIGITAL_SIKKERHET_OG_HENDELSESHAANDTERING.md.txt
+    characters: 2152
+    lines: 71
+    error: null
+  -
+    source_id: SRC-FILE-0030
+    relative_path: 01_organisasjonsmodell/IT_KJERNEPROSESSER/IT-04_PLATTFORM_DRIFT_OG_BRUKERSTOTTE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/IT_KJERNEPROSESSER/IT-04_PLATTFORM_DRIFT_OG_BRUKERSTOTTE.md.txt
+    characters: 2085
+    lines: 71
+    error: null
+  -
+    source_id: SRC-FILE-0031
+    relative_path: 01_organisasjonsmodell/IT_KJERNEPROSESSER/IT-05_DIGITAL_TJENESTEUTVIKLING_OG_GEVINST.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/IT_KJERNEPROSESSER/IT-05_DIGITAL_TJENESTEUTVIKLING_OG_GEVINST.md.txt
+    characters: 2109
+    lines: 71
+    error: null
+  -
+    source_id: SRC-FILE-0032
+    relative_path: 01_organisasjonsmodell/IT_OG_DIGITALISERING_PILOT.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/IT_OG_DIGITALISERING_PILOT.md.txt
+    characters: 2442
+    lines: 68
+    error: null
+  -
+    source_id: SRC-FILE-0033
+    relative_path: 01_organisasjonsmodell/IT_PROSESSOVERSIKT.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/IT_PROSESSOVERSIKT.md.txt
+    characters: 1538
+    lines: 35
+    error: null
+  -
+    source_id: SRC-FILE-0034
+    relative_path: 01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER/O-01_BUDSJETT_OG_OKONOMIPLAN.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER/O-01_BUDSJETT_OG_OKONOMIPLAN.md.txt
+    characters: 2006
+    lines: 71
+    error: null
+  -
+    source_id: SRC-FILE-0035
+    relative_path: 01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER/O-02_TERTIALRAPPORT_OG_PROGNOSE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER/O-02_TERTIALRAPPORT_OG_PROGNOSE.md.txt
+    characters: 1902
+    lines: 71
+    error: null
+  -
+    source_id: SRC-FILE-0036
+    relative_path: 01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER/O-03_NOEKKELTALLSOPPFOLGING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER/O-03_NOEKKELTALLSOPPFOLGING.md.txt
+    characters: 1886
+    lines: 71
+    error: null
+  -
+    source_id: SRC-FILE-0037
+    relative_path: 01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER/O-04_PORTEFOLJE_OG_INVESTERING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER/O-04_PORTEFOLJE_OG_INVESTERING.md.txt
+    characters: 2039
+    lines: 71
+    error: null
+  -
+    source_id: SRC-FILE-0038
+    relative_path: 01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER/O-05_GEVINSTOPPFOLGING_OG_TILTAKSSPOR.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER/O-05_GEVINSTOPPFOLGING_OG_TILTAKSSPOR.md.txt
+    characters: 1975
+    lines: 71
+    error: null
+  -
+    source_id: SRC-FILE-0039
+    relative_path: 01_organisasjonsmodell/OKONOMI_OG_VIRKSOMHETSSTYRING_PILOT.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/OKONOMI_OG_VIRKSOMHETSSTYRING_PILOT.md.txt
+    characters: 2069
+    lines: 65
+    error: null
+  -
+    source_id: SRC-FILE-0040
+    relative_path: 01_organisasjonsmodell/OKONOMI_PROSESSOVERSIKT.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/OKONOMI_PROSESSOVERSIKT.md.txt
+    characters: 1515
+    lines: 35
+    error: null
+  -
+    source_id: SRC-FILE-0041
+    relative_path: 01_organisasjonsmodell/STABSARKITEKTUR.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/STABSARKITEKTUR.md.txt
+    characters: 3886
+    lines: 123
+    error: null
+  -
+    source_id: SRC-FILE-0042
+    relative_path: 01_organisasjonsmodell/TVILLINGSORGANISASJON.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/01_organisasjonsmodell/TVILLINGSORGANISASJON.md.txt
+    characters: 3190
+    lines: 115
+    error: null
+  -
+    source_id: SRC-FILE-0043
+    relative_path: 02_linser/DOMENE_TIL_LINSEKOBLING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/02_linser/DOMENE_TIL_LINSEKOBLING.md.txt
+    characters: 1663
+    lines: 153
+    error: null
+  -
+    source_id: SRC-FILE-0044
+    relative_path: 02_linser/GRUPPE_L_STRUKTURMASTER.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/02_linser/GRUPPE_L_STRUKTURMASTER.md.txt
+    characters: 12388
+    lines: 312
+    error: null
+  -
+    source_id: SRC-FILE-0045
+    relative_path: 02_linser/HR_RANDSONER_OG_LINSEPAKKER.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/02_linser/HR_RANDSONER_OG_LINSEPAKKER.md.txt
+    characters: 7031
+    lines: 266
+    error: null
+  -
+    source_id: SRC-FILE-0046
+    relative_path: 02_linser/KJERNELINSER.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/02_linser/KJERNELINSER.md.txt
+    characters: 26505
+    lines: 825
+    error: null
+  -
+    source_id: SRC-FILE-0047
+    relative_path: 02_linser/LINSEINDEKS.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/02_linser/LINSEINDEKS.md.txt
+    characters: 18898
+    lines: 408
+    error: null
+  -
+    source_id: SRC-FILE-0048
+    relative_path: 02_linser/LINSEKARTLAG_IKKE_KOMMUNALE_ROLLER.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/02_linser/LINSEKARTLAG_IKKE_KOMMUNALE_ROLLER.md.txt
+    characters: 9254
+    lines: 132
+    error: null
+  -
+    source_id: SRC-FILE-0049
+    relative_path: 02_linser/LINSEPORTFOLJE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/02_linser/LINSEPORTFOLJE.md.txt
+    characters: 2760
+    lines: 85
+    error: null
+  -
+    source_id: SRC-FILE-0050
+    relative_path: 02_linser/STABSOMRAADE_TIL_LINSER.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/02_linser/STABSOMRAADE_TIL_LINSER.md.txt
+    characters: 2506
+    lines: 130
+    error: null
+  -
+    source_id: SRC-FILE-0051
+    relative_path: 03_agentroller/HR_TVILLING_GUARDRAILS.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/03_agentroller/HR_TVILLING_GUARDRAILS.md.txt
+    characters: 2293
+    lines: 73
+    error: null
+  -
+    source_id: SRC-FILE-0052
+    relative_path: 03_agentroller/IT_OG_DIGITALISERING_GUARDRAILS.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/03_agentroller/IT_OG_DIGITALISERING_GUARDRAILS.md.txt
+    characters: 1598
+    lines: 48
+    error: null
+  -
+    source_id: SRC-FILE-0053
+    relative_path: 03_agentroller/OKONOMI_OG_VIRKSOMHETSSTYRING_GUARDRAILS.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/03_agentroller/OKONOMI_OG_VIRKSOMHETSSTYRING_GUARDRAILS.md.txt
+    characters: 1630
+    lines: 47
+    error: null
+  -
+    source_id: SRC-FILE-0054
+    relative_path: 03_agentroller/ROLLEKATALOG.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/03_agentroller/ROLLEKATALOG.md.txt
+    characters: 3242
+    lines: 104
+    error: null
+  -
+    source_id: SRC-FILE-0055
+    relative_path: 03_agentroller/STABSOMRAADER_OG_NOKKELROLLER.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/03_agentroller/STABSOMRAADER_OG_NOKKELROLLER.md.txt
+    characters: 4469
+    lines: 184
+    error: null
+  -
+    source_id: SRC-FILE-0056
+    relative_path: 04_orkestrering/AGENT_PLAYBOOKS.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/04_orkestrering/AGENT_PLAYBOOKS.md.txt
+    characters: 3388
+    lines: 97
+    error: null
+  -
+    source_id: SRC-FILE-0057
+    relative_path: 04_orkestrering/AGENTKONTRAKTER.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/04_orkestrering/AGENTKONTRAKTER.md.txt
+    characters: 6332
+    lines: 144
+    error: null
+  -
+    source_id: SRC-FILE-0058
+    relative_path: 04_orkestrering/FASEGATE_SJEKKLISTER.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/04_orkestrering/FASEGATE_SJEKKLISTER.md.txt
+    characters: 2347
+    lines: 86
+    error: null
+  -
+    source_id: SRC-FILE-0059
+    relative_path: 04_orkestrering/HANDOVER_OG_FASEOVERGANGER.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/04_orkestrering/HANDOVER_OG_FASEOVERGANGER.md.txt
+    characters: 3029
+    lines: 77
+    error: null
+  -
+    source_id: SRC-FILE-0060
+    relative_path: 04_orkestrering/OPPDRAG_KJOR_REVISJON.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/04_orkestrering/OPPDRAG_KJOR_REVISJON.md.txt
+    characters: 838
+    lines: 30
+    error: null
+  -
+    source_id: SRC-FILE-0061
+    relative_path: 04_orkestrering/OPPDRAGSFORMAT_OG_TRACE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/04_orkestrering/OPPDRAGSFORMAT_OG_TRACE.md.txt
+    characters: 2155
+    lines: 107
+    error: null
+  -
+    source_id: SRC-FILE-0062
+    relative_path: 04_orkestrering/REVISJONSLOP.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/04_orkestrering/REVISJONSLOP.md.txt
+    characters: 1514
+    lines: 43
+    error: null
+  -
+    source_id: SRC-FILE-0063
+    relative_path: 05_simulering/evals/eval_matrix.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/05_simulering/evals/eval_matrix.yaml.txt
+    characters: 2148
+    lines: 48
+    error: null
+  -
+    source_id: SRC-FILE-0064
+    relative_path: 05_simulering/evals/red_flags.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/05_simulering/evals/red_flags.yaml.txt
+    characters: 1920
+    lines: 58
+    error: null
+  -
+    source_id: SRC-FILE-0065
+    relative_path: 05_simulering/evals/scenario_catalog.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/05_simulering/evals/scenario_catalog.yaml.txt
+    characters: 10193
+    lines: 229
+    error: null
+  -
+    source_id: SRC-FILE-0066
+    relative_path: 05_simulering/OPPDRAG_SIMULER_HR_SAK.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/05_simulering/OPPDRAG_SIMULER_HR_SAK.md.txt
+    characters: 840
+    lines: 35
+    error: null
+  -
+    source_id: SRC-FILE-0067
+    relative_path: 05_simulering/OPPDRAG_SIMULER_IT_ELLER_DIGITALISERINGSSAK.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/05_simulering/OPPDRAG_SIMULER_IT_ELLER_DIGITALISERINGSSAK.md.txt
+    characters: 657
+    lines: 26
+    error: null
+  -
+    source_id: SRC-FILE-0068
+    relative_path: 05_simulering/OPPDRAG_SIMULER_OKONOMI_ELLER_STYRINGSSAK.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/05_simulering/OPPDRAG_SIMULER_OKONOMI_ELLER_STYRINGSSAK.md.txt
+    characters: 714
+    lines: 27
+    error: null
+  -
+    source_id: SRC-FILE-0069
+    relative_path: 05_simulering/SIMULERINGSLOP.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/05_simulering/SIMULERINGSLOP.md.txt
+    characters: 1151
+    lines: 42
+    error: null
+  -
+    source_id: SRC-FILE-0070
+    relative_path: 05_simulering/testsett/HR_RANDSONE_TESTSETT_V1.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/05_simulering/testsett/HR_RANDSONE_TESTSETT_V1.md.txt
+    characters: 2273
+    lines: 53
+    error: null
+  -
+    source_id: SRC-FILE-0071
+    relative_path: 05_simulering/testsett/HR_TESTSETT_V1.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/05_simulering/testsett/HR_TESTSETT_V1.md.txt
+    characters: 4208
+    lines: 110
+    error: null
+  -
+    source_id: SRC-FILE-0072
+    relative_path: 05_simulering/testsett/IT_OG_DIGITALISERING_TESTSETT_V1.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/05_simulering/testsett/IT_OG_DIGITALISERING_TESTSETT_V1.md.txt
+    characters: 2622
+    lines: 70
+    error: null
+  -
+    source_id: SRC-FILE-0073
+    relative_path: 05_simulering/testsett/OKONOMI_TESTSETT_V1.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/05_simulering/testsett/OKONOMI_TESTSETT_V1.md.txt
+    characters: 2592
+    lines: 70
+    error: null
+  -
+    source_id: SRC-FILE-0074
+    relative_path: 05_simulering/testsett/REVISJON_TESTSETT_V1.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/05_simulering/testsett/REVISJON_TESTSETT_V1.md.txt
+    characters: 2185
+    lines: 60
+    error: null
+  -
+    source_id: SRC-FILE-0075
+    relative_path: 05_simulering/testsett/TVERRGAENDE_TESTSETT_V1.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/05_simulering/testsett/TVERRGAENDE_TESTSETT_V1.md.txt
+    characters: 1856
+    lines: 39
+    error: null
+  -
+    source_id: SRC-FILE-0076
+    relative_path: 06_beslutningsstotte/BESLUTNINGSLOP.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/06_beslutningsstotte/BESLUTNINGSLOP.md.txt
+    characters: 1157
+    lines: 42
+    error: null
+  -
+    source_id: SRC-FILE-0077
+    relative_path: 06_beslutningsstotte/OPPDRAG_SKRIV_BESLUTNINGSNOTAT.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/06_beslutningsstotte/OPPDRAG_SKRIV_BESLUTNINGSNOTAT.md.txt
+    characters: 807
+    lines: 33
+    error: null
+  -
+    source_id: SRC-FILE-0078
+    relative_path: 06_beslutningsstotte/OPPDRAG_SKRIV_IT_BESLUTNINGSNOTAT.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/06_beslutningsstotte/OPPDRAG_SKRIV_IT_BESLUTNINGSNOTAT.md.txt
+    characters: 737
+    lines: 26
+    error: null
+  -
+    source_id: SRC-FILE-0079
+    relative_path: 06_beslutningsstotte/OPPDRAG_SKRIV_OKONOMI_BESLUTNINGSNOTAT.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/06_beslutningsstotte/OPPDRAG_SKRIV_OKONOMI_BESLUTNINGSNOTAT.md.txt
+    characters: 708
+    lines: 26
+    error: null
+  -
+    source_id: SRC-FILE-0080
+    relative_path: 07_moter/MOTEFLYT.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/07_moter/MOTEFLYT.md.txt
+    characters: 1146
+    lines: 41
+    error: null
+  -
+    source_id: SRC-FILE-0081
+    relative_path: 07_moter/OPPDRAG_FORBERED_DIGITALISERINGSMOTE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/07_moter/OPPDRAG_FORBERED_DIGITALISERINGSMOTE.md.txt
+    characters: 581
+    lines: 26
+    error: null
+  -
+    source_id: SRC-FILE-0082
+    relative_path: 07_moter/OPPDRAG_FORBERED_HR_MOTE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/07_moter/OPPDRAG_FORBERED_HR_MOTE.md.txt
+    characters: 775
+    lines: 34
+    error: null
+  -
+    source_id: SRC-FILE-0083
+    relative_path: 07_moter/OPPDRAG_FORBERED_STYRINGSMOTE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/07_moter/OPPDRAG_FORBERED_STYRINGSMOTE.md.txt
+    characters: 604
+    lines: 26
+    error: null
+  -
+    source_id: SRC-FILE-0084
+    relative_path: 08_produksjon/OPPDRAG_PRODUSER_DIGITALISERINGSLEVERANSE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/08_produksjon/OPPDRAG_PRODUSER_DIGITALISERINGSLEVERANSE.md.txt
+    characters: 675
+    lines: 26
+    error: null
+  -
+    source_id: SRC-FILE-0085
+    relative_path: 08_produksjon/OPPDRAG_PRODUSER_HR_LEVERANSE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/08_produksjon/OPPDRAG_PRODUSER_HR_LEVERANSE.md.txt
+    characters: 1179
+    lines: 37
+    error: null
+  -
+    source_id: SRC-FILE-0086
+    relative_path: 08_produksjon/OPPDRAG_PRODUSER_STYRINGSLEVERANSE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/08_produksjon/OPPDRAG_PRODUSER_STYRINGSLEVERANSE.md.txt
+    characters: 645
+    lines: 26
+    error: null
+  -
+    source_id: SRC-FILE-0087
+    relative_path: 08_produksjon/PRODUKSJONSLOP.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/08_produksjon/PRODUKSJONSLOP.md.txt
+    characters: 1402
+    lines: 45
+    error: null
+  -
+    source_id: SRC-FILE-0088
+    relative_path: 09_templates_og_output/maler/BESLUTNINGSNOTAT_TEMPLATE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/maler/BESLUTNINGSNOTAT_TEMPLATE.md.txt
+    characters: 509
+    lines: 40
+    error: null
+  -
+    source_id: SRC-FILE-0089
+    relative_path: 09_templates_og_output/maler/HR_RAD_TEMPLATE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/maler/HR_RAD_TEMPLATE.md.txt
+    characters: 465
+    lines: 30
+    error: null
+  -
+    source_id: SRC-FILE-0090
+    relative_path: 09_templates_og_output/maler/KANDIDATVURDERING_OG_INTERVJUGUIDE_TEMPLATE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/maler/KANDIDATVURDERING_OG_INTERVJUGUIDE_TEMPLATE.md.txt
+    characters: 489
+    lines: 28
+    error: null
+  -
+    source_id: SRC-FILE-0091
+    relative_path: 09_templates_og_output/maler/KOMPETANSEMATRISE_TEMPLATE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/maler/KOMPETANSEMATRISE_TEMPLATE.md.txt
+    characters: 318
+    lines: 28
+    error: null
+  -
+    source_id: SRC-FILE-0092
+    relative_path: 09_templates_og_output/maler/LEVERANSEUTKAST_TEMPLATE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/maler/LEVERANSEUTKAST_TEMPLATE.md.txt
+    characters: 390
+    lines: 35
+    error: null
+  -
+    source_id: SRC-FILE-0093
+    relative_path: 09_templates_og_output/maler/MOTEUNDERLAG_TEMPLATE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/maler/MOTEUNDERLAG_TEMPLATE.md.txt
+    characters: 588
+    lines: 42
+    error: null
+  -
+    source_id: SRC-FILE-0094
+    relative_path: 09_templates_og_output/maler/ONBOARDING_30_60_90_TEMPLATE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/maler/ONBOARDING_30_60_90_TEMPLATE.md.txt
+    characters: 395
+    lines: 33
+    error: null
+  -
+    source_id: SRC-FILE-0095
+    relative_path: 09_templates_og_output/maler/PROSESSKORT_TEMPLATE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/maler/PROSESSKORT_TEMPLATE.md.txt
+    characters: 390
+    lines: 54
+    error: null
+  -
+    source_id: SRC-FILE-0096
+    relative_path: 09_templates_og_output/maler/ROLLEKORT_TEMPLATE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/maler/ROLLEKORT_TEMPLATE.md.txt
+    characters: 390
+    lines: 36
+    error: null
+  -
+    source_id: SRC-FILE-0097
+    relative_path: 09_templates_og_output/maler/SIMULERINGSNOTAT_TEMPLATE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/maler/SIMULERINGSNOTAT_TEMPLATE.md.txt
+    characters: 619
+    lines: 55
+    error: null
+  -
+    source_id: SRC-FILE-0098
+    relative_path: 09_templates_og_output/maler/STILLINGSUTLYSNING_TEMPLATE.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/maler/STILLINGSUTLYSNING_TEMPLATE.md.txt
+    characters: 404
+    lines: 43
+    error: null
+  -
+    source_id: SRC-FILE-0099
+    relative_path: 09_templates_og_output/stillingsutlysninger/AVDELINGSSJEF_LEDERSTOTTE_OG_PERSONALSAKER_STILLINGSUTLYSNING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/stillingsutlysninger/AVDELINGSSJEF_LEDERSTOTTE_OG_PERSONALSAKER_STILLINGSUTLYSNING.md.txt
+    characters: 2172
+    lines: 56
+    error: null
+  -
+    source_id: SRC-FILE-0100
+    relative_path: 09_templates_og_output/stillingsutlysninger/AVDELINGSSJEF_REKRUTTERING_OG_KOMPETANSE_STILLINGSUTLYSNING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/stillingsutlysninger/AVDELINGSSJEF_REKRUTTERING_OG_KOMPETANSE_STILLINGSUTLYSNING.md.txt
+    characters: 2292
+    lines: 56
+    error: null
+  -
+    source_id: SRC-FILE-0101
+    relative_path: 09_templates_og_output/stillingsutlysninger/E_LAERINGSRADGIVER_STILLINGSUTLYSNING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/stillingsutlysninger/E_LAERINGSRADGIVER_STILLINGSUTLYSNING.md.txt
+    characters: 2062
+    lines: 56
+    error: null
+  -
+    source_id: SRC-FILE-0102
+    relative_path: 09_templates_og_output/stillingsutlysninger/FORHANDLINGSRADGIVER_STILLINGSUTLYSNING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/stillingsutlysninger/FORHANDLINGSRADGIVER_STILLINGSUTLYSNING.md.txt
+    characters: 2050
+    lines: 56
+    error: null
+  -
+    source_id: SRC-FILE-0103
+    relative_path: 09_templates_og_output/stillingsutlysninger/HMS_RADGIVER_STILLINGSUTLYSNING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/stillingsutlysninger/HMS_RADGIVER_STILLINGSUTLYSNING.md.txt
+    characters: 2029
+    lines: 56
+    error: null
+  -
+    source_id: SRC-FILE-0104
+    relative_path: 09_templates_og_output/stillingsutlysninger/HR_JURIST_STILLINGSUTLYSNING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/stillingsutlysninger/HR_JURIST_STILLINGSUTLYSNING.md.txt
+    characters: 2113
+    lines: 56
+    error: null
+  -
+    source_id: SRC-FILE-0105
+    relative_path: 09_templates_og_output/stillingsutlysninger/HR_RADGIVER_STILLINGSUTLYSNING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/stillingsutlysninger/HR_RADGIVER_STILLINGSUTLYSNING.md.txt
+    characters: 1920
+    lines: 56
+    error: null
+  -
+    source_id: SRC-FILE-0106
+    relative_path: 09_templates_og_output/stillingsutlysninger/HR_SJEF_STILLINGSUTLYSNING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/stillingsutlysninger/HR_SJEF_STILLINGSUTLYSNING.md.txt
+    characters: 2285
+    lines: 56
+    error: null
+  -
+    source_id: SRC-FILE-0107
+    relative_path: 09_templates_og_output/stillingsutlysninger/IA_RADGIVER_STILLINGSUTLYSNING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/stillingsutlysninger/IA_RADGIVER_STILLINGSUTLYSNING.md.txt
+    characters: 2156
+    lines: 56
+    error: null
+  -
+    source_id: SRC-FILE-0108
+    relative_path: 09_templates_og_output/stillingsutlysninger/KOMPETANSERADGIVER_STILLINGSUTLYSNING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/stillingsutlysninger/KOMPETANSERADGIVER_STILLINGSUTLYSNING.md.txt
+    characters: 2107
+    lines: 56
+    error: null
+  -
+    source_id: SRC-FILE-0109
+    relative_path: 09_templates_og_output/stillingsutlysninger/LAERLINGKOORDINATOR_STILLINGSUTLYSNING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/stillingsutlysninger/LAERLINGKOORDINATOR_STILLINGSUTLYSNING.md.txt
+    characters: 2076
+    lines: 56
+    error: null
+  -
+    source_id: SRC-FILE-0110
+    relative_path: 09_templates_og_output/stillingsutlysninger/LEDER_OG_ORGANISASJONSUTVIKLER_STILLINGSUTLYSNING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/stillingsutlysninger/LEDER_OG_ORGANISASJONSUTVIKLER_STILLINGSUTLYSNING.md.txt
+    characters: 2196
+    lines: 56
+    error: null
+  -
+    source_id: SRC-FILE-0111
+    relative_path: 09_templates_og_output/stillingsutlysninger/REKRUTTERINGSRADGIVER_STILLINGSUTLYSNING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/stillingsutlysninger/REKRUTTERINGSRADGIVER_STILLINGSUTLYSNING.md.txt
+    characters: 2148
+    lines: 56
+    error: null
+  -
+    source_id: SRC-FILE-0112
+    relative_path: 09_templates_og_output/stillingsutlysninger/STILLINGSUTLYSNINGSINDEKS.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/stillingsutlysninger/STILLINGSUTLYSNINGSINDEKS.md.txt
+    characters: 1069
+    lines: 29
+    error: null
+  -
+    source_id: SRC-FILE-0113
+    relative_path: 09_templates_og_output/TEMPLATEINDEKS.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/09_templates_og_output/TEMPLATEINDEKS.md.txt
+    characters: 2287
+    lines: 73
+    error: null
+  -
+    source_id: SRC-FILE-0114
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_artifacts.csv
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_artifacts.csv.txt
+    characters: 1223
+    lines: 14
+    error: null
+  -
+    source_id: SRC-FILE-0115
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_artifacts.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_artifacts.yaml.txt
+    characters: 1283
+    lines: 46
+    error: null
+  -
+    source_id: SRC-FILE-0116
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_processes.csv
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_processes.csv.txt
+    characters: 1899
+    lines: 9
+    error: null
+  -
+    source_id: SRC-FILE-0117
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_processes.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_processes.yaml.txt
+    characters: 3282
+    lines: 85
+    error: null
+  -
+    source_id: SRC-FILE-0118
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_regulations.csv
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_regulations.csv.txt
+    characters: 1128
+    lines: 11
+    error: null
+  -
+    source_id: SRC-FILE-0119
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_regulations.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_regulations.yaml.txt
+    characters: 1261
+    lines: 35
+    error: null
+  -
+    source_id: SRC-FILE-0120
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_risks.csv
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_risks.csv.txt
+    characters: 787
+    lines: 12
+    error: null
+  -
+    source_id: SRC-FILE-0121
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_risks.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_risks.yaml.txt
+    characters: 707
+    lines: 28
+    error: null
+  -
+    source_id: SRC-FILE-0122
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_roles.csv
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_roles.csv.txt
+    characters: 3598
+    lines: 15
+    error: null
+  -
+    source_id: SRC-FILE-0123
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_roles.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_roles.yaml.txt
+    characters: 6001
+    lines: 177
+    error: null
+  -
+    source_id: SRC-FILE-0124
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_skills.csv
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_skills.csv.txt
+    characters: 2897
+    lines: 17
+    error: null
+  -
+    source_id: SRC-FILE-0125
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_skills.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_skills.yaml.txt
+    characters: 4869
+    lines: 128
+    error: null
+  -
+    source_id: SRC-FILE-0126
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_systems.csv
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_systems.csv.txt
+    characters: 1190
+    lines: 11
+    error: null
+  -
+    source_id: SRC-FILE-0127
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_systems.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_systems.yaml.txt
+    characters: 1408
+    lines: 44
+    error: null
+  -
+    source_id: SRC-FILE-0128
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_templates.csv
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_templates.csv.txt
+    characters: 1628
+    lines: 13
+    error: null
+  -
+    source_id: SRC-FILE-0129
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_templates.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_templates.yaml.txt
+    characters: 1836
+    lines: 52
+    error: null
+  -
+    source_id: SRC-FILE-0130
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_units.csv
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_units.csv.txt
+    characters: 447
+    lines: 6
+    error: null
+  -
+    source_id: SRC-FILE-0131
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_units.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/hr_units.yaml.txt
+    characters: 560
+    lines: 24
+    error: null
+  -
+    source_id: SRC-FILE-0132
+    relative_path: 10_kunnskapsbase/kodetabeller/README.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/kodetabeller/README.md.txt
+    characters: 609
+    lines: 26
+    error: null
+  -
+    source_id: SRC-FILE-0133
+    relative_path: 10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/modeller/hr_pilot_v1.yaml.txt
+    characters: 14643
+    lines: 491
+    error: null
+  -
+    source_id: SRC-FILE-0134
+    relative_path: 10_kunnskapsbase/modeller/it_og_digitalisering_v1.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/modeller/it_og_digitalisering_v1.yaml.txt
+    characters: 3503
+    lines: 121
+    error: null
+  -
+    source_id: SRC-FILE-0135
+    relative_path: 10_kunnskapsbase/modeller/okonomi_og_virksomhetsstyring_v1.yaml
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/modeller/okonomi_og_virksomhetsstyring_v1.yaml.txt
+    characters: 3117
+    lines: 115
+    error: null
+  -
+    source_id: SRC-FILE-0136
+    relative_path: 10_kunnskapsbase/README.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/README.md.txt
+    characters: 1331
+    lines: 46
+    error: null
+  -
+    source_id: SRC-FILE-0137
+    relative_path: 10_kunnskapsbase/referanser/ai_kognitiv_utvidelse_i_kommunal_sektor.docx
+    status: text_extracted
+    encoding: docx_xml
+    extract_path: source_text_extracts/10_kunnskapsbase/referanser/ai_kognitiv_utvidelse_i_kommunal_sektor.docx.txt
+    characters: 30478
+    lines: 263
+    error: null
+  -
+    source_id: SRC-FILE-0138
+    relative_path: 10_kunnskapsbase/referanser/alle_linser_siste.docx
+    status: text_extracted
+    encoding: docx_xml
+    extract_path: source_text_extracts/10_kunnskapsbase/referanser/alle_linser_siste.docx.txt
+    characters: 180013
+    lines: 3339
+    error: null
+  -
+    source_id: SRC-FILE-0139
+    relative_path: 10_kunnskapsbase/referanser/GRUPPE_L_KILDEKOMPLETT.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/10_kunnskapsbase/referanser/GRUPPE_L_KILDEKOMPLETT.md.txt
+    characters: 8198
+    lines: 256
+    error: null
+  -
+    source_id: SRC-FILE-0140
+    relative_path: 10_kunnskapsbase/referanser/hr_skos_digital_tvilling_versjon_a.docx
+    status: text_extracted
+    encoding: docx_xml
+    extract_path: source_text_extracts/10_kunnskapsbase/referanser/hr_skos_digital_tvilling_versjon_a.docx.txt
+    characters: 19084
+    lines: 643
+    error: null
+  -
+    source_id: SRC-FILE-0141
+    relative_path: 10_kunnskapsbase/referanser/kjernelinser_niva1_til_niva4.docx
+    status: text_extracted
+    encoding: docx_xml
+    extract_path: source_text_extracts/10_kunnskapsbase/referanser/kjernelinser_niva1_til_niva4.docx.txt
+    characters: 15998
+    lines: 507
+    error: null
+  -
+    source_id: SRC-FILE-0142
+    relative_path: 10_kunnskapsbase/referanser/linse_2_okonom.docx
+    status: text_extracted
+    encoding: docx_xml
+    extract_path: source_text_extracts/10_kunnskapsbase/referanser/linse_2_okonom.docx.txt
+    characters: 16241
+    lines: 141
+    error: null
+  -
+    source_id: SRC-FILE-0143
+    relative_path: 90_arkiv/eldre_konkurrenter/kvalitetssikret_digital_organisasjon.docx
+    status: text_extracted
+    encoding: docx_xml
+    extract_path: source_text_extracts/90_arkiv/eldre_konkurrenter/kvalitetssikret_digital_organisasjon.docx.txt
+    characters: 10428
+    lines: 275
+    error: null
+  -
+    source_id: SRC-FILE-0144
+    relative_path: 90_arkiv/etableringsdokumenter/AAPNE_HULL.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/90_arkiv/etableringsdokumenter/AAPNE_HULL.md.txt
+    characters: 2264
+    lines: 63
+    error: null
+  -
+    source_id: SRC-FILE-0145
+    relative_path: 90_arkiv/etableringsdokumenter/DUBLETTER_OG_KONFLIKTER.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/90_arkiv/etableringsdokumenter/DUBLETTER_OG_KONFLIKTER.md.txt
+    characters: 2382
+    lines: 69
+    error: null
+  -
+    source_id: SRC-FILE-0146
+    relative_path: 90_arkiv/etableringsdokumenter/FILKLASSIFISERING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/90_arkiv/etableringsdokumenter/FILKLASSIFISERING.md.txt
+    characters: 3323
+    lines: 23
+    error: null
+  -
+    source_id: SRC-FILE-0147
+    relative_path: 90_arkiv/etableringsdokumenter/FLYTTEPLAN.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/90_arkiv/etableringsdokumenter/FLYTTEPLAN.md.txt
+    characters: 2264
+    lines: 53
+    error: null
+  -
+    source_id: SRC-FILE-0148
+    relative_path: 90_arkiv/etableringsdokumenter/MAALARKITEKTUR.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/90_arkiv/etableringsdokumenter/MAALARKITEKTUR.md.txt
+    characters: 3777
+    lines: 115
+    error: null
+  -
+    source_id: SRC-FILE-0149
+    relative_path: 90_arkiv/etableringsdokumenter/MAPPEVURDERING.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/90_arkiv/etableringsdokumenter/MAPPEVURDERING.md.txt
+    characters: 2262
+    lines: 51
+    error: null
+  -
+    source_id: SRC-FILE-0150
+    relative_path: 90_arkiv/etableringsdokumenter/README.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/90_arkiv/etableringsdokumenter/README.md.txt
+    characters: 341
+    lines: 12
+    error: null
+  -
+    source_id: SRC-FILE-0151
+    relative_path: 90_arkiv/konsolidert_kilde/gruppe_beslutning.docx
+    status: text_extracted
+    encoding: docx_xml
+    extract_path: source_text_extracts/90_arkiv/konsolidert_kilde/gruppe_beslutning.docx.txt
+    characters: 25167
+    lines: 813
+    error: null
+  -
+    source_id: SRC-FILE-0152
+    relative_path: 90_arkiv/konsolidert_kilde/hr_ontologisk_kunnskapsbibliotek.docx
+    status: text_extracted
+    encoding: docx_xml
+    extract_path: source_text_extracts/90_arkiv/konsolidert_kilde/hr_ontologisk_kunnskapsbibliotek.docx.txt
+    characters: 13865
+    lines: 483
+    error: null
+  -
+    source_id: SRC-FILE-0153
+    relative_path: 90_arkiv/konsolidert_kilde/hr_tvilling_etter_roller_og_oppgaver.docx
+    status: text_extracted
+    encoding: docx_xml
+    extract_path: source_text_extracts/90_arkiv/konsolidert_kilde/hr_tvilling_etter_roller_og_oppgaver.docx.txt
+    characters: 27059
+    lines: 411
+    error: null
+  -
+    source_id: SRC-FILE-0154
+    relative_path: 90_arkiv/konsolidert_kilde/hr_tvillingorganisasjon.docx
+    status: text_extracted
+    encoding: docx_xml
+    extract_path: source_text_extracts/90_arkiv/konsolidert_kilde/hr_tvillingorganisasjon.docx.txt
+    characters: 17168
+    lines: 424
+    error: null
+  -
+    source_id: SRC-FILE-0155
+    relative_path: 90_arkiv/konsolidert_kilde/nyeste_versjon_digital_tvilling_hr.docx
+    status: text_extracted
+    encoding: docx_xml
+    extract_path: source_text_extracts/90_arkiv/konsolidert_kilde/nyeste_versjon_digital_tvilling_hr.docx.txt
+    characters: 10942
+    lines: 277
+    error: null
+  -
+    source_id: SRC-FILE-0156
+    relative_path: 99_karantene/slettkandidater/ai_kognitiv_utvidelse_i_kommunal_sektor_duplikat.docx
+    status: text_extracted
+    encoding: docx_xml
+    extract_path: source_text_extracts/99_karantene/slettkandidater/ai_kognitiv_utvidelse_i_kommunal_sektor_duplikat.docx.txt
+    characters: 30478
+    lines: 263
+    error: null
+  -
+    source_id: SRC-FILE-0157
+    relative_path: 99_karantene/slettkandidater/dokument_uten_navn_tom.docx
+    status: text_extracted
+    encoding: docx_xml
+    extract_path: source_text_extracts/99_karantene/slettkandidater/dokument_uten_navn_tom.docx.txt
+    characters: 0
+    lines: 0
+    error: null
+  -
+    source_id: SRC-FILE-0158
+    relative_path: README.md
+    status: text_extracted
+    encoding: utf-8-sig
+    extract_path: source_text_extracts/README.md.txt
+    characters: 1022
+    lines: 42
+    error: null

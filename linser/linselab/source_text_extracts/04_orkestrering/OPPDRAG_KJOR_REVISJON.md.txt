@@ -1,0 +1,29 @@
+# OPPDRAG_KJOR_REVISJON
+
+## Bruk nar
+
+- du skal kontrollere et omrade for drift, manglende synk eller forbedringsbehov
+- du skal evaluere templates, tabeller eller workflows uten a patch direkte
+
+## Det du fyller inn
+
+- omrade_som_skal_revideres:
+- hvorfor_na:
+- hvilke mastere er relevante:
+- hvilke modeller eller kodetabeller skal sjekkes:
+- om revisjonen er forebyggende eller utlost av feil:
+
+## Starttekst
+
+Kjor revisjon innenfor tvillingsorganisasjonen.
+
+Bruk bare aktive mastere, evalregler og relevante kontrollfiler.
+Skill mellom dokumentert drift, antatt drift og forbedringsmuligheter.
+Ikke foresla autonome endringer uten eksplisitt fasegate og eier.
+
+Lever i dette formatet:
+1. scope og grunnlag
+2. bekreftede avvik
+3. red flags og fasegatevurdering
+4. prioritert forbedringsliste
+5. anbefalt oppdragsinngang for neste steg

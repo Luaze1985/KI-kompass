@@ -1,0 +1,70 @@
+# P-08 OMSTILLINGSPROSESS
+
+## Formaal
+
+Gi et styrt lop for omstilling der beslutningsrett, medvirkning, risiko og handover er eksplisitt designet fra start til slutt.
+
+## Eier og roller
+
+- prosesseier: avdelingssjef lederstotte
+- hovedutforer: lederlinje med HR-prosessleder
+- stotte: HR-jurist, HR-radgiver, forhandlingsradgiver, HMS-radgiver, tillitsvalgte, HVO
+- eskaleres til: HR-sjef og toppledelse ved hoy konflikt eller stor virksomhetsrisiko
+
+## Trigger
+
+- behov for omorganisering, nedbemanning eller vesentlig endring
+- krav om gevinst, kapasitetstilpasning eller ny oppgavelosning
+- politisk eller administrativ bestilling som endrer arbeidsform
+
+## Input
+
+- mandat og begrunnelse for endring
+- berorte roller, enheter og tjenester
+- risikobilde, kapasitet og tidskrav
+- prosedyreverk for omstilling og medvirkning
+
+## Output
+
+- omstillingslop med faser, ansvar og moteplan
+- tydelig beslutningsgrunnlag og kommunikasjonsspor
+- oversikt over risiko, medvirkning og kontrollgater
+
+## Hovedforlop
+
+1. Avklar mandat, beslutningseier og hva som faktisk skal endres.
+2. Kartlegg berorte roller, risiko og avhengigheter.
+3. Planlegg medvirkning, droefting og kommunikasjonslop.
+4. Kjor beslutnings- og gjennomforingsfaser med tydelige gates.
+5. Etterspor effekter, restarbeid og behov for justering.
+
+## Viktigste risikoer
+
+- uklar beslutningsrett
+- for sen involvering av partene
+- brudd mellom analyse og drift
+- omstilling behandles som prototype uten produksjonsansvar
+
+## Kontrollhandlinger
+
+- lag eksplisitt handover mellom hver fase
+- skill forskning, prototype, pilot og produksjon
+- bruk moteunderlag for hver sentrale droefting
+- koble Gruppe L inn for operativ realitetstest
+
+## Systemer og referanser
+
+- EQS for omstillingsprosedyre
+- P360 for formelle dokumentspor
+- Styringsportalen for berorte noekkeltall
+
+## Handover
+
+- handover_in: fra dirigent eller toppleder ved omstillingsbehov
+- handover_out: til beslutningsnotat, moteunderlag, produksjonsutkast og oppfolgingsspor
+
+## Lokal verifikasjon
+
+- bekreft at endringsmandatet faktisk er gyldig
+- bekreft hvilke deler som er droefting vs vedtak
+- bekreft at berorte ledere og partsroller er koblet inn i tide

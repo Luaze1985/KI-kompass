@@ -1,0 +1,35 @@
+# ROLLEKORT TEMPLATE
+
+Status: prototype-mal v1
+
+## Rolle
+
+- role_id:
+- tittel:
+- enhet:
+- rapporterer_til:
+
+## Formaal
+
+[kort og sporbar rollebeskrivelse]
+
+## Hovedansvar
+
+-
+
+## Skills
+
+- must_have:
+- should_have:
+
+## Prosesser, systemer og artefakter
+
+- prosesser:
+- systemer:
+- artefakter:
+
+## Risiko, eskalering og lokal verifikasjon
+
+- risikoer:
+- eskaleres til:
+- lokal_verifikasjon:

@@ -1,0 +1,34 @@
+# LEVERANSEUTKAST TEMPLATE
+
+Status: prototype-mal v1
+
+## Leveranseinfo
+
+- mottaker:
+- formal:
+- frist:
+- format:
+
+## Kildegrunnlag
+
+- beslutningsgrunnlag:
+- prosesskort:
+- referanser:
+
+## Hovedinnhold
+
+- hovedbudskap:
+- anbefalt struktur:
+- viktige forbehold:
+
+## Kvalitetssjekk
+
+- sporbarhet bekreftet:
+- sensitivitet sjekket:
+- godkjenningsbehov:
+
+## Handover
+
+- fra:
+- til:
+- etterspor:

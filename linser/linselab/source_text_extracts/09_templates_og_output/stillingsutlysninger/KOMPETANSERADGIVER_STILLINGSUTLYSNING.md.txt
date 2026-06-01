@@ -1,0 +1,55 @@
+# KOMPETANSERADGIVER STILLINGSUTLYSNING
+
+Status: avledet produksjonsartefakt v1
+
+## Metadata
+
+- role_id: `R-11`
+- unit_id: `U-03`
+- styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+- local_status: krever_lokal_tilpasning_for_publisering
+
+## Kort annonsetekst
+
+Vi soker en kompetanseradgiver som kan hjelpe kommunen med a omsette kompetansebehov til tydelige prioriteringer, matriser og utviklingstiltak. Rollen passer for deg som liker a koble analyse, laering og gjennomforing i et praktisk HR-bilde.
+
+## Formaal med stillingen
+
+Omsette virksomhetsbehov og kompetansegap til konkrete tiltak, prioriteringer og styringsgrunnlag for ledere og HR.
+
+## Hovedansvar
+
+- kartlegge kompetansebehov og vedlikeholde prioriterte kompetansematriser
+- utvikle beslutningsgrunnlag for opplaering, onboarding og lederutvikling
+- kvalitetssikre at tiltak svarer pa faktiske behov og ikke bare genererer aktivitet
+- bidra med innsikt om kompetansegap og gjennomforingsbehov til HR-ledelsen
+
+## Must-have kvalifikasjoner
+
+- relevant hoyere utdanning
+- erfaring med kompetansearbeid, laeringsutvikling eller organisasjonsutvikling
+- god analytisk evne og erfaring med a bruke data i prioritering
+- evne til a omsette behov til praktiske tiltak og styringsgrunnlag
+
+## Onskede tilleggskvalifikasjoner
+
+- erfaring fra offentlig sektor eller stor kompetanseintensiv virksomhet
+- erfaring med kompetansesystem, laeringsplattform eller portefoljearbeid
+- erfaring med samarbeid tett pa ledere og fagmiljo
+
+## System- og arbeidsflate
+
+- kompetanseplattform, styringsdata og relevante HR-systemer
+- tett samarbeid med e-laeringsradgiver, lederutviklingsmiljo og linjeledere
+
+## Forste 12 maneder
+
+- etablere eller forbedre matriser for prioriterte HR-roller og tiltak
+- bidra til tydeligere kobling mellom kompetansebehov og opplaeringsplan
+- styrke kvaliteten i beslutningsgrunnlag for kompetanseprioriteringer
+
+## Lokal verifikasjon for publisering
+
+- verifiser lokalt eierskap til kompetansedata og budsjett
+- verifiser hvilke fagomrader rollen skal prioritere forst
+- verifiser faktisk systemstotte for kartlegging og oppfolging

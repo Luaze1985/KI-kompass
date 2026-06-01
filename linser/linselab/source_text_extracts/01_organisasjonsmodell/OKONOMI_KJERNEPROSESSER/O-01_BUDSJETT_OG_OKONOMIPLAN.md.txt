@@ -1,0 +1,70 @@
+# O-01 BUDSJETT OG OKONOMIPLAN
+
+## Formaal
+
+Skape et sporbar og beslutningsklart grunnlag for budsjett, omprioritering og flerarig okonomiplan.
+
+## Eier og roller
+
+- prosesseier: okonomidirektor eller delegert budsjetteier
+- hovedutforer: controller / okonomiradgiver i samspill med omradeleder
+- stotte: virksomhetsstyring, stabssjef, relevante domeneeierroller
+- eskaleres til: toppledelse eller politisk behandling nar rammen krever det
+
+## Trigger
+
+- budsjettprosess eller revidering av plan
+- krav om omprioritering
+- nye kostnadsdrivere eller sentrale rammeendringer
+
+## Input
+
+- eksisterende rammer og budsjettforutsetninger
+- kjente kostnadsdrivere og tiltak
+- styringsdata, prognoser og lokale behov
+- politiske og administrative foringer
+
+## Output
+
+- prioriteringsgrunnlag
+- forslag til budsjettendring eller planjustering
+- tydelig kobling mellom tiltak, kostnad og konsekvens
+
+## Hovedforlop
+
+1. Avklar ramme, tidshorisont og beslutningseier.
+2. Samle tiltak, kostnadsdrivere og mulige omprioriteringer.
+3. Vurder konsekvenser, risiko og alternativkostnad.
+4. Syntetiser til kort prioriteringsgrunnlag.
+5. Overlever til riktig besluttende arena.
+
+## Viktigste risikoer
+
+- tall uten tydelig dato og eier
+- budsjettkutt uten konsekvensbeskrivelse
+- svak kobling mellom plan og gjennomforing
+- skjulte avhengigheter mellom omrader
+
+## Kontrollhandlinger
+
+- spor alle tall til kilde og dato
+- skill mellom vedtatt ramme, prognose og forslag
+- dokumenter vinnere, tapere og konsekvenser
+- bruk Gruppe L ved stor gjennomforingsrisiko
+
+## Systemer og referanser
+
+- Styringsportalen
+- ERP-relatert styringsgrunnlag der relevant
+- okonomiplan og lokale tertialdata
+
+## Handover
+
+- handover_in: fra dirigent, okonomifunksjon eller ledelse ved budsjettbehov
+- handover_out: til beslutningsnotat, styringsmote eller leveranseutkast
+
+## Lokal verifikasjon
+
+- bekreft tallgrunnlag, dato og beslutningseier
+- bekreft om saken er administrativ eller politisk
+- bekreft at konsekvensene er lokalt gjennomgaatt

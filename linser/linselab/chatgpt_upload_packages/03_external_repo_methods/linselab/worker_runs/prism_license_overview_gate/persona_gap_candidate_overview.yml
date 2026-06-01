@@ -1,0 +1,135 @@
+generated: "2026-05-18T13:49:16.2837439Z"
+decision_status: blocked
+license_status: declared_mit_missing_license_file
+candidate_count: 15
+groups:
+  - linselab_name: "Styre- og styringsrÃ¥dgiveren"
+    candidates:
+      - prism_name: daci
+        prism_class: lens
+        domain: decision
+        path: prism-main/library/lenses/decision/daci.md
+        overlap_group: decision_rights_overlap
+        risk: "Overlap with rapid/raci; preserve distinction between decision rights and task responsibility."
+        recommended_next_action: "Review as paired governance decision-rights candidates after license gate."
+        license_status: declared_mit_missing_license_file
+      - prism_name: rapid
+        prism_class: lens
+        domain: decision
+        path: prism-main/library/lenses/decision/rapid.md
+        overlap_group: decision_rights_overlap
+        risk: "Overlap with daci; compare before choosing one governance decision model."
+        recommended_next_action: "Review as paired governance decision-rights candidates after license gate."
+        license_status: declared_mit_missing_license_file
+      - prism_name: stakeholder-mapping
+        prism_class: lens
+        domain: public-policy
+        path: prism-main/library/lenses/public-policy/stakeholder-mapping.md
+        overlap_group: none
+        risk: "License remains blocked; content must not be extracted or adapted yet."
+        recommended_next_action: "Keep in shortlist; do not extract content until license is resolved."
+        license_status: declared_mit_missing_license_file
+  - linselab_name: "Juridisk grensevurderer"
+    candidates:
+      - prism_name: irac-creac-firac
+        prism_class: lens
+        domain: law
+        path: prism-main/library/lenses/law/irac-creac-firac.md
+        overlap_group: legal_analysis_cluster
+        risk: "License remains blocked; content must not be extracted or adapted yet."
+        recommended_next_action: "First extraction candidates after license gate, because legal advisor is closest to lens prototype."
+        license_status: declared_mit_missing_license_file
+      - prism_name: contract-analysis
+        prism_class: lens
+        domain: law
+        path: prism-main/library/lenses/law/contract-analysis.md
+        overlap_group: legal_analysis_cluster
+        risk: "License remains blocked; content must not be extracted or adapted yet."
+        recommended_next_action: "First extraction candidates after license gate, because legal advisor is closest to lens prototype."
+        license_status: declared_mit_missing_license_file
+      - prism_name: statutory-interpretation-canons
+        prism_class: lens
+        domain: law
+        path: prism-main/library/lenses/law/statutory-interpretation-canons.md
+        overlap_group: legal_analysis_cluster
+        risk: "License remains blocked; content must not be extracted or adapted yet."
+        recommended_next_action: "Keep in shortlist; do not extract content until license is resolved."
+        license_status: declared_mit_missing_license_file
+  - linselab_name: "FortellingsrÃ¥dgiveren"
+    candidates:
+      - prism_name: pixar-formula
+        prism_class: lens
+        domain: storytelling
+        path: prism-main/library/lenses/storytelling/pixar-formula.md
+        overlap_group: story_structure_overlap
+        risk: "May over-structure creative work; must remain optional and writer-led."
+        recommended_next_action: "Keep in shortlist; do not extract content until license is resolved."
+        license_status: declared_mit_missing_license_file
+      - prism_name: save-the-cat-beat-sheet
+        prism_class: lens
+        domain: storytelling
+        path: prism-main/library/lenses/storytelling/save-the-cat-beat-sheet.md
+        overlap_group: story_structure_overlap
+        risk: "May impose genre-specific structure; needs variance check against three-act-structure."
+        recommended_next_action: "Keep in shortlist; do not extract content until license is resolved."
+        license_status: declared_mit_missing_license_file
+      - prism_name: three-act-structure
+        prism_class: frame
+        domain: storytelling
+        path: prism-main/library/frames/storytelling/three-act-structure.md
+        overlap_group: story_structure_overlap
+        risk: "Frame, not lens; must not be treated as executable without added procedure/output/confidence."
+        recommended_next_action: "Keep in shortlist; do not extract content until license is resolved."
+        license_status: declared_mit_missing_license_file
+  - linselab_name: "Krisekoordinatoren"
+    candidates:
+      - prism_name: ooda-loop
+        prism_class: lens
+        domain: decision
+        path: prism-main/library/lenses/decision/ooda-loop.md
+        overlap_group: crisis_risk_overlap
+        risk: "Strong action loop, but may be too generic without incident-specific severity gates."
+        recommended_next_action: "First crisis candidate after license gate; test as operational cycle for severity-state model."
+        license_status: declared_mit_missing_license_file
+      - prism_name: nist-csf
+        prism_class: frame
+        domain: security
+        path: prism-main/library/frames/security/nist-csf.md
+        overlap_group: crisis_risk_overlap
+        risk: "Frame, not response procedure; useful for classification, not direct incident command."
+        recommended_next_action: "Keep in shortlist; do not extract content until license is resolved."
+        license_status: declared_mit_missing_license_file
+      - prism_name: fmea
+        prism_class: lens
+        domain: security
+        path: prism-main/library/lenses/security/fmea.md
+        overlap_group: crisis_risk_overlap
+        risk: "Risk-prioritization lens; may fit prevention/post-incident better than live crisis response."
+        recommended_next_action: "Keep in shortlist; do not extract content until license is resolved."
+        license_status: declared_mit_missing_license_file
+  - linselab_name: "Mottaks- og eskaleringsrÃ¥dgiveren"
+    candidates:
+      - prism_name: raci
+        prism_class: lens
+        domain: decision
+        path: prism-main/library/lenses/decision/raci.md
+        overlap_group: decision_rights_overlap
+        risk: "Overlap with daci/rapid, but likely belongs to handoff/task responsibility rather than board decision."
+        recommended_next_action: "Review as support flow sequence: role clarity, diagnosis, improvement case."
+        license_status: declared_mit_missing_license_file
+      - prism_name: 5-whys
+        prism_class: lens
+        domain: operations
+        path: prism-main/library/lenses/operations/5-whys.md
+        overlap_group: none
+        risk: "License remains blocked; content must not be extracted or adapted yet."
+        recommended_next_action: "Review as support flow sequence: role clarity, diagnosis, improvement case."
+        license_status: declared_mit_missing_license_file
+      - prism_name: a3-problem-solving
+        prism_class: lens
+        domain: operations
+        path: prism-main/library/lenses/operations/a3-problem-solving.md
+        overlap_group: none
+        risk: "License remains blocked; content must not be extracted or adapted yet."
+        recommended_next_action: "Review as support flow sequence: role clarity, diagnosis, improvement case."
+        license_status: declared_mit_missing_license_file

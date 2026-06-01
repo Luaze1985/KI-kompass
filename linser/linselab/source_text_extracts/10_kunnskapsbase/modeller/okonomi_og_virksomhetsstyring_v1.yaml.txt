@@ -1,0 +1,114 @@
+metadata:
+  id: okonomi_og_virksomhetsstyring_v1
+  version: 1.0
+  status: pilot
+  source_policy: markdown_master_is_truth
+  source_masters:
+    - 01_organisasjonsmodell/OKONOMI_OG_VIRKSOMHETSSTYRING_PILOT.md
+    - 01_organisasjonsmodell/OKONOMI_PROSESSOVERSIKT.md
+    - 03_agentroller/OKONOMI_OG_VIRKSOMHETSSTYRING_GUARDRAILS.md
+    - 04_orkestrering/AGENTKONTRAKTER.md
+
+domain:
+  name: okonomi_og_virksomhetsstyring
+  category: kommunedomene
+  status: pilot
+  parent: null
+  core_use_cases:
+    - budsjett_og_prioritering
+    - tertial_og_prognose
+    - noekkeltallsoppfolging
+    - portefoljeprioritering
+    - gevinstoppfolging
+
+guardrails:
+  no_invented_numbers: true
+  separate_fact_forecast_recommendation: true
+  local_verification_required: true
+  escalate_political_or_formal_budget_cases: true
+
+roles:
+  - id: O-R-01
+    name: okonomidirektor
+    category: domain_role
+  - id: O-R-02
+    name: virksomhetsstyring_og_analyse
+    category: domain_role
+  - id: O-R-03
+    name: controller_eller_okonomiradgiver
+    category: domain_role
+  - id: O-R-04
+    name: portefoljeansvarlig
+    category: domain_role
+  - id: O-R-05
+    name: omradeleder
+    category: domain_role
+
+systems:
+  - id: O-S-01
+    name: Styringsportalen
+    purpose: noekkeltall_og_virksomhetsstyring
+  - id: O-S-02
+    name: ERP_eller_regnskapsgrunnlag
+    purpose: okonomidata_og_prognose
+
+risks:
+  - id: O-RSK-01
+    name: tall_uten_kilde_eller_dato
+  - id: O-RSK-02
+    name: prognose_presentert_som_fakta
+  - id: O-RSK-03
+    name: svak_kobling_mellom_tiltak_og_gevinst
+  - id: O-RSK-04
+    name: manglende_prioritering_i_portefolje
+  - id: O-RSK-05
+    name: uklar_beslutningsrett
+
+controls:
+  - id: O-CTRL-01
+    name: spor_tall_til_kilde_dato_og_eier
+  - id: O-CTRL-02
+    name: skill_fakta_prognose_anbefaling
+  - id: O-CTRL-03
+    name: eksplisitt_beslutningseier
+  - id: O-CTRL-04
+    name: gevinst_med_eier_og_tidspunkt
+  - id: O-CTRL-05
+    name: lokal_verifikasjon_for_bruk
+
+processes:
+  - id: O-01
+    name: budsjett_og_okonomiplan
+    owner_role: O-R-01
+    supporting_roles: [O-R-02, O-R-03, O-R-05]
+    systems: [O-S-01, O-S-02]
+    risks: [O-RSK-01, O-RSK-05]
+    controls: [O-CTRL-01, O-CTRL-02, O-CTRL-03, O-CTRL-05]
+  - id: O-02
+    name: tertialrapport_og_prognose
+    owner_role: O-R-02
+    supporting_roles: [O-R-03, O-R-05]
+    systems: [O-S-01, O-S-02]
+    risks: [O-RSK-01, O-RSK-02]
+    controls: [O-CTRL-01, O-CTRL-02, O-CTRL-05]
+  - id: O-03
+    name: noekkeltallsoppfolging
+    owner_role: O-R-02
+    supporting_roles: [O-R-03]
+    systems: [O-S-01]
+    risks: [O-RSK-01, O-RSK-05]
+    controls: [O-CTRL-01, O-CTRL-02, O-CTRL-03]
+  - id: O-04
+    name: portefoljeprioritering_og_investeringsvurdering
+    owner_role: O-R-04
+    supporting_roles: [O-R-01, O-R-02, O-R-03]
+    systems: [O-S-01, O-S-02]
+    risks: [O-RSK-04, O-RSK-05]
+    controls: [O-CTRL-01, O-CTRL-03, O-CTRL-05]
+  - id: O-05
+    name: gevinstoppfolging_og_tiltaksspor
+    owner_role: O-R-05
+    supporting_roles: [O-R-02, O-R-03, O-R-04]
+    systems: [O-S-01]
+    risks: [O-RSK-03, O-RSK-05]
+    controls: [O-CTRL-02, O-CTRL-04, O-CTRL-05]

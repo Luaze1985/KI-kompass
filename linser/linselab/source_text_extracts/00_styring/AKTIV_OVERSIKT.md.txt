@@ -1,0 +1,82 @@
+# AKTIV_OVERSIKT
+
+## Formaal
+
+Denne filen peker bare til det du skal bruke aktivt videre. Etableringsdokumenter, flytteplaner og klassifisering er flyttet til `90_arkiv/etableringsdokumenter`.
+
+## Start her
+
+1. les `00_styring/SYSTEMINSTRUKS.md`
+2. velg aktivt domene
+3. bruk riktig pilotfil og prosessoversikt
+4. bruk riktig oppdragsinngang for arbeidslopet
+5. bruk mal fra `09_templates_og_output/maler`
+
+## Viktigste aktive filer
+
+- styring: `00_styring/SYSTEMINSTRUKS.md`
+- aktiv oversikt: `00_styring/AKTIV_OVERSIKT.md`
+- promptflate: `00_styring/prompt_surface_index.md`
+- kontrollag: `00_styring/manifester/`
+- domenekart: `01_organisasjonsmodell/DOMENEKART.md`
+- anbefalt domeneportefolje: `01_organisasjonsmodell/ANBEFALT_DOMENEPORTFOLJE.md`
+- stabsarkitektur: `01_organisasjonsmodell/STABSARKITEKTUR.md`
+- HR-pilot: `01_organisasjonsmodell/HR_PILOT.md`
+- HR-prosesser: `01_organisasjonsmodell/HR_PROSESSOVERSIKT.md`
+- HR-roller og kompetanser: `01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md`
+- HR-rekruttering og stillingsutlysninger: `01_organisasjonsmodell/HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER.md`
+- okonomi-pilot: `01_organisasjonsmodell/OKONOMI_OG_VIRKSOMHETSSTYRING_PILOT.md`
+- okonomi-prosesser: `01_organisasjonsmodell/OKONOMI_PROSESSOVERSIKT.md`
+- IT-pilot: `01_organisasjonsmodell/IT_OG_DIGITALISERING_PILOT.md`
+- IT-prosesser: `01_organisasjonsmodell/IT_PROSESSOVERSIKT.md`
+- linseportefolje: `02_linser/LINSEPORTFOLJE.md`
+- linsekartlag utenfor kommunen: `02_linser/LINSEKARTLAG_IKKE_KOMMUNALE_ROLLER.md`
+- HR-randsoner og linsepakker: `02_linser/HR_RANDSONER_OG_LINSEPAKKER.md`
+- domene-til-linse-kobling: `02_linser/DOMENE_TIL_LINSEKOBLING.md`
+- stabsomrade-til-linser: `02_linser/STABSOMRAADE_TIL_LINSER.md`
+- roller: `03_agentroller/ROLLEKATALOG.md`
+- stabsomrader og nokkelroller: `03_agentroller/STABSOMRAADER_OG_NOKKELROLLER.md`
+- guardrails: `03_agentroller/HR_TVILLING_GUARDRAILS.md`
+- okonomi-guardrails: `03_agentroller/OKONOMI_OG_VIRKSOMHETSSTYRING_GUARDRAILS.md`
+- IT-guardrails: `03_agentroller/IT_OG_DIGITALISERING_GUARDRAILS.md`
+- agentkontrakter: `04_orkestrering/AGENTKONTRAKTER.md`
+- agent-playbooks: `04_orkestrering/AGENT_PLAYBOOKS.md`
+- oppdragsformat og trace: `04_orkestrering/OPPDRAGSFORMAT_OG_TRACE.md`
+- fasegater: `04_orkestrering/FASEGATE_SJEKKLISTER.md`
+- revisjonslop: `04_orkestrering/REVISJONSLOP.md`
+- testsett: `05_simulering/testsett/HR_TESTSETT_V1.md`
+- testsett HR-randsoner: `05_simulering/testsett/HR_RANDSONE_TESTSETT_V1.md`
+- testsett revisjon: `05_simulering/testsett/REVISJON_TESTSETT_V1.md`
+- testsett okonomi: `05_simulering/testsett/OKONOMI_TESTSETT_V1.md`
+- testsett IT: `05_simulering/testsett/IT_OG_DIGITALISERING_TESTSETT_V1.md`
+- testsett tverrgaende: `05_simulering/testsett/TVERRGAENDE_TESTSETT_V1.md`
+- eval-katalog: `05_simulering/evals/scenario_catalog.yaml`
+- eval-matrise: `05_simulering/evals/eval_matrix.yaml`
+- red flags: `05_simulering/evals/red_flags.yaml`
+- maler: `09_templates_og_output/TEMPLATEINDEKS.md`
+- stillingsutlysninger: `09_templates_og_output/stillingsutlysninger/STILLINGSUTLYSNINGSINDEKS.md`
+- modell: `10_kunnskapsbase/modeller/hr_pilot_v1.yaml`
+- kodetabeller: `10_kunnskapsbase/kodetabeller/README.md`
+- modell okonomi: `10_kunnskapsbase/modeller/okonomi_og_virksomhetsstyring_v1.yaml`
+- modell IT: `10_kunnskapsbase/modeller/it_og_digitalisering_v1.yaml`
+
+## Oppdragsinnganger
+
+- simulering: `05_simulering/OPPDRAG_SIMULER_HR_SAK.md`
+- simulering okonomi: `05_simulering/OPPDRAG_SIMULER_OKONOMI_ELLER_STYRINGSSAK.md`
+- simulering IT: `05_simulering/OPPDRAG_SIMULER_IT_ELLER_DIGITALISERINGSSAK.md`
+- beslutningsstotte: `06_beslutningsstotte/OPPDRAG_SKRIV_BESLUTNINGSNOTAT.md`
+- beslutningsstotte okonomi: `06_beslutningsstotte/OPPDRAG_SKRIV_OKONOMI_BESLUTNINGSNOTAT.md`
+- beslutningsstotte IT: `06_beslutningsstotte/OPPDRAG_SKRIV_IT_BESLUTNINGSNOTAT.md`
+- mote: `07_moter/OPPDRAG_FORBERED_HR_MOTE.md`
+- mote styring: `07_moter/OPPDRAG_FORBERED_STYRINGSMOTE.md`
+- mote IT: `07_moter/OPPDRAG_FORBERED_DIGITALISERINGSMOTE.md`
+- produksjon: `08_produksjon/OPPDRAG_PRODUSER_HR_LEVERANSE.md`
+- produksjon styring: `08_produksjon/OPPDRAG_PRODUSER_STYRINGSLEVERANSE.md`
+- produksjon IT: `08_produksjon/OPPDRAG_PRODUSER_DIGITALISERINGSLEVERANSE.md`
+- revisjon: `04_orkestrering/OPPDRAG_KJOR_REVISJON.md`
+
+## Bruksregel
+
+- hvis noe ikke trengs i aktiv bruk, skal det ikke ligge i rot eller blandes inn som aktiv sannhetskilde
+- hvis du lurer pa hvorfor noe er flyttet ut, se `90_arkiv/etableringsdokumenter`

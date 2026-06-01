@@ -1,0 +1,50 @@
+# MAPPEVURDERING
+
+## Kort oppsummering
+
+Prosjektet var ved start todelt:
+
+- et generisk linsebibliotek for offentlig sektor, med god styringslogikk, konfliktmatrise og kjernelinser i Markdown
+- en mer operativ, men uferdig HR-tvilling i flere konkurrerende `.docx`-filer
+
+Første ombyggingspass gjør prosjektet om til en HR-forst tvillingsorganisasjon med en gjenbrukbar linseplattform i bunn. Tyngdepunktet er flyttet fra los innholdssamling til en tydelig struktur for styring, roller, orkestrering, simulering, beslutningsstotte, moter og produksjon.
+
+## Hva prosjektet ser ut til a vaere i dag
+
+Prosjektet er na organisert som et system med tre lag:
+
+1. Plattformkjerne
+   Styringsinstruks, linseindeks, kjernelinser og Gruppe L som operativt koblingslag.
+
+2. HR-pilot
+   Forste operative tvillingdomene med organisasjonsmodell, rollemodell, guardrails og anvendelseslop.
+
+3. Kildelag
+   Referansedokumenter, konsoliderte kilder, eldre konkurrenter og karantene for slettkandidater.
+
+## Sterk kjerne
+
+- `00_styring/SYSTEMINSTRUKS.md`
+- `02_linser/LINSEINDEKS.md`
+- `02_linser/KJERNELINSER.md`
+- `02_linser/GRUPPE_L_STRUKTURMASTER.md`
+- `01_organisasjonsmodell/TVILLINGSORGANISASJON.md`
+- `01_organisasjonsmodell/HR_PILOT.md`
+- `03_agentroller/ROLLEKATALOG.md`
+- `03_agentroller/HR_TVILLING_GUARDRAILS.md`
+- `04_orkestrering/AGENTKONTRAKTER.md`
+- `04_orkestrering/HANDOVER_OG_FASEOVERGANGER.md`
+
+## Hva som var stoy
+
+- eksakt dublett av `AI_ Kognitiv Utvidelse i Kommunal Sektor`
+- tom `Dokument uten navn.docx` i rot
+- tom `Linser`-mappe
+- flere `.docx`-filer som overlappet om HR-tvillingen uten at det var tydelig hvilken som var master
+- blanding av biblioteklogikk, organisasjonslogikk og arbeidsutkast i samme rotniva
+
+## Hovedfunn
+
+- Den egentlige kjernen er ikke alle enkeltlinser isolert sett, men kombinasjonen av styrende instrukser, seleksjon og vekting av linser, operativt overgangslag mellom analyse og gjennomforing, og et domene-tvillinglag.
+- HR-materialet er godt nok til a vaere pilotdomene, men ikke godt nok strukturert til a fungere som master uten konsolidering.
+- Prosjektet manglet eksplisitte kontrakter mellom dirigent, stabssjef, spesialagenter, moteflyt, simulering og produksjon. Det er na opprettet som egne styringsdokumenter.

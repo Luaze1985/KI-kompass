@@ -1,0 +1,55 @@
+# HR_SJEF STILLINGSUTLYSNING
+
+Status: avledet produksjonsartefakt v1
+
+## Metadata
+
+- role_id: `R-02`
+- unit_id: `U-01`
+- styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+- local_status: krever_lokal_tilpasning_for_publisering
+
+## Kort annonsetekst
+
+Vi soker en HR-sjef som kan lede kommunens HR-funksjon med tydelig retning, sterk gjennomforingsevne og godt blikk for arbeidsgiverpolitikk, omstilling og lederstotte. Rollen krever at du holder sammen strategi, risiko og praktisk drift i en kompleks offentlig organisasjon.
+
+## Formaal med stillingen
+
+Lede HR-funksjonen som helhet og sikre at kommunen har en samordnet, sporbar og gjennomforbar HR-stotte pa tvers av personalsaker, rekruttering, kompetanse og omstilling.
+
+## Hovedansvar
+
+- lede HR-portefoljen og prioritere kapasitet, risiko og utviklingsbehov
+- sikre tydelig eierskap i arbeidsrettslige, organisatoriske og omdammekritiske spor
+- holde sammen samarbeid mellom HR, lederlinje, tillitsvalgte og vernetjeneste
+- sikre at HRs maler, prosesser og leveranser faktisk kan brukes lokalt
+
+## Must-have kvalifikasjoner
+
+- relevant hoyere utdanning pa master- eller tilsvarende niva
+- dokumentert ledererfaring fra HR, arbeidsgiverpolitikk eller tilsvarende stabsomrade
+- god forstaelse for arbeidsrett, tariff, partssamarbeid og offentlig styring
+- erfaring med omstilling, prioritering og gjennomforing i komplekse organisasjoner
+
+## Onskede tilleggskvalifikasjoner
+
+- erfaring fra kommunal sektor eller annen stor offentlig virksomhet
+- erfaring med kompetanseportefolje, utviklingslop og digitalisering av HR-arbeid
+- god evne til a bruke data og indikatorer i prioritering og oppfolging
+
+## System- og arbeidsflate
+
+- styringsportal, kvalitetssystem og sak- og arkivlosning
+- tett samarbeid med HR-ledelse, stabsfunksjoner og kommunens lederlinje
+
+## Forste 12 maneder
+
+- etablere tydelig portefoljebilde for HRs prioriterte leveranser
+- sikre felles rolleforstaelse i komplekse personalsaker og omstillingslop
+- stramme inn handover, malbruk og kvalitetskontroll i HR-produksjonen
+
+## Lokal verifikasjon for publisering
+
+- verifiser arbeidsgiverprofil, lonnsspenn og organisatorisk plassering
+- verifiser tittelbruk opp mot lokal lederstruktur
+- verifiser hvilke systemnavn og samarbeidsflater som faktisk gjelder lokalt

@@ -1,0 +1,70 @@
+# P-06 LEDERUTVIKLINGSPORTFOLJE
+
+## Formaal
+
+Bygge og drifte en portefolje av lederutvikling som er koblet til kommunens strategiske behov, faktiske lederutfordringer og tilgjengelig kapasitet.
+
+## Eier og roller
+
+- prosesseier: avdelingssjef rekruttering og kompetanse
+- hovedutforer: kompetanseradgiver og relevante fagressurser
+- stotte: HR-sjef, kommunikasjonsradgiver, eksterne leverandorer, linjeledere
+- eskaleres til: HR-sjef ved store prioriterings- eller ressursvalg
+
+## Trigger
+
+- behov for nytt eller revidert lederprogram
+- svake lederindikatorer eller omstillingsbehov
+- bestilling fra toppledelse eller direktorat
+
+## Input
+
+- strategiske prioriteringer
+- data fra medarbeiderundersokelse, naervaer og styringsportalen
+- evaluering fra tidligere tiltak
+- tilgjengelig budsjett og leveransekapasitet
+
+## Output
+
+- prioritert portefolje med malgruppe, format og effektmal
+- plan for gjennomforing, kommunikasjon og evaluering
+- tydelig kobling mellom tiltak og behov
+
+## Hovedforlop
+
+1. Avklar behov, malgruppe og forventet effekt.
+2. Prioriter tiltak i portefoljen ut fra verdi og kapasitet.
+3. Design eller bestill innhold og laeringsformat.
+4. Kjor gjennomforing med tydelig deltaker- og lederansvar.
+5. Evaluer effekt og juster neste portefolje.
+
+## Viktigste risikoer
+
+- tiltak uten reelt behov
+- svak kobling mellom strategi og portefolje
+- lav deltakelse eller manglende lederforankring
+- lite laering tilbake til neste runde
+
+## Kontrollhandlinger
+
+- bruk faste opptakskriterier for nye tiltak
+- knytt hvert tiltak til behov, data og forventet effekt
+- spor gjennomforing og deltakelse
+- avslutt tiltak som ikke gir tydelig verdi
+
+## Systemer og referanser
+
+- KS Kunnskap for kurs og laeringsadministrasjon
+- Dossier for kompetansespor
+- interne evalueringer og styringsdata
+
+## Handover
+
+- handover_in: fra dirigent, HR-sjef eller beslutningslop ved kompetansebehov
+- handover_out: til beslutningsnotat, leveranseutkast, moteunderlag eller kursplan
+
+## Lokal verifikasjon
+
+- bekreft at tiltak er forankret i faktisk behov
+- bekreft at portefoljen har eier og budsjett
+- bekreft at evaluering brukes i neste prioritering

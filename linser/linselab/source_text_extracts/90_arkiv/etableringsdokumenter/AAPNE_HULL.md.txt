@@ -1,0 +1,62 @@
+# AAPNE_HULL
+
+## Hva som mangler for at tvillingsorganisasjonen skal fungere fullt ut
+
+### 1. Maskinlesbar datamodell
+- delvis lukket i denne etappen med `10_kunnskapsbase/modeller/hr_pilot_v1.yaml`
+- gjenstaende hull:
+  - mer detaljerte felter for kompetanse, oppgaver og kontrollstatus
+  - kobling mellom modell og fremtidige per-linse-filer
+  - lokal eiersetting for vedlikehold av modellen
+
+### 2. Faktiske templates i drift
+- lukket i v1 med operative prototype-maler i `09_templates_og_output/maler`
+- gjenstaende hull:
+  - prove hvilke maler som faktisk fungerer i drift
+  - skille tydeligere mellom prototype-mal og godkjent produksjonsmal
+
+### 3. Operativ testpakke
+- delvis lukket med `05_simulering/testsett/HR_TESTSETT_V1.md`
+- gjenstaende hull:
+  - teste scenarioene mot faktisk lokal praksis
+  - dokumentere pass/fail-resultater og laering etter hver kjoring
+
+### 4. Lokale verifikasjonsrutiner
+- hvert lop beskriver lokal verifikasjon, men prosjektet mangler fortsatt:
+  - konkrete sjekklister
+  - eiernavn
+  - terskler for godkjenning til neste fase
+
+### 5. Tydeligere HR-prosesskart
+- lukket for v1 med egne prosesskort i `01_organisasjonsmodell/HR_KJERNEPROSESSER`
+- gjenstaende hull:
+  - bryte prosesskort videre ned til delprosesser der det trengs
+  - verifisere om prosesseiere og praksis fortsatt er oppdatert lokalt
+
+## Hva som bor bygges senere
+
+### Neste dokumentniva
+- en fil per viktig operativ linse
+- lokale sjekklister for fasegater
+- maler i godkjent produksjonsversjon
+
+### Neste systemniva
+- rikere metadata for kilder, modenhet og lokal verifikasjon
+- kobling mellom rollekatalog, prosesskort og kunnskapsbase
+- enkel statusmodell for hva som er forskning, prototype, pilot og produksjon
+
+### Neste brukerniva
+- ferdige oppdragsinnganger for:
+  - "simuler en HR-sak"
+  - "forbered et mote"
+  - "skriv beslutningsnotat"
+  - "produser leveranseutkast"
+
+## Hva som ma verifiseres lokalt
+
+- faktisk navngivning og bemanning i HR-enheten
+- om rollelisten er oppdatert eller historisk
+- hvilke prosesser som er mest kritiske i dagens praksis
+- hvilke kilder som er offisielt godkjente internt
+- hvilke svarformater som fungerer best for sluttbrukere
+- om SKOS-/ontologisporet fortsatt er en aktiv retning eller bare et utforskningsspor

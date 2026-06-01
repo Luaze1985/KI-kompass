@@ -1,0 +1,31 @@
+# Skjema for én sammenslåingsbeslutning
+
+merge_record:
+  id: "MRG-000"
+  date: "2026-05-17"
+  source_items:
+    - source_id: "SRC-000"
+      title: ""
+      file: ""
+      original_status: "source"
+  proposed_target:
+    target_id: ""
+    target_type: "lens | advisor_profile | frame | model | stance | heuristic | teaching_material | source_only"
+    target_file: ""
+  decision_type: "behold | splitt | slå_sammen | normaliser | arkiver_som_kilde | marker_duplikat"
+  rationale:
+    overlap: ""
+    differences: ""
+    preserved_variance: ""
+    risk_of_loss: ""
+  quality_checks:
+    has_role: false
+    has_scope: false
+    has_non_use_cases: false
+    has_theory_or_experience: false
+    has_core_questions: false
+    has_output: false
+    has_uncertainty_signal: false
+    tested_on_case: false
+  status: "draft"
+  open_questions: []

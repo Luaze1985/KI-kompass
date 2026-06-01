@@ -1,0 +1,55 @@
+# E_LAERINGSRADGIVER STILLINGSUTLYSNING
+
+Status: avledet produksjonsartefakt v1
+
+## Metadata
+
+- role_id: `R-12`
+- unit_id: `U-03`
+- styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+- local_status: krever_lokal_tilpasning_for_publisering
+
+## Kort annonsetekst
+
+Vi soker en e-laeringsradgiver som kan utvikle digitale laeringslop som er enkle a bruke og tydelige i mal og malgruppe. Rollen krever at du kan oversette faglige behov til gode opplaeringsopplegg med riktig kanal, format og oppfolging.
+
+## Formaal med stillingen
+
+Utvikle og vedlikeholde skalerbar opplaering som styrker onboarding, lederutvikling og kompetansebygging i kommunen.
+
+## Hovedansvar
+
+- designe og forvalte digitale laeringslop og mikrolaering
+- oversette faglige behov til strukturert innhold, malgrupper og oppfolging
+- bidra til at onboarding- og opplaeringsinnhold henger sammen med rolle- og kompetansegrunnlag
+- samarbeide tett med fagmiljo og ledere om innhold, publisering og bruk
+
+## Must-have kvalifikasjoner
+
+- relevant hoyere utdanning
+- erfaring med laeringsdesign, e-laering eller digital opplaering
+- evne til a strukturere faginnhold for ulike malgrupper
+- god digital kompetanse og erfaring med publisering i laeringsplattform
+
+## Onskede tilleggskvalifikasjoner
+
+- erfaring fra offentlig sektor eller stor organisasjon
+- erfaring med onboarding, kompetansetiltak eller lederutvikling
+- erfaring med analyse av bruk, fullforing eller laeringseffekt
+
+## System- og arbeidsflate
+
+- laeringsplattform, kompetansesystem og relevante produksjonsverktoy
+- tett samarbeid med kompetanseradgiver og faglige innholdsansvarlige
+
+## Forste 12 maneder
+
+- rydde og standardisere de viktigste HR-relaterte laeringslopene
+- styrke sammenhengen mellom onboarding, opplaering og rollekrav
+- bidra til tydeligere oppfolging av bruk og gjennomforing
+
+## Lokal verifikasjon for publisering
+
+- verifiser plattformvalg, publiseringsflyt og produksjonsverktoy
+- verifiser hvor mye rollen skal produsere selv versus koordinere
+- verifiser eventuell bruk av studio, video eller ekstern leverandor

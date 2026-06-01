@@ -1,0 +1,411 @@
+HR tvilling etter roller og oppgaver
+
+Detaljert Organisasjonskart og Ytelsesmatriser for HR-avdelingen
+
+Rolle 1: HR-sjef
+
+Rolle/Tittel
+
+Plassering i organisasjonen
+
+Hovedansvarsområder (Koblet til ontologi)
+
+Sentrale Oppgaver (Eksempler)
+
+Typiske Samarbeidspartnere
+
+HR-sjef
+
+Rapporterer til Organisasjonsdirektør og er del av dennes ledergruppe.<br><br>Har overordnet ansvar for hele HR-avdelingen og direkte personalansvar for to avdelingssjefer (Lederstøtte, Rekruttering) og to stabsfunksjoner (Forhandling, HMS).
+
+1. Arbeidsgiverpolitikk:<br>Overordnet ansvar for å definere, forankre og forvalte kommunens prinsipper som arbeidsgiver. Dette er kjernen i rollens bidrag til KommuneHR_Domene.<br><br>2. HR-Strategi (Operativ):<br>Ansvarlig for å omsette overordnede føringer til en fungerende og stabil HR-Strategi, med fokus på drift, etterlevelse av lovverk og støtte til linjen.<br><br>3. Partssamarbeid (Overordnet):<br>Eier den strategiske relasjonen til partene. Sikrer at det formelle Partssamarbeid fungerer etter intensjonen i Hovedavtalen.<br><br>4. Ledelse av HR-funksjonen:<br>Ansvarlig for budsjett, resultater og personalledelse for den samlede HR_Funksjon. Sikrer at avdelingen leverer stabile og forutsigbare tjenester.
+
+<ul><li>Fungere som primær rådgiver for kommunedirektørens ledergruppe i prinsipielle personalsaker og omstillingsprosesser.</li><li>Lede og følge opp avdelingssjefer og stabsfunksjoner, sette mål og fordele ressurser innad i HR-avdelingen.</li><li>Lede de sentrale, formelle møtene med hovedtillitsvalgte og hovedverneombud (sentralt AMU, sentralt IDF-møte).</li><li>Sikre at kommunens personalpolitikk og rutiner er i henhold til gjeldende JuridiskRammeverk og Tariffavtaleverk.</li><li>Forberede og fremlegge saksdokumenter om HR-relaterte temaer for politisk behandling.</li></ul>
+
+Internt:<br>Organisasjonsdirektør, Kommunedirektør, Hovedtillitsvalgte, Hovedverneombud, egne avdelingssjefer.<br><br>Eksternt:<br>KS, Kommuneadvokaten, Bedriftshelsetjenesten (BHT), Statsforvalteren.
+
+Ytelsesmatrise (Dataframe) for HR-sjef
+
+Ytelsesnivå
+
+Beskrivelse av Atferd og Resultat
+
+Lav Ytelse
+
+• Viser liten evne til å koble HR-arbeidet til kommunens overordnede mål.<br>• Kommuniserer svakt med toppledelsen og partene, noe som fører til misforståelser og reaktivitet.<br>• HR-avdelingen preges av interne konflikter, uklare prioriteringer og leverer ustabile tjenester.<br>• Blir en flaskehals for beslutninger og gir lite støtte til egne ledere.
+
+Middels Ytelse
+
+• Sikrer at HR-avdelingen leverer på sine kjerneoppgaver og overholder frister.<br>• Leder avdelingen på en forutsigbar måte og opprettholder et funksjonelt og formelt korrekt Partssamarbeid.<br>• Håndterer løpende saker og henvendelser fra toppledelsen på en tilfredsstillende måte.<br>• Overholder budsjetter og administrative rutiner.
+
+God Ytelse
+
+• Er en proaktiv og respektert rådgiver for Organisasjonsdirektør og toppledelsen.<br>• Bygger et tillitsfullt og konstruktivt samarbeid med hovedtillitsvalgte og hovedverneombud.<br>• Leder og utvikler HR-avdelingen til å bli en anerkjent og pålitelig service- og støttefunksjon for hele organisasjonen.<br>• Er trygg og tydelig i håndteringen av komplekse og prinsipielle saker.
+
+Rolle 2: Forhandlingsleder
+
+Rolle/Tittel
+
+Plassering i organisasjonen
+
+Hovedansvarsområder (Koblet til ontologi)
+
+Sentrale Oppgaver (Eksempler)
+
+Typiske Samarbeidspartnere
+
+Forhandlingsleder
+
+Stabsfunksjon som rapporterer direkte til HR-sjef. Fungerer som kommunens fremste fagekspert på lønn og tariff.
+
+1. Forhandling:<br>Leder de årlige, lokale lønnsforhandlingene på vegne av kommunen som arbeidsgiver.<br><br>2. Lov og Tariff:<br>Har hovedansvar for tolkning, formidling og rådgivning knyttet til Hovedtariffavtalen og JuridiskRammeverk som regulerer lønns- og arbeidsvilkår.<br><br>3. Lønnspolitikk:<br>Forvalter og vedlikeholder kommunens lønnspolitikk og sikrer at den anvendes konsekvent i hele organisasjonen.
+
+<ul><li>Forberede og gjennomføre lokale lønnsforhandlinger (kap. 3.4, 4 og 5) i tett dialog med HR-sjef og linjeledere.</li><li>Gi råd og veiledning til ledere i lønnsplassering ved nyansettelser og i spørsmål om lønns- og arbeidsvilkår.</li><li>Være arbeidsgivers representant i tvistesaker som omhandler tolkning av tariffavtaler.</li><li>Holde interne kurs og opplæring for ledere i Tariffavtaleverk og forhandlingsprosesser.</li><li>Analysere lønnsdata for å forberede arbeidsgivers posisjon i forhandlinger.</li></ul>
+
+Internt:<br>HR-sjef, avdelingssjefer i HR, linjeledere, tillitsvalgte.<br><br>Eksternt:<br>KS, tillitsvalgtes sentrale forhandlingssammenslutninger, Kommuneadvokaten.
+
+Ytelsesmatrise (Dataframe) for Forhandlingsleder
+
+Ytelsesnivå
+
+Beskrivelse av Atferd og Resultat
+
+Lav Ytelse
+
+• Er dårlig forberedt til forhandlinger, mangler oversikt over lønnsdata og føringer.<br>• Gir råd som er upresise eller i strid med tariffavtalen, noe som skaper risiko og merarbeid.<br>• Har et anstrengt forhold til tillitsvalgte og oppleves som lite løsningsorientert.<br>• Mister kontroll over økonomiske rammer i forhandlinger.
+
+Middels Ytelse
+
+• Gjennomfører forhandlinger i henhold til prosedyre og innenfor gitte rammer.<br>• Svarer korrekt på tekniske spørsmål om Tariffavtaleverk.<br>• Opprettholder et formelt og profesjonelt forhold til partene.<br>• Sikrer at protokoller og avtaler er formelt korrekte.
+
+God Ytelse
+
+• Oppnår bærekraftige og forutsigbare forhandlingsresultater som balanserer partenes interesser og kommunens økonomi.<br>• Er en anerkjent fagautoritet og en etterspurt rådgiver for ledere i komplekse lønnsspørsmål.<br>• Bygger relasjoner og tillit som bidrar til et konstruktivt forhandlingsklima.<br>• Analyserer og formidler lønnsstatistikk på en måte som gir strategisk verdi for HR-sjefen.
+
+Rolle 3: HMS-rådgiver
+
+Rolle/Tittel
+
+Plassering i organisasjonen
+
+Hovedansvarsområder (Koblet til ontologi)
+
+Sentrale Oppgaver (Eksempler)
+
+Typiske Samarbeidspartnere
+
+HMS-rådgiver
+
+Stabsfunksjon som rapporterer direkte til HR-sjef. Fungerer som kommunens fremste fagekspert på helse, miljø og sikkerhet.
+
+1. HMS (Helse, Miljø og Sikkerhet):<br>Hovedansvar for å drive, koordinere og utvikle kommunens systematiske HMS_Arbeid i tråd med Arbeidsmiljøloven.<br><br>2. Samhandling med vernetjenesten:<br>Er den primære kontaktpersonen og støttespilleren for Hovedverneombudet og det samlede verneapparatet.<br><br>3. Arbeidsmiljø:<br>Fagansvarlig for oppfølging av sykefravær (IA-arbeid), arbeidsmiljøundersøkelser og konflikthåndtering knyttet til det psykososiale arbeidsmiljøet.
+
+<ul><li>Sekretær for og saksbehandler til Arbeidsmiljøutvalget (AMU).</li><li>Koordinere og analysere sykefraværsstatistikk, og foreslå tiltak for ledere og AMU.</li><li>Gi råd og støtte til ledere i krevende HMS-saker (f.eks. rus/akansaker, konflikter, tilrettelegging).</li><li>Utvikle og vedlikeholde kommunens HMS-system og gjennomføre opplæring for ledere og verneombud.</li><li>Bistå i gjennomføring av risikovurderinger og vernerunder.</li></ul>
+
+Internt:<br>HR-sjef, Hovedverneombud, verneombud, linjeledere, AMU-medlemmer.<br><br>Eksternt:<br>Bedriftshelsetjenesten (BHT), NAV Arbeidslivssenter, Arbeidstilsynet.
+
+Ytelsesmatrise (Dataframe) for HMS-rådgiver
+
+Ytelsesnivå
+
+Beskrivelse av Atferd og Resultat
+
+Lav Ytelse
+
+• Er reaktiv og agerer kun etter pålegg eller når alvorlige hendelser har inntruffet.<br>• HMS-systemet er utdatert og lite brukervennlig.<br>• Rapportering er mangelfull og leveres etter fristen.<br>• Oppleves som en byråkratisk "hindring" fremfor en støttespiller for linjen.
+
+Middels Ytelse
+
+• Sikrer at kommunen oppfyller de lovpålagte kravene til systematisk HMS_Arbeid.<br>• Gjennomfører møter i AMU og følger opp vedtak.<br>• Er tilgjengelig for ledere som ber om råd i enkeltsaker.<br>• Holder sykefraværsstatistikken oppdatert.
+
+God Ytelse
+
+• Driver et systematisk og forebyggende HMS-arbeid som bidrar til å redusere sykefravær og risiko.<br>• Er en synlig, tillitsvekkende og etterspurt rådgiver for både ledere og vernetjenesten.<br>• Omgjør data (f.eks. fra medarbeiderundersøkelser og sykefravær) til konkret og anvendbar innsikt for organisasjonen.<br>• Bidrar aktivt til å bygge en sterk HMS-kultur.
+
+Rolle 4: Avdelingssjef - Lederstøtte og Personalsaker
+
+Rolle/Tittel
+
+Plassering i organisasjonen
+
+Hovedansvarsområder (Koblet til ontologi)
+
+Sentrale Oppgaver (Eksempler)
+
+Typiske Samarbeidspartnere
+
+Avdelingssjef - Lederstøtte og Personalsaker
+
+Rapporterer til HR-sjef. Har personalansvar for en avdeling med HR-rådgivere.<br><br>Sikrer at kommunens ledere får enhetlig og kvalitativ god støtte i sin personalforvaltning.
+
+1. Lederstøtte (Operativ):<br>Hovedansvar for å lede avdelingen som gir daglig støtte til linjeledere i alle typer personalsaker.<br><br>2. Lov og Tariff (Anvendelse):<br>Ansvarlig for at avdelingen gir korrekte råd og sikrer etterlevelse av JuridiskRammeverk i den daglige personalforvaltningen.<br><br>3. Samhandling med tillitsvalgte:<br>Sikrer at avdelingens rådgivere håndterer den daglige kontakten og drøftinger med de lokale tillitsvalgte på en profesjonell måte.<br><br>4. Personalrelaterte forsikringer:<br>Forvalter ansvaret for kommunens kollektive personalforsikringer (typisk gruppelivs- og yrkesskadeforsikring).
+
+<ul><li>Lede og fordele arbeid for HR-rådgiverne i avdelingen; sikre faglig utvikling og enhetlig praksis.</li><li>Fungere som eskaleringspunkt og rådgiver for egne ansatte og linjeledere i særlig komplekse eller prinsipielle personalsaker (oppsigelser, advarsler, omplassering).</li><li>Sikre at alle ansettelser, permisjoner og avslutninger håndteres i tråd med kommunens rutiner og Lovverk.</li><li>Ha det overordnede ansvaret for administrasjon og kontakt med leverandør av personalforsikringer.</li><li>Gjennomføre drøftingsmøter med tillitsvalgte vedrørende nedbemanning og omorganiseringer på enhetsnivå.</li></ul>
+
+Internt:<br>HR-sjef, egne HR-rådgivere, linjeledere på alle nivåer, tillitsvalgte, lønnsavdelingen.<br><br>Eksternt:<br>Kommuneadvokaten, NAV, forsikringsselskap.
+
+Ytelsesmatrise (Dataframe) for Avdelingssjef - Lederstøtte og Personalsaker
+
+Ytelsesnivå
+
+Beskrivelse av Atferd og Resultat
+
+Lav Ytelse
+
+• Avdelingen gir sprikende og inkonsistente råd til linjeledere.<br>• Saksbehandlingstiden er lang, og avdelingen er en flaskehals.<br>• Viser liten evne til å lede og utvikle egne medarbeidere.<br>• Håndteringen av vanskelige saker skaper unødvendig konflikt og juridisk risiko.
+
+Middels Ytelse
+
+• Avdelingen leverer standardiserte tjenester og svarer på henvendelser innen rimelig tid.<br>• Sikrer at formelle krav og prosedyrer i personalsaker følges.<br>• Leder teamet på en administrativt korrekt måte.<br>• Håndterer den daglige operative driften stabilt.
+
+God Ytelse
+
+• Har bygget en høyt ansett og serviceorientert avdeling som linjelederne har stor tillit til.<br>• Er en trygg og dyktig støttespiller for linjeledere i de aller vanskeligste personalsakene.<br>• Sørger for kontinuerlig kompetanseheving og enhetlig praksis blant egne HR-rådgivere.<br>• Bidrar til å redusere kommunens juridiske og omdømmemessige risiko.
+
+Rolle 5: Avdelingssjef - Rekruttering og Kompetanseutvikling
+
+Rolle/Tittel
+
+Plassering i organisasjonen
+
+Hovedansvarsområder (Koblet til ontologi)
+
+Sentrale Oppgaver (Eksempler)
+
+Typiske Samarbeidspartnere
+
+Avdelingssjef - Rekruttering og Kompetanseutvikling
+
+Rapporterer til HR-sjef. Har personalansvar for en avdeling med rådgivere innen rekruttering, kompetanse og lærlinger.<br><br>Sikrer at kommunen tiltrekker seg og utvikler nødvendig kompetanse.
+
+1. Rekruttering:<br>Overordnet ansvar for at kommunens rekrutteringsprosesser er profesjonelle, effektive og i tråd med lovverket.<br><br>2. Kompetanseutvikling:<br>Hovedansvar for å utvikle og levere kommunens felles Kompetanseutvikling-stiltak.<br><br>3. Lederutvikling:<br>Ansvarlig for å utvikle, administrere og gjennomføre kommunens programmer for lederutvikling.<br><br>4. E-læring:<br>Fagansvarlig for kommunens plattform og produksjon av E-læring.<br><br>5. Lærlingordning:<br>Har det overordnede ansvaret for kommunens Lærlingordning.
+
+<ul><li>Lede og fordele arbeid for rådgiverne i avdelingen, inkludert de som jobber med lærlinger.</li><li>Ha overordnet ansvar for kommunens rekrutteringssystem og employer branding-aktiviteter.</li><li>Planlegge og budsjettere kommunens sentrale kurskatalog og lederutviklingsprogrammer.</li><li>Rapportere på nøkkeltall innen rekruttering (søkerantall, tid) og kompetanse (gjennomføringsgrad).</li><li>Sikre et godt samarbeid med fylkeskommunen og opplæringskontorer knyttet til lærlingordningen.</li></ul>
+
+Internt:<br>HR-sjef, egne rådgivere, linjeledere, kommunikasjonsavdelingen.<br><br>Eksternt:<br>Fylkeskommunen (for lærlinger), rekrutteringsbyråer, utdanningsinstitusjoner, leverandører av kurs og e-læringssystemer.
+
+Ytelsesmatrise (Dataframe) for Avdelingssjef - Rekruttering og Kompetanseutvikling
+
+Ytelsesnivå
+
+Beskrivelse av Atferd og Resultat
+
+Lav Ytelse
+
+• Rekrutteringsprosessene er trege, ustrukturerte og tiltrekker få kvalifiserte søkere.<br>• Kurstilbudet er utdatert, lite relevant og har lav deltakelse.<br>• Lærlingordningen fungerer dårlig, med høyt frafall og misfornøyde læresteder.<br>• Avdelingen jobber reaktivt og uten en klar plan.
+
+Middels Ytelse
+
+• Avdelingen administrerer rekrutteringer og kurs på en forutsigbar måte.<br>• Sikrer at formelle krav til prosesser og rapportering blir møtt.<br>• Holder lærlingordningen i gang i henhold til kontrakter og lovverk.<br>• Leverer bestilte tjenester til organisasjonen.
+
+God Ytelse
+
+• Har utviklet effektive og profesjonelle rekrutteringsprosesser som styrker kommunens omdømme som arbeidsgiver.<br>• Tilbyr relevante og etterspurte kompetanse- og lederutviklingstiltak.<br>• Leder en lærlingordning som er anerkjent for høy kvalitet og som fungerer som en viktig rekrutteringskanal.<br>• Er en god rådgiver for ledere som trenger å bygge kompetanse i sine enheter.
+
+Forstått. Jeg fortsetter i nøyaktig samme format, som er designet for å være enkelt å kopiere over i Google Docs.
+
+Vi går nå ned til neste nivå i organisasjonen: de utførende rådgiverrollene som rapporterer til de to avdelingssjefene. Jeg vil definere rollene og oppgavene deres i tråd med avdelingen de tilhører.
+
+Nivå 3: Rådgiver-roller og spesialister
+
+Her følger definisjonene for de sentrale rådgiver-rollene i de to hovedavdelingene.
+
+Rolle 6: HR-rådgiver (Lederstøtte og Personalsaker)
+
+Rolle/Tittel
+
+Plassering i organisasjonen
+
+Hovedansvarsområder (Koblet til ontologi)
+
+Sentrale Oppgaver (Eksempler)
+
+Typiske Samarbeidspartnere
+
+HR-rådgiver
+
+Utførende rolle som rapporterer til Avdelingssjef - Lederstøtte og Personalsaker.<br><br>Er linjeleders primære kontaktpunkt for daglig, operativ personalforvaltning.
+
+1. Lederstøtte (Operativ):<br>Yter direkte støtte og veiledning til ledere i alle typer personalsaker, fra ansettelse til avslutning.<br><br>2. Saksbehandling (Lov og Tariff):<br>Utfører saksbehandling i personalsaker og sikrer at praksis er i tråd med kommunens Personalpolitikk og JuridiskRammeverk.<br><br>3. Samhandling med tillitsvalgte:<br>Gjennomfører den løpende, daglige dialogen og de formelle drøftingene med lokale tillitsvalgte på enhetsnivå.
+
+<ul><li>Gi råd til ledere om rettigheter og plikter i personalsaker (f.eks. ved sykefraværsoppfølging, permisjoner, advarsler).</li><li>Utforme ansettelseskontrakter, endringsavtaler og attester.</li><li>Forberede og delta i drøftingsmøter med tillitsvalgte ved omorganisering eller nedbemanning i enheter.</li><li>Veilede ledere i tolkning av personalreglement og administrative rutiner.</li><li>Registrere og vedlikeholde korrekte data i kommunens HR-systemer.</li></ul>
+
+Internt:<br>Avdelingssjef (egen leder), linjeledere, tillitsvalgte, lønnsavdelingen, ansatte med spørsmål.<br><br>Eksternt:<br>NAV (ved sykefravær og permisjoner).
+
+Ytelsesmatrise (Dataframe) for HR-rådgiver
+
+Ytelsesnivå
+
+Beskrivelse av Atferd og Resultat
+
+Lav Ytelse
+
+• Gir råd som er upresise, noe som skaper usikkerhet og merarbeid for lederne.<br>• Har lang saksbehandlingstid og overholder ikke frister.<br>• Bidrar til å eskalere konflikter med tillitsvalgte gjennom dårlig kommunikasjon.<br>• Gjør feil i saksbehandling og kontrakter som må rettes opp.
+
+Middels Ytelse
+
+• Gir korrekte, standardiserte svar på henvendelser fra ledere.<br>• Saksbehandler i henhold til etablerte rutiner og maler.<br>• Gjennomfører drøftinger på en formelt korrekt måte.<br>• Er en pålitelig utfører av administrative oppgaver.
+
+God Ytelse
+
+• Oppleves av linjeledere som en trygg, tilgjengelig og løsningsorientert støttespiller.<br>• Håndterer vanskelige saker på en ryddig måte som bygger tillit hos både ledere og tillitsvalgte.<br>• Formidler komplekst Lovverk på en enkel og forståelig måte.<br>• Jobber selvstendig og effektivt, og avlaster sin leder.
+
+Rolle 7: Rekrutteringsrådgiver
+
+Rolle/Tittel
+
+Plassering i organisasjonen
+
+Hovedansvarsområder (Koblet til ontologi)
+
+Sentrale Oppgaver (Eksempler)
+
+Typiske Samarbeidspartnere
+
+Rekrutteringsrådgiver
+
+Utførende rolle som rapporterer til Avdelingssjef - Rekruttering og Kompetanseutvikling.<br><br>Er faglig ansvarlig for gjennomføring av rekrutteringsprosesser.
+
+1. Rekruttering:<br>Hovedansvar for å administrere og støtte rekrutteringsprosesser fra utlysning til ansettelse, og sikre etterlevelse av kvalifikasjonsprinsippet og Lovverk.<br><br>2. Digitalisering (Operativ):<br>Superbruker og faglig ansvarlig for kommunens digitale rekrutteringssystem.<br><br>3. Lederstøtte (Rekruttering):<br>Veileder og støtter ansettende ledere gjennom hele rekrutteringsløpet.
+
+<ul><li>Gi råd til ledere om utforming av stillingsannonser, kravspesifikasjoner og intervjuguider.</li><li>Administrere søknader i rekrutteringssystemet, gjennomføre grovsortering og sende ut kommunikasjon til søkere.</li><li>Delta i intervjuer som HR-representant for å sikre en profesjonell og lovmessig korrekt prosess.</li><li>Innhente referanser og gi administrativ støtte ved tilbudsutforming.</li><li>Holde kurs for nyansatte ledere i bruk av rekrutteringsverktøyet.</li></ul>
+
+Internt:<br>Avdelingssjef (egen leder), ansettende ledere, kommunikasjonsavdelingen (for annonsering).<br><br>Eksternt:<br>Kandidater/søkere, mediekanaler for annonsering.
+
+Ytelsesmatrise (Dataframe) for Rekrutteringsrådgiver
+
+Ytelsesnivå
+
+Beskrivelse av Atferd og Resultat
+
+Lav Ytelse
+
+• Produserer stillingsannonser med feil og mangler.<br>• Prosessene tar lang tid, og kommunikasjonen med søkere og ledere er dårlig.<br>• Gir svake råd, noe som fører til dårlige ansettelser eller brudd på prosedyrer.<br>• Sliter med å håndtere det digitale rekrutteringssystemet.
+
+Middels Ytelse
+
+• Gjennomfører rekrutteringer i henhold til fastsatt prosedyre og sjekklister.<br>• Håndterer rekrutteringssystemet på en administrativt korrekt måte.<br>• Sørger for at formelle krav som offentlig søkerliste og innkallinger er på plass.<br>• Følger opp ledere og søkere på en reaktiv, men korrekt måte.
+
+God Ytelse
+
+• Er en proaktiv og profesjonell partner for ansettende ledere, som bidrar til å heve kvaliteten i alle ledd av prosessen.<br>• Sikrer en god kandidatopplevelse som styrker kommunens omdømme.<br>• Jobber effektivt og strukturert, og sikrer god fremdrift i mange parallelle prosesser.<br>• Utfordrer og veileder ledere til å ta gode, velbegrunnede ansettelsesvalg.
+
+Rolle 8: Kompetanserådgiver
+
+Rolle/Tittel
+
+Plassering i organisasjonen
+
+Hovedansvarsområder (Koblet til ontologi)
+
+Sentrale Oppgaver (Eksempler)
+
+Typiske Samarbeidspartnere
+
+Kompetanserådgiver
+
+Utførende rolle som rapporterer til Avdelingssjef - Rekruttering og Kompetanseutvikling.<br><br>Har ansvar for drift og utvikling av kommunens felles kurs og utviklingstiltak.
+
+1. Kompetanseutvikling:<br>Ansvarlig for den praktiske gjennomføringen av kommunens felles Kompetanseutvikling-stiltak, inkludert kursadministrasjon.<br><br>2. Lederutvikling:<br>Koordinerer og administrerer kommunens lederutviklingsprogrammer.<br><br>3. E-læring:<br>Produserer og vedlikeholder innhold i kommunens E-læring-plattform.
+
+<ul><li>Administrere kommunens sentrale kurskatalog: planlegge, invitere, evaluere og rapportere på kurs.</li><li>Fungere som praktisk koordinator for lederutviklingsprogrammer (booke samlinger, kommunisere med deltakere og eksterne kursholdere).</li><li>Utvikle enkle e-læringskurs om felles temaer (f.eks. nytt personalreglement, etikk, personvern).</li><li>Gi brukerstøtte og veiledning til ansatte i bruk av e-læringsplattformen.</li><li>Inhente tilbud fra og holde kontakten med eksterne kursleverandører.</li></ul>
+
+Internt:<br>Avdelingssjef (egen leder), linjeledere, ansatte (kursdeltakere), IT-avdelingen (for systemstøtte).<br><br>Eksternt:<br>Eksterne kursholdere og konferansesteder, leverandører av e-læringssystemer.
+
+Ytelsesmatrise (Dataframe) for Kompetanserådgiver
+
+Ytelsesnivå
+
+Beskrivelse av Atferd og Resultat
+
+Lav Ytelse
+
+• Administrasjonen av kurs er kaotisk, med feil i påmeldinger og dårlig informasjon ut.<br>• E-læringskurs er innholdsmessig svake og har tekniske feil.<br>• Evalueringer av kurs blir ikke fulgt opp.<br>• Viser liten interesse for å identifisere organisasjonens faktiske kompetansebehov.
+
+Middels Ytelse
+
+• Administrerer kurskatalogen på en forutsigbar måte, slik at kursene blir gjennomført.<br>• Oppdaterer e-læringskurs når det er strengt nødvendig.<br>• Svarer på henvendelser og gir enkel brukerstøtte.<br>• Opprettholder en fungerende, men lite inspirerende portefølje av tiltak.
+
+God Ytelse
+
+• Organiserer kurs og utviklingstiltak på en profesjonell og serviceorientert måte som gir en god opplevelse for deltakerne.<br>• Utvikler engasjerende og pedagogisk gode e-læringskurs.<br>• Bruker evalueringer aktivt til å forbedre og videreutvikle kompetansetilbudet.<br>• Er en god rådgiver for ledere som har spørsmål om kompetanseheving.
+
+Rolle 9: Lærlingkoordinator
+
+Rolle/Tittel
+
+Plassering i organisasjonen
+
+Hovedansvarsområder (Koblet til ontologi)
+
+Sentrale Oppgaver (Eksempler)
+
+Typiske Samarbeidspartnere
+
+Lærlingkoordinator
+
+Utførende rolle som rapporterer til Avdelingssjef - Rekruttering og Kompetanseutvikling.<br><br>Er kommunens dedikerte ressursperson for alt som angår lærlinger.
+
+1. Lærlingordning:<br>Hovedansvar for den daglige driften og oppfølgingen av kommunens Lærlingordning.<br><br>2. Rekruttering (Lærlinger):<br>Koordinerer hele rekrutteringsprosessen for nye lærlinger, fra utlysning til signering av lærekontrakt.<br><br>3. Kompetanseutvikling (Fag):<br>Følger opp lærlingenes faglige utvikling i tråd med læreplanen, i samarbeid med interne veiledere og eksterne instanser.
+
+<ul><li>Rekruttere nye lærlinger: delta på yrkesmesser, behandle søknader og gjennomføre intervjuer.</li><li>Følge opp lærlinger og deres faglige veiledere på lærestedene i kommunen gjennom regelmessige møter og samtaler.</li><li>Arrangere fagsamlinger, kurs og sosiale arrangementer for lærlingene.</li><li>Håndtere all administrasjon rundt lærekontrakter, oppmeldinger til fagprøver og rapportering.</li><li>Være kommunens primære kontaktpunkt overfor Fylkeskommunen og opplæringskontorer.</li></ul>
+
+Internt:<br>Avdelingssjef (egen leder), faglige veiledere i enhetene, lærlinger.<br><br>Eksternt:<br>Fylkeskommunen, opplæringskontorer, videregående skoler, prøvenemnder.
+
+Ytelsesmatrise (Dataframe) for Lærlingkoordinator
+
+Ytelsesnivå
+
+Beskrivelse av Atferd og Resultat
+
+Lav Ytelse
+
+• Rekrutterer få eller dårlig egnede lærlinger.<br>• Følger opp lærlinger og veiledere sjeldent og reaktivt, noe som fører til misnøye og høyt frafall.<br>• Administrasjonen er mangelfull, og frister for oppmelding og rapportering overholdes ikke.<br>• Har et dårlig forhold til Fylkeskommunen og lærestedene.
+
+Middels Ytelse
+
+• Sikrer at kommunen oppfyller sine formelle forpliktelser som lærebedrift.<br>• Gjennomfører de planlagte møtene og samlingene.<br>• Håndterer den løpende administrasjonen på en tilfredsstillende måte.<br>• Sørger for at lærlingene blir meldt opp til fagprøve i tide.
+
+God Ytelse
+
+• Bygger en lærlingordning av høy kvalitet som gjør kommunen til en attraktiv lærebedrift.<br>• Er en synlig, engasjert og tillitsvekkende støttespiller for både lærlinger og veiledere.<br>• Sikrer svært lavt frafall og høy gjennomføringsgrad til fagprøven.<br>• Etablerer et utmerket samarbeid med Fylkeskommunen og skolene, som gir god rekruttering.
+
+Rolle 10: HR-jurist / Spesialrådgiver - Arbeidsrett
+
+Rolle/Tittel
+
+Plassering i organisasjonen
+
+Hovedansvarsområder (Koblet til ontologi)
+
+Sentrale Oppgaver (Eksempler)
+
+Typiske Samarbeidspartnere
+
+HR-jurist / Spesialrådgiver - Arbeidsrett
+
+Stabsfunksjon som rapporterer direkte til HR-sjef. Fungerer som kommunens fremste ekspert på arbeidsrettslige problemstillinger og prosesser.
+
+1. Komplekse Personalsaker:<br>Hovedansvar for den juridiske håndteringen av de mest komplekse og risikofylte personalsakene (oppsigelse, avskjed, nedbemanning, varsling).<br><br>2. Juridisk Tolkning og Kvalitetssikring:<br>Ansvarlig for den definitive tolkningen av JuridiskRammeverk (Arbeidsmiljøloven, Forvaltningsloven etc.) og kvalitetssikring av juridiske dokumenter.<br><br>3. Tvistehåndtering og Prosedyre:<br>Representerer arbeidsgiver i forhandlingsmøter ved tvister og forbereder saker for, og eventuelt representerer kommunen i, Forliksrådet og domstolene.
+
+<ul><li>Føre forhandlinger i tvistesaker etter § 2-3 i Hovedavtalen og § 17-3 i Arbeidsmiljøloven.</li><li>Utforme beslutningsgrunnlag, protokoller og vedtak i oppsigelses- og avskjedssaker.</li><li>Gi endelig juridisk råd til HR-sjef og toppledelse i saker med høy juridisk og økonomisk risiko.</li><li>Være kommunens representant i rettsmekling eller hovedforhandling.</li><li>Holde intern opplæring for ledere og HR-rådgivere i krevende arbeidsrettslige temaer.</li></ul>
+
+Internt:<br>HR-sjef, Avdelingssjef - Lederstøtte, HR-rådgivere (som eskalerer saker), Kommuneadvokaten.<br><br>Eksternt:<br>Fagforeningenes advokater, eksterne advokater, domstolene, Diskrimineringsnemnda.
+
+Ytelsesmatrise (Dataframe) for HR-jurist
+
+Ytelsesnivå
+
+Beskrivelse av Atferd og Resultat
+
+Lav Ytelse
+
+• Gir råd som fører til tapte saker eller unødvendige forlik.<br>• Er en flaskehals i saksbehandlingen og overholder ikke lovpålagte frister.<br>• Kommuniserer på en måte som eskalerer konflikter.<br>• Produserer juridiske dokumenter med formelle feil.
+
+Middels Ytelse
+
+• Håndterer tildelte saker på en juridisk korrekt og forsvarlig måte.<br>• Sikrer at kommunens saksbehandling følger lovens krav.<br>• Gir reaktive, men korrekte svar på juridiske spørsmål.<br>• Representerer kommunen på en tilfredsstillende måte i forhandlinger.
+
+God Ytelse
+
+• Vinner eller unngår rettssaker gjennom fremragende juridisk håndverk og strategisk rådgivning.<br>• Er en proaktiv risikoreduserer som identifiserer og forebygger juridiske fallgruver for organisasjonen.<br>• Oppleves som en trygg og autoritativ støttespiller for ledere i de aller tøffeste sakene.<br>• Formidler kompleks juss på en måte som bygger kompetanse i organisasjonen.

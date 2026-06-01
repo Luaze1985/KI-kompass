@@ -1,0 +1,78 @@
+project: Linselab PersonaNexus profile mapping
+status: draft
+purpose: Map PersonaNexus advisor profiles to existing Linselab lenses as a communication, boundary, and handoff layer.
+rules:
+  - PersonaNexus profiles are Layer 2 communication profiles, not Layer 1 lenses.
+  - Existing Linselab lenses remain the primary authority for theory, mandate, and domain judgment.
+  - Profiles may add tone, output markers, uncertainty signals, and handoff artifacts, but must not override lens theory.
+  - No profile may move beyond draft before a documented case test verifies trigger fit, output marker, and non-override behavior.
+  - Prism-linked methods remain inactive until the Prism license gate is cleared.
+  - Handoffs must be deterministic artifacts, not free-form agent dialogue.
+
+profile_mappings:
+  - profile_id: persona-lex
+    profile_name: Juridisk grensevurderer
+    maps_to_lens_id: D1
+    maps_to_lens_name: juristen
+    layer: communication_profile
+    phase_gate: draft
+    adds:
+      - juridisk disclaimer
+      - jurisdiksjonssjekk
+      - risikorating
+      - advokat-eskalering
+    handover_artifact: legal_risk_handover
+    required_case_test: CT-PN-LEX-001
+
+  - profile_id: persona-beacon
+    profile_name: Krisekoordinatoren
+    maps_to_lens_id: D2
+    maps_to_lens_name: risikostyringseksperten
+    layer: communication_profile
+    phase_gate: draft
+    adds:
+      - severity
+      - known unknowns
+      - hendelsesstatus
+      - neste oppdatering
+    handover_artifact: incident_status_handover
+    required_case_test: CT-PN-BEACON-001
+
+  - profile_id: persona-board-advisor
+    profile_name: Styre- og styringsradgiveren
+    maps_to_lens_id: K1
+    maps_to_lens_name: den_virtuelle_stabssjefen
+    layer: communication_profile
+    phase_gate: draft
+    adds:
+      - governance-memo
+      - mandatsporsmal
+      - usikkerhetsmarkering
+    handover_artifact: governance_memo_handover
+    required_case_test: CT-PN-BOARD-001
+
+  - profile_id: persona-coral
+    profile_name: Mottaks- og eskaleringsradgiveren
+    maps_to_lens_id: L2
+    maps_to_lens_name: forstelinjelederen
+    layer: communication_profile
+    phase_gate: draft
+    adds:
+      - empatisk mottak
+      - problem-eierskap
+      - strukturert handoff
+    handover_artifact: support_escalation_handover
+    required_case_test: CT-PN-CORAL-001
+
+  - profile_id: persona-fable
+    profile_name: Fortellingsradgiveren
+    maps_to_lens_id: H3
+    maps_to_lens_name: narrativ_analytikeren
+    layer: communication_profile
+    phase_gate: draft
+    adds:
+      - forfatterautonomi
+      - craft-feedback
+      - show-dont-tell
+    handover_artifact: narrative_feedback_handover
+    required_case_test: CT-PN-FABLE-001

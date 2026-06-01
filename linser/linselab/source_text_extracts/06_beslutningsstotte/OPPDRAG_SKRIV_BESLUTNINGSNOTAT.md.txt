@@ -1,0 +1,32 @@
+# OPPDRAG_SKRIV_BESLUTNINGSNOTAT
+
+## Bruk nar
+
+- du trenger et kort, sporbart og handlingsrettet beslutningsgrunnlag i HR-domenet
+
+## Det du fyller inn
+
+- hva som skal besluttes:
+- hvem som eier beslutningen:
+- frist:
+- relevante lokale forhold:
+- hva som allerede er avklart:
+
+## Starttekst
+
+Skriv et HR-beslutningsnotat innenfor tvillingsorganisasjonen.
+
+Bruk bare aktive mastere, relevant HR-prosesskort og agentkontraktene.
+Skill tydelig mellom anbefaling, risiko og lokal verifikasjon.
+Hvis saken krever juridisk vurdering, skal du ikke konkludere juridisk, men peke til riktig rolle.
+
+Lever i dette formatet:
+1. kort anbefaling
+2. beslutningsgrunnlag
+3. alternativer
+4. hovedrisiko og kontroll
+5. ansvar og neste steg
+
+## Forventet utfil
+
+- `09_templates_og_output/maler/BESLUTNINGSNOTAT_TEMPLATE.md`

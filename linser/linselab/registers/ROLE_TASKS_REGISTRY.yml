@@ -1,0 +1,341 @@
+# ROLE_TASKS_REGISTRY.yml
+# Database/Register for alle 14 HR-roller i Kristiansand kommune
+# Status: pilot-ready
+# Date: 2026-05-24
+
+roles:
+  - id: R-02
+    name: HR-sjef
+    tasks:
+      - id: task-01
+        name: Utarbeide overordnet livsfasepolitikk og seniorbevaring
+        description: Utarbeide retningslinjer og rammer for seniorbevaring og livsfasetiltak i kommunens enheter.
+        malklarhet: 4
+        separabilitet: 3
+        risiko: gul
+        legal_reference: Arbeidsmiljøloven § 13-1 (Forbud mot diskriminering)
+        linser:
+          - D1 - HR-jurist
+          - E5 - Identitets- og mangfoldleder
+      - id: task-02
+        name: Forberede strategisk bemanningsramme for kommende budsjettår
+        description: Utarbeide strategiske scenarier og prognoser for helhetlig bemanning og rekrutteringsbehov.
+        malklarhet: 3
+        separabilitet: 2
+        risiko: gul
+        legal_reference: Kommuneloven § 14-1 (Økonomiplan og årsbudsjett)
+        linser:
+          - K2 - Ledelsesstrateg
+          - B4 - Tjenesteleder
+
+  - id: R-03
+    name: Avdelingssjef lederstøtte og personalsaker
+    tasks:
+      - id: task-03
+        name: Saksforberedelse ved mistanke om alvorlig tjenesteforsømmelse
+        description: Forberede formell saksutredning og dokumentasjon i disiplinærsaker.
+        malklarhet: 4
+        separabilitet: 1
+        risiko: rød
+        legal_reference: Forvaltningsloven § 17 (Utredningsplikt) og Arbeidsmiljøloven kap. 15
+        linser:
+          - D1 - HR-jurist
+          - J3 - Tillitsvalgt
+      - id: task-04
+        name: Evaluere og optimalisere lederstøtte-prosesser
+        description: Kartlegge og forenkle rutiner for hvordan HR-avdelingen støtter linjeledere i saksbehandling.
+        malklarhet: 3
+        separabilitet: 3
+        risiko: grønn
+        legal_reference: Hovedavtalen (HA) del B § 1 (Medvirkning)
+        linser:
+          - K2 - Ledelsesstrateg
+          - B4 - Tjenesteleder
+
+  - id: R-04
+    name: Avdelingssjef rekruttering og kompetanse
+    tasks:
+      - id: task-05
+        name: Etablere standardiserte kriterier for rekruttering i helsesektoren
+        description: Utarbeide felles retningslinjer, kvalifikasjonskrav og objektive kriterier for ansettelser.
+        malklarhet: 4
+        separabilitet: 3
+        risiko: gul
+        legal_reference: Likestillings- og diskrimineringsloven § 6 og kvalifikasjonsprinsippet
+        linser:
+          - F4 - HR-ekspert
+          - E5 - Identitets- og mangfoldleder
+      - id: task-06
+        name: Kartlegge strategisk kompetansebehov for helsesektoren (2026-2030)
+        description: Utarbeide en overordnet analyse av fremtidige kompetansegap og utdanningstiltak.
+        malklarhet: 3
+        separabilitet: 2
+        risiko: gul
+        legal_reference: Hovedtariffavtalen (HTA) kap. 1 § 3 (Kompetanseutvikling)
+        linser:
+          - K2 - Ledelsesstrateg
+          - F4 - HR-ekspert
+
+  - id: R-05
+    name: HR-rådgiver
+    tasks:
+      - id: task-07
+        name: Forberede mal for medarbeidersamtaler og medarbeiderundersøkelse
+        description: Utforme standardiserte maler, spørsmålsagendaer og refleksjonsverktøy til linjeledere.
+        malklarhet: 4
+        separabilitet: 3
+        risiko: grønn
+        legal_reference: Arbeidsmiljøloven § 4-1 (Generelle krav til arbeidsmiljøet)
+        linser:
+          - F4 - HR-ekspert
+          - E5 - Identitets- og mangfoldleder
+      - id: task-08
+        name: Saksbehandle søknad om permisjon uten lønn
+        description: Utrede søknader om utvidet permisjon opp mot gjeldende regelverk og lokale driftsbehov.
+        malklarhet: 4
+        separabilitet: 2
+        risiko: gul
+        legal_reference: Hovedtariffavtalen (HTA) kap. 1 § 14 (Permisjoner)
+        linser:
+          - D1 - HR-jurist
+          - J1 - Kritisk venn
+
+  - id: R-06
+    name: HR-jurist
+    tasks:
+      - id: task-09
+        name: Utarbeide juridisk vurdering av tolkningsspørsmål i tariffavtale
+        description: Analysere og fortolke uklare bestemmelser i Hovedtariffavtalen eller lokale særavtaler.
+        malklarhet: 3
+        separabilitet: 2
+        risiko: rød
+        legal_reference: Arbeidstvistloven og Hovedtariffavtalen (HTA) § 3
+        linser:
+          - D1 - HR-jurist
+          - J1 - Kritisk venn
+      - id: task-10
+        name: Juridisk kvalitetssikring av oppsigelsessaker (virksomhetens forhold)
+        description: Vurdere og kvalitetssikre at formkrav, medvirkning og saklighetskriterier er fulgt ved omstilling.
+        malklarhet: 4
+        separabilitet: 2
+        risiko: rød
+        legal_reference: Arbeidsmiljøloven § 15-7 (Oppsigelse grunnet virksomhetens forhold)
+        linser:
+          - D1 - HR-jurist
+          - D3 - Personvernombud (PVO)
+
+  - id: R-07
+    name: Forhandlingsrådgiver
+    tasks:
+      - id: task-11
+        name: Forberede krav og forhandlingsmandat til lokale lønnsforhandlinger
+        description: Strukturere økonomiske rammer, kravlister og forhandlingsmandat i partssamarbeidet.
+        malklarhet: 3
+        separabilitet: 2
+        risiko: gul
+        legal_reference: Hovedtariffavtalen (HTA) kap. 3 og kap. 4
+        linser:
+          - D1 - HR-jurist
+          - J3 - Tillitsvalgt
+      - id: task-12
+        name: Protokollføring av drøftingsmøter med fagforeninger
+        description: Utforme formelle og juridisk dekkende protokoller fra drøftinger og forhandlinger.
+        malklarhet: 4
+        separabilitet: 3
+        risiko: grønn
+        legal_reference: Hovedavtalen (HA) KS del B § 1 (Drøftingsplikt)
+        linser:
+          - D1 - HR-jurist
+          - J3 - Tillitsvalgt
+
+  - id: R-08
+    name: HMS-rådgiver
+    tasks:
+      - id: task-13
+        name: Gjennomføre ROS-analyse etter kritiske arbeidsmiljøavvik
+        description: Kartlegge risikofaktorer, HMS-konsekvenser og foreslå tiltak etter alvorlige hendelser.
+        malklarhet: 3
+        separabilitet: 2
+        risiko: rød
+        legal_reference: Arbeidsmiljøloven § 3-1 og Internkontrollforskriften § 5
+        linser:
+          - D2 - Risikostyringsekspert
+          - J3 - Tillitsvalgt
+      - id: task-14
+        name: Utarbeide årsrapport for kommunens systematiske HMS-arbeid
+        description: Aggregere HMS-data, avvik og vernerunder til en helhetlig statusrapport for vernekomiteen.
+        malklarhet: 4
+        separabilitet: 3
+        risiko: grønn
+        legal_reference: Forskrift om systematisk helse-, miljø- og sikkerhetsarbeid § 5
+        linser:
+          - D6 - HMS-rådgiver
+          - D2 - Risikostyringsekspert
+
+  - id: R-09
+    name: Rekrutteringsrådgiver
+    tasks:
+      - id: task-15
+        name: Skrive utkast til stillingsannonse og intervjuguide for avdelingsleder
+        description: Utforme et kjønnsnøytralt og inkluderende utkast til utlysningstekst og kompetansebaserte intervjuspørsmål.
+        malklarhet: 4
+        separabilitet: 3
+        risiko: grønn
+        legal_reference: Likestillings- og diskrimineringsloven § 6 og kvalifikasjonsprinsippet
+        linser:
+          - F4 - HR-ekspert
+          - E5 - Identitets- og mangfoldleder
+      - id: task-16
+        name: Vurdere og grovsortere innkomne søknader
+        description: Sortere og matche søkere mot formelle kompetansekrav i utlysningen før intervjuinvitasjoner.
+        malklarhet: 4
+        separabilitet: 2
+        risiko: gul
+        legal_reference: Forvaltningsloven § 2 (Enkeltvedtaksanalogi / kvalifikasjonsprinsippet)
+        linser:
+          - D1 - HR-jurist
+          - E5 - Identitets- og mangfoldleder
+
+  - id: R-10
+    name: Lærlingkoordinator
+    tasks:
+      - id: task-17
+        name: Utarbeide oppfølgingsplan for sårbar lærling med fare for frafall
+        description: Tilrettelegge læreplan, samtaleplan og koordinere tverrfaglige støttetiltak.
+        malklarhet: 4
+        separabilitet: 2
+        risiko: gul
+        legal_reference: Opplæringsloven § 4-1 (Oppfølgingsplikt og lærekontrakt)
+        linser:
+          - E1 - Psykolog
+          - F1 - Endringsleder
+      - id: task-18
+        name: Planlegge og koordinere inntakssamtaler for nye lærlinger
+        description: Utforme inntaksprogram, tildelingssamtaler og velkomstrutiner for å sikre en god start.
+        malklarhet: 4
+        separabilitet: 3
+        risiko: grønn
+        legal_reference: Opplæringsloven § 4-3 (Retter og plikter)
+        linser:
+          - F4 - HR-ekspert
+          - E5 - Identitets- og mangfoldleder
+
+  - id: R-11
+    name: Kompetanserådgiver
+    tasks:
+      - id: task-19
+        name: Kartlegge kompetansegap på tvers av kommunens sykehjem
+        description: Utføre en samlet analyse av eksisterende vs. ønsket kompetanse basert på aggregerte data.
+        malklarhet: 4
+        separabilitet: 3
+        risiko: grønn
+        legal_reference: Hovedavtalen (HA) del B § 3 (Kompetanseutvikling)
+        linser:
+          - K2 - Ledelsesstrateg
+          - F4 - HR-ekspert
+      - id: task-20
+        name: Utvikle digitalt onboarding-program for nyansatte i helsesektoren
+        description: Strukturere læringsløp, introduksjonsmoduler og verifiseringstester for nybegynnere.
+        malklarhet: 4
+        separabilitet: 3
+        risiko: grønn
+        legal_reference: Arbeidsmiljøloven § 4-2 (Medvirkning, utvikling og opplæring)
+        linser:
+          - F4 - HR-ekspert
+          - B4 - Tjenesteleder
+
+  - id: R-12
+    name: E-læringsrådgiver
+    tasks:
+      - id: task-21
+        name: Design og utvikling av e-læringskurs i etiske retningslinjer
+        description: Utforme interaktive læringsmoduler, dilemma-øvelser og etiske prinsipper for saksbehandling.
+        malklarhet: 4
+        separabilitet: 3
+        risiko: grønn
+        legal_reference: Forvaltningsloven § 11 (Veiledningsplikt og god forvaltningsskikk)
+        linser:
+          - F4 - HR-ekspert
+          - J1 - Kritisk venn
+      - id: task-22
+        name: Administrere og evaluere digital kursportefølje i læringsportalen
+        description: Overvåke gjennomføringsgrad, analysere tilbakemeldinger og forbedre kursstrukturer.
+        malklarhet: 4
+        separabilitet: 3
+        risiko: grønn
+        legal_reference: Personopplysningsloven (GDPR ved sporing av ansattes kursaktivitet)
+        linser:
+          - F4 - HR-ekspert
+          - K2 - Ledelsesstrateg
+
+  - id: R-13
+    name: IA-rådgiver
+    tasks:
+      - id: task-23
+        name: Utarbeide tilretteleggingsplan og turnustilpasning ved gradert sykemelding
+        description: Vurdere og foreslå justering av arbeidstid og arbeidsoppgaver under sykdomsoppfølging.
+        malklarhet: 3
+        separabilitet: 2
+        risiko: rød
+        legal_reference: Arbeidsmiljøloven § 4-6 (Arbeidsgivers tilretteleggingsplikt)
+        linser:
+          - D1 - HR-jurist
+          - D3 - Personvernombud (PVO)
+      - id: task-24
+        name: Forberede IA-agenda og kontrollspørsmål for dialogmøte 2
+        description: Utforme en profesjonell, empatisk samtalemal som ivaretar personvern og IA-målsetninger.
+        malklarhet: 4
+        separabilitet: 3
+        risiko: gul
+        legal_reference: Folketrygdloven § 25-2 (Dialogmøter)
+        linser:
+          - E1 - Psykolog
+          - F1 - Endringsleder
+
+  - id: R-14
+    name: Rådgiver for leder- og organisasjonsutvikling
+    tasks:
+      - id: task-25
+        name: Fasilitere organisasjonsendring og endret oppgavefordeling i en enhet
+        description: Strukturere prosesser, partssamarbeid og risikovurderinger ved lokale omstruktureringer.
+        malklarhet: 3
+        separabilitet: 2
+        risiko: gul
+        legal_reference: Arbeidsmiljøloven § 15-7 (Saklig grunn ved driftsendring)
+        linser:
+          - K2 - Ledelsesstrateg
+          - B4 - Tjenesteleder
+      - id: task-26
+        name: Utvikle lederutviklingsprogram for nytilsatte enhetsledere
+        description: Utforme moduler for relasjonell ledelse, medarbeideroppfølging og økonomistyring i kommunesektoren.
+        malklarhet: 4
+        separabilitet: 3
+        risiko: grønn
+        legal_reference: Hovedavtalen (HA) del B § 3 (Lederutvikling)
+        linser:
+          - K2 - Ledelsesstrateg
+          - B4 - Tjenesteleder
+
+  - id: _placeholder
+    name: Annen HR-rådgivning / Saksbehandling
+    tasks:
+      - id: task-27
+        name: Skrive enkelt forberedende saksframlegg for politisk behandling
+        description: Strukturere faktagrunnlag, alternativer og konsekvensutredning for kommunestyresak.
+        malklarhet: 3
+        separabilitet: 2
+        risiko: gul
+        legal_reference: Forvaltningsloven § 17 (Sakens opplysning)
+        linser:
+          - D1 - HR-jurist
+          - J1 - Kritisk venn
+      - id: task-28
+        name: Besvare generelle henvendelser til HR-postmottaket
+        description: Sortere, veilede og besvare innkomne henvendelser om personalreglement og rutiner.
+        malklarhet: 4
+        separabilitet: 3
+        risiko: grønn
+        legal_reference: Forvaltningsloven § 11 (Veiledningsplikt)
+        linser:
+          - F4 - HR-ekspert
+          - J1 - Kritisk venn

@@ -1,0 +1,67 @@
+# IT_OG_DIGITALISERING_PILOT
+
+## Formaal
+
+IT og digitalisering er neste aktive stabsomrade i tvillingsorganisasjonen. Omradet skal gi beslutningsdyktig stotte i saker som handler om tverrgaende systemer, virksomhetsarkitektur, informasjonsforvaltning, digital sikkerhet, drift og tjenesteutvikling.
+
+## Hva omradet skal brukes til
+
+- simulere valg rundt systeminnforing, digitalisering og plattformendring
+- gi beslutningsstotte om arkitektur, avhengigheter, risiko og gjennomforing
+- forberede styrings- og innforingsmoter for tverrgaende digitale tiltak
+- produsere korte og sporbare underlag for prioritering, innforing og oppfolging
+- koble teknologi, organisasjon og faktisk tjenesteverdi tettere sammen
+
+## Avgrensning
+
+Dette omradet er ikke:
+
+- et system for a innfore teknologi uten lokal eier
+- en erstatning for teknisk drift, sikkerhetsarbeid eller prosjektstyring
+- et sted for ubegrunnede teknologiantakelser eller lovnader om gevinst
+
+## Kjerneobjekter i pilotversjon
+
+- felleslosning
+- systemeier
+- tjenesteeier
+- virksomhetsarkitektur
+- informasjonsobjekt
+- integrasjon
+- sikkerhetshendelse
+- plattform
+- innforingslop
+- brukerfriksjon
+- gevinst
+
+## Typiske nokkelroller i pilotversjon
+
+- leder for IT og digitalisering eller tilsvarende
+- virksomhetsarkitekt
+- system- eller tjenesteeier for felleslosninger
+- prosjekt- og innforingsleder
+- leder for drift og plattform
+- servicedesk- og brukerstotteansvarlig
+- informasjonssikkerhetsansvarlig
+
+## Kjerneprosesser i pilotversjon
+
+- tverrgaende systeminnforing og systemlivssyklus
+- virksomhetsarkitektur og informasjonsforvaltning
+- digital sikkerhet og hendelseshandaering
+- plattform, drift og brukerstoette
+- digital tjenesteutvikling og gevinstoppfolging
+
+## Kritiske designvalg
+
+- systemeier, tjenesteeier og beslutningseier skal skilles eksplisitt
+- teknologi skal ikke vurderes uten organisatorisk og operativ konsekvens
+- informasjonssikkerhet og personvern skal tidlig inn i vurderingene
+- innforing skal ikke behandles som ferdig gevinst
+- lokale avhengigheter og opplaeringsbehov skal synliggjores
+
+## Lokal forankring i kildene
+
+- okonomiplan 2026-2029 peker pa store tverrgaende innforinger som ERP og EPJ og behov for oppfolging i flere direktøromrader
+- kommunen deltar i arbeid med DigiOrden og felles kommunal arkitektur
+- tertialrapport og planmateriale peker pa behov for tydeligere kobling mellom digitale losninger, sikkerhet, kapasitet og tjenesteverdi

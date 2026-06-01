@@ -1,0 +1,2233 @@
+project: Linselab merge control
+generated: 2026-05-18T04:48:51.723990+00:00
+source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+policy:
+  originals_changed: false
+  originals_copied: false
+  text_extracts_are_working_copies: true
+  active_library_changes: false
+sources:
+  -
+    id: SRC-FILE-0001
+    title: AKTIV_OVERSIKT
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 00_styring/AKTIV_OVERSIKT.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\00_styring\\AKTIV_OVERSIKT.md"
+    extension: .md
+    size_bytes: 4514
+    modified: 2026-04-09T04:55:11.935548+00:00
+    sha256: 5c8022668a142b844581cfb6348f67f7e8b3083404b7c7e9d7f604e4b15979b0
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0002
+    title: agent_registry
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 00_styring/manifester/agent_registry.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\00_styring\\manifester\\agent_registry.yaml"
+    extension: .yaml
+    size_bytes: 3600
+    modified: 2026-04-09T04:55:11.935548+00:00
+    sha256: 2fe27a3a8b8bdf48f6bbde88f147f1469b3dd267014e276e29aa77e8a4a198ed
+    tags:
+      - advisor_or_agent_reference
+      - governance_or_registry
+    recommended_use: classify_before_merge
+    status: inventoried
+  -
+    id: SRC-FILE-0003
+    title: domain_registry
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 00_styring/manifester/domain_registry.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\00_styring\\manifester\\domain_registry.yaml"
+    extension: .yaml
+    size_bytes: 2708
+    modified: 2026-04-09T04:55:11.935548+00:00
+    sha256: a952027178e503ec655b27140afdadd566e93bdec6030f183d51fe477c83a1aa
+    tags:
+      - governance_or_registry
+    recommended_use: governing_or_index_reference
+    status: inventoried
+  -
+    id: SRC-FILE-0004
+    title: lens_registry
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 00_styring/manifester/lens_registry.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\00_styring\\manifester\\lens_registry.yaml"
+    extension: .yaml
+    size_bytes: 12515
+    modified: 2026-04-05T11:14:13.628372+00:00
+    sha256: 6b9cd01bab0beea45ad92511e4055305acdaf9ffff8acf9fd17f57c29028e2eb
+    tags:
+      - governance_or_registry
+    recommended_use: governing_or_index_reference
+    status: inventoried
+  -
+    id: SRC-FILE-0005
+    title: workflow_registry
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 00_styring/manifester/workflow_registry.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\00_styring\\manifester\\workflow_registry.yaml"
+    extension: .yaml
+    size_bytes: 2902
+    modified: 2026-04-09T04:55:11.935548+00:00
+    sha256: a118aa436ee6e94b5703aa59f7136773b86d6be886d5a52d4b064d0451faf6b7
+    tags:
+      - governance_or_registry
+    recommended_use: governing_or_index_reference
+    status: inventoried
+  -
+    id: SRC-FILE-0006
+    title: change_log
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 00_styring/pakker/hr_og_arbeidsgiver/change_log.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\00_styring\\pakker\\hr_og_arbeidsgiver\\change_log.md"
+    extension: .md
+    size_bytes: 1111
+    modified: 2026-04-09T04:55:11.935548+00:00
+    sha256: 698de238206eab371d0380b1f16979a6e7e039ac88fdc210e9d8e288d049df86
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0007
+    title: package_manifest
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 00_styring/pakker/hr_og_arbeidsgiver/package_manifest.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\00_styring\\pakker\\hr_og_arbeidsgiver\\package_manifest.yaml"
+    extension: .yaml
+    size_bytes: 2332
+    modified: 2026-04-09T04:55:11.935548+00:00
+    sha256: ddcf8159f9b6de2135522bfc312c13e4c843133dcadbfda6772c644e178fa5a8
+    tags:
+      - governance_or_registry
+    recommended_use: governing_or_index_reference
+    status: inventoried
+  -
+    id: SRC-FILE-0008
+    title: change_log
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 00_styring/pakker/it_og_digitalisering/change_log.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\00_styring\\pakker\\it_og_digitalisering\\change_log.md"
+    extension: .md
+    size_bytes: 321
+    modified: 2026-04-05T11:15:39.526443+00:00
+    sha256: 31290a503adbc8025d087d707595dc1e72e115754962a705af751477c8534dd8
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0009
+    title: package_manifest
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 00_styring/pakker/it_og_digitalisering/package_manifest.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\00_styring\\pakker\\it_og_digitalisering\\package_manifest.yaml"
+    extension: .yaml
+    size_bytes: 1404
+    modified: 2026-04-05T11:15:39.525442+00:00
+    sha256: d697696465bf04dc4c879f29e6d24121855021eea193c51b509f894d781a0d79
+    tags:
+      - governance_or_registry
+    recommended_use: governing_or_index_reference
+    status: inventoried
+  -
+    id: SRC-FILE-0010
+    title: change_log
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 00_styring/pakker/okonomi_og_virksomhetsstyring/change_log.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\00_styring\\pakker\\okonomi_og_virksomhetsstyring\\change_log.md"
+    extension: .md
+    size_bytes: 333
+    modified: 2026-04-05T11:15:39.525442+00:00
+    sha256: 49342bb8423b65dee805db8a41a4fade0c864b9122042acac1b7b8add184bc19
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0011
+    title: package_manifest
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 00_styring/pakker/okonomi_og_virksomhetsstyring/package_manifest.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\00_styring\\pakker\\okonomi_og_virksomhetsstyring\\package_manifest.yaml"
+    extension: .yaml
+    size_bytes: 1444
+    modified: 2026-04-05T11:15:39.525442+00:00
+    sha256: 4b09f0594210f6636c33a1610b04a96b4d406236038a6aed576449fc4b53fa8e
+    tags:
+      - governance_or_registry
+    recommended_use: governing_or_index_reference
+    status: inventoried
+  -
+    id: SRC-FILE-0012
+    title: prompt_surface_index
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 00_styring/prompt_surface_index.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\00_styring\\prompt_surface_index.md"
+    extension: .md
+    size_bytes: 3435
+    modified: 2026-04-09T04:55:11.935548+00:00
+    sha256: d78d6eb13f59cb825d0ed41686b4b21844b091cbea1cf238a3aa8514ab30bb7f
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0013
+    title: SYSTEMINSTRUKS
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 00_styring/SYSTEMINSTRUKS.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\00_styring\\SYSTEMINSTRUKS.md"
+    extension: .md
+    size_bytes: 4526
+    modified: 2026-04-09T04:52:55.447651+00:00
+    sha256: 50a592950aae9d31c04270e98912cef8d252adfb71e840d61552bddc6f6b7f43
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0014
+    title: ANBEFALT_DOMENEPORTFOLJE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/ANBEFALT_DOMENEPORTFOLJE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\ANBEFALT_DOMENEPORTFOLJE.md"
+    extension: .md
+    size_bytes: 7116
+    modified: 2026-04-02T09:40:13.426511+00:00
+    sha256: 3a7c315403361d729335fe6d7c89e1c3c3c54bf235883281df2d8194da895d26
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0015
+    title: DOMENEKART
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/DOMENEKART.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\DOMENEKART.md"
+    extension: .md
+    size_bytes: 3920
+    modified: 2026-04-05T13:41:37.180382+00:00
+    sha256: e2e9e22d585e61690730af1f7d519fcb81c4dd4a47ca75d75ae4b80cab908237
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0016
+    title: P-01_SYKEFRAVAERSOPPFOLGING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/HR_KJERNEPROSESSER/P-01_SYKEFRAVAERSOPPFOLGING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\HR_KJERNEPROSESSER\\P-01_SYKEFRAVAERSOPPFOLGING.md"
+    extension: .md
+    size_bytes: 2668
+    modified: 2026-04-09T04:49:00.864667+00:00
+    sha256: fcfbcfb3965256048dd8547e2639c9c7f6221b620bf2afb0a1e0dec5942851b1
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0017
+    title: P-02_STRATEGISK_REKRUTTERING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/HR_KJERNEPROSESSER/P-02_STRATEGISK_REKRUTTERING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\HR_KJERNEPROSESSER\\P-02_STRATEGISK_REKRUTTERING.md"
+    extension: .md
+    size_bytes: 2536
+    modified: 2026-04-09T04:49:00.864667+00:00
+    sha256: d0b4e9f770a5488990ca5275689e81e7948c2faa794b9b1763302aba47e81491
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0018
+    title: P-03_KOMPLEKS_PERSONALSAK
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/HR_KJERNEPROSESSER/P-03_KOMPLEKS_PERSONALSAK.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\HR_KJERNEPROSESSER\\P-03_KOMPLEKS_PERSONALSAK.md"
+    extension: .md
+    size_bytes: 1900
+    modified: 2026-04-02T08:30:41.464428+00:00
+    sha256: 4d31546d9388ff1ca3cbab220d06c46f7afff4944c9ac5a989b00b44c5394b81
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0019
+    title: P-04_LAERLINGINNTAK_OG_OPPFOLGING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/HR_KJERNEPROSESSER/P-04_LAERLINGINNTAK_OG_OPPFOLGING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\HR_KJERNEPROSESSER\\P-04_LAERLINGINNTAK_OG_OPPFOLGING.md"
+    extension: .md
+    size_bytes: 2402
+    modified: 2026-04-09T04:49:00.864667+00:00
+    sha256: 44eb872012916be6352b2c53f03052296aa9c1eade9f2a7efb244fb59b81d7a0
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0020
+    title: P-05_SYSTEMATISK_HMS_ARBEID
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/HR_KJERNEPROSESSER/P-05_SYSTEMATISK_HMS_ARBEID.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\HR_KJERNEPROSESSER\\P-05_SYSTEMATISK_HMS_ARBEID.md"
+    extension: .md
+    size_bytes: 2265
+    modified: 2026-04-09T04:49:00.864667+00:00
+    sha256: e5a653e666a7b607a7ac7bc751e67e21eea7280953bee204501818935f6b6b92
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0021
+    title: P-06_LEDERUTVIKLINGSPORTFOLJE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/HR_KJERNEPROSESSER/P-06_LEDERUTVIKLINGSPORTFOLJE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\HR_KJERNEPROSESSER\\P-06_LEDERUTVIKLINGSPORTFOLJE.md"
+    extension: .md
+    size_bytes: 2142
+    modified: 2026-04-02T08:31:08.886650+00:00
+    sha256: 257c713938aff9dc9f8a4709b61919baec12bc723881355bbfe730afe0cb6794
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0022
+    title: P-08_OMSTILLINGSPROSESS
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/HR_KJERNEPROSESSER/P-08_OMSTILLINGSPROSESS.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\HR_KJERNEPROSESSER\\P-08_OMSTILLINGSPROSESS.md"
+    extension: .md
+    size_bytes: 2180
+    modified: 2026-04-02T08:31:08.886650+00:00
+    sha256: ca7ee427dfe61e3e523270d354681e100c5c38bad258ecd0afd51a2c47b5d3ec
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0023
+    title: HR_PILOT
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/HR_PILOT.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\HR_PILOT.md"
+    extension: .md
+    size_bytes: 3065
+    modified: 2026-04-09T05:01:24.879865+00:00
+    sha256: ae6e3aa706366cd08f9d63e8192833b6f2eb55fb50c73bbdff4c1c2a6859095d
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0024
+    title: HR_PROSESSOVERSIKT
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/HR_PROSESSOVERSIKT.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\HR_PROSESSOVERSIKT.md"
+    extension: .md
+    size_bytes: 2475
+    modified: 2026-04-09T04:49:00.864667+00:00
+    sha256: 7e6f430cd480f91a2db244965289ae767eb4aa6b4375ec9e704f8c7310c0b877
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0025
+    title: HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER.md"
+    extension: .md
+    size_bytes: 4573
+    modified: 2026-04-09T04:35:38.421520+00:00
+    sha256: f0f336039c296d973bd13fb73663e37606ecd1a3919f85d5f1bdf2e85af1d77f
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0026
+    title: HR_ROLLE_OG_KOMPETANSEMASTER
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\HR_ROLLE_OG_KOMPETANSEMASTER.md"
+    extension: .md
+    size_bytes: 16612
+    modified: 2026-04-09T04:35:38.421520+00:00
+    sha256: 078e4779716489b8f3322d03f07de9afc44220cf680773bd4a05d28b2c5c97c6
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0027
+    title: IT-01_SYSTEMINNFORING_OG_SYSTEMLIVSSYKLUS
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/IT_KJERNEPROSESSER/IT-01_SYSTEMINNFORING_OG_SYSTEMLIVSSYKLUS.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\IT_KJERNEPROSESSER\\IT-01_SYSTEMINNFORING_OG_SYSTEMLIVSSYKLUS.md"
+    extension: .md
+    size_bytes: 2145
+    modified: 2026-04-02T09:40:03.600404+00:00
+    sha256: 591178a602b0599e482213582e43226b73cd589acc2e71e0e4d726dfaeffd834
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0028
+    title: IT-02_VIRKSOMHETSARKITEKTUR_OG_INFORMASJONSFORVALTNING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/IT_KJERNEPROSESSER/IT-02_VIRKSOMHETSARKITEKTUR_OG_INFORMASJONSFORVALTNING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\IT_KJERNEPROSESSER\\IT-02_VIRKSOMHETSARKITEKTUR_OG_INFORMASJONSFORVALTNING.md"
+    extension: .md
+    size_bytes: 2224
+    modified: 2026-04-02T09:40:03.600404+00:00
+    sha256: f1acb248d774c31fd7d9927b48d0e1b608990b333ea3a8dc298fdda097f2e22d
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0029
+    title: IT-03_DIGITAL_SIKKERHET_OG_HENDELSESHAANDTERING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/IT_KJERNEPROSESSER/IT-03_DIGITAL_SIKKERHET_OG_HENDELSESHAANDTERING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\IT_KJERNEPROSESSER\\IT-03_DIGITAL_SIKKERHET_OG_HENDELSESHAANDTERING.md"
+    extension: .md
+    size_bytes: 2155
+    modified: 2026-04-02T09:40:03.600404+00:00
+    sha256: 4d1ef6b284a5fdeec5cd2f816c2a4eafa8e65a474a16da43d736e6e3d0d421b0
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0030
+    title: IT-04_PLATTFORM_DRIFT_OG_BRUKERSTOTTE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/IT_KJERNEPROSESSER/IT-04_PLATTFORM_DRIFT_OG_BRUKERSTOTTE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\IT_KJERNEPROSESSER\\IT-04_PLATTFORM_DRIFT_OG_BRUKERSTOTTE.md"
+    extension: .md
+    size_bytes: 2085
+    modified: 2026-04-02T09:40:03.600404+00:00
+    sha256: f7f2422ddc26c54b76fadf320d0ef2e0d73a733256eacb0495295481e0699ee8
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0031
+    title: IT-05_DIGITAL_TJENESTEUTVIKLING_OG_GEVINST
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/IT_KJERNEPROSESSER/IT-05_DIGITAL_TJENESTEUTVIKLING_OG_GEVINST.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\IT_KJERNEPROSESSER\\IT-05_DIGITAL_TJENESTEUTVIKLING_OG_GEVINST.md"
+    extension: .md
+    size_bytes: 2109
+    modified: 2026-04-02T09:40:03.600404+00:00
+    sha256: c9c5046c23ecee76eba9b47ccfebb5d4390e6f04e123bd3581606c968efb4a9c
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0032
+    title: IT_OG_DIGITALISERING_PILOT
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/IT_OG_DIGITALISERING_PILOT.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\IT_OG_DIGITALISERING_PILOT.md"
+    extension: .md
+    size_bytes: 2443
+    modified: 2026-04-02T09:40:03.600404+00:00
+    sha256: f2496eaad0db67bdce7a119699c924111bacd9378f88c2372be8d6da2b73714d
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0033
+    title: IT_PROSESSOVERSIKT
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/IT_PROSESSOVERSIKT.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\IT_PROSESSOVERSIKT.md"
+    extension: .md
+    size_bytes: 1538
+    modified: 2026-04-02T09:40:03.600404+00:00
+    sha256: 27c295cdc5b1d4245ed485a56a56089f6a4a96587be69a98319ac2d4c1c6bb3c
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0034
+    title: O-01_BUDSJETT_OG_OKONOMIPLAN
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER/O-01_BUDSJETT_OG_OKONOMIPLAN.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\OKONOMI_KJERNEPROSESSER\\O-01_BUDSJETT_OG_OKONOMIPLAN.md"
+    extension: .md
+    size_bytes: 2006
+    modified: 2026-04-02T09:21:27.263280+00:00
+    sha256: bf49b685536a3bf7b7c184962a136f66099b516e489759035aae266f1ee9d3c2
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0035
+    title: O-02_TERTIALRAPPORT_OG_PROGNOSE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER/O-02_TERTIALRAPPORT_OG_PROGNOSE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\OKONOMI_KJERNEPROSESSER\\O-02_TERTIALRAPPORT_OG_PROGNOSE.md"
+    extension: .md
+    size_bytes: 1902
+    modified: 2026-04-02T09:21:27.263280+00:00
+    sha256: 8c70f02bbf837acccf06047f06be84355dd3b9a9a7b82cc4940c6f3ae0e4fc25
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0036
+    title: O-03_NOEKKELTALLSOPPFOLGING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER/O-03_NOEKKELTALLSOPPFOLGING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\OKONOMI_KJERNEPROSESSER\\O-03_NOEKKELTALLSOPPFOLGING.md"
+    extension: .md
+    size_bytes: 1886
+    modified: 2026-04-02T09:21:27.263280+00:00
+    sha256: fa755a8f3ccbedf94a65b404898dfa2ad91224bd987130ea473360d3728ed8c4
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0037
+    title: O-04_PORTEFOLJE_OG_INVESTERING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER/O-04_PORTEFOLJE_OG_INVESTERING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\OKONOMI_KJERNEPROSESSER\\O-04_PORTEFOLJE_OG_INVESTERING.md"
+    extension: .md
+    size_bytes: 2039
+    modified: 2026-04-02T09:21:27.263280+00:00
+    sha256: bc04a8b2d3a01e347d781c500b9a01594dbb640fe33836bc8e024c8fa26dcc6d
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0038
+    title: O-05_GEVINSTOPPFOLGING_OG_TILTAKSSPOR
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER/O-05_GEVINSTOPPFOLGING_OG_TILTAKSSPOR.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\OKONOMI_KJERNEPROSESSER\\O-05_GEVINSTOPPFOLGING_OG_TILTAKSSPOR.md"
+    extension: .md
+    size_bytes: 1975
+    modified: 2026-04-02T09:21:27.263280+00:00
+    sha256: c703c47c43513078319a93eaefff4166126ec1c72e9c3819b5b7e87f753da702
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0039
+    title: OKONOMI_OG_VIRKSOMHETSSTYRING_PILOT
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/OKONOMI_OG_VIRKSOMHETSSTYRING_PILOT.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\OKONOMI_OG_VIRKSOMHETSSTYRING_PILOT.md"
+    extension: .md
+    size_bytes: 2069
+    modified: 2026-04-02T09:21:27.263280+00:00
+    sha256: a2a0d20f61992849280f8293d51560109267b11d299574f538bb0c847051ab1b
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0040
+    title: OKONOMI_PROSESSOVERSIKT
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/OKONOMI_PROSESSOVERSIKT.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\OKONOMI_PROSESSOVERSIKT.md"
+    extension: .md
+    size_bytes: 1515
+    modified: 2026-04-02T09:21:27.263280+00:00
+    sha256: 5aac9e383fd2e1acd4b83e58b31a17b68461031989958368ef2e3db60c7ae185
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0041
+    title: STABSARKITEKTUR
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/STABSARKITEKTUR.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\STABSARKITEKTUR.md"
+    extension: .md
+    size_bytes: 3887
+    modified: 2026-04-05T13:41:37.179377+00:00
+    sha256: b375e28c4de2b18db58fb055abd43c329cb3902f8253a336c551ec06d1c47e84
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0042
+    title: TVILLINGSORGANISASJON
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 01_organisasjonsmodell/TVILLINGSORGANISASJON.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\01_organisasjonsmodell\\TVILLINGSORGANISASJON.md"
+    extension: .md
+    size_bytes: 3192
+    modified: 2026-04-02T08:59:07.641109+00:00
+    sha256: ac981336928625c91dce62be95facdbe40e13df2d97107028a472e05d441a995
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0043
+    title: DOMENE_TIL_LINSEKOBLING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 02_linser/DOMENE_TIL_LINSEKOBLING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\02_linser\\DOMENE_TIL_LINSEKOBLING.md"
+    extension: .md
+    size_bytes: 1663
+    modified: 2026-04-02T09:21:27.279755+00:00
+    sha256: ed14a55e3b2f4b66fe7f46d104bf538954f9d30ae0841394b86df315a469fe73
+    tags:
+      - lens_candidate
+    recommended_use: primary_content_source
+    status: inventoried
+  -
+    id: SRC-FILE-0044
+    title: GRUPPE_L_STRUKTURMASTER
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 02_linser/GRUPPE_L_STRUKTURMASTER.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\02_linser\\GRUPPE_L_STRUKTURMASTER.md"
+    extension: .md
+    size_bytes: 13287
+    modified: 2026-04-02T08:15:28.966591+00:00
+    sha256: 52edec74e21477e7a58ac74ecd4d5289bd3a65544bd5649e75d028c90d5a30c6
+    tags:
+      - lens_candidate
+    recommended_use: primary_content_source
+    status: inventoried
+  -
+    id: SRC-FILE-0045
+    title: HR_RANDSONER_OG_LINSEPAKKER
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 02_linser/HR_RANDSONER_OG_LINSEPAKKER.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\02_linser\\HR_RANDSONER_OG_LINSEPAKKER.md"
+    extension: .md
+    size_bytes: 7031
+    modified: 2026-04-05T13:41:16.354321+00:00
+    sha256: 8b4bc6916659578dcb1e85fb9d1203ac78f1313edaceef0186f2bbafbf2cb3fe
+    tags:
+      - lens_candidate
+    recommended_use: primary_content_source
+    status: inventoried
+  -
+    id: SRC-FILE-0046
+    title: KJERNELINSER
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 02_linser/KJERNELINSER.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\02_linser\\KJERNELINSER.md"
+    extension: .md
+    size_bytes: 26994
+    modified: 2026-04-02T08:14:55.640139+00:00
+    sha256: 38e471605d82415435a6e6dc7434242d3ba5af66af4a1a2fd59a1d2aa40bf319
+    tags:
+      - lens_candidate
+    recommended_use: primary_content_source
+    status: inventoried
+  -
+    id: SRC-FILE-0047
+    title: LINSEINDEKS
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 02_linser/LINSEINDEKS.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\02_linser\\LINSEINDEKS.md"
+    extension: .md
+    size_bytes: 21913
+    modified: 2026-05-07T04:00:32.211723+00:00
+    sha256: 833c365dc2dc0de05df432265ca65e37dfef40c82a538016df810a21169e1ef2
+    tags:
+      - lens_candidate
+    recommended_use: primary_content_source
+    status: inventoried
+  -
+    id: SRC-FILE-0048
+    title: LINSEKARTLAG_IKKE_KOMMUNALE_ROLLER
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 02_linser/LINSEKARTLAG_IKKE_KOMMUNALE_ROLLER.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\02_linser\\LINSEKARTLAG_IKKE_KOMMUNALE_ROLLER.md"
+    extension: .md
+    size_bytes: 9254
+    modified: 2026-04-02T10:30:08.589812+00:00
+    sha256: c8d2af97b0b91130ad60cf88711ea4e217e80e6998068fafd7f3f87ff6d71330
+    tags:
+      - lens_candidate
+    recommended_use: primary_content_source
+    status: inventoried
+  -
+    id: SRC-FILE-0049
+    title: LINSEPORTFOLJE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 02_linser/LINSEPORTFOLJE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\02_linser\\LINSEPORTFOLJE.md"
+    extension: .md
+    size_bytes: 2760
+    modified: 2026-04-02T10:30:08.589812+00:00
+    sha256: 4911c09f7a4150962f28fcd17c60bd13eda5982912ca6879cb5fc5afc58fe6d8
+    tags:
+      - lens_candidate
+    recommended_use: primary_content_source
+    status: inventoried
+  -
+    id: SRC-FILE-0050
+    title: STABSOMRAADE_TIL_LINSER
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 02_linser/STABSOMRAADE_TIL_LINSER.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\02_linser\\STABSOMRAADE_TIL_LINSER.md"
+    extension: .md
+    size_bytes: 2506
+    modified: 2026-04-05T13:41:37.180382+00:00
+    sha256: dbdb59ae7768d0004becd04623c607159e2f2e2b60ac3ae88b1360e390a2eec9
+    tags:
+      - lens_candidate
+    recommended_use: primary_content_source
+    status: inventoried
+  -
+    id: SRC-FILE-0051
+    title: HR_TVILLING_GUARDRAILS
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 03_agentroller/HR_TVILLING_GUARDRAILS.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\03_agentroller\\HR_TVILLING_GUARDRAILS.md"
+    extension: .md
+    size_bytes: 2293
+    modified: 2026-05-07T04:00:18.066777+00:00
+    sha256: 37b533d49edda9f521b44e07f4ca4c4e8ecf5e4df1359124de7b0363fa8d8def
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0052
+    title: IT_OG_DIGITALISERING_GUARDRAILS
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 03_agentroller/IT_OG_DIGITALISERING_GUARDRAILS.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\03_agentroller\\IT_OG_DIGITALISERING_GUARDRAILS.md"
+    extension: .md
+    size_bytes: 1599
+    modified: 2026-04-02T09:40:03.600404+00:00
+    sha256: 1eb992cdde762412686313dc557db7e8687e5866a7cd4d60b42bed6d189febef
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0053
+    title: OKONOMI_OG_VIRKSOMHETSSTYRING_GUARDRAILS
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 03_agentroller/OKONOMI_OG_VIRKSOMHETSSTYRING_GUARDRAILS.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\03_agentroller\\OKONOMI_OG_VIRKSOMHETSSTYRING_GUARDRAILS.md"
+    extension: .md
+    size_bytes: 1630
+    modified: 2026-04-02T09:21:27.263280+00:00
+    sha256: a37eb2507ea448bf3c889fd9d5c4f4b43635a633345a1db0287f143ded1a38a1
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0054
+    title: ROLLEKATALOG
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 03_agentroller/ROLLEKATALOG.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\03_agentroller\\ROLLEKATALOG.md"
+    extension: .md
+    size_bytes: 3242
+    modified: 2026-04-09T04:52:55.447651+00:00
+    sha256: 60db2ce9e65ddec0a83506958e51acec26890fa85d11d9ccba704f5aab941079
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0055
+    title: STABSOMRAADER_OG_NOKKELROLLER
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 03_agentroller/STABSOMRAADER_OG_NOKKELROLLER.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\03_agentroller\\STABSOMRAADER_OG_NOKKELROLLER.md"
+    extension: .md
+    size_bytes: 4469
+    modified: 2026-04-09T04:52:55.447651+00:00
+    sha256: 64b14afc0ba7362bf544bf77bd2b13231d767689142c81826d25129b066e3714
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0056
+    title: AGENT_PLAYBOOKS
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 04_orkestrering/AGENT_PLAYBOOKS.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\04_orkestrering\\AGENT_PLAYBOOKS.md"
+    extension: .md
+    size_bytes: 3388
+    modified: 2026-04-09T04:35:38.421520+00:00
+    sha256: 81a96dfb32d04a44b5ef12a0f6f6aa6c66e2f5fe6f0d7d9e42cc33db15360255
+    tags:
+      - advisor_or_agent_reference
+    recommended_use: classify_before_merge
+    status: inventoried
+  -
+    id: SRC-FILE-0057
+    title: AGENTKONTRAKTER
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 04_orkestrering/AGENTKONTRAKTER.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\04_orkestrering\\AGENTKONTRAKTER.md"
+    extension: .md
+    size_bytes: 6332
+    modified: 2026-04-09T04:52:55.447651+00:00
+    sha256: c13f6344729af2d0ecfc3cd947e58c94c1c891f421310f960ab153800c6531e4
+    tags:
+      - advisor_or_agent_reference
+    recommended_use: classify_before_merge
+    status: inventoried
+  -
+    id: SRC-FILE-0058
+    title: FASEGATE_SJEKKLISTER
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 04_orkestrering/FASEGATE_SJEKKLISTER.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\04_orkestrering\\FASEGATE_SJEKKLISTER.md"
+    extension: .md
+    size_bytes: 2347
+    modified: 2026-04-09T04:52:55.447651+00:00
+    sha256: eb00567cc689e8403703b016d0787a6699d002361101598e8ee57d821c40757d
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0059
+    title: HANDOVER_OG_FASEOVERGANGER
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 04_orkestrering/HANDOVER_OG_FASEOVERGANGER.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\04_orkestrering\\HANDOVER_OG_FASEOVERGANGER.md"
+    extension: .md
+    size_bytes: 3029
+    modified: 2026-04-09T04:52:55.447651+00:00
+    sha256: d37228e17c02bb273632fd69f78ef115081005c71f9058911c730661351aacb5
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0060
+    title: OPPDRAG_KJOR_REVISJON
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 04_orkestrering/OPPDRAG_KJOR_REVISJON.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\04_orkestrering\\OPPDRAG_KJOR_REVISJON.md"
+    extension: .md
+    size_bytes: 838
+    modified: 2026-04-09T04:35:38.422520+00:00
+    sha256: 47b092bb476c1a56b9b4d49bb72fb2214b5622b5b7cd76135b1ee64322e924d1
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0061
+    title: OPPDRAGSFORMAT_OG_TRACE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 04_orkestrering/OPPDRAGSFORMAT_OG_TRACE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\04_orkestrering\\OPPDRAGSFORMAT_OG_TRACE.md"
+    extension: .md
+    size_bytes: 2155
+    modified: 2026-04-05T11:14:55.750861+00:00
+    sha256: 29364a968378c83f02b329bd07496fcb69cd03d8029fe00ed705e565ab9a3658
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0062
+    title: REVISJONSLOP
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 04_orkestrering/REVISJONSLOP.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\04_orkestrering\\REVISJONSLOP.md"
+    extension: .md
+    size_bytes: 1514
+    modified: 2026-04-09T04:35:38.421520+00:00
+    sha256: 1d8cfe88d0c545d1294fe3fc368f10b475eb13b01b5786de2250d1fd5dd84245
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0063
+    title: eval_matrix
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 05_simulering/evals/eval_matrix.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\05_simulering\\evals\\eval_matrix.yaml"
+    extension: .yaml
+    size_bytes: 2148
+    modified: 2026-04-09T04:58:41.453180+00:00
+    sha256: 6c5b7a65c0275541036a2f9f40ee0c015c06ecd95a815f42446bce548fb99d6f
+    tags:
+      - case_or_eval_material
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0064
+    title: red_flags
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 05_simulering/evals/red_flags.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\05_simulering\\evals\\red_flags.yaml"
+    extension: .yaml
+    size_bytes: 1920
+    modified: 2026-04-09T04:58:41.453180+00:00
+    sha256: d4db4a31fca3a382f0911a1137e8d9c261c595e1a9a065cbdca02d63db9a2863
+    tags:
+      - case_or_eval_material
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0065
+    title: scenario_catalog
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 05_simulering/evals/scenario_catalog.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\05_simulering\\evals\\scenario_catalog.yaml"
+    extension: .yaml
+    size_bytes: 10193
+    modified: 2026-04-09T04:59:16.431674+00:00
+    sha256: 9f222248b14b03ad1f37b65b7960c4810a90d17b2e2f3b1cd7ec26c68fea16a9
+    tags:
+      - case_or_eval_material
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0066
+    title: OPPDRAG_SIMULER_HR_SAK
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 05_simulering/OPPDRAG_SIMULER_HR_SAK.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\05_simulering\\OPPDRAG_SIMULER_HR_SAK.md"
+    extension: .md
+    size_bytes: 840
+    modified: 2026-04-02T08:54:19.484308+00:00
+    sha256: ecffd7b2e4897d48f7278edc9eb44de201263b1b347fc963be1a97f1d668dd13
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0067
+    title: OPPDRAG_SIMULER_IT_ELLER_DIGITALISERINGSSAK
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 05_simulering/OPPDRAG_SIMULER_IT_ELLER_DIGITALISERINGSSAK.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\05_simulering\\OPPDRAG_SIMULER_IT_ELLER_DIGITALISERINGSSAK.md"
+    extension: .md
+    size_bytes: 657
+    modified: 2026-04-02T09:40:03.600404+00:00
+    sha256: 5696f663eff57b55a3d493772b82144f911c30a3b46960e709afa628334df1b9
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0068
+    title: OPPDRAG_SIMULER_OKONOMI_ELLER_STYRINGSSAK
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 05_simulering/OPPDRAG_SIMULER_OKONOMI_ELLER_STYRINGSSAK.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\05_simulering\\OPPDRAG_SIMULER_OKONOMI_ELLER_STYRINGSSAK.md"
+    extension: .md
+    size_bytes: 714
+    modified: 2026-04-02T09:21:27.263280+00:00
+    sha256: 04d2b137383e157ba3ba80331155d368aa824debd6e085e310576cc13009a510
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0069
+    title: SIMULERINGSLOP
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 05_simulering/SIMULERINGSLOP.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\05_simulering\\SIMULERINGSLOP.md"
+    extension: .md
+    size_bytes: 1151
+    modified: 2026-04-02T08:11:08.980165+00:00
+    sha256: 3b2aa225ffc02966fc5a01f130980ca98bb6953f9150c8d8803bcbcd56cea635
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0070
+    title: HR_RANDSONE_TESTSETT_V1
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 05_simulering/testsett/HR_RANDSONE_TESTSETT_V1.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\05_simulering\\testsett\\HR_RANDSONE_TESTSETT_V1.md"
+    extension: .md
+    size_bytes: 2273
+    modified: 2026-04-05T13:41:16.354321+00:00
+    sha256: 5b8eab7c31fa4c63d1ea374cffec39e095dbb65ae0c3064621971ea55e495cf1
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0071
+    title: HR_TESTSETT_V1
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 05_simulering/testsett/HR_TESTSETT_V1.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\05_simulering\\testsett\\HR_TESTSETT_V1.md"
+    extension: .md
+    size_bytes: 4208
+    modified: 2026-04-09T04:58:41.453180+00:00
+    sha256: 7764e51c8a7cd7d07620d5c56eb95266ed67cfb14228500197c819ea8d653a82
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0072
+    title: IT_OG_DIGITALISERING_TESTSETT_V1
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 05_simulering/testsett/IT_OG_DIGITALISERING_TESTSETT_V1.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\05_simulering\\testsett\\IT_OG_DIGITALISERING_TESTSETT_V1.md"
+    extension: .md
+    size_bytes: 2623
+    modified: 2026-04-02T09:40:03.600404+00:00
+    sha256: 685454112a848b3ed7398856f7df164568553fc7801ba5e39b31caebac7ce4da
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0073
+    title: OKONOMI_TESTSETT_V1
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 05_simulering/testsett/OKONOMI_TESTSETT_V1.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\05_simulering\\testsett\\OKONOMI_TESTSETT_V1.md"
+    extension: .md
+    size_bytes: 2592
+    modified: 2026-04-02T09:22:09.692645+00:00
+    sha256: 8a5517a01cea8fa4a8254587c549988b79c494595d2cdafb2f6823b968dab9e2
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0074
+    title: REVISJON_TESTSETT_V1
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 05_simulering/testsett/REVISJON_TESTSETT_V1.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\05_simulering\\testsett\\REVISJON_TESTSETT_V1.md"
+    extension: .md
+    size_bytes: 2185
+    modified: 2026-04-09T04:58:41.453180+00:00
+    sha256: 6c0e888c112a19448627faf7b96356ca82c96c629f9755fe3c6e31a492226b00
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0075
+    title: TVERRGAENDE_TESTSETT_V1
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 05_simulering/testsett/TVERRGAENDE_TESTSETT_V1.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\05_simulering\\testsett\\TVERRGAENDE_TESTSETT_V1.md"
+    extension: .md
+    size_bytes: 1856
+    modified: 2026-04-05T11:16:29.184896+00:00
+    sha256: 980451e8eceec994a87499a3963e34320da0d785a1ee31501730e322a4cc1776
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0076
+    title: BESLUTNINGSLOP
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 06_beslutningsstotte/BESLUTNINGSLOP.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\06_beslutningsstotte\\BESLUTNINGSLOP.md"
+    extension: .md
+    size_bytes: 1157
+    modified: 2026-04-02T08:11:08.980165+00:00
+    sha256: 3c1570027ab0061d2ab12faf646859024809c055b1c1dd67cdc84b8acaeab237
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0077
+    title: OPPDRAG_SKRIV_BESLUTNINGSNOTAT
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 06_beslutningsstotte/OPPDRAG_SKRIV_BESLUTNINGSNOTAT.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\06_beslutningsstotte\\OPPDRAG_SKRIV_BESLUTNINGSNOTAT.md"
+    extension: .md
+    size_bytes: 807
+    modified: 2026-04-02T08:54:39.946803+00:00
+    sha256: 1de068e4bcb09f6f0a3c3798d29511233f94339f83af486d2a6004557867bd8e
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0078
+    title: OPPDRAG_SKRIV_IT_BESLUTNINGSNOTAT
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 06_beslutningsstotte/OPPDRAG_SKRIV_IT_BESLUTNINGSNOTAT.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\06_beslutningsstotte\\OPPDRAG_SKRIV_IT_BESLUTNINGSNOTAT.md"
+    extension: .md
+    size_bytes: 737
+    modified: 2026-04-02T09:40:03.600404+00:00
+    sha256: 083983256dbdb0abdc1b86513f6dc0c9dffa9446a651c465e66dba83c799dcc1
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0079
+    title: OPPDRAG_SKRIV_OKONOMI_BESLUTNINGSNOTAT
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 06_beslutningsstotte/OPPDRAG_SKRIV_OKONOMI_BESLUTNINGSNOTAT.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\06_beslutningsstotte\\OPPDRAG_SKRIV_OKONOMI_BESLUTNINGSNOTAT.md"
+    extension: .md
+    size_bytes: 708
+    modified: 2026-04-02T09:21:27.263280+00:00
+    sha256: 97f06d74a185605b50f0e0504304411704e182c052067554134db115f5eb7ae7
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0080
+    title: MOTEFLYT
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 07_moter/MOTEFLYT.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\07_moter\\MOTEFLYT.md"
+    extension: .md
+    size_bytes: 1146
+    modified: 2026-04-02T08:11:42.235623+00:00
+    sha256: 49ceded9fd2b377171231774ffdbe41bb4acd78b3209bed921cf50cc96dd58c1
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0081
+    title: OPPDRAG_FORBERED_DIGITALISERINGSMOTE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 07_moter/OPPDRAG_FORBERED_DIGITALISERINGSMOTE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\07_moter\\OPPDRAG_FORBERED_DIGITALISERINGSMOTE.md"
+    extension: .md
+    size_bytes: 581
+    modified: 2026-04-02T09:40:03.600404+00:00
+    sha256: e8107e11bf14bc0b27bff561ce83c48405a5010977e338d2619cf247feb9dc3c
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0082
+    title: OPPDRAG_FORBERED_HR_MOTE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 07_moter/OPPDRAG_FORBERED_HR_MOTE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\07_moter\\OPPDRAG_FORBERED_HR_MOTE.md"
+    extension: .md
+    size_bytes: 775
+    modified: 2026-04-02T08:54:19.484308+00:00
+    sha256: 8fee8c7cc483fce96bc65348d9ffebb4391e0a7e90dac904b515c440d10de69d
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0083
+    title: OPPDRAG_FORBERED_STYRINGSMOTE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 07_moter/OPPDRAG_FORBERED_STYRINGSMOTE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\07_moter\\OPPDRAG_FORBERED_STYRINGSMOTE.md"
+    extension: .md
+    size_bytes: 604
+    modified: 2026-04-02T09:21:27.278519+00:00
+    sha256: 10a7993751fb5f961aaefe9dcf1f110fff1a3c27dec98942d8b01c8af540e47e
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0084
+    title: OPPDRAG_PRODUSER_DIGITALISERINGSLEVERANSE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 08_produksjon/OPPDRAG_PRODUSER_DIGITALISERINGSLEVERANSE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\08_produksjon\\OPPDRAG_PRODUSER_DIGITALISERINGSLEVERANSE.md"
+    extension: .md
+    size_bytes: 675
+    modified: 2026-04-02T09:40:03.600404+00:00
+    sha256: 35e30e675f1db16e697a2b5908de1956c6a7e150aa93f4e1907543f0b05cd18c
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0085
+    title: OPPDRAG_PRODUSER_HR_LEVERANSE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 08_produksjon/OPPDRAG_PRODUSER_HR_LEVERANSE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\08_produksjon\\OPPDRAG_PRODUSER_HR_LEVERANSE.md"
+    extension: .md
+    size_bytes: 1179
+    modified: 2026-04-09T04:49:00.864667+00:00
+    sha256: 5c74136e84f42ff803fc12962b92581eecd63a2dfc06cd34b741b2e8f25a0984
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0086
+    title: OPPDRAG_PRODUSER_STYRINGSLEVERANSE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 08_produksjon/OPPDRAG_PRODUSER_STYRINGSLEVERANSE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\08_produksjon\\OPPDRAG_PRODUSER_STYRINGSLEVERANSE.md"
+    extension: .md
+    size_bytes: 645
+    modified: 2026-04-02T09:21:27.278519+00:00
+    sha256: 045cea7b5f1e1e488949150a318011dbf893b86a98ca5d0b4a6bd8f9ada7a768
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0087
+    title: PRODUKSJONSLOP
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 08_produksjon/PRODUKSJONSLOP.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\08_produksjon\\PRODUKSJONSLOP.md"
+    extension: .md
+    size_bytes: 1402
+    modified: 2026-04-09T04:49:00.864667+00:00
+    sha256: 7348e5b8f5d58ff1adcc300503fc984e4b87fc167fc64ca0321f0549d7e9ee63
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0088
+    title: BESLUTNINGSNOTAT_TEMPLATE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/maler/BESLUTNINGSNOTAT_TEMPLATE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\maler\\BESLUTNINGSNOTAT_TEMPLATE.md"
+    extension: .md
+    size_bytes: 509
+    modified: 2026-04-02T08:33:31.173519+00:00
+    sha256: 4c82c8932dcb53bc191b25fc69ff449850c09ad9506156ef445004a0aaf2ce7a
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0089
+    title: HR_RAD_TEMPLATE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/maler/HR_RAD_TEMPLATE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\maler\\HR_RAD_TEMPLATE.md"
+    extension: .md
+    size_bytes: 465
+    modified: 2026-04-02T08:31:28.149315+00:00
+    sha256: 62dc2e4ae651d7445f8019b288176eac5fc02ac99f34649bf7ca20dbeea1abd5
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0090
+    title: KANDIDATVURDERING_OG_INTERVJUGUIDE_TEMPLATE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/maler/KANDIDATVURDERING_OG_INTERVJUGUIDE_TEMPLATE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\maler\\KANDIDATVURDERING_OG_INTERVJUGUIDE_TEMPLATE.md"
+    extension: .md
+    size_bytes: 489
+    modified: 2026-04-09T04:35:38.422520+00:00
+    sha256: db7e4ebd53a55d6340d9222a59849457dd536da2eeaf91b1d4a70c2193c4ccb3
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0091
+    title: KOMPETANSEMATRISE_TEMPLATE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/maler/KOMPETANSEMATRISE_TEMPLATE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\maler\\KOMPETANSEMATRISE_TEMPLATE.md"
+    extension: .md
+    size_bytes: 318
+    modified: 2026-04-09T04:35:38.422520+00:00
+    sha256: f9f05b4a91cb0b1143f7d6fa6505325efec0be26e30ee78b682dbc6f96672c2b
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0092
+    title: LEVERANSEUTKAST_TEMPLATE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/maler/LEVERANSEUTKAST_TEMPLATE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\maler\\LEVERANSEUTKAST_TEMPLATE.md"
+    extension: .md
+    size_bytes: 390
+    modified: 2026-04-02T08:31:28.149315+00:00
+    sha256: acbe01b49dd1dcf4c3156aa8715b353ab73f311033254ce14079dccf1319150f
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0093
+    title: MOTEUNDERLAG_TEMPLATE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/maler/MOTEUNDERLAG_TEMPLATE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\maler\\MOTEUNDERLAG_TEMPLATE.md"
+    extension: .md
+    size_bytes: 588
+    modified: 2026-04-02T08:33:31.173519+00:00
+    sha256: a57dc6211cc62f1f460fbe131eead9bb7a0aa7f3d6cb351f30d5854941b895d2
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0094
+    title: ONBOARDING_30_60_90_TEMPLATE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/maler/ONBOARDING_30_60_90_TEMPLATE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\maler\\ONBOARDING_30_60_90_TEMPLATE.md"
+    extension: .md
+    size_bytes: 395
+    modified: 2026-04-09T04:35:38.422520+00:00
+    sha256: 1b070d1c7c50c0f001f11806f2e6cc537d90d194ad3c8edbb8d507df81d91a0e
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0095
+    title: PROSESSKORT_TEMPLATE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/maler/PROSESSKORT_TEMPLATE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\maler\\PROSESSKORT_TEMPLATE.md"
+    extension: .md
+    size_bytes: 390
+    modified: 2026-04-02T08:31:28.149315+00:00
+    sha256: 442190e2cd9a6c0abbc4b704df57af453b2180adff8589a7f1b54f5319eba4f0
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0096
+    title: ROLLEKORT_TEMPLATE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/maler/ROLLEKORT_TEMPLATE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\maler\\ROLLEKORT_TEMPLATE.md"
+    extension: .md
+    size_bytes: 390
+    modified: 2026-04-09T04:35:38.422520+00:00
+    sha256: e54c132d279e2f2c150d84501ab7a733e7f001b621703f8b17abaa282ee03d72
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0097
+    title: SIMULERINGSNOTAT_TEMPLATE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/maler/SIMULERINGSNOTAT_TEMPLATE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\maler\\SIMULERINGSNOTAT_TEMPLATE.md"
+    extension: .md
+    size_bytes: 619
+    modified: 2026-04-02T08:31:28.149315+00:00
+    sha256: aa568ff79d70b5212bfed38add2a6554e67d2635c90710b0f976c44bdfd74a1b
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0098
+    title: STILLINGSUTLYSNING_TEMPLATE
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/maler/STILLINGSUTLYSNING_TEMPLATE.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\maler\\STILLINGSUTLYSNING_TEMPLATE.md"
+    extension: .md
+    size_bytes: 404
+    modified: 2026-04-09T04:35:38.422520+00:00
+    sha256: f170741e00b335d7fb2bd20305e556c9a5fb53c845248dcaa07aec66929e1923
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0099
+    title: AVDELINGSSJEF_LEDERSTOTTE_OG_PERSONALSAKER_STILLINGSUTLYSNING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/stillingsutlysninger/AVDELINGSSJEF_LEDERSTOTTE_OG_PERSONALSAKER_STILLINGSUTLYSNING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\stillingsutlysninger\\AVDELINGSSJEF_LEDERSTOTTE_OG_PERSONALSAKER_STILLINGSUTLYSNING.md"
+    extension: .md
+    size_bytes: 2172
+    modified: 2026-04-09T04:38:36.278727+00:00
+    sha256: 735ee6864b604ff154cbdf82aa4abed930b69a41899ab2ab56f2cc5db0bb0b00
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0100
+    title: AVDELINGSSJEF_REKRUTTERING_OG_KOMPETANSE_STILLINGSUTLYSNING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/stillingsutlysninger/AVDELINGSSJEF_REKRUTTERING_OG_KOMPETANSE_STILLINGSUTLYSNING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\stillingsutlysninger\\AVDELINGSSJEF_REKRUTTERING_OG_KOMPETANSE_STILLINGSUTLYSNING.md"
+    extension: .md
+    size_bytes: 2292
+    modified: 2026-04-09T04:38:36.278727+00:00
+    sha256: c1cc69ac005fb5202f3b438194c674fd1fe34111c3e2db9f77848c9107693256
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0101
+    title: E_LAERINGSRADGIVER_STILLINGSUTLYSNING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/stillingsutlysninger/E_LAERINGSRADGIVER_STILLINGSUTLYSNING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\stillingsutlysninger\\E_LAERINGSRADGIVER_STILLINGSUTLYSNING.md"
+    extension: .md
+    size_bytes: 2062
+    modified: 2026-04-09T04:38:36.278727+00:00
+    sha256: a18394a35c6dfbca9f8d4fc970d3735986c78b531edf3db5e5193e173c92dcee
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0102
+    title: FORHANDLINGSRADGIVER_STILLINGSUTLYSNING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/stillingsutlysninger/FORHANDLINGSRADGIVER_STILLINGSUTLYSNING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\stillingsutlysninger\\FORHANDLINGSRADGIVER_STILLINGSUTLYSNING.md"
+    extension: .md
+    size_bytes: 2050
+    modified: 2026-04-09T04:38:36.278727+00:00
+    sha256: 992feb3bd9f4addc3fed37af06a2588fc9ebd888311a8b13d28e31168a99dfdc
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0103
+    title: HMS_RADGIVER_STILLINGSUTLYSNING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/stillingsutlysninger/HMS_RADGIVER_STILLINGSUTLYSNING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\stillingsutlysninger\\HMS_RADGIVER_STILLINGSUTLYSNING.md"
+    extension: .md
+    size_bytes: 2029
+    modified: 2026-04-09T04:38:36.278727+00:00
+    sha256: a31a1adc243182c75d7706d02a5bc74c65f214147d2abd8be10fe16632664fab
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0104
+    title: HR_JURIST_STILLINGSUTLYSNING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/stillingsutlysninger/HR_JURIST_STILLINGSUTLYSNING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\stillingsutlysninger\\HR_JURIST_STILLINGSUTLYSNING.md"
+    extension: .md
+    size_bytes: 2113
+    modified: 2026-04-09T04:38:36.278727+00:00
+    sha256: 68a83c8dad41e99e507c859005e351bffaae32d3503006bf072dc71d09488dc7
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0105
+    title: HR_RADGIVER_STILLINGSUTLYSNING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/stillingsutlysninger/HR_RADGIVER_STILLINGSUTLYSNING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\stillingsutlysninger\\HR_RADGIVER_STILLINGSUTLYSNING.md"
+    extension: .md
+    size_bytes: 1920
+    modified: 2026-04-09T04:38:36.278727+00:00
+    sha256: 323600e234a4448e4ccaa38fc66750cf68940e6849e8fcd3b63bcb2cd3ce6185
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0106
+    title: HR_SJEF_STILLINGSUTLYSNING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/stillingsutlysninger/HR_SJEF_STILLINGSUTLYSNING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\stillingsutlysninger\\HR_SJEF_STILLINGSUTLYSNING.md"
+    extension: .md
+    size_bytes: 2285
+    modified: 2026-04-09T04:38:36.278727+00:00
+    sha256: 9d66f8f6ce6270b808bc61f1abf168dc28791c44d2fa1166333c7616eea0bfaa
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0107
+    title: IA_RADGIVER_STILLINGSUTLYSNING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/stillingsutlysninger/IA_RADGIVER_STILLINGSUTLYSNING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\stillingsutlysninger\\IA_RADGIVER_STILLINGSUTLYSNING.md"
+    extension: .md
+    size_bytes: 2157
+    modified: 2026-04-09T04:38:36.281644+00:00
+    sha256: 4a4afaefee7fc7fca0691304e75ffbc3d52ab89fb5bef580ca3653af1b86a8ee
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0108
+    title: KOMPETANSERADGIVER_STILLINGSUTLYSNING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/stillingsutlysninger/KOMPETANSERADGIVER_STILLINGSUTLYSNING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\stillingsutlysninger\\KOMPETANSERADGIVER_STILLINGSUTLYSNING.md"
+    extension: .md
+    size_bytes: 2107
+    modified: 2026-04-09T04:38:36.278727+00:00
+    sha256: 9058c66ea59e5b145077bfd4ecdd7bc909f9cf020d56035d1a201666a32bd8e6
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0109
+    title: LAERLINGKOORDINATOR_STILLINGSUTLYSNING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/stillingsutlysninger/LAERLINGKOORDINATOR_STILLINGSUTLYSNING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\stillingsutlysninger\\LAERLINGKOORDINATOR_STILLINGSUTLYSNING.md"
+    extension: .md
+    size_bytes: 2076
+    modified: 2026-04-09T04:38:36.278727+00:00
+    sha256: a1de3261ff2ec7caa46dcaacb8f922d393f4c8df82345660e6b5d594e0b207f1
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0110
+    title: LEDER_OG_ORGANISASJONSUTVIKLER_STILLINGSUTLYSNING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/stillingsutlysninger/LEDER_OG_ORGANISASJONSUTVIKLER_STILLINGSUTLYSNING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\stillingsutlysninger\\LEDER_OG_ORGANISASJONSUTVIKLER_STILLINGSUTLYSNING.md"
+    extension: .md
+    size_bytes: 2196
+    modified: 2026-04-09T04:38:36.281644+00:00
+    sha256: 82aca4d6828841707fc4b1f5978d543bb4e867fafb8e9f4018752c62dc1c89f4
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0111
+    title: REKRUTTERINGSRADGIVER_STILLINGSUTLYSNING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/stillingsutlysninger/REKRUTTERINGSRADGIVER_STILLINGSUTLYSNING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\stillingsutlysninger\\REKRUTTERINGSRADGIVER_STILLINGSUTLYSNING.md"
+    extension: .md
+    size_bytes: 2148
+    modified: 2026-04-09T04:38:36.278727+00:00
+    sha256: 991070d270d904e89d29cd0cbc387e6bf79bdf1c60125f68ffef850303bc8ccd
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0112
+    title: STILLINGSUTLYSNINGSINDEKS
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/stillingsutlysninger/STILLINGSUTLYSNINGSINDEKS.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\stillingsutlysninger\\STILLINGSUTLYSNINGSINDEKS.md"
+    extension: .md
+    size_bytes: 1069
+    modified: 2026-04-09T04:35:38.423519+00:00
+    sha256: beb2b604e1586228451e3925ae84fb423c53ebb5a5b7d26f98b51eee3c82e873
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0113
+    title: TEMPLATEINDEKS
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 09_templates_og_output/TEMPLATEINDEKS.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\09_templates_og_output\\TEMPLATEINDEKS.md"
+    extension: .md
+    size_bytes: 2287
+    modified: 2026-04-09T04:49:00.864667+00:00
+    sha256: de6422cc51f08bddb6b825841e06ef8aac84f402f33c85185cf2033a4434bdc0
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0114
+    title: hr_artifacts
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_artifacts.csv
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_artifacts.csv"
+    extension: .csv
+    size_bytes: 1223
+    modified: 2026-04-09T04:45:47.645211+00:00
+    sha256: a5d96437c0fe2d516e7d67954cf7ca959694170239fe756dfd5971b7691b1e35
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0115
+    title: hr_artifacts
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_artifacts.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_artifacts.yaml"
+    extension: .yaml
+    size_bytes: 1283
+    modified: 2026-04-09T04:45:47.645211+00:00
+    sha256: 3a718b2ef1c6d8ce8b2bf83120374fe315dd1b2887c2648b04532163b9ed3fdb
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0116
+    title: hr_processes
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_processes.csv
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_processes.csv"
+    extension: .csv
+    size_bytes: 1899
+    modified: 2026-04-09T04:44:37.978053+00:00
+    sha256: fd59b6a905cbe5de61b7dfd6ddbe92e85cc623529fe54788d9223c4c6b872ad0
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0117
+    title: hr_processes
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_processes.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_processes.yaml"
+    extension: .yaml
+    size_bytes: 3282
+    modified: 2026-04-09T04:44:37.978053+00:00
+    sha256: 10498d7db6bbaa14906f9e66a4f00dcb463d035b37dde7371dcc4b995e5e6615
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0118
+    title: hr_regulations
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_regulations.csv
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_regulations.csv"
+    extension: .csv
+    size_bytes: 1128
+    modified: 2026-04-09T04:46:44.029066+00:00
+    sha256: 9eb731da392732f6cce5efc110c40e054875b19f56d59a0ffe684af9a86e5be6
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0119
+    title: hr_regulations
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_regulations.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_regulations.yaml"
+    extension: .yaml
+    size_bytes: 1261
+    modified: 2026-04-09T04:46:44.029066+00:00
+    sha256: 0ae1d40e954f6e299dad645b52140a212e64155043ce1659b7c3242534a369fb
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0120
+    title: hr_risks
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_risks.csv
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_risks.csv"
+    extension: .csv
+    size_bytes: 787
+    modified: 2026-04-09T04:46:44.031070+00:00
+    sha256: 696059a613cbda4776603abb91d25ff9f0a70cfe300e01b14d70bce612d97f05
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0121
+    title: hr_risks
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_risks.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_risks.yaml"
+    extension: .yaml
+    size_bytes: 707
+    modified: 2026-04-09T04:46:44.029066+00:00
+    sha256: 3e7edf0df0e13961280809c4d52e18d96d97d77e91e0a69dfaccba42cd3f5864
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0122
+    title: hr_roles
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_roles.csv
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_roles.csv"
+    extension: .csv
+    size_bytes: 3598
+    modified: 2026-04-09T04:44:37.978053+00:00
+    sha256: 131bbdc926161d2ae8ce783ebdaacc47483e83bba5e9552ac25f12d5d96e9961
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0123
+    title: hr_roles
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_roles.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_roles.yaml"
+    extension: .yaml
+    size_bytes: 6001
+    modified: 2026-04-09T04:44:37.978053+00:00
+    sha256: 0b107d5c7d542a45a75c1dd4ff1a8534289c57886838823d958ba47d6ecbc2b0
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0124
+    title: hr_skills
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_skills.csv
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_skills.csv"
+    extension: .csv
+    size_bytes: 2897
+    modified: 2026-04-09T04:45:47.645211+00:00
+    sha256: 505cfc30e1027292a2ad9a211655e5a28aeeff812469f8ae9727025721991e5a
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0125
+    title: hr_skills
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_skills.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_skills.yaml"
+    extension: .yaml
+    size_bytes: 4869
+    modified: 2026-04-09T04:45:47.645211+00:00
+    sha256: 0b2e27551f3f78a21e7f46d4f4aa040d378ac7ca26063fce055001f5afef4ad8
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0126
+    title: hr_systems
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_systems.csv
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_systems.csv"
+    extension: .csv
+    size_bytes: 1190
+    modified: 2026-04-09T04:45:47.645211+00:00
+    sha256: 592f2886cc202c53d671ea884ad012740ef965645de90ba7705ee79026001c4b
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0127
+    title: hr_systems
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_systems.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_systems.yaml"
+    extension: .yaml
+    size_bytes: 1408
+    modified: 2026-04-09T04:45:47.645211+00:00
+    sha256: f7fde60532bc4d2d5b06ab3be9fcb95010fccba2abd85c7db77013e8271d7f19
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0128
+    title: hr_templates
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_templates.csv
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_templates.csv"
+    extension: .csv
+    size_bytes: 1628
+    modified: 2026-04-09T04:46:44.031070+00:00
+    sha256: bd888baba183624402f2636c486120cd268f59b2a4bf0efa646d33f4ce73f69e
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0129
+    title: hr_templates
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_templates.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_templates.yaml"
+    extension: .yaml
+    size_bytes: 1836
+    modified: 2026-04-09T04:46:44.031070+00:00
+    sha256: 1aa947be8238f002fcc550a0014b819febb3d7d5ad8e4cbcab985bf4ff965d01
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0130
+    title: hr_units
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_units.csv
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_units.csv"
+    extension: .csv
+    size_bytes: 447
+    modified: 2026-04-09T04:44:37.976049+00:00
+    sha256: 042fd88589e3fbb968387fb5768d84e13d2758ccd69f452f79be280d7d5396cd
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0131
+    title: hr_units
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/hr_units.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\hr_units.yaml"
+    extension: .yaml
+    size_bytes: 560
+    modified: 2026-04-09T04:44:37.976049+00:00
+    sha256: 18c1abd9524b87cc552a217b392266e1bf942b6f73dbb80b39360e9abd56acd4
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0132
+    title: README
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/kodetabeller/README.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\kodetabeller\\README.md"
+    extension: .md
+    size_bytes: 609
+    modified: 2026-04-09T04:44:37.976049+00:00
+    sha256: e01dc6dc36314e7bff135306bc3c8838bd45adb6d65ef93a5638cbdcee1a716e
+    tags:
+      - structured_reference_data
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0133
+    title: hr_pilot_v1
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\modeller\\hr_pilot_v1.yaml"
+    extension: .yaml
+    size_bytes: 14643
+    modified: 2026-04-09T04:56:48.600061+00:00
+    sha256: 8378c939b9821c1d422d424bef2e68a9b64e0118b097d5503c3cf0b5def789cf
+    tags:
+      - model_candidate
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0134
+    title: it_og_digitalisering_v1
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/modeller/it_og_digitalisering_v1.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\modeller\\it_og_digitalisering_v1.yaml"
+    extension: .yaml
+    size_bytes: 3503
+    modified: 2026-04-02T09:40:03.600404+00:00
+    sha256: 5324120a71f8eccdb46ac8eb3a963d6c34be68ec909cf34b930005e9ab8353d8
+    tags:
+      - model_candidate
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0135
+    title: okonomi_og_virksomhetsstyring_v1
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/modeller/okonomi_og_virksomhetsstyring_v1.yaml
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\modeller\\okonomi_og_virksomhetsstyring_v1.yaml"
+    extension: .yaml
+    size_bytes: 3117
+    modified: 2026-04-02T09:21:27.278519+00:00
+    sha256: a6b12cdb7d9a0da4644eae8c5ab01bd152479c2e0e766b96c77b201778fd44f6
+    tags:
+      - model_candidate
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0136
+    title: README
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/README.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\README.md"
+    extension: .md
+    size_bytes: 1331
+    modified: 2026-04-09T04:55:11.935548+00:00
+    sha256: 7dd08ee44c740ec30c36e3e15e093c94be22561c6570dbf88a77b007c8a926ba
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0137
+    title: ai_kognitiv_utvidelse_i_kommunal_sektor
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/referanser/ai_kognitiv_utvidelse_i_kommunal_sektor.docx
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\referanser\\ai_kognitiv_utvidelse_i_kommunal_sektor.docx"
+    extension: .docx
+    size_bytes: 23568
+    modified: 2026-04-02T05:57:35.806257+00:00
+    sha256: 5e68fecb5c2b6dcccdf80c66b13772f7bbb864004aa7760785052d27e109b903
+    tags:
+      - document_source
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0138
+    title: alle_linser_siste
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/referanser/alle_linser_siste.docx
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\referanser\\alle_linser_siste.docx"
+    extension: .docx
+    size_bytes: 91915
+    modified: 2026-04-02T05:57:35.806257+00:00
+    sha256: 66eecf6313d7e0a855ff899e85e04f5796f4b25391e9f5f6644658568dcc91d3
+    tags:
+      - lens_candidate
+      - document_source
+    recommended_use: primary_content_source
+    status: inventoried
+  -
+    id: SRC-FILE-0139
+    title: GRUPPE_L_KILDEKOMPLETT
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/referanser/GRUPPE_L_KILDEKOMPLETT.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\referanser\\GRUPPE_L_KILDEKOMPLETT.md"
+    extension: .md
+    size_bytes: 8372
+    modified: 2026-02-08T20:04:44+00:00
+    sha256: 1ff88a16d65c82c037bbc92cdfea9e9523af9bb8d359456377890a2076455d66
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0140
+    title: hr_skos_digital_tvilling_versjon_a
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/referanser/hr_skos_digital_tvilling_versjon_a.docx
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\referanser\\hr_skos_digital_tvilling_versjon_a.docx"
+    extension: .docx
+    size_bytes: 14212
+    modified: 2026-04-02T07:42:54.274440+00:00
+    sha256: 268947a53839b86fc3ca5f29672fa62f9a818fb1c0a13a286cf854bf4f3397f7
+    tags:
+      - document_source
+    recommended_use: supporting_source
+    status: inventoried
+  -
+    id: SRC-FILE-0141
+    title: kjernelinser_niva1_til_niva4
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/referanser/kjernelinser_niva1_til_niva4.docx
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\referanser\\kjernelinser_niva1_til_niva4.docx"
+    extension: .docx
+    size_bytes: 1874678
+    modified: 2026-04-02T05:57:35.790468+00:00
+    sha256: f56596ab758388379f34259ed0d135dcd9d93fb7c8ad83aaa5155f8b3b3edecf
+    tags:
+      - lens_candidate
+      - document_source
+    recommended_use: primary_content_source
+    status: inventoried
+  -
+    id: SRC-FILE-0142
+    title: linse_2_okonom
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 10_kunnskapsbase/referanser/linse_2_okonom.docx
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\10_kunnskapsbase\\referanser\\linse_2_okonom.docx"
+    extension: .docx
+    size_bytes: 13936
+    modified: 2026-04-02T05:57:35.806257+00:00
+    sha256: b4110a8b1b972089793e9c2b1a3ab0a89ef80c207ffd3fc393560104502ee3ef
+    tags:
+      - lens_candidate
+      - document_source
+    recommended_use: primary_content_source
+    status: inventoried
+  -
+    id: SRC-FILE-0143
+    title: kvalitetssikret_digital_organisasjon
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 90_arkiv/eldre_konkurrenter/kvalitetssikret_digital_organisasjon.docx
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\90_arkiv\\eldre_konkurrenter\\kvalitetssikret_digital_organisasjon.docx"
+    extension: .docx
+    size_bytes: 13433
+    modified: 2026-04-02T07:42:54.274440+00:00
+    sha256: 2627eb12748bd7ebf651f024591bac185e9fc66eb298cf8f1e2b4c63526336a1
+    tags:
+      - archived_source
+      - document_source
+    recommended_use: reference_only_until_needed
+    status: inventoried
+  -
+    id: SRC-FILE-0144
+    title: AAPNE_HULL
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 90_arkiv/etableringsdokumenter/AAPNE_HULL.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\90_arkiv\\etableringsdokumenter\\AAPNE_HULL.md"
+    extension: .md
+    size_bytes: 2264
+    modified: 2026-04-02T08:32:45.652984+00:00
+    sha256: 7228681c613af17af91eef03bcb95300a0b5c483c876de0f28136ab092ec97c5
+    tags:
+      - archived_source
+    recommended_use: reference_only_until_needed
+    status: inventoried
+  -
+    id: SRC-FILE-0145
+    title: DUBLETTER_OG_KONFLIKTER
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 90_arkiv/etableringsdokumenter/DUBLETTER_OG_KONFLIKTER.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\90_arkiv\\etableringsdokumenter\\DUBLETTER_OG_KONFLIKTER.md"
+    extension: .md
+    size_bytes: 2383
+    modified: 2026-04-02T08:08:29.741050+00:00
+    sha256: e95ffae2360bf97619a52f9b0cbfdcd23c3e0bb7d94c767cc6e3c0999d6e0f9c
+    tags:
+      - archived_source
+    recommended_use: reference_only_until_needed
+    status: inventoried
+  -
+    id: SRC-FILE-0146
+    title: FILKLASSIFISERING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 90_arkiv/etableringsdokumenter/FILKLASSIFISERING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\90_arkiv\\etableringsdokumenter\\FILKLASSIFISERING.md"
+    extension: .md
+    size_bytes: 3324
+    modified: 2026-04-02T08:08:29.741050+00:00
+    sha256: abe774aab4bf0f68c3182c5ab91cbd8dceb8acc39d8244e4392924b67badcab9
+    tags:
+      - archived_source
+    recommended_use: reference_only_until_needed
+    status: inventoried
+  -
+    id: SRC-FILE-0147
+    title: FLYTTEPLAN
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 90_arkiv/etableringsdokumenter/FLYTTEPLAN.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\90_arkiv\\etableringsdokumenter\\FLYTTEPLAN.md"
+    extension: .md
+    size_bytes: 2265
+    modified: 2026-04-02T08:09:24.789917+00:00
+    sha256: 736fb35ec936ce4667b7bbeeffdc904d5de6eb1d0b0383906dee851520999651
+    tags:
+      - archived_source
+    recommended_use: reference_only_until_needed
+    status: inventoried
+  -
+    id: SRC-FILE-0148
+    title: MAALARKITEKTUR
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 90_arkiv/etableringsdokumenter/MAALARKITEKTUR.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\90_arkiv\\etableringsdokumenter\\MAALARKITEKTUR.md"
+    extension: .md
+    size_bytes: 3778
+    modified: 2026-04-02T08:09:24.789917+00:00
+    sha256: bb76f3f540865ad72bffcf129156df7ce1d9d99cd788b002f9c709c2f49590e3
+    tags:
+      - archived_source
+    recommended_use: reference_only_until_needed
+    status: inventoried
+  -
+    id: SRC-FILE-0149
+    title: MAPPEVURDERING
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 90_arkiv/etableringsdokumenter/MAPPEVURDERING.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\90_arkiv\\etableringsdokumenter\\MAPPEVURDERING.md"
+    extension: .md
+    size_bytes: 2264
+    modified: 2026-04-02T08:08:29.741050+00:00
+    sha256: f3ae10480bae2b4c1422cecacaf75387a17d43614e89a2bcad1d173951d2a835
+    tags:
+      - archived_source
+    recommended_use: reference_only_until_needed
+    status: inventoried
+  -
+    id: SRC-FILE-0150
+    title: README
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 90_arkiv/etableringsdokumenter/README.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\90_arkiv\\etableringsdokumenter\\README.md"
+    extension: .md
+    size_bytes: 341
+    modified: 2026-04-02T08:54:19.484308+00:00
+    sha256: ddf4293397e9f180ddc4341e01174c81b702593a66334ececc7ee736f6eb8b88
+    tags:
+      - archived_source
+    recommended_use: reference_only_until_needed
+    status: inventoried
+  -
+    id: SRC-FILE-0151
+    title: gruppe_beslutning
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 90_arkiv/konsolidert_kilde/gruppe_beslutning.docx
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\90_arkiv\\konsolidert_kilde\\gruppe_beslutning.docx"
+    extension: .docx
+    size_bytes: 29063
+    modified: 2026-04-02T05:57:35.806257+00:00
+    sha256: a7540a0b6f89e5c5a2ee92adfd32748f7dd82dd99fb036c617ea88ec6c9eb554
+    tags:
+      - archived_source
+      - document_source
+    recommended_use: reference_only_until_needed
+    status: inventoried
+  -
+    id: SRC-FILE-0152
+    title: hr_ontologisk_kunnskapsbibliotek
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 90_arkiv/konsolidert_kilde/hr_ontologisk_kunnskapsbibliotek.docx
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\90_arkiv\\konsolidert_kilde\\hr_ontologisk_kunnskapsbibliotek.docx"
+    extension: .docx
+    size_bytes: 16926
+    modified: 2026-04-02T07:42:54.291336+00:00
+    sha256: 8ec8735eb6feeb25e3ffc2b6a94a13b5319421d2fd1e4b65a0f9d0a42ea27bd4
+    tags:
+      - archived_source
+      - document_source
+    recommended_use: reference_only_until_needed
+    status: inventoried
+  -
+    id: SRC-FILE-0153
+    title: hr_tvilling_etter_roller_og_oppgaver
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 90_arkiv/konsolidert_kilde/hr_tvilling_etter_roller_og_oppgaver.docx
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\90_arkiv\\konsolidert_kilde\\hr_tvilling_etter_roller_og_oppgaver.docx"
+    extension: .docx
+    size_bytes: 23432
+    modified: 2026-04-02T07:42:54.274440+00:00
+    sha256: 589e5d3f9adc8cee9dc847ec13da3bd4be46971c06f515d38e9af0ce25e5e896
+    tags:
+      - archived_source
+      - document_source
+    recommended_use: reference_only_until_needed
+    status: inventoried
+  -
+    id: SRC-FILE-0154
+    title: hr_tvillingorganisasjon
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 90_arkiv/konsolidert_kilde/hr_tvillingorganisasjon.docx
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\90_arkiv\\konsolidert_kilde\\hr_tvillingorganisasjon.docx"
+    extension: .docx
+    size_bytes: 19634
+    modified: 2026-04-02T07:42:54.291336+00:00
+    sha256: f726ad1b5fa5626de0d4c917743d3945600d988fb8fd487fbb603e2e01f7cf59
+    tags:
+      - archived_source
+      - document_source
+    recommended_use: reference_only_until_needed
+    status: inventoried
+  -
+    id: SRC-FILE-0155
+    title: nyeste_versjon_digital_tvilling_hr
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 90_arkiv/konsolidert_kilde/nyeste_versjon_digital_tvilling_hr.docx
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\90_arkiv\\konsolidert_kilde\\nyeste_versjon_digital_tvilling_hr.docx"
+    extension: .docx
+    size_bytes: 12728
+    modified: 2026-04-02T07:42:54.274440+00:00
+    sha256: 2f080da72bf2b69bf83a7cfe8bd0ad3c5a9a26cc3c64545b50a21a8e34bd7b66
+    tags:
+      - archived_source
+      - document_source
+    recommended_use: reference_only_until_needed
+    status: inventoried
+  -
+    id: SRC-FILE-0156
+    title: ai_kognitiv_utvidelse_i_kommunal_sektor_duplikat
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 99_karantene/slettkandidater/ai_kognitiv_utvidelse_i_kommunal_sektor_duplikat.docx
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\99_karantene\\slettkandidater\\ai_kognitiv_utvidelse_i_kommunal_sektor_duplikat.docx"
+    extension: .docx
+    size_bytes: 23450
+    modified: 2026-04-02T05:57:35.806257+00:00
+    sha256: 21212acae5092ccc3c4993759bda52af818791032932a082a9c89cf962223b21
+    tags:
+      - quarantine
+      - document_source
+    recommended_use: hold_for_review
+    status: inventoried
+  -
+    id: SRC-FILE-0157
+    title: dokument_uten_navn_tom
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: 99_karantene/slettkandidater/dokument_uten_navn_tom.docx
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\99_karantene\\slettkandidater\\dokument_uten_navn_tom.docx"
+    extension: .docx
+    size_bytes: 6484
+    modified: 2026-04-02T05:57:35.790468+00:00
+    sha256: e674e51c9a08757328455069552af7ac2c961320be7d34284a8841199aa8e2b8
+    tags:
+      - quarantine
+      - document_source
+    recommended_use: hold_for_review
+    status: inventoried
+  -
+    id: SRC-FILE-0158
+    title: README
+    source_root: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org"
+    relative_path: README.md
+    absolute_path: "C:\\Users\\larse\\Documents\\Interne prosjekter\\learning lab\\domains\\kommune_org\\README.md"
+    extension: .md
+    size_bytes: 1022
+    modified: 2026-04-10T22:30:59.899202+00:00
+    sha256: da6578164205e5f3565d4185eb3bf2b58f6289ed2fddab8ee0331fafd5549c52
+    tags:
+      - source_only
+    recommended_use: supporting_source
+    status: inventoried

@@ -1,0 +1,38 @@
+# TVERRGAENDE_TESTSETT_V1
+
+## Formaal
+
+Dette testsettet prover saker som ikke kan loses riktig ved bare a velge ett kommunedomene. Det brukes for a teste riktig aktivering av ikke-kommunale linseroller og tydelige handoffs mellom aktive domener.
+
+## Bruksregel
+
+- bruk bare aktive mastere og godkjente kilder
+- marker eksplisitt hvorfor saken er tverrgaende
+- ikke gjem ikke-kommunale linser som om de var kommunedomener
+
+## Scenario 1
+
+- id: `CROSS-BES-01`
+- tittel: politisk sensitiv prioritering mellom HR-tiltak og digitaliseringstiltak under stram ramme
+- primarloep: beslutningsstotte
+- maal: lage sporbar anbefaling som viser konflikt mellom legitimitet, prioritering og gjennomforing
+- forventet aktivering: dirigent, stabssjef, politisk teoretiker, politiske okonom, narrativ-analytiker, kritisk venn, maktkartlegger
+- forventet output: beslutningsnotat med konfliktlinjer, prioritering og eksplisitt decision trace
+- lokal verifikasjon: bekreft reell beslutningsrett, budsjettramme og berorte enheter
+
+## Scenario 2
+
+- id: `CROSS-SIM-02`
+- tittel: AI-stottet prioriteringsforslag for sykefravaer og kapasitet pa tvers av HR, okonomi og IT
+- primarloep: simulering
+- maal: avdekke om problemet er teknologi, arbeidslogikk, etikk eller feil tidshorisont
+- forventet aktivering: dirigent, stabssjef, etiske filosof, forskeren, AI/teknologi-eksperten, kritisk venn, tidsarkitekten, reverseringslinsen
+- forventet output: simuleringsnotat med tydelig avgrensning, usikkerhet og anbefalt videre lop
+- lokal verifikasjon: bekreft datagrunnlag, lokal praksis og om forslagene krever politisk avklaring
+
+## Enkel pass-fail
+
+- ble saken merket som tverrgaende og ikke tvunget inn i ett domene
+- ble minst en ikke-kommunal linserolle aktivert eksplisitt
+- ble handover tydelig mellom analyse og syntese
+- ble lokal verifikasjon og decision trace eksplisitt

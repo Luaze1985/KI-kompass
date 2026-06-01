@@ -1,0 +1,36 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Coverage
+.coverage
+htmlcov/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Claude Code
+.claude/*
+!.claude/hooks/
+!.claude/settings.json
+
+# AgentForge runtime caches and per-target output
+.agentforge/
+.tend/

@@ -1,0 +1,34 @@
+# OKONOMI_PROSESSOVERSIKT
+
+## Formaal
+
+Denne oversikten kobler okonomi- og virksomhetsstyringsdomenets kjerneprosesser til roller, arbeidslop og operative masterfiler.
+
+## Prosesskart v1
+
+- `O-01` budsjett og okonomiplan
+  - eier: okonomidirektor eller delegert budsjetteier
+  - primarloep: beslutningsstotte, produksjon
+  - fil: `OKONOMI_KJERNEPROSESSER/O-01_BUDSJETT_OG_OKONOMIPLAN.md`
+- `O-02` tertialrapport og prognose
+  - eier: virksomhetsstyring eller controllerfunksjon
+  - primarloep: beslutningsstotte, mote
+  - fil: `OKONOMI_KJERNEPROSESSER/O-02_TERTIALRAPPORT_OG_PROGNOSE.md`
+- `O-03` virksomhetsstyring og noekkeltallsoppfolging
+  - eier: virksomhetsstyring / analyse
+  - primarloep: simulering, beslutningsstotte
+  - fil: `OKONOMI_KJERNEPROSESSER/O-03_NOEKKELTALLSOPPFOLGING.md`
+- `O-04` portefoljeprioritering og investeringsvurdering
+  - eier: portefoljeansvarlig eller direktorniva
+  - primarloep: simulering, beslutningsstotte, mote
+  - fil: `OKONOMI_KJERNEPROSESSER/O-04_PORTEFOLJE_OG_INVESTERING.md`
+- `O-05` gevinstoppfolging og tiltaksspor
+  - eier: tiltakseier med styringsstotte
+  - primarloep: produksjon, mote, beslutningsstotte
+  - fil: `OKONOMI_KJERNEPROSESSER/O-05_GEVINSTOPPFOLGING_OG_TILTAKSSPOR.md`
+
+## Bruksregel
+
+- bruk ett prosesskort som primar inngang, ikke flere samtidig uten tydelig begrunnelse
+- marker alltid hva som er faktiske tall og hva som er vurdering eller prognose
+- hvis tallgrunnlaget er svakt, skal saken tilbake til dataverifikasjon for den brukes i beslutning

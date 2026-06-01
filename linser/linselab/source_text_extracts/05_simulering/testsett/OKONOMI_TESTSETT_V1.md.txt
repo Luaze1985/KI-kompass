@@ -1,0 +1,69 @@
+# OKONOMI_TESTSETT_V1
+
+## Formaal
+
+Dette testsettet brukes til lokal proving av domenet okonomi og virksomhetsstyring pa tvers av simulering, beslutningsstotte, moter og produksjon.
+
+## Bruksregel
+
+- bruk bare aktive mastere og godkjente kilder
+- skill mellom faktiske tall, prognoser og antakelser
+- stopp hvis tallgrunnlaget ikke kan spores lokalt
+
+## Scenario 1
+
+- id: `OKO-SIM-01`
+- tittel: behov for omprioritering etter ny kostnadsdriver
+- primarloep: simulering
+- maal: vurdere alternative omprioriteringer og konsekvenser
+- forventet aktivering: dirigent, stabssjef, samfunnsokonom, controller, Gruppe L
+- forventet output: simuleringsnotat med alternativ A, B og C
+- lokal verifikasjon: bekreft rammer, dato og beslutningseier
+
+## Scenario 2
+
+- id: `OKO-BES-02`
+- tittel: tertialavvik som krever korrigerende tiltak
+- primarloep: beslutningsstotte
+- maal: lage kort notat om tiltak, risiko og ansvar
+- forventet aktivering: dirigent, virksomhetsstyring, controller, stabssjef
+- forventet output: beslutningsnotat med hovedrisiko og neste steg
+- lokal verifikasjon: bekreft oppdaterte tall og lokal forklaring pa avvik
+
+## Scenario 3
+
+- id: `OKO-MOT-03`
+- tittel: styringsmote om svake noekkeltall og manglende tiltakseffekt
+- primarloep: mote
+- maal: forberede styringsmote med tydelige konfliktlinjer og oppfolging
+- forventet aktivering: dirigent, analysefunksjon, stabssjef, Gruppe L
+- forventet output: moteunderlag med agenda, signal og ansvar
+- lokal verifikasjon: bekreft indikator, definisjon og lokal eier
+
+## Scenario 4
+
+- id: `OKO-SIM-04`
+- tittel: prioritering mellom flere investeringer med felles avhengigheter
+- primarloep: simulering og beslutningsstotte
+- maal: vurdere rekkefolge, angrekostnad og kapasitet
+- forventet aktivering: dirigent, portefoljeansvarlig, samfunnsokonom, risikolinse, Gruppe L
+- forventet output: prioriteringsgrunnlag med tydelig rekkefolge
+- lokal verifikasjon: bekreft alle relevante tiltak og avhengigheter
+
+## Scenario 5
+
+- id: `OKO-PROD-05`
+- tittel: oppfolgingsnotat for tiltak med lovet gevinst
+- primarloep: produksjon
+- maal: skrive kort styringsutkast som skiller mellom fremdrift og faktisk effekt
+- forventet aktivering: dirigent, tiltakseier, controller, produksjonsagent
+- forventet output: leveranseutkast med status, gevinst og anbefalt oppfolging
+- lokal verifikasjon: bekreft om gevinsten faktisk kan maales lokalt
+
+## Enkel pass-fail
+
+- ble riktig prosesskort brukt
+- ble tallgrunnlaget markert riktig
+- ble fakta, prognose og anbefaling skilt
+- ble beslutningseier tydelig
+- ble handover og lokal verifikasjon eksplisitt

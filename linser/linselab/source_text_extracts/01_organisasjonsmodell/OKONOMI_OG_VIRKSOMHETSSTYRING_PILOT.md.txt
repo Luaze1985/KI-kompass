@@ -1,0 +1,64 @@
+# OKONOMI_OG_VIRKSOMHETSSTYRING_PILOT
+
+## Formaal
+
+Okonomi og virksomhetsstyring er domene nummer to i tvillingsorganisasjonen. Domenet skal gi beslutningsdyktig stotte i saker som handler om ressursbruk, prioritering, noekkeltall, oppfolging og portefoljestyring.
+
+## Hva domenet skal brukes til
+
+- simulere budsjett- og prioriteringsvalg
+- skrive korte og sporbare beslutningsnotat om ressursbruk og tiltak
+- forberede styringsmoter, tertialoppfolging og prioriteringsarenaer
+- produsere utkast til styringsunderlag, tiltaksspor og oppfolgingsnotat
+- koble tall, risiko og handover tettere til faktisk drift
+
+## Avgrensning
+
+Dette domenet er ikke:
+
+- en erstatning for regnskap, attestasjon eller formell okonomiforvaltning
+- et system for a finne pa tall som ikke finnes i grunnlaget
+- et produksjonslofte uten lokal verifikasjon av tall, eierskap og dato
+
+## Kjerneobjekter i domenet
+
+- direktoromrade
+- kommunalsjefomrade eller enhet
+- budsjettpost
+- prognose
+- noekkeltall
+- tiltak
+- portefolje
+- investering
+- gevinst
+- risiko
+- beslutningspunkt
+
+## Typiske roller i pilotversjon
+
+- okonomidirektor
+- virksomhetsstyring / analyse
+- controller eller okonomiradgiver
+- portefolje- og prosjektansvarlig
+- omradeleder som beslutningsmottaker
+
+## Kjerneprosesser i pilotversjon
+
+- budsjett og okonomiplan
+- tertialrapport og prognose
+- virksomhetsstyring og noekkeltallsoppfolging
+- portefoljeprioritering og investeringsvurdering
+- gevinstoppfolging og tiltaksspor
+
+## Kritiske designvalg
+
+- tall skal alltid spores til datakilde, tidspunkt og eier
+- tvillingen skal skille mellom fakta, prognose og anbefaling
+- uklare tallgrunnlag skal markeres eksplisitt
+- hoyrisiko saker skal kobles til riktig beslutningseier og lokal verifikasjon
+
+## Lokal forankring i kildene
+
+- Styringsportalen er sentral som styrings- og noekkeltallsgrunnlag
+- tertialrapportering og okonomiplan peker pa behov for tettere kobling mellom oppfolging, prioritering og gjennomforing
+- ERP- og felleskostnader viser behov for klarere handover mellom fagomrader og sentrale styringsfunksjoner

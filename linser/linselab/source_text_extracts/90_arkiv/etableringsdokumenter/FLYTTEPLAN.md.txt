@@ -1,0 +1,52 @@
+# FLYTTEPLAN
+
+## Aktive masterfiler
+
+| Gammel sti | Ny sti |
+|---|---|
+| `_SYSTEM.md` | `00_styring/SYSTEMINSTRUKS.md` |
+| `_INDEKS.md` | `02_linser/LINSEINDEKS.md` |
+| `_HURTIGVALG.md` | `02_linser/KJERNELINSER.md` |
+| `gruppe-l-samlet.md` | `02_linser/GRUPPE_L_STRUKTURMASTER.md` |
+
+## Referansekilder
+
+| Gammel sti | Ny sti |
+|---|---|
+| `gruppe-l-operasjonalisering/gruppe-l-komplett.md` | `10_kunnskapsbase/referanser/GRUPPE_L_KILDEKOMPLETT.md` |
+| `Alle linser -siste.docx` | `10_kunnskapsbase/referanser/alle_linser_siste.docx` |
+| `Kjernelinser_Niva1_til_Niva4.docx` | `10_kunnskapsbase/referanser/kjernelinser_niva1_til_niva4.docx` |
+| `Linse 2 økonom.docx` | `10_kunnskapsbase/referanser/linse_2_okonom.docx` |
+| `AI_ Kognitiv Utvidelse i Kommunal Sektor.docx` | `10_kunnskapsbase/referanser/ai_kognitiv_utvidelse_i_kommunal_sektor.docx` |
+| `HR/HR skos digital tvilling versjon a.docx` | `10_kunnskapsbase/referanser/hr_skos_digital_tvilling_versjon_a.docx` |
+
+## Konsoliderte kilder
+
+| Gammel sti | Ny sti |
+|---|---|
+| `Gruppe beslutning.docx` | `90_arkiv/konsolidert_kilde/gruppe_beslutning.docx` |
+| `HR/HR tvillingorgansiasjon.docx` | `90_arkiv/konsolidert_kilde/hr_tvillingorganisasjon.docx` |
+| `HR/HR tvilling etter roller og oppgaver.docx` | `90_arkiv/konsolidert_kilde/hr_tvilling_etter_roller_og_oppgaver.docx` |
+| `HR/Nyeste versjon -digital tvilling HR.docx` | `90_arkiv/konsolidert_kilde/nyeste_versjon_digital_tvilling_hr.docx` |
+| `HR/Dokument uten navn.docx` | `90_arkiv/konsolidert_kilde/hr_ontologisk_kunnskapsbibliotek.docx` |
+
+## Arkiv
+
+| Gammel sti | Ny sti |
+|---|---|
+| `HR/Kvalitetssikret  digital organisasjon.docx` | `90_arkiv/eldre_konkurrenter/kvalitetssikret_digital_organisasjon.docx` |
+
+## Karantene
+
+| Gammel sti | Ny sti |
+|---|---|
+| `AI_ Kognitiv Utvidelse i Kommunal Sektor(1).docx` | `99_karantene/slettkandidater/ai_kognitiv_utvidelse_i_kommunal_sektor_duplikat.docx` |
+| `Dokument uten navn.docx` | `99_karantene/slettkandidater/dokument_uten_navn_tom.docx` |
+| `Linser/` | `99_karantene/tomme_mapper/Linser/` |
+
+## Gamle strukturmapper
+
+| Gammel sti | Ny sti |
+|---|---|
+| `HR/` | `90_arkiv/gammel_struktur/HR_opprinnelig/` |
+| `gruppe-l-operasjonalisering/` | `90_arkiv/gammel_struktur/gruppe_l_opprinnelig/` |

@@ -1,0 +1,95 @@
+generated: "2026-05-18T12:29:58.7031512Z"
+source_layer: prism_catalog_metadata
+license_status: declared_mit_missing_license_file
+candidate_count: 15
+groups:
+  - linselab_name: "Styre- og styringsrådgiveren"
+    persona_gap: "Mangler operasjonalisert beslutnings- og governance-prosedyre for å skille roller, beslutningsrett og interessentpåvirkning."
+    candidates:
+      - prism_name: daci
+        prism_class: lens
+        domain: decision
+        path: prism-main/library/lenses/decision/daci.md
+        expected_use: "Operasjonalisere styringsrådgiverens beslutningsmemo og avklare hvem som må eie, godkjenne og informeres."
+      - prism_name: rapid
+        prism_class: lens
+        domain: decision
+        path: prism-main/library/lenses/decision/rapid.md
+        expected_use: "Teste om governance-råd kan struktureres rundt anbefal, bli enig, utfør, input og beslutt."
+      - prism_name: stakeholder-mapping
+        prism_class: lens
+        domain: public-policy
+        path: prism-main/library/lenses/public-policy/stakeholder-mapping.md
+        expected_use: "Bruke som støtteinstrument før anbefalinger i board/governance-saker."
+  - linselab_name: "Juridisk grensevurderer"
+    persona_gap: "Trenger eksplisitt struktur for juridisk analyse uten å bli juridisk representasjon."
+    candidates:
+      - prism_name: irac-creac-firac
+        prism_class: lens
+        domain: law
+        path: prism-main/library/lenses/law/irac-creac-firac.md
+        expected_use: "Bygge prototype for juridisk grensevurdering med tydelig disclaimer, antakelser og konklusjonsstyrke."
+      - prism_name: contract-analysis
+        prism_class: lens
+        domain: law
+        path: prism-main/library/lenses/law/contract-analysis.md
+        expected_use: "Kandidat for kontraktsreview-linse eller template for kontraktsrisiko."
+      - prism_name: statutory-interpretation-canons
+        prism_class: lens
+        domain: law
+        path: prism-main/library/lenses/law/statutory-interpretation-canons.md
+        expected_use: "Bruke som støtteinstrument når saken gjelder regeltekst, forskrift eller policyfortolkning."
+  - linselab_name: "Fortellingsrådgiveren"
+    persona_gap: "Trenger konkrete narrative strukturer for å gjøre kreativ feedback mindre generell."
+    candidates:
+      - prism_name: pixar-formula
+        prism_class: lens
+        domain: storytelling
+        path: prism-main/library/lenses/storytelling/pixar-formula.md
+        expected_use: "Bruke som output+bruk-template for å teste om et narrativ henger kausalt sammen."
+      - prism_name: save-the-cat-beat-sheet
+        prism_class: lens
+        domain: storytelling
+        path: prism-main/library/lenses/storytelling/save-the-cat-beat-sheet.md
+        expected_use: "Kandidat for strukturert story-review-template."
+      - prism_name: three-act-structure
+        prism_class: frame
+        domain: storytelling
+        path: prism-main/library/frames/storytelling/three-act-structure.md
+        expected_use: "Bruke som klassifiserende frame før mer spesifikk narrativ linse."
+  - linselab_name: "Krisekoordinatoren"
+    persona_gap: "Trenger handlingssløyfe for rask orientering, beslutning og respons i hendelser."
+    candidates:
+      - prism_name: ooda-loop
+        prism_class: lens
+        domain: decision
+        path: prism-main/library/lenses/decision/ooda-loop.md
+        expected_use: "Kandidat for krisekoordinatorens operasjonelle prosedyre."
+      - prism_name: nist-csf
+        prism_class: frame
+        domain: security
+        path: prism-main/library/frames/security/nist-csf.md
+        expected_use: "Bruke som frame for å klassifisere hvor hendelsen og tiltakene hører hjemme."
+      - prism_name: fmea
+        prism_class: lens
+        domain: security
+        path: prism-main/library/lenses/security/fmea.md
+        expected_use: "Kandidat for post-incident review eller forebyggende risikovurdering."
+  - linselab_name: "Mottaks- og eskaleringsrådgiveren"
+    persona_gap: "Trenger tydelig rollefordeling i supportflyt og eskalering."
+    candidates:
+      - prism_name: raci
+        prism_class: lens
+        domain: decision
+        path: prism-main/library/lenses/decision/raci.md
+        expected_use: "Operasjonalisere handoff og eskalering i supporttemplate."
+      - prism_name: 5-whys
+        prism_class: lens
+        domain: operations
+        path: prism-main/library/lenses/operations/5-whys.md
+        expected_use: "Bruke som feilsøkingsdel i mottaks- og handoff-format."
+      - prism_name: a3-problem-solving
+        prism_class: lens
+        domain: operations
+        path: prism-main/library/lenses/operations/a3-problem-solving.md
+        expected_use: "Kandidat for eskalering fra supportcase til forbedringssak."

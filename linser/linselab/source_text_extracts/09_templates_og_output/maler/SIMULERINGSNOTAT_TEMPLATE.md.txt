@@ -1,0 +1,54 @@
+# SIMULERINGSNOTAT TEMPLATE
+
+Status: prototype-mal v1
+
+## Oppdrag
+
+- scenario:
+- beslutningspunkt:
+- tidshorisont:
+- eier:
+
+## Kilder
+
+- aktive mastere:
+- eventuelle referanser:
+- hva som er antatt:
+
+## Aktiverte roller og linser
+
+- dirigent:
+- HR-tvillingen:
+- relevante linser:
+- Gruppe L:
+
+## Scenario og alternativer
+
+### Scenario A
+- antakelse:
+- konsekvens:
+
+### Scenario B
+- antakelse:
+- konsekvens:
+
+### Scenario C
+- antakelse:
+- konsekvens:
+
+## Konfliktpunkter
+
+- konflikt 1:
+- konflikt 2:
+
+## Syntese
+
+- hovedfunn:
+- anbefalt retning:
+- hva ma verifiseres lokalt:
+
+## Handover
+
+- til:
+- format:
+- neste steg:

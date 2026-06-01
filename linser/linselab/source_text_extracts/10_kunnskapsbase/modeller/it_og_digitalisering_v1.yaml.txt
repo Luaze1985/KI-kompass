@@ -1,0 +1,120 @@
+metadata:
+  id: it_og_digitalisering_v1
+  version: 1.0
+  status: pilot
+  source_policy: markdown_master_is_truth
+  source_masters:
+    - 01_organisasjonsmodell/IT_OG_DIGITALISERING_PILOT.md
+    - 01_organisasjonsmodell/IT_PROSESSOVERSIKT.md
+    - 03_agentroller/IT_OG_DIGITALISERING_GUARDRAILS.md
+    - 04_orkestrering/AGENTKONTRAKTER.md
+
+domain:
+  name: it_og_digitalisering
+  category: stabsomrade
+  status: pilot
+  parent: organisasjon_og_teknologi
+  core_use_cases:
+    - systeminnforing
+    - virksomhetsarkitektur
+    - informasjonsforvaltning
+    - digital_sikkerhet
+    - drift_og_brukerstoette
+    - digital_tjenesteutvikling
+
+guardrails:
+  no_invented_technology_benefits: true
+  separate_fact_consequence_recommendation: true
+  local_verification_required: true
+  explicit_owner_required: true
+
+roles:
+  - id: IT-R-01
+    name: leder_it_og_digitalisering
+  - id: IT-R-02
+    name: virksomhetsarkitekt
+  - id: IT-R-03
+    name: system_eller_tjenesteeier
+  - id: IT-R-04
+    name: prosjekt_og_innforingsleder
+  - id: IT-R-05
+    name: leder_drift_og_plattform
+  - id: IT-R-06
+    name: servicedesk_og_brukerstotteansvarlig
+  - id: IT-R-07
+    name: informasjonssikkerhetsansvarlig
+
+systems:
+  - id: IT-S-01
+    name: ERP_og_andre_tverrgaende_felleslosninger
+  - id: IT-S-02
+    name: EPJ_eller_store_fagsystemer
+  - id: IT-S-03
+    name: plattform_og_samhandlingslosninger
+  - id: IT-S-04
+    name: DigiOrden_og_informasjonsforvaltningsspor
+
+risks:
+  - id: IT-RSK-01
+    name: uklar_systemeier
+  - id: IT-RSK-02
+    name: innforing_uten_drift_og_opplaering
+  - id: IT-RSK-03
+    name: svakt_informasjonsgrunnlag
+  - id: IT-RSK-04
+    name: sikkerhetshendelse_med_tjenestekonsekvens
+  - id: IT-RSK-05
+    name: shadow_it_eller_lokal_omgaelse
+  - id: IT-RSK-06
+    name: gevinst_uten_reell_adopsjon
+
+controls:
+  - id: IT-CTRL-01
+    name: eksplisitt_system_og_tjenesteeier
+  - id: IT-CTRL-02
+    name: arkitektur_og_informasjonsgjennomgang
+  - id: IT-CTRL-03
+    name: sikkerhet_og_personvern_tidlig_inn
+  - id: IT-CTRL-04
+    name: handover_fra_innforing_til_drift
+  - id: IT-CTRL-05
+    name: lokal_opplaering_og_brukerstotte
+  - id: IT-CTRL-06
+    name: gevinst_med_eier_og_maalepunkt
+
+processes:
+  - id: IT-01
+    name: systeminnforing_og_systemlivssyklus
+    owner_role: IT-R-03
+    supporting_roles: [IT-R-02, IT-R-04, IT-R-05, IT-R-07]
+    systems: [IT-S-01, IT-S-02]
+    risks: [IT-RSK-01, IT-RSK-02, IT-RSK-06]
+    controls: [IT-CTRL-01, IT-CTRL-03, IT-CTRL-04, IT-CTRL-05]
+  - id: IT-02
+    name: virksomhetsarkitektur_og_informasjonsforvaltning
+    owner_role: IT-R-02
+    supporting_roles: [IT-R-03, IT-R-07]
+    systems: [IT-S-04]
+    risks: [IT-RSK-03, IT-RSK-05]
+    controls: [IT-CTRL-01, IT-CTRL-02, IT-CTRL-03]
+  - id: IT-03
+    name: digital_sikkerhet_og_hendelseshaandtering
+    owner_role: IT-R-07
+    supporting_roles: [IT-R-05, IT-R-03]
+    systems: [IT-S-01, IT-S-02, IT-S-03]
+    risks: [IT-RSK-04, IT-RSK-05]
+    controls: [IT-CTRL-01, IT-CTRL-03, IT-CTRL-04]
+  - id: IT-04
+    name: plattform_drift_og_brukerstotte
+    owner_role: IT-R-05
+    supporting_roles: [IT-R-06, IT-R-03]
+    systems: [IT-S-03]
+    risks: [IT-RSK-02, IT-RSK-05]
+    controls: [IT-CTRL-04, IT-CTRL-05]
+  - id: IT-05
+    name: digital_tjenesteutvikling_og_gevinst
+    owner_role: IT-R-01
+    supporting_roles: [IT-R-02, IT-R-03, IT-R-04, IT-R-05]
+    systems: [IT-S-01, IT-S-03, IT-S-04]
+    risks: [IT-RSK-01, IT-RSK-03, IT-RSK-06]
+    controls: [IT-CTRL-01, IT-CTRL-02, IT-CTRL-05, IT-CTRL-06]

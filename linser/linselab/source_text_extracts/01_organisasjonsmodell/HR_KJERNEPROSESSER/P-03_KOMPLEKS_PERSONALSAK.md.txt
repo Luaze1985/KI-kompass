@@ -1,0 +1,70 @@
+# P-03 KOMPLEKS PERSONALSAK
+
+## Formaal
+
+Gi et kontrollert lop for personalsaker med hoy juridisk, menneskelig eller omdommemessig risiko.
+
+## Eier og roller
+
+- prosesseier: HR-jurist
+- hovedutforer: leder med HR-stotte
+- stotte: HR-radgiver, avdelingssjef lederstotte, kommuneadvokaten ved behov
+- eskaleres til: HR-sjef ved prinsipielle eller hoyrisiko saker
+
+## Trigger
+
+- mulig advarsel, oppsigelse eller omplassering
+- varslingssak eller alvorlig konflikt
+- prinsipiell sak med fare for tvist
+
+## Input
+
+- saksfakta og tidslinje
+- dokumentasjon og tidligere tiltak
+- rolle- og partsbilde
+- relevant lov- og avtaleverk
+
+## Output
+
+- anbefalt handlingsspor
+- risikobilde og kontrollpunkter
+- forslag til kommunikasjon, mote og dokumentasjon
+
+## Hovedforlop
+
+1. Avklar sakstype, fakta og prosesseier.
+2. Skill mellom personaloppfolging, juss og arbeidsmiljo.
+3. Vurder prosessrisiko, partsrelasjoner og dokumentbehov.
+4. Lag handlingsspor med kontrollgater og eskalering.
+5. Kvalitetssikre at neste steg kan forsvares lokalt og formelt.
+
+## Viktigste risikoer
+
+- feil prosessrekkefolge
+- mangelfull dokumentasjon
+- at HR gir juridiske svar uten riktig eier
+- unodig eskalering av konflikt
+
+## Kontrollhandlinger
+
+- la HR-jurist eie juridiske avklaringer
+- dokumenter rolle, grunnlag og neste steg eksplisitt
+- skill rad, beslutning og vedtak
+- bruk moteunderlag ved hoy konfliktgrad
+
+## Systemer og referanser
+
+- P360 for formell saksbehandling
+- EQS for gjeldende prosedyrer
+- lov- og avtaleverk, inkludert arbeidsmiljoloven og hovedavtalen
+
+## Handover
+
+- handover_in: fra dirigent, HR-tvillingen eller leder ved kompleks personalsak
+- handover_out: til beslutningsnotat, handlingsplan, droeftingsmote eller juridisk spor
+
+## Lokal verifikasjon
+
+- bekreft at riktig sakstype er valgt
+- bekreft at menneskelig beslutningseier er tydelig
+- bekreft at personvern og dokumentflyt er handtert korrekt

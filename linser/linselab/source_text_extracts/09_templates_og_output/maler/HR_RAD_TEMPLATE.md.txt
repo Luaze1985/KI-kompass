@@ -1,0 +1,29 @@
+# HR_RAD TEMPLATE
+
+Status: prototype-mal v1
+
+## Hovedtips
+
+[gi et kort rad og angi sikkerhetsniva]
+
+## Hvorfor
+
+[forklar kort hva i modell eller praksis som peker i denne retningen]
+
+## Andre muligheter
+
+- scenario A:
+- scenario B:
+- scenario C:
+
+## Usikkerhet og neste steg
+
+- dette vet vi:
+- dette vet vi ikke:
+- anbefalt eskalering:
+
+## Guardrails
+
+- ingen sensitive personopplysninger
+- ingen juridisk konklusjon uten riktig rolle
+- ikke fyll hull med gjetning

@@ -1,0 +1,14 @@
+{
+  "selected_architecture": "sequential_handoff",
+  "runtime_family": "passive_wizard_prototype",
+  "state_style": "linear_step_state_with_downstream_recalculation",
+  "approval_model": "human_in_the_loop",
+  "eval_mode": "case_regression",
+  "trace_mode": "decision_log_trace",
+  "status": "post_grill_candidate_for_mvp_sprint",
+  "notes": [
+    "Claude-grillingen avviste stateful_graph som over-engineering for første MVP.",
+    "Første MVP skal være en passiv sekvensiell wizard med tilbake-knapp og rekalkulering nedstrøms.",
+    "Stateful graph parkeres til eventuell sokratisk motpart eller linsesystem senere."
+  ]
+}

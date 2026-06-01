@@ -1,0 +1,25 @@
+# OPPDRAG_PRODUSER_DIGITALISERINGSLEVERANSE
+
+## Bruk nar
+
+- du skal lage et konkret underlag for digitalisering, innforing, styring eller oppfolging
+
+## Det du fyller inn
+
+- mottaker:
+- leveransetype:
+- formal:
+- hvilket prosesskort eller beslutningsgrunnlag som gjelder:
+- frist:
+
+## Starttekst
+
+Produser en digitaliseringsleveranse innenfor stabsomradet IT og digitalisering.
+
+Bruk bare aktive mastere, relevant prosesskort og verifisert grunnlag.
+Ikke legg til nye forutsetninger om teknologi, kapasitet eller gevinst uten sporbar dekning.
+Marker tydelig hva som ma kvalitetssikres lokalt.
+
+## Forventet utfil
+
+- `09_templates_og_output/maler/LEVERANSEUTKAST_TEMPLATE.md`

@@ -1,0 +1,64 @@
+project: "Linselab sammenslåing"
+created: "2026-05-17"
+status: "startregister"
+
+sources:
+  - id: SRC-001
+    title: "Linser råd"
+    file: "linser råd.zip"
+    included_files:
+      - "_RAMMEVERK.md"
+      - "_NY_LINSE.md"
+      - "_BRUK.md"
+    type: "styrende rammeverk"
+    role: "styrer videre sammenslåing, vurderingskriterier, bruk og undervisning"
+    status: "governing"
+    uncertainty: "lav"
+
+  - id: SRC-002
+    title: "Linselab styringspakke v0.1"
+    file: "linselab_styringspakke_v0_1.zip"
+    type: "tidligere styringspakke"
+    role: "arkitektur, taksonomi, forklarings-/variansmodell og Codex-brief"
+    status: "governing_reference"
+    uncertainty: "lav"
+
+  - id: SRC-003
+    title: "Eksisterende linsebibliotek"
+    file: "_INDEKS.md, _HURTIGVALG_v2_oppdatert.md, _SYSTEM.md, Linser-*.zip"
+    type: "domeneinnhold"
+    role: "eksisterende linser, grupper, konfliktmatrise og triggerstruktur"
+    status: "primary_content_source"
+    uncertainty: "middels - må inventeres komplett"
+
+  - id: SRC-004
+    title: "Kjernelinser fra nivå 1 til nivå 4"
+    file: "Kjernelinser_Niva1_til_Niva4.docx"
+    type: "utviklings- og undervisningskilde"
+    role: "modell for å løfte linser fra prompt til context/intent/spec"
+    status: "supporting_source"
+    uncertainty: "middels"
+
+  - id: SRC-005
+    title: "Prism"
+    file: "prism-main.zip"
+    type: "repo-inspirasjon"
+    role: "taksonomi, katalog og instrumentklassifisering"
+    status: "reference_only"
+    uncertainty: "må sjekkes for lisens og konkret gjenbruk"
+
+  - id: SRC-006
+    title: "PersonaNexus"
+    file: "personanexus-main.zip"
+    type: "repo-inspirasjon"
+    role: "rådgiveridentitet, atferdskontrakt, guardrails og evaluering"
+    status: "reference_only"
+    uncertainty: "må sjekkes for lisens og konkret gjenbruk"
+
+  - id: SRC-007
+    title: "AgentForge"
+    file: "agentforge-main.zip"
+    type: "repo-inspirasjon"
+    role: "byggeflyt, validering, promptlag og forbedringssløyfer"
+    status: "reference_only"
+    uncertainty: "må sjekkes for lisens og konkret gjenbruk"

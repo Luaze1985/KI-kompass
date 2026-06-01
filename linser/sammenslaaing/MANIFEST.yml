@@ -1,0 +1,37 @@
+package:
+  name: "sammenslaaing_startpack_v0_1"
+  created: "2026-05-17"
+  purpose: "Startpakke for sammenslåing av linser, rådgiverledetekster og styringsfiler"
+  status: "draft_startpack"
+
+contents:
+  governance:
+    - "README.md"
+    - "AGENTS.md"
+    - "00_styring/MANDAT_SAMMENSLAAING.md"
+    - "00_styring/KILDEPRIORITET.md"
+  workflow:
+    - "01_arbeidsflyt/SAMMENSLAAINGSFLYT.md"
+    - "01_arbeidsflyt/STOPPUNKTER.md"
+  schema:
+    - "02_skjema/MERGE_RECORD_SCHEMA.yml"
+    - "02_skjema/NORMALISERT_LINSE_MINIMUM.md"
+  registers:
+    - "03_registre/SOURCE_REGISTER_START.yml"
+    - "03_registre/MERGE_BACKLOG.md"
+  case:
+    - "04_case/CASE_TEMPLATE_SAMMENSLAAING.md"
+  handoff:
+    - "05_chatgpt_project/CHATGPT_PROJECT_START.md"
+    - "06_codex/CODEX_BRIEF_STARTPACK.md"
+  governing_sources:
+    - "99_styrende_kilder/linser_raad/_RAMMEVERK.md"
+    - "99_styrende_kilder/linser_raad/_NY_LINSE.md"
+    - "99_styrende_kilder/linser_raad/_BRUK.md"
+
+principles:
+  - "Bevar originaler"
+  - "Registrer før sammenslåing"
+  - "Skill linse, rådgiver, frame, modell, stance og heuristic"
+  - "Bevar nyttig varians"
+  - "Test på konkret case før aktiv status"

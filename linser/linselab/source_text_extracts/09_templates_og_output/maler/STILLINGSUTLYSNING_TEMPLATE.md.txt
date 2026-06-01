@@ -1,0 +1,42 @@
+# STILLINGSUTLYSNING TEMPLATE
+
+Status: prototype-mal v1
+
+## Metadata
+
+- role_id:
+- unit_id:
+- styrk08_ref:
+- local_status:
+
+## Kort annonsetekst
+
+[2-4 setninger]
+
+## Formaal med stillingen
+
+[kort beskrivelse]
+
+## Hovedansvar
+
+-
+
+## Must-have kvalifikasjoner
+
+-
+
+## Onskede tilleggskvalifikasjoner
+
+-
+
+## System- og arbeidsflate
+
+-
+
+## Forste 12 maneder
+
+-
+
+## Lokal verifikasjon for publisering
+
+-

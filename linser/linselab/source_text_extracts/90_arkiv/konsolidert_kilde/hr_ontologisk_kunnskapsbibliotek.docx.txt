@@ -1,0 +1,483 @@
+Digital tvilling
+
+Utvidet Ontologisk Kunnskapsbibliotek for HR i Norsk Kommune
+
+Overordnet Ontologi: HR-Forvaltning_Kommunal_Norge_v1.0
+
+1. Hovedklasser og Deres Hierarki (Klasser, Subklasser, og Kjennetegn):
+
+Klasse: Kommune
+
+Definisjon: Den primære enheten for lokal offentlig forvaltning i Norge, med omfattende ansvar for velferdstjenester.
+
+Attributter:
+
+kommuneID: Unik identifikator (Streng)
+
+navn: Kommunens navn (Streng)
+
+antallAnsatte: Antall årsverk/ansatte (Heltall) – Refleksjon: Indikator for "stor norsk kommune" (over 5000 ansatte)
+
+geografiskOmråde: Beskrivelse av geografisk beliggenhet (Streng)
+
+befolkningstall: Antall innbyggere (Heltall)
+
+sektor: "Offentlig" (Enum)
+
+politiskStruktur: Beskrivelse av styringsform (f.eks., "Formannskapsmodell", "Parlamentarisme") (Streng)
+
+hovedOppdrag: "Velferdstjenester" (Streng) – Refleksjon: Koblet til "velferdsoppdraget" i kunnskapsgrunnlaget.
+
+Subklasser:
+
+StorKommune: Kommuner med over et definert antall ansatte (f.eks., 5000+).
+
+kompleksitetsNivå: "Høy" (Enum)
+
+ressursTilgang: "God" (Enum)
+
+MiddelsKommune:
+
+LitenKommune:
+
+Klasse: HR-Funksjon
+
+Definisjon: En integrert del av kommunens organisasjon, ansvarlig for strategisk og operativ håndtering av personalressurser.
+
+Attributter:
+
+funksjonID: Unik identifikator (Streng)
+
+navn: F.eks., "HR-avdelingen", "Personal og Organisasjon" (Streng)
+
+strategiskFokusNivå: Enum (Lav, Middels, Høy) – Refleksjon: Refererer til "strategisk HR" og utfordringer knyttet til dette i kunnskapsgrunnlaget.
+
+digitaliseringsModenhet: Enum (Lav, Middels, Høy) – Refleksjon: Adresserer "digitalisering" og treghet i kommune-Norge.
+
+ansvarForPersonell: Totalansvar for alle ansatte i kommunen (Boolean)
+
+budsjettAllokering: Budsjettressurser til HR (Tall)
+
+Subklasser:
+
+StrategiskHR-Funksjon:
+
+hovedMål: "Bidra til målrettede prestasjoner for medarbeidere og organisasjonen" (Streng)
+
+fokusPåLederstøtte: Boolean
+
+fokusPåOrganisasjonsutvikling: Boolean
+
+OperativHR-Funksjon:
+
+hovedMål: "Effektiv administrasjon av personalprosesser" (Streng)
+
+fokusPåRutineoppgaver: Boolean
+
+DigitalHR-Funksjon:
+
+hovedMål: "Optimalisere HR-prosesser gjennom teknologi" (Streng)
+
+fokusPåSystemforvaltning: Boolean
+
+Klasse: HR-Rolle
+
+Definisjon: En spesifikk stilling innen HR-funksjonen med definerte ansvarsområder, kompetansekrav og oppgaver.
+
+Attributter:
+
+rolleID: Unik identifikator (Streng)
+
+tittel: Formell tittel (Streng)
+
+stillingstype: Enum (Leder, Spesialkonsulent, Rådgiver, Konsulent)
+
+nødvendigKompetanse: Liste av kvalifikasjoner/ferdigheter (Liste av Streng)
+
+nivå: Enum (Senior, Mellom, Junior)
+
+Eksempler på Instanser (fra brukers input):
+
+HR-sjefMedOverordnetAnsvar
+
+HR-sjefEirikNyberg (Instance of HR-Sjef)
+
+LederBjørgulvHamre (Instance of HR-LederRekrutteringOgKompetanse)
+
+Subklasser (basert på brukerens eksempler og fagområder):
+
+HR-Sjef:
+
+ansvarsNivå: "Overordnet strategisk og operativt" (Streng)
+
+hovedAnsvar: (HMS, Forhandling, Arbeidsgiverpolitikk, Lederstøtte, IA-arbeid, Lov- og avtaleverk, Medarbeiderundersøkelser, Heltidskultur)
+
+eksempelOppgaver: Personalrutiner, Bistand i komplekse personalsaker, Nedbemanning, Coaching av ledere, Støtte til endrings- og utviklingsprosesser.
+
+HR-LederRekrutteringOgKompetanse: (Representerer Bjørgulv Hamre)
+
+ansvarsNivå: "Spesialisert strategisk og operativt" (Streng)
+
+hovedAnsvar: (Rekruttering, Kompetanseutvikling, Lederutvikling, Lærlingordning, Flere i arbeid/Mangfold)
+
+eksempelOppgaver: Ansettelse av ledere/nøkkelstillinger, Fagansvar Webcruiter/OLKWeb, Utvikle e-læringsmateriell, Mentorprogram, Traineeprogram for innvandrere.
+
+HR-SpesialistForhandling: (Implisitt fra fagområde)
+
+hovedAnsvar: (Forhandling, Lov og Tariff)
+
+HR-SpesialistHMS: (Implisitt fra fagområde)
+
+hovedAnsvar: (HMS, Samhandling med Verneombud)
+
+HR-SpesialistRekruttering:
+
+hovedAnsvar: (Rekruttering, Personalrelaterte forsikringer)
+
+HR-SpesialistKompetanseutvikling:
+
+hovedAnsvar: (Lederutvikling, E-læring og kompetanseutvikling)
+
+HR-SpesialistLærling:
+
+hovedAnsvar: (Lærlingordning)
+
+Klasse: Medarbeider
+
+Definisjon: Individ ansatt i kommunen, uavhengig av stilling.
+
+Attributter:
+
+ansattID: Unik identifikator (Streng)
+
+navn: (Streng)
+
+stillingstittel: (Streng)
+
+ansettelsesform: Enum (Fast, Midlertidig, Prosjektansatt, Lærling)
+
+kompetanseområder: Liste av Streng
+
+engasjementsnivå: Enum (Lav, Middels, Høy)
+
+organisatoriskTilhørighet: Avdeling/Enhet (Streng)
+
+Subklasser:
+
+Leder: Med personalansvar.
+
+lederNivå: Enum (Topp, Mellom, Førstelinje)
+
+harPersonalansvar: Ja (Boolean)
+
+Tillitsvalgt: Representant for en arbeidstakerorganisasjon.
+
+organisasjonTilhørighet: (Streng, f.eks. "Fagforbundet", "KS")
+
+valgperiode: (Streng)
+
+Verneombud: Representant for ansattes sikkerhet og arbeidsmiljø.
+
+verneområde: (Streng)
+
+Lærling: Ansatt under opplæring.
+
+fagområdeLærling: (Streng)
+
+læretidSluttDato: Dato
+
+veileder: HR-Rolle (f.eks., HR-SpesialistLærling)
+
+Klasse: Fagområde
+
+Definisjon: Spesifikke spesialistdomener innenfor HR-feltet.
+
+Attributter:
+
+fagområdeID: Unik identifikator (Streng)
+
+navn: (Streng)
+
+beskrivelse: (Streng)
+
+strategiskViktighet: Enum (Lav, Middels, Høy)
+
+Instanser (fra brukers krav):
+
+Forhandling
+
+Lederutvikling
+
+LovOgTariff
+
+SamhandlingMedTillitsvalgteOgVernetjeneste
+
+HMS (Helse, Miljø og Sikkerhet) – Refleksjon: Omfatter "Arbeidsmiljø og HMS i kommunen" fra kunnskapsgrunnlaget.
+
+Lærlingordning
+
+ELæringOgKompetanseutvikling
+
+Rekruttering – Refleksjon: "Rekruttering i kommuner" fra kunnskapsgrunnlaget.
+
+PersonalrelaterteForsikringer
+
+Arbeidsgiverpolitikk
+
+IAArbeid (Inkluderende Arbeidsliv)
+
+Personaladministrasjon
+
+Endringsledelse – Refleksjon: "Endringsledelse i kommunal sektor" fra kunnskapsgrunnlaget.
+
+Organisasjonsutvikling – Refleksjon: "Organisasjonsutvikling kommune" fra kunnskapsgrunnlaget.
+
+Seniorpolitikk
+
+Heltidskultur
+
+Mangfoldsledelse – Refleksjon: "Flere i arbeid/mangfold" fra brukerens input.
+
+Klasse: LovverkOgAvtaleverk
+
+Definisjon: Den juridiske og kontraktsmessige rammen for arbeidsforhold i kommunal sektor.
+
+Attributter:
+
+navn: (Streng)
+
+type: Enum (Lov, Forskrift, Tariffavtale, Hovedavtale, Lokal avtale)
+
+myndighet: (Streng, f.eks., "Stortinget", "KS", "Arbeidstakerorganisasjon")
+
+formål: (Streng)
+
+relevanteParagrafer: Liste av Streng
+
+Instanser:
+
+Arbeidsmiljøloven (AML) – Refleksjon: Viktig lovverk nevnt i kunnskapsgrunnlaget.
+
+Forvaltningsloven
+
+Offentlighetsloven
+
+Arkivloven
+
+HovedtariffavtalenKS
+
+HovedavtalenKS
+
+Klasse: DigitaltVerktøyOgSystem
+
+Definisjon: Teknologi og systemer som støtter HR-prosesser og funksjoner.
+
+Attributter:
+
+systemID: Unik identifikator (Streng)
+
+navn: (Streng)
+
+type: Enum (HRM-system, Lønnssystem, Rekrutteringssystem, E-læringsplattform, Tidshåndteringssystem, Sak- og arkivsystem)
+
+funksjonalitet: Beskrivelse av systemets evner (Streng)
+
+leverandør: (Streng)
+
+integrasjonsMuligheter: Liste av Streng
+
+brukerAdopsjon: Enum (Lav, Middels, Høy)
+
+Instanser (fra brukers input):
+
+Webcruiter – Refleksjon: Spesifikt verktøy nevnt i brukerens input.
+
+OLKWeb – Refleksjon: Spesifikt verktøy nevnt i brukerens input.
+
+KommunaltHRMS (Generisk)
+
+Lønnsystem (Generisk)
+
+Tidshåndteringsystem (Generisk)
+
+Klasse: ForskningsmiljøOgInstitusjon
+
+Definisjon: Akademiske institusjoner og forskningssentre som bidrar med kunnskap og innsikt i offentlig sektor og HR.
+
+Attributter:
+
+institusjonID: Unik identifikator (Streng)
+
+navn: (Streng)
+
+fokusområder: Liste av Streng
+
+publikasjonsTyper: Enum (Artikler, Rapporter, Bøker)
+
+Instanser (fra kunnskapsgrunnlaget og brukerens input):
+
+UniversitetetIBergen (UiB)
+
+underenhet: "Uni Rokkansenteret" – Refleksjon: Utvalgt forskningsmiljø fra kunnskapsgrunnlaget.
+
+relevantForskning: "Kommunal ledelse", "HR-analyse i kommunal helse- og omsorgstjeneste".
+
+OsloMet
+
+underenhet: "Senter for profesjonsstudier og offentlig innovasjon" – Refleksjon: Utvalgt forskningsmiljø fra kunnskapsgrunnlaget.
+
+relevantForskning: "HR i offentlig sektor", "HR-typer", "forpliktelsesbasert og strategisk HR".
+
+NTNU
+
+underenhet: "Institutt for sosiologi og statsvitenskap" – Refleksjon: Utvalgt forskningsmiljø fra kunnskapsgrunnlaget.
+
+relevantForskning: "Organisasjonsutvikling", "ledelse og endringsprosesser i offentlig sektor".
+
+UniversitetetIAgder (UiA)
+
+fokusområder: "Statsvitenskap og ledelsesfag" – Refleksjon: Utvalgt forskningsmiljø fra kunnskapsgrunnlaget.
+
+relevantForskning: "Politiske og organisatoriske prosesser", "planlegging, ledelse og gjennomføring av organisatoriske endringer".
+
+MagmaForskning (Econa) – Refleksjon: Utvalgt forskningsmiljø fra kunnskapsgrunnlaget.
+
+relevantForskning: "Strategisk HR i skjæringsfeltet mellom offentlig og privat sektor".
+
+NOVA (Norsk institutt for forskning om oppvekst, velferd og aldring) – Refleksjon: Utvalgt forskningsmiljø fra kunnskapsgrunnlaget.
+
+relevantForskning: "Arbeidsmiljø og HMS i kommunen", "velferdsområdet".
+
+Klasse: Utfordring
+
+Definisjon: Hindringer eller problemer som HR-funksjonen i kommunen står overfor.
+
+Attributter:
+
+utfordringID: Unik identifikator (Streng)
+
+beskrivelse: (Streng)
+
+type: Enum (Økonomisk, Politisk, Demografisk, Teknologisk, Lovmessig, Kulturell)
+
+Instanser:
+
+ØkonomiskPress – Refleksjon: Nevnt i kunnskapsgrunnlaget.
+
+PolitiskPress – Refleksjon: Nevnt i kunnskapsgrunnlaget.
+
+DemografiskPress – Refleksjon: Nevnt i kunnskapsgrunnlaget.
+
+TregDigitalUtvikling – Refleksjon: "utviklingen i kommune-Norge har vært tregere" fra kunnskapsgrunnlaget.
+
+MangelPåFokusArbeidsprosesserVedDigitalisering – Refleksjon: "for lite fokus på arbeidsprosessene" fra kunnskapsgrunnlaget.
+
+BalanseringAvRettferdighetOgBeredskap
+
+KompleksePersonalsaker
+
+Klasse: Strategi
+
+Definisjon: En overordnet plan eller tilnærming for å oppnå HR-mål i kommunen.
+
+Attributter:
+
+strategiID: Unik identifikator (Streng)
+
+navn: (Streng)
+
+mål: Liste av Streng
+
+implementeringstidshorisont: (Streng)
+
+ansvarligHRRolle: HR-Rolle
+
+Instanser:
+
+KommunalHRStrategi – Refleksjon: "effektiv HR-strategi i en stor norsk kommune" fra kunnskapsgrunnlaget.
+
+Arbeidsgiverstrategi
+
+Seniorpolitikk
+
+Heltidskultur
+
+StrategiForMangfoldsledelse
+
+2. Relasjoner Mellom Klasser (og Kilden til Forståelsen):
+
+Kommune har_HR_Funksjon HR-Funksjon (1:1 eller 1:m, avhengig av organisasjonsstruktur)
+
+Kildeforankring: Den generelle strukturen i enhver kommune.
+
+HR-Funksjon inkluderer_HR_Rolle HR-Rolle (1:m)
+
+Kildeforankring: Beskrivelsen av HR-sjef og Eirik Nyberg som del av HR-funksjonen i brukerens input.
+
+HR-Rolle ansvarer_for_Fagområde Fagområde (1:m)
+
+Kildeforankring: Listen over fagområder som skal plasseres hos roller i brukerens krav (f.eks., "HMS som hovedansvar").
+
+HR-Rolle gir_lederStøtte_til Leder (1:m)
+
+Kildeforankring: "Coaching av ledere" under HR-sjef Eirik Nyberg i brukerens input.
+
+HR-Rolle samarbeider_med Medarbeider (f.eks. Tillitsvalgt, Verneombud) (1:m)
+
+Kildeforankring: "Samhandling med tillitsvalgte og vernetjeneste" i fagområder og "Kontaktperson for hovedtillitsvalgte og hovedverneombud" under HR-sjef.
+
+HR-Rolle anvender_LovverkOgAvtaleverk LovverkOgAvtaleverk (m:m)
+
+Kildeforankring: "Lov- og avtaleverk" som ansvarsområde for HR-sjef.
+
+HR-Rolle bruker_DigitaltVerktøyOgSystem DigitaltVerktøyOgSystem (m:m)
+
+Kildeforankring: "Fagansvar Webcruiter" og "Fagansvar OLKWeb" under Bjørgulv Hamre.
+
+Fagområde reguleres_av LovverkOgAvtaleverk (m:m)
+
+Kildeforankring: "HMS" og "Arbeidsmiljøloven" fra kunnskapsgrunnlaget.
+
+DigitaltVerktøyOgSystem støtter Fagområde (m:m)
+
+Kildeforankring: Digitale verktøy for "personaladministrasjon, fraværshåndtering og onboarding/offboarding" i kunnskapsgrunnlaget.
+
+Kommune møter_Utfordring Utfordring (1:m)
+
+Kildeforankring: "Mange kommuner opplever et stadig sterkere press, både økonomisk, politisk og demografisk" fra kunnskapsgrunnlaget.
+
+HR-Funksjon utvikler_Strategi Strategi (1:m)
+
+Kildeforankring: "En effektiv HR-strategi i en stor norsk kommune..." fra kunnskapsgrunnlaget.
+
+Strategi adresserer_Utfordring Utfordring (m:m)
+
+HR-Funksjon samarbeider_med ForskningsmiljøOgInstitusjon (m:m)
+
+Kildeforankring: Hele seksjon 4 "Forskningsmiljøer og Akademisk Forankring" i kunnskapsgrunnlaget, som viser relevansen av disse miljøene for HR i offentlig sektor.
+
+Leder gjennomfører_Organisasjonsutvikling (med støtte fra HR-Rolle)
+
+Kildeforankring: "Støtte til endrings- og utviklingsprosesser i kommunalområdene" under HR-sjef.
+
+Medarbeider erOmfattetAv PersonalrelaterteForsikringer (1:m)
+
+Kildeforankring: Nevnt som fagområde i brukerens krav.
+
+Lærling følgesOppAv HR-SpesialistLærling (1:1 eller 1:m)
+
+Kildeforankring: "Rekruttere og følge opp lærlinger, veiledere og læresteder" under Lærlinger og fagopplæring.
+
+3. Kontekstuelle Axiomer og Implisitte Regler:
+
+Rettferdighet og åpenhet: All HR-praksis i kommunen er underlagt prinsipper om rettferdighet, innsyn og forvaltningsrettslig korrekthet, i henhold til Forvaltningsloven og Offentlighetsloven.
+
+Samfunnsoppdrag: HR-strategier og -aktiviteter skal alltid understøtte kommunens samfunnsoppdrag og bidra til å levere velfungerende tjenester til innbyggerne.
+
+Tredelt samarbeid: HMS-arbeid og arbeidsmiljøutvikling skal utføres i tett samarbeid mellom arbeidsgiver (HR), ansatte (representert ved tillitsvalgte) og verneombud.
+
+Kompetansebehov: Digitalisering og endringsledelse skaper et kontinuerlig behov for kompetanseutvikling og e-læring blant både ledere og medarbeidere.
+
+Datahåndtering: Bruk av digitale verktøy og AI i HR må overholde GDPR, informasjonssikkerhet og annen relevant EU-lovgivning. – Refleksjon: "viktig å vurdere hvordan AI kan tilpasses... GDPR, informasjonssikkerhet og EU-lovgivning" fra kunnskapsgrunnlaget.
+
+Kontinuerlig forbedring: HR-funksjonen bør kontinuerlig evaluere og forbedre arbeidsprosesser, spesielt i møte med digitalisering, for å unngå sløsing av tid og ressurser. – Refleksjon: "for lite fokus på arbeidsprosessene og hvordan disse skal fornyes i sin digitaliserte versjon" fra kunnskapsgrunnlaget.

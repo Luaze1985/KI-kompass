@@ -1,0 +1,64 @@
+metadata:
+  id: agent_registry
+  version: 1.1
+  status: active_docs_first_v2
+  last_validated: 2026-04-09
+  markdown_master_ref: 04_orkestrering/AGENTKONTRAKTER.md
+  playbook_ref: 04_orkestrering/AGENT_PLAYBOOKS.md
+  packet_ref: 04_orkestrering/OPPDRAGSFORMAT_OG_TRACE.md
+
+agents:
+  - id: dirigenten
+    role_type: top_level_router
+    input_types: [task_envelope, dokument, kontekst, risikosignal]
+    output_types: [route_plan, handover_packet, decision_trace]
+    decision_rights: [velge_arbeidslop, velge_linser, aktivere_agenter]
+    allowed_handoffs: [linseagent, gruppe_l_agent, HR_tvillingen, den_virtuelle_stabssjefen, produksjonsagent, kildevokteren, evalrevisoren, forbedringskoordinatoren]
+  - id: den_virtuelle_stabssjefen
+    role_type: synthesis_and_decision
+    input_types: [task_envelope, handover_packet, decision_trace]
+    output_types: [beslutningsnotat, prioritering, decision_trace]
+    decision_rights: [prioritere_funn, strukturere_anbefaling, peke_ut_neste_steg]
+    allowed_handoffs: [produksjonsagent, linseagent, gruppe_l_agent, forbedringskoordinatoren]
+  - id: linseagent
+    role_type: perspective_analysis
+    input_types: [task_envelope, valgt_linse, dokument, kilder]
+    output_types: [funn, risiko, usikkerhet, handover_packet, decision_trace]
+    decision_rights: [faglig_vurdering_innen_en_linse, identifisere_konflikt]
+    allowed_handoffs: [den_virtuelle_stabssjefen, gruppe_l_agent]
+  - id: gruppe_l_agent
+    role_type: operational_translation
+    input_types: [task_envelope, handover_packet, prosessbeskrivelse, kapasitetssignal]
+    output_types: [mikrooppgaver, friksjon, handover_packet, decision_trace]
+    decision_rights: [konkretisere_steg, foresla_pilot, foresla_handover]
+    allowed_handoffs: [den_virtuelle_stabssjefen, produksjonsagent]
+  - id: HR_tvillingen
+    role_type: domain_agent
+    input_types: [task_envelope, HR_guardrails, intern_modell, prosesskort]
+    output_types: [kort_hr_rad, usikkerhet, handover_packet, decision_trace]
+    decision_rights: [veilede_innen_HR_domenet, eskalere_til_riktig_rolle]
+    allowed_handoffs: [den_virtuelle_stabssjefen, produksjonsagent, forbedringskoordinatoren]
+  - id: produksjonsagent
+    role_type: delivery_agent
+    input_types: [task_envelope, handover_packet, godkjent_grunnlag, mal]
+    output_types: [utkast, leveranse, decision_trace]
+    decision_rights: [strukturere_leveranse_innen_godkjent_ramme]
+    allowed_handoffs: [den_virtuelle_stabssjefen, evalrevisoren]
+  - id: kildevokteren
+    role_type: source_sync_review
+    input_types: [task_envelope, markdown_master, model_file, yaml_table, csv_table]
+    output_types: [avviksliste, patch_forslag, handover_packet, decision_trace]
+    decision_rights: [markere_drift, prioritere_synkbehov]
+    allowed_handoffs: [evalrevisoren, forbedringskoordinatoren]
+  - id: evalrevisoren
+    role_type: evaluation_and_gate_review
+    input_types: [task_envelope, handover_packet, decision_trace, output, eval_rules]
+    output_types: [revisjonsnotat, red_flags, handover_packet, decision_trace]
+    decision_rights: [flagge_blokkerende_risiko, kreve_ny_runde]
+    allowed_handoffs: [forbedringskoordinatoren, dirigenten]
+  - id: forbedringskoordinatoren
+    role_type: improvement_prioritization
+    input_types: [task_envelope, handover_packet, revisjonsnotat, decision_trace]
+    output_types: [prioritert_forbedringsliste, handover_packet, decision_trace]
+    decision_rights: [prioritere_stopp_rett_standardiser, velge_neste_oppdragsinngang]
+    allowed_handoffs: [dirigenten, den_virtuelle_stabssjefen, HR_tvillingen, produksjonsagent]

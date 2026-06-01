@@ -1,0 +1,109 @@
+# HR_TESTSETT_V1
+
+## Formaal
+
+Dette testsettet brukes til lokal proving av HR-piloten pa tvers av simulering, beslutningsstotte, moter og produksjon.
+
+## Bruksregel
+
+- bruk bare aktive mastere og godkjente referanser
+- merk hva som er antatt
+- stopp hvis scenarioet krever faktisk persondata
+
+## Scenario 1
+
+- id: `HR-SIM-01`
+- tittel: hoyt sykefravaer i hjemmetjenesten
+- primarloep: simulering
+- maal: vurdere alternative tiltak for naervaer og lederstotte
+- forventet aktivering: dirigent, HR-tvillingen, HMS-radgiver, IA-radgiver, Gruppe L
+- forventet output: simuleringsnotat med konfliktpunkter og anbefalt retning
+- lokal verifikasjon: bekreft faktisk fravaersbilde og lokale tiltak
+
+## Scenario 2
+
+- id: `HR-BES-02`
+- tittel: rekruttering av kritisk lederrolle med fa kvalifiserte sokere
+- primarloep: beslutningsstotte
+- maal: velge mellom ny utlysning, search-stotte eller midlertidig losning
+- forventet aktivering: dirigent, rekrutteringsradgiver, stabssjef, Gruppe L
+- forventet output: kort beslutningsnotat med alternativer og ansvar
+- lokal verifikasjon: bekreft hjemmel, budsjett og kandidatmarked
+
+## Scenario 3
+
+- id: `HR-MOT-03`
+- tittel: krevende personalsak som krever droeftingsmote
+- primarloep: mote
+- maal: forberede droeftingsmote med tydelig rolle- og risikobilde
+- forventet aktivering: dirigent, HR-jurist, HR-radgiver, stabssjef
+- forventet output: moteunderlag med agenda, konfliktlinjer og handover
+- lokal verifikasjon: bekreft sakstype, partsbilde og juridisk eier
+
+## Scenario 4
+
+- id: `HR-PROD-04`
+- tittel: leveranseutkast for ny lederopplaering
+- primarloep: produksjon
+- maal: lage kort underlag for pilot av lederutviklingstiltak
+- forventet aktivering: dirigent, kompetanseradgiver, produksjonsagent
+- forventet output: leveranseutkast med malgruppe, format og neste steg
+- lokal verifikasjon: bekreft at tiltaket er forankret i faktisk behov
+
+## Scenario 5
+
+- id: `HR-SIM-05`
+- tittel: omstillingsprosess i en enhet med hoy uro
+- primarloep: simulering og beslutningsstotte
+- maal: avdekke fasegater, medvirkningsbehov og operativ risiko
+- forventet aktivering: dirigent, avdelingssjef lederstotte, HR-jurist, forhandlingsradgiver, HMS-radgiver, Gruppe L
+- forventet output: simulering med anbefalt omstillingslop og kontrollgater
+- lokal verifikasjon: bekreft mandat, beslutningsrett og faktisk partsbilde
+
+## Scenario 6
+
+- id: `HR-MOT-06`
+- tittel: AMU-forberedelse etter okning i HMS-avvik
+- primarloep: mote
+- maal: strukturere underlag for prioritering av tiltak
+- forventet aktivering: dirigent, HMS-radgiver, stabssjef
+- forventet output: moteunderlag med risikobilde, forslag og oppfolging
+- lokal verifikasjon: bekreft at data og avvikstall er oppdaterte
+
+## Scenario 7
+
+- id: `HR-PROD-07`
+- tittel: oppfolgingslop for laerlinger med fare for frafall
+- primarloep: produksjon og mote
+- maal: lage kort oppfolgingsplan for veileder, laerling og koordinator
+- forventet aktivering: dirigent, laerlingkoordinator, produksjonsagent
+- forventet output: oppfolgingsutkast og forslag til samtalestruktur
+- lokal verifikasjon: bekreft kapasitet hos laerested og status i faglopet
+
+## Scenario 8
+
+- id: `HR-PROD-08`
+- tittel: full stillingsutlysning og kandidatgrunnlag for kritisk HR-rolle
+- primarloep: produksjon
+- maal: lage sporbar stillingsutlysning og kandidatvurderingsgrunnlag uten drift fra rollemasteren
+- forventet aktivering: dirigent, rekrutteringsradgiver, HR-tvillingen, produksjonsagent
+- forventet output: stillingsutlysning og kandidatvurdering med samme kravbilde
+- lokal verifikasjon: bekreft stillingskode, lonnsspenn, kanalvalg og arbeidsgiverprofil
+
+## Scenario 9
+
+- id: `HR-PROD-09`
+- tittel: onboarding 30-60-90 for ny HR-radgiver
+- primarloep: produksjon
+- maal: lage strukturert onboardingutkast koblet til rolle, skills og prosesser
+- forventet aktivering: dirigent, HR-tvillingen, produksjonsagent
+- forventet output: onboarding 30-60-90 med tydelige leveranser og verifikasjonspunkter
+- lokal verifikasjon: bekreft lokale systemtilganger, handover og opplaeringsansvar
+
+## Enkel pass-fail
+
+- ble riktig primarloep valgt
+- ble riktig rolle eiet som prosesseier
+- ble guardrails fulgt
+- ble usikkerhet markert
+- ble handover eksplisitt

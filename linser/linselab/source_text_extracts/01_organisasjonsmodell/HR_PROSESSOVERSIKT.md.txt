@@ -1,0 +1,60 @@
+# HR_PROSESSOVERSIKT
+
+## Formaal
+
+Denne oversikten kobler HR-pilotens kjerneprosesser til roller, arbeidslop og operative masterfiler.
+
+## Prosesskart v1
+
+- `P-01` sykefravaersoppfolging
+  - eier: IA-radgiver
+  - primarloep: simulering, beslutningsstotte, mote
+  - fil: `HR_KJERNEPROSESSER/P-01_SYKEFRAVAERSOPPFOLGING.md`
+- `P-02` strategisk rekruttering
+  - eier: rekrutteringsradgiver
+  - primarloep: beslutningsstotte, produksjon
+  - fil: `HR_KJERNEPROSESSER/P-02_STRATEGISK_REKRUTTERING.md`
+- `P-03` handtering av kompleks personalsak
+  - eier: HR-jurist
+  - primarloep: beslutningsstotte, mote
+  - fil: `HR_KJERNEPROSESSER/P-03_KOMPLEKS_PERSONALSAK.md`
+- `P-04` laerlinginntak og oppfolging
+  - eier: laerlingkoordinator
+  - primarloep: produksjon, mote
+  - fil: `HR_KJERNEPROSESSER/P-04_LAERLINGINNTAK_OG_OPPFOLGING.md`
+- `P-05` forvaltning av systematisk HMS-arbeid
+  - eier: HMS-radgiver
+  - primarloep: simulering, beslutningsstotte, mote
+  - fil: `HR_KJERNEPROSESSER/P-05_SYSTEMATISK_HMS_ARBEID.md`
+- `P-06` portefolje for lederutvikling
+  - eier: avdelingssjef rekruttering og kompetanse
+  - primarloep: beslutningsstotte, produksjon
+  - fil: `HR_KJERNEPROSESSER/P-06_LEDERUTVIKLINGSPORTFOLJE.md`
+- `P-08` gjennomforing av omstillingsprosess
+  - eier: avdelingssjef lederstotte
+  - primarloep: simulering, beslutningsstotte, mote, produksjon
+  - fil: `HR_KJERNEPROSESSER/P-08_OMSTILLINGSPROSESS.md`
+
+## Kanoniske mastere og avledede leveranser
+
+- rolle- og kompetansegrunnlag: `HR_ROLLE_OG_KOMPETANSEMASTER.md`
+- rekrutterings- og utlysningsgrunnlag: `HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER.md`
+- maskinlesbare speil: `../10_kunnskapsbase/kodetabeller/`
+- avledede stillingsutlysninger: `../09_templates_og_output/stillingsutlysninger/`
+
+Bruksregel:
+
+- prosesskort er fortsatt operative mastere for arbeidslopet
+- rolle- og rekrutteringsmasterne brukes for a holde roller, skills og artefakter stabile pa tvers av prosessene
+- produksjonsagenten skal bruke disse masterne for stillingsutlysninger, onboarding og kandidatvurdering
+
+## Merknad om prosess-ID
+
+- `P-07` finnes ikke som aktiv prosess i kildematerialet.
+- Eventuell ny `P-07` skal bare opprettes etter lokal verifikasjon, ikke fylles inn som gjetning.
+
+## Bruksregel
+
+- Dirigenten bruker denne oversikten for a velge riktig prosesskort.
+- HR-tvillingen bruker prosesskortene som domenegrunnlag.
+- Produksjonsagenten skal ikke skrive prosessinnhold utenfor disse kortene uten eksplisitt tilbakekobling.

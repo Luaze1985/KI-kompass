@@ -1,0 +1,25 @@
+# OPPDRAG_FORBERED_DIGITALISERINGSMOTE
+
+## Bruk nar
+
+- du skal forberede et mote om digitalisering, systeminnforing, arkitektur eller sikkerhet
+
+## Det du fyller inn
+
+- motetype:
+- formal:
+- beslutningspunkt:
+- deltakere:
+- viktigste konflikt eller avhengighet:
+
+## Starttekst
+
+Forbered et mote innenfor stabsomradet IT og digitalisering.
+
+Bruk bare aktive mastere, relevant prosesskort og domene-guardrails.
+Skill mellom status, designvalg, risiko og vedtak.
+Pek ut eier, avhengigheter og oppfolging.
+
+## Forventet utfil
+
+- `09_templates_og_output/maler/MOTEUNDERLAG_TEMPLATE.md`

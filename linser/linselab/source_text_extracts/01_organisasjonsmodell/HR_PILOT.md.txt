@@ -1,0 +1,102 @@
+# HR_PILOT
+
+## Formaal
+
+HR er forste operative pilotdomene for tvillingsorganisasjonen. Pilotens jobb er a vise at kombinasjonen av linser, agentroller og styringskontrakter kan gi faktisk verdi i et avgrenset, men viktig fagomrade.
+
+## Hva HR-piloten skal brukes til
+
+- simulere HR-scenarier og alternative handlingsvalg
+- gi beslutningsstotte til ledere og HR
+- forberede og strukturere HR-relaterte moter
+- produsere leveranseutkast som notater, oversikter og handlingsspor
+- styrke onboarding, kompetanseforstaelse og intern samhandling
+
+## Avgrensning
+
+HR-piloten er ikke:
+
+- en juridisk beslutningstaker
+- et system for behandling av sensitive personopplysninger
+- et generelt svarsystem utenfor HR-domenet
+- et produksjonslofte uten lokal verifikasjon
+
+## Kjerneobjekter i piloten
+
+HR-piloten skal bygge paa disse objektene:
+
+- kommune
+- HR-funksjon
+- HR-rolle
+- fagomrade
+- prosess
+- oppgave
+- kompetanse
+- skill
+- digitalt verktoy / system
+- lovverk og avtaleverk
+- risiko
+- kontrollhandling
+- artefakt
+- template
+- strategisk mal
+
+## HR-struktur i pilotversjon
+
+### Ledelse
+- HR-sjef
+
+### Stabsfunksjoner
+- Forhandlingsradgiver
+- HMS-radgiver
+
+### Underenhet: HR Lederstotte
+- Avdelingssjef Lederstotte
+- HR-radgivere
+- HR-jurister
+- IA-radgivere
+
+### Underenhet: HR Rekruttering og Kompetanse
+- Avdelingssjef Rekruttering og Kompetanse
+- Rekrutteringsradgivere
+- Laerlingkoordinatorer
+- E-laeringsradgiver
+- Radgivere for leder- og organisasjonsutvikling
+
+## Kjerneprosesser i pilotversjon
+
+- sykefravaersoppfolging
+- strategisk rekruttering
+- handtering av kompleks personalsak
+- laerlinginntak og oppfolging
+- forvaltning av systematisk HMS-arbeid
+- portefolje for lederutvikling
+- gjennomforing av omstillingsprosess
+
+## Kritiske designvalg
+
+- HR-piloten skal bruke intern modell som primar arbeidsmodell, men Markdown-mastere er menneskelig sannhetskilde
+- Markdown-mastere er menneskelig sannhetskilde, mens modell og kodetabeller er avledede speil
+- svar skal vaere korte, konkrete og sporbare
+- uklare foresporsler skal avklares med ett konkret oppfolgingssporsmal
+- tvillingen skal eskalere ved juss, personvern og manglende grunnlag
+- stillingsutlysninger, onboarding og kandidatvurdering skal avledes fra kanoniske roller og ikke bygges som egne sannhetskilder
+
+## Operativt lag etablert i denne etappen
+
+- prosessoversikt for HR-piloten
+- egne prosesskort for kjerneprosessene
+- lokalt testsett for proving av arbeidslop
+- et lite sett operative maler for HR-bruk
+- kanonisk rolle- og kompetansemaster
+- egen master for rekruttering og stillingsutlysninger
+- maskinlesbare kodetabeller i YAML og CSV
+- ferdigutfylte stillingsutlysninger for alle kanoniske HR-roller
+- revisjonslop og selvforbedringsagenter for kildekontroll, eval og prioritering
+
+## Hva som ma bygges videre
+
+- lokal mapping av stillingskoder, lonnsspenn og arbeidsgiverprofil
+- tydeligere kobling mellom HR-randsoner og faste samhandlingspunkter
+- videre validering av systemnavn og lokal systembruk
+- loepende vedlikehold av fasegater og revisjonsregler nar praksis endres

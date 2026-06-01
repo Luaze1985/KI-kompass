@@ -1,0 +1,10 @@
+project: Linselab merge control
+status: draft_empty
+purpose: Track exact, near, and semantic duplicates before merge decisions.
+inputs:
+  exact_hash_candidates: DUPLICATE_CANDIDATES.yml
+rules:
+  - Exact duplicates may still differ in source role or provenance.
+  - Near duplicates require manual review before merge.
+  - Useful variance must be logged before any consolidation.
+duplicate_groups: []

@@ -1,0 +1,56 @@
+metadata:
+  package_id: hr_og_arbeidsgiver
+  version: 2.2
+  status: active_docs_first_v2
+  last_validated: 2026-04-09
+
+domain_ref: 00_styring/manifester/domain_registry.yaml#hr_og_arbeidsgiver
+model_ref: 10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+role_master_ref: 01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md
+recruitment_master_ref: 01_organisasjonsmodell/HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER.md
+code_table_dir_ref: 10_kunnskapsbase/kodetabeller
+derived_output_dir_ref: 09_templates_og_output/stillingsutlysninger
+testset_ref: 05_simulering/testsett/HR_TESTSETT_V1.md
+supplementary_testsets:
+  - 05_simulering/testsett/HR_RANDSONE_TESTSETT_V1.md
+  - 05_simulering/testsett/REVISJON_TESTSETT_V1.md
+change_log_ref: 00_styring/pakker/hr_og_arbeidsgiver/change_log.md
+
+active_masters:
+  - 00_styring/SYSTEMINSTRUKS.md
+  - 01_organisasjonsmodell/HR_PILOT.md
+  - 01_organisasjonsmodell/HR_PROSESSOVERSIKT.md
+  - 01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md
+  - 01_organisasjonsmodell/HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER.md
+  - 02_linser/HR_RANDSONER_OG_LINSEPAKKER.md
+  - 03_agentroller/HR_TVILLING_GUARDRAILS.md
+  - 03_agentroller/ROLLEKATALOG.md
+  - 04_orkestrering/AGENTKONTRAKTER.md
+  - 04_orkestrering/AGENT_PLAYBOOKS.md
+  - 04_orkestrering/OPPDRAGSFORMAT_OG_TRACE.md
+
+prompt_entries:
+  - 05_simulering/OPPDRAG_SIMULER_HR_SAK.md
+  - 06_beslutningsstotte/OPPDRAG_SKRIV_BESLUTNINGSNOTAT.md
+  - 07_moter/OPPDRAG_FORBERED_HR_MOTE.md
+  - 08_produksjon/OPPDRAG_PRODUSER_HR_LEVERANSE.md
+
+templates:
+  - 09_templates_og_output/maler/HR_RAD_TEMPLATE.md
+  - 09_templates_og_output/maler/SIMULERINGSNOTAT_TEMPLATE.md
+  - 09_templates_og_output/maler/BESLUTNINGSNOTAT_TEMPLATE.md
+  - 09_templates_og_output/maler/MOTEUNDERLAG_TEMPLATE.md
+  - 09_templates_og_output/maler/LEVERANSEUTKAST_TEMPLATE.md
+  - 09_templates_og_output/maler/ROLLEKORT_TEMPLATE.md
+  - 09_templates_og_output/maler/KOMPETANSEMATRISE_TEMPLATE.md
+  - 09_templates_og_output/maler/STILLINGSUTLYSNING_TEMPLATE.md
+  - 09_templates_og_output/maler/KANDIDATVURDERING_OG_INTERVJUGUIDE_TEMPLATE.md
+  - 09_templates_og_output/maler/ONBOARDING_30_60_90_TEMPLATE.md
+
+active_process_dirs:
+  - 01_organisasjonsmodell/HR_KJERNEPROSESSER
+
+notes:
+  markdown_master_is_truth: true
+  package_controls_are_validation_only: true
+  derived_outputs_are_not_truth: true

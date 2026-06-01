@@ -1,0 +1,176 @@
+metadata:
+  id: hr_roles
+  version: 1.0
+  status: derived_from_markdown_master
+  master_ref: 01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md
+
+roles:
+  - role_id: R-02
+    title: HR-sjef
+    unit_id: U-01
+    reports_to: organisasjonsdirektor
+    process_owner_for: [P-08]
+    must_have_skills: [SK-01, SK-03, SK-07, SK-09, SK-15]
+    should_have_skills: [SK-08, SK-10, SK-12]
+    systems: [S-01, S-03, S-04]
+    regulations: [REG-01, REG-02, REG-04, REG-05, REG-06]
+    artifacts: [ART-10, ART-11, ART-12]
+    risks: [RSK-01, RSK-02, RSK-03, RSK-05]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - role_id: R-03
+    title: avdelingssjef_lederstotte_og_personalsaker
+    unit_id: U-02
+    reports_to: R-02
+    process_owner_for: [P-03, P-08]
+    must_have_skills: [SK-01, SK-06, SK-10, SK-11, SK-15]
+    should_have_skills: [SK-08, SK-09, SK-12]
+    systems: [S-03, S-04]
+    regulations: [REG-01, REG-02, REG-05, REG-06]
+    artifacts: [ART-06, ART-10, ART-11, ART-12]
+    risks: [RSK-01, RSK-02, RSK-04]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - role_id: R-04
+    title: avdelingssjef_rekruttering_og_kompetanse
+    unit_id: U-03
+    reports_to: R-02
+    process_owner_for: [P-06]
+    must_have_skills: [SK-02, SK-03, SK-09, SK-10, SK-15]
+    should_have_skills: [SK-08, SK-12, SK-13, SK-14]
+    systems: [S-01, S-05, S-06, S-07]
+    regulations: [REG-02, REG-06, REG-09]
+    artifacts: [ART-01, ART-02, ART-03, ART-09, ART-10]
+    risks: [RSK-02, RSK-05, RSK-07]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - role_id: R-05
+    title: HR-radgiver
+    unit_id: U-02
+    reports_to: R-03
+    process_owner_for: []
+    must_have_skills: [SK-01, SK-08, SK-11, SK-12]
+    should_have_skills: [SK-06, SK-10, SK-15]
+    systems: [S-03, S-04]
+    regulations: [REG-01, REG-02, REG-06]
+    artifacts: [ART-05, ART-06, ART-10, ART-11]
+    risks: [RSK-01, RSK-02, RSK-04]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - role_id: R-06
+    title: HR-jurist
+    unit_id: U-02
+    reports_to: R-02
+    process_owner_for: [P-03]
+    must_have_skills: [SK-01, SK-07, SK-11, SK-12, SK-15]
+    should_have_skills: [SK-08, SK-10]
+    systems: [S-03, S-04]
+    regulations: [REG-01, REG-02, REG-04, REG-05, REG-06]
+    artifacts: [ART-06, ART-10, ART-11]
+    risks: [RSK-01, RSK-02, RSK-04]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - role_id: R-07
+    title: forhandlingsradgiver
+    unit_id: U-04
+    reports_to: R-02
+    process_owner_for: []
+    must_have_skills: [SK-01, SK-07, SK-08, SK-15]
+    should_have_skills: [SK-09, SK-12]
+    systems: [S-01, S-04]
+    regulations: [REG-04, REG-05, REG-06]
+    artifacts: [ART-06, ART-10, ART-11]
+    risks: [RSK-01, RSK-02, RSK-03]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - role_id: R-08
+    title: HMS-radgiver
+    unit_id: U-04
+    reports_to: R-02
+    process_owner_for: [P-05]
+    must_have_skills: [SK-05, SK-08, SK-09, SK-12]
+    should_have_skills: [SK-06, SK-11, SK-15]
+    systems: [S-01, S-02, S-03]
+    regulations: [REG-01, REG-06, REG-07]
+    artifacts: [ART-06, ART-07, ART-10, ART-11]
+    risks: [RSK-03, RSK-05, RSK-06]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - role_id: R-09
+    title: rekrutteringsradgiver
+    unit_id: U-03
+    reports_to: R-04
+    process_owner_for: [P-02]
+    must_have_skills: [SK-02, SK-08, SK-12, SK-13]
+    should_have_skills: [SK-03, SK-09, SK-11]
+    systems: [S-05, S-07]
+    regulations: [REG-02, REG-03, REG-06, REG-09]
+    artifacts: [ART-01, ART-02, ART-03, ART-04]
+    risks: [RSK-02, RSK-07]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - role_id: R-10
+    title: laerlingkoordinator
+    unit_id: U-03
+    reports_to: R-04
+    process_owner_for: [P-04]
+    must_have_skills: [SK-04, SK-08, SK-12, SK-14]
+    should_have_skills: [SK-02, SK-09, SK-10]
+    systems: [S-05, S-06, S-08]
+    regulations: [REG-02, REG-06, REG-08]
+    artifacts: [ART-02, ART-08, ART-09]
+    risks: [RSK-02, RSK-08]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - role_id: R-11
+    title: kompetanseradgiver
+    unit_id: U-03
+    reports_to: R-04
+    process_owner_for: []
+    must_have_skills: [SK-03, SK-09, SK-10, SK-14]
+    should_have_skills: [SK-08, SK-12, SK-15]
+    systems: [S-01, S-06, S-07]
+    regulations: [REG-06]
+    artifacts: [ART-09, ART-10, ART-11]
+    risks: [RSK-05, RSK-06]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - role_id: R-12
+    title: e_laeringsradgiver
+    unit_id: U-03
+    reports_to: R-04
+    process_owner_for: []
+    must_have_skills: [SK-08, SK-12, SK-14]
+    should_have_skills: [SK-03, SK-09, SK-10]
+    systems: [S-06, S-07]
+    regulations: [REG-06]
+    artifacts: [ART-09, ART-10]
+    risks: [RSK-05, RSK-06]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - role_id: R-13
+    title: IA-radgiver
+    unit_id: U-02
+    reports_to: R-03
+    process_owner_for: [P-01]
+    must_have_skills: [SK-06, SK-08, SK-11, SK-12]
+    should_have_skills: [SK-05, SK-09, SK-10]
+    systems: [S-01, S-02, S-03, S-09]
+    regulations: [REG-01, REG-06]
+    artifacts: [ART-05, ART-06, ART-10, ART-11]
+    risks: [RSK-02, RSK-04, RSK-05]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot
+  - role_id: R-14
+    title: radgiver_for_leder_og_organisasjonsutvikling
+    unit_id: U-03
+    reports_to: R-04
+    process_owner_for: []
+    must_have_skills: [SK-10, SK-14, SK-15]
+    should_have_skills: [SK-03, SK-08, SK-09, SK-12]
+    systems: [S-01, S-06, S-07]
+    regulations: [REG-06]
+    artifacts: [ART-09, ART-10, ART-11]
+    risks: [RSK-03, RSK-05, RSK-06]
+    styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+    local_status: aktiv_pilot

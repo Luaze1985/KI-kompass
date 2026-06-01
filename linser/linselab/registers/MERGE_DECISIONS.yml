@@ -1,0 +1,80 @@
+project: Linselab merge control
+status: active
+purpose: Record decisions to keep, split, merge, normalize, archive as source, or mark as duplicate.
+rules:
+  - Every decision must reference source_id or instrument_id.
+  - Every merge must document preserved variance and risk of loss.
+  - No decision may delete or overwrite original source files.
+decisions:
+  - instrument_id: linselab-linse-prompt-standard
+    decision: create_draft_governance_standard
+    note: Created LINSE_PROMPT_STANDARD.md to unify Orchestrator routing, lens dissection, weighting, prompt budget, and external repo roles. Not active until case-tested.
+  - instrument_id: linselab-antigravity-anvendelseskart
+    decision: create_scope_register
+    note: Created ANVENDELSESKART_ANTIGRAVITY.md to classify Antigravity findings by applicability, maturity, gates, and recommended order before MVP scope is locked. Not active library content.
+  - instrument_id: A4
+    decision: normalize_as_draft_lens
+    note: Created Orkestratoren draft as first prototype candidate for route_plan, lens selection, weighting, and decision_trace. Not active until CT-A4-ROUTE-001 is run and reviewed.
+  - source_id: worker_runs/agentforge_metadata_inventory/agentforge_method_review.jsonl
+    decision: codex_gate_accept
+    note: Gravity review accepted as Stage 2 decision input. Approved candidates are translated into Linselab draft methods, not activated.
+  - source_id: worker_runs/agentforge_metadata_inventory/agentforge_overlap_notes.md
+    decision: codex_gate_accept
+    note: Adopt overlap rule that AgentForge Python tools are source material only; extract prompts, schemas, and heuristics into Markdown registers.
+  - source_id: worker_runs/agentforge_metadata_inventory/agentforge_stage2_recommendation.md
+    decision: codex_gate_accept
+    note: Adopt taxonomy translation gate before any AgentForge-derived item can enter active library.
+  - source_id: agentforge_taxonomy_translation_gate
+    decision: governance_rule
+    note: Translate Skill to Lens/Advisor Profile, Agent Team to Advisor Package, Guardrail to Quality Criteria/Gate, and orchestration.yaml to deterministic handoff graph before activation.
+  - source_id: agentforge-main/docs/layered-prompt-architecture.md
+    decision: split_and_extract
+    note: Gravity marked as register candidate. Extract as draft architecture reference for layered prompt precedence; no active code.
+  - source_id: agentforge-main/src/agentforge/extraction/prompts.py
+    decision: split_and_extract
+    note: Extract prompt text for register, discard Python wrapper. Must translate 'skill' to 'lens/advisor profile'.
+  - source_id: agentforge-main/src/agentforge/extraction/methodology_extractor.py
+    decision: archive_as_source
+    note: Python runtime logic conflicts with markdown registries.
+  - source_id: agentforge-main/src/agentforge/extraction/skill_extractor.py
+    decision: archive_as_source
+    note: Pipeline logic.
+  - source_id: agentforge-main/src/agentforge/prompt_composer/composer.py
+    decision: mark_as_stage_only
+    note: Advanced composition logic, not needed for single-advisor testing.
+  - source_id: agentforge-main/src/agentforge/analysis/guardrail_auditor.py
+    decision: split_and_extract
+    note: Extract criteria as a register candidate for gate checks.
+  - source_id: agentforge-main/src/agentforge/analysis/prompt_differ.py
+    decision: archive_as_source
+    note: Conceptual reference for PRESERVED_VARIANCE_LOG.md.
+  - source_id: agentforge-main/src/agentforge/analysis/gap_analyzer.py
+    decision: split_and_extract
+    note: Extract heuristic for gap finding as register candidate.
+  - source_id: agentforge-main/src/agentforge/analysis/skill_linter.py
+    decision: archive_as_source
+    note: Linter checks should be adapted to Markdown standards later.
+  - source_id: agentforge-main/src/agentforge/analysis/skill_reviewer.py
+    decision: split_and_extract
+    note: Extract review rules as register candidate.
+  - source_id: agentforge-main/src/agentforge/analysis/team_composer.py
+    decision: mark_as_stage_only
+    note: Premature for current stage.
+  - source_id: agentforge-main/src/agentforge/analysis/team_validator.py
+    decision: mark_as_stage_only
+    note: Premature.
+  - source_id: agentforge-main/docs/day2-products.md
+    decision: archive_as_source
+    note: Reference material.
+  - source_id: agentforge-main/docs/wiki-memory-design.md
+    decision: archive_as_source
+    note: Reference material.
+  - source_id: agentforge-main/src/agentforge/testing/evaluator.py
+    decision: split_and_extract
+    note: Extract LLM-as-judge prompt for case testing register.
+  - source_id: agentforge-main/src/agentforge/pipeline/stages.py
+    decision: archive_as_source
+    note: Reference only.
+  - source_id: agentforge-main/src/agentforge/department/handoffs.py
+    decision: split_and_extract
+    note: Extract handoff format for orchestrator.

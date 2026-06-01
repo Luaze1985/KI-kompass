@@ -1,0 +1,55 @@
+# HMS_RADGIVER STILLINGSUTLYSNING
+
+Status: avledet produksjonsartefakt v1
+
+## Metadata
+
+- role_id: `R-08`
+- unit_id: `U-04`
+- styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+- local_status: krever_lokal_tilpasning_for_publisering
+
+## Kort annonsetekst
+
+Vi soker en HMS-radgiver som kan gjore systematisk HMS-arbeid konkret, etterprovbart og relevant for ledere og vernetjeneste. Rollen passer for deg som liker a koble avvik, risikovurdering og faktiske tiltak i samme arbeidsflyt.
+
+## Formaal med stillingen
+
+Sikre et forebyggende og etterprovbart HMS-system der risiko, tiltak og oppfolging har tydelige eiere.
+
+## Hovedansvar
+
+- veilede ledere og vernetjeneste i systematisk HMS-arbeid
+- kvalitetssikre avvik, risikovurderinger, vernerunder og tiltaksoppfolging
+- koble sammen HMS-data, sykefravaerssignaler og konkrete lederhandlinger
+- bidra i AMU-spor og oppfolging etter interne eller eksterne paalegg
+
+## Must-have kvalifikasjoner
+
+- relevant hoyere utdanning eller tilsvarende faglig bakgrunn
+- erfaring med HMS, internkontroll eller arbeidsmiljoarbeid
+- evne til a strukturere data, tiltak og oppfolging i et tydelig styringsspor
+- god forstaelse for samarbeid med vernetjeneste og lederlinje
+
+## Onskede tilleggskvalifikasjoner
+
+- erfaring fra stor virksomhet eller offentlig sektor
+- erfaring med kvalitetssystem, avviksoppfolging eller AMU-arbeid
+- erfaring med forebyggende arbeidsmiljoarbeid og risikokommunikasjon
+
+## System- og arbeidsflate
+
+- kvalitetssystem, styringsdata og relevante HR- og arbeidsmiljokilder
+- tett samarbeid med ledere, verneombud, HVO, BHT og HR-sjef
+
+## Forste 12 maneder
+
+- styrke kvaliteten pa risikovurdering og lukking av HMS-avvik
+- etablere tydeligere kobling mellom arbeidsmiljodata og tiltak
+- bidra til bedre handover mellom HMS-spor, lederlinje og HR
+
+## Lokal verifikasjon for publisering
+
+- verifiser lokal HMS-organisering, AMU-struktur og BHT-avtale
+- verifiser om rollen ogsa har ansvar for beredskap eller sikkerhet
+- verifiser hvilke systemnavn som faktisk brukes lokalt

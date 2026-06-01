@@ -1,0 +1,34 @@
+# IT_PROSESSOVERSIKT
+
+## Formaal
+
+Denne oversikten kobler IT- og digitaliseringsomradets kjerneprosesser til roller, arbeidslop og operative masterfiler.
+
+## Prosesskart v1
+
+- `IT-01` tverrgaende systeminnforing og systemlivssyklus
+  - eier: system- eller tjenesteeier med innforingsansvar
+  - primarloep: simulering, beslutningsstotte, produksjon
+  - fil: `IT_KJERNEPROSESSER/IT-01_SYSTEMINNFORING_OG_SYSTEMLIVSSYKLUS.md`
+- `IT-02` virksomhetsarkitektur og informasjonsforvaltning
+  - eier: virksomhetsarkitekt eller tilsvarende
+  - primarloep: simulering, beslutningsstotte
+  - fil: `IT_KJERNEPROSESSER/IT-02_VIRKSOMHETSARKITEKTUR_OG_INFORMASJONSFORVALTNING.md`
+- `IT-03` digital sikkerhet og hendelseshandaering
+  - eier: informasjonssikkerhetsansvarlig
+  - primarloep: simulering, mote, produksjon
+  - fil: `IT_KJERNEPROSESSER/IT-03_DIGITAL_SIKKERHET_OG_HENDELSESHAANDTERING.md`
+- `IT-04` plattform, drift og brukerstoette
+  - eier: leder for drift og plattform
+  - primarloep: beslutningsstotte, mote
+  - fil: `IT_KJERNEPROSESSER/IT-04_PLATTFORM_DRIFT_OG_BRUKERSTOTTE.md`
+- `IT-05` digital tjenesteutvikling og gevinstoppfolging
+  - eier: digitaliseringsleder eller tjenesteeier
+  - primarloep: simulering, beslutningsstotte, produksjon
+  - fil: `IT_KJERNEPROSESSER/IT-05_DIGITAL_TJENESTEUTVIKLING_OG_GEVINST.md`
+
+## Bruksregel
+
+- bruk ett primart prosesskort om gangen
+- skill mellom arkitektur, sikkerhet, drift og innforing hvis saken krysser flere spor
+- marker alltid hva som er teknisk fakta, operativ konsekvens og anbefaling

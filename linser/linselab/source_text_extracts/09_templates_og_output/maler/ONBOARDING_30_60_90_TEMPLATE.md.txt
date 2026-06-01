@@ -1,0 +1,32 @@
+# ONBOARDING_30_60_90 TEMPLATE
+
+Status: prototype-mal v1
+
+## Metadata
+
+- role_id:
+- rolle:
+- leder:
+- startdato:
+
+## 0-30 dager
+
+- rolleforstaelse:
+- systemer og tilganger:
+- handover og kontaktpunkter:
+
+## 31-60 dager
+
+- leveranser:
+- lokale rutiner:
+- prioriterte forbedringspunkter:
+
+## 61-90 dager
+
+- stabil drift:
+- videre utviklingsbehov:
+- anbefalt oppfolging:
+
+## Lokal verifikasjon
+
+-

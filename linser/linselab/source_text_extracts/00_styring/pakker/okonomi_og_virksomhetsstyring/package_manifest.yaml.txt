@@ -1,0 +1,38 @@
+metadata:
+  package_id: okonomi_og_virksomhetsstyring
+  version: 2.0
+  status: active_docs_first_v2
+  last_validated: 2026-04-05
+
+domain_ref: 00_styring/manifester/domain_registry.yaml#okonomi_og_virksomhetsstyring
+model_ref: 10_kunnskapsbase/modeller/okonomi_og_virksomhetsstyring_v1.yaml
+testset_ref: 05_simulering/testsett/OKONOMI_TESTSETT_V1.md
+change_log_ref: 00_styring/pakker/okonomi_og_virksomhetsstyring/change_log.md
+
+active_masters:
+  - 00_styring/SYSTEMINSTRUKS.md
+  - 01_organisasjonsmodell/OKONOMI_OG_VIRKSOMHETSSTYRING_PILOT.md
+  - 01_organisasjonsmodell/OKONOMI_PROSESSOVERSIKT.md
+  - 03_agentroller/OKONOMI_OG_VIRKSOMHETSSTYRING_GUARDRAILS.md
+  - 03_agentroller/ROLLEKATALOG.md
+  - 04_orkestrering/AGENTKONTRAKTER.md
+  - 04_orkestrering/OPPDRAGSFORMAT_OG_TRACE.md
+
+prompt_entries:
+  - 05_simulering/OPPDRAG_SIMULER_OKONOMI_ELLER_STYRINGSSAK.md
+  - 06_beslutningsstotte/OPPDRAG_SKRIV_OKONOMI_BESLUTNINGSNOTAT.md
+  - 07_moter/OPPDRAG_FORBERED_STYRINGSMOTE.md
+  - 08_produksjon/OPPDRAG_PRODUSER_STYRINGSLEVERANSE.md
+
+templates:
+  - 09_templates_og_output/maler/SIMULERINGSNOTAT_TEMPLATE.md
+  - 09_templates_og_output/maler/BESLUTNINGSNOTAT_TEMPLATE.md
+  - 09_templates_og_output/maler/MOTEUNDERLAG_TEMPLATE.md
+  - 09_templates_og_output/maler/LEVERANSEUTKAST_TEMPLATE.md
+
+active_process_dirs:
+  - 01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER
+
+notes:
+  markdown_master_is_truth: true
+  package_controls_are_validation_only: true

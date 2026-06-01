@@ -1,0 +1,114 @@
+# TVILLINGSORGANISASJON
+
+## Formaal
+
+Tvillingsorganisasjonen skal vaere et operativt system for:
+
+- simulering
+- beslutningsstotte
+- moter og samhandling
+- bygging og produksjon av leveranser
+- laering, styring og videreutvikling
+
+Den skal ikke reduseres til et bibliotek av lose prompts. Den skal ha eksplisitt beslutningsrett, tydelige kontrakter, fasegater og lokal verifikasjon.
+
+## Styringsprinsipper
+
+- beslutningsrett skal være eksplisitt designet
+- styring skal være lett, hyppig og naer leveransen
+- forskning, utproeving og produksjon skal holdes tydelig adskilt
+- MVP er laeringsformat, ikke produksjonsloefte
+- faseoverganger og handover er styringsproblem
+- klientkapabilitet teller hvis intern teknologikapasitet er svak
+- plattformen skal muliggjore, ikke detaljstyre
+- sentraliserte oppsett krever lokal verifikasjon
+
+## Systemlag
+
+### 1. Styringslag
+- instruks
+- kildehierarki
+- klassifisering av materiale
+
+### 2. Linseplattform
+- indeks
+- kjernelinser
+- Gruppe L som operativt overgangslag
+
+### 3. Organisasjonslag
+- generisk tvillingsorganisasjon
+- HR som forste operative domene
+- senere stabsdomener og senere fagdomener utenfor stab
+
+### 4. Agentlag
+- dirigent
+- stabssjef
+- linseagenter
+- operative agenter
+- domene-tvilling
+
+### 5. Arbeidslop
+- simulering
+- beslutningsstotte
+- moter
+- produksjon
+
+### 6. Kildelag
+- robuste mastere
+- referansekilder
+- arkiv
+- karantene
+
+## Beslutningsrett
+
+### Dirigenten
+- har rett til aa route oppdrag til riktig lop og riktige agenter
+- har ikke rett til a fastsette endelig faglig anbefaling alene
+
+### Den virtuelle stabssjefen
+- har rett til aa syntetisere, prioritere og formulere beslutningsgrunnlag
+- har ikke rett til aa overstyre guardrails eller lokal verifikasjon
+
+### Linseagenter
+- har rett til aa levere perspektivspesifikk vurdering
+- har ikke rett til aa late som de er totalvurdering
+
+### Operative agenter
+- har rett til aa konkretisere gjennomforing, moter og leveranser
+- har ikke rett til aa hoppe over fasegater
+
+### HR-tvillingen
+- har rett til aa svare innen HR-domene under egne guardrails
+- har ikke rett til aa gi juridiske avgjorelser eller behandle sensitive personopplysninger
+
+## Faseadskillelse
+
+### Forskning
+- form: sondering, innhenting, hypoteser
+- output: innsikt og forslag
+
+### Utproeving / prototype
+- form: rask testing av struktur, kontrakt eller mal
+- output: laering og justering
+
+### Pilot
+- form: avgrenset bruk i et konkret domene
+- output: lokal validering, forbedret modell
+
+### Produksjon
+- form: stabilt lop med avklart ansvar og verifikasjon
+- output: leveranse eller beslutningsgrunnlag som kan brukes operativt
+
+## Sannhetskilder
+
+- Markdown er master nar samme innhold finnes i flere formater
+- `.docx` er kildemateriale, arbeidsutkast eller referanse
+- styringsfiler, indeksfiler og operative kontrakter har hoy verdi
+- dubletter og tom struktur skal ut av aktiv kjerne
+
+## Domeneavgrensning
+
+- HR er aktiv pilot, ikke hele stabsarkitekturen
+- resten av stabsdomenene skal beskrives som senere domener inntil de faktisk bygges
+- domener utenfor stab skal ikke blandes inn i HR eller stabsarkitektur for tidlig
+- linsebiblioteket er felles plattform for alle disse domenene

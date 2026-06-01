@@ -1,0 +1,34 @@
+# OPPDRAG_SIMULER_HR_SAK
+
+## Bruk nar
+
+- du vil teste et HR-scenario for konsekvenser, konfliktpunkter eller handlingsvalg
+
+## Det du fyller inn
+
+- scenario:
+- hva du vil finne ut:
+- tidshorisont:
+- hvilke lokale fakta som er sikre:
+- hva som er usikkert:
+
+## Starttekst
+
+Simuler denne HR-saken innenfor HR-piloten.
+
+Bruk bare aktive mastere, relevant prosesskort og HR-tvillings guardrails.
+Velg relevante roller og eventuelle linser.
+Skill tydelig mellom fakta, antakelser og anbefaling.
+Vis minst to handlingsalternativer.
+Koble inn operativ realitetstest hvis gjennomforing er viktig.
+
+Lever i dette formatet:
+1. scenario og avgrensning
+2. viktigste konfliktpunkter
+3. alternativ A, B og eventuelt C
+4. anbefalt retning
+5. hva som ma verifiseres lokalt
+
+## Forventet utfil
+
+- `09_templates_og_output/maler/SIMULERINGSNOTAT_TEMPLATE.md`

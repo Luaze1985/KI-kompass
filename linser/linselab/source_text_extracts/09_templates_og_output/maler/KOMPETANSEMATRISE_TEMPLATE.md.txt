@@ -1,0 +1,27 @@
+# KOMPETANSEMATRISE TEMPLATE
+
+Status: prototype-mal v1
+
+## Rolle og scope
+
+- role_id:
+- rolle:
+- enhet:
+
+## Must-have skills
+
+-
+
+## Should-have skills
+
+-
+
+## Bevis og vurdering
+
+- hvordan vises skillen i praksis:
+- hvordan vurderes den i intervju eller case:
+- hva ma laeres i onboarding:
+
+## Lokal verifikasjon
+
+-

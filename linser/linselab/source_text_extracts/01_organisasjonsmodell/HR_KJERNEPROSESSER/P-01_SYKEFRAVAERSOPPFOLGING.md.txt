@@ -1,0 +1,76 @@
+# P-01 SYKEFRAVAERSOPPFOLGING
+
+## Formaal
+
+Stotte ledere i komplekse sykefravaerssaker pa en maate som balanserer naervaer, arbeidsmiljo, tilrettelegging og lovmessig forsvarlighet.
+
+## Eier og roller
+
+- prosesseier: IA-radgiver
+- hovedutforer: linjeleder med HR-stotte
+- stotte: HMS-radgiver, HR-radgiver, bedriftshelsetjenesten, NAV Arbeidslivssenter
+- eskaleres til: HR-jurist ved hoy juridisk risiko
+
+## Trigger
+
+- hoyt eller langvarig sykefravaer
+- gjentatte fravaerslop
+- behov for tilrettelegging eller samordnet oppfolging
+
+## Input
+
+- fravaersbilde og tidslinje
+- sykmeldingsstatus, oppfolgingsplan og eventuelle tidligere dialogmoter
+- lederens problemforstaelse
+- dokumenterte oppfolgingspunkter
+- lokal praksis og relevante rutiner
+
+## Output
+
+- anbefalt oppfolgingslop
+- tydelig ansvarslinje mellom leder og HR
+- oversikt over tiltak, frister, eskalering og lokal verifikasjon
+
+## Hovedforlop
+
+1. Avklar fakta, rollefordeling og hva som allerede er gjort.
+2. Bekreft om oppfolgingsplan er laget innen fire uker nar sykefravaeret krever det, og marker avvik dersom dette ikke er gjort.
+3. Vurder risiko, arbeidsmiljo og behov for tilrettelegging med leder, HR og evt. HMS/BHT.
+4. Bekreft om dialogmote 1 ved sju uker er relevant eller om unntak ma forklares og verifiseres lokalt.
+5. Lag kort oppfolgingsplan med ansvar, frister og neste kontrollpunkt.
+6. Eskaler ved juridisk uklarhet, personvernrisiko eller fastlaast situasjon.
+
+## Viktigste risikoer
+
+- mangelfull dokumentasjon
+- for sen tilrettelegging
+- uklar rolle mellom leder, HR og HMS
+- at persondata behandles for bredt
+
+## Kontrollhandlinger
+
+- bruk faste oppfolgingspunkter og referatspor
+- hold oppfolgingsplan, dialogmoter og tilrettelegging i tydelig handlingsspor
+- avklar hvem som er beslutningseier i hvert steg
+- marker hva som er fakta, antakelse og anbefaling
+- stopp og eskaler dersom saken glir over i juridisk spor
+
+## Systemer og referanser
+
+- ERP X for fravaers- og personaldata
+- EQS for prosedyrer og avvik
+- Styringsportalen for naervaersbilde pa enhetsniva
+- NAV Dine sykmeldte eller tilsvarende arbeidsflate for oppfolgingsplan og dialogmoter
+- NAVs regler for oppfolging av sykmeldte brukes som stotte og ma verifiseres mot lokal praksis
+
+## Handover
+
+- handover_in: fra dirigent, leder eller HR-tvillingen ved kompleks fravaerssak
+- handover_out: til beslutningsnotat, moteunderlag eller lokal oppfolgingsplan
+
+## Lokal verifikasjon
+
+- bekreft at riktig leder er involvert
+- bekreft lokal praksis for oppfolgingsplan innen fire uker og dialogmote 1 innen sju uker
+- bekreft at lokalt oppfolgingslop er fulgt
+- bekreft at sensitiv informasjon ikke er losrevet fra behovet

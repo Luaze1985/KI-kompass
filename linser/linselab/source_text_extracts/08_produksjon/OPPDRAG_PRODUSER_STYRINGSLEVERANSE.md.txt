@@ -1,0 +1,25 @@
+# OPPDRAG_PRODUSER_STYRINGSLEVERANSE
+
+## Bruk nar
+
+- du skal lage et konkret styringsutkast basert pa godkjent tall- og beslutningsgrunnlag
+
+## Det du fyller inn
+
+- mottaker:
+- leveransetype:
+- formal:
+- frist:
+- hvilket prosesskort eller beslutningsgrunnlag som gjelder:
+
+## Starttekst
+
+Produser en styringsleveranse innenfor domenet okonomi og virksomhetsstyring.
+
+Bruk bare aktive mastere, relevant prosesskort og verifisert grunnlag.
+Ikke legg til nye tall eller effekter som ikke kan spores.
+Marker tydelig hva som ma kvalitetssikres lokalt for videre bruk.
+
+## Forventet utfil
+
+- `09_templates_og_output/maler/LEVERANSEUTKAST_TEMPLATE.md`

@@ -1,0 +1,96 @@
+# AGENT_PLAYBOOKS
+
+## Formaal
+
+Denne filen beskriver korte, operative playbooks for agenter som arbeider med HR-grunnmur, produksjon og revisjon.
+Playbooks er ikke nye arbeidslop. De er repeterbare minilop innenfor eksisterende kontrakter.
+
+## 1. Rolleutforming
+
+- primare_agenter: `HR-tvillingen`, `produksjonsagent`
+- bruk nar: en rolle skal beskrives, normaliseres eller sammenlignes mot prosesser og skills
+- input:
+  - rolleutkast eller rollebehov
+  - relevant prosesskort
+  - `HR_ROLLE_OG_KOMPETANSEMASTER.md`
+- steg:
+  1. finn korrekt kanonisk rolle eller marker at den mangler
+  2. koble rollen til enhet, prosesser, skills, artefakter og risikoer
+  3. skil mellom fast rolleinnhold og lokal variasjon
+  4. merk hva som ma verifiseres lokalt
+- output:
+  - rollekort
+  - oppdatert kodegrunnlag eller forslag til oppdatering
+
+## 2. Kompetansekartlegging
+
+- primare_agenter: `HR-tvillingen`, `kildevokteren`
+- bruk nar: roller, prosesser eller utlysninger trenger tydelig must-have og should-have skill-bilde
+- input:
+  - rolle-ID
+  - prosesseier og relevante prosesser
+  - skill-katalogen i HR-masteren
+- steg:
+  1. identifiser hvilke skills som er kritiske for rollen
+  2. skill mellom absolutte krav og styrkende tillegg
+  3. knytt skills til prosesser, systemer og artefakter
+  4. flagg drift mellom rollebeskrivelse og kodetabell
+- output:
+  - kompetansematrise
+  - forslag til oppdatert utlysning eller onboardingutkast
+
+## 3. Utlysningsskriving
+
+- primare_agenter: `produksjonsagent`
+- bruk nar: det finnes godkjent grunnlag for stillingsutlysning, kravprofil eller kandidatvurdering
+- input:
+  - `P-02_STRATEGISK_REKRUTTERING.md`
+  - `HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER.md`
+  - valgt rolle fra HR-masteren
+  - stillingsutlysningstemplate
+- steg:
+  1. hent kanonisk rolleinnhold og riktig template
+  2. skriv utlysning med samme kravbilde som kandidatvurderingen
+  3. hold lokale forhold i egen verifikasjonsblokk
+  4. stopp dersom rolleinnholdet ikke kan spores til master
+- output:
+  - stillingsutlysning
+  - kandidatvurdering og intervjuguide
+  - onboarding 30-60-90-utkast
+
+## 4. Kodetabellsynk
+
+- primare_agenter: `kildevokteren`
+- bruk nar: Markdown-mastere, modell og YAML/CSV-tabeller skal holdes synkronisert
+- input:
+  - aktuelle masterfiler
+  - relevante kodetabeller
+  - modellfil og manifestreferanser
+- steg:
+  1. sjekk at alle ID-er finnes ett sted i master og ett sted i speilfiler
+  2. sjekk at navn, rollebetegnelse og prosesskoblinger ikke har driftet
+  3. marker hva som er blokkert av manglende lokal verifikasjon
+  4. produser forslag, ikke patch direkte
+- output:
+  - kildeavviksliste
+  - forslag til patch-sett
+  - anbefalt eier for oppfolging
+
+## 5. Eval og retro
+
+- primare_agenter: `evalrevisoren`, `forbedringskoordinatoren`
+- bruk nar: et arbeidslop, en template eller en tabellsynk skal evalueres mot evalmatrise, red flags og Gate 4
+- input:
+  - `decision_trace`
+  - `handover_packet`
+  - relevant output og testscenario
+  - `eval_matrix.yaml`, `red_flags.yaml`, `FASEGATE_SJEKKLISTER.md`
+- steg:
+  1. vurder funn opp mot eval-dimensjoner og red flags
+  2. skill mellom blokkere, forbedringsforslag og lokale verifikasjonsbehov
+  3. prioriter forslag i rekkefolgen stopp, rett, standardiser
+  4. eskaler til riktig eier eller workflow
+- output:
+  - revisjonsnotat
+  - prioritert forbedringsliste
+  - anbefalt oppdragsinngang for neste steg

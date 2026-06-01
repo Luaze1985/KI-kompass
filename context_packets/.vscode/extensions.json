@@ -1,0 +1,9 @@
+﻿{
+    "notice":  "Auto-generated recommendations",
+    "recommendations":  [
+                            "alexcvzz.vscode-sqlite",
+                            "mtxr.sqltools",
+                            "eamodio.gitlens",
+                            "dbaeumer.vscode-eslint"
+                        ]
+}

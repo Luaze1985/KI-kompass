@@ -1,0 +1,23 @@
+metadata:
+  id: hr_units
+  version: 1.0
+  status: derived_from_markdown_master
+  master_ref: 01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md
+
+units:
+  - unit_id: U-01
+    name: HR_ledelse
+    lead_role: R-02
+    local_status: aktiv_pilot
+  - unit_id: U-02
+    name: HR_lederstotte_og_personalsaker
+    lead_role: R-03
+    local_status: aktiv_pilot
+  - unit_id: U-03
+    name: HR_rekruttering_og_kompetanse
+    lead_role: R-04
+    local_status: aktiv_pilot
+  - unit_id: U-04
+    name: HR_stabsfunksjoner
+    lead_role: R-02
+    local_status: aktiv_pilot

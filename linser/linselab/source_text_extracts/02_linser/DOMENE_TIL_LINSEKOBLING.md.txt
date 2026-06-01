@@ -1,0 +1,152 @@
+# DOMENE_TIL_LINSEKOBLING
+
+## Formaal
+
+Denne filen viser hvordan linsebiblioteket brukes for a bygge faktiske domener uten at biblioteket kollapser til en sekkepost.
+
+## Hovedregel
+
+- domener velges ut fra kommunestruktur og fagomrader
+- linser velges ut fra analysebehov
+- samme linse kan brukes i flere domener
+- samme domene skal ikke eie en linse eksklusivt
+
+## Minimumskobling per domene
+
+Hvert nytt domene skal kobles til:
+
+1. minst en systemlinse fra gruppe A
+2. minst en styrings- eller kontrolllinse fra gruppe D, K eller L
+3. minst en menneske-, bruker- eller kommunikasjonslinse der dette er relevant
+4. minst en operasjonaliseringslinse fra gruppe L
+
+## Plattform over domener
+
+Disse gruppene er felles ryggrad:
+
+- gruppe A
+- gruppe G
+- gruppe K
+- gruppe L
+
+## Domener med tyngdepunkt
+
+### HR og arbeidsgiver
+
+- F4
+- D1
+- D6
+- E1
+- E2
+- E5
+- K1
+- L1
+- L2
+- L6
+- L7
+
+### Okonomi og virksomhetsstyring
+
+- C1
+- C2
+- C3
+- A1
+- G2
+- G4
+- D2
+- D5
+- K1
+- L1
+- L6
+- L7
+
+### Organisasjon og teknologi
+
+- I1
+- I2
+- I3
+- D3
+- D4
+- D5
+- F1
+- G4
+- K1
+- L1
+- L2
+- L7
+
+### Helse og mestring
+
+- B1
+- D6
+- E1
+- E5
+- I3
+- G4
+- K1
+- L2
+- L3
+- L5
+- L7
+
+### Oppvekst
+
+- B1
+- B4
+- E1
+- E2
+- E5
+- G1
+- H1
+- I3
+- K1
+- L2
+- L3
+- L7
+
+### By- og stedsutvikling
+
+- A1
+- A3
+- C1
+- D1
+- D2
+- G2
+- H2
+- I2
+- K1
+- L1
+- L6
+- L7
+
+### Kultur og innbyggerdialog
+
+- B2
+- B4
+- E3
+- H1
+- H2
+- H3
+- I3
+- K1
+- L3
+- L6
+
+### Naering og NAV
+
+- C1
+- C3
+- E2
+- F5
+- G2
+- H1
+- K1
+- L2
+- L3
+- L6
+- L7
+
+## Bruksregel
+
+- hvis et domene ikke trenger en linse aktivt, skal linsen ikke presses inn
+- hvis flere domener bruker samme linse ulikt, lages dette i domeneoppsettet, ikke ved a duplisere linsen

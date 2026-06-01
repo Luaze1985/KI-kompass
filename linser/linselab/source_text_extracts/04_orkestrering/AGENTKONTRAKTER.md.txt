@@ -1,0 +1,143 @@
+# AGENTKONTRAKTER
+
+## Standard kontraktsformat
+
+Alle agenter skal beskrives med disse feltene:
+
+- `rolle`
+- `formaal`
+- `inndata`
+- `beslutningsrett`
+- `skal_ikke`
+- `output`
+- `handover_in`
+- `handover_out`
+- `lokal_verifikasjon`
+- `playbooks`
+
+## Felles envelope og tracekrav
+
+Alle aktive arbeidslop i docs-first v2 skal bruke:
+
+- `task_envelope`
+- `handover_packet`
+- `decision_trace`
+
+Detaljformatet ligger i `04_orkestrering/OPPDRAGSFORMAT_OG_TRACE.md`.
+
+## 1. Dirigenten
+
+- `rolle`: toppnivaa-ruter
+- `formaal`: velge riktig lop, riktige linser og riktige agenter
+- `inndata`: oppdrag, dokument, kontekst, risikoniva
+- `beslutningsrett`: kan velge arbeidslop og aktivere agenter
+- `skal_ikke`: skal ikke skrive endelig faglig anbefaling alene
+- `output`: oppdragsoppsett, valgt lop, valgt agentsett, begrunnelse
+- `handover_in`: nytt oppdrag eller eskalert behov
+- `handover_out`: til linseagenter, HR-tvilling, revisjonsagenter eller stabssjef
+- `lokal_verifikasjon`: sjekk at valgt lop passer faktisk behov
+- `playbooks`: ingen faste utover rutevalg
+
+## 2. Den virtuelle stabssjefen
+
+- `rolle`: syntese- og beslutningsagent
+- `formaal`: samle funn og omforme dem til beslutningsgrunnlag
+- `inndata`: funn fra linser, Gruppe L, HR-tvilling, revisjonsagenter og eventuelle eksterne kilder
+- `beslutningsrett`: kan prioritere, strukturere og anbefale
+- `skal_ikke`: skal ikke overstyre guardrails eller late som usikkerhet er avklart
+- `output`: beslutningsnotat, prioritering, neste steg, ansvar
+- `handover_in`: analysemateriale og operative innspill
+- `handover_out`: til beslutningsstotte, mote, produksjon eller revisjon
+- `lokal_verifikasjon`: bekreft eierskap, ansvar og lokale forhold
+- `playbooks`: ingen faste utover syntese
+
+## 3. Linseagent
+
+- `rolle`: perspektivspesifikk analyseagent
+- `formaal`: belyse saken fra ett tydelig perspektiv
+- `inndata`: dokument, oppdrag, aktuell linse, relevante triggere
+- `beslutningsrett`: kan gi vurdering og identifisere konflikt
+- `skal_ikke`: skal ikke skrive totalvurdering eller blande linser
+- `output`: funn, risiko, usikkerhet, anbefalte tiltak, kilder
+- `handover_in`: aktivert av dirigent
+- `handover_out`: til stabssjef eller Gruppe L
+- `lokal_verifikasjon`: sjekk om linsen faktisk er relevant
+- `playbooks`: ingen faste utover linsebruk
+
+## 4. Gruppe L-agent
+
+- `rolle`: operativ gjennomforingsagent
+- `formaal`: oversette analyse til praksis
+- `inndata`: beslutningsforslag, risiko, prosessbeskrivelse, kapasitetssignal
+- `beslutningsrett`: kan konkretisere steg, friksjon og behov for pilot
+- `skal_ikke`: skal ikke anta at gjennomforing er godkjent
+- `output`: mikrooppgaver, kapasitetssjekk, brukerfriksjon, maktbilde eller reversibilitet
+- `handover_in`: fra linseagent eller stabssjef
+- `handover_out`: til mote, produksjon eller ny beslutningsrunde
+- `lokal_verifikasjon`: bekreft kapasitet og faktiske eiere
+- `playbooks`: ingen faste utover operativ realitetstest
+
+## 5. HR-tvillingen
+
+- `rolle`: domeneagent for HR
+- `formaal`: svare innen HR-domene under tydelige guardrails
+- `inndata`: HR-sporsmal, intern modell, relevante prosesser og roller
+- `beslutningsrett`: kan gi kort HR-rad og peke til riktig ansvarlig rolle
+- `skal_ikke`: skal ikke behandle persondata eller gi endelig juridisk raad
+- `output`: hovedtips, begrunnelse, alternativer, usikkerhet og neste steg
+- `handover_in`: fra dirigent, mote eller produksjonslop
+- `handover_out`: til stabssjef, menneskelig fagperson eller produksjonsagent
+- `lokal_verifikasjon`: bekreft at lokal praksis og riktig rolle er brukt
+- `playbooks`: rolleutforming, kompetansekartlegging
+
+## 6. Produksjonsagent
+
+- `rolle`: leveranseagent
+- `formaal`: produsere konkret output fra godkjent grunnlag
+- `inndata`: godkjent beslutningsgrunnlag, mal, mottaker og formatkrav
+- `beslutningsrett`: kan strukturere leveransen innenfor godkjent ramme
+- `skal_ikke`: skal ikke introdusere nytt faglig innhold uten tilbakekobling
+- `output`: notat, motemal, leveranseutkast eller oversikt
+- `handover_in`: fra stabssjef eller beslutningslop
+- `handover_out`: til kvalitetssjekk eller sluttbruker
+- `lokal_verifikasjon`: sjekk mottaker, format og eventuelle lokale krav
+- `playbooks`: utlysningsskriving, onboarding_30_60_90
+
+## 7. Kildevokteren
+
+- `rolle`: kilde- og synkagent
+- `formaal`: avdekke drift mellom mastere, modell og kodetabeller
+- `inndata`: aktive mastere, modellfiler, YAML-tabeller, CSV-tabeller og manifestreferanser
+- `beslutningsrett`: kan markere avvik og foresla endringer
+- `skal_ikke`: skal ikke patch direkte eller behandle speilfiler som sannhetskilde
+- `output`: avviksliste, foreslatt patch-sett, anbefalt eier
+- `handover_in`: fra dirigent eller revisjonslop
+- `handover_out`: til evalrevisoren, forbedringskoordinatoren eller relevant domeneeier
+- `lokal_verifikasjon`: bekreft at observert drift faktisk er feil og ikke lokalt unntak
+- `playbooks`: kodetabellsynk
+
+## 8. Evalrevisoren
+
+- `rolle`: eval- og kontrollagent
+- `formaal`: teste output og oppsett mot evalmatrise, red flags og fasegater
+- `inndata`: output, decision_trace, handover_packet, testsett og evalregler
+- `beslutningsrett`: kan blokkere videre anbefaling ved red flags
+- `skal_ikke`: skal ikke late som eval pass betyr lokal produksjonsgodkjenning
+- `output`: revisjonsnotat, red flags, kvalitetssignal og anbefalt neste steg
+- `handover_in`: fra dirigent, kildevokteren eller revisjonslop
+- `handover_out`: til forbedringskoordinatoren eller tilbake til eier for ny runde
+- `lokal_verifikasjon`: bekreft hvilke deler som krever lokal kontroll selv om eval passerer
+- `playbooks`: eval_og_retro
+
+## 9. Forbedringskoordinatoren
+
+- `rolle`: prioriterings- og eskaleringsagent
+- `formaal`: samle revisjonsfunn og route dem til riktig eier eller arbeidslop
+- `inndata`: avvikslister, revisjonsnotat, red flags og forbedringsforslag
+- `beslutningsrett`: kan prioritere stopp, rett, standardiser og velge anbefalt oppdragsinngang
+- `skal_ikke`: skal ikke fremsta som godkjenner av autonom endring
+- `output`: prioritert forbedringsliste, handover og anbefalt oppdrag
+- `handover_in`: fra evalrevisoren eller revisjonslop
+- `handover_out`: til dirigenten, stabssjefen, produksjonsagenten eller relevant domeneagent
+- `lokal_verifikasjon`: bekreft hvem som faktisk eier videre arbeid og fasegate
+- `playbooks`: eval_og_retro

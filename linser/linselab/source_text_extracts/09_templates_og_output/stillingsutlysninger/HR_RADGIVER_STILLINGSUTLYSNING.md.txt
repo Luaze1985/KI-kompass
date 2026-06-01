@@ -1,0 +1,55 @@
+# HR_RADGIVER STILLINGSUTLYSNING
+
+Status: avledet produksjonsartefakt v1
+
+## Metadata
+
+- role_id: `R-05`
+- unit_id: `U-02`
+- styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+- local_status: krever_lokal_tilpasning_for_publisering
+
+## Kort annonsetekst
+
+Vi soker en HR-radgiver som kan gi tydelig og gjennomforbar lederstotte i personalsaker, prosess og dokumentasjon. Du ma like a gjore det kompliserte oversiktlig og hjelpe ledere med a komme videre pa en trygg og strukturert mate.
+
+## Formaal med stillingen
+
+Gi operativ lederstotte i personalsaker og HR-prosesser med tydelig skille mellom rad, beslutning og eskalering.
+
+## Hovedansvar
+
+- veilede ledere i HR-prosesser, dokumentasjon og neste steg
+- bidra i personalsaker med struktur, referatspor og handover
+- koble inn riktig fagkompetanse ved juridisk, HMS- eller personvernmessig behov
+- bidra til klarsprak og mottakertilpasset HR-kommunikasjon
+
+## Must-have kvalifikasjoner
+
+- relevant hoyere utdanning
+- erfaring fra HR-radgivning, lederstotte eller tilsvarende funksjon
+- god skriftlig og muntlig framstillingsevne
+- forstaelse for personvern, dokumentasjon og prosessdisiplin
+
+## Onskede tilleggskvalifikasjoner
+
+- erfaring fra offentlig sektor
+- erfaring med personalsaker, sykefravaersoppfolging eller omstillingslop
+- erfaring med kvalitetssystem eller sak- og arkivarbeid
+
+## System- og arbeidsflate
+
+- kvalitetssystem, sak- og arkivlosning og relevante HR-systemer
+- tett samarbeid med ledere, IA-radgiver, HR-jurist og avdelingssjef
+
+## Forste 12 maneder
+
+- bli trygg pa kommunens viktigste personalsakslop
+- bidra til tydeligere handover og bedre dokumentflyt
+- styrke klarsprak og kvalitet i skriftlige HR-leveranser
+
+## Lokal verifikasjon for publisering
+
+- verifiser om rollen har generell eller spesialisert portefolje
+- verifiser lokalt systemlandskap og arbeidsdeling mot HR-jurist
+- verifiser hvilke sektorer eller enheter rollen skal stotte

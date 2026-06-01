@@ -1,0 +1,643 @@
+# PREFIKSER OG NAVNEROM
+
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+@prefix hr:   <http://kristiansand.kommune.no/hr-ontologi#> .
+
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# -----------------------------------------------------------------
+
+# DEL 1.1: DEFINISJON AV KJERNEKONSEPTENE (KLASSENE)
+
+# -----------------------------------------------------------------
+
+hr:HR_Rolle a skos:Concept ;
+
+skos:prefLabel "HR Rolle"@no ;
+
+skos:definition "En definert, formell rolle innehatt av en eller flere personer innenfor HR-enheten."@no .
+
+hr:Fagområde a skos:Concept ;
+
+skos:prefLabel "HR Fagområde/Team"@no ;
+
+skos:definition "Et spesialisert team eller en funksjonell gruppering av oppgaver og roller innenfor HR-enheten."@no .
+
+hr:HR_Prosess a skos:Concept ;
+
+skos:prefLabel "HR Prosess"@no ;
+
+skos:definition "En serie av relaterte HR-oppgaver som utføres for å oppnå et bestemt resultat."@no .
+
+hr:HR_Oppgave a skos:Concept ;
+
+skos:prefLabel "HR Oppgave"@no ;
+
+skos:definition "En spesifikk, avgrenset arbeidsoppgave innenfor en HR-prosess."@no .
+
+hr:System a skos:Concept ;
+
+skos:prefLabel "Digitalt System"@no ;
+
+skos:definition "Et digitalt verktøy eller fagsystem som støtter en HR-prosess."@no .
+
+hr:Dokument a skos:Concept ;
+
+skos:prefLabel "Dokument/Artefakt"@no ;
+
+skos:definition "Et formelt dokument eller et annet informasjonsbærende produkt generert av en HR-prosess (f.eks. kontrakt, rapport)."@no .
+
+hr:KPI a skos:Concept ;
+
+skos:prefLabel "Nøkkelindikator (KPI)"@no ;
+
+skos:definition "En målbar verdi som demonstrerer effektiviteten av en HR-prosess."@no .
+
+hr:Utfordring a skos:Concept ;
+
+skos:prefLabel "Organisatorisk Utfordring"@no ;
+
+skos:definition "En kjent utfordring eller et problemområde knyttet til en HR-prosess eller rolle."@no .
+
+hr:Lovverk_og_Rammeverk a skos:Concept ;
+
+skos:prefLabel "Lovverk og Rammeverk"@no ;
+
+skos:definition "Eksterne lover, tariffavtaler eller interne policyer som styrer HR-arbeidet."@no .
+
+# -----------------------------------------------------------------
+
+# DEL 1.2: DEFINISJON AV RELASJONSEGENSKAPER (PREDIKATER)
+
+# -----------------------------------------------------------------
+
+hr:rapporterer_til a rdf:Property ;
+
+rdfs:label "rapporterer til"@no .
+
+hr:leder_for a rdf:Property ;
+
+rdfs:label "leder for"@no .
+
+hr:tilhører_fagområde a rdf:Property ;
+
+rdfs:label "tilhører fagområde"@no .
+
+hr:har_ansvar_for a rdf:Property ;
+
+rdfs:label "har ansvar for"@no .
+
+hr:samarbeider_med a rdf:Property ;
+
+rdfs:label "samarbeider med"@no .
+
+hr:støtter a rdf:Property ;
+
+rdfs:label "støtter"@no .
+
+hr:eskalerer_til a rdf:Property ;
+
+rdfs:label "eskalerer til"@no .
+
+hr:leverer_grunnlag_til a rdf:Property ;
+
+rdfs:label "leverer grunnlag til"@no .
+
+hr:bruker_system a rdf:Property ;
+
+rdfs:label "bruker system"@no .
+
+# -----------------------------------------------------------------
+
+# DEL 1.3: MODELLERING AV TOPPHIERARKIET
+
+# -----------------------------------------------------------------
+
+hr:rolle_Organisasjonsdirektør a skos:Concept, hr:HR_Rolle ;
+
+skos:prefLabel "Organisasjonsdirektør"@no ;
+
+skos:definition "Topplederstilling med overordnet ansvar for HR-enheten og andre stabsfunksjoner."@no ;
+
+hr:leder_for hr:rolle_HR_Sjef .
+
+hr:rolle_HR_Sjef a skos:Concept, hr:HR_Rolle ;
+
+skos:broader hr:rolle_Organisasjonsdirektør ;
+
+skos:prefLabel "HR-sjef"@no ;
+
+skos:definition "Leder for hele HR-enheten. Har overordnet strategisk og administrativt ansvar."@no ;
+
+skos:note "Ansvarsområdet er noe flytende i grensesnittet mot Organisasjonsdirektør, som tar de viktigste, prinsipielle beslutningene."@no ;
+
+hr:rapporterer_til hr:rolle_Organisasjonsdirektør ;
+
+hr:leder_for hr:rolle_Avdelingssjef_Lederstøtte ;
+
+hr:leder_for hr:rolle_Avdelingssjef_Rekruttering ;
+
+hr:leder_for hr:rolle_Forhandlingsrådgiver ;
+
+hr:leder_for hr:rolle_HMS_Rådgiver ;
+
+hr:har_ansvar_for hr:prosess_HR_Strategi ;
+
+hr:har_ansvar_for hr:prosess_Partssamarbeid_Overordnet ;
+
+hr:har_ansvar_for hr:konsept_Personalpolitikk .
+
+hr:rolle_Avdelingssjef_Lederstøtte a skos:Concept, hr:HR_Rolle ;
+
+skos:broader hr:rolle_HR_Sjef ;
+
+skos:prefLabel "Avdelingssjef - Lederstøtte og Personalsaker"@no ;
+
+skos:definition "Leder for avdelingen som yter operativ, administrativ og juridisk støtte til linjeledere."@no ;
+
+hr:rapporterer_til hr:rolle_HR_Sjef .
+
+hr:rolle_Avdelingssjef_Rekruttering a skos:Concept, hr:HR_Rolle ;
+
+skos:broader hr:rolle_HR_Sjef ;
+
+skos:prefLabel "Avdelingssjef - Rekruttering og Kompetanseutvikling"@no ;
+
+skos:definition "Leder for avdelingen som har ansvar for å tiltrekke og utvikle kompetanse i kommunen."@no ;
+
+hr:rapporterer_til hr:rolle_HR_Sjef .
+
+# -----------------------------------------------------------------
+
+# DEL 1.4: MODELLERING AV STABSFUNKSJONENE
+
+# -----------------------------------------------------------------
+
+hr:rolle_Forhandlingsrådgiver a skos:Concept, hr:HR_Rolle ;
+
+skos:prefLabel "Forhandlingsrådgiver"@no ;
+
+skos:altLabel "Forhandlingsleder"@no ;
+
+skos:definition "Stabsfunksjon og spesialist på lønnsforhandlinger, tariffavtaler og lokale særavtaler."@no ;
+
+hr:rapporterer_til hr:rolle_HR_Sjef ;
+
+hr:tilhører_fagområde hr:fagområde_Arbeidsrett_og_Forhandling ;
+
+hr:har_ansvar_for hr:prosess_Lønnsforhandling_Lokal ;
+
+hr:samarbeider_med hr:rolle_Tillitsvalgte .
+
+hr:rolle_HMS_Rådgiver a skos:Concept, hr:HR_Rolle ;
+
+skos:prefLabel "HMS-rådgiver"@no ;
+
+skos:definition "Stabsfunksjon og spesialist på systematisk HMS-arbeid, risikovurdering og fysisk arbeidsmiljø."@no ;
+
+skos:note "Rollen har IKKE ansvar for IA/sykefravær, varsling eller AKAN i denne organisasjonsmodellen."@no ;
+
+hr:rapporterer_til hr:rolle_HR_Sjef ;
+
+hr:tilhører_fagområde hr:fagområde_HMS ;
+
+hr:har_ansvar_for hr:prosess_Systematisk_HMS_Arbeid ;
+
+hr:samarbeider_med hr:rolle_Hovedverneombud ;
+
+hr:samarbeider_med hr:system_Arbeidstilsynet .
+
+# PREFIKSER OG NAVNEROM (for fullstendighet i hver del)
+
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+@prefix hr:   <http://kristiansand.kommune.no/hr-ontologi#> .
+
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# -----------------------------------------------------------------
+
+# DEL 2.1: AVDELING FOR LEDERSTØTTE OG PERSONALSaker
+
+# -----------------------------------------------------------------
+
+# Formell kobling fra Avdelingssjef (definert i Del 1) til fagområdene
+
+hr:rolle_Avdelingssjef_Lederstøtte
+
+hr:leder_for hr:fagområde_Lederstøtte_Generell ;
+
+hr:leder_for hr:fagområde_IA_og_Sykefravær ;
+
+hr:leder_for hr:fagområde_Arbeidsrett ;
+
+hr:leder_for hr:fagområde_HR_Administrasjon_og_Forvaltning .
+
+# Fagområde: Generell Lederstøtte
+
+hr:fagområde_Lederstøtte_Generell a skos:Concept, hr:Fagområde ;
+
+skos:prefLabel "Fagområde: Generell Lederstøtte"@no ;
+
+skos:definition "Team av generalister som fungerer som primærkontakt og førstelinjestøtte for kommunens linjeledere i operative personalsaker."@no ;
+
+skos:note "Teamet opererer etter en 'Kompetansemegler'-modell, der de diagnostiserer behov og kobler ledere til riktig spesialist."@no .
+
+# Fagområde: IA og Sykefravær
+
+hr:fagområde_IA_og_Sykefravær a skos:Concept, hr:Fagområde ;
+
+skos:prefLabel "Fagområde: IA og Sykefravær"@no ;
+
+skos:definition "Spesialisert team som jobber dedikert med oppfølging av sykmeldte, forebyggende nærværsarbeid og inkluderende arbeidsliv (IA)."@no .
+
+# Fagområde: Arbeidsrett
+
+hr:fagområde_Arbeidsrett a skos:Concept, hr:Fagområde ;
+
+skos:prefLabel "Fagområde: Arbeidsrett"@no ;
+
+skos:definition "Spesialistteam av jurister som håndterer komplekse personalsaker, tvister og gir arbeidsrettslig rådgivning med høy risiko."@no .
+
+# Fagområde: HR Administrasjon og Forvaltning
+
+hr:fagområde_HR_Administrasjon_og_Forvaltning a skos:Concept, hr:Fagområde ;
+
+skos:prefLabel "Fagområde: HR Administrasjon og Forvaltning"@no ;
+
+skos:definition "Team som utfører de grunnleggende, transaksjonelle HR-oppgavene som personaladministrasjon, permisjoner, ferie og forvaltning av forsikrings- og pensjonsordninger."@no ;
+
+skos:note "Dette fagområdet leverer beslutningsgrunnlag til Lønnsavdelingen, men har ikke selv ansvar for lønnsgrunnlag eller kontraktsadministrasjon."@no .
+
+# Operative Roller i Avdelingen
+
+hr:rolle_HR_Rådgiver a skos:Concept, hr:HR_Rolle ;
+
+skos:broader hr:rolle_Avdelingssjef_Lederstøtte ;
+
+skos:prefLabel "HR-rådgiver"@no ;
+
+skos:definition "Operativ generalistrolle som gir lederstøtte og saksbehandler."@no ;
+
+hr:tilhører_fagområde hr:fagområde_Lederstøtte_Generell ;
+
+hr:tilhører_fagområde hr:fagområde_IA_og_Sykefravær ; # HR-rådgivere jobber i begge teamene
+
+hr:har_ansvar_for hr:prosess_Sykefraværsoppfølgning ;
+
+hr:støtter hr:rolle_Linjeleder ;
+
+hr:eskalerer_til hr:fagområde_Arbeidsrett .
+
+hr:rolle_HR_Jurist a skos:Concept, hr:HR_Rolle ;
+
+skos:broader hr:rolle_Avdelingssjef_Lederstøtte ;
+
+skos:prefLabel "HR-jurist"@no ;
+
+skos:definition "Spesialistrolle som utreder og håndterer komplekse, arbeidsrettslige saker."@no ;
+
+hr:tilhører_fagområde hr:fagområde_Arbeidsrett ;
+
+hr:har_ansvar_for hr:prosess_Kompleks_Personalsak ;
+
+hr:samarbeider_med hr:rolle_Kommuneadvokaten .
+
+# -----------------------------------------------------------------
+
+# DEL 2.2: AVDELING FOR REKRUTTERING OG KOMPETANSEUTVIKLING
+
+# -----------------------------------------------------------------
+
+# Formell kobling fra Avdelingssjef (definert i Del 1) til fagområdene
+
+hr:rolle_Avdelingssjef_Rekruttering
+
+hr:leder_for hr:fagområde_Rekruttering ;
+
+hr:leder_for hr:fagområde_Kompetanse_og_Utvikling ;
+
+hr:leder_for hr:fagområde_Lærlingordning .
+
+# Fagområde: Rekruttering
+
+hr:fagområde_Rekruttering a skos:Concept, hr:Fagområde ;
+
+skos:prefLabel "Fagområde: Rekruttering"@no ;
+
+skos:definition "Team som håndterer hele rekrutteringsprosessen fra A til Å, inkludert employer branding og onboarding."@no .
+
+# Fagområde: Kompetanse og Utvikling
+
+hr:fagområde_Kompetanse_og_Utvikling a skos:Concept, hr:Fagområde ;
+
+skos:prefLabel "Fagområde: Kompetanse og Utvikling"@no ;
+
+skos:definition "Team som har ansvar for strategisk og operativ kompetanseheving, inkludert lederutvikling og e-læring."@no ;
+
+skos:note "Det finnes ingen formell 'Kompetanserådgiver'-rolle; oppgavene er fordelt på medarbeidere i avdelingen."@no .
+
+# Fagområde: Lærlingordning
+
+hr:fagområde_Lærlingordning a skos:Concept, hr:Fagområde ;
+
+skos:prefLabel "Fagområde: Lærlingordning"@no ;
+
+skos:definition "Team (ofte én person) som administrerer og utvikler kommunens lærlingordning."@no .
+
+# Operative Roller i Avdelingen
+
+hr:rolle_Rekrutteringsrådgiver a skos:Concept, hr:HR_Rolle ;
+
+skos:broader hr:rolle_Avdelingssjef_Rekruttering ;
+
+skos:prefLabel "Rekrutteringsrådgiver"@no ;
+
+skos:definition "Spesialist som administrerer rekrutteringsprosesser og gir råd til ledere."@no ;
+
+hr:tilhører_fagområde hr:fagområde_Rekruttering ;
+
+hr:har_ansvar_for hr:prosess_Rekruttering ;
+
+hr:bruker_system hr:system_Webcruiter .
+
+hr:rolle_Lærlingkoordinator a skos:Concept, hr:HR_Rolle ;
+
+skos:broader hr:rolle_Avdelingssjef_Rekruttering ;
+
+skos:prefLabel "Lærlingkoordinator"@no ;
+
+skos:definition "Spesialist som følger opp lærlinger og administrerer lærlingordningen."@no ;
+
+hr:tilhører_fagområde hr:fagområde_Lærlingordning ;
+
+hr:har_ansvar_for hr:prosess_Lærlinginntak ;
+
+hr:samarbeider_med hr:system_Fylkeskommunen .
+
+# -----------------------------------------------------------------
+
+# DEL 2.3: DEFINISJON AV SENTRALE PROSESSER
+
+# -----------------------------------------------------------------
+
+hr:prosess_Sykefraværsoppfølgning a skos:Concept, hr:HR_Prosess ;
+
+skos:prefLabel "Prosess: Sykefraværsoppfølgning"@no ;
+
+skos:definition "Formell prosess forankret i AML og IA-avtalen for oppfølging av sykmeldte."@no ;
+
+skos:note "Antagelse: Prosessen involverer en fast tidslinje for dialogmøter. Informasjonsflyten mellom leder, HR-rådgiver og saksbehandler er en potensiell flaskehals."@no ;
+
+hr:påvirkes_av hr:rammeverk_AML ;
+
+hr:påvirkes_av hr:rammeverk_IA_Avtalen .
+
+hr:prosess_Rekruttering a skos:Concept, hr:HR_Prosess ;
+
+skos:prefLabel "Prosess: Rekruttering"@no ;
+
+skos:definition "Standardisert prosess som følger kvalifikasjonsprinsippet for å fylle ledige stillinger."@no ;
+
+skos:note "Antagelse: Involverer utlysning i Webcruiter, screening, intervjuer (ofte med tillitsvalgte til stede), og referansesjekk."@no ;
+
+hr:påvirkes_av hr:rammeverk_Kvalifikasjonsprinsippet .
+
+hr:prosess_Kompleks_Personalsak a skos:Concept, hr:HR_Prosess ;
+
+skos:prefLabel "Prosess: Håndtering av Kompleks Personalsak"@no ;
+
+skos:definition "Prosess for håndtering av personalsaker med høy juridisk risiko, som oppsigelse eller tvister."@no ;
+
+skos:note "Antagelse: Saken starter hos HR-rådgiver/linjeleder og eskalerer til fagområde Arbeidsrett. Ved behov for rettslige skritt, tas saken videre til Kommuneadvokaten."@no .
+
+hr:prosess_Lederutvikling a skos:Concept, hr:HR_Prosess ;
+
+skos:prefLabel "Prosess: Lederutvikling"@no ;
+
+skos:definition "Prosesser knyttet til design, gjennomføring og evaluering av lederutviklingstiltak."@no .
+
+hr:prosess_Lærlinginntak a skos:Concept, hr:HR_Prosess ;
+
+skos:prefLabel "Prosess: Lærlinginntak"@no ;
+
+skos:definition "Årlig prosess for rekruttering og ansettelse av nye lærlinger."@no .
+
+# PREFIKSER OG NAVNEROM (for fullstendighet i hver del)
+
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+@prefix hr:   <http://kristiansand.kommune.no/hr-ontologi#> .
+
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# -----------------------------------------------------------------
+
+# DEL 3.1: GJENVÆRENDE FAGOMRÅDER OG SYSTEMER
+
+# -----------------------------------------------------------------
+
+# Fagområde: HR Prosjekt og Utvikling (Ad hoc)
+
+hr:fagområde_HR_Prosjekt_og_Utvikling a skos:Concept, hr:Fagområde ;
+
+skos:prefLabel "Fagområde: HR Prosjekt og Utvikling"@no ;
+
+skos:definition "Et fleksibelt fagområde for oppgaver som faller utenfor den daglige driften, som utredninger og implementering av nye systemer."@no ;
+
+skos:note "Arbeidet er prosjektbasert og tidsavgrenset. Ansvarlig rolle varierer."@no .
+
+# Definering av sentrale systemer
+
+hr:system_Webcruiter a skos:Concept, hr:System ;
+
+skos:prefLabel "Webcruiter"@no ;
+
+skos:definition "Digitalt fagsystem for rekruttering."@no .
+
+hr:system_Lønn a skos:Concept, hr:System ;
+
+skos:prefLabel "Lønnssystem"@no ;
+
+skos:definition "Digitalt fagsystem for lønnsutbetaling. Forvaltes av Lønnsavdelingen."@no .
+
+hr:system_HMS a skos:Concept, hr:System ;
+
+skos:prefLabel "HMS-system"@no ;
+
+skos:definition "Digitalt fagsystem for systematisk HMS-rapportering og avvikshåndtering."@no .
+
+# -----------------------------------------------------------------
+
+# DEL 3.2: EKSTERNE AKTØRER OG INTERNE PARTNERE
+
+# -----------------------------------------------------------------
+
+hr:rolle_Linjeleder a skos:Concept ;
+
+skos:prefLabel "Linjeleder"@no ;
+
+skos:definition "Generell betegnelse på ledere med personalansvar ute i kommunens tjenesteområder (f.eks. enhetsleder, rektor)."@no .
+
+hr:rolle_Tillitsvalgte a skos:Concept ;
+
+skos:prefLabel "Tillitsvalgte"@no ;
+
+skos:definition "Ansattrepresentanter fra fagforeninger. Sentral part i Partssamarbeidet."@no .
+
+hr:rolle_Hovedverneombud a skos:Concept ;
+
+skos:prefLabel "Hovedverneombud"@no ;
+
+skos:definition "Ansattrepresentant med særskilt ansvar for arbeidsmiljø. Sentral part i HMS-arbeidet."@no .
+
+hr:rolle_Kommuneadvokaten a skos:Concept ;
+
+skos:prefLabel "Kommuneadvokaten"@no ;
+
+skos:definition "Kommunens øverste juridiske rådgiver. Er faglig overordnet for HR-juristene i rettslige prosesser."@no .
+
+hr:system_NAV a skos:Concept ;
+
+skos:prefLabel "NAV"@no ;
+
+skos:definition "Ekstern samarbeidspartner knyttet til sykefravær, IA-arbeid og refusjoner."@no .
+
+hr:system_Arbeidstilsynet a skos:Concept ;
+
+skos:prefLabel "Arbeidstilsynet"@no ;
+
+skos:definition "Ekstern tilsynsmyndighet for HMS og arbeidsmiljø."@no .
+
+hr:system_Fylkeskommunen a skos:Concept ;
+
+skos:prefLabel "Fylkeskommunen"@no ;
+
+skos:definition "Ekstern samarbeidspartner og myndighet for lærlingordningen."@no .
+
+# -----------------------------------------------------------------
+
+# DEL 3.3: SENTRALE TVERRGÅENDE RELASJONER
+
+# -----------------------------------------------------------------
+
+# Relasjonen mellom HR og Linjeledere
+
+hr:fagområde_Lederstøtte_Generell
+
+hr:støtter hr:rolle_Linjeleder .
+
+hr:fagområde_IA_og_Sykefravær
+
+hr:støtter hr:rolle_Linjeleder .
+
+# Relasjonen mellom HR og Lønn
+
+hr:fagområde_HR_Administrasjon_og_Forvaltning
+
+hr:leverer_grunnlag_til hr:system_Lønn .
+
+# Relasjonen mellom HR og Partene
+
+hr:rolle_HR_Sjef
+
+hr:samarbeider_med hr:rolle_Hovedtillitsvalgte .
+
+hr:rolle_HMS_Rådgiver
+
+hr:samarbeider_med hr:rolle_Hovedverneombud .
+
+hr:rolle_Forhandlingsrådgiver
+
+hr:samarbeider_med hr:rolle_Tillitsvalgte .
+
+# Eskaleringsflyt
+
+hr:fagområde_Lederstøtte_Generell
+
+hr:eskalerer_til hr:fagområde_Arbeidsrett .
+
+hr:fagområde_Arbeidsrett
+
+hr:eskalerer_til hr:rolle_Kommuneadvokaten .
+
+# -----------------------------------------------------------------
+
+# DEL 3.4: KONTEKSTUELLE RAMMEVERK, KPIer OG UTFORDRINGER
+
+# -----------------------------------------------------------------
+
+# Lovverk og Rammeverk
+
+hr:rammeverk_AML a skos:Concept, hr:Lovverk_og_Rammeverk ;
+
+skos:prefLabel "Arbeidsmiljøloven (AML)"@no .
+
+hr:rammeverk_Hovedtariffavtalen a skos:Concept, hr:Lovverk_og_Rammeverk ;
+
+skos:prefLabel "Hovedtariffavtalen (HTA)"@no .
+
+hr:rammeverk_Kvalifikasjonsprinsippet a skos:Concept, hr:Lovverk_og_Rammeverk ;
+
+skos:prefLabel "Kvalifikasjonsprinsippet"@no .
+
+hr:rammeverk_IA_Avtalen a skos:Concept, hr:Lovverk_og_Rammeverk ;
+
+skos:prefLabel "IA-avtalen (Inkluderende Arbeidsliv)"@no .
+
+# Nøkkelindikatorer (KPIer)
+
+hr:kpi_Sykefraværsprosent a skos:Concept, hr:KPI ;
+
+skos:prefLabel "Sykefraværsprosent"@no .
+
+hr:kpi_Tid_til_Ansettelse a skos:Concept, hr:KPI ;
+
+skos:prefLabel "Tid til Ansettelse (Time to Hire)"@no .
+
+hr:kpi_Kvalitet_på_Ansettelse a skos:Concept, hr:KPI ;
+
+skos:prefLabel "Kvalitet på Ansettelse (Quality of Hire)"@no .
+
+hr:kpi_Gjennomføringsgrad_Lærlinger a skos:Concept, hr:KPI ;
+
+skos:prefLabel "Gjennomføringsgrad for lærlinger"@no .
+
+# Utfordringer
+
+hr:utfordring_Strategisk_Kompetansegap a skos:Concept, hr:Utfordring ;
+
+skos:prefLabel "Strategisk Kompetansegap"@no ;
+
+skos:definition "Utfordring knyttet til at linjeledere ikke vet hva de skal be om, og at HRs tilbud ikke oppleves som relevant for driften."@no .
+
+hr:utfordring_Rekrutteringsvansker a skos:Concept, hr:Utfordring ;
+
+skos:prefLabel "Rekrutteringsvansker"@no ;
+
+skos:definition "Utfordring med å tiltrekke og beholde kvalifiserte kandidater, spesielt i fagstillinger."@no .
+
+# Kobling av kontekst til prosesser
+
+hr:prosess_Sykefraværsoppfølgning
+
+hr:måles_ved hr:kpi_Sykefraværsprosent .
+
+hr:prosess_Rekruttering
+
+hr:måles_ved hr:kpi_Tid_til_Ansettelse ;
+
+hr:måles_ved hr:kpi_Kvalitet_på_Ansettelse ;
+
+hr:har_utfordring hr:utfordring_Rekrutteringsvansker .
+
+hr:fagområde_Lederstøtte_Generell
+
+hr:har_utfordring hr:utfordring_Strategisk_Kompetansegap .

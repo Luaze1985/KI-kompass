@@ -1,0 +1,70 @@
+# O-03 VIRKSOMHETSSTYRING OG NOEKKELTALLSOPPFOLGING
+
+## Formaal
+
+Koble noekkeltall, styringssignal og oppfolging tettere til faktisk ledelseshandling.
+
+## Eier og roller
+
+- prosesseier: virksomhetsstyring / analyse
+- hovedutforer: analyse- eller controllerfunksjon
+- stotte: omradeledere, HR eller andre domener ved behov
+- eskaleres til: direktorniva ved vedvarende negativ utvikling eller svak styringskvalitet
+
+## Trigger
+
+- behov for styringsbilde
+- svak utvikling i prioriterte indikatorer
+- ny lederbestilling pa innsikt eller oppfolging
+
+## Input
+
+- definerte indikatorer
+- oppdaterte tallserier
+- sammenligningsgrunnlag
+- lokal forklaring pa utvikling og avvik
+
+## Output
+
+- kort styringsbilde
+- tydelig signalisering av hva som krever handling
+- anbefalt oppfolgingsspor
+
+## Hovedforlop
+
+1. Avklar hvilke indikatorer som faktisk betyr noe for beslutningen.
+2. Kvalitetssikre datagrunnlag og sammenligningspunkt.
+3. Tolke utvikling, ikke bare rapporter tall.
+4. Peke ut hvilke signaler som krever handling eller ytterligere analyse.
+5. Overlever til riktig leder- eller beslutningsarena.
+
+## Viktigste risikoer
+
+- for mange indikatorer og for lite retning
+- svak datakvalitet
+- feilslutninger fra enkeltmalinger
+- styringsdata uten oppfolgingsansvar
+
+## Kontrollhandlinger
+
+- bruk fa og styringsrelevante indikatorer
+- marker datakvalitet og usikkerhet
+- koble indikatoren til mulig lederhandling
+- ikke bland maaling og verdi-diskusjon uten a si fra
+
+## Systemer og referanser
+
+- Styringsportalen
+- relevante fagsystemer og datakilder
+- lokale maale- og rapporteringsdefinisjoner
+
+## Handover
+
+- handover_in: fra dirigent, ledelse eller styringsbehov
+- handover_out: til simulering, beslutningsnotat eller styringsmote
+
+## Lokal verifikasjon
+
+- bekreft at indikatoren faktisk brukes lokalt
+- bekreft definisjon, periode og eier
+- bekreft at sammenligningsgrunnlaget er rimelig

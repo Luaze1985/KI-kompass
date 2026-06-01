@@ -1,0 +1,53 @@
+# PROSESSKORT TEMPLATE
+
+Status: prototype-mal v1
+
+## Formaal
+
+[kort beskrivelse]
+
+## Eier og roller
+
+- prosesseier:
+- hovedutforer:
+- stotte:
+- eskaleres til:
+
+## Trigger
+
+-
+
+## Input
+
+-
+
+## Output
+
+-
+
+## Hovedforlop
+
+1.
+2.
+3.
+
+## Viktigste risikoer
+
+-
+
+## Kontrollhandlinger
+
+-
+
+## Systemer og referanser
+
+-
+
+## Handover
+
+- handover_in:
+- handover_out:
+
+## Lokal verifikasjon
+
+-

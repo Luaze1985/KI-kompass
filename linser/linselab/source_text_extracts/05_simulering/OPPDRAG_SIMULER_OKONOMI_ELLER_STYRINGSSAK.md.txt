@@ -1,0 +1,26 @@
+# OPPDRAG_SIMULER_OKONOMI_ELLER_STYRINGSSAK
+
+## Bruk nar
+
+- du vil simulere et prioriteringsvalg, budsjettgrep eller styringsscenario
+
+## Det du fyller inn
+
+- scenario:
+- beslutningspunkt:
+- tidshorisont:
+- sikre tall eller signal:
+- usikre forhold:
+
+## Starttekst
+
+Simuler denne okonomi- eller styringssaken innenfor domenet okonomi og virksomhetsstyring.
+
+Bruk bare aktive mastere, relevant prosesskort og gjeldende guardrails.
+Skill tydelig mellom faktiske tall, prognoser og anbefalinger.
+Vis minst to alternative handlingsspor.
+Koble inn operativ realitetstest hvis tiltaket krever faktisk omprioritering eller gjennomforing.
+
+## Forventet utfil
+
+- `09_templates_og_output/maler/SIMULERINGSNOTAT_TEMPLATE.md`

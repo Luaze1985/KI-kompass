@@ -1,0 +1,70 @@
+# O-05 GEVINSTOPPFOLGING OG TILTAKSSPOR
+
+## Formaal
+
+Sikre at vedtatte tiltak faktisk blir fulgt opp, og at forventede gevinster ikke bare blir antatt, men kontrollert.
+
+## Eier og roller
+
+- prosesseier: tiltakseier med stotte fra virksomhetsstyring
+- hovedutforer: ansvarlig leder eller prosjektleder
+- stotte: controller, analysefunksjon, relevante fagdomener
+- eskaleres til: direktorniva ved manglende fremdrift eller sviktende gevinstrealisering
+
+## Trigger
+
+- vedtatt tiltak eller prosjekt
+- krav om gevinstrealisering
+- manglende effekt av tidligere vedtak
+
+## Input
+
+- vedtak eller beslutningsgrunnlag
+- forventede gevinster og antakelser
+- milepaeler, ansvar og tidslinje
+- status pa gjennomforing og effekt
+
+## Output
+
+- oppdatert tiltaksspor
+- vurdering av om gevinst faktisk er pa vei eller uteblir
+- anbefalt justering, stopp eller videreforing
+
+## Hovedforlop
+
+1. Avklar hva som faktisk er lovet eller forventet.
+2. Koble gevinst til eier, indikator og tidspunkt.
+3. Folg opp fremdrift og realisering i enkel, repeterbar rytme.
+4. Marker avvik mellom planlagt og faktisk effekt.
+5. Juster, eskaler eller avslutt tiltaket.
+
+## Viktigste risikoer
+
+- gevinster er vage eller uten eier
+- tiltak fortsetter uten effekt
+- fremdrift rapporteres uten faktisk endring
+- handover mellom prosjekt og drift er uklar
+
+## Kontrollhandlinger
+
+- krev eksplisitt gevinstdefinisjon
+- sett kontrollpunkt og dato for oppfolging
+- skill mellom leveranse, bruk og faktisk effekt
+- dokumenter om tiltak skal stoppes, justeres eller viderefores
+
+## Systemer og referanser
+
+- styrings- og portefoljeoversikter
+- Styringsportalen
+- lokale tiltakslister og vedtaksspor
+
+## Handover
+
+- handover_in: fra beslutningsnotat, prosjekt eller styringsmote
+- handover_out: til oppfolgingsmote, justert beslutningsnotat eller leveranseutkast
+
+## Lokal verifikasjon
+
+- bekreft at gevinsten kan maales lokalt
+- bekreft at riktig leder eier tiltaket
+- bekreft at oppfolgingen faktisk brukes i styring

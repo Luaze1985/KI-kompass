@@ -1,0 +1,25 @@
+# OPPDRAG_SKRIV_OKONOMI_BESLUTNINGSNOTAT
+
+## Bruk nar
+
+- du trenger et kort og sporbart beslutningsnotat om budsjett, prognose, noekkeltall eller prioritering
+
+## Det du fyller inn
+
+- hva som skal besluttes:
+- beslutningseier:
+- tidshorisont:
+- tallgrunnlag:
+- hva som ma verifiseres lokalt:
+
+## Starttekst
+
+Skriv et beslutningsnotat innenfor domenet okonomi og virksomhetsstyring.
+
+Bruk bare aktive mastere, relevant prosesskort og domene-guardrails.
+Skill tydelig mellom faktiske tall, prognoser, handlingsvalg og lokal verifikasjon.
+Hvis saken krever politisk eller formell budsjettbehandling, skal dette sies eksplisitt.
+
+## Forventet utfil
+
+- `09_templates_og_output/maler/BESLUTNINGSNOTAT_TEMPLATE.md`

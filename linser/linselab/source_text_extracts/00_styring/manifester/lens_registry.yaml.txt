@@ -1,0 +1,87 @@
+metadata:
+  id: lens_registry
+  version: 1.0
+  status: active_docs_first_v2
+  last_validated: 2026-04-05
+  markdown_master_ref: 02_linser/LINSEINDEKS.md
+  role_layer_ref: 02_linser/LINSEKARTLAG_IKKE_KOMMUNALE_ROLLER.md
+
+groups:
+  - id: A
+    name: systemforstaelse_og_helhet
+  - id: B
+    name: verdier_etikk_og_legitimitet
+  - id: C
+    name: okonomi_og_ressurser
+  - id: D
+    name: juss_risiko_og_kontroll
+  - id: E
+    name: mennesker_og_atferd
+  - id: F
+    name: endring_og_gjennomforing
+  - id: G
+    name: kunnskap_og_analyse
+  - id: H
+    name: kommunikasjon_og_offentlighet
+  - id: I
+    name: teknologi_og_design
+  - id: J
+    name: kritikk_og_kvalitetssikring
+  - id: K
+    name: syntese_og_beslutning
+  - id: L
+    name: operasjonalisering
+
+lenses:
+  - { id: A1, name: systemteoretikeren, group: A, standard_weight: 0.18, role_layer: meta_og_syntese, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [kompleksitet, helhet, avhengigheter] }
+  - { id: A2, name: organisasjonsteoretikeren, group: A, standard_weight: 0.18, role_layer: meta_og_syntese, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [roller, ansvar, styring] }
+  - { id: A3, name: intergovernance_forvalteren, group: A, standard_weight: 0.25, role_layer: meta_og_syntese, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [stat, kommune, samarbeid] }
+  - { id: A4, name: orkestratoren, group: A, standard_weight: 0.30, role_layer: meta_og_syntese, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [syntese, samordning, leverage] }
+  - { id: B1, name: etiske_filosof, group: B, standard_weight: 0.18, role_layer: normative_og_samfunnspolitiske, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [etikk, rettferdighet, verdier] }
+  - { id: B2, name: politisk_teoretiker, group: B, standard_weight: 0.25, role_layer: normative_og_samfunnspolitiske, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [demokrati, legitimitet, politisk_handlingsrom] }
+  - { id: B3, name: konfuciansk_leder, group: B, standard_weight: 0.20, role_layer: normative_og_samfunnspolitiske, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [moral, langsiktighet, rollemodell] }
+  - { id: B4, name: tjenestelederen, group: B, standard_weight: 0.20, role_layer: normative_og_samfunnspolitiske, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [brukerforpliktelse, empati, tjenende_ledelse] }
+  - { id: C1, name: samfunnsokonomen, group: C, standard_weight: 0.25, role_layer: faglige_ekspertroller, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [kost_nytte, prioritering, alternativkostnad] }
+  - { id: C2, name: okonomen, group: C, standard_weight: 0.25, role_layer: kommune_og_stabsnaer, municipality_near: true, exclude_from_municipal_domain: false, typical_triggers: [budsjett, regnskap, kontroll] }
+  - { id: C3, name: politiske_okonom, group: C, standard_weight: 0.25, role_layer: normative_og_samfunnspolitiske, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [interesser, makt, budsjettkamp] }
+  - { id: C4, name: livsfase_og_kjonnsokonomen, group: C, standard_weight: 0.25, role_layer: faglige_ekspertroller, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [sykefravaer, pensjon, livsfase] }
+  - { id: D1, name: juristen, group: D, standard_weight: 0.35, role_layer: kommune_og_stabsnaer, municipality_near: true, exclude_from_municipal_domain: false, typical_triggers: [hjemmel, vedtak, klage] }
+  - { id: D2, name: risikostyringseksperten, group: D, standard_weight: 0.35, role_layer: kommune_og_stabsnaer, municipality_near: true, exclude_from_municipal_domain: false, typical_triggers: [risiko, sarbarhet, beredskap] }
+  - { id: D3, name: personvernombudet, group: D, standard_weight: 0.35, role_layer: kommune_og_stabsnaer, municipality_near: true, exclude_from_municipal_domain: false, typical_triggers: [personopplysninger, gdpr, samtykke] }
+  - { id: D4, name: sikkerhetsradgiveren, group: D, standard_weight: 0.35, role_layer: kommune_og_stabsnaer, municipality_near: true, exclude_from_municipal_domain: false, typical_triggers: [tilgang, logging, informasjonssikkerhet] }
+  - { id: D5, name: kvalitetsradgiveren, group: D, standard_weight: 0.35, role_layer: kommune_og_stabsnaer, municipality_near: true, exclude_from_municipal_domain: false, typical_triggers: [avvik, internkontroll, standard] }
+  - { id: D6, name: hms_radgiveren, group: D, standard_weight: 0.35, role_layer: kommune_og_stabsnaer, municipality_near: true, exclude_from_municipal_domain: false, typical_triggers: [arbeidsmiljo, hms, fravaer] }
+  - { id: E1, name: psykologen, group: E, standard_weight: 0.18, role_layer: menneske_kultur_og_samfunn, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [motivasjon, bias, trygghet] }
+  - { id: E2, name: sosiologen, group: E, standard_weight: 0.18, role_layer: menneske_kultur_og_samfunn, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [ulikhet, relasjoner, strukturer] }
+  - { id: E3, name: kulturanalytikeren, group: E, standard_weight: 0.18, role_layer: menneske_kultur_og_samfunn, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [normer, kultur, uskrevne_regler] }
+  - { id: E4, name: kollektivistisk_leder, group: E, standard_weight: 0.20, role_layer: menneske_kultur_og_samfunn, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [gruppeharmoni, relasjoner, fellesskap] }
+  - { id: E5, name: identitets_og_mangfoldlederen, group: E, standard_weight: 0.25, role_layer: menneske_kultur_og_samfunn, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [inkludering, mangfold, tilhorighet] }
+  - { id: E6, name: neurologen, group: E, standard_weight: 0.18, role_layer: menneske_kultur_og_samfunn, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [kognitiv_belastning, laering, oppmerksomhet] }
+  - { id: F1, name: endringslederen, group: F, standard_weight: 0.20, role_layer: endring_og_leveranse, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [omstilling, motstand, forankring] }
+  - { id: F2, name: transformasjonslederen, group: F, standard_weight: 0.20, role_layer: endring_og_leveranse, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [visjon, mobilisering, utvikling] }
+  - { id: F3, name: prosjektlederen, group: F, standard_weight: 0.22, role_layer: endring_og_leveranse, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [milepaler, leveranse, fremdrift] }
+  - { id: F4, name: hr_eksperten, group: F, standard_weight: 0.20, role_layer: kommune_og_stabsnaer, municipality_near: true, exclude_from_municipal_domain: false, typical_triggers: [arbeidsrett, bemanning, kompetanse] }
+  - { id: F5, name: konsulenten, group: F, standard_weight: 0.22, role_layer: endring_og_leveranse, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [effektivisering, forbedring, gevinst] }
+  - { id: G1, name: forskeren, group: G, standard_weight: 0.18, role_layer: faglige_ekspertroller, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [evidens, metode, usikkerhet] }
+  - { id: G2, name: policy_analyst, group: G, standard_weight: 0.25, role_layer: faglige_ekspertroller, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [alternativer, kriterier, anbefaling] }
+  - { id: G3, name: historikeren, group: G, standard_weight: 0.18, role_layer: menneske_kultur_og_samfunn, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [erfaring, monster, kontekst] }
+  - { id: G4, name: data_scientist, group: G, standard_weight: 0.22, role_layer: faglige_ekspertroller, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [indikatorer, data, bias] }
+  - { id: G5, name: det_kognitive_sinnet, group: G, standard_weight: 0.25, role_layer: meta_og_syntese, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [syntese, hypoteser, beslutningskvalitet] }
+  - { id: H1, name: kommunikasjonseksperten, group: H, standard_weight: 0.20, role_layer: offentlighet_og_utfordring, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [budskap, malgruppe, klarsprak] }
+  - { id: H2, name: journalisten, group: H, standard_weight: 0.18, role_layer: offentlighet_og_utfordring, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [innsyn, offentlighet, gransking] }
+  - { id: H3, name: narrativ_analytikeren, group: H, standard_weight: 0.20, role_layer: offentlighet_og_utfordring, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [fortellinger, framing, konfliktlinjer] }
+  - { id: I1, name: ai_teknologi_eksperten, group: I, standard_weight: 0.22, role_layer: faglige_ekspertroller, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [digitalisering, ai, automatisering] }
+  - { id: I2, name: ingenioren, group: I, standard_weight: 0.22, role_layer: faglige_ekspertroller, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [prosessflyt, standardisering, robusthet] }
+  - { id: I3, name: service_designeren, group: I, standard_weight: 0.22, role_layer: faglige_ekspertroller, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [brukerreise, tjenesteflyt, prototyping] }
+  - { id: J1, name: kritisk_venn, group: J, standard_weight: 0.18, role_layer: offentlighet_og_utfordring, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [svakheter, hull, antakelser] }
+  - { id: J2, name: geookonomen, group: J, standard_weight: 0.20, role_layer: offentlighet_og_utfordring, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [sanksjoner, forsyning, geopolitikk] }
+  - { id: J3, name: tillitsvalgt_akademikerne, group: J, standard_weight: 0.18, role_layer: normative_og_samfunnspolitiske, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [medbestemmelse, ansattperspektiv, arbeidsliv] }
+  - { id: K1, name: den_virtuelle_stabssjefen, group: K, standard_weight: 0.30, role_layer: meta_og_syntese, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [prioritering, beslutningsnotat, ansvar] }
+  - { id: K2, name: ledelsesstrategen, group: K, standard_weight: 0.18, role_layer: meta_og_syntese, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [maal, retning, strategi] }
+  - { id: L1, name: oppgaveatomisten, group: L, standard_weight: 0.25, role_layer: operasjonalisering, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [implementering, mikrooppgaver, handover] }
+  - { id: L2, name: forstelinjelederen, group: L, standard_weight: 0.22, role_layer: operasjonalisering, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [kapasitet, drift, workarounds] }
+  - { id: L3, name: brukeren, group: L, standard_weight: 0.22, role_layer: operasjonalisering, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [innbyggerperspektiv, sarbarhet, verdighet] }
+  - { id: L4, name: pragmatikeren, group: L, standard_weight: 0.20, role_layer: operasjonalisering, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [godt_nok, avveining, framdrift] }
+  - { id: L5, name: tidsarkitekten, group: L, standard_weight: 0.22, role_layer: operasjonalisering, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [tidshorisont, laasing, revurdering] }
+  - { id: L6, name: maktkartleggeren, group: L, standard_weight: 0.25, role_layer: operasjonalisering, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [interessenter, vetomakt, allianser] }
+  - { id: L7, name: reverseringslinsen, group: L, standard_weight: 0.22, role_layer: operasjonalisering, municipality_near: false, exclude_from_municipal_domain: true, typical_triggers: [pilot, angrekostnad, reversibilitet] }

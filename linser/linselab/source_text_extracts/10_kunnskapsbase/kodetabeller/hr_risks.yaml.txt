@@ -1,0 +1,27 @@
+metadata:
+  id: hr_risks
+  version: 1.0
+  status: derived_from_markdown_master
+  master_ref: 10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+
+risks:
+  - risk_id: RSK-01
+    name: uklar_beslutningsrett
+  - risk_id: RSK-02
+    name: mangelfull_dokumentasjon
+  - risk_id: RSK-03
+    name: for_sen_medvirkning
+  - risk_id: RSK-04
+    name: personvernbrudd
+  - risk_id: RSK-05
+    name: analyse_uten_operativ_forankring
+  - risk_id: RSK-06
+    name: svak_systembruk
+  - risk_id: RSK-07
+    name: kandidatfrafall_i_rekruttering
+  - risk_id: RSK-08
+    name: frafall_i_laerlingeordning
+  - risk_id: RSK-09
+    name: rolle_drift_mellom_master_og_utlysning
+  - risk_id: RSK-10
+    name: produksjon_uten_godkjent_fasegate

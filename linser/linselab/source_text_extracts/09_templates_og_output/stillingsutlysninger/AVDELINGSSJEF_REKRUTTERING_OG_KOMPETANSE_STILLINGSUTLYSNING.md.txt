@@ -1,0 +1,55 @@
+# AVDELINGSSJEF_REKRUTTERING_OG_KOMPETANSE STILLINGSUTLYSNING
+
+Status: avledet produksjonsartefakt v1
+
+## Metadata
+
+- role_id: `R-04`
+- unit_id: `U-03`
+- styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+- local_status: krever_lokal_tilpasning_for_publisering
+
+## Kort annonsetekst
+
+Vi soker en avdelingssjef som kan lede kommunens arbeid med rekruttering, kompetanseutvikling og lederutvikling. Rollen krever at du ser sammenhengen mellom strategisk kompetanseplanlegging, praktisk gjennomforing og god kandidat- og medarbeideropplevelse.
+
+## Formaal med stillingen
+
+Sikre at kommunen tiltrekker, utvikler og beholder kritisk kompetanse gjennom tydelig portefoljstyring, gode rekrutteringslop og skalerbare utviklingstiltak.
+
+## Hovedansvar
+
+- lede team og leveranser innen rekruttering, laerlinglop, kompetanseutvikling og lederutvikling
+- prioritere kapasitet mellom kritiske ansettelser og langsiktige utviklingsbehov
+- sikre at utlysninger, onboarding og kompetansetiltak bygger pa samme rollegrunnlag
+- gi styringsgrunnlag til HR-sjef og lederlinje om kompetansebehov og tiltak
+
+## Must-have kvalifikasjoner
+
+- relevant hoyere utdanning
+- dokumentert erfaring med rekruttering, kompetansearbeid eller organisasjonsutvikling
+- erfaring med ledelse og prioritering i kompleks kunnskapsorganisasjon
+- evne til a bruke data, behovsbilder og gjennomforingsevne i samme beslutningsgrunnlag
+
+## Onskede tilleggskvalifikasjoner
+
+- erfaring fra kommunal sektor eller annen offentlig virksomhet
+- erfaring med employer branding, search eller kritiske lederrekrutteringer
+- erfaring med portefoljestyring av utviklings- og opplaeringstiltak
+
+## System- og arbeidsflate
+
+- rekrutteringsplattform, kompetanseplattform og styringsdata for HR
+- tett samarbeid med rekrutteringsradgivere, kompetanseradgivere og lederlinje
+
+## Forste 12 maneder
+
+- etablere et tydelig prioriteringsbilde for kritiske rekrutteringer og kompetansetiltak
+- standardisere koblingen mellom kravprofil, utlysning og onboarding
+- styrke gjennomforingsevnen i lederutviklingsportefoljen
+
+## Lokal verifikasjon for publisering
+
+- verifiser lokal kompetansestrategi og arbeidsgiverprofil
+- verifiser hvilke team og funksjoner som rapporterer til rollen
+- verifiser om portefoljansvar eller budsjettansvar skal beskrives eksplisitt

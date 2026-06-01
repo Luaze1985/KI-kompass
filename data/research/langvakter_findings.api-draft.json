@@ -1,0 +1,1484 @@
+[
+  {
+    "source_id": "LV-Q01-afft2u-1",
+    "source_type": "official",
+    "title": "SFS 2310: Spørsmål og svar om langvakter i kommunene - Delta",
+    "url": "https://www.delta.no/lonn-og-avtaler/ks/saravtaler/sfs-2310-sporsmal-og-svar-om-langvakter-i-kommunene",
+    "published_date": "2026-03-01",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Fra 01.03.2026 er SFS 2310 hjemmelen for langvakter over 12,5 timer i kommunene, og arbeidsgiver står fritt til å avvikle eller la være å innføre langvakter over 12,5 timer.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "arbeidstid",
+      "HMS",
+      "forsvarlighet"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "risiko",
+      "lokal_forankring"
+    ],
+    "possible_risk_flag": [
+      "Partskilde/FAQ, ikke selve avtaleteksten; bør kryssjekkes mot SFS 2310 eller KS-dokumentasjon. Formuleringen om at arbeidsgiver står fritt kan være kontekstavhengig og må leses sammen med lokal avtalehjemmel."
+    ],
+    "possible_stop_rule": [
+      "Hvis virksomheten vurderer å innføre vakter over 12,5 timer, må det finnes hjemmel i SFS 2310 og lokal særavtale; hvis ikke, stopp og verifiser rettslig grunnlag før planlegging."
+    ],
+    "required_local_verification": [
+      "Sjekk den signerte lokale særavtalen, hvem som har signaturmyndighet, og om SFS 2310 faktisk er lagt til grunn i den lokale ordningen."
+    ],
+    "short_excerpt": "«Fra 01.03.2026 er det SFS 2310 som gir hjemmel for langvakter over 12,5 timer.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q01-afft2u-2",
+    "source_type": "official",
+    "title": "SFS 2310: Spørsmål og svar om langvakter i kommunene - Delta",
+    "url": "https://www.delta.no/lonn-og-avtaler/ks/saravtaler/sfs-2310-sporsmal-og-svar-om-langvakter-i-kommunene",
+    "published_date": "2026-03-01",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "I SFS 2310 er en langvakt definert som en vakt med alminnelig arbeidstid over 12,5 og til og med 15 timer; vakter på akkurat 12,5 timer omfattes ikke av denne definisjonen.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "arbeidstid",
+      "HMS",
+      "forsvarlighet"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "risiko",
+      "lokal_forankring"
+    ],
+    "possible_risk_flag": [
+      "FAQ-format, men definisjonen er tydelig. Bør likevel verifiseres mot avtaleteksten for eksakt juridisk ordlyd."
+    ],
+    "possible_stop_rule": [
+      "Hvis en planlagt vakt er 12,5 timer eller kortere, skal den ikke behandles som langvakt etter SFS 2310; hvis over 12,5 timer, må ordning og hjemmel kontrolleres."
+    ],
+    "required_local_verification": [
+      "Kontroller turnusplanen og tidsberegningen, inkludert om pauser inngår i arbeidstiden og om vakten faktisk passerer 12,5-timersgrensen."
+    ],
+    "short_excerpt": "«En langvakt er definert som en vakt med alminnelig arbeidstid over 12,5 og til og med 15 timer.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q01-afft2u-3",
+    "source_type": "official",
+    "title": "SFS 2310: Spørsmål og svar om langvakter i kommunene - Delta",
+    "url": "https://www.delta.no/lonn-og-avtaler/ks/saravtaler/sfs-2310-sporsmal-og-svar-om-langvakter-i-kommunene",
+    "published_date": "2026-03-01",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "For langvakter til og med 13,5 timer har arbeidstaker krav på 1,5 time pause, og for langvakter over 13,5 og opp til 15 timer har arbeidstaker krav på 2 timer pause; pausene inngår i arbeidstiden og skal fordeles utover vakten.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "arbeidstid",
+      "HMS",
+      "forsvarlighet"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "risiko",
+      "lokal_forankring"
+    ],
+    "possible_risk_flag": [
+      "Bør kryssjekkes mot sentral avtaletekst/KS, men påstanden er konkret og operasjonell. Pausetid kan påvirke faktisk arbeidstid og arbeidsbelastning."
+    ],
+    "possible_stop_rule": [
+      "Hvis turnus ikke kan sikre betalte pauser i tråd med vaktlengde, stopp innføring eller gjennomføring av ordningen til pauseløsning er verifisert."
+    ],
+    "required_local_verification": [
+      "Verifiser faktisk pauseavvikling i bemanning/turnus, og at pauser er lagt inn som arbeidstid i planverktøyet og i lokale rutiner."
+    ],
+    "short_excerpt": "«Ved langvakter til og med 13,5 timer har man krav på 1,5 time pause.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q01-1rdj27r-4",
+    "source_type": "official",
+    "title": "NSF og KS enige om historisk avtale for langvakter i kommunene",
+    "url": "https://www.nsf.no/nyheter/tariffomrade-ks/nsf-og-ks-enige-om-historisk-avtale-langvakter-i-kommunene",
+    "published_date": "2026-03-01",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Avtalen for langvakter over 12,5 timer til og med 15 timer gir 500 kroner per langvakt i helgene og sikrer betalte pauser: 1,5 time ved vakter til og med 13,5 timer og 2 timer ved vakter over 13,5 til og med 15 timer.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "arbeidstid",
+      "HMS",
+      "forsvarlighet"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "risiko",
+      "lokal_forankring"
+    ],
+    "possible_risk_flag": [
+      "Partskilde, men samsvarer med flere andre treff. Økonomisk kompensasjon er avtalevilkår og ikke generell rett."
+    ],
+    "possible_stop_rule": [
+      "Hvis helgevakter under ordningen ikke er satt opp med korrekt kompensasjon og pauseordning, stopp og verifiser at lokal avtale følger sentral særavtale."
+    ],
+    "required_local_verification": [
+      "Sjekk om lokale lønns- og turnussystemer faktisk utbetaler helgetillegg og registrerer pauser som avtalt."
+    ],
+    "short_excerpt": "«500 kroner per langvakt i helgene» og «1,5 time betalt pause ... 2 timer betalt pause».",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q01-1h57cfa-5",
+    "source_type": "official",
+    "title": "Hva er sammenhengen mellom langvakter for sykepleiere og uønskede hendelser? - FHI",
+    "url": "https://www.fhi.no/publ/2023/hva-er-sammenhengen-mellom-langvakter-for-sykepleiere-og-uonskede-hendelser/",
+    "published_date": "2023-00-00",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "FHI oppsummerer at det muligens er en sammenheng mellom langvakter over 12 timer og uønskede hendelser for pasientene, basert på en systematisk oversikt fra 2021.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "arbeidstid",
+      "HMS",
+      "forsvarlighet"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "risiko",
+      "lokal_forankring"
+    ],
+    "possible_risk_flag": [
+      "Forskningsoppsummering med usikker kausalitet; ordet 'muligens' signaliserer begrenset styrke. Ikke grunnlag alene for et generelt forbud, men relevant for risikovurdering."
+    ],
+    "possible_stop_rule": [
+      "Hvis risikovurderingen ikke kan dokumentere håndtering av mulig økt risiko for uønskede hendelser ved vakter over 12 timer, må ordningen stoppes eller justeres før pilot/innføring."
+    ],
+    "required_local_verification": [
+      "Gjennomfør lokal risikovurdering med pasientsikkerhetsdata, avvik, bemanningsanalyse og vurder om vaktene skal begrenses i lengde eller omfang."
+    ],
+    "short_excerpt": "«Det er muligens en sammenheng mellom langvakter over 12 timer og uønskede hendelser for pasientene.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q01-1h57cfa-6",
+    "source_type": "official",
+    "title": "Hva er sammenhengen mellom langvakter for sykepleiere og uønskede hendelser? - FHI",
+    "url": "https://www.fhi.no/publ/2023/hva-er-sammenhengen-mellom-langvakter-for-sykepleiere-og-uonskede-hendelser/",
+    "published_date": "2023-00-00",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "FHI oppgir at skiftlengde på mer enn 12 timer muligens kan øke antall uønskede hendelser noe, mens skift under 8 timer eller mellom 8 og 12 timer antageligvis ikke har sammenheng med pasientsikkerhet på samme måte.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "arbeidstid",
+      "HMS",
+      "forsvarlighet"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "risiko",
+      "lokal_forankring"
+    ],
+    "possible_risk_flag": [
+      "Indirekte evidens og delvis gradert sannsynlighet; gjelder pasientsikkerhet mer enn rettslig forsvarlighet. Bør ikke overgeneraliseres til alle avdelinger."
+    ],
+    "possible_stop_rule": [
+      "Hvis planlagte vakter skal overstige 12 timer, må virksomheten dokumentere hvorfor dette er forsvarlig og hvilke kontrolltiltak som reduserer risiko."
+    ],
+    "required_local_verification": [
+      "Verifiser om lokal pasientsikkerhetsindikator, avvik og arbeidsbelastning støtter bruk av vakter over 12 timer i den konkrete enheten."
+    ],
+    "short_excerpt": "«Skiftlengde på mer enn 12 timer kan muligens øke antall uønskede hendelser noe.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q01-1evk6fo-7",
+    "source_type": "official",
+    "title": "Jobber du langvakter? Nå kan du få to timer betalt pause - Fagbladet/Frifagbevegelse",
+    "url": "https://frifagbevegelse.no/fagbladet/jobber-du-langvakter-na-kan-du-fa-to-timer-betalt-pause-6.158.1182073.3645114e00",
+    "published_date": "2026-03-01",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Artikkelen beskriver at Fagforbundet og KS har forhandlet fram en sentral særavtale for vakter mellom 12,5 og 15 timer, med betalte pauser og økonomisk kompensasjon for langvakter i helgene.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "arbeidstid",
+      "HMS",
+      "forsvarlighet"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "risiko",
+      "lokal_forankring"
+    ],
+    "possible_risk_flag": [
+      "Nyhetsformidling av partavtale, ikke primær avtaletekst. Brukes best som støtte til å finne kontrollspørsmål, ikke som alenegrunnlag."
+    ],
+    "possible_stop_rule": [
+      "Hvis virksomheten baserer seg på denne beskrivelsen uten å ha selve avtaleteksten, må innføringen stoppes til teksten er verifisert."
+    ],
+    "required_local_verification": [
+      "Sammenhold med den faktiske SFS 2310-teksten og lokal særavtale før bruk i turnus."
+    ],
+    "short_excerpt": "«Fagforbundet har forhandlet fram en sentral særavtale med KS ... mellom 12,5 til 15 timer.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q01-f5sqt2-8",
+    "source_type": "official",
+    "title": "Fagforbundet sikrer to timer lønnet pause ved langvakter og et tillegg på 500 kroner per arbeidet langvakt i helgen",
+    "url": "https://www.fagforbundet.no/a/386429/nyheter/fagforbundet-sikrer-to-timer-lonnet-pause-ved-langvakter-og-et-tillegg-pa-500-kroner-per-arbeidet-vakt/",
+    "published_date": "2026-03-01",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Fagforbundet opplyser at det er avtalt to timers betalt pause for vakter mellom 13,5 og 15 timer, 1,5 times pause for vakter over 12,5 til 13 timer, og 500 kroner tillegg per arbeidet langvakt i helgen.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "arbeidstid",
+      "HMS",
+      "forsvarlighet"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "risiko",
+      "lokal_forankring"
+    ],
+    "possible_risk_flag": [
+      "Partskilde/organisasjonsnyhet. Tallet og grensene bør verifiseres mot avtaleteksten og eventuelle lokale tilpasninger."
+    ],
+    "possible_stop_rule": [
+      "Hvis lokal ordning avviker fra pauseregler eller helgetillegg, må det behandles som avvik fra sentral avtale og verifiseres før bruk."
+    ],
+    "required_local_verification": [
+      "Kontroller lønnskjøring, turnus og om lokale vilkår gjør at tillegg eller pause faktisk utbetales/avvikles som avtalt."
+    ],
+    "short_excerpt": "«Det er avtalt to timers betalt pause ... og 500 kroner per arbeidet langvakt i helgen.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q01-19fh0qg-9",
+    "source_type": "official",
+    "title": "Ressursplanlegging - avtale om planlagte vakter utover 10 timer",
+    "url": "https://ehandboken.ous-hf.no/document/84828",
+    "published_date": "unknown",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Dokumentet gjelder planlagte vakter utover 10 timer og opp til 12,5 timer, og markerer at lengre vakter krever særskilt ressursplanlegging og avtalt fremgangsmåte.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "arbeidstid",
+      "HMS",
+      "forsvarlighet"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "risiko",
+      "lokal_forankring"
+    ],
+    "possible_risk_flag": [
+      "Uklart om dette er en formell primærkilde eller lokal retningslinje; URL og publikasjonstype tilsier lokal/organisasjonsspesifikk støtte, ikke generelt rettsgrunnlag."
+    ],
+    "possible_stop_rule": [
+      "Hvis arbeidstiden planlegges utover 10 timer, må lokal ressursplanlegging, risikovurdering og avtalt fremgangsmåte foreligge før gjennomføring."
+    ],
+    "required_local_verification": [
+      "Avklar om dokumentet er gjeldende intern prosedyre ved aktuell virksomhet, og om det er oppdatert etter SFS 2310."
+    ],
+    "short_excerpt": "«Vakter med vaktlengde over 10 timer, opp til 12,5 timer».",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q02-afft2u-1",
+    "source_type": "agreement",
+    "title": "SFS 2310: Spørsmål og svar om langvakter i kommunene - Delta",
+    "url": "https://www.delta.no/lonn-og-avtaler/ks/saravtaler/sfs-2310-sporsmal-og-svar-om-langvakter-i-kommunene",
+    "published_date": "2026-03-01",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "SFS 2310 regulerer bruk av langvakter i kommunale helse- og omsorgstjenester og barneverntjenester, og definerer langvakt som en vakt over 12,5 timer og til og med 15 timer.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "avtaleverk",
+      "partssamarbeid"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "separabilitet"
+    ],
+    "possible_risk_flag": [
+      "partskilde; bør bekreftes mot selve avtaleteksten før bruk i rettslig/logisk styring"
+    ],
+    "possible_stop_rule": [
+      "Langvakter over 12,5 timer kan bare vurderes innenfor hjemmel i SFS 2310 og lokal særavtale"
+    ],
+    "required_local_verification": [
+      "Verifiser om arbeidsplassen faktisk er i KS-området og om lokal særavtale er inngått etter SFS 2310"
+    ],
+    "short_excerpt": "Formålet er å regulere bruk av langvakter (arbeidsøkter over 12,5 og til og med 15 timer)... En langvakt er definert som en vakt med alminnelig arbeidstid over 12,5 og til og med 15 timer.",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q02-afft2u-2",
+    "source_type": "agreement",
+    "title": "SFS 2310: Spørsmål og svar om langvakter i kommunene - Delta",
+    "url": "https://www.delta.no/lonn-og-avtaler/ks/saravtaler/sfs-2310-sporsmal-og-svar-om-langvakter-i-kommunene",
+    "published_date": "2026-03-01",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Vakter på akkurat 12,5 timer faller ikke inn under definisjonen av langvakt i SFS 2310 og skal avtales lokalt med tillitsvalgt.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "avtaleverk",
+      "partssamarbeid"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "separabilitet"
+    ],
+    "possible_risk_flag": [
+      "partskilde; grenseverdien bør kontrolleres i avtaletekst"
+    ],
+    "possible_stop_rule": [
+      "Hvis vaktlengden er nøyaktig 12,5 timer, ikke klassifiser som SFS 2310-langvakt uten lokal avtale"
+    ],
+    "required_local_verification": [
+      "Kontroller lokal praksis, turnusplan og om tillitsvalgt har godkjent vakter på 12,5 timer"
+    ],
+    "short_excerpt": "Gjelder SFS 2310 for vakter som er akkurat 12,5 timer? Nei. En langvakt etter SFS 2310 er definert som en vakt over 12,5 timer, til og med 15 timer.",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q02-1n8d6bi-3",
+    "source_type": "agreement",
+    "title": "Fornøyd med ny særavtale om langvakter - Delta",
+    "url": "https://www.delta.no/lonn-og-avtaler/ks/2024-2026/fornoyd-med-ny-saeravtale-om-langvakter",
+    "published_date": "2026-03-01",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Den sentrale særavtalen åpner for lokal særavtale om langvakter på mellom 12,5 og 15 timer, men bruk av ordningen avgjøres fortsatt lokalt på arbeidsplassen.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "avtaleverk",
+      "partssamarbeid"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "separabilitet"
+    ],
+    "possible_risk_flag": [
+      "partskilde; formuleringen om lokal beslutning bør leses sammen med selve avtaleteksten"
+    ],
+    "possible_stop_rule": [
+      "Ikke anta at sentral avtale alene gir rett til innføring; lokal enighet må foreligge"
+    ],
+    "required_local_verification": [
+      "Avklar om ledelse, tillitsvalgte og eventuelt verneombud har faktisk sluttet seg til ordningen lokalt"
+    ],
+    "short_excerpt": "Den sentrale særavtalen gjør det mulig å inngå lokal særavtale om langvakter på mellom 12,5 og 15 timer... det fremdeles være opp til partene på den enkelte arbeidsplass om de skal bruke langvaktsordninger.",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q02-1232ww9-4",
+    "source_type": "agreement",
+    "title": "Ny avtale med KS sikrer lønnet pause og tillegg for langvakt - FO",
+    "url": "https://www.fo.no/nyheter/nyhetsarkiv/ny-avtale-med-ks-sikrer-lonnet-pause-og-tillegg-for-langvakt/",
+    "published_date": "2026-03-01",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Før langvakter iverksettes skal det gjennomføres en forsvarlighetsvurdering i samarbeid med vernetjenesten og tillitsvalgte.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "avtaleverk",
+      "partssamarbeid"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "separabilitet"
+    ],
+    "possible_risk_flag": [
+      "partskilde; kan ikke alene brukes som full HMS-standard uten avtaletekst og lokale rutiner"
+    ],
+    "possible_stop_rule": [
+      "Stopp innføring av langvakter inntil dokumentert forsvarlighetsvurdering er gjennomført med verneombud/vernetjeneste og tillitsvalgte"
+    ],
+    "required_local_verification": [
+      "Kontroller at lokal risikovurdering, medvirkning og dokumentasjon faktisk er gjennomført før oppstart"
+    ],
+    "short_excerpt": "Før langvakter iverksettes, skal det gjennomføres en vurdering av forsvarlighet i samarbeid med vernetjenesten og tillitsvalgte.",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q02-1232ww9-5",
+    "source_type": "agreement",
+    "title": "Ny avtale med KS sikrer lønnet pause og tillegg for langvakt - FO",
+    "url": "https://www.fo.no/nyheter/nyhetsarkiv/ny-avtale-med-ks-sikrer-lonnet-pause-og-tillegg-for-langvakt/",
+    "published_date": "2026-03-01",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Deltakelse i langvaktordning er frivillig for den enkelte ansatte.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "avtaleverk",
+      "partssamarbeid"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "separabilitet"
+    ],
+    "possible_risk_flag": [
+      "partskilde; frivillighetskravet bør verifiseres mot avtaletekst og lokale implementeringsrutiner"
+    ],
+    "possible_stop_rule": [
+      "Ikke legg ansatte inn i langvaktordning uten frivillig deltakelse"
+    ],
+    "required_local_verification": [
+      "Verifiser om det finnes skriftlig frivillighet, reservasjonsadgang og rutine for å tre ut av ordningen"
+    ],
+    "short_excerpt": "Deltakelse i langvaktordning er frivillig for den enkelte ansatte.",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q02-1232ww9-6",
+    "source_type": "agreement",
+    "title": "Ny avtale med KS sikrer lønnet pause og tillegg for langvakt - FO",
+    "url": "https://www.fo.no/nyheter/nyhetsarkiv/ny-avtale-med-ks-sikrer-lonnet-pause-og-tillegg-for-langvakt/",
+    "published_date": "2026-03-01",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Avtalen regulerer pauser slik at disse skal inngå i arbeidstiden for langvakter.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "avtaleverk",
+      "partssamarbeid"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "separabilitet"
+    ],
+    "possible_risk_flag": [
+      "partskilde; pauseomfang og kompensasjon bør kontrolleres i avtaleteksten"
+    ],
+    "possible_stop_rule": [
+      "Hvis pauser ikke kan inngå i arbeidstiden som avtalt, må lokal langvaktmodell ikke tas i bruk som planlagt"
+    ],
+    "required_local_verification": [
+      "Bekreft hvordan pauser er innarbeidet i turnus, lønn og arbeidstidsberegning lokalt"
+    ],
+    "short_excerpt": "Videre regulerer avtalen forhold om pauser og at disse skal inngå i arbeidstiden...",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q02-1232ww9-7",
+    "source_type": "agreement",
+    "title": "Ny avtale med KS sikrer lønnet pause og tillegg for langvakt - FO",
+    "url": "https://www.fo.no/nyheter/nyhetsarkiv/ny-avtale-med-ks-sikrer-lonnet-pause-og-tillegg-for-langvakt/",
+    "published_date": "2026-03-01",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Avtalen inneholder en stimuleringsordning for utførte langvakter i helgene.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "avtaleverk",
+      "partssamarbeid"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "separabilitet"
+    ],
+    "possible_risk_flag": [
+      "partskilde; økonomisk stimulans kan variere i praktisk implementering og må kontrolleres mot avtaletekst"
+    ],
+    "possible_stop_rule": [
+      "Ikke legg inn helgetillegg uten å verifisere at lokal ordning følger den sentrale avtalen"
+    ],
+    "required_local_verification": [
+      "Kontroller om det faktisk utbetales stimulering per langvakt i helg og etter hvilke vilkår"
+    ],
+    "short_excerpt": "Avtalen inneholder også en stimuleringsordning for utførte langvakter i helgene.",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q02-2zy964-8",
+    "source_type": "agreement",
+    "title": "Fagforbundet sikrer to timer lønnet pause ved langvakter - Fagforbundet",
+    "url": "https://www.fagforbundet.no/a/386542/fagforeninger/moreogromsdal/avd373/aktuelt/fagforbundet-sikrer-to-timer-lonnet-pause-ved-langvakter/",
+    "published_date": "2026-03-01",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Den sentrale avtalen kan ikke tas i bruk ensidig av arbeidsgiver; lokale parter må bli enige om å ta den i bruk.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "avtaleverk",
+      "partssamarbeid"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "separabilitet"
+    ],
+    "possible_risk_flag": [
+      "partskilde; bør bekreftes i SFS 2310 og eventuelle lokale forhandlingsprotokoller"
+    ],
+    "possible_stop_rule": [
+      "Stopp ensidig innføring av langvaktordning uten lokal enighet"
+    ],
+    "required_local_verification": [
+      "Kontroller om det foreligger lokal avtale/protokoll signert av partene før ordningen startes"
+    ],
+    "short_excerpt": "Arbeidsgiver kan ikke ensidig ta den sentrale avtalen i bruk. De lokale partene må bli enige...",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q02-2zy964-9",
+    "source_type": "agreement",
+    "title": "Fagforbundet sikrer to timer lønnet pause ved langvakter - Fagforbundet",
+    "url": "https://www.fagforbundet.no/a/386542/fagforeninger/moreogromsdal/avd373/aktuelt/fagforbundet-sikrer-to-timer-lonnet-pause-ved-langvakter/",
+    "published_date": "2026-03-01",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Det er opplyst at det historisk har vært inngått om lag 700 slike langvaktsavtaler årlig, og at ordningen særlig er tatt i bruk i pleie- og omsorgstjenester i kommunene.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "avtaleverk",
+      "partssamarbeid"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "separabilitet"
+    ],
+    "possible_risk_flag": [
+      "partskilde og tallopplysning uten metode; egner seg kun som indikativ kontekst"
+    ],
+    "possible_stop_rule": [
+      "Ingen direkte stop rule; brukes kun som kontekst for lokal praksis og volum"
+    ],
+    "required_local_verification": [
+      "Verifiser lokale bruksmønstre før du antar at ordningen er vanlig eller etablert i egen kommune"
+    ],
+    "short_excerpt": "Fram til nå har det vært inngått 10-12(4)-avtaler... Det har vært inngått rundt 700 slike avtaler årlig... Denne type langvaktsavtaler er i størst grad tatt i bruk innen pleie- og omsorgstjenester i kommunene.",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q03-1h57cfa-1",
+    "source_type": "research",
+    "title": "Hva er sammenhengen mellom langvakter for sykepleiere og uønskede hendelser? - FHI",
+    "url": "https://www.fhi.no/publ/2023/hva-er-sammenhengen-mellom-langvakter-for-sykepleiere-og-uonskede-hendelser/",
+    "published_date": "2023",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Det er mulig en sammenheng mellom langvakter over 12 timer og uønskede hendelser for pasienter, men FHI opplyser at tilliten til resultatene er svært lav på grunn av usikkerhet i metode og oppsummering.",
+    "evidence_strength": 3,
+    "relevant_case_field": [
+      "HRR-07",
+      "forskning",
+      "restitusjon",
+      "pasientsikkerhet"
+    ],
+    "affected_indicator": [
+      "risiko",
+      "kontrollkrav"
+    ],
+    "possible_risk_flag": [
+      "svært_lav_tillit_til_resultatene",
+      "metodeusikkerhet",
+      "ikke_entydig_sammenheng"
+    ],
+    "possible_stop_rule": [
+      "Hvis lokal turnus innebærer vakter over 12 timer, utløser dette behov for særskilt risikovurdering av pasientsikkerhet og dokumentert begrunnelse."
+    ],
+    "required_local_verification": [
+      "Verifiser faktisk vaktlengde i turnus, om det foreligger lokal risikovurdering, og om det er registrerte eller forventede uønskede hendelser knyttet til ordningen."
+    ],
+    "short_excerpt": "«Det er muligens en sammenheng mellom langvakter over 12 timer og uønskede hendelser for pasientene.» … «Vi har generelt svært lav tillit til resultatene ...»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q03-1h57cfa-2",
+    "source_type": "research",
+    "title": "Hva er sammenhengen mellom langvakter for sykepleiere og uønskede hendelser? - FHI",
+    "url": "https://www.fhi.no/publ/2023/hva-er-sammenhengen-mellom-langvakter-for-sykepleiere-og-uonskede-hendelser/",
+    "published_date": "2023",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "FHI fremhever at pauser kan ha en mulig indirekte positiv effekt på pasientsikkerhet, mens utilstrekkelig tid vekk fra arbeidet viser mer usikker og varierende effekt.",
+    "evidence_strength": 3,
+    "relevant_case_field": [
+      "HRR-07",
+      "forskning",
+      "restitusjon",
+      "pasientsikkerhet"
+    ],
+    "affected_indicator": [
+      "risiko",
+      "kontrollkrav"
+    ],
+    "possible_risk_flag": [
+      "svært_lav_tillit_til_resultatene",
+      "indirekte_effekt",
+      "varierende_effekt"
+    ],
+    "possible_stop_rule": [
+      "Hvis langvakter brukes uten tilstrekkelige pauser eller restitusjon, bør ordningen ikke behandles som pasientsikkerhetsmessig nøytral uten lokal dokumentasjon."
+    ],
+    "required_local_verification": [
+      "Kontroller pausepraksis, reell mulighet for avbrekk, og om bemanning og arbeidsflyt faktisk gir restitusjon i skiftet."
+    ],
+    "short_excerpt": "«Pauser kan muligens ha positiv indirekte effekt på pasientsikkerhet, mens utilstrekkelig tid vekk fra arbeidet viser mer usikker og varierende effekt.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q03-1h57cfa-3",
+    "source_type": "research",
+    "title": "Hva er sammenhengen mellom langvakter for sykepleiere og uønskede hendelser? - FHI",
+    "url": "https://www.fhi.no/publ/2023/hva-er-sammenhengen-mellom-langvakter-for-sykepleiere-og-uonskede-hendelser/",
+    "published_date": "2023",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "FHI peker på at forlengede vakter kan være relevante å undersøke for økt risiko for feilmedisinering, sykehusinfeksjoner, fall og nesten-hendelser hos brukere/pasienter.",
+    "evidence_strength": 3,
+    "relevant_case_field": [
+      "HRR-07",
+      "forskning",
+      "restitusjon",
+      "pasientsikkerhet"
+    ],
+    "affected_indicator": [
+      "risiko",
+      "kontrollkrav"
+    ],
+    "possible_risk_flag": [
+      "problematiserer_pasientsikkerhet",
+      "indikativ_ikke_konklusiv"
+    ],
+    "possible_stop_rule": [
+      "Ved innføring eller utvidelse av vakter må det foreligge lokal vurdering av om ordningen kan øke risiko for konkrete uønskede hendelser."
+    ],
+    "required_local_verification": [
+      "Sjekk avvik, meldte hendelser, infeksjonsdata, fallhendelser og legemiddelhåndteringsrutiner før og etter endring i arbeidstid."
+    ],
+    "short_excerpt": "«Det er viktig å se om forlengede/utvidete vakter kan føre til en økning av uønskede hendelser ... for eksempel feilmedisinering, sykehusinfeksjoner, fall ... og nesten hendelser.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q03-wu7ot7-4",
+    "source_type": "research",
+    "title": "Effekten av heltidskultur på kvalitet og sikkerhet i helsetjenesten - Universitetet i Stavanger",
+    "url": "https://www.uis.no/nb/pasientsikkerhet/effekten-av-heltidskultur-pa-kvalitet-og-sikkerhet-i-helsetjenesten",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Lange vakter gir færre overlapp og større kontinuitet, men arbeid mer enn 12 timer per vakt eller 40 timer per uke er forbundet med økt antall feil og uønskede hendelser.",
+    "evidence_strength": 3,
+    "relevant_case_field": [
+      "HRR-07",
+      "forskning",
+      "restitusjon",
+      "pasientsikkerhet"
+    ],
+    "affected_indicator": [
+      "risiko",
+      "kontrollkrav"
+    ],
+    "possible_risk_flag": [
+      "forenklet_sammenheng",
+      "kan_være_påvirket_av_kontekst",
+      "ikke_dokumentert_som_regel"
+    ],
+    "possible_stop_rule": [
+      "Hvis turnusen overskrider 12 timer per skift eller 40 timer per uke, utløser dette en stopp for standardgodkjenning til lokal sikkerhetsvurdering foreligger."
+    ],
+    "required_local_verification": [
+      "Verifiser faktisk gjennomsnittlig uketid, vakttype, bemanningsnivå, feilhendelser og om ordningen er frivillig eller pålagt."
+    ],
+    "short_excerpt": "«... det å jobbe mer enn 12 timer pr vakt eller 40 timer pr uke er forbundet med økt antall feil og uønskede hendelser.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q03-wu7ot7-5",
+    "source_type": "research",
+    "title": "Effekten av heltidskultur på kvalitet og sikkerhet i helsetjenesten - Universitetet i Stavanger",
+    "url": "https://www.uis.no/nb/pasientsikkerhet/effekten-av-heltidskultur-pa-kvalitet-og-sikkerhet-i-helsetjenesten",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Sykepleiere som jobber 12-timers vakter rapporterer dårligere kvalitet på pleien, mindre oppmerksomhet på sikkerhet og mer arbeid som forblir ugjort.",
+    "evidence_strength": 3,
+    "relevant_case_field": [
+      "HRR-07",
+      "forskning",
+      "restitusjon",
+      "pasientsikkerhet"
+    ],
+    "affected_indicator": [
+      "risiko",
+      "kontrollkrav"
+    ],
+    "possible_risk_flag": [
+      "selvrapportering",
+      "kvalitetsindikatorer_ikke_objektive_i_utdraget",
+      "kan_ikke_generaliseres_uten_videre"
+    ],
+    "possible_stop_rule": [
+      "Ved planlegging av 12-timers vakter bør det kreves dokumentasjon på hvordan forsvarlig pleiekvalitet og oppgaveløsning opprettholdes."
+    ],
+    "required_local_verification": [
+      "Kontroller om ansatte rapporterer uferdig arbeid, om avvik øker, og om pasientnære oppgaver faktisk fullføres innen skiftet."
+    ],
+    "short_excerpt": "«Sykepleiere som jobber 12-timers vakter rapporterer om dårligere kvalitet på pleien, mindre oppmerksomhet på sikkerhet og mer arbeid som forblir ugjort.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q03-wu7ot7-6",
+    "source_type": "research",
+    "title": "Effekten av heltidskultur på kvalitet og sikkerhet i helsetjenesten - Universitetet i Stavanger",
+    "url": "https://www.uis.no/nb/pasientsikkerhet/effekten-av-heltidskultur-pa-kvalitet-og-sikkerhet-i-helsetjenesten",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Langvarig skiftarbeid mer enn 40 timer i uken kan påvirke prestasjoner og jobbtilfredshet negativt og kan føre til økt tretthet og uønskede hendelser og feil.",
+    "evidence_strength": 3,
+    "relevant_case_field": [
+      "HRR-07",
+      "forskning",
+      "restitusjon",
+      "pasientsikkerhet"
+    ],
+    "affected_indicator": [
+      "risiko",
+      "kontrollkrav"
+    ],
+    "possible_risk_flag": [
+      "uketid_som_grense",
+      "tretthet_som_mekanisme",
+      "ikke_primærstudie_i_utdraget"
+    ],
+    "possible_stop_rule": [
+      "Hvis samlet uketid er over 40 timer, bør ordningen sendes til lokal HMS- og pasientsikkerhetsvurdering før videre bruk."
+    ],
+    "required_local_verification": [
+      "Mål faktisk uketid per ansatt, overtid, hviletid mellom vakter og dokumenterte feil-/hendelsesrater."
+    ],
+    "short_excerpt": "«Mer enn 40 timer ukentlig skiftarbeid kan ha en negativ innvirkning på ansattes prestasjoner og jobbtilfredshet og kan også føre til økt tretthet og uønskede hendelser og feil.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q03-wu7ot7-7",
+    "source_type": "research",
+    "title": "Effekten av heltidskultur på kvalitet og sikkerhet i helsetjenesten - Universitetet i Stavanger",
+    "url": "https://www.uis.no/nb/pasientsikkerhet/effekten-av-heltidskultur-pa-kvalitet-og-sikkerhet-i-helsetjenesten",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Artikkelen oppsummerer at vakter over 8 timer øker tretthet og svekker ytelsen, og at tretthet/utbrenthet kan være en sikkerhetsrisiko for pasienter.",
+    "evidence_strength": 3,
+    "relevant_case_field": [
+      "HRR-07",
+      "forskning",
+      "restitusjon",
+      "pasientsikkerhet"
+    ],
+    "affected_indicator": [
+      "risiko",
+      "kontrollkrav"
+    ],
+    "possible_risk_flag": [
+      "generell_arbeidstidseksponering",
+      "indirekte_pasientsikkerhet",
+      "ikke_norsk_regelverk"
+    ],
+    "possible_stop_rule": [
+      "Hvis lokale vakter er over 8 timer og ansatte rapporterer fatigue, utløser dette behov for tiltak for å redusere belastning og sikre restitusjon."
+    ],
+    "required_local_verification": [
+      "Bekreft faktisk skiftlengde, fatigue-symptomer, pauser og om det finnes kompenserende tiltak som ekstra bemanning eller hvile."
+    ],
+    "short_excerpt": "«... vakter som varer over 8 timer øker tretthet og svekker ytelsen.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q03-wu7ot7-8",
+    "source_type": "research",
+    "title": "Effekten av heltidskultur på kvalitet og sikkerhet i helsetjenesten - Universitetet i Stavanger",
+    "url": "https://www.uis.no/nb/pasientsikkerhet/effekten-av-heltidskultur-pa-kvalitet-og-sikkerhet-i-helsetjenesten",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Studien som omtales anbefaler at arbeidstiden ikke overstiger 12 timer per skift eller 40 timer per uke, og at ansatte bør være med på å utforme turnusordningen.",
+    "evidence_strength": 3,
+    "relevant_case_field": [
+      "HRR-07",
+      "forskning",
+      "restitusjon",
+      "pasientsikkerhet"
+    ],
+    "affected_indicator": [
+      "risiko",
+      "kontrollkrav"
+    ],
+    "possible_risk_flag": [
+      "kan_være_studieanbefaling_ikke_allmenn_norm",
+      "ikke_kontrollert_for_lokal_kontekst",
+      "kan_misforstås_som_bindende_grense"
+    ],
+    "possible_stop_rule": [
+      "Bruk ikke dette som automatisk grense; hvis ordningen nærmer seg 12 timer per skift eller 40 timer per uke, kreves lokal vurdering og medvirkning."
+    ],
+    "required_local_verification": [
+      "Verifiser om anbefalingen stammer fra en enkelt studie, og om den passer lokal bemanning, pasientmix og turnusmodell."
+    ],
+    "short_excerpt": "«Studien viser at arbeidstiden ikke må overstige 12 timer per skift eller 40 timer per uke, og de ansatte bør være med på å utforme turnusordningen.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q03-n0wvcs-9",
+    "source_type": "research",
+    "title": "7.2 Forskning om arbeidstid og helse - NOU 2016: 1 - regjeringen.no",
+    "url": "https://www.regjeringen.no/no/dokumenter/nou-2016-1/id2467468/?ch=8",
+    "published_date": "2016",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "NOU-en slår fast at lange arbeidsuker over 55–60 timer per uke samt skift- og nattarbeid øker risikoen for hjerte- og karsykdom og død som følge av dette.",
+    "evidence_strength": 3,
+    "relevant_case_field": [
+      "HRR-07",
+      "forskning",
+      "restitusjon",
+      "pasientsikkerhet"
+    ],
+    "affected_indicator": [
+      "risiko",
+      "kontrollkrav"
+    ],
+    "possible_risk_flag": [
+      "generell_arbeidshelserisiko",
+      "ikke_spesifikk_for_langvakter_alene"
+    ],
+    "possible_stop_rule": [
+      "Ved arbeidstidsordninger som kan gi lang uke over 55–60 timer, må det foreligge særskilt helsevurdering og risikoreduserende tiltak."
+    ],
+    "required_local_verification": [
+      "Kontroller akkumulert uketid inkludert ekstravakter, overtid og nattarbeid, samt helserisikovurdering for ansatte."
+    ],
+    "short_excerpt": "«Det er godt dokumentert at både lange arbeidsuker (> 55–60 t/uke) og skift- og nattarbeid øker risikoen for hjerte- og karsykdom ...»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q03-n0wvcs-10",
+    "source_type": "research",
+    "title": "7.2 Forskning om arbeidstid og helse - regjeringen.no",
+    "url": "https://www.regjeringen.no/no/dokumenter/nou-2016-1/id2467468/?ch=8",
+    "published_date": "2016",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Søvnmangel påvirker funksjon og sikkerhet, og det er sterke holdepunkter for at lange arbeidsøkter, nattarbeid og roterende skift påvirker risikoen for skader og ulykker i arbeidslivet.",
+    "evidence_strength": 3,
+    "relevant_case_field": [
+      "HRR-07",
+      "forskning",
+      "restitusjon",
+      "pasientsikkerhet"
+    ],
+    "affected_indicator": [
+      "risiko",
+      "kontrollkrav"
+    ],
+    "possible_risk_flag": [
+      "arbeidsulykker",
+      "søvnmangel",
+      "skiftarbeid"
+    ],
+    "possible_stop_rule": [
+      "Hvis langvakter kombineres med nattarbeid eller roterende skift, utløses krav om ekstra vurdering av skade- og ulykkesrisiko."
+    ],
+    "required_local_verification": [
+      "Vurder faktisk turnusrotasjon, nattandeler, hvile mellom vakter og avvik/ulykkesstatistikk lokalt."
+    ],
+    "short_excerpt": "«Søvnmangel påvirker funksjon og sikkerhet, og det er sterke holdepunkter for at både lange arbeidsøkter, nattarbeid og roterende skift påvirker risikoen for skader og ulykker ...»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q03-n0wvcs-11",
+    "source_type": "research",
+    "title": "7.2 Forskning om arbeidstid og helse - regjeringen.no",
+    "url": "https://www.regjeringen.no/no/dokumenter/nou-2016-1/id2467468/?ch=8",
+    "published_date": "2016",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "NOU-en beskriver at kognitive funksjoner som årvåkenhet, informasjonsbearbeiding, beslutningstaking, hukommelse og problemløsning rammes ved langvarig våkenhet.",
+    "evidence_strength": 3,
+    "relevant_case_field": [
+      "HRR-07",
+      "forskning",
+      "restitusjon",
+      "pasientsikkerhet"
+    ],
+    "affected_indicator": [
+      "risiko",
+      "kontrollkrav"
+    ],
+    "possible_risk_flag": [
+      "fatigue_mekanisme",
+      "kognitiv_nedsettelse",
+      "generell_medisinsk_fysiologi"
+    ],
+    "possible_stop_rule": [
+      "Ved langvakter med forventet langvarig våkenhet bør oppgaver med høy risiko eller høy kognitiv belastning vurderes særskilt."
+    ],
+    "required_local_verification": [
+      "Kartlegg om arbeidsøkter faktisk medfører langvarig våkenhet, særlig ved natt, tidligvakt etter natt eller høy oppgaveintensitet."
+    ],
+    "short_excerpt": "«Kognitive funksjoner i form av årvåkenhet ... samt evne til problemløsning rammes ved langvarig våkenhet.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q03-n0wvcs-12",
+    "source_type": "research",
+    "title": "7.2 Forskning om arbeidstid og helse - regjeringen.no",
+    "url": "https://www.regjeringen.no/no/dokumenter/nou-2016-1/id2467468/?ch=8",
+    "published_date": "2016",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Risikoen for innsovningsvansker og for lite søvn er ifølge flere studier fordoblet ved arbeidsuker med 55 timer eller mer sammenlignet med 35–40 timers arbeidsuker.",
+    "evidence_strength": 3,
+    "relevant_case_field": [
+      "HRR-07",
+      "forskning",
+      "restitusjon",
+      "pasientsikkerhet"
+    ],
+    "affected_indicator": [
+      "risiko",
+      "kontrollkrav"
+    ],
+    "possible_risk_flag": [
+      "dose_respons",
+      "svekket_søvn",
+      "ikke_spesifikk_for_helsepersonell"
+    ],
+    "possible_stop_rule": [
+      "Hvis arbeidstidsordningen kan gi 55 timer eller mer per uke, bør søvn- og restitusjonsrisiko behandles som forhøyet."
+    ],
+    "required_local_verification": [
+      "Kontroller om ansatte faktisk når 55 timer eller mer per uke, inkludert ekstravakter, og om søvnmangel rapporteres."
+    ],
+    "short_excerpt": "«Videre viser flere studier at risikoen for innsovningsvansker og for lite søvn er fordoblet ved arbeidsuker med 55 timer eller mer ...»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q03-a28tzm-13",
+    "source_type": "research",
+    "title": "Arbeidsmedisinske kommentarer om arbeidstid - Arbeidstilsynet",
+    "url": "https://www.arbeidstilsynet.no/globalassets/om-oss/forskning-og-rapporter/kompass-tema-rapporter/2020/kompass-2020-arbeidstid/",
+    "published_date": "2020",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Arbeidstilsynet oppsummerer at ny forskning bekrefter at lange arbeidsøkter og skiftarbeid, særlig med nattarbeid, kan føre til nedsatt funksjon med økt risiko for ulykker og feil.",
+    "evidence_strength": 3,
+    "relevant_case_field": [
+      "HRR-07",
+      "forskning",
+      "restitusjon",
+      "pasientsikkerhet"
+    ],
+    "affected_indicator": [
+      "risiko",
+      "kontrollkrav"
+    ],
+    "possible_risk_flag": [
+      "arbeidstilsynet_oppsummering",
+      "nattarbeid_sentralt",
+      "økt_risiko_for_feil"
+    ],
+    "possible_stop_rule": [
+      "Ved langvakter med nattarbeid eller stor skiftbelastning må arbeidsgiver dokumentere risikovurdering og kompenserende tiltak."
+    ],
+    "required_local_verification": [
+      "Verifiser skiftmønster, nattarbeid, hviletid, og om den lokale risikovurderingen faktisk er oppdatert."
+    ],
+    "short_excerpt": "«Ny forskning bekrefter tidligere funn av at lange arbeidsøkter og skiftarbeid, særlig med nattarbeid, kan føre til nedsatt funksjon med påfølgende økt risiko ...»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q03-8usykv-14",
+    "source_type": "research",
+    "title": "Arbeidstid, helse og sikkerhet - STAMI",
+    "url": "https://stami.no/tema/organisatorisk-arbeidsmiljo/arbeidstid-helse-og-sikkerhet/",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "STAMI beskriver at skiftarbeid, nattarbeid og utvidet arbeidstid kan gi nedsatt oppmerksomhet og funksjon, som bidrar til økt risiko for uheldige hendelser og feilhandlinger.",
+    "evidence_strength": 3,
+    "relevant_case_field": [
+      "HRR-07",
+      "forskning",
+      "restitusjon",
+      "pasientsikkerhet"
+    ],
+    "affected_indicator": [
+      "risiko",
+      "kontrollkrav"
+    ],
+    "possible_risk_flag": [
+      "fatigue",
+      "uheldige_hendelser",
+      "feilhandlinger"
+    ],
+    "possible_stop_rule": [
+      "Hvis langvakter inngår i skiftordninger med høy belastning, utløses behov for tiltak som reduserer fatigue og sikrer restitusjon."
+    ],
+    "required_local_verification": [
+      "Sjekk om ansatte får nok pause, restitusjon mellom skift og medvirkning i turnusplanlegging."
+    ],
+    "short_excerpt": "«Kortsiktige konsekvenser kan være nedsatt oppmerksomhet og funksjon, som bidrar til økt risiko for uheldige hendelser og feilhandlinger.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q03-8usykv-15",
+    "source_type": "research",
+    "title": "Arbeidstid, helse og sikkerhet - STAMI",
+    "url": "https://stami.no/tema/organisatorisk-arbeidsmiljo/arbeidstid-helse-og-sikkerhet/",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "STAMI anbefaler tilrettelegging for søvn og restitusjon før og etter arbeidsøkten, samt tilstrekkelige restitusjonsmuligheter i løpet av skift, mellom skift og mellom skiftsekvenser.",
+    "evidence_strength": 3,
+    "relevant_case_field": [
+      "HRR-07",
+      "forskning",
+      "restitusjon",
+      "pasientsikkerhet"
+    ],
+    "affected_indicator": [
+      "risiko",
+      "kontrollkrav"
+    ],
+    "possible_risk_flag": [
+      "restitusjon",
+      "søvntilrettelegging",
+      "arbeidsgiveransvar"
+    ],
+    "possible_stop_rule": [
+      "Manglende restitusjon mellom vakter eller i lange skift bør utløse krav om lokal forbedring før videreføring."
+    ],
+    "required_local_verification": [
+      "Verifiser faktisk hvile mellom vakter, mulighet for søvn og om pauser er gjennomførbare i praksis."
+    ],
+    "short_excerpt": "«Sørg for tilstrekkelig muligheter for restitusjon i løpet av et skift, mellom påfølgende skift og mellom sekvenser av skift.»",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q04-y9oogl-1",
+    "source_type": "official",
+    "title": "Utvikle helse- og omsorgstjenestene - NSF",
+    "url": "https://www.nsf.no/vart-politiske-arbeid/utvikle-helse-og-omsorgstjenestene",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "NSF mener en bemanningsnorm vil være et effektivt virkemiddel for å sikre nødvendig kompetanse og ressurser i helse- og omsorgstjenestene, og ønsker normering i sykehjem, heldøgns omsorg og hjemmesykepleie.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "bemanning",
+      "kontinuitet",
+      "kompetanse"
+    ],
+    "affected_indicator": [
+      "malklarhet",
+      "separabilitet",
+      "lokal_forankring"
+    ],
+    "possible_risk_flag": [
+      "partskilde; normativ interesseposisjon; ikke en myndighets- eller forskningskilde; sier ikke direkte noe om langvakter."
+    ],
+    "possible_stop_rule": [
+      "Skal ikke brukes alene som grunnlag for regelverk, terskelverdier eller automatisk beslutningslogikk."
+    ],
+    "required_local_verification": [
+      "Verifiser om lokal turnusbruk med langvakter faktisk er koblet til bemanningsmangel, kompetansebehov eller kontinuitetsutfordringer i den aktuelle enheten."
+    ],
+    "short_excerpt": "En bemanningsnorm vil være et effektivt virkemiddel ... NSF vil nå prioritere etablering av bemanningsnorm i sykehjem, heldøgns omsorg og hjemmesykepleie.",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q04-13skjzm-2",
+    "source_type": "official",
+    "title": "Tid for handling - Helsepersonellkommisjonen",
+    "url": "https://www.regjeringen.no/contentassets/337fef958f2148bebd326f0749a1213d/no/pdfs/nou202320230004000dddpdfs.pdf",
+    "published_date": "2023",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Helsepersonellkommisjonen ble oppnevnt for å etablere et kunnskapsgrunnlag og foreslå treffsikre tiltak knyttet til framtidig kapasitet og organisering i helse- og omsorgstjenestene.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "bemanning",
+      "kontinuitet",
+      "kompetanse"
+    ],
+    "affected_indicator": [
+      "malklarhet",
+      "separabilitet",
+      "lokal_forankring"
+    ],
+    "possible_risk_flag": [
+      "Generell kapasitetsutredning; ikke spesifikk om langvakter eller turnusordninger i utdraget; må ikke overtolkes som støtte for en konkret arbeidsordning."
+    ],
+    "possible_stop_rule": [
+      "Kan støtte videre lokal verifikasjon om bemanning/kompetanse, men utløser ikke i seg selv en regel om langvakter eller en forsvarlighetskonklusjon."
+    ],
+    "required_local_verification": [
+      "Sjekk om lokale vurderinger av langvakter bygger på kommisjonens kapasitetstemaer eller på en særskilt risikovurdering av arbeidstid og arbeidsbelastning."
+    ],
+    "short_excerpt": "Helsepersonellkommisjonen ble oppnevnt ... for å etablere et kunnskapsgrunnlag og foreslå treffsikre ...",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q04-1piduh2-3",
+    "source_type": "official",
+    "title": "Veileder for saksbehandling av tjenester etter helse- og omsorgstjenesteloven",
+    "url": "https://helsedirektoratet.no/retningslinjer/veileder-for-saksbehandling-av-tjenester-etter-helse-og-omsorgstjenesteloven",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Helsedirektoratets veileder viser at kommunen etter helse- og omsorgstjenesteloven § 3-1 har plikt til å sørge for nødvendige omsorgstjenester.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "bemanning",
+      "kontinuitet",
+      "kompetanse"
+    ],
+    "affected_indicator": [
+      "malklarhet",
+      "separabilitet",
+      "lokal_forankring"
+    ],
+    "possible_risk_flag": [
+      "Relevant for kommunal tjenesteplikt, men ikke spesifikk evidens for langvakter, bemanningsnivå eller kontinuitet; kan ikke brukes som direkte hjemmel for turnusvalg."
+    ],
+    "possible_stop_rule": [
+      "Hvis lokal turnus med langvakter utfordrer forsvarlighet eller tilgjengelighet, må det vurderes opp mot kommunens plikt til nødvendige tjenester."
+    ],
+    "required_local_verification": [
+      "Verifiser om bemanningsoppsett med langvakter faktisk opprettholder nødvendige omsorgstjenester uten svikt i tilgjengelighet eller kvalitet."
+    ],
+    "short_excerpt": "Etter helse- og omsorgstjenesteloven § 3-1 har kommunen plikt til å sørge for nødvendige ...",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q04-zmxqse-4",
+    "source_type": "secondary",
+    "title": "Forvaltningsrevisjon av pleie og omsorg, Asker kommune",
+    "url": "https://vikus.no/wp-content/uploads/2020/10/Rapport-fra-forvaltningsrevisjon-av-pleie-og-omsorg-1-1.pdf",
+    "published_date": "2020",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Rapporten legger til grunn at kommunen skal ha planer, langsiktige strategier, oversikt over kompetanse og systemer for å sikre tilstrekkelig kapasitet og kompetanse i helse- og omsorgstjenesten.",
+    "evidence_strength": 2,
+    "relevant_case_field": [
+      "HRR-07",
+      "bemanning",
+      "kontinuitet",
+      "kompetanse"
+    ],
+    "affected_indicator": [
+      "malklarhet",
+      "separabilitet",
+      "lokal_forankring"
+    ],
+    "possible_risk_flag": [
+      "Lokal revisjonsrapport fra én kommune; egner seg som lokal eksempelcase, ikke som generell norm for norske kommuner eller langvakter."
+    ],
+    "possible_stop_rule": [
+      "Kan utløse lokal verifikasjon om kompetanse- og kapasitetsstyring, men ikke en generell stoppregel for eller mot langvakter."
+    ],
+    "required_local_verification": [
+      "Sjekk om egen enhet har tilsvarende svakheter i kompetanseoversikt, opplæringsplaner eller kapasitetsstyring før langvakter brukes som tiltak."
+    ],
+    "short_excerpt": "Kommunen skal sikre at det er tilstrekkelig kompetanse ... ha oversikt over medarbeidernes kompetanse og behov for opplæring ... sikre tilstrekkelig kapasitet ...",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q04-13icerx-5",
+    "source_type": "secondary",
+    "title": "Bedre bemanning: Vi trenger nok folk på jobb - Fagforbundet",
+    "url": "https://www.fagforbundet.no/om-fagforbundet/fagforbundet-mener/bemanning/",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Fagforbundet peker på at bemanningsproblemene er mest akutte i helsesektoren, og viser til et framtidig behov for flere ansatte i helse- og omsorgssektoren.",
+    "evidence_strength": 2,
+    "relevant_case_field": [
+      "HRR-07",
+      "bemanning",
+      "kontinuitet",
+      "kompetanse"
+    ],
+    "affected_indicator": [
+      "malklarhet",
+      "separabilitet",
+      "lokal_forankring"
+    ],
+    "possible_risk_flag": [
+      "Partskilde og politisk budskap; ikke primærforskning og ikke spesifikk om langvakter, kontinuitet eller forsvarlighet."
+    ],
+    "possible_stop_rule": [
+      "Skal ikke brukes som alenegrunnlag for å hevde at langvakter er nødvendig, trygt eller utrygt."
+    ],
+    "required_local_verification": [
+      "Verifiser om lokale bemanningsutfordringer faktisk tilsier langvakter, eller om andre tiltak bedre løser kontinuitet og kapasitet."
+    ],
+    "short_excerpt": "Bemanningsproblemene er mest akutt i helsesektoren ... vi kommer til å trenge 180 000 flere i helse- og omsorgssektoren innen 2060.",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q04-aumz1j-6",
+    "source_type": "secondary",
+    "title": "Pleie- og omsorgssektoren som lærende organisasjon - Sykepleien",
+    "url": "https://sykepleien.no/forskning/2009/04/pleie-og-omsorgssektoren-som-laerende-organisasjon",
+    "published_date": "2009",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Artikkelen beskriver at helsemyndighetene har iverksatt tiltak for å sikre kvaliteten i pleie- og omsorgstjenesten, og kobler dette til læring og bedre mestring av utfordringer blant ansatte.",
+    "evidence_strength": 2,
+    "relevant_case_field": [
+      "HRR-07",
+      "bemanning",
+      "kontinuitet",
+      "kompetanse"
+    ],
+    "affected_indicator": [
+      "malklarhet",
+      "separabilitet",
+      "lokal_forankring"
+    ],
+    "possible_risk_flag": [
+      "Forskningsformidling med høy alder og indirekte kobling til organisering; ikke konkret om langvakter, bemanning eller pasientsikkerhet."
+    ],
+    "possible_stop_rule": [
+      "Bør ikke brukes som direkte støtte for turnusregler eller stoppregler for langvakter."
+    ],
+    "required_local_verification": [
+      "Hvis brukt, må påstanden kobles til nyere og mer direkte kilder om arbeidstid, belastning eller kontinuitet i helsetjenesten."
+    ],
+    "short_excerpt": "Bakgrunn: Helsemyndighetene har de senere år iverksatt en rekke tiltak for å sikre kvaliteten på pleie- og omsorgstjenesten.",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q05-61tok4-1",
+    "source_type": "official",
+    "title": "Risikovurdering - Arbeidstilsynet",
+    "url": "https://www.arbeidstilsynet.no/hms/risikovurdering/",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Risikovurdering i virksomheten skal omfatte en systematisk kartlegging og vurdering av alle forhold i arbeidet som kan føre til personskader, helseplager eller sykdom, og den skal være skriftlig, oppdatert og en del av det systematiske HMS-arbeidet.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "lokal_verifikasjon",
+      "stoppregler"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "risiko"
+    ],
+    "possible_risk_flag": [
+      "Langvakter i helse og omsorg må vurderes lokalt som del av et bredt HMS-bilde, ikke bare som turnusvalg."
+    ],
+    "possible_stop_rule": [
+      "Stopp eller ikke-iverksett endringer dersom risikovurderingen ikke er gjennomført, dokumentert eller oppdatert før innføring av langvakter."
+    ],
+    "required_local_verification": [
+      "Verifiser lokalt hvilke farer langvakter kan utløse hos dere, hvilke tiltak som allerede finnes, og om vurderingen er skriftlig dokumentert og oppdatert for den aktuelle enheten."
+    ],
+    "short_excerpt": "\"Alle farer og problemer i arbeidsmiljøet som kan medføre skader, helseplager eller sykdom nå eller i framtiden, skal risikovurderes.\"",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q05-1v03fn-2",
+    "source_type": "official",
+    "title": "Verneombud - Arbeidstilsynet",
+    "url": "https://www.arbeidstilsynet.no/hms/roller-i-hms-arbeidet/verneombud/",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Verneombudet skal tas med på råd ved planlegging og gjennomføring av tiltak som har betydning for arbeidsmiljøet, og kan delta aktivt i internkontroll og varsle om forhold som truer helse, sikkerhet eller velferd.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "lokal_verifikasjon",
+      "stoppregler"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "risiko"
+    ],
+    "possible_risk_flag": [
+      "Langvakter som endrer belastning, pauser eller arbeidstidsordning er tiltak med betydning for arbeidsmiljøet og skal drøftes lokalt med verneombud."
+    ],
+    "possible_stop_rule": [
+      "Stopp lokal iverksetting dersom verneombud ikke er tatt med i planlegging og gjennomføring av tiltak som påvirker arbeidsmiljøet."
+    ],
+    "required_local_verification": [
+      "Verifiser at verneombud faktisk har vært involvert før beslutning om langvakter, og at eventuelle varsler eller merknader er håndtert."
+    ],
+    "short_excerpt": "\"tas med på råd ved planlegging og gjennomføring av tiltak som har betydning for arbeidsmiljøet\"",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q05-1lzpeti-3",
+    "source_type": "official",
+    "title": "Risikovurdering - Regionale verneombud",
+    "url": "https://rvofond.no/hrr/hms/2594-2",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Risikovurdering skal gjennomføres i samarbeid med arbeidstakerne, verneombud og tillitsvalgte, og tiltakene skal settes opp i en prioritert handlingsplan med tidsfrist og ansvarsfordeling.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "lokal_verifikasjon",
+      "stoppregler"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "risiko"
+    ],
+    "possible_risk_flag": [
+      "Lokale kontrollpunkter for langvakter må forankres hos både tillitsvalgte og verneombud, ikke bare ledelsen."
+    ],
+    "possible_stop_rule": [
+      "Ikke gå videre dersom det mangler samarbeid med arbeidstakere, verneombud og tillitsvalgte eller hvis handlingsplan med ansvar og frist ikke foreligger."
+    ],
+    "required_local_verification": [
+      "Verifiser lokalt at partene er involvert, at handlingsplan finnes, og at den dekker konkrete kontrollpunkter for pausepraksis, belastning og oppfølging."
+    ],
+    "short_excerpt": "\"Risikovurderingen skal gjennomføres i samarbeid med arbeidstakerne, verneombud og tillitsvalgte.\"",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q05-1lzpeti-4",
+    "source_type": "official",
+    "title": "Risikovurdering - Regionale verneombud",
+    "url": "https://rvofond.no/hrr/hms/2594-2",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Ved risikovurdering bør virksomheten hente fram informasjon fra vernerunder, avvik, sykefravær og tidligere ulykker for å identifisere relevante farer og problemer.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "lokal_verifikasjon",
+      "stoppregler"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "risiko"
+    ],
+    "possible_risk_flag": [
+      "For langvakter er det lokalt viktig å kontrollere om avvik, sykefravær og uønskede hendelser peker på økt belastning eller pauser som ikke fungerer."
+    ],
+    "possible_stop_rule": [
+      "Stopp eller utsett innføring dersom lokale data om avvik, sykefravær eller hendelser ikke er gjennomgått før beslutning."
+    ],
+    "required_local_verification": [
+      "Verifiser lokalt siste vernerunde, avvikssystem, sykefraværstall og hendelser for enheten før langvakter vurderes eller utvides."
+    ],
+    "short_excerpt": "\"Har dere registrert avvik eller uønskede hendelser... Hvordan er sykefraværet? Har dere hatt noen ulykker tidligere?\"",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q05-1qdnp4a-5",
+    "source_type": "official",
+    "title": "Veileder for verneombudene i foretaksgruppen – Helse Sør-Øst",
+    "url": "https://www.helse-sorost.no/499f9b/siteassets/documents/om-oss/1210_hso_veileder_for_verneombud--endelig-utgave.pdf",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Verneombudet skal ha en aktiv rolle i HMS-arbeidet og tas med allerede ved planleggingen, ikke først etter at tiltakene er besluttet; dette omfatter blant annet omstilling, arbeidstidsplanlegging og budsjettprosesser.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "lokal_verifikasjon",
+      "stoppregler"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "risiko"
+    ],
+    "possible_risk_flag": [
+      "Planlegging av langvakter er et tiltak som kan påvirke arbeidsmiljøet og må dermed involvere verneombud tidlig."
+    ],
+    "possible_stop_rule": [
+      "Stopp videre planlegging hvis verneombudet først informeres etter at beslutninger om langvakter er tatt."
+    ],
+    "required_local_verification": [
+      "Verifiser lokalt at verneombud ble involvert før beslutning, og at arbeidstidsplanleggingen faktisk ble drøftet som del av HMS-arbeidet."
+    ],
+    "short_excerpt": "\"du skal tas med allerede ved planleggingen, ikke etter at tiltakene er besluttet\"",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q05-1qdnp4a-6",
+    "source_type": "official",
+    "title": "Veileder for verneombudene i foretaksgruppen – Helse Sør-Øst",
+    "url": "https://www.helse-sorost.no/499f9b/siteassets/documents/om-oss/1210_hso_veileder_for_verneombud--endelig-utgave.pdf",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Verneombudet har en særlig varslingsplikt dersom det blir kjent med risikofylte eller helsefarlige forhold.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "lokal_verifikasjon",
+      "stoppregler"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "risiko"
+    ],
+    "possible_risk_flag": [
+      "Hvis langvakter skaper uforsvarlige forhold som pauser, tretthet eller bemanningsrisiko, kan det utløse varslingsplikt lokalt."
+    ],
+    "possible_stop_rule": [
+      "Stopp eller eskaler dersom verneombud kjenner til risikofylte eller helsefarlige forhold knyttet til langvakter."
+    ],
+    "required_local_verification": [
+      "Verifiser lokalt om verneombud har varslet om konkrete risikoforhold, og hvilke tiltak arbeidsgiver har iverksatt som svar."
+    ],
+    "short_excerpt": "\"du har en særlig varslingsplikt dersom du blir kjent med risikofylte eller helsefarlige forhold\"",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q05-1v03fn-7",
+    "source_type": "official",
+    "title": "Verneombud - Arbeidstilsynet",
+    "url": "https://www.arbeidstilsynet.no/hms/roller-i-hms-arbeidet/verneombud/",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Verneombudet har mulighet til å stanse arbeidet ved umiddelbar fare for liv og helse.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "lokal_verifikasjon",
+      "stoppregler"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "risiko"
+    ],
+    "possible_risk_flag": [
+      "Ved akutt uforsvarlighet i langvaktordningen kan stans være relevant hvis det foreligger umiddelbar fare."
+    ],
+    "possible_stop_rule": [
+      "Stopp arbeidet dersom langvakter medfører umiddelbar fare for liv eller helse."
+    ],
+    "required_local_verification": [
+      "Verifiser lokalt om det foreligger umiddelbar fare i den konkrete situasjonen; denne vurderingen må skje på stedet og av ansvarlige aktører."
+    ],
+    "short_excerpt": "\"Verneombudet har mulighet til å stanse arbeidet ved umiddelbar fare for liv og helse.\"",
+    "review_status": "draft"
+  },
+  {
+    "source_id": "LV-Q05-61tok4-8",
+    "source_type": "official",
+    "title": "Risikovurdering - Arbeidstilsynet",
+    "url": "https://www.arbeidstilsynet.no/hms/risikovurdering/",
+    "retrieved_at": "2026-05-19T13:05:19.414Z",
+    "claim": "Dersom virksomheten har krav om bedriftshelsetjeneste, skal bedriftshelsetjenesten bistå med kartlegging og risikovurdering.",
+    "evidence_strength": 4,
+    "relevant_case_field": [
+      "HRR-07",
+      "lokal_verifikasjon",
+      "stoppregler"
+    ],
+    "affected_indicator": [
+      "kontrollkrav",
+      "lokal_forankring",
+      "risiko"
+    ],
+    "possible_risk_flag": [
+      "Langvakter i helse og omsorg kan kreve faglig bistand til kartlegging av belastning, pauser og helsefare der BHT-krav gjelder."
+    ],
+    "possible_stop_rule": [
+      "Utsett lokal beslutning dersom påkrevd bedriftshelsetjeneste ikke er involvert i kartlegging og risikovurdering."
+    ],
+    "required_local_verification": [
+      "Verifiser lokalt om virksomheten har plikt til BHT og om BHT faktisk har deltatt i kartleggingen av langvakter og pausepraksis."
+    ],
+    "short_excerpt": "\"skal bedriftshelsetjenesten bistå med kartlegging og risikovurdering\"",
+    "review_status": "draft"
+  }
+]

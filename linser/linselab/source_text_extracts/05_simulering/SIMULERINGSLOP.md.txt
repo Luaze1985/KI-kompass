@@ -1,0 +1,41 @@
+# SIMULERINGSLOP
+
+## trigger
+- behov for a utforske scenarioer, konsekvenser eller handlingsvalg for beslutning
+
+## eier
+- dirigenten initierer
+- stabssjef eller domeneeier avslutter med syntese
+
+## maal
+- gi en strukturert, sporbar og flerstemt simulering av et scenario
+
+## faser
+
+1. Oppdragsinntak
+   - avklar scenario, tidshorisont og beslutningspunkt
+2. Aktivering
+   - velg relevante linser og eventuelt HR-tvillingen
+3. Simulering
+   - kjor perspektivanalyse og identifiser konflikt
+4. Operativ realitetstest
+   - koble inn Gruppe L
+5. Syntese
+   - stabssjef samler funn og anbefaler videre
+
+## gate for neste fase
+- scenario, forutsetninger, konfliktpunkter og anbefalt handlingsretning er eksplisitte
+
+## hva som er forskning
+- bruk av nye scenariohypoteser eller eksterne referanser for a fylle kunnskapshull
+
+## hva som er prototype
+- nye simuleringsmaler eller eksperimentelle agentoppsett
+
+## hva som er produksjon
+- bare scenariooppsett og rapportering som er godkjent for lokal bruk
+
+## lokal verifikasjon
+- bekreft at scenarioet bygger pa lokale fakta
+- marker hva som er antatt
+- verifiser at sensitivt materiale ikke brukes ukritisk

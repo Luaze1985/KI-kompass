@@ -1,0 +1,25 @@
+# OPPDRAG_SKRIV_IT_BESLUTNINGSNOTAT
+
+## Bruk nar
+
+- du trenger et kort og sporbart beslutningsnotat om systemvalg, innforing, arkitektur, sikkerhet eller drift
+
+## Det du fyller inn
+
+- hva som skal besluttes:
+- beslutningseier:
+- berorte omrader:
+- kjent tall- eller risikogrunnlag:
+- hva som ma verifiseres lokalt:
+
+## Starttekst
+
+Skriv et beslutningsnotat innenfor stabsomradet IT og digitalisering.
+
+Bruk bare aktive mastere, relevant prosesskort og domene-guardrails.
+Skill tydelig mellom teknisk fakta, gjennomforingsrisiko, eierbilde og anbefaling.
+Hvis sikkerhet, personvern eller tverrgaende systemeierskap er uklart, skal dette sies eksplisitt.
+
+## Forventet utfil
+
+- `09_templates_og_output/maler/BESLUTNINGSNOTAT_TEMPLATE.md`

@@ -1,0 +1,49 @@
+name: ki_beslutningsradar_runde_1
+profile: concept_context
+status: structured
+created: 2026-05-12
+language: nb
+
+purpose: >
+  Samle grunnfundament, researchrunde 1, foreløpig syntese, scoremodell,
+  kilder, handoff og neste arbeidsoppgaver for KI-beslutningsradaren.
+
+canonical_inputs:
+  grunnfundament: archive/source_packages/grunnfundament_med_bilder/
+  runde_1: archive/source_packages/runde_1_ready/
+  context: archive/source_packages/runde_1_klargjoring/
+  quality_reference: archive/source_packages/runde_1_archive_variant/
+
+guardrails:
+  - Ikke bygg app før bruker godkjenner første issue-steg.
+  - Ikke lås vekting før modellen er testet på caser.
+  - Ikke gjør KI-rolle til automatisk konklusjon.
+  - Bruk stoppregler før anbefalt rolle.
+  - Bevar menneskelig ansvar og beslutningslogg.
+
+next_task: tasks/active/hrsr_002_domain_schemas_and_fixtures.md
+
+mvp_candidate_setup:
+  source_harness: 'C:\Users\larse\Documents\Produksjonsbase\Agenter og koder'
+  architecture: sequential_handoff
+  agent_pack: architect_builder_verifier
+  codebase_profile: typescript_app
+  sprint_package: sprints/001-mvp-dimensjonering-vurdering/
+  eval_plan: evals/mvp_case_eval_plan.md
+  realistic_hr_cases: testcases/hr_strategiradar_realistiske_caser.md
+  langvakter_research: research/langvakter_helsesektoren_kildegrunnlag.md
+  app_proposal: app_spec/avansert_typescript_hr_strategiradar.md
+  user_journey: app_spec/brukerreise_hr_strategiradar.md
+  ui_startflow: app_spec/ui_3_stegs_startflyt_og_kanban.md
+  workflow_and_calculation_model: app_spec/arbeidsflyt_og_beregningsmodell.md
+  prd: prd/hr_strategiradar_mvp_prd.md
+  issues: issues/hr_strategiradar_mvp_issues.md
+  implementation_plan: docs/superpowers/plans/2026-05-12-hr-strategiradar-mvp.md
+  ui_ux_review: reviews/ui_ux/001_3_stegs_mvp_ui_review.md
+  antigravity_handoff: handoff/antigravity_first_mvp/handoff.md
+  antigravity_prompt: handoff/antigravity_first_mvp/prompt.md
+  completed_issues:
+    - HRSR-001
+  next_issue: HRSR-002
+  first_tracer_bullet: seniorbevaring_i_hjemmetjenesten_livsfasepolitikk
+  status: antigravity_first_mvp_handoff_ready

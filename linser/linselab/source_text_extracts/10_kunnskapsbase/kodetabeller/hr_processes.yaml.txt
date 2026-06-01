@@ -1,0 +1,84 @@
+metadata:
+  id: hr_processes
+  version: 1.0
+  status: derived_from_markdown_master
+  master_refs:
+    - 01_organisasjonsmodell/HR_PROSESSOVERSIKT.md
+    - 01_organisasjonsmodell/HR_KJERNEPROSESSER
+
+processes:
+  - process_id: P-01
+    name: sykefravaersoppfolging
+    owner_role: R-13
+    supporting_roles: [R-05, R-06, R-08]
+    systems: [S-01, S-02, S-03, S-09]
+    regulations: [REG-01, REG-06]
+    artifacts: [ART-05, ART-06]
+    risks: [RSK-02, RSK-04, RSK-05]
+    controls: [CTRL-01, CTRL-02, CTRL-03, CTRL-06]
+    primary_workflows: [simulering, beslutningsstotte, mote]
+    nav_ref: https://www.nav.no/arbeidsgiver/oppfolging-sykmeldte
+  - process_id: P-02
+    name: strategisk_rekruttering
+    owner_role: R-09
+    supporting_roles: [R-04, R-05]
+    systems: [S-05, S-07]
+    regulations: [REG-02, REG-03, REG-06, REG-09]
+    artifacts: [ART-01, ART-02, ART-03, ART-04]
+    risks: [RSK-02, RSK-07]
+    controls: [CTRL-01, CTRL-03, CTRL-05, CTRL-06]
+    primary_workflows: [beslutningsstotte, produksjon]
+    ks_ref: https://www.ks.no/fagomrader/arbeidsgiverpolitikk/inkluderende-arbeidsliv-ia/unntak-fra-kvalifikasjonsprinsippet/
+  - process_id: P-03
+    name: kompleks_personalsak
+    owner_role: R-06
+    supporting_roles: [R-03, R-05]
+    systems: [S-03, S-04]
+    regulations: [REG-01, REG-02, REG-05, REG-06]
+    artifacts: [ART-06, ART-10, ART-11]
+    risks: [RSK-01, RSK-02, RSK-04]
+    controls: [CTRL-01, CTRL-02, CTRL-03, CTRL-04]
+    primary_workflows: [beslutningsstotte, mote]
+  - process_id: P-04
+    name: laerlinginntak_og_oppfolging
+    owner_role: R-10
+    supporting_roles: [R-04]
+    systems: [S-05, S-06, S-08]
+    regulations: [REG-02, REG-06, REG-08]
+    artifacts: [ART-02, ART-08, ART-09]
+    risks: [RSK-02, RSK-08]
+    controls: [CTRL-01, CTRL-02, CTRL-05]
+    primary_workflows: [produksjon, mote]
+    udir_ref: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/larling/
+  - process_id: P-05
+    name: systematisk_HMS_arbeid
+    owner_role: R-08
+    supporting_roles: [R-02]
+    systems: [S-01, S-02, S-03]
+    regulations: [REG-01, REG-06, REG-07]
+    artifacts: [ART-06, ART-07]
+    risks: [RSK-03, RSK-05, RSK-06]
+    controls: [CTRL-01, CTRL-02, CTRL-03]
+    primary_workflows: [simulering, beslutningsstotte, mote]
+    arbeidstilsynet_ref: https://www.arbeidstilsynet.no/hms/internkontroll/
+  - process_id: P-06
+    name: lederutviklingsportefolje
+    owner_role: R-04
+    supporting_roles: [R-11, R-12, R-14]
+    systems: [S-01, S-06, S-07]
+    regulations: [REG-06]
+    artifacts: [ART-09, ART-10, ART-11]
+    risks: [RSK-05, RSK-06]
+    controls: [CTRL-01, CTRL-03, CTRL-05]
+    primary_workflows: [beslutningsstotte, produksjon]
+    ks_ref: https://www.ks.no/fagomrader/arbeidsgiverpolitikk/kompetanse-og-rekruttering/verktoy---strategisk-kompetanseplanlegging
+  - process_id: P-08
+    name: omstillingsprosess
+    owner_role: R-03
+    supporting_roles: [R-06, R-07, R-08, R-14]
+    systems: [S-01, S-03, S-04]
+    regulations: [REG-01, REG-02, REG-04, REG-05, REG-06]
+    artifacts: [ART-06, ART-10, ART-11, ART-12]
+    risks: [RSK-01, RSK-02, RSK-03, RSK-05]
+    controls: [CTRL-01, CTRL-02, CTRL-03, CTRL-04, CTRL-06]
+    primary_workflows: [simulering, beslutningsstotte, mote, produksjon]

@@ -1,0 +1,10 @@
+regulation_id,name,source_url,master_ref
+REG-01,arbeidsmiljoloven,https://lovdata.no/,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+REG-02,forvaltningsloven,https://lovdata.no/,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+REG-03,offentlighetsloven,https://lovdata.no/,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+REG-04,hovedtariffavtalen_KS,https://www.ks.no/,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+REG-05,hovedavtalen_KS,https://www.ks.no/,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+REG-06,GDPR_og_informasjonssikkerhet,https://www.datatilsynet.no/,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+REG-07,internkontrollforskriften,https://www.arbeidstilsynet.no/hms/internkontroll/,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+REG-08,opplaringslova_og_regelverk_for_laerebedrift,https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/larling/,10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+REG-09,kvalifikasjonsprinsippet_i_kommunal_rekruttering,https://www.ks.no/fagomrader/arbeidsgiverpolitikk/inkluderende-arbeidsliv-ia/unntak-fra-kvalifikasjonsprinsippet/,10_kunnskapsbase/modeller/hr_pilot_v1.yaml

@@ -1,0 +1,25 @@
+# OPPDRAG_FORBERED_STYRINGSMOTE
+
+## Bruk nar
+
+- du skal forberede et styringsmote, tertialmote eller prioriteringsmote
+
+## Det du fyller inn
+
+- motetype:
+- formal:
+- beslutningspunkt:
+- deltakerroller:
+- viktigste tall- eller risikosporsmal:
+
+## Starttekst
+
+Forbered et styringsmote innenfor domenet okonomi og virksomhetsstyring.
+
+Bruk bare aktive mastere, relevant prosesskort og domene-guardrails.
+Skill mellom hva som er status, hva som er tolkning, og hva som er beslutning.
+Pek ut konfliktlinjer, ansvar og oppfolging.
+
+## Forventet utfil
+
+- `09_templates_og_output/maler/MOTEUNDERLAG_TEMPLATE.md`

@@ -1,0 +1,55 @@
+# FORHANDLINGSRADGIVER STILLINGSUTLYSNING
+
+Status: avledet produksjonsartefakt v1
+
+## Metadata
+
+- role_id: `R-07`
+- unit_id: `U-04`
+- styrk08_ref: maa_verifiseres_lokalt_i_klass_api
+- local_status: krever_lokal_tilpasning_for_publisering
+
+## Kort annonsetekst
+
+Vi soker en forhandlingsradgiver som kan kombinere tarifffaglig trygghet med god prosessforstaelse og samarbeidsevne. Rollen krever at du kan holde oversikt i krevende forhandlingslop og bidra til tydelig samspill mellom ledelse, HR og tillitsvalgte.
+
+## Formaal med stillingen
+
+Sikre profesjonelle forhandlings- og medvirkningslop med tydelig mandat, dokumentasjon og kobling til kommunens arbeidsgiverpolitikk.
+
+## Hovedansvar
+
+- planlegge, gjennomfore og dokumentere lokale forhandlinger
+- gi rad om tariff, medvirkning og partsdialog i omstillings- og arbeidsgiverspor
+- bidra til tydelig rolleforstaelse mellom ledelse, HR og tillitsvalgte
+- fange opp risiko for fastlaaste eller uklare forhandlingslop
+
+## Must-have kvalifikasjoner
+
+- relevant hoyere utdanning
+- erfaring med tariff, forhandlinger eller partssamarbeid
+- god skriftlig og muntlig framstillingsevne
+- evne til a strukturere saker med hoy konfliktgrad
+
+## Onskede tilleggskvalifikasjoner
+
+- erfaring fra kommunal sektor eller annen tariffregulert virksomhet
+- erfaring med omstillingsprosesser eller lonnsforhandlinger
+- erfaring med a gi rad til ledere i krevende prosesser
+
+## System- og arbeidsflate
+
+- styringsunderlag, dokumentasjonslosninger og lokale forhandlingsarenaer
+- tett samarbeid med HR-sjef, HR-jurist og tillitsvalgte
+
+## Forste 12 maneder
+
+- sikre tydeligere mandat og referatspor i sentrale forhandlingslop
+- bidra i omstillingsspor med tydelig medvirknings- og partsbilde
+- styrke samspillet mellom forhandlingssporet og ovrig HR-stotte
+
+## Lokal verifikasjon for publisering
+
+- verifiser om stillingen heter forhandlingsradgiver eller forhandlingsleder lokalt
+- verifiser hvilke tariffomrader og forhandlingslop rollen skal dekke
+- verifiser lokal arbeidsdeling mot lonnsmiljo og juridisk funksjon

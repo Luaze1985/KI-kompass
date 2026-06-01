@@ -1,0 +1,129 @@
+# STABSOMRAADE_TIL_LINSER
+
+## Formaal
+
+Denne filen kobler stabsomrader til de viktigste linsene. Det er linsebiblioteket som avgjor hva som faktisk ma med, men oversatt til stabsomrader og nokkelroller.
+
+## Hovedregel
+
+- hver stab bygges rundt et lite sett hoyrelevante linser
+- ikke alle linser skal brukes aktivt i alle stabsomrader
+- Plattformlinser A, G, K og L kan brukes nesten overalt
+
+For HR skal noen stabsomrader og spesialfunksjoner ogsa leses som et randsonelag rundt HR-organisasjonen. Master for dette laget er `02_linser/HR_RANDSONER_OG_LINSEPAKKER.md`.
+
+## HR og arbeidsgiver
+
+- F4 HR-eksperten
+- D1 Juristen
+- D6 HMS-radgiveren
+- E1 Psykologen
+- E2 Sosiologen
+- E5 Identitets- og mangfoldlederen
+- K1 Den virtuelle stabssjefen
+- L1 Oppgaveatomisten
+- L2 Forstelinjelederen
+- L6 Maktkartleggeren
+- L7 Reverseringslinsen
+
+## Strategi, analyse og styring
+
+- C1 Samfunnsokonomen
+- C2 Okonomen
+- C3 Politiske okonom
+- A1 Systemteoretikeren
+- G2 Policy analyst
+- G4 Data scientist
+- D2 Risikostyringseksperten
+- D5 Kvalitetsradgiveren
+- K1
+- L1
+- L6
+- L7
+
+## IT og digitalisering
+
+- I1 AI/Teknologi-eksperten
+- I2 Ingenioren
+- I3 Service designeren
+- D3 Personvernombudet
+- D4 Sikkerhetsradgiveren
+- D5 Kvalitetsradgiveren
+- A1 Systemteoretikeren
+- F1 Endringslederen
+- G4 Data scientist
+- K1
+- L1
+- L2
+- L7
+
+## Politikk og administrasjon
+
+- D1 Juristen
+- D5 Kvalitetsradgiveren
+- H1 Kommunikasjonseksperten
+- H2 Journalisten
+- B2 Politisk teoretiker
+- A3 Intergovernance-forvalteren
+- K1
+- L1
+- L6
+
+## Lonn
+
+- C2 Okonomen
+- D1 Juristen
+- D3 Personvernombudet
+- D5 Kvalitetsradgiveren
+- I1 AI/Teknologi-eksperten
+- G4 Data scientist
+- K1
+- L1
+- L2
+
+## Anskaffelser
+
+- D1 Juristen
+- C1 Samfunnsokonomen
+- C2 Okonomen
+- F5 Konsulenten
+- I3 Service designeren
+- D5 Kvalitetsradgiveren
+- K1
+- L1
+- L6
+- L7
+
+## Forskning og utvikling
+
+- G1 Forskeren
+- G2 Policy analyst
+- G4 Data scientist
+- A1 Systemteoretikeren
+- F1 Endringslederen
+- K1
+- L5 Tidsarkitekten
+- L7 Reverseringslinsen
+
+## Kommuneadvokaten
+
+- D1 Juristen
+- D2 Risikostyringseksperten
+- B1 Etiske filosof
+- B2 Politisk teoretiker
+- K1
+- L6 Maktkartleggeren
+
+## Prioritering for full bygging som egne stabsomrader
+
+Merk:
+
+- noen av disse er allerede kartlagt som randsonelinsepakker rundt HR
+- dette gjelder spesielt kommuneadvokaten, lonn, politikk og administrasjon og anskaffelser
+
+1. IT og digitalisering
+2. Politikk og administrasjon
+3. Anskaffelser
+4. Lonn
+5. Forskning og utvikling
+6. Kommuneadvokaten som sentral spesialfunksjon

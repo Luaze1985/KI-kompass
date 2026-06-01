@@ -1,0 +1,73 @@
+# P-05 SYSTEMATISK HMS-ARBEID
+
+## Formaal
+
+Vedlikeholde et forebyggende og etterproevbart HMS- og internkontrollsystem som gir ledere, vernetjeneste og HR et felles grunnlag for handling.
+
+## Eier og roller
+
+- prosesseier: HMS-radgiver
+- hovedutforer: linjeleder og verneombud i samarbeid
+- stotte: HVO, BHT, HR-sjef, AMU
+- eskaleres til: HR-sjef eller kommunedirektorens linje ved systemisk risiko
+
+## Trigger
+
+- behov for risikovurdering eller vernerunde
+- utvikling i sykefravaer, avvik eller arbeidsmiljodata
+- krav om oppfolging fra AMU eller Arbeidstilsynet
+
+## Input
+
+- HMS-avvik og risikodata
+- sykefravaers- og arbeidsmiljoinnsikt
+- lokale planer, vernerunder og paalegg
+- behov fra ledere eller vernetjeneste
+
+## Output
+
+- prioritert risikobilde
+- forslag til tiltak og ansvar
+- oppdatert kontroll- og oppfolgingsspor
+
+## Hovedforlop
+
+1. Samle avvik, signaler og relevante data.
+2. Prioriter risiko med leder og vernetjeneste, og bekreft hva som skal handteres i internkontrollsporet.
+3. Definer tiltak, eiere, kontrollpunkter og frister.
+4. Folg opp i AMU eller lokal styringsarena.
+5. Etterspor laering, lukking og eventuelle paalegg eller avvik.
+
+## Viktigste risikoer
+
+- systemet blir papir uten faktisk bruk
+- uklart eierskap mellom HR, leder og vernetjeneste
+- manglende lukking av avvik
+- at data ikke omsettes til handling
+
+## Kontrollhandlinger
+
+- bruk faste arenaer for oppfolging og lukking
+- bruk risikovurdering, tiltaksplan og dokumentert oppfolging som ett sammenhengende spor
+- spor status pa tiltak og restanser
+- koble risikobilde til konkrete lederhandlinger
+- skill mellom observasjon, vurdering og paalegg
+
+## Systemer og referanser
+
+- EQS for prosedyrer, avvik og HMS-spor
+- Styringsportalen for noekkeltall
+- ERP X for fravaersdata
+- Arbeidstilsynets veiledning om internkontroll brukes som stotte for systemlogikken
+
+## Handover
+
+- handover_in: fra dirigent, leder, HMS-linje eller simuleringslop
+- handover_out: til beslutningsnotat, moteunderlag, tiltaksliste eller produksjonslop
+
+## Lokal verifikasjon
+
+- bekreft at tiltak faktisk eies av lederlinjen
+- bekreft at vernetjenesten er koblet riktig inn
+- bekreft lokal praksis for internkontroll, AMU og avviksflyt
+- bekreft at hoyrisiko funn ikke blir liggende som analyse alene

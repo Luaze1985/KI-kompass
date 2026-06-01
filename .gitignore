@@ -1,0 +1,43 @@
+# Node / build
+node_modules/
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+
+# Logs
+*.log
+debug.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Test artefakter
+test-results/
+playwright-report/
+coverage/
+
+# Editor og OS
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.sw?
+
+# Hemmeligheter
+.env
+.env.*
+!.env.example
+*.local
+
+# Agent-/sesjonsfiler (skal ikke deles)
+.claude/
+.superpowers/
+scratch/
+state/
+tasks/
+debug.log

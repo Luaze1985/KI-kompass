@@ -1,0 +1,51 @@
+metadata:
+  id: hr_templates
+  version: 1.0
+  status: derived_from_markdown_master
+  master_ref: 09_templates_og_output/TEMPLATEINDEKS.md
+
+templates:
+  - template_id: TMP-01
+    name: SIMULERINGSNOTAT_TEMPLATE
+    path: 09_templates_og_output/maler/SIMULERINGSNOTAT_TEMPLATE.md
+    purpose: simulering
+  - template_id: TMP-02
+    name: BESLUTNINGSNOTAT_TEMPLATE
+    path: 09_templates_og_output/maler/BESLUTNINGSNOTAT_TEMPLATE.md
+    purpose: beslutningsstotte
+  - template_id: TMP-03
+    name: MOTEUNDERLAG_TEMPLATE
+    path: 09_templates_og_output/maler/MOTEUNDERLAG_TEMPLATE.md
+    purpose: mote
+  - template_id: TMP-04
+    name: LEVERANSEUTKAST_TEMPLATE
+    path: 09_templates_og_output/maler/LEVERANSEUTKAST_TEMPLATE.md
+    purpose: produksjon
+  - template_id: TMP-05
+    name: HR_RAD_TEMPLATE
+    path: 09_templates_og_output/maler/HR_RAD_TEMPLATE.md
+    purpose: kort_hr_rad
+  - template_id: TMP-06
+    name: PROSESSKORT_TEMPLATE
+    path: 09_templates_og_output/maler/PROSESSKORT_TEMPLATE.md
+    purpose: prosess
+  - template_id: TMP-07
+    name: ROLLEKORT_TEMPLATE
+    path: 09_templates_og_output/maler/ROLLEKORT_TEMPLATE.md
+    purpose: rollebeskrivelse
+  - template_id: TMP-08
+    name: KOMPETANSEMATRISE_TEMPLATE
+    path: 09_templates_og_output/maler/KOMPETANSEMATRISE_TEMPLATE.md
+    purpose: kompetansekartlegging
+  - template_id: TMP-09
+    name: STILLINGSUTLYSNING_TEMPLATE
+    path: 09_templates_og_output/maler/STILLINGSUTLYSNING_TEMPLATE.md
+    purpose: rekruttering
+  - template_id: TMP-10
+    name: KANDIDATVURDERING_OG_INTERVJUGUIDE_TEMPLATE
+    path: 09_templates_og_output/maler/KANDIDATVURDERING_OG_INTERVJUGUIDE_TEMPLATE.md
+    purpose: rekruttering
+  - template_id: TMP-11
+    name: ONBOARDING_30_60_90_TEMPLATE
+    path: 09_templates_og_output/maler/ONBOARDING_30_60_90_TEMPLATE.md
+    purpose: onboarding

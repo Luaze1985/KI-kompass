@@ -1,0 +1,40 @@
+# MOTEFLYT
+
+## trigger
+- behov for moteunderlag, fasilitering eller oppfolging
+
+## eier
+- oppdragsansvarlig eller dirigenten
+
+## maal
+- sikre at moter bruker tvillingsorganisasjonen til bedre forberedelse, bedre beslutninger og bedre handover
+
+## faser
+
+1. Forberedelse
+   - avklar formal, deltakere, beslutningspunkt og relevant domene
+2. Perspektivoppsett
+   - velg linser og eventuelt HR-tvilling
+3. Moteunderlag
+   - produser agenda, konfliktpunkter, scenarier og anbefalinger
+4. Fasilitering
+   - bruk tydelige roller: dirigent styrer flyt, stabssjef syntetiserer
+5. Oppfolging
+   - skriv handover, ansvar og neste steg
+
+## gate for neste fase
+- motet ender med tydelig ansvar, oppsummering og neste handling
+
+## hva som er forskning
+- ny innsikt som dukker opp og ma undersokes etter motet
+
+## hva som er prototype
+- nye moteformater eller eksperimentelle fasiliteringsgrep
+
+## hva som er produksjon
+- standardiserte moteunderlag og oppfolgingsspor som er godkjent lokalt
+
+## lokal verifikasjon
+- bekreft hvem som faktisk har beslutningsrett
+- bekreft hvilke deler som er diskusjon vs. vedtak
+- bekreft at motereferat og handover samsvarer

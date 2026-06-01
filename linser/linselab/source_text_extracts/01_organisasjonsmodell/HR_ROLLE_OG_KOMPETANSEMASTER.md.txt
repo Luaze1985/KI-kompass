@@ -1,0 +1,409 @@
+# HR_ROLLE_OG_KOMPETANSEMASTER
+
+## Formaal
+
+Denne masteren normaliserer HR-pilotens kanoniske roller, kompetanser og avledede produksjonsbehov.
+Markdown er menneskelig sannhetskilde. Modeller, YAML-tabeller, CSV-tabeller og stillingsutlysninger er avledet fra denne filen.
+
+## Kilde- og bruksregel
+
+- bruk denne filen sammen med `HR_PILOT.md`, `HR_PROSESSOVERSIKT.md` og relevante prosesskort
+- bruk denne filen for a stoppe navnedrift mellom pilot, rollekatalog, modeller og produksjonsartefakter
+- oppdater denne filen forst dersom rolleinnhold, prosesseierskap eller kompetansekrav endres
+- marker lokale avvik eksplisitt i stedet for a lage parallelle variantfiler
+
+## ID-familier i HR-v1
+
+- enheter: `U-*`
+- roller: `R-*`
+- skills: `SK-*`
+- artefakter: `ART-*`
+- maler: `TMP-*`
+- regelverk: `REG-*`
+- risikoer: `RSK-*`
+- kontrollhandlinger: `CTRL-*`
+
+## Enheter
+
+- `U-01`: HR_ledelse
+  - lederrolle: `R-02`
+  - lokal_status: aktiv_pilot
+- `U-02`: HR_lederstotte_og_personalsaker
+  - lederrolle: `R-03`
+  - lokal_status: aktiv_pilot
+- `U-03`: HR_rekruttering_og_kompetanse
+  - lederrolle: `R-04`
+  - lokal_status: aktiv_pilot
+- `U-04`: HR_stabsfunksjoner
+  - lederrolle: `R-02`
+  - lokal_status: aktiv_pilot
+
+## Felles skill-katalog
+
+- `SK-01`: arbeidsrett_og_saksbehandling
+- `SK-02`: rekrutteringsdesign_og_kvalifikasjonsprinsipp
+- `SK-03`: kompetanseplanlegging_og_portefoljestyring
+- `SK-04`: laerlingforvaltning_og_fagopplaering
+- `SK-05`: systematisk_hms_og_internkontroll
+- `SK-06`: ia_og_sykefravaersoppfolging
+- `SK-07`: forhandling_og_partssamarbeid
+- `SK-08`: klarsprak_og_mottakertilpasning
+- `SK-09`: dataforstaelse_og_hr_kpi
+- `SK-10`: lederstotte_og_organisasjonsutvikling
+- `SK-11`: personvern_og_informasjonshygiene
+- `SK-12`: digital_systembruk_og_dokumentasjon
+- `SK-13`: intervjumetodikk_og_kandidatopplevelse
+- `SK-14`: onboarding_og_laeringsdesign
+- `SK-15`: endringsledelse_og_medvirkning
+
+## Kanoniske HR-roller v1
+
+### `R-02` HR-sjef
+
+- enhet: `U-01`
+- rapporterer_til: organisasjonsdirektor eller tilsvarende lokal toppleder
+- formal: lede HR-funksjonen som helhet og sikre at HR-stotten er strategisk, sporbar og gjennomforbar
+- hovedansvar:
+  - sette retning for HR-portefolje, kapasitet og prioritering
+  - eie overordnede risikoer i omstilling, arbeidsrett og arbeidsgiverpolitikk
+  - sikre at lederlinje, HR og stabsfunksjoner bruker samme prosess- og beslutningsbilde
+- prosesseierskap: `P-08`
+- must_have_skills: `SK-01`, `SK-03`, `SK-07`, `SK-09`, `SK-15`
+- should_have_skills: `SK-08`, `SK-10`, `SK-12`
+- systemer: `S-01`, `S-03`, `S-04`
+- lovverk_og_avtaleverk: `REG-01`, `REG-02`, `REG-04`, `REG-05`, `REG-06`
+- artefakter: `ART-10`, `ART-11`, `ART-12`
+- KPI-er:
+  - kritiske lederrekrutteringer gjennomfort innen avtalt tid
+  - tydelig eierskap i hoyrisiko-saker
+  - andel tiltak i omstillingsspor med eksplisitt handover
+- risikoer: `RSK-01`, `RSK-02`, `RSK-03`, `RSK-05`
+- eskalering: kommuneadvokat, organisasjonsdirektor eller kommunedirektor ved prinsipielle saker
+- lokal_verifikasjon:
+  - verifiser lokal beslutningsrett og delegering
+  - verifiser hvilke stabsfunksjoner som rapporterer direkte til rollen
+
+### `R-03` avdelingssjef_lederstotte_og_personalsaker
+
+- enhet: `U-02`
+- rapporterer_til: `R-02`
+- formal: sikre robust lederstotte i personalsaker, omstilling og arbeidsrettslige lop
+- hovedansvar:
+  - lede HR-radgivere, IA-radgivere og juridisk koordinering i komplekse personalsaker
+  - holde sammen prosess, dokumentasjon og eskaleringsspor
+  - sikre at lederlinjen faar tydelige rad uten at HR overtar beslutningsretten
+- prosesseierskap: `P-03`, `P-08`
+- must_have_skills: `SK-01`, `SK-06`, `SK-10`, `SK-11`, `SK-15`
+- should_have_skills: `SK-08`, `SK-09`, `SK-12`
+- systemer: `S-03`, `S-04`
+- lovverk_og_avtaleverk: `REG-01`, `REG-02`, `REG-05`, `REG-06`
+- artefakter: `ART-06`, `ART-10`, `ART-11`, `ART-12`
+- KPI-er:
+  - saker med tydelig prosesseier og neste steg
+  - redusert omarbeid i personalsaker
+  - hoy andel handover med lokal verifikasjon
+- risikoer: `RSK-01`, `RSK-02`, `RSK-04`
+- eskalering: `R-02`, kommuneadvokat eller HR-jurist ved hoy rettslig risiko
+- lokal_verifikasjon:
+  - verifiser lokal fullmakt i personalsaker
+  - verifiser kobling mot tillitsvalgte og vernetjeneste
+
+### `R-04` avdelingssjef_rekruttering_og_kompetanse
+
+- enhet: `U-03`
+- rapporterer_til: `R-02`
+- formal: sikre at kommunen tiltrekker, utvikler og beholder kritisk kompetanse
+- hovedansvar:
+  - lede rekruttering, laerlinglop, kompetanseportefolje og lederutvikling
+  - prioritere kapasitet mellom kritiske ansettelser og utviklingstiltak
+  - sikre at HR-produksjon bygger pa samme rolle- og kompetansegrunnlag
+- prosesseierskap: `P-06`
+- must_have_skills: `SK-02`, `SK-03`, `SK-09`, `SK-10`, `SK-15`
+- should_have_skills: `SK-08`, `SK-12`, `SK-13`, `SK-14`
+- systemer: `S-01`, `S-05`, `S-06`, `S-07`
+- lovverk_og_avtaleverk: `REG-02`, `REG-06`, `REG-09`
+- artefakter: `ART-01`, `ART-02`, `ART-03`, `ART-09`, `ART-10`
+- KPI-er:
+  - tid til ansettelse for kritiske roller
+  - dekning mellom kompetansebehov og tiltak
+  - gjennomforing i lederutviklingsportefolje
+- risikoer: `RSK-02`, `RSK-05`, `RSK-07`
+- eskalering: `R-02` ved kapasitetspress eller portefoljkonflikt
+- lokal_verifikasjon:
+  - verifiser lokal arbeidsgiverprofil og kompetansestrategi
+  - verifiser hvilke enheter som eier opplaeringsbudsjett
+
+### `R-05` HR-radgiver
+
+- enhet: `U-02`
+- rapporterer_til: `R-03`
+- formal: gi operativ lederstotte i personalsaker, prosess og dokumentasjon
+- hovedansvar:
+  - strukturere grunnlag, handover og oppfolging i personalsaker
+  - stotte ledere i prosessdisiplin, kommunikasjon og dokumentasjon
+  - skille mellom HR-rad, juridiske behov og lokal beslutning
+- prosesseierskap: ingen, stotte til `P-01` og `P-03`
+- must_have_skills: `SK-01`, `SK-08`, `SK-11`, `SK-12`
+- should_have_skills: `SK-06`, `SK-10`, `SK-15`
+- systemer: `S-03`, `S-04`
+- lovverk_og_avtaleverk: `REG-01`, `REG-02`, `REG-06`
+- artefakter: `ART-05`, `ART-06`, `ART-10`, `ART-11`
+- KPI-er:
+  - lederhenvendelser med tydelig neste steg
+  - dokumentasjon komplett ved eskalering
+  - lav andel saker som ma startes pa nytt
+- risikoer: `RSK-01`, `RSK-02`, `RSK-04`
+- eskalering: `R-06` ved lovtolkning, `R-03` ved hoy konfliktrisiko
+- lokal_verifikasjon:
+  - verifiser lokal rutine for dokumentflyt og sakstype
+  - verifiser hvem som eier dialog med tillitsvalgte
+
+### `R-06` HR-jurist
+
+- enhet: `U-02`
+- rapporterer_til: `R-02`
+- formal: sikre at hoyrisiko personalsaker holder juridisk og prosessuelt niva
+- hovedansvar:
+  - eie juridiske avklaringer i komplekse personalsaker og omstilling
+  - kvalitetssikre at dokumentasjon, handover og prosessrekkefolge holder
+  - avgrense hva som er HR-rad, juridisk vurdering og vedtak
+- prosesseierskap: `P-03`
+- must_have_skills: `SK-01`, `SK-07`, `SK-11`, `SK-12`, `SK-15`
+- should_have_skills: `SK-08`, `SK-10`
+- systemer: `S-03`, `S-04`
+- lovverk_og_avtaleverk: `REG-01`, `REG-02`, `REG-04`, `REG-05`, `REG-06`
+- artefakter: `ART-06`, `ART-10`, `ART-11`
+- KPI-er:
+  - saker med tydelig juridisk eier
+  - redusert prosessfeil i personalsaker
+  - hoy andel saker med eksplisitt lokal verifikasjon
+- risikoer: `RSK-01`, `RSK-02`, `RSK-04`
+- eskalering: kommuneadvokat eller `R-02` ved prinsipiell risiko
+- lokal_verifikasjon:
+  - verifiser lokal fullmakt for juridisk kvalitetssikring
+  - verifiser nar kommuneadvokaten skal kobles inn
+
+### `R-07` forhandlingsradgiver
+
+- enhet: `U-04`
+- rapporterer_til: `R-02`
+- formal: sikre sporbare forhandlinger og godt partssamarbeid i lonns- og omstillingsspor
+- hovedansvar:
+  - forberede, gjennomfore og dokumentere lokale forhandlinger
+  - stotte ledelsen i partssamarbeid og tarifforstaelse
+  - bidra i omstillingslop der avtaleverk og medvirkning er kritisk
+- prosesseierskap: ingen, stotte til `P-08`
+- must_have_skills: `SK-01`, `SK-07`, `SK-08`, `SK-15`
+- should_have_skills: `SK-09`, `SK-12`
+- systemer: `S-01`, `S-04`
+- lovverk_og_avtaleverk: `REG-04`, `REG-05`, `REG-06`
+- artefakter: `ART-06`, `ART-10`, `ART-11`
+- KPI-er:
+  - forhandlingslop med tydelig mandat og referatspor
+  - lave handover-tap mellom forhandling og gjennomforing
+  - konfliktpunkter avklart tidlig
+- risikoer: `RSK-01`, `RSK-02`, `RSK-03`
+- eskalering: `R-02` eller kommuneadvokat ved fastlaaste eller prinsipielle lop
+- lokal_verifikasjon:
+  - verifiser lokal partsstruktur og forhandlingsmandat
+  - verifiser hva som ligger i sentrale versus lokale avtaler
+
+### `R-08` HMS-radgiver
+
+- enhet: `U-04`
+- rapporterer_til: `R-02`
+- formal: sikre systematisk HMS-arbeid med tydelig kobling mellom avvik, risiko og lederhandling
+- hovedansvar:
+  - lede metode, oppfolging og kvalitetskontroll i HMS-sporet
+  - koble sammen vernetjeneste, ledere, BHT og HR ved behov
+  - sikre at avvik og arbeidsmiljosignaler faktisk omsettes til tiltak
+- prosesseierskap: `P-05`
+- must_have_skills: `SK-05`, `SK-08`, `SK-09`, `SK-12`
+- should_have_skills: `SK-06`, `SK-11`, `SK-15`
+- systemer: `S-01`, `S-02`, `S-03`
+- lovverk_og_avtaleverk: `REG-01`, `REG-06`, `REG-07`
+- artefakter: `ART-06`, `ART-07`, `ART-10`, `ART-11`
+- KPI-er:
+  - andel avvik lukket innen avtalt frist
+  - gjennomforte risikovurderinger med eier
+  - tydelig tiltaksspor til AMU eller lederlinje
+- risikoer: `RSK-03`, `RSK-05`, `RSK-06`
+- eskalering: `R-02`, AMU eller Arbeidstilsynet-spor ved systemisk risiko
+- lokal_verifikasjon:
+  - verifiser lokal HMS-organisering, BHT-avtale og vernetjeneste
+  - verifiser om EQS eller annet system faktisk brukes som styringsspor
+
+### `R-09` rekrutteringsradgiver
+
+- enhet: `U-03`
+- rapporterer_til: `R-04`
+- formal: sikre profesjonell rekruttering med tydelig kravprofil, kandidatopplevelse og etterlevelse av kvalifikasjonsprinsippet
+- hovedansvar:
+  - kvalitetssikre behovsavklaring, utlysning, screening og intervjuguide
+  - holde sammen prosessdisciplin mellom leder, HR og eventuelle search-partnere
+  - dokumentere hvorfor kandidatvalg kan forklares og forsvares
+- prosesseierskap: `P-02`
+- must_have_skills: `SK-02`, `SK-08`, `SK-12`, `SK-13`
+- should_have_skills: `SK-03`, `SK-09`, `SK-11`
+- systemer: `S-05`, `S-07`
+- lovverk_og_avtaleverk: `REG-02`, `REG-03`, `REG-06`, `REG-09`
+- artefakter: `ART-01`, `ART-02`, `ART-03`, `ART-04`
+- KPI-er:
+  - tid fra behovsavklaring til publisert utlysning
+  - andel prosesser med komplett kandidatgrunnlag
+  - kandidatopplevelse i kritiske rekrutteringer
+- risikoer: `RSK-02`, `RSK-07`
+- eskalering: `R-06` ved habilitet eller rettslig tvil, `R-04` ved markedssvikt
+- lokal_verifikasjon:
+  - verifiser kanalvalg, arbeidsgiverprofil og evt. search-stotte
+  - verifiser lokal praksis for referanser, testbruk og innstillingsspor
+
+### `R-10` laerlingkoordinator
+
+- enhet: `U-03`
+- rapporterer_til: `R-04`
+- formal: sikre at kommunen fungerer som laerebedrift med robuste inntaks- og oppfolgingslop
+- hovedansvar:
+  - koordinere inntak, laerekontrakt, arbeidsavtale og oppfolging
+  - sikre kapasitet hos laeresteder og kvalitet i veilederrollen
+  - holde sammen frister mot fylkeskommune og fagopplaering
+- prosesseierskap: `P-04`
+- must_have_skills: `SK-04`, `SK-08`, `SK-12`, `SK-14`
+- should_have_skills: `SK-02`, `SK-09`, `SK-10`
+- systemer: `S-05`, `S-06`, `S-08`
+- lovverk_og_avtaleverk: `REG-02`, `REG-06`, `REG-08`
+- artefakter: `ART-02`, `ART-08`, `ART-09`
+- KPI-er:
+  - andel signerte kontrakter innen frist
+  - laerlinger med tydelig oppfolgingsplan
+  - redusert frafall i laerelop
+- risikoer: `RSK-02`, `RSK-08`
+- eskalering: `R-04` ved kapasitetssvikt, `R-02` ved omdommerisiko
+- lokal_verifikasjon:
+  - verifiser lokal kontakt mot fylkeskommune
+  - verifiser hvilke fag kommunen faktisk tilbyr laereplasser i
+
+### `R-11` kompetanseradgiver
+
+- enhet: `U-03`
+- rapporterer_til: `R-04`
+- formal: omsette kompetansebehov til prioriterte tiltak, matriser og portefoljeforslag
+- hovedansvar:
+  - vedlikeholde kompetanseoversikter og gap-analyser
+  - kvalitetssikre at tiltak treffer virksomhetsbehov og ikke bare aktivitet
+  - levere grunnlag til lederutvikling, onboarding og opplaeringsprioritering
+- prosesseierskap: ingen, stotte til `P-06`
+- must_have_skills: `SK-03`, `SK-09`, `SK-10`, `SK-14`
+- should_have_skills: `SK-08`, `SK-12`, `SK-15`
+- systemer: `S-01`, `S-06`, `S-07`
+- lovverk_og_avtaleverk: `REG-06`
+- artefakter: `ART-09`, `ART-10`, `ART-11`
+- KPI-er:
+  - kompetansegap identifisert og prioritert
+  - tiltak koblet til tydelig behov
+  - oppdatert matrise for prioriterte roller
+- risikoer: `RSK-05`, `RSK-06`
+- eskalering: `R-04` ved portefoljekonflikt eller manglende forankring
+- lokal_verifikasjon:
+  - verifiser lokal datakilde for kompetansekart
+  - verifiser hvem som eier budsjett for gjennomforing
+
+### `R-12` e_laeringsradgiver
+
+- enhet: `U-03`
+- rapporterer_til: `R-04`
+- formal: utvikle og vedlikeholde skalerbar opplaering med tydelig malgruppe og oppfolging
+- hovedansvar:
+  - oversette faglige behov til laeringsdesign og digitale loper
+  - vedlikeholde innhold som kan brukes i onboarding og lederutvikling
+  - sikre at opplaering har eierskap, mottaker og oppfolging
+- prosesseierskap: ingen, stotte til `P-06`
+- must_have_skills: `SK-08`, `SK-12`, `SK-14`
+- should_have_skills: `SK-03`, `SK-09`, `SK-10`
+- systemer: `S-06`, `S-07`
+- lovverk_og_avtaleverk: `REG-06`
+- artefakter: `ART-09`, `ART-10`
+- KPI-er:
+  - kurs eller moduler med tydelig malgruppe
+  - fullforingsgrad i prioriterte lop
+  - lav friksjon mellom faginnhold og distribusjon
+- risikoer: `RSK-05`, `RSK-06`
+- eskalering: `R-04` ved kapasitets- eller kvalitetskonflikter
+- lokal_verifikasjon:
+  - verifiser plattformvalg og publiseringsflyt
+  - verifiser hvilke deler som krever fysisk trening eller lokal fasilitering
+
+### `R-13` IA-radgiver
+
+- enhet: `U-02`
+- rapporterer_til: `R-03`
+- formal: hjelpe ledere med narvaersarbeid, tilrettelegging og sykefravaersoppfolging uten a gli over i utydelig personbehandling
+- hovedansvar:
+  - veilede i oppfolgingsplan, dialogmote og tilrettelegging
+  - koble sammen leder, HR, HMS, BHT og NAV ved behov
+  - fange opp nar sak glir over i arbeidsrettslig eller organisatorisk spor
+- prosesseierskap: `P-01`
+- must_have_skills: `SK-06`, `SK-08`, `SK-11`, `SK-12`
+- should_have_skills: `SK-05`, `SK-09`, `SK-10`
+- systemer: `S-01`, `S-02`, `S-03`, `S-09`
+- lovverk_og_avtaleverk: `REG-01`, `REG-06`
+- artefakter: `ART-05`, `ART-06`, `ART-10`, `ART-11`
+- KPI-er:
+  - oppfolgingsplan innen avklart frist
+  - saker med tydelig rollefordeling mellom leder og HR
+  - tilrettelegging koblet til dokumentert oppfolging
+- risikoer: `RSK-02`, `RSK-04`, `RSK-05`
+- eskalering: `R-06` ved juridisk tvil, `R-03` ved fastlaast sak
+- lokal_verifikasjon:
+  - verifiser lokal praksis for NAV-kontakt og BHT-bruk
+  - verifiser at sensitive opplysninger behandles i riktige systemer
+
+### `R-14` radgiver_for_leder_og_organisasjonsutvikling
+
+- enhet: `U-03`
+- rapporterer_til: `R-04`
+- formal: omsette strategiske utviklingsbehov til konkrete lop for ledere, team og organisasjon
+- hovedansvar:
+  - designe og fasilitere tiltak i lederutvikling, teamutvikling og omstilling
+  - koble kultur, struktur og kompetanse i samme gjennomforingsbilde
+  - gi gjennomforbarhet tilbake til HR-ledelse og linjeledere
+- prosesseierskap: ingen, stotte til `P-06` og `P-08`
+- must_have_skills: `SK-10`, `SK-14`, `SK-15`
+- should_have_skills: `SK-03`, `SK-08`, `SK-09`, `SK-12`
+- systemer: `S-01`, `S-06`, `S-07`
+- lovverk_og_avtaleverk: `REG-06`
+- artefakter: `ART-09`, `ART-10`, `ART-11`
+- KPI-er:
+  - tiltak med tydelig lederforankring
+  - gjennomforbare utviklingslop med ansvar og oppfolging
+  - endringstiltak som faktisk blir gjennomfort lokalt
+- risikoer: `RSK-03`, `RSK-05`, `RSK-06`
+- eskalering: `R-04` eller `R-02` ved konflikt mellom utviklingsbehov og kapasitet
+- lokal_verifikasjon:
+  - verifiser lokal modenhet og kapasitet for utviklingslop
+  - verifiser hvordan lederlinjen onsker a bruke ekstern eller intern fasilitering
+
+## Kanonisk rolleliste i v1
+
+- `R-02` HR-sjef
+- `R-03` avdelingssjef_lederstotte_og_personalsaker
+- `R-04` avdelingssjef_rekruttering_og_kompetanse
+- `R-05` HR-radgiver
+- `R-06` HR-jurist
+- `R-07` forhandlingsradgiver
+- `R-08` HMS-radgiver
+- `R-09` rekrutteringsradgiver
+- `R-10` laerlingkoordinator
+- `R-11` kompetanseradgiver
+- `R-12` e_laeringsradgiver
+- `R-13` IA-radgiver
+- `R-14` radgiver_for_leder_og_organisasjonsutvikling
+
+## Avledede artefakter
+
+Denne masteren styrer spesielt:
+
+- kodetabellene i `10_kunnskapsbase/kodetabeller/`
+- stillingsutlysningsmaster og avledede utlysninger
+- rollekort, kompetansematriser, kandidatvurdering og onboardingutkast
+- oppdateringer i `10_kunnskapsbase/modeller/hr_pilot_v1.yaml`

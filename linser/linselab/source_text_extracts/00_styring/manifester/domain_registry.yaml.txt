@@ -1,0 +1,51 @@
+metadata:
+  id: domain_registry
+  version: 1.1
+  status: active_docs_first_v2
+  last_validated: 2026-04-09
+  markdown_master_ref: 01_organisasjonsmodell/DOMENEKART.md
+
+domains:
+  - id: hr_og_arbeidsgiver
+    status: AKTIV_PILOT
+    domain_type: underdomene
+    parent_domain: organisasjon_og_teknologi
+    owner_role: hr_sjef
+    pilot_ref: 01_organisasjonsmodell/HR_PILOT.md
+    process_overview_ref: 01_organisasjonsmodell/HR_PROSESSOVERSIKT.md
+    process_dir_ref: 01_organisasjonsmodell/HR_KJERNEPROSESSER
+    role_master_ref: 01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md
+    recruitment_master_ref: 01_organisasjonsmodell/HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER.md
+    guardrails_ref: 03_agentroller/HR_TVILLING_GUARDRAILS.md
+    model_ref: 10_kunnskapsbase/modeller/hr_pilot_v1.yaml
+    code_table_dir_ref: 10_kunnskapsbase/kodetabeller
+    package_manifest_ref: 00_styring/pakker/hr_og_arbeidsgiver/package_manifest.yaml
+    derived_output_dir_ref: 09_templates_og_output/stillingsutlysninger
+    active_workflows: [simulering, beslutningsstotte, mote, produksjon, revisjon]
+    active_lens_pack: [F4, D1, D6, E1, E2, E5, F1, K1, L1, L2, L6, L7]
+  - id: okonomi_og_virksomhetsstyring
+    status: AKTIVT_DOMENEOPPSETT_V1
+    domain_type: domene
+    parent_domain: none
+    owner_role: okonomidirektor
+    pilot_ref: 01_organisasjonsmodell/OKONOMI_OG_VIRKSOMHETSSTYRING_PILOT.md
+    process_overview_ref: 01_organisasjonsmodell/OKONOMI_PROSESSOVERSIKT.md
+    process_dir_ref: 01_organisasjonsmodell/OKONOMI_KJERNEPROSESSER
+    guardrails_ref: 03_agentroller/OKONOMI_OG_VIRKSOMHETSSTYRING_GUARDRAILS.md
+    model_ref: 10_kunnskapsbase/modeller/okonomi_og_virksomhetsstyring_v1.yaml
+    package_manifest_ref: 00_styring/pakker/okonomi_og_virksomhetsstyring/package_manifest.yaml
+    active_workflows: [simulering, beslutningsstotte, mote, produksjon]
+    active_lens_pack: [C1, C2, C3, A1, G2, G4, D2, D5, K1, L1, L6, L7]
+  - id: it_og_digitalisering
+    status: AKTIVT_STABSOMRADE_V1
+    domain_type: stabsomrade
+    parent_domain: organisasjon_og_teknologi
+    owner_role: digitaliseringssjef_eller_tilsvarende_leder
+    pilot_ref: 01_organisasjonsmodell/IT_OG_DIGITALISERING_PILOT.md
+    process_overview_ref: 01_organisasjonsmodell/IT_PROSESSOVERSIKT.md
+    process_dir_ref: 01_organisasjonsmodell/IT_KJERNEPROSESSER
+    guardrails_ref: 03_agentroller/IT_OG_DIGITALISERING_GUARDRAILS.md
+    model_ref: 10_kunnskapsbase/modeller/it_og_digitalisering_v1.yaml
+    package_manifest_ref: 00_styring/pakker/it_og_digitalisering/package_manifest.yaml
+    active_workflows: [simulering, beslutningsstotte, mote, produksjon]
+    active_lens_pack: [I1, I2, I3, D3, D4, D5, A1, F1, G4, K1, L1, L2, L7]

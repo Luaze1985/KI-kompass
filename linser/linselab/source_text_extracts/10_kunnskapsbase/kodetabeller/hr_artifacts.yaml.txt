@@ -1,0 +1,45 @@
+metadata:
+  id: hr_artifacts
+  version: 1.0
+  status: derived_from_markdown_master
+  master_refs:
+    - 01_organisasjonsmodell/HR_ROLLE_OG_KOMPETANSEMASTER.md
+    - 01_organisasjonsmodell/HR_REKRUTTERING_OG_STILLINGSUTLYSNINGER.md
+
+artifacts:
+  - artifact_id: ART-01
+    name: kravprofil_og_behovsbeskrivelse
+    primary_template: TMP-09
+  - artifact_id: ART-02
+    name: stillingsutlysning
+    primary_template: TMP-09
+  - artifact_id: ART-03
+    name: kandidatmatrise
+    primary_template: TMP-10
+  - artifact_id: ART-04
+    name: intervjuguide
+    primary_template: TMP-10
+  - artifact_id: ART-05
+    name: oppfolgingsplan_sykefravaer
+    primary_template: TMP-04
+  - artifact_id: ART-06
+    name: handover_og_saksnotat
+    primary_template: TMP-04
+  - artifact_id: ART-07
+    name: hms_risikovurdering_og_tiltaksplan
+    primary_template: TMP-04
+  - artifact_id: ART-08
+    name: laerekontrakt_og_arbeidsavtale_sjekkliste
+    primary_template: TMP-04
+  - artifact_id: ART-09
+    name: onboarding_30_60_90_plan
+    primary_template: TMP-11
+  - artifact_id: ART-10
+    name: beslutningsnotat_hr
+    primary_template: TMP-02
+  - artifact_id: ART-11
+    name: moteunderlag_hr
+    primary_template: TMP-03
+  - artifact_id: ART-12
+    name: prosesskort_hr
+    primary_template: TMP-06

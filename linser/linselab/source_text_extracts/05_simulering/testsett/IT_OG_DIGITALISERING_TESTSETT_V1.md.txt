@@ -1,0 +1,69 @@
+# IT_OG_DIGITALISERING_TESTSETT_V1
+
+## Formaal
+
+Dette testsettet brukes til lokal proving av IT- og digitaliseringsomradet pa tvers av simulering, beslutningsstotte, moter og produksjon.
+
+## Bruksregel
+
+- bruk bare aktive mastere og godkjente kilder
+- skill mellom teknisk fakta, antakelse og anbefaling
+- stopp hvis systemeier eller sikkerhetsnivaa ikke kan avklares
+
+## Scenario 1
+
+- id: `IT-SIM-01`
+- tittel: stor ERP-innforing som paavirker flere direktøromrader
+- primarloep: simulering
+- maal: vurdere gjennomforingsrisiko, opplaeringsbehov og handover til drift
+- forventet aktivering: dirigent, digitaliseringsleder, virksomhetsarkitekt, Gruppe L
+- forventet output: simuleringsnotat med alternative innforingslop
+- lokal verifikasjon: bekreft systemeier, omfang og dato for innforing
+
+## Scenario 2
+
+- id: `IT-BES-02`
+- tittel: behov for felles arkitekturvalg for ny digital losning
+- primarloep: beslutningsstotte
+- maal: lage kort notat om valg, avhengigheter og risiko
+- forventet aktivering: dirigent, virksomhetsarkitekt, sikkerhet, stabssjef
+- forventet output: beslutningsnotat med tydelig eierbilde
+- lokal verifikasjon: bekreft lokale standarder og berorte systemer
+
+## Scenario 3
+
+- id: `IT-MOT-03`
+- tittel: sikkerhetshendelse som krever ledelsesavklaring
+- primarloep: mote
+- maal: forberede mote om alvorlighetsgrad, respons og oppfolging
+- forventet aktivering: dirigent, informasjonssikkerhetsansvarlig, drift, stabssjef
+- forventet output: moteunderlag med ansvar, tiltak og neste steg
+- lokal verifikasjon: bekreft hendelsesbilde og faktisk omfang
+
+## Scenario 4
+
+- id: `IT-PROD-04`
+- tittel: leveranseutkast for forbedret brukerstoette rundt felleslosning
+- primarloep: produksjon
+- maal: lage kort forbedringsutkast for support, opplaering og oppfolging
+- forventet aktivering: dirigent, drift, brukerstoette, produksjonsagent
+- forventet output: leveranseutkast med tiltak og eier
+- lokal verifikasjon: bekreft supportbildet og berorte brukergrupper
+
+## Scenario 5
+
+- id: `IT-SIM-05`
+- tittel: digitaliseringstiltak med lovet gevinst men svak adopsjon
+- primarloep: simulering og beslutningsstotte
+- maal: teste om problemet er teknologi, brukerflyt, opplaering eller gevinstlogikk
+- forventet aktivering: dirigent, tjenesteeier, design, analyse, Gruppe L
+- forventet output: simulering med anbefalt justering eller stopp
+- lokal verifikasjon: bekreft faktisk bruk, gevinstmaaling og eier
+
+## Enkel pass-fail
+
+- ble riktig prosesskort brukt
+- ble systemeier og tjenesteeier tydelig skilt
+- ble sikkerhet og drift koblet inn ved behov
+- ble handover eksplisitt
+- ble lokal verifikasjon markert
