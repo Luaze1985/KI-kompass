@@ -89,7 +89,7 @@ describe('maker-check revision lock', () => {
     const after = useAppStore.getState()
     expect(after.selectedCaseId).toBe(data.project.caseId)
     expect(after.activeTask?.taskId).toBe(data.task.taskId)
-    expect(after.calculationModel).toBe('gmm')
+    expect(after.calculationModel).toBe('linear')
     expect(after.checkpointAnswers).toEqual({})
     expect(after.decisionLogText.endeligBeslutning).toBe('Beslutning er vurdert.')
     expect(after.isSigned).toBe(true)

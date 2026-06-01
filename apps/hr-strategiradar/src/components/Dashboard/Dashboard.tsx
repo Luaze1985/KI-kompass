@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useAppStore } from '../../store/store'
+import { useAppStore, type CalculationModel } from '../../store/store'
 import { allCases } from '../../fixtures/all-cases'
 import { calculateCompassPosition, getSystemProposal, STOP_RULE_QUESTIONS } from '../../services/mockDiagnosisService'
 import CompassView from './CompassView'
@@ -202,7 +202,11 @@ export default function Dashboard() {
     setUserBlindTestAnswer,
     stopRuleDiscussed,
     setStopRuleDiscussed,
+    calculationModel,
+    setCalculationModel,
   } = useAppStore()
+
+  const [isExplainingFormula, setIsExplainingFormula] = useState(false)
 
   const project = allCases.find((c) => c.caseId === selectedCaseId)
   const systemProposal = selectedCaseId ? getSystemProposal(selectedCaseId) : null
@@ -214,7 +218,7 @@ export default function Dashboard() {
     const proj = allCases.find((c) => c.caseId === caseId)
     if (proj && proj.aiUseTasks.length > 0) {
       const defaultTask = proj.aiUseTasks[0]
-      const compass = calculateCompassPosition(defaultTask)
+      const compass = calculateCompassPosition(defaultTask, calculationModel)
       setActiveData(proj, defaultTask, compass)
     }
   }
@@ -718,7 +722,136 @@ export default function Dashboard() {
               {/* Right Column: Sticky Compass Visualizer or Blindtest Placeholder */}
               <div style={{ position: 'sticky', top: '100px' }}>
                 {userBlindTestAnswer ? (
-                  <CompassView />
+                  <>
+                    <CompassView />
+                    <div style={{ marginTop: '16px' }}>
+                      {/* Model Selector Widget */}
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        background: 'var(--bg-card)',
+                        border: '1px solid var(--border)',
+                        borderRadius: '8px',
+                        padding: '8px 12px',
+                        marginBottom: '10px',
+                        fontSize: '0.8125rem'
+                      }}>
+                        <span style={{ fontWeight: 600, color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                          ⚙️ Visualiseringstype:
+                        </span>
+                        <select
+                          value={calculationModel}
+                          onChange={(e) => setCalculationModel(e.target.value as CalculationModel)}
+                          disabled={isMakerChecked}
+                          style={{
+                            padding: '4px 8px',
+                            border: '1px solid var(--border)',
+                            borderRadius: '4px',
+                            background: 'var(--bg-input)',
+                            color: 'var(--text-primary)',
+                            fontSize: '0.8125rem',
+                            fontWeight: 500,
+                            cursor: isMakerChecked ? 'not-allowed' : 'pointer',
+                            outline: 'none',
+                          }}
+                        >
+                          <option value="linear">Lineær (Standard)</option>
+                          <option value="gmm">GMM (Avviksstraff)</option>
+                          <option value="conservative">Konservativ</option>
+                        </select>
+                      </div>
+
+                      <button
+                        onClick={() => setIsExplainingFormula(!isExplainingFormula)}
+                        style={{
+                          width: '100%',
+                          padding: '10px 14px',
+                          background: 'var(--bg-card)',
+                          border: '1px solid var(--border)',
+                          borderRadius: '8px',
+                          cursor: 'pointer',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'space-between',
+                          fontSize: '0.875rem',
+                          fontWeight: 600,
+                          color: 'var(--accent)',
+                          transition: 'all 0.2s',
+                        }}
+                      >
+                        <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                          <span>💡</span> Slik fungerer den foreløpige diagnosen
+                        </span>
+                        <span>{isExplainingFormula ? '▲ Lukk' : '▼ Åpne'}</span>
+                      </button>
+
+                      {isExplainingFormula && (
+                        <div className="fade-in" style={{
+                          padding: '16px',
+                          background: 'var(--bg-panel)',
+                          border: '1px solid var(--border)',
+                          borderTop: 'none',
+                          borderBottomLeftRadius: '8px',
+                          borderBottomRightRadius: '8px',
+                          fontSize: '0.8125rem',
+                          color: 'var(--text-secondary)',
+                          lineHeight: '1.6',
+                          textAlign: 'left',
+                        }}>
+                          <h4 style={{ margin: '0 0 8px 0', fontSize: '0.875rem', color: 'var(--text-primary)' }}>
+                            Slik fungerer den foreløpige kompass-diagnosen:
+                          </h4>
+                          <p style={{ margin: '0 0 12px 0' }}>
+                            Dette panelet forklarer hvordan poengsummene fra kompasset ditt henger sammen med den foreløpige diagnosen. Formålet er full gjennomsiktighet slik at du som HR- eller HMS-rådgiver alltid har full kontroll og forståelse.
+                          </p>
+                          <p style={{ margin: '0 0 10px 0' }}>
+                            <strong>Dine egne poengsummer:</strong>
+                            <br />
+                            • <strong>Målklarhet (Y-akse):</strong> {activeTask.expectedModuleScores.målklarhet.score.toFixed(1)} av 4.0 (Hvor tydelig er det hva et godt utfall betyr for KI-bruksoppgaven?)
+                            <br />
+                            • <strong>Separabilitet (X-akse):</strong> {activeTask.expectedModuleScores.separabilitet.score.toFixed(1)} av 4.0 (Hvor trygt kan oppgaven skilles ut fra helhetsvurdering, relasjon og menneskelig skjønn?)
+                          </p>
+                          <p style={{ margin: '0 0 12px 0' }}>
+                            <strong>Hvordan krysset plasseres i diagrammet:</strong>
+                            <br />
+                            Posisjonen til krysset er en direkte visualisering (1-til-1) av svarene dine. Det gjøres ingen skjulte justeringer eller komplisert statistikk i bakgrunnen – krysset plasseres nøyaktig der poengene dine møtes.
+                          </p>
+                          <div style={{ padding: '12px', background: 'rgba(2, 132, 199, 0.05)', borderRadius: '6px', borderLeft: '3px solid var(--accent)', margin: '12px 0 0 0' }}>
+                            <strong style={{ display: 'block', marginBottom: '6px', color: 'var(--text-primary)' }}>
+                              Foreløpig forslag til KI-rolle (veiledende utgangspunkt):
+                            </strong>
+                            {activeTask.expectedModuleScores.målklarhet.score >= 3.0 ? (
+                              activeTask.expectedModuleScores.separabilitet.score >= 3.0 ? (
+                                <span>
+                                  Begge poengsumskårene er 3.0 eller høyere. Dette indikerer at oppgaven har klare mål og kan skilles godt ut.
+                                  Det foreslås en foreløpig rolle som <strong>Automatisert beslutning (KI-rolle II)</strong>.
+                                  Merk at dette kun er et veiledende utgangspunkt for gruppen. Endelig bruk begrenses alltid av eventuelle stoppregler, lokale risikovurderinger og kravet om at et menneske eier den endelige beslutningen.
+                                </span>
+                              ) : (
+                                <span>
+                                  Målklarhet er høy (&gt;= 3.0), men separabilitet er lav (&lt; 3.0). Siden oppgaven krever lokal menneskelig dømmekraft, foreslås rollen <strong>Forsterket skjønn (KI-rolle I)</strong>.
+                                  Her bistår KI med forarbeid eller strukturering, mens du som rådgiver eller saksbehandler gjør den faktiske vurderingen og står ansvarlig.
+                                </span>
+                              )
+                            ) : (
+                              activeTask.expectedModuleScores.separabilitet.score >= 3.0 ? (
+                                <span>
+                                  Målklarhet er lav (&lt; 3.0), men separabilitet er høy (&gt;= 3.0). Fordi det er usikkerhet rundt målene, foreslås rollen <strong>Strategisk autonomi (KI-rolle IV)</strong>.
+                                  Her må ledelsen og prosjektgruppen definere tydelige rammer for bruk på forhånd, da det er risiko for feiloptimalisering.
+                                </span>
+                              ) : (
+                                <span>
+                                  Begge poengsumskårene er under 3.0. Siden oppgaven verken har klare mål eller kan skilles fra relasjon og skjønn, foreslås rollen <strong>Utforskende støtte (KI-rolle III)</strong>.
+                                  KI bør utelukkende brukes som en sparringspartner for gruppen for å hente ideer, aldri til å ta beslutninger.
+                                </span>
+                              )
+                            )}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </>
                 ) : (
                   <div className="card" style={{ padding: '32px', textAlign: 'center', color: 'var(--text-muted)', border: '1px dashed var(--border)' }}>
                     <h3 style={{ fontSize: '1.05rem', margin: '0 0 8px 0' }}>KI-kompasset er låst</h3>

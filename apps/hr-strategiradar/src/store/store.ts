@@ -161,7 +161,7 @@ export const useAppStore = create<AppState>((set, get) => {
     compassPosition: null,
     freeText: '',
     chatHistory: [],
-    calculationModel: 'gmm',
+    calculationModel: 'linear',
 
     valueJudgments: { ...INITIAL_VALUE_JUDGMENTS },
     checkpointAnswers: {},
@@ -392,7 +392,7 @@ export const useAppStore = create<AppState>((set, get) => {
         }
 
         const preliminaryComplete = isDecisionLogReady(taskClone, judgmentsClone, s.decisionLogText)
-        const preliminaryCalculated = runCalculationEngine(taskClone, judgmentsClone, preliminaryComplete)
+        const preliminaryCalculated = runCalculationEngine(taskClone, judgmentsClone, preliminaryComplete, s.calculationModel, s.isSigned)
 
         // Generate updated pre-fill log based on new risikoprofil
         const preFilled = generatePreFilledDecisionLog(s.activeProject!, preliminaryCalculated, judgmentsClone, s.checkpointAnswers)

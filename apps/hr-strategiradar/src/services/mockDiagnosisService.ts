@@ -45,7 +45,7 @@ export function getDiagnosisDataForTask(caseId: string, taskId: string) {
 // Auto-calculate compass position from module scores
 export function calculateCompassPosition(
   task: AiUseTask,
-  model: 'gmm' | 'linear' | 'conservative' = 'gmm'
+  model: 'gmm' | 'linear' | 'conservative' = 'linear'
 ): Point {
   const scores = task.expectedModuleScores
   if (model === 'conservative') {
@@ -483,7 +483,7 @@ export function runCalculationEngine(
   task: AiUseTask,
   judgments: ValueJudgments,
   isDecisionLogComplete: boolean,
-  model: 'gmm' | 'linear' | 'conservative' = 'gmm',
+  model: 'gmm' | 'linear' | 'conservative' = 'linear',
   isSigned: boolean = false
 ): AiUseTask {
   const scores = {
