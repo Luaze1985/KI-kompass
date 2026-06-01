@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useAppStore } from '../../store/store'
 import { allCases } from '../../fixtures/all-cases'
 import { calculateCompassPosition, getSystemProposal, STOP_RULE_QUESTIONS } from '../../services/mockDiagnosisService'
@@ -12,6 +13,174 @@ const CASES = [
   { id: 'HRR-04', label: 'Rekruttering av helsefagkompetanse' },
   { id: 'HRR-07', label: 'Langvakter i helsesektoren' },
 ]
+
+function RegulationsModule({ compact = false }: { compact?: boolean }) {
+  const [activeTab, setActiveTab] = useState<'eu' | 'national' | 'internal' | null>(null)
+
+  const toggleTab = (tab: 'eu' | 'national' | 'internal') => {
+    setActiveTab(activeTab === tab ? null : tab)
+  }
+
+  return (
+    <div className="card" style={{ padding: compact ? '16px' : '24px', border: '1px solid var(--border)', background: '#ffffff' }}>
+      <h3 style={{ margin: '0 0 8px 0', fontSize: compact ? '0.9375rem' : '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <span>🚦</span> Innebygd Lovverk & Retningslinjer
+      </h3>
+      <p className="small" style={{ color: 'var(--text-secondary)', margin: '0 0 16px 0' }}>
+        Ferdig integrerte og lovpålagte krav for bruk av kunstig intelligens i HR- og HMS-arbeid. Klikk på hvert punkt for å lese detaljer og krav.
+      </p>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        {/* EU AI Act */}
+        <div style={{ border: '1px solid var(--border-light)', borderRadius: '6px', overflow: 'hidden' }}>
+          <button
+            onClick={() => toggleTab('eu')}
+            style={{
+              width: '100%',
+              padding: '12px',
+              background: activeTab === 'eu' ? 'var(--zone-red)' : 'var(--bg-panel)',
+              border: 'none',
+              textAlign: 'left',
+              cursor: 'pointer',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              fontWeight: 600,
+              fontSize: '0.875rem',
+              color: 'var(--text-primary)',
+              transition: 'background 0.2s',
+            }}
+          >
+            <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span>🇪🇺</span> EU AI Act (Høyrisiko-status)
+            </span>
+            <span style={{
+              background: 'rgba(239, 68, 68, 0.1)',
+              color: '#dc2626',
+              padding: '2px 8px',
+              borderRadius: '4px',
+              fontSize: '0.75rem',
+              fontWeight: 700,
+            }}>
+              Lovpålagt krav
+            </span>
+          </button>
+          {activeTab === 'eu' && (
+            <div style={{ padding: '12px', background: '#ffffff', fontSize: '0.8125rem', color: 'var(--text-secondary)', borderTop: '1px solid var(--border-light)', lineHeight: '1.6' }}>
+              <p style={{ margin: '0 0 8px 0' }}>
+                <strong>Vedlegg III, punkt 4:</strong> Bruk av KI til rekruttering, utvelgelse, turnusplanlegging, forfremmelse, oppsigelse eller evaluering av ansatte er klassifisert som <strong>Høyrisiko</strong>.
+              </p>
+              <p style={{ margin: '0 0 8px 0' }}>
+                Dette betyr at systemet <strong>må</strong> ha innebygde barrierer for:
+              </p>
+              <ul style={{ margin: '0', paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                <li><strong>Menneskelig overvåking (Human Oversight):</strong> KI-systemet kan aldri ta automatiske beslutninger uten reell menneskelig overprøving.</li>
+                <li><strong>Gjennomsiktighet:</strong> Berørte ansatte eller søkere har rett til å vite at de evalueres av eller med bistand fra en algoritme.</li>
+                <li><strong>Cybersikkerhet og robusthet:</strong> Systemet må sikres mot feil og manipulering.</li>
+                <li><strong>Registrering:</strong> Høyrisikosystemer må registreres i en felles EU-database.</li>
+              </ul>
+            </div>
+          )}
+        </div>
+
+        {/* Nasjonale Retningslinjer */}
+        <div style={{ border: '1px solid var(--border-light)', borderRadius: '6px', overflow: 'hidden' }}>
+          <button
+            onClick={() => toggleTab('national')}
+            style={{
+              width: '100%',
+              padding: '12px',
+              background: activeTab === 'national' ? 'var(--zone-yellow)' : 'var(--bg-panel)',
+              border: 'none',
+              textAlign: 'left',
+              cursor: 'pointer',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              fontWeight: 600,
+              fontSize: '0.875rem',
+              color: 'var(--text-primary)',
+              transition: 'background 0.2s',
+            }}
+          >
+            <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span>🇳🇴</span> Nasjonale etiske retningslinjer
+            </span>
+            <span style={{
+              background: 'rgba(217, 119, 6, 0.1)',
+              color: '#d97706',
+              padding: '2px 8px',
+              borderRadius: '4px',
+              fontSize: '0.75rem',
+              fontWeight: 700,
+            }}>
+              Etiske råd
+            </span>
+          </button>
+          {activeTab === 'national' && (
+            <div style={{ padding: '12px', background: '#ffffff', fontSize: '0.8125rem', color: 'var(--text-secondary)', borderTop: '1px solid var(--border-light)', lineHeight: '1.6' }}>
+              <p style={{ margin: '0 0 8px 0' }}>
+                Regjeringens prinsipper for ansvarlig bruk av kunstig intelligens krever:
+              </p>
+              <ul style={{ margin: '0', paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                <li><strong>Respekt for menneskelig autonomi:</strong> Brukeren må beholde fullt handlingsrom og ikke presses til å følge KI-anbefalinger blindt.</li>
+                <li><strong>Rettferdighet og mangfold:</strong> Algoritmer must testes for skjevheter (bias) og hindre diskriminering basert på kjønn, alder eller etnisk bakgrunn.</li>
+                <li><strong>Forklarbarhet:</strong> Logikken bak en beslutning må kunne forklares på en enkel og forståelig måte for den ansatte.</li>
+              </ul>
+            </div>
+          )}
+        </div>
+
+        {/* Virksomhetens egne retningslinjer */}
+        <div style={{ border: '1px solid var(--border-light)', borderRadius: '6px', overflow: 'hidden' }}>
+          <button
+            onClick={() => toggleTab('internal')}
+            style={{
+              width: '100%',
+              padding: '12px',
+              background: activeTab === 'internal' ? 'var(--zone-green)' : 'var(--bg-panel)',
+              border: 'none',
+              textAlign: 'left',
+              cursor: 'pointer',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              fontWeight: 600,
+              fontSize: '0.875rem',
+              color: 'var(--text-primary)',
+              transition: 'background 0.2s',
+            }}
+          >
+            <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span>🏢</span> Virksomhetens retningslinjer & HMS
+            </span>
+            <span style={{
+              background: 'rgba(16, 185, 129, 0.1)',
+              color: '#059669',
+              padding: '2px 8px',
+              borderRadius: '4px',
+              fontSize: '0.75rem',
+              fontWeight: 700,
+            }}>
+              Kontekstavhengig
+            </span>
+          </button>
+          {activeTab === 'internal' && (
+            <div style={{ padding: '12px', background: '#ffffff', fontSize: '0.8125rem', color: 'var(--text-secondary)', borderTop: '1px solid var(--border-light)', lineHeight: '1.6' }}>
+              <p style={{ margin: '0 0 8px 0' }}>
+                Lokale kjøreregler for verifisering og medbestemmelse:
+              </p>
+              <ul style={{ margin: '0', paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                <li><strong>Medbestemmelse (Hovedavtalen § 9-3):</strong> Innføring av KI-verktøy som påvirker ansattes arbeidshverdag <strong>skal</strong> drøftes med tillitsvalgte på forhånd.</li>
+                <li><strong>HMS-prosedyrer:</strong> Bruk av KI til turnus eller saksbehandling skal ikke øke det psykososiale eller fysiske arbeidspresset, og verneombudet skal involveres dersom det påvirker det fysiske eller psykososiale arbeidsmiljøet.</li>
+              </ul>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  )
+}
 
 export default function Dashboard() {
   const {
@@ -250,74 +419,79 @@ export default function Dashboard() {
               {/* Right Column: AI-Assisted Assumptions and proposals */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 {!selectedCaseId ? (
-                  <div className="card" style={{ padding: '32px', textAlign: 'center', color: 'var(--text-muted)', border: '1px dashed var(--border)' }}>
-                    <h3>Ingen sak valgt</h3>
-                    <p className="small">Velg et fagområde i inntaksskjemaet til venstre for å få AI-radar til å foreslå saksstruktur og antakelser.</p>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                    <div className="card" style={{ padding: '32px', textAlign: 'center', color: 'var(--text-muted)', border: '1px dashed var(--border)', background: '#ffffff' }}>
+                      <h3 style={{ margin: '0 0 8px 0', color: 'var(--text-primary)' }}>Ingen sak valgt</h3>
+                      <p className="small" style={{ margin: 0 }}>Velg din yrkesrolle og et fagområde til venstre for å starte diagnosen og hente systemets antakelser.</p>
+                    </div>
+                    <RegulationsModule />
                   </div>
                 ) : (
-                  <div className="card" style={{ padding: '24px', border: '1px solid var(--border)' }}>
-                    <h3 style={{ margin: '0 0 16px 0', fontSize: '1rem', color: 'var(--text-primary)' }}>
-                      Systemets oppstartsantakelser for saken
-                    </h3>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                    <div className="card" style={{ padding: '24px', border: '1px solid var(--border)', background: '#ffffff' }}>
+                      <h3 style={{ margin: '0 0 16px 0', fontSize: '1rem', color: 'var(--text-primary)' }}>
+                        Systemets oppstartsantakelser for saken
+                      </h3>
 
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                      {/* Proposed Case File */}
-                      <div style={{ padding: '12px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px' }}>
-                        <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Foreslått saksmappe:</span>
-                        <strong style={{ fontSize: '0.875rem' }}>{selectedCaseId}: {project?.title}</strong>
-                      </div>
-
-                      {/* Proposed Task / Unit of evaluation */}
-                      <div style={{ padding: '12px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px', borderLeft: '3px solid var(--accent)' }}>
-                        <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Foreslått konkret KI-bruksoppgave (Vurderingsenhet):</span>
-                        <strong style={{ fontSize: '0.875rem', color: 'var(--accent)' }}>{activeTask?.title}</strong>
-                        <p className="small" style={{ margin: '6px 0 0 0', color: 'var(--text-secondary)' }}>
-                          Merk: Vi vurderer denne deloppgaven, ikke hele HR-prosjektet under ett.
-                        </p>
-                      </div>
-
-                      {/* AI-Assumed active themes / randsoner */}
-                      {systemProposal && (
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                        {/* Proposed Case File */}
                         <div style={{ padding: '12px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px' }}>
-                          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Foreslåtte aktive fagfelt / randsoner:</span>
-                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '6px' }}>
-                            {(scenarios[selectedCaseId] || []).map(sc => (
-                              <span key={sc.temaKey} style={{ background: 'rgba(99,102,241,0.1)', color: 'var(--accent)', padding: '4px 10px', borderRadius: '12px', fontSize: '0.75rem', fontWeight: 600 }}>
-                                {sc.temaTittel}
-                              </span>
-                            ))}
-                          </div>
+                          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Foreslått saksmappe:</span>
+                          <strong style={{ fontSize: '0.875rem' }}>{selectedCaseId}: {project?.title}</strong>
                         </div>
-                      )}
 
-                      {/* Spørsmål som må avklares lokalt */}
-                      <div style={{ padding: '12px', background: 'var(--bg-panel)', borderRadius: '4px', border: '1px solid var(--border)' }}>
-                        <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Må avklares lokalt av gruppen:</span>
-                        <ul style={{ margin: '6px 0 0 0', paddingLeft: '16px', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
-                          {project?.uncertainties.map((u, index) => (
-                            <li key={index}>{u}</li>
-                          ))}
-                        </ul>
-                      </div>
+                        {/* Proposed Task / Unit of evaluation */}
+                        <div style={{ padding: '12px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px', borderLeft: '3px solid var(--accent)' }}>
+                          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Foreslått konkret KI-bruksoppgave (Vurderingsenhet):</span>
+                          <strong style={{ fontSize: '0.875rem', color: 'var(--accent)' }}>{activeTask?.title}</strong>
+                          <p className="small" style={{ margin: '6px 0 0 0', color: 'var(--text-secondary)' }}>
+                            Merk: Vi vurderer denne deloppgaven, ikke hele HR-prosjektet under ett.
+                          </p>
+                        </div>
 
-                      {/* Active Confirmation Button */}
-                      <div style={{ marginTop: '12px', borderTop: '1px solid var(--border-light)', paddingTop: '16px' }}>
-                        <p className="small" style={{ color: 'var(--text-secondary)', margin: '0 0 12px 0', textAlign: 'center' }}>
-                          Prosjektgruppen må bekrefte disse antakelsene før vi kan generere en foreløpig KI-diagnose.
-                        </p>
-                        <button
-                          className="btn btn-primary"
-                          onClick={handleConfirmAssumptions}
-                          style={{ width: '100%', padding: '12px', fontSize: '1rem', fontWeight: 700 }}
-                        >
-                          Bekreft antakelser og gå til diagnose →
-                        </button>
+                        {/* AI-Assumed active themes / randsoner */}
+                        {systemProposal && (
+                          <div style={{ padding: '12px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px' }}>
+                            <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Foreslåtte aktive fagfelt / randsoner:</span>
+                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '6px' }}>
+                              {(scenarios[selectedCaseId] || []).map(sc => (
+                                <span key={sc.temaKey} style={{ background: 'rgba(99,102,241,0.1)', color: 'var(--accent)', padding: '4px 10px', borderRadius: '12px', fontSize: '0.75rem', fontWeight: 600 }}>
+                                  {sc.temaTittel}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Spørsmål som må avklares lokalt */}
+                        <div style={{ padding: '12px', background: 'var(--bg-panel)', borderRadius: '4px', border: '1px solid var(--border)' }}>
+                          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Må avklares lokalt av gruppen:</span>
+                          <ul style={{ margin: '6px 0 0 0', paddingLeft: '16px', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                            {project?.uncertainties.map((u, index) => (
+                              <li key={index}>{u}</li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        {/* Active Confirmation Button */}
+                        <div style={{ marginTop: '12px', borderTop: '1px solid var(--border-light)', paddingTop: '16px' }}>
+                          <p className="small" style={{ color: 'var(--text-secondary)', margin: '0 0 12px 0', textAlign: 'center' }}>
+                            Prosjektgruppen må bekrefte disse antakelsene før vi kan generere en foreløvig KI-diagnose.
+                          </p>
+                          <button
+                            className="btn btn-primary"
+                            onClick={handleConfirmAssumptions}
+                            style={{ width: '100%', padding: '12px', fontSize: '1rem', fontWeight: 700 }}
+                          >
+                            Bekreft antakelser og gå til diagnose →
+                          </button>
+                        </div>
                       </div>
                     </div>
+                    <RegulationsModule compact={true} />
                   </div>
                 )}
               </div>
-
             </div>
           )}
 

@@ -99,6 +99,8 @@ interface AppState {
   isAssumptionsConfirmed: boolean
   userBlindTestAnswer: string | null
   stopRuleDiscussed: Record<string, boolean>
+  userRole: 'hms_radgiver' | 'hr_radgiver' | 'linjeleder' | 'tillitsvalgt' | null
+  setUserRole: (role: 'hms_radgiver' | 'hr_radgiver' | 'linjeleder' | 'tillitsvalgt' | null) => void
 
   setStep: (step: number) => void
   setSelectedCaseId: (id: string | null) => void
@@ -172,6 +174,8 @@ export const useAppStore = create<AppState>((set, get) => {
     isAssumptionsConfirmed: false,
     userBlindTestAnswer: null,
     stopRuleDiscussed: {},
+    userRole: null,
+    setUserRole: (role) => set((s) => (s.isMakerChecked ? {} : { userRole: role })),
 
     setStep: (step) => set((s) => {
       if (s.isMakerChecked) return {}
@@ -566,6 +570,7 @@ export const useAppStore = create<AppState>((set, get) => {
         isAssumptionsConfirmed: false,
         userBlindTestAnswer: null,
         stopRuleDiscussed: {},
+        userRole: null,
       }),
   }
 })
