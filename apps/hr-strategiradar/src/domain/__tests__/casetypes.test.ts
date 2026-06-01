@@ -20,8 +20,8 @@ describe('HR-Strategiradar: Casetype-tester mot 5 obligatoriske scenarioer', () 
       const judgments = { ...INITIAL_VALUE_JUDGMENTS, rightsOrWorkImpact: false, sensitiveOrPersonalDataRisk: false };
       const result = runCalculationEngine(task02A, judgments, true);
 
-      // Lavrisiko standardoppgaver kan tillate forsterket skjønn (sparring) uten å bryte kritiske individregler
-      expect(result.expectedAllowedRole).toBe('forsterket_skjønn');
+      // Lavrisiko standardoppgaver kan tillate automatisert beslutning uten å bryte kritiske individregler (siden målklarhet >= 3 og separabilitet >= 3)
+      expect(result.expectedAllowedRole).toBe('automatisert_beslutning');
     }
   });
 

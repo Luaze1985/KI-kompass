@@ -14,10 +14,10 @@ function generateItComplianceReport(
   const dateStr = new Date().toLocaleDateString('no-NO')
   const allowedRoleLabel = task.expectedAllowedRole === 'utforskende_støtte' ? 'Sparringspartner (Laveste risiko, kun støtte)' :
                            task.expectedAllowedRole === 'forsterket_skjønn' ? 'Forsterket skjønn (Beslutningsstøtte med human-in-the-loop)' :
-                           task.expectedAllowedRole === 'delautomatisering' ? 'Delautomatisering (Menneskelig kontroll pålagt)' : 'Automatisert beslutning (Eget lavrisikokrav)';
+                           task.expectedAllowedRole === 'strategisk_autonomi' ? 'Strategisk autonomi (Ekstrem/strategisk risiko)' : 'Automatisert beslutning (Eget lavrisikokrav)';
   const calculatedRoleLabel = task.expectedCalculatedRole === 'utforskende_støtte' ? 'Sparringspartner' :
                              task.expectedCalculatedRole === 'forsterket_skjønn' ? 'Forsterket skjønn' :
-                             task.expectedCalculatedRole === 'delautomatisering' ? 'Delautomatisering' : 'Automatisert beslutning';
+                             task.expectedCalculatedRole === 'strategisk_autonomi' ? 'Strategisk autonomi' : 'Automatisert beslutning';
 
   const stopRulesSection = task.expectedStopRules && task.expectedStopRules.length > 0
     ? task.expectedStopRules.map((sr: string) => {
@@ -67,7 +67,7 @@ function generateItComplianceReport(
 - **Tillatt KI-rolle (Med stoppregler og risiko-caps):** ${allowedRoleLabel}
 - **Rollebegrensning (Role Cap) pålagt:** ${task.expectedAllowedRole !== task.expectedCalculatedRole ? 'JA' : 'NEI'}
 - **Dokumentert samsvarsgrad:** ${task.expectedComplianceScore}%
-- **Overordnet vurderingsnivå:** ${task.expectedTrafficLight.toUpperCase()}
+- **Overordnet vurderingsnivå:** ${(task.expectedTrafficLight || 'GREY').toUpperCase()}
 
 ### Utløste sikkerhetsbarrierer / Stoppregler:
 ${stopRulesSection}

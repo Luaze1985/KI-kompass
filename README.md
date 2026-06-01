@@ -41,15 +41,15 @@ Arbeidet er fortsatt `concept_context`. Det skal ikke bygges app, database, fron
 ## Leserekkefølge
 
 1. `state/context/current_context.md`
-2. `intake/source_register.md`
-3. `concepts/hovedpremiss.md`
-4. `concepts/kart_og_kompass.md`
-5. `decision_model/syntese_runde_1.md`
-6. `decision_model/scoremodell_runde_1.md`
-7. `tasks/active/hrsr_002_domain_schemas_and_fixtures.md`
+2. `archive/source_packages/ki_kompasset_komprimert_md/ki_kompasset_komprimert_md/README.md` (Det nye primære rammeverket)
+3. `planning/sprint_plan_ki_kompass_alignment.md` (Integrasjonsplanen)
+4. `concepts/hovedpremiss.md`
+5. `concepts/kart_og_kompass.md`
+6. `decision_model/syntese_runde_1.md`
+7. `decision_model/scoremodell_runde_1.md`
 
 ## Neste anbefalte arbeid
 
-Scoremodellen er testet i `testcases/runde_1_testcaser.md`, og den gamle oppgaven ligger arkivert i `tasks/archive/test_scoremodell_mot_caser.md`.
+Vi har lagt til det kanoniske rammeverket for KI-kompasset (Berge & Knudsen) under `archive/source_packages/ki_kompasset_komprimert_md/`.
 
-Neste aktive arbeid er `tasks/active/hrsr_002_domain_schemas_and_fixtures.md`, som skal folge `app_spec/brukerreise_hr_strategiradar.md` og `app_spec/arbeidsflyt_og_beregningsmodell.md`.
+Neste planlagte arbeid er beskrevet i **`planning/sprint_plan_ki_kompass_alignment.md`**, som omhandler samkjøring av kildekode og UI i `apps/hr-strategiradar/` med den offisielle teorien.

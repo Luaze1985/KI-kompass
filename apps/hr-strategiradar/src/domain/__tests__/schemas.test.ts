@@ -330,7 +330,7 @@ describe('KiRole enum', () => {
   it('contains expected roles', () => {
     expect(KiRole.options).toContain('utforskende_støtte')
     expect(KiRole.options).toContain('forsterket_skjønn')
-    expect(KiRole.options).toContain('delautomatisering')
+    expect(KiRole.options).toContain('strategisk_autonomi')
     expect(KiRole.options).toContain('automatisert_beslutning')
   })
 })

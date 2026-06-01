@@ -45,12 +45,25 @@ Diagnosen av KI-egnethet basert på målklarhet og separabilitet.
 _Avoid_: tillatelse, fasit, compliance-score
 
 **Målklarhet**:
-Hvor tydelig det er hva godt output betyr for KI-bruksoppgaven.
+Hvor tydelig det er hva godt utfall betyr for KI-bruksoppgaven.
 _Avoid_: forklarbarhet, kvalitet generelt
 
 **Separabilitet**:
 Hvor trygt KI-output kan skilles ut fra helhetsvurdering, relasjon, lokal kontekst og menneskelig skjønn.
 _Avoid_: målklarhet, teknisk automatiserbarhet
+
+**Forsterket skjønn (KI-rolle I)**:
+Høy målklarhet + lav separabilitet. KI støtter og forbereder fakta, men mennesket gjør selve vurderingen og står ansvarlig.
+
+**Automatisert beslutning (KI-rolle II)**:
+Høy målklarhet + høy separabilitet. KI eller regelmotor kan ta standardiserte valg, mens mennesket kontrollerer unntak.
+
+**Utforskende støtte (KI-rolle III)**:
+Lav målklarhet + lav separabilitet. KI fungerer som sparringspartner for mønstre og analyser, mens mennesket eier mål og vurderinger.
+
+**Strategisk autonomi (KI-rolle IV)**:
+Lav målklarhet + høy separabilitet. KI handler innen gitte rammer, men ledelsen må definere grensene. Høy risiko for feiloptimalisering.
+
 
 **Kontrollkrav**:
 Krav til forklarbarhet, human oversight og anti-overreliance som avgjør om KI-output kan forstås, kontrolleres og verifiseres.

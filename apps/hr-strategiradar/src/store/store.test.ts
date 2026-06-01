@@ -119,7 +119,7 @@ describe('maker-check revision lock', () => {
     // 4. Test lock prevention
     setupActiveCase()
     act(() => {
-      useAppStore.getState().setUserBlindTestAnswer('delautomatisering')
+      useAppStore.getState().setUserBlindTestAnswer('strategisk_autonomi')
       useAppStore.setState({
         isDecisionLogComplete: true,
         decisionLogText: {
@@ -140,6 +140,6 @@ describe('maker-check revision lock', () => {
     act(() => {
       useAppStore.getState().setUserBlindTestAnswer('utforskende_støtte')
     })
-    expect(useAppStore.getState().userBlindTestAnswer).toBe('delautomatisering')
+    expect(useAppStore.getState().userBlindTestAnswer).toBe('strategisk_autonomi')
   })
 })

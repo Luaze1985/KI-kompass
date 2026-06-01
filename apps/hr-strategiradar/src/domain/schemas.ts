@@ -3,8 +3,8 @@ import { z } from 'zod';
 export const KiRole = z.enum([
   'utforskende_støtte',
   'forsterket_skjønn',
-  'delautomatisering',
   'automatisert_beslutning',
+  'strategisk_autonomi',
 ]);
 export type ExpectedKiRole = z.infer<typeof KiRole>;
 

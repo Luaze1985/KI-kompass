@@ -198,40 +198,40 @@ export function generateRiskMitigationMeasures(task: AiUseTask): string {
 
 // Role labels
 export const ROLE_LABELS: Record<string, string> = {
-  'utforskende_støtte': 'KI som sparringspartner',
-  'forsterket_skjønn': 'KI hjelper, gruppen bestemmer',
-  'delautomatisering': 'KI gjør deler, gruppen kontrollerer',
-  'automatisert_beslutning': 'Automatisering krever egen lavrisikovurdering',
+  'utforskende_støtte': 'KI som sparringspartner (III. Utforskende støtte)',
+  'forsterket_skjønn': 'KI hjelper, gruppen bestemmer (I. Forsterket skjønn)',
+  'strategisk_autonomi': 'KI handler innen gitte rammer (IV. Strategisk autonomi)',
+  'automatisert_beslutning': 'Automatisering krever egen lavrisikovurdering (II. Automatisert beslutning)',
 }
 
-// Calculate expected role based on kompass and kontroll score
-export function getCalculatedRole(kompassScore: number, kontrollScore: number): 'utforskende_støtte' | 'forsterket_skjønn' | 'delautomatisering' | 'automatisert_beslutning' {
-  if (kompassScore < 2.5) return 'utforskende_støtte';
-  if (kompassScore < 3.5) {
-    return kontrollScore >= 3.5 ? 'forsterket_skjønn' : 'utforskende_støtte';
-  }
-  if (kompassScore < 4.3) {
-    if (kontrollScore >= 4.0) return 'delautomatisering';
-    if (kontrollScore >= 3.5) return 'forsterket_skjønn';
+// Calculate expected role based on kompass scores (maalklarhet and separabilitet)
+export function getCalculatedRole(maalklarhetScore: number, separabilitetScore: number): 'utforskende_støtte' | 'forsterket_skjønn' | 'automatisert_beslutning' | 'strategisk_autonomi' {
+  const hoyMalklarhet = maalklarhetScore >= 3.0;
+  const hoySeparabilitet = separabilitetScore >= 3.0;
+
+  if (hoyMalklarhet && hoySeparabilitet) {
+    return 'automatisert_beslutning';
+  } else if (hoyMalklarhet && !hoySeparabilitet) {
+    return 'forsterket_skjønn';
+  } else if (!hoyMalklarhet && !hoySeparabilitet) {
     return 'utforskende_støtte';
+  } else {
+    // !hoyMalklarhet && hoySeparabilitet
+    return 'strategisk_autonomi';
   }
-  // kompassScore >= 4.3
-  if (kontrollScore >= 4.0) return 'automatisert_beslutning';
-  if (kontrollScore >= 3.5) return 'delautomatisering';
-  return 'utforskende_støtte';
 }
 
 const ROLE_ORDER = {
   'utforskende_støtte': 1,
-  'forsterket_skjønn': 2,
-  'delautomatisering': 3,
+  'strategisk_autonomi': 2,
+  'forsterket_skjønn': 3,
   'automatisert_beslutning': 4,
 } as const;
 
 export function minRole(
-  role1: 'utforskende_støtte' | 'forsterket_skjønn' | 'delautomatisering' | 'automatisert_beslutning',
-  role2: 'utforskende_støtte' | 'forsterket_skjønn' | 'delautomatisering' | 'automatisert_beslutning'
-): 'utforskende_støtte' | 'forsterket_skjønn' | 'delautomatisering' | 'automatisert_beslutning' {
+  role1: 'utforskende_støtte' | 'forsterket_skjønn' | 'strategisk_autonomi' | 'automatisert_beslutning',
+  role2: 'utforskende_støtte' | 'forsterket_skjønn' | 'strategisk_autonomi' | 'automatisert_beslutning'
+): 'utforskende_støtte' | 'forsterket_skjønn' | 'strategisk_autonomi' | 'automatisert_beslutning' {
   return ROLE_ORDER[role1] <= ROLE_ORDER[role2] ? role1 : role2;
 }
 
@@ -305,7 +305,7 @@ export function evaluateStopRules(
 }
 
 // Calculate role cap based on stop rules
-export function getRoleCap(stopRules: string[]): 'utforskende_støtte' | 'forsterket_skjønn' | 'delautomatisering' | 'automatisert_beslutning' {
+export function getRoleCap(stopRules: string[]): 'utforskende_støtte' | 'forsterket_skjønn' | 'strategisk_autonomi' | 'automatisert_beslutning' {
   if (stopRules.includes('SR-01') || stopRules.includes('SR-02') || stopRules.includes('SR-03') || stopRules.includes('SR-04') || stopRules.includes('SR-05') || stopRules.includes('SR-08')) {
     return 'utforskende_støtte';
   }
@@ -503,11 +503,10 @@ export function runCalculationEngine(
     kompassScore = Math.sqrt(scores.målklarhet * scores.separabilitet) * (1 - Math.abs(scores.målklarhet - scores.separabilitet) / 10)
   }
 
-  // kontroll_score = forklarbarhet * 0.55 + antiOverreliance * 0.45
-  const kontrollScore = scores.forklarbarhet * 0.55 + scores.antiOverreliance * 0.45
+  // const kontrollScore = scores.forklarbarhet * 0.55 + scores.antiOverreliance * 0.45
 
-  // Calculate base role without stop rules
-  const calculatedRole = getCalculatedRole(kompassScore, kontrollScore)
+  // Calculate base role without stop rules - based on official independent axes
+  const calculatedRole = getCalculatedRole(scores.målklarhet, scores.separabilitet)
 
   // Evaluate stop rules
   const stopRules = evaluateStopRules(task, judgments, scores, isDecisionLogComplete)

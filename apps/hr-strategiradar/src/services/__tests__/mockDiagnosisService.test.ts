@@ -36,28 +36,26 @@ describe('mockDiagnosisService calculations and rules engine', () => {
   })
 
   it('calculates base role from compass and control scores', () => {
-    // low compass (<2.5) -> utforskende_støtte
-    expect(getCalculatedRole(2.0, 4.0)).toBe('utforskende_støtte')
+    // Høy målklarhet (>=3) + Høy separabilitet (>=3) -> automatisert_beslutning
+    expect(getCalculatedRole(4.0, 4.0)).toBe('automatisert_beslutning')
+    expect(getCalculatedRole(3.0, 5.0)).toBe('automatisert_beslutning')
 
-    // mid-low compass (2.5 - 3.5) with low control (<3.5) -> utforskende_støtte
-    expect(getCalculatedRole(3.0, 3.0)).toBe('utforskende_støtte')
+    // Høy målklarhet (>=3) + Lav separabilitet (<3) -> forsterket_skjønn
+    expect(getCalculatedRole(4.0, 2.0)).toBe('forsterket_skjønn')
+    expect(getCalculatedRole(3.0, 2.9)).toBe('forsterket_skjønn')
 
-    // mid-low compass (2.5 - 3.5) with high control (>=3.5) -> forsterket_skjønn
-    expect(getCalculatedRole(3.0, 3.8)).toBe('forsterket_skjønn')
+    // Lav målklarhet (<3) + Lav separabilitet (<3) -> utforskende_støtte
+    expect(getCalculatedRole(2.0, 2.0)).toBe('utforskende_støtte')
+    expect(getCalculatedRole(2.9, 1.0)).toBe('utforskende_støtte')
 
-    // mid-high compass (3.5 - 4.3) with control >= 4.0 -> delautomatisering
-    expect(getCalculatedRole(4.0, 4.2)).toBe('delautomatisering')
-    expect(getCalculatedRole(4.0, 3.6)).toBe('forsterket_skjønn')
-
-    // high compass (>=4.3) with control >= 4.0 -> automatisert_beslutning
-    expect(getCalculatedRole(4.5, 4.2)).toBe('automatisert_beslutning')
-    expect(getCalculatedRole(4.5, 3.6)).toBe('delautomatisering')
-    expect(getCalculatedRole(4.5, 3.0)).toBe('utforskende_støtte')
+    // Lav målklarhet (<3) + Høy separabilitet (>=3) -> strategisk_autonomi
+    expect(getCalculatedRole(2.0, 4.0)).toBe('strategisk_autonomi')
+    expect(getCalculatedRole(2.5, 3.0)).toBe('strategisk_autonomi')
   })
 
   it('evaluates role prioritization (minRole) correctly', () => {
     expect(minRole('utforskende_støtte', 'automatisert_beslutning')).toBe('utforskende_støtte')
-    expect(minRole('delautomatisering', 'forsterket_skjønn')).toBe('forsterket_skjønn')
+    expect(minRole('strategisk_autonomi', 'forsterket_skjønn')).toBe('strategisk_autonomi')
     expect(minRole('automatisert_beslutning', 'automatisert_beslutning')).toBe('automatisert_beslutning')
   })
 
@@ -162,21 +160,20 @@ describe('mockDiagnosisService calculations and rules engine', () => {
       task.expectedModuleScores.forklarbarhet.score = 4.5
       task.expectedModuleScores.antiOverreliance.score = 4.5
 
-      // Under GMM: score is Math.sqrt(5*1) * (1 - 4/10) = 2.236 * 0.6 = 1.3416
-      // This is < 2.5, which leads to 'utforskende_støtte' and red traffic light
+      // Under GMM: kompassScore is 1.3416 < 2.5 -> red traffic light
+      // calculatedRole is 'forsterket_skjønn' (M=5 >= 3, S=1 < 3)
       const resultGmm = runCalculationEngine(task, judgments, true, 'gmm')
-      expect(resultGmm.expectedCalculatedRole).toBe('utforskende_støtte')
+      expect(resultGmm.expectedCalculatedRole).toBe('forsterket_skjønn')
       expect(resultGmm.expectedTrafficLight).toBe('red')
 
-      // Under Linear (45/55): score is 5 * 0.45 + 1 * 0.55 = 2.25 + 0.55 = 2.80
-      // This is >= 2.5, which allows 'forsterket_skjønn' (control = 4.5)
+      // Under Linear (45/55): kompassScore is 2.80 >= 2.5, but SR-02 is triggered because separabilitet = 1.0 <= 2.5 -> red traffic light
       const resultLinear = runCalculationEngine(task, judgments, true, 'linear')
       expect(resultLinear.expectedCalculatedRole).toBe('forsterket_skjønn')
+      expect(resultLinear.expectedTrafficLight).toBe('red')
 
-      // Under Conservative: score is min(5, 1) = 1.0
-      // This is < 2.5, which leads to 'utforskende_støtte'
+      // Under Conservative: kompassScore is min(5, 1) = 1.0 < 2.5 -> red traffic light
       const resultCons = runCalculationEngine(task, judgments, true, 'conservative')
-      expect(resultCons.expectedCalculatedRole).toBe('utforskende_støtte')
+      expect(resultCons.expectedCalculatedRole).toBe('forsterket_skjønn')
       expect(resultCons.expectedTrafficLight).toBe('red')
     }
   })

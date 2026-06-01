@@ -1,0 +1,22 @@
+# Fortell GitHub Linguist å overse dokumentasjon og arkiver i språktellingen,
+# slik at prosjektet blir identifisert som en TypeScript/React-app (og ikke en dokumentbase).
+
+*.md linguist-documentation
+docs/** linguist-documentation
+archive/** linguist-documentation
+handoff/** linguist-documentation
+planning/** linguist-documentation
+issues/** linguist-documentation
+concepts/** linguist-documentation
+prd/** linguist-documentation
+sprints/** linguist-documentation
+testcases/** linguist-documentation
+state/** linguist-documentation
+prompts/** linguist-documentation
+sources/** linguist-documentation
+app_spec/** linguist-documentation
+
+# Tving linguist til å se React/TypeScript appen som den dominerende koden
+apps/hr-strategiradar/src/**/*.tsx linguist-detectable=true
+apps/hr-strategiradar/src/**/*.ts linguist-detectable=true
+apps/hr-strategiradar/src/**/*.css linguist-detectable=true

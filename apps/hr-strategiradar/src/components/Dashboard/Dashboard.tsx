@@ -351,9 +351,9 @@ export default function Dashboard() {
                           desc: 'KI foreslår struktur og momenter, men gruppen utfører alt reelt skjønnsarbeid.',
                         },
                         {
-                          key: 'delautomatisering',
-                          title: 'KI gjør deler, gruppen kontrollerer (Høy risiko)',
-                          desc: 'KI utfører deler av oppgaven automatisk. Gruppen må utføre 100% manuell etterkontroll.',
+                          key: 'strategisk_autonomi',
+                          title: 'Strategisk autonomi (Ekstrem/strategisk risiko)',
+                          desc: 'KI handler selvstendig innenfor gitte rammer. Ledelsen må definere strategiske og etiske grenser.',
                         },
                         {
                           key: 'automatisert_beslutning',
@@ -398,7 +398,7 @@ export default function Dashboard() {
                   </div>
                 ) : (
                   <div className="card" style={{ padding: '24px' }}>
-                    <div style={{ display: 'flex', justifyBetween: 'space-between', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
                       <div>
                         <h2 style={{ fontSize: '1.25rem', margin: 0, color: 'var(--text-primary)' }}>Steg 2: Foreløpig KI-diagnose</h2>
                         <p className="small" style={{ color: 'var(--text-secondary)', marginTop: '4px' }}>
@@ -424,7 +424,7 @@ export default function Dashboard() {
                           <strong style={{ color: 'var(--accent)' }}>
                             {userBlindTestAnswer === 'utforskende_støtte' ? 'KI som sparringspartner' :
                              userBlindTestAnswer === 'forsterket_skjønn' ? 'KI hjelper, gruppen bestemmer' :
-                             userBlindTestAnswer === 'delautomatisering' ? 'KI gjør deler, gruppen kontrollerer' : 'Automatisert beslutning'}
+                             userBlindTestAnswer === 'strategisk_autonomi' ? 'KI handler innen gitte rammer' : 'Automatisert beslutning'}
                           </strong>
                         </div>
                         <div style={{ padding: '12px', background: '#ffffff', borderRadius: '6px', border: '1px solid var(--border)' }}>
@@ -432,7 +432,7 @@ export default function Dashboard() {
                           <strong style={{ color: 'var(--accent)' }}>
                             {activeTask.expectedAllowedRole === 'utforskende_støtte' ? 'KI som sparringspartner' :
                              activeTask.expectedAllowedRole === 'forsterket_skjønn' ? 'KI hjelper, gruppen bestemmer' :
-                             activeTask.expectedAllowedRole === 'delautomatisering' ? 'KI gjør deler, gruppen kontrollerer' : 'Automatisert beslutning'}
+                             activeTask.expectedAllowedRole === 'strategisk_autonomi' ? 'KI handler innen gitte rammer' : 'Automatisert beslutning'}
                           </strong>
                         </div>
                       </div>
@@ -516,7 +516,7 @@ export default function Dashboard() {
                         <strong style={{ display: 'block', fontSize: '1.25rem', color: activeTask.expectedAllowedRole === 'utforskende_støtte' ? 'var(--text-secondary)' : 'var(--accent)', marginTop: '4px' }}>
                           {activeTask.expectedAllowedRole === 'utforskende_støtte' ? 'KI som sparringspartner' :
                            activeTask.expectedAllowedRole === 'forsterket_skjønn' ? 'KI hjelper, du bestemmer' :
-                           activeTask.expectedAllowedRole === 'delautomatisering' ? 'KI gjør deler, du kontrollerer' : 'Automatisert beslutning'}
+                           activeTask.expectedAllowedRole === 'strategisk_autonomi' ? 'KI handler innen gitte rammer' : 'Automatisert beslutning'}
                         </strong>
                       </div>
                       <div style={{ textRendering: 'optimizeLegibility' }}>
