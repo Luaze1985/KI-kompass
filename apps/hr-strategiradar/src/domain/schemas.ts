@@ -100,6 +100,7 @@ export const AiUseTaskSchema = z.object({
   expectedCalculatedRole: KiRole,
   expectedAllowedRole: KiRole,
   expectedTrafficLight: z.enum(['green', 'yellow', 'red']).optional(),
+  assessmentComplete: z.boolean().optional(),
   expectedComplianceScore: z.number().optional(),
   requiredControls: z.array(z.string()),
   requiredLocalVerification: z.string(),

@@ -129,7 +129,8 @@ describe('mockDiagnosisService calculations and rules engine', () => {
   it('caps roles correctly based on active stop rules', () => {
     expect(getRoleCap(['SR-01'])).toBe('utforskende_støtte')
     expect(getRoleCap(['SR-02'])).toBe('utforskende_støtte')
-    expect(getRoleCap(['SR-05'])).toBe('utforskende_støtte')
+    // SR-05 = prosessindikator (vurdering ikke ferdig) — capper ikke lenger rollen
+    expect(getRoleCap(['SR-05'])).toBe('automatisert_beslutning')
     expect(getRoleCap(['SR-08'])).toBe('utforskende_støtte')
 
     expect(getRoleCap(['SR-03'])).toBe('utforskende_støtte')
@@ -158,8 +159,10 @@ describe('mockDiagnosisService calculations and rules engine', () => {
       let result = runCalculationEngine(task, judgments, false)
       // Since it is high risk and log is incomplete, SR-05 must be triggered
       expect(result.expectedStopRules).toContain('SR-05')
-      // Allowed role must be capped to utforskende_støtte
-      expect(result.expectedAllowedRole).toBe('utforskende_støtte')
+      // SR-05 is a process indicator — it sets assessmentComplete, not the role cap
+      expect(result.assessmentComplete).toBe(false)
+      // HR risk (rightsOrWorkImpact=true) caps via getHrRiskFallbackCap → forsterket_skjønn
+      expect(result.expectedAllowedRole).toBe('forsterket_skjønn')
 
       // Run engine with COMPLETE decision log
       result = runCalculationEngine(task, judgments, true)

@@ -335,7 +335,7 @@ export function evaluateStopRules(
 
 // Calculate role cap based on stop rules
 export function getRoleCap(stopRules: string[]): 'utforskende_støtte' | 'forsterket_skjønn' | 'strategisk_autonomi' | 'automatisert_beslutning' {
-  if (stopRules.includes('SR-01') || stopRules.includes('SR-02') || stopRules.includes('SR-03') || stopRules.includes('SR-04') || stopRules.includes('SR-05') || stopRules.includes('SR-08')) {
+  if (stopRules.includes('SR-01') || stopRules.includes('SR-02') || stopRules.includes('SR-03') || stopRules.includes('SR-04') || stopRules.includes('SR-08')) {
     return 'utforskende_støtte';
   }
   if (stopRules.includes('SR-06') || stopRules.includes('SR-07')) {
@@ -609,13 +609,18 @@ export function runCalculationEngine(
   const complianceScore = calculateComplianceScore(task, judgments, isDecisionLogComplete, isSigned)
 
   // Determine traffic light rating — følger kompass og stoppregler direkte
-  const isSrkTriggered = stopRules.includes('SR-01') || stopRules.includes('SR-02') || stopRules.includes('SR-03') || stopRules.includes('SR-04') || stopRules.includes('SR-05') || stopRules.includes('SR-08')
+  // SR-05 = «vurdering ikke ferdig» — prosessindikator, ikke risikoindikator.
+  // Trafikklyset skal vise faktisk risikonivå, ikke om notatet er komplett.
+  const riskStopRules = stopRules.filter(sr => sr !== 'SR-05')
+  const isSrkTriggered = riskStopRules.includes('SR-01') || riskStopRules.includes('SR-02') || riskStopRules.includes('SR-03') || riskStopRules.includes('SR-04') || riskStopRules.includes('SR-08')
   let trafficLight: 'green' | 'yellow' | 'red' = 'yellow'
   if (isSrkTriggered || kompassScore < 2.5) {
     trafficLight = 'red'
-  } else if (stopRules.length === 0 && kompassScore >= 3.5) {
+  } else if (riskStopRules.length === 0 && kompassScore >= 3.5) {
     trafficLight = 'green'
   }
+
+  const assessmentComplete = !stopRules.includes('SR-05')
 
   return {
     ...task,
@@ -623,6 +628,7 @@ export function runCalculationEngine(
     expectedCalculatedRole: calculatedRole,
     expectedAllowedRole: allowedRole,
     expectedTrafficLight: trafficLight,
+    assessmentComplete,
     expectedComplianceScore: complianceScore,
   }
 }
