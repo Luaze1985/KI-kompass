@@ -109,7 +109,7 @@ const SEEDED_SCENARIOS: Record<string, Scenario[]> = {
     {
       temaKey: 'likestilling_diskriminering',
       temaTittel: 'Likestilling og diskriminering',
-      simulertHendelse: 'If dette blir utfallet: KI-en ekskluderer kvalifiserte søkere basert på skjulte mønstre eller skjevheter i historiske rekrutteringsdata.',
+      simulertHendelse: 'Hvis dette blir utfallet: KI-en ekskluderer kvalifiserte søkere basert på skjulte mønstre eller skjevheter i historiske rekrutteringsdata.',
       utfallstype: 'arbeid/rettigheter',
       tidshorisont: 'umiddelbart',
       berørteParter: 'Jobbsøkere (særlig minoriteter eller søkere med hull i CV-en)',
