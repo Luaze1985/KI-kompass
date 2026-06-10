@@ -21,7 +21,7 @@ export default function CheckpointsAndReflections() {
       {/* Contextual Checkpoints */}
       {contextualQuestions.length > 0 && (
         <div className="card" style={{ padding: '24px' }}>
-          <h3 style={{ margin: '0 0 16px 0', fontSize: '1rem' }}>Dette må prosjektgruppen avklare</h3>
+          <h3 style={{ margin: '0 0 16px 0', fontSize: '1rem' }}>Dette må dere avklare</h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {contextualQuestions.map((q, i) => (
               <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
@@ -65,24 +65,24 @@ export default function CheckpointsAndReflections() {
       <div className="card" style={{ padding: '24px' }}>
         <h3 style={{ margin: '0 0 16px 0', fontSize: '1rem' }}>Felles vurdering</h3>
         <p className="small" style={{ color: 'var(--text-secondary)', marginBottom: '20px' }}>
-          Svarene oppdaterer diagnosen og viser hvilke forhold som må avklares manuelt.
+          Svarene påvirker vurderingen og viser hva som må sjekkes nærmere.
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px' }}>
           <Toggle
-            label="Involverer rettigheter?"
+            label="Påvirker ansattes rettigheter?"
             value={valueJudgments.rightsOrWorkImpact}
             onChange={(val) => setSimplifiedQuestionAnswer('rights', val)}
             disabled={isMakerChecked}
           />
           <Toggle
-            label="Sensitive opplysninger?"
+            label="Brukes personlige eller sensitive opplysninger?"
             value={valueJudgments.sensitiveOrPersonalDataRisk}
             onChange={(val) => setSimplifiedQuestionAnswer('sensitive', val)}
             disabled={isMakerChecked}
           />
           <Toggle
-            label="Krever lokalkunnskap?"
+            label="Må du kjenne lokale forhold?"
             value={valueJudgments.localExceptionsMatter}
             onChange={(val) => setSimplifiedQuestionAnswer('context', val)}
             disabled={isMakerChecked}

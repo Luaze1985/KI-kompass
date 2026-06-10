@@ -40,8 +40,18 @@ describe('Dashboard — rapporteksport i steg 4', () => {
       })
     })
     render(<Dashboard />)
-    expect(screen.getByRole('button', { name: /last ned markdown/i })).toBeTruthy()
-    expect(screen.getByRole('button', { name: /last ned json/i })).toBeTruthy()
+    expect(screen.getByRole('button', { name: /tekstfil/i })).toBeTruthy()
+    expect(screen.getByRole('button', { name: /datafil/i })).toBeTruthy()
+  })
+})
+
+describe('Dashboard — randsone-badges i steg 1 (Feature 2)', () => {
+  it('viser "Områder denne oppgaven berører" med Arbeidsvilkår-badge for HRR-01', () => {
+    // HRR-01-A har expectedRiskFlags.workConditionsImpact: true → skal gi "Arbeidsvilkår"-badge
+    setupWithCase()
+    render(<Dashboard />)
+    expect(screen.getByText('Områder denne oppgaven berører:')).toBeTruthy()
+    expect(screen.getByText('Arbeidsvilkår')).toBeTruthy()
   })
 })
 

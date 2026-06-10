@@ -24,6 +24,7 @@ export default function ExportPanel() {
     return null
   }
 
+  const hasAnyScenarioContent = scenarios.some(s => s.simulertHendelse.trim().length > 0)
   const safeFilename = project.caseId.toLowerCase().replace(/[^a-z0-9-]/g, '_')
 
   function handleMarkdownExport() {
@@ -40,15 +41,20 @@ export default function ExportPanel() {
 
   return (
     <div style={{ padding: '16px', borderTop: '1px solid var(--border, #e0e0e0)' }}>
-      <p style={{ fontSize: '0.85rem', color: 'var(--text-muted, #666)', marginBottom: 12 }}>
+      {!hasAnyScenarioContent && (
+        <p style={{ fontSize: '0.85rem', color: '#b45309', background: 'rgba(245, 158, 11, 0.1)', padding: '8px 12px', borderRadius: '6px', border: '1px solid rgba(245, 158, 11, 0.2)', marginBottom: 12 }}>
+          Ingen risikoer er beskrevet ennå. Gå tilbake til steg 3 og fyll inn minst ett risikopunkt.
+        </p>
+      )}
+      <p style={{ fontSize: '0.85rem', color: '#92400e', background: 'rgba(245, 158, 11, 0.08)', padding: '8px 12px', borderRadius: '6px', border: '1px solid rgba(245, 158, 11, 0.15)', marginBottom: 12 }}>
         Dette er et utkast fra workshopen. Må gjennomgås av ansvarlig før bruk.
       </p>
       <div style={{ display: 'flex', gap: 8 }}>
-        <button onClick={handleMarkdownExport} aria-label="Last ned Markdown">
-          Last ned Markdown
+        <button onClick={handleMarkdownExport} aria-label="Last ned som tekstfil">
+          Last ned som tekstfil
         </button>
-        <button onClick={handleJsonExport} aria-label="Last ned JSON">
-          Last ned JSON
+        <button onClick={handleJsonExport} aria-label="Last ned som datafil">
+          Last ned som datafil
         </button>
       </div>
     </div>

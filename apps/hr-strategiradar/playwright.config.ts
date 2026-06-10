@@ -2,8 +2,8 @@ import { defineConfig, devices } from '@playwright/test'
 
 export default defineConfig({
   testDir: './src/tests/e2e',
-  webServer: {
-    command: 'npm run dev -- --host 127.0.0.1',
+  webServer: process.env.PLAYWRIGHT_SKIP_WEBSERVER ? undefined : {
+    command: 'node ./node_modules/vite/bin/vite.js --host 127.0.0.1',
     url: 'http://127.0.0.1:5173',
     reuseExistingServer: true,
   },

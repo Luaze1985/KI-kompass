@@ -36,7 +36,8 @@ describe('HR-Radar: Scenario and ROS Information Flow Test (AGENTS.md)', () => {
     // 2. Verify specific schema structure of loaded scenarios
     const firstScenario = caseScenarios[0]
     expect(firstScenario.temaKey).toBeDefined()
-    expect(firstScenario.simulertHendelse).toContain('Hvis dette blir utfallet:')
+    // Demoen starter med tomt risikofelt (gruppen fyller inn selv i steg 3)
+    expect(firstScenario.simulertHendelse).toBe('')
     expect(firstScenario.bekymringsniva).toBeDefined()
 
     // 3. Verify they are kept separate from the compass scores (layer separation)

@@ -38,11 +38,11 @@ describe('CompassView language and order', () => {
     const { container } = renderCompassWithStopRules()
 
     expect(screen.getByRole('heading', { name: 'KI-Kompass' })).toBeInTheDocument()
-    expect(screen.getByText('Stoppregler utløst:')).toBeInTheDocument()
-    expect(screen.getByText('Foreløpig tillatt KI-bruk etter avklaringer:')).toBeInTheDocument()
+    expect(screen.getByText('Forhold som må avklares:')).toBeInTheDocument()
+    expect(screen.getByText('Foreløpig anbefalt KI-rolle:')).toBeInTheDocument()
 
     const text = container.textContent || ''
-    expect(text.indexOf('Stoppregler utløst')).toBeLessThan(text.indexOf('Foreløpig tillatt KI-bruk etter avklaringer'))
+    expect(text.indexOf('Forhold som må avklares')).toBeLessThan(text.indexOf('Foreløpig anbefalt KI-rolle'))
     expect(text).not.toMatch(/SR-\d+/)
     expect(text).not.toContain('Sikkerhetskompass')
     expect(text).not.toContain('Tillatt KI-rolle')

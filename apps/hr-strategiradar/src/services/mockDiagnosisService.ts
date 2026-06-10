@@ -70,25 +70,25 @@ export function calculateCompassPosition(
 }
 
 export const STOP_RULES_MAP: Record<string, string> = {
-  'SR-01': 'Påvirker ansatte direkte (krever reell medvirkning og menneskelig skjønn)',
-  'SR-02': 'Krever lokalkunnskap og skjønn (kan ikke standardiseres helt ut fra sentrale data)',
-  'SR-03': 'Systemet kan ikke forklare eller begrunne egne valg (krever manuell ettergåelse)',
-  'SR-04': 'Fare for blind tillit (krever etablerte rutiner for uavhengig kontroll og verifisering)',
-  'SR-05': 'Notatet mangler nødvendig vurdering, verifikasjon eller ansvar',
-  'SR-06': 'Inneholder verdikonflikter eller etiske dilemmaer (krever menneskelig/politisk avveining)',
-  'SR-07': 'Vanskelig eller umulig å rette opp feil i etterkant (krever særskilt feilsikring)',
-  'SR-08': 'KI-output kan ikke verifiseres godt nok mot kilder, regler eller lokal fagvurdering',
+  'SR-01': 'Påvirker ansatte direkte (de må få mulighet til å si sin mening)',
+  'SR-02': 'Krever kjennskap til lokale forhold (kan ikke løses bare med faste regler)',
+  'SR-03': 'Systemet kan ikke forklare hvorfor det kom frem til dette (noen må sjekke manuelt)',
+  'SR-04': 'Fare for at man stoler for mye på KI (det må finnes rutiner for å sjekke på egen hånd)',
+  'SR-05': 'Notatet er ikke ferdig utfylt',
+  'SR-06': 'Her står verdier mot hverandre (et menneske må ta den endelige avgjørelsen)',
+  'SR-07': 'Feil er vanskelige å rette opp i etterhånd (må sikres ekstra godt)',
+  'SR-08': 'Det er vanskelig å sjekke om KI-resultatet stemmer mot regler og lokale fagvurderinger',
 }
 
 export const STOP_RULE_QUESTIONS: Record<string, string> = {
   'SR-01': 'Hvem i gruppen tar direkte kontakt med de ansatte som berøres, og har dere sikret reell medvirkning?',
   'SR-02': 'Hvem lokalt kjenner konteksten og unntakene godt nok til å kvalitetssikre KI-forslaget?',
-  'SR-03': 'Kan gruppen forklare for berørte parter hvorfor KI ga akkurat dette svaret?',
-  'SR-04': 'Har dere lagt inn en konkret rutine for å ettersjekke KI-forslag uavhengig av systemet selv?',
-  'SR-05': 'Er beslutningsnotatet fylt ut med tydelig vurdering, ansvar og verifikasjon?',
-  'SR-06': 'Hvilken verdikonflikt er til stede, og hvem har myndighet til å gjøre den endelige avveiingen?',
+  'SR-03': 'Kan dere forklare for berørte parter hvorfor KI ga akkurat dette svaret?',
+  'SR-04': 'Har dere en fast rutine for å sjekke KI-forslagene på egen hånd?',
+  'SR-05': 'Er notatet ferdig utfylt med vurdering og hvem som er ansvarlig?',
+  'SR-06': 'Hvilke verdier står mot hverandre, og hvem tar den endelige avgjørelsen?',
   'SR-07': 'Hva er planen hvis KI-resultatet viser seg å være feil etter at det er tatt i bruk?',
-  'SR-08': 'Mot hvilke lokale fagvurderinger, regler eller kilder skal gruppen etterkontrollere KI-output?',
+  'SR-08': 'Hva skal dere sjekke KI-resultatet mot? (Regler, lokale vurderinger, andre kilder)',
 }
 
 export function generatePreFilledDecisionLog(
@@ -179,9 +179,9 @@ export function generateRiskMitigationMeasures(task: AiUseTask): string {
       : '- Kritiske mangler må lukkes før videre bruk.'
 
     return [
-      '- Bruk bare lukket løsning med databehandleravtale og uten leverandørtrening på dataene.',
-      '- Gjennomfør personvernkonsekvensvurdering før utrulling.',
-      '- Test systematisk for skjevheter før utrulling.',
+      '- Bruk bare en løsning der dataene er beskyttet og leverandøren ikke bruker dem til trening.',
+      '- Gjør en personvernvurdering før løsningen tas i bruk.',
+      '- Test at KI ikke forskjellsbehandler før den tas i bruk.',
       stopRuleLine,
     ].join('\n')
   }
@@ -198,10 +198,10 @@ export function generateRiskMitigationMeasures(task: AiUseTask): string {
 
 // Role labels
 export const ROLE_LABELS: Record<string, string> = {
-  'utforskende_støtte': 'KI som sparringspartner (III. Utforskende støtte)',
-  'forsterket_skjønn': 'KI hjelper, gruppen bestemmer (I. Forsterket skjønn)',
-  'strategisk_autonomi': 'KI handler innen gitte rammer (IV. Strategisk autonomi)',
-  'automatisert_beslutning': 'Automatisering krever egen lavrisikovurdering (II. Automatisert beslutning)',
+  'utforskende_støtte': 'KI som idégiver',
+  'forsterket_skjønn': 'KI hjelper, dere bestemmer',
+  'strategisk_autonomi': 'KI handler innenfor rammer dere setter',
+  'automatisert_beslutning': 'KI avgjør alene (krever egen godkjenning)',
 }
 
 // Calculate expected role based on kompass scores (maalklarhet and separabilitet)
@@ -623,16 +623,16 @@ før KI kan brukes på en forsvarlig måte?"`
 
 export const SEPARABILITET_EXPLANATION = `
 <div style="font-family: system-ui, -apple-system, sans-serif; line-height: 1.4; color: var(--text-main); padding: 8px;">
-  <h3 style="margin-top:0; color: var(--accent); font-size: 1.15rem;">Standardisering og separabilitet</h3>
+  <h3 style="margin-top:0; color: var(--accent); font-size: 1.15rem;">Kan oppgaven følge faste regler?</h3>
   <p style="font-size:0.85rem; margin-bottom: 12px;">
     Kan oppgaven løses med faste regler uten personlig kontakt eller unike unntak?
   </p>
   <div style="display: grid; gap: 8px; font-size: 0.8rem;">
     <div style="background: rgba(239,108,0,0.06); padding: 8px; border-radius: 6px; border-left: 3px solid #ef6c00;">
-      <strong>Menneskelig vurdering:</strong> Krever tillit, lokalkunnskap og unike vurderinger.
+      <strong>Må vurderes av mennesker:</strong> Krever tillit, kjennskap til lokale forhold og individuelle vurderinger.
     </div>
     <div style="background: rgba(76,175,80,0.06); padding: 8px; border-radius: 6px; border-left: 3px solid #4caf50;">
-      <strong>Mer standardisert:</strong> Strukturert data, faste regler og repeterbare oppgaver.
+      <strong>Kan følge faste regler:</strong> Strukturert data, faste regler og repeterbare oppgaver.
     </div>
   </div>
 </div>
@@ -640,16 +640,16 @@ export const SEPARABILITET_EXPLANATION = `
 
 export const MALKLARHET_EXPLANATION = `
 <div style="font-family: system-ui, -apple-system, sans-serif; line-height: 1.4; color: var(--text-main); padding: 8px;">
-  <h3 style="margin-top:0; color: var(--accent); font-size: 1.15rem;">Målklarhet</h3>
+  <h3 style="margin-top:0; color: var(--accent); font-size: 1.15rem;">Hvor tydelige er målene?</h3>
   <p style="font-size:0.85rem; margin-bottom: 12px;">
-    Er det krystallklart og målbart hva et "godt resultat" betyr?
+    Er det klart og målbart hva et "godt resultat" betyr?
   </p>
   <div style="display: grid; gap: 8px; font-size: 0.8rem;">
     <div style="background: rgba(239,108,0,0.06); padding: 8px; border-radius: 6px; border-left: 3px solid #ef6c00;">
-      <strong>Vage mål:</strong> "Trivsel", "arbeidsmiljø" eller etiske og politiske avveininger.
+      <strong>Uklare mål:</strong> "Trivsel", "arbeidsmiljø" eller etiske og politiske avveininger.
     </div>
     <div style="background: rgba(76,175,80,0.06); padding: 8px; border-radius: 6px; border-left: 3px solid #4caf50;">
-      <strong>Klare mål:</strong> "Fyll vakter iht. turnus", "kalkuler kostnad" eller andre målbare krav.
+      <strong>Tydelige mål:</strong> "Fyll vakter iht. turnus", "kalkuler kostnad" eller andre målbare krav.
     </div>
   </div>
 </div>
@@ -696,7 +696,7 @@ export function getMockChatResponse(
   }
 
   if (lower.includes('hjelp') || lower.includes('hva kan')) {
-    return { text: 'Jeg er din KI-Radar. Jeg kan hjelpe deg å vurdere forsvarligheten av dette KI-prosjektet. Spør meg gjerne om å justere vurderingen hvis du planlegger å legge inn mer manuell kontroll.' }
+    return { text: 'Jeg kan hjelpe deg å vurdere om det er forsvarlig å bruke KI i denne saken. Spør meg gjerne om å justere vurderingen hvis du planlegger å legge inn mer manuell kontroll.' }
   }
 
   return {

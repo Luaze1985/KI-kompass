@@ -49,8 +49,8 @@ describe('ExportPanel — nedlasting av beslutningsnotat', () => {
   it('viser nedlastingsknapper for Markdown og JSON', () => {
     setupStore()
     render(<ExportPanel />)
-    expect(screen.getByRole('button', { name: /markdown/i })).toBeTruthy()
-    expect(screen.getByRole('button', { name: /json/i })).toBeTruthy()
+    expect(screen.getByRole('button', { name: /tekstfil/i })).toBeTruthy()
+    expect(screen.getByRole('button', { name: /datafil/i })).toBeTruthy()
   })
 
   it('viser utkast-advarsel', () => {
@@ -63,7 +63,42 @@ describe('ExportPanel — nedlasting av beslutningsnotat', () => {
   it('viser ikke eksportknapper når data mangler', () => {
     act(() => { useAppStore.getState().reset() })
     render(<ExportPanel />)
-    expect(screen.queryByRole('button', { name: /markdown/i })).toBeNull()
-    expect(screen.queryByRole('button', { name: /json/i })).toBeNull()
+    expect(screen.queryByRole('button', { name: /tekstfil/i })).toBeNull()
+    expect(screen.queryByRole('button', { name: /datafil/i })).toBeNull()
+  })
+
+  it('viser advarsel når ingen scenarioer har innhold', () => {
+    setupStore()
+    act(() => {
+      useAppStore.setState({ scenarios: { 'HRR-01': [] } })
+    })
+    render(<ExportPanel />)
+    expect(screen.getAllByText(/ingen risikoer er beskrevet/i).length).toBeGreaterThanOrEqual(1)
+  })
+
+  it('skjuler advarsel når scenarioer har innhold', () => {
+    setupStore()
+    act(() => {
+      useAppStore.setState({
+        scenarios: {
+          'HRR-01': [{
+            temaKey: 'test',
+            temaTittel: 'Test',
+            simulertHendelse: 'Noe kan gå galt',
+            utløsendeAntakelse: '',
+            berørteParter: '',
+            tidligeSignaler: '',
+            konsekvensHvisIkkeHåndtert: '',
+            lokalVerifikasjon: '',
+            ansvarligEier: '',
+            bekymringsniva: 'middels' as const,
+            utfallstype: 'operasjonell' as const,
+            tidshorisont: '1-3 mnd',
+          }],
+        },
+      })
+    })
+    render(<ExportPanel />)
+    expect(screen.queryByText(/ingen risikoer er beskrevet/i)).toBeNull()
   })
 })

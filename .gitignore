@@ -41,3 +41,5 @@ scratch/
 state/
 tasks/
 debug.log
+.agents/
+apps/hr-strategiradar/screenshots/

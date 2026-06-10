@@ -24,9 +24,9 @@ export default function ScenarioCards() {
   return (
     <div className="card" style={{ padding: '24px' }}>
       <div style={{ marginBottom: '16px' }}>
-        <h3 style={{ margin: 0, fontSize: '1rem' }}>Lokal scenariotenking og ROS</h3>
+        <h3 style={{ margin: 0, fontSize: '1rem' }}>Tenk gjennom risiko</h3>
         <p className="small" style={{ color: 'var(--text-secondary)', marginTop: '4px' }}>
-          Gjør risikovurderingen konkret ved å simulere uønskede utfall per aktivert tema. Dette påvirker ikke kompass-scoren direkte.
+          Tenk gjennom hva som kan gå galt. Skriv ned hva dere er bekymret for under hvert tema.
         </p>
       </div>
 
@@ -106,7 +106,7 @@ export default function ScenarioCards() {
               <div style={{ marginTop: '12px' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
                   <label htmlFor={`hendelse-${sc.temaKey}`} style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--text-muted)' }}>
-                    Simulert hendelse
+                    Hva kan gå galt?
                   </label>
                   <textarea
                     id={`hendelse-${sc.temaKey}`}
@@ -125,7 +125,7 @@ export default function ScenarioCards() {
                       resize: 'vertical',
                       lineHeight: '1.4',
                     }}
-                    placeholder="Hvis dette blir utfallet: Beskriv hva som skjer konkret..."
+                    placeholder="Beskriv hva som kan skje..."
                   />
                 </div>
               </div>
@@ -145,7 +145,7 @@ export default function ScenarioCards() {
                 >
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                     <ScenarioField
-                      label="Utløsende antakelse"
+                      label="Hva må være sant for at dette skal skje?"
                       id={`antakelse-${sc.temaKey}`}
                       value={sc.utløsendeAntakelse}
                       onChange={(val) => updateScenarioField(selectedCaseId, sc.temaKey, 'utløsendeAntakelse', val)}
@@ -153,7 +153,7 @@ export default function ScenarioCards() {
                       placeholder="Hva må være sant for at dette skal skje..."
                     />
                     <ScenarioField
-                      label="Berørte parter"
+                      label="Hvem rammes?"
                       id={`parter-${sc.temaKey}`}
                       value={sc.berørteParter}
                       onChange={(val) => updateScenarioField(selectedCaseId, sc.temaKey, 'berørteParter', val)}
@@ -161,7 +161,7 @@ export default function ScenarioCards() {
                       placeholder="Hvem merker konsekvensene først..."
                     />
                     <ScenarioField
-                      label="Tidlige signaler"
+                      label="Varseltegn"
                       id={`signaler-${sc.temaKey}`}
                       value={sc.tidligeSignaler}
                       onChange={(val) => updateScenarioField(selectedCaseId, sc.temaKey, 'tidligeSignaler', val)}
@@ -172,7 +172,7 @@ export default function ScenarioCards() {
 
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                     <ScenarioField
-                      label="Konsekvens hvis ikke håndtert"
+                      label="Hva skjer hvis vi ikke gjør noe?"
                       id={`konsekvens-${sc.temaKey}`}
                       value={sc.konsekvensHvisIkkeHåndtert}
                       onChange={(val) => updateScenarioField(selectedCaseId, sc.temaKey, 'konsekvensHvisIkkeHåndtert', val)}
@@ -180,7 +180,7 @@ export default function ScenarioCards() {
                       placeholder="Hva skjer hvis temaet overses..."
                     />
                     <ScenarioField
-                      label="Lokal verifikasjon (Må avklares)"
+                      label="Hva må sjekkes lokalt?"
                       id={`verifikasjon-${sc.temaKey}`}
                       value={sc.lokalVerifikasjon}
                       onChange={(val) => updateScenarioField(selectedCaseId, sc.temaKey, 'lokalVerifikasjon', val)}
@@ -199,7 +199,7 @@ export default function ScenarioCards() {
 
                   <div style={{ gridColumn: 'span 2', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', background: 'rgba(255,255,255,0.02)', padding: '12px', borderRadius: '8px', border: '1px solid var(--border-light)' }}>
                     <div>
-                      <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Utfallskategori:</span>
+                      <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Type konsekvens:</span>
                       <span style={{ fontSize: '0.875rem', textTransform: 'capitalize' }}>{sc.utfallstype}</span>
                     </div>
                     <div>

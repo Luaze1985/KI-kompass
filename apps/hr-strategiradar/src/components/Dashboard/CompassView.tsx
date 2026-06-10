@@ -33,12 +33,12 @@ export default function CompassView() {
   const isHighSep = separabilitetScore >= 3.0
   const positionExplanation =
     isHighMal && isHighSep
-      ? 'Oppgaven har relativt klare mål og kan skilles ut som en selvstendig prosess.'
+      ? 'Oppgaven har tydelige mål og kan løses med faste regler.'
       : isHighMal && !isHighSep
-      ? 'Oppgaven har relativt klare mål, men krever lokalt skjønn og menneskelig vurdering.'
+      ? 'Oppgaven har tydelige mål, men krever at mennesker gjør egne vurderinger.'
       : !isHighMal && isHighSep
-      ? 'Oppgaven kan delvis standardiseres, men målene er ennå ikke tilstrekkelig klarlagt.'
-      : 'Oppgaven krever både lokalkunnskap og skjønn. Målene må avklares før KI kan brukes.'
+      ? 'Deler av oppgaven kan følge faste regler, men målene må bli tydeligere først.'
+      : 'Oppgaven krever kjennskap til lokale forhold og menneskelig vurdering. Målene må avklares før KI kan brukes.'
 
   const trafficLight = activeTask.expectedTrafficLight || 'yellow'
 
@@ -48,9 +48,9 @@ export default function CompassView() {
     red: '#ef4444',
   }
   const statusLabels = {
-    green: 'Kan jobbes videre med',
-    yellow: 'Kreve manuelle avklaringer',
-    red: 'Kritiske stoppregler utløst',
+    green: 'OK å jobbe videre',
+    yellow: 'Noe må avklares først',
+    red: 'Stopp — må sjekkes nærmere',
   }
 
   const activeColor = borderColors[trafficLight]
@@ -95,14 +95,14 @@ export default function CompassView() {
           <rect x={padding + gW / 2} y={padding + gH / 2} width={gW / 2} height={gH / 2} fill="rgba(245, 158, 11, 0.08)" />
 
           {/* Quadrant labels */}
-          <text x={padding + gW / 4} y={padding + 14} textAnchor="middle" fontSize="8px" fill="rgba(249,115,22,0.7)" fontWeight="600">Skjønn</text>
-          <text x={padding + gW / 4} y={padding + 24} textAnchor="middle" fontSize="8px" fill="rgba(249,115,22,0.7)" fontWeight="600">Klare mål</text>
-          <text x={padding + 3 * gW / 4} y={padding + 14} textAnchor="middle" fontSize="8px" fill="rgba(16,185,129,0.8)" fontWeight="600">Standardisert</text>
-          <text x={padding + 3 * gW / 4} y={padding + 24} textAnchor="middle" fontSize="8px" fill="rgba(16,185,129,0.8)" fontWeight="600">Klare mål</text>
-          <text x={padding + gW / 4} y={H - padding - 14} textAnchor="middle" fontSize="8px" fill="rgba(239,68,68,0.7)" fontWeight="600">Skjønn</text>
-          <text x={padding + gW / 4} y={H - padding - 4} textAnchor="middle" fontSize="8px" fill="rgba(239,68,68,0.7)" fontWeight="600">Vage mål</text>
-          <text x={padding + 3 * gW / 4} y={H - padding - 14} textAnchor="middle" fontSize="8px" fill="rgba(245,158,11,0.8)" fontWeight="600">Standardisert</text>
-          <text x={padding + 3 * gW / 4} y={H - padding - 4} textAnchor="middle" fontSize="8px" fill="rgba(245,158,11,0.8)" fontWeight="600">Vage mål</text>
+          <text x={padding + gW / 4} y={padding + 14} textAnchor="middle" fontSize="8px" fill="rgba(249,115,22,0.7)" fontWeight="600">Menneske vurderer</text>
+          <text x={padding + gW / 4} y={padding + 24} textAnchor="middle" fontSize="8px" fill="rgba(249,115,22,0.7)" fontWeight="600">Tydelige mål</text>
+          <text x={padding + 3 * gW / 4} y={padding + 14} textAnchor="middle" fontSize="8px" fill="rgba(16,185,129,0.8)" fontWeight="600">Faste regler</text>
+          <text x={padding + 3 * gW / 4} y={padding + 24} textAnchor="middle" fontSize="8px" fill="rgba(16,185,129,0.8)" fontWeight="600">Tydelige mål</text>
+          <text x={padding + gW / 4} y={H - padding - 14} textAnchor="middle" fontSize="8px" fill="rgba(239,68,68,0.7)" fontWeight="600">Menneske vurderer</text>
+          <text x={padding + gW / 4} y={H - padding - 4} textAnchor="middle" fontSize="8px" fill="rgba(239,68,68,0.7)" fontWeight="600">Uklare mål</text>
+          <text x={padding + 3 * gW / 4} y={H - padding - 14} textAnchor="middle" fontSize="8px" fill="rgba(245,158,11,0.8)" fontWeight="600">Faste regler</text>
+          <text x={padding + 3 * gW / 4} y={H - padding - 4} textAnchor="middle" fontSize="8px" fill="rgba(245,158,11,0.8)" fontWeight="600">Uklare mål</text>
 
           {/* Solid Axis lines in the middle (score = 3.0) */}
           <line
@@ -133,7 +133,7 @@ export default function CompassView() {
             fontWeight="600"
             fill="var(--text-secondary)"
           >
-            Målklarhet (Vage ➔ Klare mål)
+            Hvor tydelige er målene? (Uklare ➔ Tydelige)
           </text>
 
           {/* X-axis: Separabilitet */}
@@ -145,7 +145,7 @@ export default function CompassView() {
             fontWeight="600"
             fill="var(--text-secondary)"
           >
-            Separabilitet (Skjønn ➔ Standardisert)
+            Kan det løses med faste regler? (Nei ➔ Ja)
           </text>
 
           {/* Center Intersection Circle marker */}
@@ -189,7 +189,7 @@ export default function CompassView() {
       {/* Stoppregler utløst */}
       {activeTask.expectedStopRules && activeTask.expectedStopRules.length > 0 && (
         <div style={{ width: '100%', marginBottom: '20px', padding: '12px 16px', background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.2)', borderRadius: '8px' }}>
-          <span className="small" style={{ color: '#ef4444', display: 'block', fontWeight: 600, marginBottom: '8px' }}>Stoppregler utløst:</span>
+          <span className="small" style={{ color: '#ef4444', display: 'block', fontWeight: 600, marginBottom: '8px' }}>Forhold som må avklares:</span>
           <ul style={{ margin: 0, paddingLeft: '16px', fontSize: '0.8rem', color: 'var(--text-primary)' }}>
             {activeTask.expectedStopRules.map(sr => (
               <li key={sr} style={{ marginBottom: '4px' }}>
@@ -255,24 +255,24 @@ export default function CompassView() {
 
         {/* Traffic Light Explanation */}
         <div style={{ flex: 1 }}>
-          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Trafikklys-status:</span>
+          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Status:</span>
           <span style={{ fontSize: '0.875rem', fontWeight: 700, color: 'var(--text-primary)' }}>
-            {trafficLight === 'red' ? 'Stopp og gjør grundig ROS-analyse' :
-             trafficLight === 'yellow' ? 'Gjennomfør manuelle kontrolltiltak' :
-             'OK for videre arbeid under normale rammer'}
+            {trafficLight === 'red' ? 'Stopp — gjør en grundig risikovurdering først' :
+             trafficLight === 'yellow' ? 'Noen ting må sjekkes først' :
+             'OK å jobbe videre'}
           </span>
         </div>
       </div>
 
       {/* Text Coordinator Summary */}
       <div style={{ display: 'flex', gap: '16px', marginBottom: '20px', background: '#f8fafc', border: '1px solid var(--border-light)', padding: '6px 12px', borderRadius: '4px', fontSize: '0.875rem', width: '100%', justifyContent: 'center' }}>
-        <div>Separabilitet: <strong>{separabilitetScore.toFixed(2)} / 5.0</strong></div>
-        <div style={{ borderLeft: '1px solid var(--border-light)', paddingLeft: '16px' }}>Målklarhet: <strong>{malklarhetScore.toFixed(2)} / 5.0</strong></div>
+        <div>Faste regler: <strong>{separabilitetScore.toFixed(2)} / 5.0</strong></div>
+        <div style={{ borderLeft: '1px solid var(--border-light)', paddingLeft: '16px' }}>Tydelige mål: <strong>{malklarhetScore.toFixed(2)} / 5.0</strong></div>
       </div>
 
       {/* Role Cap Notice */}
       <div style={{ textAlign: 'center', width: '100%', borderTop: '1px solid var(--border-light)', paddingTop: '16px' }}>
-        <span className="small" style={{ color: 'var(--text-secondary)' }}>Foreløpig tillatt KI-bruk etter avklaringer:</span>
+        <span className="small" style={{ color: 'var(--text-secondary)' }}>Foreløpig anbefalt KI-rolle:</span>
         <strong style={{ display: 'block', fontSize: '1rem', color: roleColor, marginTop: '4px', fontWeight: 700 }}>
           {roleLabel}
         </strong>

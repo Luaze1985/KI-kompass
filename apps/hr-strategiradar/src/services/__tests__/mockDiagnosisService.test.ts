@@ -190,9 +190,8 @@ describe('mockDiagnosisService calculations and rules engine', () => {
 
       const measures = generateRiskMitigationMeasures(task)
 
-      expect(measures).toContain('lukket løsning med databehandleravtale')
-      expect(measures).toContain('personvernkonsekvensvurdering')
-      expect(measures).toContain('skjevheter før utrulling')
+      expect(measures).toContain('personvernvurdering')
+      expect(measures).toContain('forskjellsbehandler')
       expect(measures).not.toContain('SR-05')
       expect(measures).not.toContain('SR-08')
     }

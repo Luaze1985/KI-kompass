@@ -1,6 +1,8 @@
 import type { Scenario } from '../domain/schemas'
 
-export const DEFAULT_SCENARIOS: Record<string, Scenario[]> = {
+// Full referansetekst per scenario. Detaljfeltene (berørteParter, varseltegn osv.)
+// brukes som stillas bak kort-utvideren i steg 3.
+const SEEDED_SCENARIOS: Record<string, Scenario[]> = {
   'HRR-01': [
     {
       temaKey: 'arbeid_rettigheter',
@@ -192,3 +194,13 @@ export const DEFAULT_SCENARIOS: Record<string, Scenario[]> = {
     }
   ]
 }
+
+// Demoen starter med tomt "Hva kan gå galt?"-felt (simulertHendelse) slik at
+// risikoadvarselen i ExportPanel er reproduserbar: gruppen skriver inn risiko
+// selv i steg 3, og advarselen forsvinner når minst ett felt er fylt ut.
+export const DEFAULT_SCENARIOS: Record<string, Scenario[]> = Object.fromEntries(
+  Object.entries(SEEDED_SCENARIOS).map(([caseId, list]) => [
+    caseId,
+    list.map((scenario) => ({ ...scenario, simulertHendelse: '' })),
+  ]),
+)

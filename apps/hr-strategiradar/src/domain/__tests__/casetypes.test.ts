@@ -5,22 +5,22 @@ import { runCalculationEngine, INITIAL_VALUE_JUDGMENTS } from '../../services/mo
 describe('HR-Strategiradar: Casetype-tester mot 5 obligatoriske scenarioer', () => {
 
   // 1. Lavrisiko standardoppgave
-  it('Scenario 1: Lavrisiko standardoppgave (HRR-02-A - Møtestruktur)', () => {
-    const case02 = allCases.find(c => c.caseId === 'HRR-02');
-    expect(case02).toBeDefined();
-    const task02A = case02?.aiUseTasks.find(t => t.taskId === 'HRR-02-A');
-    expect(task02A).toBeDefined();
+  it('Scenario 1: Lavrisiko standardoppgave (HRR-04-A - Kravprofil)', () => {
+    const case04 = allCases.find(c => c.caseId === 'HRR-04');
+    expect(case04).toBeDefined();
+    const task04A = case04?.aiUseTasks.find(t => t.taskId === 'HRR-04-A');
+    expect(task04A).toBeDefined();
 
-    if (task02A) {
-      expect(task02A.directEffectOnPeople).toBe(false);
-      expect(task02A.usesPersonalOrSensitiveData).toBe(false);
-      expect(task02A.expectedRiskFlags.personalOrSensitiveData).toBe(false);
-      expect(task02A.expectedRiskFlags.rightsOrSignificantImpact).toBe(false);
+    if (task04A) {
+      expect(task04A.directEffectOnPeople).toBe(false);
+      expect(task04A.usesPersonalOrSensitiveData).toBe(false);
+      expect(task04A.expectedRiskFlags.personalOrSensitiveData).toBe(false);
+      expect(task04A.expectedRiskFlags.rightsOrSignificantImpact).toBe(false);
 
       const judgments = { ...INITIAL_VALUE_JUDGMENTS, rightsOrWorkImpact: false, sensitiveOrPersonalDataRisk: false };
-      const result = runCalculationEngine(task02A, judgments, true);
+      const result = runCalculationEngine(task04A, judgments, true);
 
-      // Lavrisiko standardoppgaver kan tillate automatisert beslutning uten å bryte kritiske individregler (siden målklarhet >= 3 og separabilitet >= 3)
+      // Lavrisiko standardoppgave uten risikoflagg kan tillate automatisert beslutning
       expect(result.expectedAllowedRole).toBe('automatisert_beslutning');
     }
   });

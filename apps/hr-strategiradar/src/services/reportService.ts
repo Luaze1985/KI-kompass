@@ -88,7 +88,14 @@ export function generateReport(
     sections.push('')
   }
 
-  // 4. KI-rolle
+  // 4. Kompassvurdering
+  sections.push(`## Kompassvurdering`)
+  sections.push('')
+  sections.push(`- **Hvor tydelige er målene:** ${task.expectedModuleScores.målklarhet.score.toFixed(1)} av 5.0`)
+  sections.push(`- **Kan det løses med faste regler:** ${task.expectedModuleScores.separabilitet.score.toFixed(1)} av 5.0`)
+  sections.push('')
+
+  // 5. KI-rolle
   sections.push(`## KI-rolle`)
   sections.push('')
   sections.push(`**Hva modellen foreslår:** ${calculatedLabel}`)
@@ -198,6 +205,11 @@ export function generateJsonExport(
       tittel: task.title,
       brukesTil: task.outputUse,
       menneskeligBeslutningspunkt: task.humanDecisionPoint,
+    },
+
+    kompass: {
+      tydeligeMål: task.expectedModuleScores.målklarhet.score,
+      fasteRegler: task.expectedModuleScores.separabilitet.score,
     },
 
     vurdering: {

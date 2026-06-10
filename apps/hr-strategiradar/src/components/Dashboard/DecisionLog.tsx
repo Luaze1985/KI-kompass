@@ -12,28 +12,28 @@ function generateItComplianceReport(
   isSigned: boolean
 ): string {
   const dateStr = new Date().toLocaleDateString('no-NO')
-  const allowedRoleLabel = task.expectedAllowedRole === 'utforskende_støtte' ? 'Sparringspartner (Laveste risiko, kun støtte)' :
-                           task.expectedAllowedRole === 'forsterket_skjønn' ? 'Forsterket skjønn (Beslutningsstøtte med human-in-the-loop)' :
-                           task.expectedAllowedRole === 'strategisk_autonomi' ? 'Strategisk autonomi (Ekstrem/strategisk risiko)' : 'Automatisert beslutning (Eget lavrisikokrav)';
-  const calculatedRoleLabel = task.expectedCalculatedRole === 'utforskende_støtte' ? 'Sparringspartner' :
-                             task.expectedCalculatedRole === 'forsterket_skjønn' ? 'Forsterket skjønn' :
-                             task.expectedCalculatedRole === 'strategisk_autonomi' ? 'Strategisk autonomi' : 'Automatisert beslutning';
+  const allowedRoleLabel = task.expectedAllowedRole === 'utforskende_støtte' ? 'KI som idégiver (Lav risiko)' :
+                           task.expectedAllowedRole === 'forsterket_skjønn' ? 'KI hjelper, dere bestemmer (Middels risiko)' :
+                           task.expectedAllowedRole === 'strategisk_autonomi' ? 'KI handler innenfor rammer (Høy risiko)' : 'KI avgjør alene (Krever egen godkjenning)';
+  const calculatedRoleLabel = task.expectedCalculatedRole === 'utforskende_støtte' ? 'KI som idégiver' :
+                             task.expectedCalculatedRole === 'forsterket_skjønn' ? 'KI hjelper, dere bestemmer' :
+                             task.expectedCalculatedRole === 'strategisk_autonomi' ? 'KI handler innenfor rammer' : 'KI avgjør alene';
 
   const stopRulesSection = task.expectedStopRules && task.expectedStopRules.length > 0
     ? task.expectedStopRules.map((sr: string) => {
         const desc = {
-          'SR-01': 'Påvirker ansatte direkte (krever reell medvirkning og menneskelig skjønn)',
-          'SR-02': 'Krever lokalkunnskap og skjønn (kan ikke standardiseres helt ut fra sentrale data)',
-          'SR-03': 'Systemet kan ikke forklare eller begrunne egne valg (krever manuell ettergåelse)',
-          'SR-04': 'Fare for blind tillit (krever etablerte rutiner for uavhengig kontroll)',
-          'SR-05': 'Notatet mangler nødvendig vurdering, verifikasjon eller ansvar',
-          'SR-06': 'Inneholder verdikonflikter eller etiske dilemmaer (krever menneskelig avveining)',
-          'SR-07': 'Vanskelig eller umulig å rette opp feil i etterkant (krever særskilt feilsikring)',
-          'SR-08': 'KI-utdata kan ikke verifiseres godt nok mot kilder eller regler'
+          'SR-01': 'Påvirker ansatte direkte (de må få si sin mening)',
+          'SR-02': 'Krever kjennskap til lokale forhold (kan ikke løses bare med faste regler)',
+          'SR-03': 'Systemet kan ikke forklare hvorfor det kom frem til dette (noen må sjekke manuelt)',
+          'SR-04': 'Fare for at man stoler for mye på KI (det må finnes rutiner for å sjekke på egen hånd)',
+          'SR-05': 'Notatet er ikke ferdig utfylt',
+          'SR-06': 'Her står verdier mot hverandre (et menneske må ta den endelige avgjørelsen)',
+          'SR-07': 'Feil er vanskelige å rette opp i etterhånd (må sikres ekstra godt)',
+          'SR-08': 'Det er vanskelig å sjekke om KI-resultatet stemmer mot regler og lokale fagvurderinger'
         }[sr] || sr
         return `- **${sr}**: ${desc}`
       }).join('\n')
-    : '* Ingen stoppregler utløst under de nåværende innstillingene.'
+    : '* Ingen forhold som krever avklaring.'
 
   const scenariosSection = scenariosList && scenariosList.length > 0
     ? scenariosList.map(sc => `
@@ -49,7 +49,7 @@ function generateItComplianceReport(
     `).join('\n')
     : '* Ingen spesifikke scenarier definert.'
 
-  return `# IT-DOKUMENTASJON OG SYSTEMVURDERING (EU AI Act Samsvarsrapport)
+  return `# DOKUMENTASJON AV KI-VURDERING (Etter EUs KI-lov)
 **Generert dato:** ${dateStr}
 **System / HR-mikroprosjekt:** ${project.caseId} - ${project.title}
 **Beslutningseier:** ${project.decisionOwner || 'Lederenhet'}
@@ -58,43 +58,43 @@ function generateItComplianceReport(
 ---
 
 ## 1. Systembeskrivelse og inndata
-- **Konkret KI-bruksoppgave (Vurderingsenhet):** ${task.title}
-- **Inndatatype / Dataklassifisering:** ${task.inputDataType}
-- **Menneskelig beslutningspunkt:** ${task.humanDecisionPoint}
+- **Hva KI skal hjelpe med:** ${task.title}
+- **Hvilke data brukes:** ${task.inputDataType}
+- **Når bestemmer mennesket:** ${task.humanDecisionPoint}
 
-## 2. Regulatorisk klassifisering (EU AI Act & Internkontroll)
-- **Modell-beregnet KI-rolle (Uten stoppregler):** ${calculatedRoleLabel}
-- **Tillatt KI-rolle (Med stoppregler og risiko-caps):** ${allowedRoleLabel}
-- **Rollebegrensning (Role Cap) pålagt:** ${task.expectedAllowedRole !== task.expectedCalculatedRole ? 'JA' : 'NEI'}
-- **Dokumentert samsvarsgrad:** ${task.expectedComplianceScore}%
-- **Overordnet vurderingsnivå:** ${(task.expectedTrafficLight || 'GREY').toUpperCase()}
+## 2. Lovkrav og risikonivå
+- **Systemets anbefaling (før begrensninger):** ${calculatedRoleLabel}
+- **Anbefalt KI-rolle (etter risikovurdering):** ${allowedRoleLabel}
+- **Er rollen begrenset:** ${task.expectedAllowedRole !== task.expectedCalculatedRole ? 'JA' : 'NEI'}
+- **Hvor mye er dokumentert:** ${task.expectedComplianceScore}%
+- **Overordnet status:** ${(task.expectedTrafficLight || 'GREY').toUpperCase()}
 
-### Utløste sikkerhetsbarrierer / Stoppregler:
+### Forhold som må avklares:
 ${stopRulesSection}
 
 ---
 
-## 3. Lokal ROS-analyse (Simulerte hendelser)
+## 3. Risikovurdering (Tenkte scenarier)
 ${scenariosSection}
 
 ---
 
-## 4. Evaluering og Menneskelig Ansvar (Human Oversight)
+## 4. Vurdering og menneskelig ansvar
 
-### Risikovurdering og dilemmaer:
+### Risikovurdering:
 ${log.risikovurdering || 'Ikke utfylt'}
 
-### Menneskelig kontroll og kvalitetssikring:
+### Menneskelig kontroll:
 ${log.menneskeligKontroll || 'Ikke utfylt'}
 
-### Internkontroll og risikoreduserende tiltak:
+### Tiltak for å redusere risiko:
 ${log.internkontrollTiltak || 'Ikke utfylt'}
 
 ### Endelig beslutning:
 ${log.endeligBeslutning || 'Ikke utfylt'}
 
 ---
-**Merk:** Dette dokumentet er generert som ledd i kommunens etablerte rutiner for human-in-the-loop og internkontroll av kunstig intelligens i fagsystemer, i henhold til EU AI Act (Fundamental Rights Impact Assessment - FRIA).`
+**Merk:** Dokumentet er laget som del av kommunens rutiner for kontroll av KI-bruk, i tråd med EUs KI-lov.`
 }
 
 export default function DecisionLog() {
@@ -147,14 +147,14 @@ export default function DecisionLog() {
             disabled={isMakerChecked}
             style={{ fontSize: '0.875rem', padding: '5px 10px' }}
           >
-            Autofyll
+            Fyll inn automatisk
           </button>
           <button
             className="btn btn-outline"
             onClick={() => setShowItDoc(true)}
             style={{ fontSize: '0.875rem', padding: '5px 10px', borderColor: 'var(--accent)', color: 'var(--accent)' }}
           >
-            IT-Dokumentasjon
+            Teknisk rapport
           </button>
         </div>
       </div>
@@ -181,14 +181,14 @@ export default function DecisionLog() {
       </div>
 
       <div style={{ marginTop: '24px', padding: '16px', background: '#f8fafc', borderRadius: '4px', border: '1px solid var(--border)' }}>
-        <h4 style={{ margin: '0 0 12px 0', fontSize: '0.875rem', fontWeight: 600 }}>ROS og risikoreduserende tiltak</h4>
+        <h4 style={{ margin: '0 0 12px 0', fontSize: '0.875rem', fontWeight: 600 }}>Risikovurdering og tiltak</h4>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '12px', marginBottom: '16px' }}>
           <div style={{ padding: '12px', border: '1px solid var(--border)', borderRadius: '4px', background: '#ffffff' }}>
-            <div className="small" style={{ color: 'var(--text-secondary)' }}>Dokumentert grunnlag</div>
+            <div className="small" style={{ color: 'var(--text-secondary)' }}>Hvor mye er fylt ut</div>
             <strong>{complianceScore}% utfylt</strong>
           </div>
           <div style={{ padding: '12px', border: `1px solid ${trafficLightColors[trafficLight]}`, borderRadius: '4px', background: '#ffffff' }}>
-            <div className="small" style={{ color: 'var(--text-secondary)' }}>Vurderingsnivå</div>
+            <div className="small" style={{ color: 'var(--text-secondary)' }}>Status</div>
             <strong style={{ color: trafficLightColors[trafficLight] }}>{trafficLightLabels[trafficLight]}</strong>
             <p className="small" style={{ margin: '6px 0 0 0' }}>{trafficLightExplanations[trafficLight]}</p>
           </div>
@@ -212,20 +212,20 @@ export default function DecisionLog() {
             style={{ width: '18px', height: '18px' }}
           />
           <span style={{ fontSize: '0.875rem', color: isDecisionLogComplete ? 'var(--text-primary)' : 'var(--text-muted)' }}>
-            Signer gjennomgått foreløpig notat
+            Signer at notatet er gjennomgått
           </span>
         </label>
 
         {isSigned && (
           <div style={{ marginTop: '16px', padding: '12px', background: 'rgba(16, 185, 129, 0.1)', color: '#10b981', borderRadius: '4px', fontWeight: 600, textAlign: 'center' }}>
-            Foreløpig notat er signert for denne økten
+            Notatet er signert
           </div>
         )}
 
         <div style={{ marginTop: '20px', display: 'grid', gap: '12px' }}>
           <div>
             <label htmlFor="maker-name" style={{ display: 'block', fontSize: '0.875rem', fontWeight: 600, marginBottom: '8px' }}>
-              Makker som har lest notatet
+              Kollega som har lest notatet
             </label>
             <input
               id="maker-name"
@@ -251,13 +251,13 @@ export default function DecisionLog() {
               style={{ width: '18px', height: '18px' }}
             />
             <span style={{ fontSize: '0.875rem', color: canMakerCheck || isMakerChecked ? 'var(--text-primary)' : 'var(--text-muted)' }}>
-              Lås vurderingen i denne økten
+              Lås vurderingen
             </span>
           </label>
 
           {isMakerChecked && (
             <div style={{ padding: '12px', background: 'rgba(16, 185, 129, 0.1)', color: '#10b981', borderRadius: '4px', fontWeight: 600, textAlign: 'center' }}>
-              Vurderingen er låst for denne prototypeøkten
+              Vurderingen er låst
             </div>
           )}
         </div>
@@ -296,7 +296,7 @@ export default function DecisionLog() {
               justifyContent: 'space-between',
               alignItems: 'center',
             }}>
-              <span style={{ fontSize: '0.875rem' }}>IT-Dokumentasjon og Risikovurdering (EU AI Act Samsvarsrapport)</span>
+              <span style={{ fontSize: '0.875rem' }}>Teknisk rapport (etter EUs KI-lov)</span>
               <button
                 onClick={() => setShowItDoc(false)}
                 style={{
@@ -313,7 +313,7 @@ export default function DecisionLog() {
             </div>
             <div style={{ padding: '20px' }}>
               <p className="small" style={{ color: 'var(--text-secondary)', marginBottom: '12px', lineHeight: '1.4' }}>
-                Dette er en ferdig generert EU AI Act samsvarsrapport (FRIA) klar til intern dokumentasjon eller lagring i IT-avdelingen. Kopier teksten under eller last ned som en Markdown-fil.
+                Her er en rapport du kan lagre eller sende videre. Kopier teksten eller last den ned.
               </p>
               <textarea
                 readOnly
@@ -354,7 +354,7 @@ export default function DecisionLog() {
                       isSigned
                     );
                     navigator.clipboard.writeText(text);
-                    alert('Rapporten er kopiert til utklippstavlen.');
+                    alert('Kopiert!');
                   }}
                 >
                   Kopier tekst

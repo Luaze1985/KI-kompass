@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useAppStore, type CalculationModel } from '../../store/store'
 import { allCases } from '../../fixtures/all-cases'
-import { calculateCompassPosition, getSystemProposal, STOP_RULE_QUESTIONS } from '../../services/mockDiagnosisService'
+import { calculateCompassPosition, getSystemProposal, STOP_RULE_QUESTIONS, STOP_RULES_MAP } from '../../services/mockDiagnosisService'
 import CompassView from './CompassView'
 import CheckpointsAndReflections from './CheckpointsAndReflections'
 import DecisionLog from './DecisionLog'
@@ -25,10 +25,10 @@ function RegulationsModule({ compact = false }: { compact?: boolean }) {
   return (
     <div className="card" style={{ padding: compact ? '16px' : '24px', border: '1px solid var(--border)', background: '#ffffff' }}>
       <h3 style={{ margin: '0 0 8px 0', fontSize: compact ? '0.9375rem' : '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
-        <span>🚦</span> Innebygd Lovverk & Retningslinjer
+        <span>🚦</span> Lover og regler som gjelder
       </h3>
       <p className="small" style={{ color: 'var(--text-secondary)', margin: '0 0 16px 0' }}>
-        Ferdig integrerte og lovpålagte krav for bruk av kunstig intelligens i HR- og HMS-arbeid. Klikk på hvert punkt for å lese detaljer og krav.
+        Dette er lover og regler som gjelder når du bruker KI i HR- og HMS-arbeid. Klikk for å lese mer.
       </p>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -53,11 +53,11 @@ function RegulationsModule({ compact = false }: { compact?: boolean }) {
             }}
           >
             <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span>🇪🇺</span> EU AI Act (Høyrisiko-status)
+              <span>🇪🇺</span> EUs KI-lov (Høyrisiko)
             </span>
             <span style={{
               background: 'rgba(239, 68, 68, 0.1)',
-              color: '#dc2626',
+              color: '#b91c1c',
               padding: '2px 8px',
               borderRadius: '4px',
               fontSize: '0.75rem',
@@ -69,15 +69,15 @@ function RegulationsModule({ compact = false }: { compact?: boolean }) {
           {activeTab === 'eu' && (
             <div style={{ padding: '12px', background: '#ffffff', fontSize: '0.8125rem', color: 'var(--text-secondary)', borderTop: '1px solid var(--border-light)', lineHeight: '1.6' }}>
               <p style={{ margin: '0 0 8px 0' }}>
-                <strong>Vedlegg III, punkt 4:</strong> Bruk av KI til rekruttering, utvelgelse, turnusplanlegging, forfremmelse, oppsigelse eller evaluering av ansatte er klassifisert som <strong>Høyrisiko</strong>.
+                <strong>Vedlegg III, punkt 4:</strong> Bruk av KI til rekruttering, utvelgelse, turnusplanlegging, forfremmelse, oppsigelse eller evaluering av ansatte er regnet som høyrisiko etter EUs KI-lov.
               </p>
               <p style={{ margin: '0 0 8px 0' }}>
-                Dette betyr at systemet <strong>må</strong> ha innebygde barrierer for:
+                Det betyr at det må finnes sikkerhetstiltak for:
               </p>
               <ul style={{ margin: '0', paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                <li><strong>Menneskelig overvåking (Human Oversight):</strong> KI-systemet kan aldri ta automatiske beslutninger uten reell menneskelig overprøving.</li>
-                <li><strong>Gjennomsiktighet:</strong> Berørte ansatte eller søkere har rett til å vite at de evalueres av eller med bistand fra en algoritme.</li>
-                <li><strong>Cybersikkerhet og robusthet:</strong> Systemet må sikres mot feil og manipulering.</li>
+                <li><strong>Menneskelig kontroll:</strong> KI kan aldri ta avgjørelser på egen hånd uten at et menneske har sjekket og godkjent.</li>
+                <li><strong>Åpenhet:</strong> Ansatte og søkere har rett til å vite at KI er brukt i vurderingen av dem.</li>
+                <li><strong>Sikkerhet:</strong> Systemet må beskyttes mot feil og misbruk.</li>
                 <li><strong>Registrering:</strong> Høyrisikosystemer må registreres i en felles EU-database.</li>
               </ul>
             </div>
@@ -109,7 +109,7 @@ function RegulationsModule({ compact = false }: { compact?: boolean }) {
             </span>
             <span style={{
               background: 'rgba(217, 119, 6, 0.1)',
-              color: '#d97706',
+              color: '#9a3412',
               padding: '2px 8px',
               borderRadius: '4px',
               fontSize: '0.75rem',
@@ -124,9 +124,9 @@ function RegulationsModule({ compact = false }: { compact?: boolean }) {
                 Regjeringens prinsipper for ansvarlig bruk av kunstig intelligens krever:
               </p>
               <ul style={{ margin: '0', paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                <li><strong>Respekt for menneskelig autonomi:</strong> Brukeren må beholde fullt handlingsrom og ikke presses til å følge KI-anbefalinger blindt.</li>
-                <li><strong>Rettferdighet og mangfold:</strong> Algoritmer must testes for skjevheter (bias) og hindre diskriminering basert på kjønn, alder eller etnisk bakgrunn.</li>
-                <li><strong>Forklarbarhet:</strong> Logikken bak en beslutning må kunne forklares på en enkel og forståelig måte for den ansatte.</li>
+                <li><strong>Mennesket bestemmer:</strong> Du må ha reell valgfrihet og ikke føle deg presset til å følge det KI foreslår.</li>
+                <li><strong>Rettferdighet og mangfold:</strong> Algoritmer må testes for å sikre at den ikke forskjellsbehandler basert på kjønn, alder eller etnisk bakgrunn.</li>
+                <li><strong>Forståelig begrunnelse:</strong> Den ansatte må kunne få en forklaring på hvorfor KI kom frem til akkurat dette resultatet.</li>
               </ul>
             </div>
           )}
@@ -157,19 +157,19 @@ function RegulationsModule({ compact = false }: { compact?: boolean }) {
             </span>
             <span style={{
               background: 'rgba(16, 185, 129, 0.1)',
-              color: '#059669',
+              color: '#065f46',
               padding: '2px 8px',
               borderRadius: '4px',
               fontSize: '0.75rem',
               fontWeight: 700,
             }}>
-              Kontekstavhengig
+              Avhenger av din virksomhet
             </span>
           </button>
           {activeTab === 'internal' && (
             <div style={{ padding: '12px', background: '#ffffff', fontSize: '0.8125rem', color: 'var(--text-secondary)', borderTop: '1px solid var(--border-light)', lineHeight: '1.6' }}>
               <p style={{ margin: '0 0 8px 0' }}>
-                Lokale kjøreregler for verifisering og medbestemmelse:
+                Regler som gjelder i din virksomhet:
               </p>
               <ul style={{ margin: '0', paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
                 <li><strong>Medbestemmelse (Hovedavtalen § 9-3):</strong> Innføring av KI-verktøy som påvirker ansattes arbeidshverdag <strong>skal</strong> drøftes med tillitsvalgte på forhånd.</li>
@@ -195,8 +195,6 @@ export default function Dashboard() {
     confirmAssumptions,
     checkpointAnswers,
     setCheckpointAnswer,
-    freeText,
-    setFreeText,
     isMakerChecked,
     scenarios,
     userBlindTestAnswer,
@@ -232,7 +230,7 @@ export default function Dashboard() {
   const steps = [
     { num: 1, label: '1. Beskriv saken', disabled: isMakerChecked },
     { num: 2, label: '2. Foreløpig KI-diagnose', disabled: !selectedCaseId || !isAssumptionsConfirmed },
-    { num: 3, label: '3. Scenariotenking', disabled: !selectedCaseId || !isAssumptionsConfirmed },
+    { num: 3, label: '3. Risikovurdering', disabled: !selectedCaseId || !isAssumptionsConfirmed },
     { num: 4, label: '4. Beslutningsnotat', disabled: !selectedCaseId || !isAssumptionsConfirmed },
   ]
 
@@ -266,6 +264,7 @@ export default function Dashboard() {
         <nav style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#f1f5f9', padding: '4px', borderRadius: '4px', border: '1px solid var(--border)' }}>
           {steps.map((st) => {
             const isActive = currentStep === st.num
+            const isCompleted = currentStep > st.num && !st.disabled
             const isSelectable = !st.disabled
             return (
               <button
@@ -277,14 +276,14 @@ export default function Dashboard() {
                   fontSize: '0.875rem',
                   fontWeight: isActive ? 600 : 400,
                   borderRadius: '3px',
-                  border: isActive ? '1px solid var(--accent-hover)' : '1px solid transparent',
-                  background: isActive ? 'var(--accent)' : 'transparent',
-                  color: isActive ? '#fff' : isSelectable ? 'var(--text-primary)' : 'var(--text-muted)',
+                  border: isActive ? '1px solid var(--accent-hover)' : isCompleted ? '1px solid rgba(16, 185, 129, 0.3)' : '1px solid transparent',
+                  background: isActive ? 'var(--accent-hover)' : isCompleted ? 'rgba(16, 185, 129, 0.08)' : 'transparent',
+                  color: isActive ? '#fff' : isCompleted ? '#10b981' : isSelectable ? 'var(--text-primary)' : 'var(--text-muted)',
                   cursor: isSelectable ? 'pointer' : 'not-allowed',
                   transition: 'all 0.1s ease',
                 }}
               >
-                {st.label}
+                {isCompleted ? '\u2713 ' : ''}{st.label}
               </button>
             )
           })}
@@ -307,14 +306,14 @@ export default function Dashboard() {
                 <div className="card" style={{ padding: '24px' }}>
                   <h2 style={{ fontSize: '1.25rem', marginTop: 0, marginBottom: '8px', color: 'var(--text-primary)' }}>Steg 1: Beskriv din sak</h2>
                   <p className="small" style={{ color: 'var(--text-secondary)', marginBottom: '24px' }}>
-                    Start med et lavt inntaksnivå. Velg et fagfelt vi har kildedekning for, og fortell oss kort hva saken gjelder.
+                    Velg et fagområde og fortell kort hva saken handler om.
                   </p>
 
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                     {/* Case Selector Dropdown */}
                     <div>
                       <label htmlFor="case-select-dashboard" style={{ fontWeight: 600, fontSize: '0.875rem', display: 'block', marginBottom: '8px', color: 'var(--text-secondary)' }}>
-                        Fagfelt vi har grunnlag for å vurdere:
+                        Velg fagområde:
                       </label>
                       <select
                         id="case-select-dashboard"
@@ -341,7 +340,7 @@ export default function Dashboard() {
 
                     {selectedCaseId && contextualQuestions.length > 0 && (
                       <div className="fade-in" style={{ padding: '16px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px', border: '1px solid var(--border-light)' }}>
-                        <h4 style={{ margin: '0 0 12px 0', fontSize: '0.875rem' }}>Fokusspørsmål for saken:</h4>
+                        <h4 style={{ margin: '0 0 12px 0', fontSize: '0.875rem' }}>Noen spørsmål om saken:</h4>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                           {contextualQuestions.map((q, i) => (
                             <div key={i} style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
@@ -378,30 +377,6 @@ export default function Dashboard() {
                       </div>
                     )}
 
-                    {/* Free Text Input */}
-                    <div>
-                      <label htmlFor="case-free-text" style={{ fontWeight: 600, fontSize: '0.875rem', display: 'block', marginBottom: '8px', color: 'var(--text-secondary)' }}>
-                        Beskrivelse med egne ord (fritekst):
-                      </label>
-                      <textarea
-                        id="case-free-text"
-                        value={freeText}
-                        onChange={(e) => setFreeText(e.target.value)}
-                        disabled={isMakerChecked || !selectedCaseId}
-                        rows={4}
-                        style={{
-                          width: '100%',
-                          padding: '12px',
-                          fontSize: '0.875rem',
-                          borderRadius: '8px',
-                          border: '1px solid var(--border)',
-                          background: selectedCaseId ? 'var(--bg-input)' : 'rgba(0,0,0,0.1)',
-                          color: 'var(--text-primary)',
-                          cursor: !selectedCaseId ? 'not-allowed' : 'text',
-                        }}
-                        placeholder={selectedCaseId ? "Beskriv saken din her med 1-2 setninger..." : "Velg et fagfelt ovenfor først..."}
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -412,7 +387,7 @@ export default function Dashboard() {
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                     <div className="card" style={{ padding: '32px', textAlign: 'center', color: 'var(--text-muted)', border: '1px dashed var(--border)', background: '#ffffff' }}>
                       <h3 style={{ margin: '0 0 8px 0', color: 'var(--text-primary)' }}>Ingen sak valgt</h3>
-                      <p className="small" style={{ margin: 0 }}>Velg din yrkesrolle og et fagområde til venstre for å starte diagnosen og hente systemets antakelser.</p>
+                      <p className="small" style={{ margin: 0 }}>Velg et fagområde til venstre for å komme i gang.</p>
                     </div>
                     <RegulationsModule />
                   </div>
@@ -420,29 +395,51 @@ export default function Dashboard() {
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                     <div className="card" style={{ padding: '24px', border: '1px solid var(--border)', background: '#ffffff' }}>
                       <h3 style={{ margin: '0 0 16px 0', fontSize: '1rem', color: 'var(--text-primary)' }}>
-                        Systemets oppstartsantakelser for saken
+                        Slik forstår vi saken
                       </h3>
 
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                         {/* Proposed Case File */}
                         <div style={{ padding: '12px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px' }}>
-                          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Foreslått saksmappe:</span>
+                          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Valgt sak:</span>
                           <strong style={{ fontSize: '0.875rem' }}>{selectedCaseId}: {project?.title}</strong>
                         </div>
 
                         {/* Proposed Task / Unit of evaluation */}
                         <div style={{ padding: '12px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px', borderLeft: '3px solid var(--accent)' }}>
-                          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Foreslått konkret KI-bruksoppgave (Vurderingsenhet):</span>
+                          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Hva KI skal hjelpe med:</span>
                           <strong style={{ fontSize: '0.875rem', color: 'var(--accent)' }}>{activeTask?.title}</strong>
                           <p className="small" style={{ margin: '6px 0 0 0', color: 'var(--text-secondary)' }}>
-                            Merk: Vi vurderer denne deloppgaven, ikke hele HR-prosjektet under ett.
+                            Vi vurderer bare denne ene oppgaven, ikke hele HR-prosjektet.
                           </p>
                         </div>
+
+                        {/* Randsoner / HR-områder som berøres */}
+                        {activeTask && (() => {
+                          const badges: { label: string; color: string }[] = []
+                          if (activeTask.directEffectOnPeople) badges.push({ label: 'Ansattes rettigheter', color: '#ef4444' })
+                          if (activeTask.usesPersonalOrSensitiveData) badges.push({ label: 'Personvern', color: '#8b5cf6' })
+                          if (activeTask.expectedRiskFlags?.healthSafetyEnvironment) badges.push({ label: 'HMS', color: '#f59e0b' })
+                          if (activeTask.expectedRiskFlags?.workConditionsImpact) badges.push({ label: 'Arbeidsvilkår', color: '#0284c7' })
+                          if (activeTask.expectedRiskFlags?.irreversibleConsequences) badges.push({ label: 'Vanskelig å angre', color: '#dc2626' })
+                          return badges.length > 0 ? (
+                            <div style={{ padding: '12px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px' }}>
+                              <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Områder denne oppgaven berører:</span>
+                              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: '6px' }}>
+                                {badges.map(b => (
+                                  <span key={b.label} style={{ background: `${b.color}15`, color: b.color, padding: '3px 10px', borderRadius: '12px', fontSize: '0.75rem', fontWeight: 600, border: `1px solid ${b.color}30` }}>
+                                    {b.label}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          ) : null
+                        })()}
 
                         {/* AI-Assumed active themes / randsoner */}
                         {systemProposal && (
                           <div style={{ padding: '12px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px' }}>
-                            <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Foreslåtte aktive fagfelt / randsoner:</span>
+                            <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Temaer som kan berøres:</span>
                             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '6px' }}>
                               {(scenarios[selectedCaseId] || []).map(sc => (
                                 <span key={sc.temaKey} style={{ background: 'rgba(99,102,241,0.1)', color: 'var(--accent)', padding: '4px 10px', borderRadius: '12px', fontSize: '0.75rem', fontWeight: 600 }}>
@@ -455,7 +452,7 @@ export default function Dashboard() {
 
                         {/* Spørsmål som må avklares lokalt */}
                         <div style={{ padding: '12px', background: 'var(--bg-panel)', borderRadius: '4px', border: '1px solid var(--border)' }}>
-                          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Må avklares lokalt av gruppen:</span>
+                          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Dette må dere avklare selv:</span>
                           <ul style={{ margin: '6px 0 0 0', paddingLeft: '16px', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
                             {project?.uncertainties.map((u, index) => (
                               <li key={index}>{u}</li>
@@ -466,14 +463,14 @@ export default function Dashboard() {
                         {/* Active Confirmation Button */}
                         <div style={{ marginTop: '12px', borderTop: '1px solid var(--border-light)', paddingTop: '16px' }}>
                           <p className="small" style={{ color: 'var(--text-secondary)', margin: '0 0 12px 0', textAlign: 'center' }}>
-                            Prosjektgruppen må bekrefte disse antakelsene før vi kan generere en foreløvig KI-diagnose.
+                            Bekreft at dette stemmer før vi går videre.
                           </p>
                           <button
                             className="btn btn-primary"
                             onClick={handleConfirmAssumptions}
                             style={{ width: '100%', padding: '12px', fontSize: '1rem', fontWeight: 700 }}
                           >
-                            Bekreft antakelser og gå til diagnose →
+                            Stemmer — gå videre →
                           </button>
                         </div>
                       </div>
@@ -495,34 +492,33 @@ export default function Dashboard() {
                 {!userBlindTestAnswer ? (
                   <div className="card" style={{ padding: '32px', border: '1px solid var(--border)' }}>
                     <h2 style={{ fontSize: '1.25rem', marginTop: 0, marginBottom: '8px', color: 'var(--text-primary)' }}>
-                      Menneskelig avsjekk (Blindtest)
+                      Hva tror dere selv?
                     </h2>
                     <p className="small" style={{ color: 'var(--text-secondary)', marginBottom: '24px' }}>
-                      For å sikre uavhengig dømmekraft og motvirke blind tillit til maskinen (overreliance), ber vi prosjektgruppen om å vurdere risikoen først.
-                      Hvilken tillatt KI-rolle mener dere er mest forsvarlig for denne oppgaven basert på beskrivelsen?
+                      Før dere ser hva systemet mener, vil vi vite hva dere selv tenker. Hvilken rolle bør KI ha i denne oppgaven?
                     </p>
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                       {[
                         {
                           key: 'utforskende_støtte',
-                          title: 'KI som sparringspartner (Lavest risiko)',
-                          desc: 'KI brukes kun til idémyldring, utkast eller språkvask. Ingen direkte beslutningsstøtte.',
+                          title: 'KI som idégiver (Lav risiko)',
+                          desc: 'KI brukes bare til å hente ideer og lage utkast. Ingen avgjørelser.',
                         },
                         {
                           key: 'forsterket_skjønn',
-                          title: 'KI hjelper, gruppen bestemmer (Moderat risiko)',
-                          desc: 'KI foreslår struktur og momenter, men gruppen utfører alt reelt skjønnsarbeid.',
+                          title: 'KI hjelper, dere bestemmer (Middels risiko)',
+                          desc: 'KI foreslår oppbygging og viktige punkter, men dere gjør alle vurderinger selv.',
                         },
                         {
                           key: 'strategisk_autonomi',
-                          title: 'Strategisk autonomi (Ekstrem/strategisk risiko)',
-                          desc: 'KI handler selvstendig innenfor gitte rammer. Ledelsen må definere strategiske og etiske grenser.',
+                          title: 'KI handler på egen hånd innenfor rammer (Høy risiko)',
+                          desc: 'KI tar valg på egen hånd innenfor regler dere setter. Ledelsen må bestemme grensene på forhånd.',
                         },
                         {
                           key: 'automatisert_beslutning',
-                          title: 'Automatisert beslutning (Ekstrem risiko)',
-                          desc: 'KI tar avgjørelser på egen hånd. Dette krever særskilt godkjenning og frarådes for HR-oppgaver.',
+                          title: 'KI avgjør alene (Svært høy risiko)',
+                          desc: 'KI tar avgjørelser uten at noen sjekker. Dette frarådes for HR-oppgaver og krever egen godkjenning.',
                         },
                       ].map((opt) => (
                         <button
@@ -564,14 +560,14 @@ export default function Dashboard() {
                   <div className="card" style={{ padding: '24px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
                       <div>
-                        <h2 style={{ fontSize: '1.25rem', margin: 0, color: 'var(--text-primary)' }}>Steg 2: Foreløpig KI-diagnose</h2>
+                        <h2 style={{ fontSize: '1.25rem', margin: 0, color: 'var(--text-primary)' }}>Steg 2: Foreløpig vurdering</h2>
                         <p className="small" style={{ color: 'var(--text-secondary)', marginTop: '4px' }}>
-                          Her er systemets beregnede risikoprofil sammenlignet med gruppens vurdering.
+                          Her ser dere hva systemet mener sammenlignet med det dere selv svarte.
                         </p>
                       </div>
                       <div style={{ display: 'flex', gap: '8px' }}>
                         <button className="btn btn-outline" style={{ fontSize: '0.875rem', padding: '6px 12px' }} onClick={() => setUserBlindTestAnswer(null)}>
-                          Resett blindtest
+                          Svar på nytt
                         </button>
                         <button className="btn btn-outline" style={{ fontSize: '0.875rem', padding: '6px 12px' }} onClick={() => setStep(1)}>
                           ← Endre antakelser
@@ -581,20 +577,20 @@ export default function Dashboard() {
 
                     {/* Menneskelig vs. Maskin Sammenligning */}
                     <div style={{ padding: '16px', background: 'var(--bg-input)', borderRadius: '8px', border: '1px solid var(--border)', marginBottom: '24px' }}>
-                      <h4 style={{ margin: '0 0 12px 0', fontSize: '0.875rem', color: 'var(--text-primary)' }}>Refleksjonsavsjekk (Human-in-the-loop)</h4>
+                      <h4 style={{ margin: '0 0 12px 0', fontSize: '0.875rem', color: 'var(--text-primary)' }}>Sammenligning: Deres vurdering mot systemets</h4>
                       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
                         <div style={{ padding: '12px', background: '#ffffff', borderRadius: '6px', border: '1px solid var(--border)' }}>
-                          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block' }}>Gruppens anslag:</span>
+                          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block' }}>Dere svarte:</span>
                           <strong style={{ color: 'var(--accent)' }}>
-                            {userBlindTestAnswer === 'utforskende_støtte' ? 'KI som sparringspartner' :
+                            {userBlindTestAnswer === 'utforskende_støtte' ? 'KI som idégiver' :
                              userBlindTestAnswer === 'forsterket_skjønn' ? 'KI hjelper, gruppen bestemmer' :
                              userBlindTestAnswer === 'strategisk_autonomi' ? 'KI handler innen gitte rammer' : 'Automatisert beslutning'}
                           </strong>
                         </div>
                         <div style={{ padding: '12px', background: '#ffffff', borderRadius: '6px', border: '1px solid var(--border)' }}>
-                          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block' }}>Systemets beregning:</span>
+                          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block' }}>Systemet mener:</span>
                           <strong style={{ color: 'var(--accent)' }}>
-                            {activeTask.expectedAllowedRole === 'utforskende_støtte' ? 'KI som sparringspartner' :
+                            {activeTask.expectedAllowedRole === 'utforskende_støtte' ? 'KI som idégiver' :
                              activeTask.expectedAllowedRole === 'forsterket_skjønn' ? 'KI hjelper, gruppen bestemmer' :
                              activeTask.expectedAllowedRole === 'strategisk_autonomi' ? 'KI handler innen gitte rammer' : 'Automatisert beslutning'}
                           </strong>
@@ -604,11 +600,11 @@ export default function Dashboard() {
                       <div style={{ marginTop: '12px', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
                         {userBlindTestAnswer === activeTask.expectedAllowedRole ? (
                           <p style={{ margin: 0, color: '#10b981' }}>
-                            ✓ <strong>Samsvar!</strong> Gruppen og systemet kom frem til samme tillatte rolle.
+                            ✓ <strong>Enig!</strong> Dere og systemet kom frem til det samme.
                           </p>
                         ) : (
                           <p style={{ margin: 0, color: 'var(--accent)' }}>
-                            <strong>Avvik:</strong> Gruppens vurdering avviker fra systemets diagnose. Diskuter om dere har overvurdert eller undervurdert risikoen.
+                            <strong>Uenighet:</strong> Dere og systemet er uenige. Diskuter om dere har vurdert risikoen for høyt eller for lavt.
                           </p>
                         )}
                       </div>
@@ -616,7 +612,7 @@ export default function Dashboard() {
 
                     <div style={{ padding: '16px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px', border: '1px solid var(--border-light)', marginBottom: '24px' }}>
                       <label htmlFor="task-select-dashboard-step2" className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600, marginBottom: '6px' }}>
-                        Vurderingsenhet (KI-bruksoppgave):
+                        Oppgaven vi vurderer:
                       </label>
                       <select
                         id="task-select-dashboard-step2"
@@ -652,17 +648,17 @@ export default function Dashboard() {
                         ))}
                       </select>
                       <p style={{ margin: '8px 0 0 0', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
-                        Inndata: <strong>{activeTask.inputDataType}</strong> | Menneskelig beslutningspunkt: <strong>{activeTask.humanDecisionPoint}</strong>
+                        Datagrunnlag: <strong>{activeTask.inputDataType}</strong> | Mennesket bestemmer: <strong>{activeTask.humanDecisionPoint}</strong>
                       </p>
                     </div>
 
                     {/* Avklaringsspørsmål til gruppen */}
                     <div style={{ marginBottom: '24px' }}>
                       <h3 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-primary)', margin: '0 0 4px 0' }}>
-                        Spørsmål gruppen må avklare
+                        Spørsmål dere må diskutere
                       </h3>
                       <p className="small" style={{ color: 'var(--text-secondary)', margin: '0 0 12px 0' }}>
-                        Hak av etter hvert som gruppen diskuterer og er enig om svaret.
+                        Hak av når dere har diskutert og blitt enige.
                       </p>
 
                       {activeTask.expectedStopRules && activeTask.expectedStopRules.length > 0 ? (
@@ -702,7 +698,7 @@ export default function Dashboard() {
                         </div>
                       ) : (
                         <div style={{ background: 'rgba(16, 185, 129, 0.05)', border: '1px solid rgba(16, 185, 129, 0.2)', borderRadius: '4px', padding: '14px', color: '#10b981', fontSize: '0.875rem' }}>
-                          Ingen lokale avklaringer nødvendig. Saken har lav risiko under de gitte antakelsene.
+                          Ingen ekstra avklaringer trengs. Saken har lav risiko ut fra det vi vet.
                         </div>
                       )}
                     </div>
@@ -710,19 +706,23 @@ export default function Dashboard() {
                     {/* Allowed Role Cap */}
                     <div style={{ padding: '20px', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px solid var(--border-light)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
                       <div>
-                        <span className="small" style={{ color: 'var(--text-secondary)' }}>Foreløpig tillatt KI-rolle (Etter avklaringer):</span>
+                        <span className="small" style={{ color: 'var(--text-secondary)' }}>Foreløpig anbefalt KI-rolle:</span>
                         <strong style={{ display: 'block', fontSize: '1.25rem', color: activeTask.expectedAllowedRole === 'utforskende_støtte' ? 'var(--text-secondary)' : 'var(--accent)', marginTop: '4px' }}>
-                          {activeTask.expectedAllowedRole === 'utforskende_støtte' ? 'KI som sparringspartner' :
+                          {activeTask.expectedAllowedRole === 'utforskende_støtte' ? 'KI som idégiver' :
                            activeTask.expectedAllowedRole === 'forsterket_skjønn' ? 'KI hjelper, du bestemmer' :
                            activeTask.expectedAllowedRole === 'strategisk_autonomi' ? 'KI handler innen gitte rammer' : 'Automatisert beslutning'}
                         </strong>
                       </div>
-                      <div style={{ textRendering: 'optimizeLegibility' }}>
-                        <span className="small" style={{ color: 'var(--text-secondary)', display: 'block' }}>Rolle-tak pålagt:</span>
-                        <span style={{ fontSize: '0.875rem', fontWeight: 600 }}>
-                          {activeTask.expectedAllowedRole !== activeTask.expectedCalculatedRole ? 'Ja (pga. stoppregler)' : 'Nei'}
-                        </span>
-                      </div>
+                      {activeTask.expectedStopRules && activeTask.expectedStopRules.length > 0 && (
+                        <div style={{ textRendering: 'optimizeLegibility' }}>
+                          <span className="small" style={{ color: 'var(--text-secondary)', display: 'block' }}>Begrenset fordi:</span>
+                          <ul style={{ margin: '4px 0 0 0', paddingLeft: '16px', fontSize: '0.8rem', color: 'var(--text-primary)' }}>
+                            {activeTask.expectedStopRules.map(sr => (
+                              <li key={sr} style={{ marginBottom: '2px' }}>{STOP_RULES_MAP[sr] || sr}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
                     </div>
 
                     {/* Next Step Button */}
@@ -732,7 +732,7 @@ export default function Dashboard() {
                         onClick={() => setStep(3)}
                         style={{ padding: '10px 24px', fontWeight: 700 }}
                       >
-                        Gå til scenariotenking →
+                        Gå til risikovurdering →
                       </button>
                     </div>
                   </div>
@@ -758,7 +758,7 @@ export default function Dashboard() {
                         fontSize: '0.8125rem'
                       }}>
                         <span style={{ fontWeight: 600, color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                          ⚙️ Visualiseringstype:
+                          ⚙️ Visningstype:
                         </span>
                         <select
                           value={calculationModel}
@@ -776,9 +776,9 @@ export default function Dashboard() {
                             outline: 'none',
                           }}
                         >
-                          <option value="linear">Lineær (Standard)</option>
-                          <option value="gmm">GMM (Avviksstraff)</option>
-                          <option value="conservative">Konservativ</option>
+                          <option value="linear">Enkel (Standard)</option>
+                          <option value="gmm">Strengere ved sprik</option>
+                          <option value="conservative">Forsiktig</option>
                         </select>
                       </div>
 
@@ -801,7 +801,7 @@ export default function Dashboard() {
                         }}
                       >
                         <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                          <span>💡</span> Slik fungerer den foreløpige diagnosen
+                          <span>💡</span> Slik virker vurderingen
                         </span>
                         <span>{isExplainingFormula ? '▲ Lukk' : '▼ Åpne'}</span>
                       </button>
@@ -820,64 +820,64 @@ export default function Dashboard() {
                           textAlign: 'left',
                         }}>
                           <h4 style={{ margin: '0 0 8px 0', fontSize: '0.875rem', color: 'var(--text-primary)' }}>
-                            Slik fungerer den foreløpige kompass-diagnosen:
+                            Slik virker den foreløpige vurderingen:
                           </h4>
                           <p style={{ margin: '0 0 12px 0' }}>
-                            Dette panelet forklarer hvordan poengsummene fra kompasset ditt henger sammen med den foreløpige diagnosen. Formålet er full gjennomsiktighet slik at du som HR- eller HMS-rådgiver alltid har full kontroll og forståelse.
+                            Her ser du hvordan poengene henger sammen med vurderingen. Vi viser dette slik at du alltid forstår hva som ligger bak.
                           </p>
                           <p style={{ margin: '0 0 10px 0' }}>
-                            <strong>Dine egne poengsummer:</strong>
+                            <strong>Poengene i saken:</strong>
                             <br />
-                            • <strong>Målklarhet (Y-akse):</strong> {activeTask.expectedModuleScores.målklarhet.score.toFixed(1)} av 4.0 (Hvor tydelig er det hva et godt utfall betyr for KI-bruksoppgaven?)
+                            • <strong>Hvor tydelige er målene:</strong> {activeTask.expectedModuleScores.målklarhet.score.toFixed(1)} av 5.0 (Er det klart hva et godt resultat betyr?)
                             <br />
-                            • <strong>Separabilitet (X-akse):</strong> {activeTask.expectedModuleScores.separabilitet.score.toFixed(1)} av 4.0 (Hvor trygt kan oppgaven skilles ut fra helhetsvurdering, relasjon og menneskelig skjønn?)
+                            • <strong>Kan det løses med faste regler:</strong> {activeTask.expectedModuleScores.separabilitet.score.toFixed(1)} av 5.0 (Kan oppgaven løses med faste regler, eller trengs det menneskelig vurdering?)
                           </p>
                           <p style={{ margin: '0 0 12px 0' }}>
                             <strong>Hvordan krysset plasseres i diagrammet:</strong>
                             <br />
                             {calculationModel === 'linear' && (
                               <span>
-                                Posisjonen til krysset er en <strong>direkte visualisering (1-til-1)</strong> av svarene dine. Det gjøres ingen skjulte justeringer i bakgrunnen – krysset plasseres nøyaktig der poengene dine møtes.
+                                Prikken vises rett ut fra poengene. Ingen justeringer i bakgrunnen.
                               </span>
                             )}
                             {calculationModel === 'gmm' && (
                               <span>
-                                Posisjonen til krysset bruker en <strong>avviksstraff (GMM-modell)</strong>. Hvis det er stort sprik mellom målklarhet og separabilitet, trekkes krysset noe innover mot midten for å synliggjøre den økte usikkerheten ved ubalanserte svar.
+                                Hvis det er stort sprik mellom de to poengene, trekkes prikken mot midten. Det viser at usikkerheten øker når svarene er svært ulike.
                               </span>
                             )}
                             {calculationModel === 'conservative' && (
                               <span>
-                                Posisjonen til krysset følger et <strong>konservativt prinsipp</strong>. Plasseringen styres utelukkende av din <em>laveste</em> delskåre (enten målklarhet eller separabilitet) for å sikre at vi ikke overvurderer modenheten.
+                                Prikken styres av det laveste poenget ditt. Det betyr at vi ikke overvurderer — vi går ut fra det svakeste punktet.
                               </span>
                             )}
                           </p>
                           <div style={{ padding: '12px', background: 'rgba(2, 132, 199, 0.05)', borderRadius: '6px', borderLeft: '3px solid var(--accent)', margin: '12px 0 0 0' }}>
                             <strong style={{ display: 'block', marginBottom: '6px', color: 'var(--text-primary)' }}>
-                              Foreløpig forslag til KI-rolle (veiledende utgangspunkt):
+                              Foreløpig anbefaling:
                             </strong>
                             {activeTask.expectedModuleScores.målklarhet.score >= 3.0 ? (
                               activeTask.expectedModuleScores.separabilitet.score >= 3.0 ? (
                                 <span>
-                                  Begge poengsumskårene er 3.0 eller høyere. Dette indikerer at oppgaven har klare mål og kan skilles godt ut.
-                                  Det foreslås en foreløpig rolle som <strong>Automatisert beslutning (KI-rolle II)</strong>.
-                                  Merk at dette kun er et veiledende utgangspunkt for gruppen. Endelig bruk begrenses alltid av eventuelle stoppregler, lokale risikovurderinger og kravet om at et menneske eier den endelige beslutningen.
+                                  Begge poengene er 3.0 eller høyere. Det tyder på at oppgaven har tydelige mål og kan løses med faste regler.
+                                  Foreløpig anbefaling: <strong>KI kan avgjøre alene</strong> (krever egen godkjenning).
+                                  Dette er bare et utgangspunkt. Den endelige bruken avhenger av lokale risikovurderinger og at et menneske alltid tar den endelige avgjørelsen.
                                 </span>
                               ) : (
                                 <span>
-                                  Målklarhet er høy (&gt;= 3.0), men separabilitet er lav (&lt; 3.0). Siden oppgaven krever lokal menneskelig dømmekraft, foreslås rollen <strong>Forsterket skjønn (KI-rolle I)</strong>.
-                                  Her bistår KI med forarbeid eller strukturering, mens du som rådgiver eller saksbehandler gjør den faktiske vurderingen og står ansvarlig.
+                                  Målene er tydelige, men oppgaven krever menneskelig vurdering. Anbefaling: <strong>KI hjelper, dere bestemmer</strong>.
+                                  KI gjør forarbeidet, men du gjør vurderingen og står ansvarlig.
                                 </span>
                               )
                             ) : (
                               activeTask.expectedModuleScores.separabilitet.score >= 3.0 ? (
                                 <span>
-                                  Målklarhet er lav (&lt; 3.0), men separabilitet er høy (&gt;= 3.0). Fordi det er usikkerhet rundt målene, foreslås rollen <strong>Strategisk autonomi (KI-rolle IV)</strong>.
-                                  Her må ledelsen og prosjektgruppen definere tydelige rammer for bruk på forhånd, da det er risiko for feiloptimalisering.
+                                  Oppgaven kan følge faste regler, men målene er uklare. Anbefaling: <strong>KI kan handle innenfor tydelige rammer</strong>.
+                                  Ledelsen må sette tydelige regler før KI tas i bruk, ellers risikerer man at KI jobber mot feil mål.
                                 </span>
                               ) : (
                                 <span>
-                                  Begge poengsumskårene er under 3.0. Siden oppgaven verken har klare mål eller kan skilles fra relasjon og skjønn, foreslås rollen <strong>Utforskende støtte (KI-rolle III)</strong>.
-                                  KI bør utelukkende brukes som en sparringspartner for gruppen for å hente ideer, aldri til å ta beslutninger.
+                                  Begge poengene er under 3.0. Oppgaven har verken tydelige mål eller faste regler. Anbefaling: <strong>KI brukes bare som idégiver</strong>.
+                                  KI bør bare brukes til å hente ideer, aldri til å ta avgjørelser.
                                 </span>
                               )
                             )}
@@ -888,8 +888,8 @@ export default function Dashboard() {
                   </>
                 ) : (
                   <div className="card" style={{ padding: '32px', textAlign: 'center', color: 'var(--text-muted)', border: '1px dashed var(--border)' }}>
-                    <h3 style={{ fontSize: '1.05rem', margin: '0 0 8px 0' }}>KI-kompasset er låst</h3>
-                    <p className="small" style={{ margin: 0 }}>Gjør din menneskelige blindtest-vurdering til venstre for å låse opp det visuelle kompasset og den fullstendige diagnosen.</p>
+                    <h3 style={{ fontSize: '1.05rem', margin: '0 0 8px 0' }}>Kompasset er sperret</h3>
+                    <p className="small" style={{ margin: 0 }}>Svar på spørsmålet til venstre først, så åpner kompasset seg og du ser hele vurderingen.</p>
                   </div>
                 )}
               </div>
@@ -903,8 +903,8 @@ export default function Dashboard() {
 
               {/* Left Column: Checkpoints and Scenarios */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-                <CheckpointsAndReflections />
                 <ScenarioCards />
+                <CheckpointsAndReflections />
 
                 {/* Next Step Button */}
                 <div style={{ marginTop: '24px', textAlign: 'right' }}>

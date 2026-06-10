@@ -44,26 +44,26 @@ describe('DecisionLog Step 3 and maker-check', () => {
   it('prefills Step 3 measures and locks fields after maker-check', () => {
     renderDecisionLog()
 
-    expect(screen.getByText('ROS og risikoreduserende tiltak')).toBeInTheDocument()
+    expect(screen.getByText('Risikovurdering og tiltak')).toBeInTheDocument()
     expect(screen.getByText('54% utfylt')).toBeInTheDocument()
-    expect(screen.getByLabelText('Lås vurderingen i denne økten')).toBeDisabled()
+    expect(screen.getByLabelText('Lås vurderingen')).toBeDisabled()
 
-    fireEvent.click(screen.getByRole('button', { name: 'Autofyll' }))
-    expect((screen.getByLabelText('Risikoreduserende tiltak') as HTMLTextAreaElement).value).toContain('personvernkonsekvensvurdering')
+    fireEvent.click(screen.getByRole('button', { name: 'Fyll inn automatisk' }))
+    expect((screen.getByLabelText('Risikoreduserende tiltak') as HTMLTextAreaElement).value).toContain('personvernvurdering')
 
-    fireEvent.click(screen.getByLabelText('Signer gjennomgått foreløpig notat'))
-    fireEvent.change(screen.getByLabelText('Makker som har lest notatet'), {
+    fireEvent.click(screen.getByLabelText('Signer at notatet er gjennomgått'))
+    fireEvent.change(screen.getByLabelText('Kollega som har lest notatet'), {
       target: { value: 'Kari Kontroll' },
     })
-    expect(screen.getByLabelText('Lås vurderingen i denne økten')).not.toBeDisabled()
+    expect(screen.getByLabelText('Lås vurderingen')).not.toBeDisabled()
 
-    fireEvent.click(screen.getByLabelText('Lås vurderingen i denne økten'))
+    fireEvent.click(screen.getByLabelText('Lås vurderingen'))
 
-    expect(screen.getByRole('button', { name: 'Autofyll' })).toBeDisabled()
+    expect(screen.getByRole('button', { name: 'Fyll inn automatisk' })).toBeDisabled()
     expect(screen.getByLabelText('Risikovurdering')).toBeDisabled()
     expect(screen.getByLabelText('Menneskelig kontroll')).toBeDisabled()
     expect(screen.getByLabelText('Foreløpig vurdering og ansvar')).toBeDisabled()
     expect(screen.getByLabelText('Risikoreduserende tiltak')).toBeDisabled()
-    expect(screen.getByLabelText('Makker som har lest notatet')).toBeDisabled()
+    expect(screen.getByLabelText('Kollega som har lest notatet')).toBeDisabled()
   })
 })

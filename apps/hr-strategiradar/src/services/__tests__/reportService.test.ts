@@ -181,4 +181,16 @@ describe('generateReport — beslutningsnotat som Markdown', () => {
     expect(report).toContain(decisionLog.menneskeligKontroll)
     expect(report).toContain(decisionLog.endeligBeslutning)
   })
+
+  it('inkluderer kompassvurdering med scorer', () => {
+    const report = generateReport(
+      getDiagnosisData('HRR-01')!.project,
+      task, judgments, decisionLog, scenarios
+    )
+
+    expect(report).toContain('Kompassvurdering')
+    expect(report).toContain('Hvor tydelige er målene')
+    expect(report).toContain('Kan det løses med faste regler')
+    expect(report).toContain('av 5.0')
+  })
 })
