@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useAppStore, type CalculationModel } from '../../store/store'
+import type { AiUseTask } from '../../domain/schemas'
 import { allCases } from '../../fixtures/all-cases'
 import { getSystemProposal, getContextualQuestions, compareBlindTestRole, STOP_RULE_QUESTIONS, STOP_RULES_MAP } from '../../services/mockDiagnosisService'
 import CompassView from './CompassView'
@@ -228,6 +229,31 @@ function RegulationsModule({ compact = false }: { compact?: boolean }) {
             </div>
           )}
         </div>
+      </div>
+    </div>
+  )
+}
+
+function AssessmentStatusBar({ task }: { task: AiUseTask }) {
+  const trafficLight = task.expectedTrafficLight ?? 'yellow'
+  const assessmentComplete = task.assessmentComplete ?? false
+
+  const lightConfig = {
+    green:  { emoji: '🟢', label: 'Grønt lys',  color: '#10b981', bg: 'rgba(16,185,129,0.08)',  border: 'rgba(16,185,129,0.25)'  },
+    yellow: { emoji: '🟡', label: 'Gult lys',   color: '#b45309', bg: 'rgba(245,158,11,0.08)', border: 'rgba(245,158,11,0.25)'  },
+    red:    { emoji: '🔴', label: 'Rødt lys',   color: '#b91c1c', bg: 'rgba(239,68,68,0.08)',  border: 'rgba(239,68,68,0.25)'   },
+  }
+  const lc = lightConfig[trafficLight]
+
+  return (
+    <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '16px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 12px', background: lc.bg, border: `1px solid ${lc.border}`, borderRadius: '20px', fontSize: '0.8125rem', fontWeight: 600, color: lc.color }}>
+        <span>{lc.emoji}</span>
+        <span>Risikonivå: {lc.label}</span>
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 12px', background: assessmentComplete ? 'rgba(16,185,129,0.06)' : 'rgba(148,163,184,0.1)', border: `1px solid ${assessmentComplete ? 'rgba(16,185,129,0.2)' : 'rgba(148,163,184,0.3)'}`, borderRadius: '20px', fontSize: '0.8125rem', fontWeight: 600, color: assessmentComplete ? '#10b981' : '#64748b' }}>
+        <span>{assessmentComplete ? '✅' : '⏳'}</span>
+        <span>{assessmentComplete ? 'Vurderingen er ferdig' : 'Notatet er ikke ferdig utfylt'}</span>
       </div>
     </div>
   )
@@ -782,6 +808,8 @@ export default function Dashboard() {
                       )
                     })()}
 
+                    <AssessmentStatusBar task={activeTask} />
+
                     {/* Allowed Role Cap */}
                     <div style={{ padding: '20px', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px solid var(--border-light)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
                       <div>
@@ -802,11 +830,11 @@ export default function Dashboard() {
                           )
                         })()}
                       </div>
-                      {activeTask.expectedStopRules && activeTask.expectedStopRules.length > 0 && (
+                      {activeTask.expectedStopRules && activeTask.expectedStopRules.filter(sr => sr !== 'SR-05').length > 0 && (
                         <div style={{ textRendering: 'optimizeLegibility' }}>
                           <span className="small" style={{ color: 'var(--text-secondary)', display: 'block' }}>Begrenset fordi:</span>
                           <ul style={{ margin: '4px 0 0 0', paddingLeft: '16px', fontSize: '0.8rem', color: 'var(--text-primary)' }}>
-                            {activeTask.expectedStopRules.map(sr => (
+                            {activeTask.expectedStopRules.filter(sr => sr !== 'SR-05').map(sr => (
                               <li key={sr} style={{ marginBottom: '2px' }}>{STOP_RULES_MAP[sr] || sr}</li>
                             ))}
                           </ul>
@@ -1021,6 +1049,7 @@ export default function Dashboard() {
 
               {/* Left Column: The Full Decision Log report + Export */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                <AssessmentStatusBar task={activeTask} />
                 <LensPanel />
                 <DecisionLog />
                 <ExportPanel />

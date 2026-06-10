@@ -186,12 +186,12 @@ export default function CompassView() {
         {positionExplanation}
       </p>
 
-      {/* Stoppregler utløst */}
-      {activeTask.expectedStopRules && activeTask.expectedStopRules.length > 0 && (
+      {/* Stoppregler utløst — SR-05 er prosessindikator og vises separat via AssessmentStatusBar */}
+      {activeTask.expectedStopRules && activeTask.expectedStopRules.filter(sr => sr !== 'SR-05').length > 0 && (
         <div style={{ width: '100%', marginBottom: '20px', padding: '12px 16px', background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.2)', borderRadius: '8px' }}>
           <span className="small" style={{ color: '#ef4444', display: 'block', fontWeight: 600, marginBottom: '8px' }}>Forhold som må avklares:</span>
           <ul style={{ margin: 0, paddingLeft: '16px', fontSize: '0.8rem', color: 'var(--text-primary)' }}>
-            {activeTask.expectedStopRules.map(sr => (
+            {activeTask.expectedStopRules.filter(sr => sr !== 'SR-05').map(sr => (
               <li key={sr} style={{ marginBottom: '4px' }}>
                 {STOP_RULES_MAP[sr] || sr}
               </li>

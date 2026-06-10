@@ -1,7 +1,7 @@
 import { act, render, screen } from '@testing-library/react'
 import { describe, it, expect, afterEach } from 'vitest'
 import { useAppStore } from '../../store/store'
-import { getDiagnosisData, calculateCompassPosition } from '../../services/mockDiagnosisService'
+import { getDiagnosisData, calculateCompassPosition, runCalculationEngine, INITIAL_VALUE_JUDGMENTS } from '../../services/mockDiagnosisService'
 import Dashboard from './Dashboard'
 
 afterEach(() => {
@@ -52,6 +52,53 @@ describe('Dashboard — randsone-badges i steg 1 (Feature 2)', () => {
     render(<Dashboard />)
     expect(screen.getByText('Områder denne oppgaven berører:')).toBeTruthy()
     expect(screen.getByText('Arbeidsvilkår')).toBeTruthy()
+  })
+})
+
+describe('Dashboard — AssessmentStatusBar (C1–C4)', () => {
+  function setupStep2(isDecisionLogComplete = false) {
+    const data = getDiagnosisData('HRR-01')
+    if (!data) throw new Error('Missing fixture')
+    const task = runCalculationEngine(data.task, INITIAL_VALUE_JUDGMENTS, isDecisionLogComplete, 'linear', false)
+    act(() => {
+      useAppStore.getState().reset()
+      useAppStore.setState({
+        selectedCaseId: data.project.caseId,
+        activeProject: data.project,
+        activeTask: task,
+        compassPosition: calculateCompassPosition(task),
+        isAssumptionsConfirmed: true,
+        currentStep: 2,
+        userBlindTestAnswer: 'utforskende_støtte',
+        isDecisionLogComplete,
+      })
+    })
+  }
+
+  it('C1: steg 2 viser risikonivå-indikator', () => {
+    setupStep2()
+    render(<Dashboard />)
+    expect(screen.getByText(/Risikonivå:/i)).toBeTruthy()
+  })
+
+  it('C2: steg 2 viser "Notatet er ikke ferdig utfylt" når assessmentComplete=false', () => {
+    setupStep2(false)
+    render(<Dashboard />)
+    expect(screen.getByText(/Notatet er ikke ferdig utfylt/i)).toBeTruthy()
+  })
+
+  it('C3: steg 2 viser "Vurderingen er ferdig" når assessmentComplete=true', () => {
+    setupStep2(true)
+    render(<Dashboard />)
+    expect(screen.getByText(/Vurderingen er ferdig/i)).toBeTruthy()
+  })
+
+  it('C4: steg 4 viser også risikonivå- og ferdigstatus-indikatorer', () => {
+    setupStep2(false)
+    act(() => useAppStore.setState({ currentStep: 4 }))
+    render(<Dashboard />)
+    expect(screen.getByText(/Risikonivå:/i)).toBeTruthy()
+    expect(screen.getByText(/Notatet er ikke ferdig utfylt/i)).toBeTruthy()
   })
 })
 
