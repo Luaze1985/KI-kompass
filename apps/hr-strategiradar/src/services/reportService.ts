@@ -203,6 +203,19 @@ export function generateReport(
     sections.push('')
   }
 
+  // 11. Virksomhetens etiske retningslinjer (sjekkliste)
+  sections.push(`## Virksomhetens etiske retningslinjer`)
+  sections.push('')
+  sections.push(`Sjekkliste for etiske kjøreregler. Tilpass til det virksomheten faktisk har vedtatt lokalt.`)
+  sections.push('')
+  sections.push(`- **Åpenhet internt:** Ansatte skal vite når og hvordan KI brukes i saker som angår dem.`)
+  sections.push(`- **Ansvar for output:** Et navngitt menneske er alltid ansvarlig for det KI-en produserer.`)
+  sections.push(`- **Ingen skjult profilering:** KI skal ikke rangere eller profilere ansatte uten at det er åpent kjent og saklig begrunnet.`)
+  sections.push(`- **Varsling ved tvil:** Det skal finnes en kjent rutine for å si fra hvis noen er i tvil om KI-bruken er forsvarlig.`)
+  sections.push('')
+  sections.push(`**Lokalt vedtatt etikk-policy:** _[fyll ut]_`)
+  sections.push('')
+
   // Footer
   sections.push(`---`)
   sections.push('')

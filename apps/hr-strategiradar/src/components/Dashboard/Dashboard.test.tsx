@@ -102,6 +102,14 @@ describe('Dashboard — AssessmentStatusBar (C1–C4)', () => {
   })
 })
 
+describe('Dashboard — regelverk-faner i steg 1', () => {
+  it('viser egen fane for "Virksomhetens etiske retningslinjer"', () => {
+    setupWithCase()
+    render(<Dashboard />)
+    expect(screen.getByText('Virksomhetens etiske retningslinjer')).toBeTruthy()
+  })
+})
+
 describe('Dashboard — responsiv layout', () => {
   it('steg 1 bruker responsive grid-klasse', () => {
     setupWithCase()

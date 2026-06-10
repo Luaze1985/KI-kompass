@@ -15,7 +15,8 @@
     "test:watch": "vitest",
     "research:langvakter": "tsx scripts/import-langvakter-research.ts",
     "research": "tsx scripts/import-research.ts",
-    "test:e2e": "node scripts/run-playwright-e2e.cjs"
+    "test:e2e": "node scripts/run-playwright-e2e.cjs",
+    "share:zip": "git archive --format=zip -o share.zip HEAD"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

@@ -67,9 +67,9 @@ function IntroCard() {
 }
 
 function RegulationsModule({ compact = false }: { compact?: boolean }) {
-  const [activeTab, setActiveTab] = useState<'eu' | 'national' | 'internal' | null>(null)
+  const [activeTab, setActiveTab] = useState<'eu' | 'national' | 'ethics' | 'internal' | null>(null)
 
-  const toggleTab = (tab: 'eu' | 'national' | 'internal') => {
+  const toggleTab = (tab: 'eu' | 'national' | 'ethics' | 'internal') => {
     setActiveTab(activeTab === tab ? null : tab)
   }
 
@@ -179,6 +179,60 @@ function RegulationsModule({ compact = false }: { compact?: boolean }) {
                 <li><strong>Rettferdighet og mangfold:</strong> Algoritmer må testes for å sikre at den ikke forskjellsbehandler basert på kjønn, alder eller etnisk bakgrunn.</li>
                 <li><strong>Forståelig begrunnelse:</strong> Den ansatte må kunne få en forklaring på hvorfor KI kom frem til akkurat dette resultatet.</li>
               </ul>
+            </div>
+          )}
+        </div>
+
+        {/* Virksomhetens etiske retningslinjer */}
+        <div style={{ border: '1px solid var(--border-light)', borderRadius: '6px', overflow: 'hidden' }}>
+          <button
+            onClick={() => toggleTab('ethics')}
+            style={{
+              width: '100%',
+              padding: '12px',
+              background: activeTab === 'ethics' ? 'var(--zone-green)' : 'var(--bg-panel)',
+              border: 'none',
+              textAlign: 'left',
+              cursor: 'pointer',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              fontWeight: 600,
+              fontSize: '0.875rem',
+              color: 'var(--text-primary)',
+              transition: 'background 0.2s',
+            }}
+          >
+            <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span>🧭</span> Virksomhetens etiske retningslinjer
+            </span>
+            <span style={{
+              background: 'rgba(16, 185, 129, 0.1)',
+              color: '#065f46',
+              padding: '2px 8px',
+              borderRadius: '4px',
+              fontSize: '0.75rem',
+              fontWeight: 700,
+            }}>
+              Avhenger av din virksomhet
+            </span>
+          </button>
+          {activeTab === 'ethics' && (
+            <div style={{ padding: '12px', background: '#ffffff', fontSize: '0.8125rem', color: 'var(--text-secondary)', borderTop: '1px solid var(--border-light)', lineHeight: '1.6' }}>
+              <p style={{ margin: '0 0 8px 0' }}>
+                Mange virksomheter har egne etiske kjøreregler for KI-bruk. Bruk disse som
+                en sjekkliste og tilpass dem til det dere faktisk har vedtatt lokalt:
+              </p>
+              <ul style={{ margin: '0', paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                <li><strong>Åpenhet internt:</strong> Ansatte skal vite når og hvordan KI brukes i saker som angår dem.</li>
+                <li><strong>Ansvar for output:</strong> Et navngitt menneske er alltid ansvarlig for det KI-en produserer — ansvaret kan ikke delegeres til verktøyet.</li>
+                <li><strong>Ingen skjult profilering:</strong> KI skal ikke brukes til å rangere eller profilere ansatte uten at det er åpent kjent og saklig begrunnet.</li>
+                <li><strong>Varsling ved tvil:</strong> Det skal finnes en kjent rutine for å si fra hvis noen er i tvil om KI-bruken er forsvarlig.</li>
+              </ul>
+              <p style={{ margin: '8px 0 0 0', fontStyle: 'italic' }}>
+                Har dere ikke vedtatt egne etiske retningslinjer ennå? Da bør dette avklares
+                før KI tas i bruk i reelle saker.
+              </p>
             </div>
           )}
         </div>

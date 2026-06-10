@@ -1,73 +1,58 @@
-# React + TypeScript + Vite
+# HR Strategiradar / KI-Radar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Workshop-verktøy som hjelper en HR-/HMS-/prosjektgruppe å vurdere om det er forsvarlig
+å bruke KI i en konkret sak. Verktøyet kjører i nettleseren — ingen backend.
 
-Currently, two official plugins are available:
+## Hva appen gjør
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Tar en konkret HR-sak gjennom fire steg: beskriv saken → foreløpig KI-diagnose →
+  risikovurdering → beslutningsnotat.
+- Viser et **kompass** (klart KI-formål vs. løsbart med faste regler), et **trafikklys**
+  (risikonivå) og en **anbefalt KI-rolle** som endrer seg etter hva gruppen svarer.
+- Støtter **menneskelig vurdering** — aldri automatisk beslutning.
+- Eksporterer beslutningsnotat som Markdown, JSON og Word (.docx med ROS + DPIA-struktur).
 
-## React Compiler
+## Kjør lokalt
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev      # start dev-server (Vite)
+npm test         # kjør testene (Vitest)
+npm run build    # type-sjekk (tsc -b) + produksjonsbygg
+npm run lint     # ESLint
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Miljøvariabler
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Kopier `.env.example` til `.env` i samme mappe (`apps/hr-strategiradar/.env`).
+- `.env` er gitignored og **skal aldri deles** (verken i git, e-post eller zip).
+- `PERPLEXITY_API_KEY` brukes **kun** av den valgfrie research-importen
+  (`npm run research`). Selve appen kjører fint uten nøkkel.
+- **Har `.env` noen gang forlatt maskinen** (delt zip, opplasting, e-post)?
+  Roter nøkkelen i Perplexity-panelet umiddelbart.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Se `.env.example` for fullstendig variabelliste.
+
+## Dele trygt
+
+Ikke zip arbeidsmappa — den inneholder `.env`, `node_modules` og `dist`.
+Lag en ren pakke fra git i stedet:
+
+```bash
+git archive --format=zip -o share.zip HEAD   # eller: npm run share:zip
 ```
+
+`git archive` tar kun sporet innhold og hopper over alt i `.gitignore`.
+Se `CHECKLIST_BEFORE_SHARING.md` før hver deling.
+
+## Kvalitetsstatus
+
+| Lag | Verktøy |
+|-----|---------|
+| Frontend | Vite + React + TypeScript (`strict`) |
+| Skjema / validering | Zod |
+| State | Zustand |
+| Tester | Vitest + Testing Library, Playwright (e2e) |
+
+Domenemotoren (`src/services/mockDiagnosisService.ts`) avleder rolle, trafikklys og
+stoppregler. Alle 8 HR-saker har authored output = motor-output (koherenstest).

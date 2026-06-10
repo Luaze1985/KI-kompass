@@ -223,6 +223,17 @@ export async function generateWordDocument(
             : []),
 
           divider(),
+
+          // DEL 4: VIRKSOMHETENS ETISKE RETNINGSLINJER
+          heading('DEL 4: VIRKSOMHETENS ETISKE RETNINGSLINJER', HeadingLevel.HEADING_1),
+          para('Sjekkliste for etiske kjøreregler. Tilpass til det virksomheten faktisk har vedtatt lokalt.'),
+          new Paragraph({ children: [new TextRun({ text: 'Åpenhet internt: Ansatte skal vite når og hvordan KI brukes i saker som angår dem.', size: 22 })], bullet: { level: 0 }, spacing: { before: 40, after: 40 } }),
+          new Paragraph({ children: [new TextRun({ text: 'Ansvar for output: Et navngitt menneske er alltid ansvarlig for det KI-en produserer.', size: 22 })], bullet: { level: 0 }, spacing: { before: 40, after: 40 } }),
+          new Paragraph({ children: [new TextRun({ text: 'Ingen skjult profilering: KI skal ikke rangere eller profilere ansatte uten at det er åpent kjent og saklig begrunnet.', size: 22 })], bullet: { level: 0 }, spacing: { before: 40, after: 40 } }),
+          new Paragraph({ children: [new TextRun({ text: 'Varsling ved tvil: Det skal finnes en kjent rutine for å si fra hvis noen er i tvil om KI-bruken er forsvarlig.', size: 22 })], bullet: { level: 0 }, spacing: { before: 40, after: 40 } }),
+          labelValue('Lokalt vedtatt etikk-policy', ''),
+
+          divider(),
           new Paragraph({
             children: [
               new TextRun({ text: 'Generert av KI-Radar — norsk vurderingsverktøy for KI-bruk i offentlig sektor.', size: 18, color: '999999', italics: true }),
