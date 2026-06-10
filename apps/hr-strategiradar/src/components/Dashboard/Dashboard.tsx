@@ -6,6 +6,7 @@ import CompassView from './CompassView'
 import CheckpointsAndReflections from './CheckpointsAndReflections'
 import DecisionLog from './DecisionLog'
 import ScenarioCards from './ScenarioCards'
+import ExportPanel from './ExportPanel'
 
 const CASES = [
   { id: 'HRR-01', label: 'Seniorbevaring i hjemmetjenesten' },
@@ -253,22 +254,7 @@ export default function Dashboard() {
     <div style={{ minHeight: '100vh', background: 'var(--bg-main)', color: 'var(--text-primary)', display: 'flex', flexDirection: 'column' }}>
 
       {/* Header with Step Progress Bar */}
-      <header
-        style={{
-          borderBottom: '1px solid var(--border)',
-          background: 'var(--bg-sidebar)',
-          backdropFilter: 'blur(20px)',
-          padding: '16px 32px',
-          position: 'sticky',
-          top: 0,
-          zIndex: 100,
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          flexWrap: 'wrap',
-          gap: '24px',
-        }}
-      >
+      <header className="dashboard-header">
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <div>
             <h1 style={{ fontSize: '1.25rem', margin: 0, fontWeight: 700, color: 'var(--accent-hover)' }}>KI-Radar</h1>
@@ -315,7 +301,7 @@ export default function Dashboard() {
 
           {/* STEP 1: BESKRIV SAKEN */}
           {currentStep === 1 && (
-            <div className="fade-up" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', alignItems: 'start' }}>
+            <div className="fade-up dashboard-grid">
                   {/* Left Column: Low-friction intake input */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 <div className="card" style={{ padding: '24px' }}>
@@ -501,7 +487,7 @@ export default function Dashboard() {
 
           {/* STEP 2: SE FORELØPIG KI-DIAGNOSE */}
           {currentStep === 2 && activeTask && (
-            <div className="fade-up" style={{ display: 'grid', gridTemplateColumns: '1fr 350px', gap: '32px', alignItems: 'start' }}>
+            <div className="fade-up dashboard-grid-sidebar">
 
               {/* Left Column: Blindtest OR full Diagnosis */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
@@ -629,9 +615,43 @@ export default function Dashboard() {
                     </div>
 
                     <div style={{ padding: '16px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px', border: '1px solid var(--border-light)', marginBottom: '24px' }}>
-                      <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Vurderingsenhet (Deloppgave):</span>
-                      <strong style={{ fontSize: '1rem' }}>{activeTask.title}</strong>
-                      <p style={{ margin: '6px 0 0 0', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                      <label htmlFor="task-select-dashboard-step2" className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600, marginBottom: '6px' }}>
+                        Vurderingsenhet (KI-bruksoppgave):
+                      </label>
+                      <select
+                        id="task-select-dashboard-step2"
+                        value={activeTask.taskId}
+                        onChange={(e) => {
+                          if (isMakerChecked) return
+                          const selectedTask = project?.aiUseTasks.find(t => t.taskId === e.target.value)
+                          if (selectedTask && project) {
+                            const compass = calculateCompassPosition(selectedTask, calculationModel)
+                            setActiveData(project, selectedTask, compass)
+                          }
+                        }}
+                        disabled={isMakerChecked}
+                        style={{
+                          display: 'block',
+                          width: '100%',
+                          padding: '8px 12px',
+                          fontSize: '0.875rem',
+                          fontFamily: "'Segoe UI', 'Inter', system-ui, sans-serif",
+                          fontWeight: 600,
+                          border: '1px solid var(--border)',
+                          borderRadius: 'var(--radius)',
+                          background: 'var(--bg-input)',
+                          color: 'var(--text-primary)',
+                          cursor: isMakerChecked ? 'not-allowed' : 'pointer',
+                          boxShadow: '0 1px 2px rgba(0,0,0,0.05)',
+                        }}
+                      >
+                        {project?.aiUseTasks.map((t) => (
+                          <option key={t.taskId} value={t.taskId}>
+                            {t.title} ({t.taskId})
+                          </option>
+                        ))}
+                      </select>
+                      <p style={{ margin: '8px 0 0 0', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
                         Inndata: <strong>{activeTask.inputDataType}</strong> | Menneskelig beslutningspunkt: <strong>{activeTask.humanDecisionPoint}</strong>
                       </p>
                     </div>
@@ -815,7 +835,21 @@ export default function Dashboard() {
                           <p style={{ margin: '0 0 12px 0' }}>
                             <strong>Hvordan krysset plasseres i diagrammet:</strong>
                             <br />
-                            Posisjonen til krysset er en direkte visualisering (1-til-1) av svarene dine. Det gjøres ingen skjulte justeringer eller komplisert statistikk i bakgrunnen – krysset plasseres nøyaktig der poengene dine møtes.
+                            {calculationModel === 'linear' && (
+                              <span>
+                                Posisjonen til krysset er en <strong>direkte visualisering (1-til-1)</strong> av svarene dine. Det gjøres ingen skjulte justeringer i bakgrunnen – krysset plasseres nøyaktig der poengene dine møtes.
+                              </span>
+                            )}
+                            {calculationModel === 'gmm' && (
+                              <span>
+                                Posisjonen til krysset bruker en <strong>avviksstraff (GMM-modell)</strong>. Hvis det er stort sprik mellom målklarhet og separabilitet, trekkes krysset noe innover mot midten for å synliggjøre den økte usikkerheten ved ubalanserte svar.
+                              </span>
+                            )}
+                            {calculationModel === 'conservative' && (
+                              <span>
+                                Posisjonen til krysset følger et <strong>konservativt prinsipp</strong>. Plasseringen styres utelukkende av din <em>laveste</em> delskåre (enten målklarhet eller separabilitet) for å sikre at vi ikke overvurderer modenheten.
+                              </span>
+                            )}
                           </p>
                           <div style={{ padding: '12px', background: 'rgba(2, 132, 199, 0.05)', borderRadius: '6px', borderLeft: '3px solid var(--accent)', margin: '12px 0 0 0' }}>
                             <strong style={{ display: 'block', marginBottom: '6px', color: 'var(--text-primary)' }}>
@@ -865,7 +899,7 @@ export default function Dashboard() {
 
           {/* STEP 3: SCENARIOTENKING */}
           {currentStep === 3 && activeTask && (
-            <div className="fade-up" style={{ display: 'grid', gridTemplateColumns: '1fr 350px', gap: '32px', alignItems: 'start' }}>
+            <div className="fade-up dashboard-grid-sidebar">
 
               {/* Left Column: Checkpoints and Scenarios */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
@@ -894,11 +928,12 @@ export default function Dashboard() {
 
           {/* STEP 4: BESLUTNINGSNOTAT */}
           {currentStep === 4 && activeTask && (
-            <div className="fade-up" style={{ display: 'grid', gridTemplateColumns: '1fr 350px', gap: '32px', alignItems: 'start' }}>
+            <div className="fade-up dashboard-grid-sidebar">
 
-              {/* Left Column: The Full Decision Log report */}
+              {/* Left Column: The Full Decision Log report + Export */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 <DecisionLog />
+                <ExportPanel />
               </div>
 
               {/* Right Column: Compass */}
