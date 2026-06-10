@@ -5,8 +5,9 @@ import {
   dedupeFindings,
   parseRawFindingArray,
   runLangvakterResearchImport,
+  runResearchImport,
 } from '../pipeline'
-import type { ResearchQuery } from '../queryPack'
+import { RESEARCH_QUERY_PACKS, getQueryPack, type ResearchQuery } from '../queryPack'
 import type { SonarProvider } from '../sonarAdapter'
 
 const testQuery: ResearchQuery = {
@@ -117,5 +118,61 @@ describe('runLangvakterResearchImport', () => {
   it('parses JSON arrays wrapped in markdown fences', () => {
     const parsed = parseRawFindingArray('```json\n[{"claim":"ok"}]\n```')
     expect(parsed).toEqual([{ claim: 'ok' }])
+  })
+})
+
+describe('query-pack-register for alle saker', () => {
+  const DASHBOARD_CASES = ['HRR-01', 'HRR-02', 'HRR-03', 'HRR-04', 'HRR-05', 'HRR-06', 'HRR-07', 'HRR-08']
+
+  it('har en query-pakke for hver av de 8 dashboard-sakene', () => {
+    for (const caseId of DASHBOARD_CASES) {
+      const pack = getQueryPack(caseId)
+      expect(pack, `mangler query-pakke for ${caseId}`).toBeDefined()
+      expect(pack!.length).toBeGreaterThan(0)
+    }
+    expect(Object.keys(RESEARCH_QUERY_PACKS).sort()).toEqual(DASHBOARD_CASES)
+  })
+
+  it('hver spørring refererer sin egen sak og har unik queryId', () => {
+    const allIds: string[] = []
+    for (const caseId of DASHBOARD_CASES) {
+      for (const q of getQueryPack(caseId)!) {
+        expect(q.relevantCaseField, `${q.queryId} mangler ${caseId}`).toContain(caseId)
+        allIds.push(q.queryId)
+      }
+    }
+    expect(new Set(allIds).size).toBe(allIds.length)
+  })
+
+  it('runResearchImport kjører en vilkårlig pakke (HRR-03) mot en mock-provider', async () => {
+    const provider: SonarProvider = {
+      search: vi.fn().mockResolvedValue({
+        queryId: 'HK-Q01',
+        content: JSON.stringify([
+          {
+            source_type: 'official',
+            title: 'Heltidskultur',
+            url: 'https://www.ks.no/heltidskultur',
+            claim: 'Uønsket deltid svekker kontinuitet i tjenesten.',
+            evidence_strength: 4,
+          },
+        ]),
+        citations: [],
+        raw: {},
+      }),
+    }
+
+    const result = await runResearchImport({
+      provider,
+      queryPack: getQueryPack('HRR-03')!,
+      retrievedAt: '2026-06-10',
+    })
+
+    expect(result.status).toBe('completed')
+    if (result.status === 'completed') {
+      expect(result.findings.length).toBeGreaterThan(0)
+      expect(result.findings[0].relevant_case_field).toContain('HRR-03')
+      expect(result.findings[0].review_status).toBe('draft')
+    }
   })
 })

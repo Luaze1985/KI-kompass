@@ -55,6 +55,47 @@ export function buildResearchPrompt(query: ResearchQuery, policyText?: string): 
   return lines.join('\n')
 }
 
+// Case-agnostisk import: kjorer en vilkarlig query-pakke mot Sonar-provideren.
+export async function runResearchImport(options: {
+  provider?: SonarProvider
+  queryPack: ResearchQuery[]
+  missingApiKey?: { checked: string[] }
+  retrievedAt: string
+  policyText?: string
+}): Promise<ResearchImportResult> {
+  if (!options.provider) {
+    return {
+      status: 'missing_api_key',
+      checked: options.missingApiKey?.checked ?? ['PPLX_API_KEY', 'SONAR_API_KEY', 'PERPLEXITY_API_KEY'],
+      findings: [],
+      errors: [],
+    }
+  }
+
+  const findings: ResearchFinding[] = []
+  const errors: string[] = []
+  const queryPack = options.queryPack
+
+  for (const query of queryPack) {
+    try {
+      const response = await options.provider.search(query.queryId, buildResearchPrompt(query, options.policyText))
+      const rawFindings = parseRawFindingArray(response.content)
+      rawFindings.forEach((raw, index) => {
+        findings.push(normalizeRawFinding(raw, query, index, options.retrievedAt))
+      })
+    } catch (error) {
+      errors.push(error instanceof Error ? error.message : `Unknown import error for ${query.queryId}`)
+    }
+  }
+
+  return {
+    status: 'completed',
+    findings: dedupeFindings(findings),
+    errors,
+  }
+}
+
+// Bakoverkompatibel innpakning for HRR-07 (langvakter).
 export async function runLangvakterResearchImport(options: {
   provider?: SonarProvider
   missingApiKey?: { checked: string[] }
