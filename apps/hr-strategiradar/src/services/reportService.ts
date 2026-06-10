@@ -39,6 +39,7 @@ export interface ReportMeta {
   blindTestComparison?: 'agree' | 'overconfident' | 'cautious' | null
   stopRulesDiscussed?: number
   totalStopRules?: number
+  lensFeedback?: string
 }
 
 export function generateReport(
@@ -191,6 +192,14 @@ export function generateReport(
       const discussed = meta.stopRulesDiscussed ?? 0
       sections.push(`- Forhold avklart av gruppen: ${discussed} av ${meta.totalStopRules}${discussed === meta.totalStopRules ? ' (alle avklart)' : ' (anbefalingen er foreløpig)'}.`)
     }
+    sections.push('')
+  }
+
+  // 10. Innspill fra linsene (ekstern tilbakemelding limt inn av gruppen)
+  if (meta?.lensFeedback && meta.lensFeedback.trim()) {
+    sections.push(`## Innspill fra linsene`)
+    sections.push('')
+    sections.push(meta.lensFeedback.trim())
     sections.push('')
   }
 

@@ -7,6 +7,7 @@ import CheckpointsAndReflections from './CheckpointsAndReflections'
 import DecisionLog from './DecisionLog'
 import ScenarioCards from './ScenarioCards'
 import ExportPanel from './ExportPanel'
+import LensPanel from './LensPanel'
 
 const CASES = [
   { id: 'HRR-01', label: 'Seniorbevaring i hjemmetjenesten' },
@@ -1020,6 +1021,7 @@ export default function Dashboard() {
 
               {/* Left Column: The Full Decision Log report + Export */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                <LensPanel />
                 <DecisionLog />
                 <ExportPanel />
               </div>

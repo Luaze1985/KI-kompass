@@ -99,6 +99,7 @@ interface AppState {
   isAssumptionsConfirmed: boolean
   userBlindTestAnswer: string | null
   stopRuleDiscussed: Record<string, boolean>
+  lensFeedback: string
   userRole: 'hms_radgiver' | 'hr_radgiver' | 'linjeleder' | 'tillitsvalgt' | null
   setUserRole: (role: 'hms_radgiver' | 'hr_radgiver' | 'linjeleder' | 'tillitsvalgt' | null) => void
 
@@ -114,6 +115,7 @@ interface AppState {
   confirmAssumptions: (confirmed: boolean) => void
   setUserBlindTestAnswer: (answer: string | null) => void
   setStopRuleDiscussed: (srCode: string, value: boolean) => void
+  setLensFeedback: (text: string) => void
 
   // Dynamic tweak actions
   setModuleScore: (
@@ -174,6 +176,7 @@ export const useAppStore = create<AppState>((set, get) => {
     isAssumptionsConfirmed: false,
     userBlindTestAnswer: null,
     stopRuleDiscussed: {},
+    lensFeedback: '',
     userRole: null,
     setUserRole: (role) => set((s) => (s.isMakerChecked ? {} : { userRole: role })),
 
@@ -226,6 +229,7 @@ export const useAppStore = create<AppState>((set, get) => {
           isMakerChecked: false,
           userBlindTestAnswer: null,
           stopRuleDiscussed: {},
+          lensFeedback: '',
         }
       }),
     setCompassPosition: (point) => set((s) => (s.isMakerChecked ? {} : { compassPosition: point })),
@@ -542,6 +546,9 @@ export const useAppStore = create<AppState>((set, get) => {
         return { stopRuleDiscussed: { ...s.stopRuleDiscussed, [srCode]: value } }
       }),
 
+    setLensFeedback: (text) =>
+      set((s) => (s.isMakerChecked ? {} : { lensFeedback: text })),
+
     updateScenarioField: (caseId, temaKey, field, value) =>
       set((s) => {
         if (s.isMakerChecked) return {}
@@ -577,6 +584,7 @@ export const useAppStore = create<AppState>((set, get) => {
         isAssumptionsConfirmed: false,
         userBlindTestAnswer: null,
         stopRuleDiscussed: {},
+        lensFeedback: '',
         userRole: null,
       }),
   }

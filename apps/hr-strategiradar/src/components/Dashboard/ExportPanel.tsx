@@ -21,6 +21,7 @@ export default function ExportPanel() {
   const allScenarios = useAppStore(s => s.scenarios)
   const userBlindTestAnswer = useAppStore(s => s.userBlindTestAnswer)
   const stopRuleDiscussed = useAppStore(s => s.stopRuleDiscussed)
+  const lensFeedback = useAppStore(s => s.lensFeedback)
   const scenarios = caseId ? (allScenarios[caseId] || []) : []
 
   if (!project || !task || !judgments) {
@@ -32,6 +33,7 @@ export default function ExportPanel() {
     blindTestComparison: compareBlindTestRole(userBlindTestAnswer, task.expectedAllowedRole),
     stopRulesDiscussed: stopRules.filter(sr => stopRuleDiscussed[sr]).length,
     totalStopRules: stopRules.length,
+    lensFeedback,
   }
 
   const hasAnyScenarioContent = scenarios.some(s => s.simulertHendelse.trim().length > 0)

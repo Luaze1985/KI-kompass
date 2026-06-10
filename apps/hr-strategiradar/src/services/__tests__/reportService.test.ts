@@ -72,6 +72,24 @@ describe('generateReport — beslutningsnotat som Markdown', () => {
     expect(report).toContain(decisionOwner)
   })
 
+  it('tar med «Innspill fra linsene» når lensFeedback er satt', () => {
+    const report = generateReport(
+      getDiagnosisData('HRR-01')!.project,
+      task, judgments, decisionLog, scenarios,
+      { lensFeedback: 'Personvernlinsen: husk databehandleravtale før bruk.' }
+    )
+    expect(report).toContain('## Innspill fra linsene')
+    expect(report).toContain('Personvernlinsen: husk databehandleravtale')
+  })
+
+  it('utelater «Innspill fra linsene» når lensFeedback mangler', () => {
+    const report = generateReport(
+      getDiagnosisData('HRR-01')!.project,
+      task, judgments, decisionLog, scenarios
+    )
+    expect(report).not.toContain('## Innspill fra linsene')
+  })
+
   it('inneholder KI-bruksoppgave med tydelig markering', () => {
     const report = generateReport(
       getDiagnosisData('HRR-01')!.project,
