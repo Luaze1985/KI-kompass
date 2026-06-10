@@ -60,17 +60,6 @@ export default function CompassView() {
       {/* Top Header */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', marginBottom: '20px' }}>
         <h3 style={{ margin: 0, fontSize: '1rem', fontWeight: 700, color: 'var(--text-primary)' }}>KI-Kompass</h3>
-        <span style={{
-          color: activeColor,
-          fontWeight: 700,
-          fontSize: '0.75rem',
-          border: `1px solid ${activeColor}`,
-          padding: '2px 8px',
-          borderRadius: '4px',
-          background: `${activeColor}10`
-        }}>
-          {statusLabels[trafficLight]}
-        </span>
       </div>
 
       {/* 4-Quadrant Clean SVG */}
@@ -96,13 +85,13 @@ export default function CompassView() {
 
           {/* Quadrant labels */}
           <text x={padding + gW / 4} y={padding + 14} textAnchor="middle" fontSize="8px" fill="rgba(249,115,22,0.7)" fontWeight="600">Menneske vurderer</text>
-          <text x={padding + gW / 4} y={padding + 24} textAnchor="middle" fontSize="8px" fill="rgba(249,115,22,0.7)" fontWeight="600">Tydelige mål</text>
+          <text x={padding + gW / 4} y={padding + 24} textAnchor="middle" fontSize="8px" fill="rgba(249,115,22,0.7)" fontWeight="600">KI-formål klart</text>
           <text x={padding + 3 * gW / 4} y={padding + 14} textAnchor="middle" fontSize="8px" fill="rgba(16,185,129,0.8)" fontWeight="600">Faste regler</text>
-          <text x={padding + 3 * gW / 4} y={padding + 24} textAnchor="middle" fontSize="8px" fill="rgba(16,185,129,0.8)" fontWeight="600">Tydelige mål</text>
+          <text x={padding + 3 * gW / 4} y={padding + 24} textAnchor="middle" fontSize="8px" fill="rgba(16,185,129,0.8)" fontWeight="600">KI-formål klart</text>
           <text x={padding + gW / 4} y={H - padding - 14} textAnchor="middle" fontSize="8px" fill="rgba(239,68,68,0.7)" fontWeight="600">Menneske vurderer</text>
-          <text x={padding + gW / 4} y={H - padding - 4} textAnchor="middle" fontSize="8px" fill="rgba(239,68,68,0.7)" fontWeight="600">Uklare mål</text>
+          <text x={padding + gW / 4} y={H - padding - 4} textAnchor="middle" fontSize="8px" fill="rgba(239,68,68,0.7)" fontWeight="600">KI-formål uklart</text>
           <text x={padding + 3 * gW / 4} y={H - padding - 14} textAnchor="middle" fontSize="8px" fill="rgba(245,158,11,0.8)" fontWeight="600">Faste regler</text>
-          <text x={padding + 3 * gW / 4} y={H - padding - 4} textAnchor="middle" fontSize="8px" fill="rgba(245,158,11,0.8)" fontWeight="600">Uklare mål</text>
+          <text x={padding + 3 * gW / 4} y={H - padding - 4} textAnchor="middle" fontSize="8px" fill="rgba(245,158,11,0.8)" fontWeight="600">KI-formål uklart</text>
 
           {/* Solid Axis lines in the middle (score = 3.0) */}
           <line
@@ -133,7 +122,7 @@ export default function CompassView() {
             fontWeight="600"
             fill="var(--text-secondary)"
           >
-            Hvor tydelige er målene? (Uklare ➔ Tydelige)
+            Klart KI-formål? (Uklart ➔ Klart)
           </text>
 
           {/* X-axis: Separabilitet */}
@@ -199,6 +188,21 @@ export default function CompassView() {
           </ul>
         </div>
       )}
+
+      {/* Status badge — placed next to traffic light for context */}
+      <div style={{ width: '100%', marginBottom: '8px', display: 'flex', justifyContent: 'flex-end' }}>
+        <span style={{
+          color: activeColor,
+          fontWeight: 700,
+          fontSize: '0.75rem',
+          border: `1px solid ${activeColor}`,
+          padding: '2px 8px',
+          borderRadius: '4px',
+          background: `${activeColor}10`
+        }}>
+          {statusLabels[trafficLight]}
+        </span>
+      </div>
 
       {/* Premium Traffic Light Display */}
       <div style={{
@@ -267,7 +271,7 @@ export default function CompassView() {
       {/* Text Coordinator Summary */}
       <div style={{ display: 'flex', gap: '16px', marginBottom: '20px', background: '#f8fafc', border: '1px solid var(--border-light)', padding: '6px 12px', borderRadius: '4px', fontSize: '0.875rem', width: '100%', justifyContent: 'center' }}>
         <div>Faste regler: <strong>{separabilitetScore.toFixed(2)} / 5.0</strong></div>
-        <div style={{ borderLeft: '1px solid var(--border-light)', paddingLeft: '16px' }}>Tydelige mål: <strong>{malklarhetScore.toFixed(2)} / 5.0</strong></div>
+        <div style={{ borderLeft: '1px solid var(--border-light)', paddingLeft: '16px' }}>Klart KI-formål: <strong>{malklarhetScore.toFixed(2)} / 5.0</strong></div>
       </div>
 
       {/* Role Cap Notice */}

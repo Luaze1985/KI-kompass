@@ -44,7 +44,7 @@ describe('DecisionLog Step 3 and maker-check', () => {
   it('prefills Step 3 measures and locks fields after maker-check', () => {
     renderDecisionLog()
 
-    expect(screen.getByText('Risikovurdering og tiltak')).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Risikoreduserende tiltak' })).toBeInTheDocument()
     expect(screen.getByText('54% utfylt')).toBeInTheDocument()
     expect(screen.getByLabelText('Lås vurderingen')).toBeDisabled()
 

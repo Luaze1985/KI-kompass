@@ -1,6 +1,7 @@
 import { useAppStore } from '../../store/store'
 import { generateReport, generateJsonExport } from '../../services/reportService'
 import { compareBlindTestRole } from '../../services/mockDiagnosisService'
+import { generateWordDocument } from '../../services/wordExportService'
 
 function downloadFile(content: string, filename: string, mimeType: string) {
   const blob = new Blob([content], { type: mimeType })
@@ -22,6 +23,7 @@ export default function ExportPanel() {
   const userBlindTestAnswer = useAppStore(s => s.userBlindTestAnswer)
   const stopRuleDiscussed = useAppStore(s => s.stopRuleDiscussed)
   const lensFeedback = useAppStore(s => s.lensFeedback)
+  const makerName = useAppStore(s => s.makerName)
   const scenarios = caseId ? (allScenarios[caseId] || []) : []
 
   if (!project || !task || !judgments) {
@@ -35,7 +37,6 @@ export default function ExportPanel() {
     totalStopRules: stopRules.length,
     lensFeedback,
   }
-
   const hasAnyScenarioContent = scenarios.some(s => s.simulertHendelse.trim().length > 0)
   const safeFilename = project.caseId.toLowerCase().replace(/[^a-z0-9-]/g, '_')
 
@@ -61,12 +62,28 @@ export default function ExportPanel() {
       <p style={{ fontSize: '0.85rem', color: '#92400e', background: 'rgba(245, 158, 11, 0.08)', padding: '8px 12px', borderRadius: '6px', border: '1px solid rgba(245, 158, 11, 0.15)', marginBottom: 12 }}>
         Dette er et utkast fra workshopen. Må gjennomgås av ansvarlig før bruk.
       </p>
-      <div style={{ display: 'flex', gap: 8 }}>
+      <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
         <button onClick={handleMarkdownExport} aria-label="Last ned som tekstfil">
           Last ned som tekstfil
         </button>
         <button onClick={handleJsonExport} aria-label="Last ned som datafil">
           Last ned som datafil
+        </button>
+        <button
+          onClick={async () => {
+            if (!project || !task) return
+            const blob = await generateWordDocument(project, task, decisionLog, scenarios, makerName)
+            const url = URL.createObjectURL(blob)
+            const link = document.createElement('a')
+            link.href = url
+            link.download = `vurdering_${safeFilename}.docx`
+            link.click()
+            URL.revokeObjectURL(url)
+          }}
+          aria-label="Last ned som Word-dokument"
+          style={{ background: '#1E3A5F', color: '#ffffff', border: 'none', borderRadius: '4px', padding: '6px 12px', cursor: 'pointer', fontSize: '0.875rem', fontWeight: 600 }}
+        >
+          Last ned som Word (.docx)
         </button>
       </div>
     </div>

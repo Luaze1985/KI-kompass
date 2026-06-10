@@ -127,7 +127,7 @@ export default function DecisionLog() {
   const trafficLightExplanations = {
     green: 'Grunnlaget er dokumentert, men prosjektgruppen må fortsatt gjøre egen vurdering.',
     yellow: 'Noen forhold må avklares før KI-output kan brukes.',
-    red: 'Saken må stoppes og avklares før videre KI-bruk.',
+    red: 'Avklar forholdene i listen over før KI-output brukes. Ta en pause, diskuter i gruppen.',
   }
   const trafficLightColors = {
     green: '#10b981',
@@ -159,6 +159,21 @@ export default function DecisionLog() {
         </div>
       </div>
 
+      <div style={{ marginBottom: '20px', padding: '16px', background: '#f8fafc', borderRadius: '4px', border: '1px solid var(--border)' }}>
+        <h4 style={{ margin: '0 0 12px 0', fontSize: '0.875rem', fontWeight: 600 }}>Status</h4>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '12px' }}>
+          <div style={{ padding: '12px', border: '1px solid var(--border)', borderRadius: '4px', background: '#ffffff' }}>
+            <div className="small" style={{ color: 'var(--text-secondary)' }}>Hvor mye er fylt ut</div>
+            <strong>{complianceScore}% utfylt</strong>
+          </div>
+          <div style={{ padding: '12px', border: `1px solid ${trafficLightColors[trafficLight]}`, borderRadius: '4px', background: '#ffffff' }}>
+            <div className="small" style={{ color: 'var(--text-secondary)' }}>Status</div>
+            <strong style={{ color: trafficLightColors[trafficLight] }}>{trafficLightLabels[trafficLight]}</strong>
+            <p className="small" style={{ margin: '6px 0 0 0' }}>{trafficLightExplanations[trafficLight]}</p>
+          </div>
+        </div>
+      </div>
+
       <div style={{ display: 'grid', gap: '16px' }}>
         <LogField
           label="Risikovurdering"
@@ -181,18 +196,7 @@ export default function DecisionLog() {
       </div>
 
       <div style={{ marginTop: '24px', padding: '16px', background: '#f8fafc', borderRadius: '4px', border: '1px solid var(--border)' }}>
-        <h4 style={{ margin: '0 0 12px 0', fontSize: '0.875rem', fontWeight: 600 }}>Risikovurdering og tiltak</h4>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '12px', marginBottom: '16px' }}>
-          <div style={{ padding: '12px', border: '1px solid var(--border)', borderRadius: '4px', background: '#ffffff' }}>
-            <div className="small" style={{ color: 'var(--text-secondary)' }}>Hvor mye er fylt ut</div>
-            <strong>{complianceScore}% utfylt</strong>
-          </div>
-          <div style={{ padding: '12px', border: `1px solid ${trafficLightColors[trafficLight]}`, borderRadius: '4px', background: '#ffffff' }}>
-            <div className="small" style={{ color: 'var(--text-secondary)' }}>Status</div>
-            <strong style={{ color: trafficLightColors[trafficLight] }}>{trafficLightLabels[trafficLight]}</strong>
-            <p className="small" style={{ margin: '6px 0 0 0' }}>{trafficLightExplanations[trafficLight]}</p>
-          </div>
-        </div>
+        <h4 style={{ margin: '0 0 12px 0', fontSize: '0.875rem', fontWeight: 600 }}>Risikoreduserende tiltak</h4>
         <LogField
           label="Risikoreduserende tiltak"
           value={decisionLogText.internkontrollTiltak}

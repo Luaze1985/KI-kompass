@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useAppStore, type CalculationModel } from '../../store/store'
+import { useAppStore } from '../../store/store'
 import type { AiUseTask } from '../../domain/schemas'
 import { allCases } from '../../fixtures/all-cases'
 import { getSystemProposal, getContextualQuestions, compareBlindTestRole, STOP_RULE_QUESTIONS, STOP_RULES_MAP } from '../../services/mockDiagnosisService'
@@ -237,6 +237,8 @@ function RegulationsModule({ compact = false }: { compact?: boolean }) {
 function AssessmentStatusBar({ task }: { task: AiUseTask }) {
   const trafficLight = task.expectedTrafficLight ?? 'yellow'
   const assessmentComplete = task.assessmentComplete ?? false
+  const { decisionLogText } = useAppStore()
+  const [showMissing, setShowMissing] = useState(false)
 
   const lightConfig = {
     green:  { emoji: '🟢', label: 'Grønt lys',  color: '#10b981', bg: 'rgba(16,185,129,0.08)',  border: 'rgba(16,185,129,0.25)'  },
@@ -245,16 +247,49 @@ function AssessmentStatusBar({ task }: { task: AiUseTask }) {
   }
   const lc = lightConfig[trafficLight]
 
+  const fieldLabels: Record<string, string> = {
+    risikovurdering: 'Risikovurdering',
+    menneskeligKontroll: 'Menneskelig kontroll',
+    endeligBeslutning: 'Foreløpig vurdering og ansvar',
+    internkontrollTiltak: 'Risikoreduserende tiltak',
+  }
+  const missingFields = (Object.keys(fieldLabels) as (keyof typeof decisionLogText)[]).filter(
+    (k) => !decisionLogText[k]?.trim()
+  )
+
   return (
-    <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '16px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 12px', background: lc.bg, border: `1px solid ${lc.border}`, borderRadius: '20px', fontSize: '0.8125rem', fontWeight: 600, color: lc.color }}>
-        <span>{lc.emoji}</span>
-        <span>Risikonivå: {lc.label}</span>
+    <div style={{ marginBottom: '16px' }}>
+      <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 12px', background: lc.bg, border: `1px solid ${lc.border}`, borderRadius: '20px', fontSize: '0.8125rem', fontWeight: 600, color: lc.color }}>
+          <span>{lc.emoji}</span>
+          <span>Risikonivå: {lc.label}</span>
+        </div>
+        {assessmentComplete ? (
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 12px', background: 'rgba(16,185,129,0.06)', border: '1px solid rgba(16,185,129,0.2)', borderRadius: '20px', fontSize: '0.8125rem', fontWeight: 600, color: '#10b981' }}>
+            <span>✅</span>
+            <span>Vurderingen er ferdig</span>
+          </div>
+        ) : (
+          <button
+            onClick={() => setShowMissing((v) => !v)}
+            style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 12px', background: 'rgba(148,163,184,0.1)', border: '1px solid rgba(148,163,184,0.3)', borderRadius: '20px', fontSize: '0.8125rem', fontWeight: 600, color: '#64748b', cursor: 'pointer' }}
+          >
+            <span>⏳</span>
+            <span>Notatet er ikke ferdig utfylt</span>
+            <span style={{ fontSize: '0.7rem' }}>{showMissing ? '▲' : '▼'}</span>
+          </button>
+        )}
       </div>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 12px', background: assessmentComplete ? 'rgba(16,185,129,0.06)' : 'rgba(148,163,184,0.1)', border: `1px solid ${assessmentComplete ? 'rgba(16,185,129,0.2)' : 'rgba(148,163,184,0.3)'}`, borderRadius: '20px', fontSize: '0.8125rem', fontWeight: 600, color: assessmentComplete ? '#10b981' : '#64748b' }}>
-        <span>{assessmentComplete ? '✅' : '⏳'}</span>
-        <span>{assessmentComplete ? 'Vurderingen er ferdig' : 'Notatet er ikke ferdig utfylt'}</span>
-      </div>
+      {!assessmentComplete && showMissing && missingFields.length > 0 && (
+        <div style={{ marginTop: '8px', padding: '10px 14px', background: '#f8fafc', border: '1px solid var(--border)', borderRadius: '8px', fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>
+          <div style={{ fontWeight: 600, marginBottom: '6px', color: 'var(--text-primary)' }}>Mangler utfylling:</div>
+          <ul style={{ margin: 0, paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+            {missingFields.map((k) => (
+              <li key={k}>{fieldLabels[k]}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   )
 }
@@ -278,7 +313,6 @@ export default function Dashboard() {
     stopRuleDiscussed,
     setStopRuleDiscussed,
     calculationModel,
-    setCalculationModel,
   } = useAppStore()
 
   const [isExplainingFormula, setIsExplainingFormula] = useState(false)
@@ -468,7 +502,7 @@ export default function Dashboard() {
                         {/* Proposed Case File */}
                         <div style={{ padding: '12px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px' }}>
                           <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Valgt sak:</span>
-                          <strong style={{ fontSize: '0.875rem' }}>{selectedCaseId}: {project?.title}</strong>
+                          <strong style={{ fontSize: '0.875rem' }}>{project?.title}</strong>
                         </div>
 
                         {/* Proposed Task / Unit of evaluation */}
@@ -724,7 +758,7 @@ export default function Dashboard() {
                       >
                         {project?.aiUseTasks.map((t) => (
                           <option key={t.taskId} value={t.taskId}>
-                            {t.title} ({t.taskId})
+                            {t.title}
                           </option>
                         ))}
                       </select>
@@ -862,43 +896,6 @@ export default function Dashboard() {
                   <>
                     <CompassView />
                     <div style={{ marginTop: '16px' }}>
-                      {/* Model Selector Widget */}
-                      <div style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'space-between',
-                        background: 'var(--bg-card)',
-                        border: '1px solid var(--border)',
-                        borderRadius: '8px',
-                        padding: '8px 12px',
-                        marginBottom: '10px',
-                        fontSize: '0.8125rem'
-                      }}>
-                        <span style={{ fontWeight: 600, color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                          ⚙️ Visningstype:
-                        </span>
-                        <select
-                          value={calculationModel}
-                          onChange={(e) => setCalculationModel(e.target.value as CalculationModel)}
-                          disabled={isMakerChecked}
-                          style={{
-                            padding: '4px 8px',
-                            border: '1px solid var(--border)',
-                            borderRadius: '4px',
-                            background: 'var(--bg-input)',
-                            color: 'var(--text-primary)',
-                            fontSize: '0.8125rem',
-                            fontWeight: 500,
-                            cursor: isMakerChecked ? 'not-allowed' : 'pointer',
-                            outline: 'none',
-                          }}
-                        >
-                          <option value="linear">Enkel (Standard)</option>
-                          <option value="gmm">Strengere ved sprik</option>
-                          <option value="conservative">Forsiktig</option>
-                        </select>
-                      </div>
-
                       <button
                         onClick={() => setIsExplainingFormula(!isExplainingFormula)}
                         style={{
@@ -1022,6 +1019,7 @@ export default function Dashboard() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 <ScenarioCards />
                 <CheckpointsAndReflections />
+                <LensPanel />
 
                 {/* Next Step Button */}
                 <div style={{ marginTop: '24px', textAlign: 'right' }}>
