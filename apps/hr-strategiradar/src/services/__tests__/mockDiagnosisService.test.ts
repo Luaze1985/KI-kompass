@@ -2,6 +2,8 @@ import { describe, it, expect } from 'vitest'
 import {
   runCalculationEngine,
   calculateCompassPosition,
+  scaleScoreToAxis,
+  compareBlindTestRole,
   getDiagnosisData,
   evaluateStopRules,
   getRoleCap,
@@ -21,18 +23,29 @@ describe('mockDiagnosisService calculations and rules engine', () => {
     expect(data?.task.taskId).toBe('HRR-01-A')
   })
 
-  it('calculates compass position correctly', () => {
+  it('calculates compass position correctly (sentrert på terskel 3.0)', () => {
     const data = getDiagnosisData('HRR-01')
     expect(data).not.toBeNull()
     if (data) {
       const position = calculateCompassPosition(data.task, 'linear')
       const scores = data.task.expectedModuleScores
-      const expectedX = (scores.separabilitet.score - 1) / 4
-      const expectedY = (scores.målklarhet.score - 1) / 4
+      const expectedX = scaleScoreToAxis(scores.separabilitet.score)
+      const expectedY = scaleScoreToAxis(scores.målklarhet.score)
 
       expect(position.x).toBe(expectedX)
       expect(position.y).toBe(expectedY)
     }
+  })
+
+  it('scaleScoreToAxis sentrerer score 3.0 på 0.5 og forsterker rundt terskelen', () => {
+    expect(scaleScoreToAxis(3.0)).toBe(0.5)
+    // Høyere score → høyere koordinat, og forskjellen er større enn gammel (score-1)/4
+    expect(scaleScoreToAxis(4.0)).toBeGreaterThan(scaleScoreToAxis(3.5))
+    expect(scaleScoreToAxis(3.5)).toBeGreaterThan(0.5)
+    expect(scaleScoreToAxis(2.0)).toBeLessThan(0.5)
+    // Klamping til [0,1]
+    expect(scaleScoreToAxis(1.0)).toBeGreaterThanOrEqual(0)
+    expect(scaleScoreToAxis(5.0)).toBeLessThanOrEqual(1)
   })
 
   it('calculates base role from compass and control scores', () => {
@@ -51,6 +64,17 @@ describe('mockDiagnosisService calculations and rules engine', () => {
     // Lav målklarhet (<3) + Høy separabilitet (>=3) -> strategisk_autonomi
     expect(getCalculatedRole(2.0, 4.0)).toBe('strategisk_autonomi')
     expect(getCalculatedRole(2.5, 3.0)).toBe('strategisk_autonomi')
+  })
+
+  it('compareBlindTestRole flagger overconfidence når gruppen vil gi KI større rolle', () => {
+    // Gruppen velger automatisert, systemet anbefaler idégiver -> overconfident
+    expect(compareBlindTestRole('automatisert_beslutning', 'utforskende_støtte')).toBe('overconfident')
+    // Gruppen strengere enn systemet -> cautious
+    expect(compareBlindTestRole('utforskende_støtte', 'forsterket_skjønn')).toBe('cautious')
+    // Samme nivå -> agree
+    expect(compareBlindTestRole('forsterket_skjønn', 'forsterket_skjønn')).toBe('agree')
+    // Mangler svar -> null
+    expect(compareBlindTestRole(null, 'utforskende_støtte')).toBe(null)
   })
 
   it('evaluates role prioritization (minRole) correctly', () => {

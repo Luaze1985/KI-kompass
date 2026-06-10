@@ -42,6 +42,16 @@ export function getDiagnosisDataForTask(caseId: string, taskId: string) {
   return { project: clonedProject, task }
 }
 
+// Forsterkning rundt beslutningsterskelen. Score 3.0 = midten (0.5) på kompasset
+// (samme sted som aksekorset). En høyere GAIN sprer realistiske score-forskjeller
+// tydeligere utover, så prikken faktisk beveger seg mellom saker.
+export const COMPASS_GAIN = 0.4
+
+// Map en modul-score (1–5) til en kompass-koordinat (0–1), sentrert på terskelen 3.0.
+export function scaleScoreToAxis(score: number): number {
+  return Math.max(0, Math.min(1, 0.5 + (score - 3) * COMPASS_GAIN))
+}
+
 // Auto-calculate compass position from module scores
 export function calculateCompassPosition(
   task: AiUseTask,
@@ -51,21 +61,23 @@ export function calculateCompassPosition(
   if (model === 'conservative') {
     const minVal = Math.min(scores.separabilitet.score, scores.målklarhet.score)
     return {
-      x: (minVal - 1) / 4,
-      y: (minVal - 1) / 4,
+      x: scaleScoreToAxis(minVal),
+      y: scaleScoreToAxis(minVal),
     }
   }
   if (model === 'linear') {
     return {
-      x: (scores.separabilitet.score - 1) / 4,
-      y: (scores.målklarhet.score - 1) / 4,
+      x: scaleScoreToAxis(scores.separabilitet.score),
+      y: scaleScoreToAxis(scores.målklarhet.score),
     }
   }
-  // Default: gmm
+  // Default: gmm — trekk mot midten (0.5) når aksene spriker (usikkerhet øker)
   const penalty = 1 - Math.abs(scores.målklarhet.score - scores.separabilitet.score) / 10
+  const baseX = scaleScoreToAxis(scores.separabilitet.score)
+  const baseY = scaleScoreToAxis(scores.målklarhet.score)
   return {
-    x: Math.max(0, Math.min(1, ((scores.separabilitet.score - 1) / 4) * penalty)),
-    y: Math.max(0, Math.min(1, ((scores.målklarhet.score - 1) / 4) * penalty)),
+    x: 0.5 + (baseX - 0.5) * penalty,
+    y: 0.5 + (baseY - 0.5) * penalty,
   }
 }
 
@@ -233,6 +245,23 @@ export function minRole(
   role2: 'utforskende_støtte' | 'forsterket_skjønn' | 'strategisk_autonomi' | 'automatisert_beslutning'
 ): 'utforskende_støtte' | 'forsterket_skjønn' | 'strategisk_autonomi' | 'automatisert_beslutning' {
   return ROLE_ORDER[role1] <= ROLE_ORDER[role2] ? role1 : role2;
+}
+
+// Sammenlign gruppens blindtest-svar med systemets anbefalte rolle.
+// 'overconfident' = gruppen vil gi KI en STØRRE rolle enn systemet anbefaler (advarsel).
+// 'cautious'      = gruppen er strengere enn systemet. 'agree' = samme nivå.
+export type BlindTestComparison = 'agree' | 'overconfident' | 'cautious' | null
+export function compareBlindTestRole(
+  userAnswer: string | null,
+  allowedRole: string | null
+): BlindTestComparison {
+  if (!userAnswer || !allowedRole) return null
+  const userRank = ROLE_ORDER[userAnswer as keyof typeof ROLE_ORDER]
+  const allowedRank = ROLE_ORDER[allowedRole as keyof typeof ROLE_ORDER]
+  if (userRank === undefined || allowedRank === undefined) return null
+  if (userRank > allowedRank) return 'overconfident'
+  if (userRank < allowedRank) return 'cautious'
+  return 'agree'
 }
 
 // Core evaluation of stop rules
@@ -407,6 +436,67 @@ export function mapCheckpointAnswersToModel(
       task.directEffectOnPeople = true;
       task.expectedModuleScores.separabilitet.score = 1.5;
     }
+  } else if (caseId === 'HRR-03') {
+    // Q0: 'Skal KI analysere aggregerte tall, eller foreslå konkret turnusfordeling?'
+    if (answers[0] === 'yes' || answers[0] === 'info') {
+      task.directEffectOnPeople = true;
+      judgments.rightsOrWorkImpact = true;
+      task.expectedRiskFlags.rightsOrSignificantImpact = true;
+      task.expectedModuleScores.separabilitet.score = 1.5;
+    }
+    // Q1: 'Er tillitsvalgte involvert i bemanningsendringene?'
+    if (answers[1] !== 'yes') {
+      task.expectedRiskFlags.workConditionsImpact = true;
+      judgments.rightsOrWorkImpact = true;
+    }
+  } else if (caseId === 'HRR-05') {
+    // Q0: 'Skal KI se på aggregerte kompetansegap, eller vurdere enkeltansatte?'
+    if (answers[0] === 'yes' || answers[0] === 'info') {
+      task.directEffectOnPeople = true;
+      task.usesPersonalOrSensitiveData = true;
+      judgments.sensitiveOrPersonalDataRisk = true;
+      task.expectedRiskFlags.personalOrSensitiveData = true;
+      task.expectedModuleScores.separabilitet.score = 1.5;
+    }
+    // Q1: 'Brukes resultatene til forfremmelse eller mobilitet for navngitte ansatte?'
+    if (answers[1] === 'yes' || answers[1] === 'info') {
+      judgments.rightsOrWorkImpact = true;
+      task.expectedRiskFlags.rightsOrSignificantImpact = true;
+      task.expectedRiskFlags.discriminationRisk = true;
+    }
+  } else if (caseId === 'HRR-06') {
+    // Q0: 'Gjelder det en generell mal, eller oppfølging av en navngitt lærling?'
+    if (answers[0] === 'yes' || answers[0] === 'info') {
+      task.directEffectOnPeople = true;
+      judgments.rightsOrWorkImpact = true;
+      task.expectedModuleScores.separabilitet.score = 1.5;
+    }
+    // Q1: 'Skal KI risikoscore lærlinger for frafall?'
+    if (answers[1] === 'yes' || answers[1] === 'info') {
+      task.usesPersonalOrSensitiveData = true;
+      judgments.sensitiveOrPersonalDataRisk = true;
+      task.expectedRiskFlags.personalOrSensitiveData = true;
+      task.expectedRiskFlags.discriminationRisk = true;
+      task.expectedModuleScores.separabilitet.score = 1.5;
+      task.expectedModuleScores.målklarhet.score = 3.0;
+    }
+  } else if (caseId === 'HRR-08') {
+    // Q0: 'Skal KI lage overordnede scenarioer, eller foreslå hvem som skal tas ut?'
+    if (answers[0] === 'yes' || answers[0] === 'info') {
+      task.directEffectOnPeople = true;
+      judgments.rightsOrWorkImpact = true;
+      judgments.errorReversible = false;
+      task.expectedRiskFlags.irreversibleConsequences = true;
+      task.expectedModuleScores.separabilitet.score = 1.0;
+      task.expectedModuleScores.målklarhet.score = 4.0;
+    }
+    // Q1: 'Er målene for omstillingen omforent og tydelige?'
+    if (answers[1] === 'no' || answers[1] === 'info') {
+      task.expectedModuleScores.målklarhet.score = 2.5;
+      judgments.valueConflictPresent = true;
+    } else if (answers[1] === 'yes') {
+      task.expectedModuleScores.målklarhet.score = 4.0;
+    }
   }
 }
 
@@ -557,6 +647,22 @@ export function getContextualQuestions(caseId: string): string[] {
       'Er tillitsvalgte og verneombud involvert?',
       'Skal KI hjelpe med analyse eller med å fordele vakter?',
     ],
+    'HRR-03': [
+      'Skal KI analysere aggregerte tall, eller foreslå konkret turnusfordeling?',
+      'Er tillitsvalgte involvert i bemanningsendringene?',
+    ],
+    'HRR-05': [
+      'Skal KI se på aggregerte kompetansegap, eller vurdere enkeltansatte?',
+      'Brukes resultatene til forfremmelse eller mobilitet for navngitte ansatte?',
+    ],
+    'HRR-06': [
+      'Gjelder det en generell mal, eller oppfølging av en navngitt lærling?',
+      'Skal KI risikoscore lærlinger for frafall?',
+    ],
+    'HRR-08': [
+      'Skal KI lage overordnede scenarioer, eller foreslå hvem som skal tas ut?',
+      'Er målene for omstillingen omforent og tydelige?',
+    ],
   }
   return map[caseId] || []
 }
@@ -592,6 +698,30 @@ export function getSystemProposal(caseId: string): {
       affectedParties: 'Ansatte i turnus, brukere/pasienter, tillitsvalgte',
       suggestedTask: 'Strukturere beslutningsgrunnlag og scenarioer',
       keyRisk: 'Arbeidstid, HMS og pasient-/brukersikkerhet',
+    },
+    'HRR-03': {
+      summary: 'Enheten vil redusere uønsket deltid og styrke heltidskultur og helgebemanning. KI kan hjelpe med å analysere aggregert bemanning.',
+      affectedParties: 'Deltids- og heltidsansatte, ledere, tillitsvalgte',
+      suggestedTask: 'Analysere aggregert bemanning og lage scenarioer',
+      keyRisk: 'Kan gli over i konkret turnustildeling på individnivå',
+    },
+    'HRR-05': {
+      summary: 'HR vil kartlegge kompetansegap for å prioritere opplæring og intern mobilitet. KI kan strukturere aggregerte kompetansedata.',
+      affectedParties: 'Ansatte som får/ikke får utvikling, ledere, HR',
+      suggestedTask: 'Kartlegge aggregerte kompetansegap',
+      keyRisk: 'Kan bli individuell scoring for forfremmelse (bias/rettferdighet)',
+    },
+    'HRR-06': {
+      summary: 'En lærling står i fare for frafall. KI kan strukturere en oppfølgingsmal, men oppfølgingen gjelder en sårbar ung arbeidstaker.',
+      affectedParties: 'Sårbar lærling, veileder, lærlingkoordinator',
+      suggestedTask: 'Lage oppfølgingsplan-mal',
+      keyRisk: 'Kan bli risikoscoring som stempler enkeltlærlinger',
+    },
+    'HRR-08': {
+      summary: 'Kommunen skal redusere kostnader gjennom omstilling og naturlig avgang. KI kan lage scenario- og risikokart på aggregert nivå.',
+      affectedParties: 'Ansatte som påvirkes, ledere, tillitsvalgte',
+      suggestedTask: 'Lage scenario- og risikokart',
+      keyRisk: 'Verdiladede, uklare mål; kan gli over i forslag om hvem som kuttes',
     },
   }
   return map[caseId] || null

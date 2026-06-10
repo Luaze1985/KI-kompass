@@ -35,12 +35,19 @@ function generateRestrictions(task: AiUseTask, judgments: ValueJudgments): strin
  * All user-facing text uses presentation language — no SR-codes,
  * no "separabilitet", no technical jargon.
  */
+export interface ReportMeta {
+  blindTestComparison?: 'agree' | 'overconfident' | 'cautious' | null
+  stopRulesDiscussed?: number
+  totalStopRules?: number
+}
+
 export function generateReport(
   project: HrMicroproject,
   task: AiUseTask,
   judgments: ValueJudgments,
   decisionLog: Record<string, string>,
-  scenarios: Scenario[]
+  scenarios: Scenario[],
+  meta?: ReportMeta
 ): string {
   const stopRuleTexts = task.expectedStopRules.map(r => presentStopRule(r))
   const restrictions = generateRestrictions(task, judgments)
@@ -166,6 +173,24 @@ export function generateReport(
     sections.push(`### Beslutning`)
     sections.push('')
     sections.push(decisionLog.endeligBeslutning)
+    sections.push('')
+  }
+
+  // 9. Gruppens egen vurdering (blindtest + avklaring)
+  if (meta && (meta.blindTestComparison || typeof meta.totalStopRules === 'number')) {
+    sections.push(`## Gruppens egen vurdering`)
+    sections.push('')
+    if (meta.blindTestComparison === 'overconfident') {
+      sections.push(`- ⚠️ Gruppen vurderte KI til en større rolle enn systemet anbefaler. Risikoen bør dobbeltsjekkes.`)
+    } else if (meta.blindTestComparison === 'cautious') {
+      sections.push(`- Gruppen var strengere enn systemet i blindtesten.`)
+    } else if (meta.blindTestComparison === 'agree') {
+      sections.push(`- Gruppen og systemet kom frem til samme KI-rolle i blindtesten.`)
+    }
+    if (typeof meta.totalStopRules === 'number' && meta.totalStopRules > 0) {
+      const discussed = meta.stopRulesDiscussed ?? 0
+      sections.push(`- Forhold avklart av gruppen: ${discussed} av ${meta.totalStopRules}${discussed === meta.totalStopRules ? ' (alle avklart)' : ' (anbefalingen er foreløpig)'}.`)
+    }
     sections.push('')
   }
 

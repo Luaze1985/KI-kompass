@@ -1,5 +1,5 @@
 import { useAppStore } from '../../store/store'
-import { getDiagnosisDataForTask, calculateCompassPosition } from '../../services/mockDiagnosisService'
+import { getDiagnosisDataForTask } from '../../services/mockDiagnosisService'
 import { allCases } from '../../fixtures/all-cases'
 
 const CASES = [
@@ -16,7 +16,6 @@ export default function SidebarSelector() {
     activeTask,
     setActiveData,
     isMakerChecked,
-    calculationModel,
   } = useAppStore()
 
   const project = allCases.find((c) => c.caseId === selectedCaseId)
@@ -28,8 +27,7 @@ export default function SidebarSelector() {
     const proj = allCases.find((c) => c.caseId === caseId)
     if (proj && proj.aiUseTasks.length > 0) {
       const defaultTask = proj.aiUseTasks[0]
-      const compass = calculateCompassPosition(defaultTask, calculationModel)
-      setActiveData(proj, defaultTask, compass)
+      setActiveData(proj, defaultTask)
     }
   }
 
@@ -38,8 +36,7 @@ export default function SidebarSelector() {
     if (!selectedCaseId || !project) return
     const data = getDiagnosisDataForTask(selectedCaseId, taskId)
     if (data) {
-      const compass = calculateCompassPosition(data.task, calculationModel)
-      setActiveData(data.project, data.task, compass)
+      setActiveData(data.project, data.task)
     }
   }
 

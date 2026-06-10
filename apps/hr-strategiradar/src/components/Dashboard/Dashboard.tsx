@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useAppStore, type CalculationModel } from '../../store/store'
 import { allCases } from '../../fixtures/all-cases'
-import { calculateCompassPosition, getSystemProposal, STOP_RULE_QUESTIONS, STOP_RULES_MAP } from '../../services/mockDiagnosisService'
+import { getSystemProposal, getContextualQuestions, compareBlindTestRole, STOP_RULE_QUESTIONS, STOP_RULES_MAP } from '../../services/mockDiagnosisService'
 import CompassView from './CompassView'
 import CheckpointsAndReflections from './CheckpointsAndReflections'
 import DecisionLog from './DecisionLog'
@@ -11,9 +11,58 @@ import ExportPanel from './ExportPanel'
 const CASES = [
   { id: 'HRR-01', label: 'Seniorbevaring i hjemmetjenesten' },
   { id: 'HRR-02', label: 'Gradert sykefravær og tilrettelegging' },
+  { id: 'HRR-03', label: 'Heltidskultur og helgebemanning' },
   { id: 'HRR-04', label: 'Rekruttering av helsefagkompetanse' },
+  { id: 'HRR-05', label: 'Kompetanseutvikling og intern mobilitet' },
+  { id: 'HRR-06', label: 'Lærling med fare for frafall' },
   { id: 'HRR-07', label: 'Langvakter i helsesektoren' },
+  { id: 'HRR-08', label: 'Omstilling og naturlig avgang' },
 ]
+
+function IntroCard() {
+  return (
+    <div
+      className="card fade-in"
+      style={{
+        padding: '20px 24px',
+        marginBottom: '24px',
+        background: 'linear-gradient(135deg, rgba(2,132,199,0.06), rgba(16,185,129,0.05))',
+        border: '1px solid var(--border)',
+      }}
+    >
+      <h2 style={{ margin: '0 0 6px 0', fontSize: '1.1rem', color: 'var(--accent-hover)' }}>
+        Slik fungerer KI-Radaren
+      </h2>
+      <p className="small" style={{ color: 'var(--text-secondary)', margin: '0 0 14px 0', maxWidth: '70ch' }}>
+        Verktøyet hjelper prosjektgruppen å vurdere om det er forsvarlig å bruke KI i en konkret HR-oppgave.
+        Dere svarer på noen spørsmål, og systemet viser en foreløpig vurdering. <strong>Svarene deres styrer
+        vurderingen</strong> — kompasset, trafikklyset og den anbefalte KI-rollen endrer seg når dere svarer.
+      </p>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '12px' }}>
+        <div style={{ padding: '12px', background: '#ffffff', borderRadius: '8px', border: '1px solid var(--border-light)' }}>
+          <strong style={{ fontSize: '0.8125rem', display: 'block', marginBottom: '4px' }}>🧭 Kompasset</strong>
+          <span className="small" style={{ color: 'var(--text-secondary)' }}>
+            To akser: hvor <em>tydelige målene</em> er, og om oppgaven <em>kan løses med faste regler</em>.
+            Prikken viser hvor oppgaven havner.
+          </span>
+        </div>
+        <div style={{ padding: '12px', background: '#ffffff', borderRadius: '8px', border: '1px solid var(--border-light)' }}>
+          <strong style={{ fontSize: '0.8125rem', display: 'block', marginBottom: '4px' }}>🚦 Trafikklyset</strong>
+          <span className="small" style={{ color: 'var(--text-secondary)' }}>
+            Grønt = greit å jobbe videre. Gult = noe må avklares. Rødt = stopp og gjør en grundig vurdering først.
+          </span>
+        </div>
+        <div style={{ padding: '12px', background: '#ffffff', borderRadius: '8px', border: '1px solid var(--border-light)' }}>
+          <strong style={{ fontSize: '0.8125rem', display: 'block', marginBottom: '4px' }}>🗣️ Deres svar teller</strong>
+          <span className="small" style={{ color: 'var(--text-secondary)' }}>
+            Spørsmålene i steg 1, blindtesten og avklaringene i steg 2, og risikoene i steg 3 former den
+            endelige anbefalingen.
+          </span>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 function RegulationsModule({ compact = false }: { compact?: boolean }) {
   const [activeTab, setActiveTab] = useState<'eu' | 'national' | 'internal' | null>(null)
@@ -217,8 +266,7 @@ export default function Dashboard() {
     const proj = allCases.find((c) => c.caseId === caseId)
     if (proj && proj.aiUseTasks.length > 0) {
       const defaultTask = proj.aiUseTasks[0]
-      const compass = calculateCompassPosition(defaultTask, calculationModel)
-      setActiveData(proj, defaultTask, compass)
+      setActiveData(proj, defaultTask)
     }
   }
 
@@ -234,19 +282,7 @@ export default function Dashboard() {
     { num: 4, label: '4. Beslutningsnotat', disabled: !selectedCaseId || !isAssumptionsConfirmed },
   ]
 
-  const contextualQuestions = selectedCaseId ? (selectedCaseId === 'HRR-01' ? [
-    'Gjelder saken konkrete senioransatte eller policy på gruppenivå?',
-    'Er formålet å beholde folk lenger, eller å forstå hvorfor de slutter?',
-  ] : selectedCaseId === 'HRR-02' ? [
-    'Skal KI hjelpe med møtestruktur, eller med selve tilretteleggingen?',
-    'Involverer saken helseopplysninger?',
-  ] : selectedCaseId === 'HRR-04' ? [
-    'Skal KI hjelpe med kravprofil/utlysning, eller med å vurdere kandidater?',
-    'Er det fare for diskriminering i utvelgelsen?',
-  ] : selectedCaseId === 'HRR-07' ? [
-    'Gjelder det vakter over 12,5 timer?',
-    'Er tillitsvalgte og verneombud involvert?',
-  ] : []) : []
+  const contextualQuestions = selectedCaseId ? getContextualQuestions(selectedCaseId) : []
 
   return (
     <div style={{ minHeight: '100vh', background: 'var(--bg-main)', color: 'var(--text-primary)', display: 'flex', flexDirection: 'column' }}>
@@ -297,6 +333,9 @@ export default function Dashboard() {
       {/* Main Content Area */}
       <main style={{ padding: '32px', flex: 1, display: 'flex', justifyContent: 'center' }}>
         <div style={{ width: '100%', maxWidth: '1200px' }}>
+
+          {/* Oppstarts-veiledning (kun steg 1) */}
+          {currentStep === 1 && <IntroCard />}
 
           {/* STEP 1: BESKRIV SAKEN */}
           {currentStep === 1 && (
@@ -598,15 +637,31 @@ export default function Dashboard() {
                       </div>
 
                       <div style={{ marginTop: '12px', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
-                        {userBlindTestAnswer === activeTask.expectedAllowedRole ? (
-                          <p style={{ margin: 0, color: '#10b981' }}>
-                            ✓ <strong>Enig!</strong> Dere og systemet kom frem til det samme.
-                          </p>
-                        ) : (
-                          <p style={{ margin: 0, color: 'var(--accent)' }}>
-                            <strong>Uenighet:</strong> Dere og systemet er uenige. Diskuter om dere har vurdert risikoen for høyt eller for lavt.
-                          </p>
-                        )}
+                        {(() => {
+                          const cmp = compareBlindTestRole(userBlindTestAnswer, activeTask.expectedAllowedRole)
+                          if (cmp === 'agree') {
+                            return (
+                              <p style={{ margin: 0, color: '#10b981' }}>
+                                ✓ <strong>Enig!</strong> Dere og systemet kom frem til det samme.
+                              </p>
+                            )
+                          }
+                          if (cmp === 'overconfident') {
+                            return (
+                              <p style={{ margin: 0, color: '#b45309', background: 'rgba(245, 158, 11, 0.1)', padding: '10px 12px', borderRadius: '6px', border: '1px solid rgba(245, 158, 11, 0.25)' }}>
+                                ⚠️ <strong>Dere vurderer KI til en større rolle enn systemet anbefaler.</strong> Dobbeltsjekk risikoen før dere går videre — det er lettere å undervurdere enn å overvurdere faren.
+                              </p>
+                            )
+                          }
+                          if (cmp === 'cautious') {
+                            return (
+                              <p style={{ margin: 0, color: 'var(--accent)' }}>
+                                <strong>Dere er strengere enn systemet.</strong> Det er trygt, men diskuter gjerne om dere kan bruke KI litt mer aktivt enn dere først tenkte.
+                              </p>
+                            )
+                          }
+                          return null
+                        })()}
                       </div>
                     </div>
 
@@ -621,8 +676,7 @@ export default function Dashboard() {
                           if (isMakerChecked) return
                           const selectedTask = project?.aiUseTasks.find(t => t.taskId === e.target.value)
                           if (selectedTask && project) {
-                            const compass = calculateCompassPosition(selectedTask, calculationModel)
-                            setActiveData(project, selectedTask, compass)
+                            setActiveData(project, selectedTask)
                           }
                         }}
                         disabled={isMakerChecked}
@@ -653,15 +707,37 @@ export default function Dashboard() {
                     </div>
 
                     {/* Avklaringsspørsmål til gruppen */}
+                    {(() => {
+                      const stopRules = activeTask.expectedStopRules || []
+                      const discussedCount = stopRules.filter((sr) => stopRuleDiscussed[sr]).length
+                      const allDiscussed = stopRules.length > 0 && discussedCount === stopRules.length
+                      return (
                     <div style={{ marginBottom: '24px' }}>
-                      <h3 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-primary)', margin: '0 0 4px 0' }}>
-                        Spørsmål dere må diskutere
-                      </h3>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: '12px', flexWrap: 'wrap' }}>
+                        <h3 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-primary)', margin: '0 0 4px 0' }}>
+                          Spørsmål dere må diskutere
+                        </h3>
+                        {stopRules.length > 0 && (
+                          <span style={{
+                            fontSize: '0.8125rem',
+                            fontWeight: 700,
+                            color: allDiscussed ? '#10b981' : '#b45309',
+                            background: allDiscussed ? 'rgba(16,185,129,0.1)' : 'rgba(245,158,11,0.1)',
+                            border: `1px solid ${allDiscussed ? 'rgba(16,185,129,0.25)' : 'rgba(245,158,11,0.25)'}`,
+                            padding: '2px 10px',
+                            borderRadius: '12px',
+                          }}>
+                            {allDiscussed ? '✓ Alle forhold avklart' : `${discussedCount}/${stopRules.length} forhold avklart`}
+                          </span>
+                        )}
+                      </div>
                       <p className="small" style={{ color: 'var(--text-secondary)', margin: '0 0 12px 0' }}>
-                        Hak av når dere har diskutert og blitt enige.
+                        {allDiscussed
+                          ? 'Dere har gått gjennom alle forholdene. Anbefalingen under er ikke lenger foreløpig.'
+                          : 'Hak av når dere har diskutert og blitt enige. Anbefalingen er foreløpig til alle forhold er avklart.'}
                       </p>
 
-                      {activeTask.expectedStopRules && activeTask.expectedStopRules.length > 0 ? (
+                      {stopRules.length > 0 ? (
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                           {activeTask.expectedStopRules.map((sr) => {
                             const question = STOP_RULE_QUESTIONS[sr]
@@ -702,6 +778,8 @@ export default function Dashboard() {
                         </div>
                       )}
                     </div>
+                      )
+                    })()}
 
                     {/* Allowed Role Cap */}
                     <div style={{ padding: '20px', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px solid var(--border-light)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
@@ -712,6 +790,16 @@ export default function Dashboard() {
                            activeTask.expectedAllowedRole === 'forsterket_skjønn' ? 'KI hjelper, du bestemmer' :
                            activeTask.expectedAllowedRole === 'strategisk_autonomi' ? 'KI handler innen gitte rammer' : 'Automatisert beslutning'}
                         </strong>
+                        {(() => {
+                          const stopRules = activeTask.expectedStopRules || []
+                          if (stopRules.length === 0) return null
+                          const allDiscussed = stopRules.every((sr) => stopRuleDiscussed[sr])
+                          return (
+                            <span style={{ display: 'inline-block', marginTop: '6px', fontSize: '0.75rem', fontWeight: 700, color: allDiscussed ? '#10b981' : '#b45309' }}>
+                              {allDiscussed ? '✓ Avklart av gruppen' : 'Foreløpig — avklar forholdene over'}
+                            </span>
+                          )
+                        })()}
                       </div>
                       {activeTask.expectedStopRules && activeTask.expectedStopRules.length > 0 && (
                         <div style={{ textRendering: 'optimizeLegibility' }}>

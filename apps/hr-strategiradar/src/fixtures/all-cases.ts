@@ -586,7 +586,7 @@ export const allCases: HrMicroproject[] = [
         directEffectOnPeople: false,
         usesPersonalOrSensitiveData: false,
         expectedModuleScores: {
-          målklarhet: { score: 3.5, justification: 'Scenariene har et mål, men mye usikkerhet' },
+          målklarhet: { score: 2.5, justification: 'Omstillingsmålet er verdiladet og uklart — hva er en "riktig" nedbemanning?' },
           separabilitet: { score: 2.5, justification: 'Lokal politikk og verdivalg er sterkt tilstede' },
           forklarbarhet: { score: 3, justification: 'Forenklet virkelighet' },
           antiOverreliance: { score: 3, justification: 'Drøftes av en ledergruppe' },
@@ -602,7 +602,7 @@ export const allCases: HrMicroproject[] = [
           surveillanceOrControl: false,
         },
         expectedStopRules: ['SR-05', 'SR-06'],
-        expectedCalculatedRole: 'forsterket_skjønn',
+        expectedCalculatedRole: 'utforskende_støtte',
         expectedAllowedRole: 'utforskende_støtte',
         requiredControls: ['beslutningslogg'],
         requiredLocalVerification: 'Ledermøte',

@@ -104,7 +104,7 @@ interface AppState {
 
   setStep: (step: number) => void
   setSelectedCaseId: (id: string | null) => void
-  setActiveData: (project: HrMicroproject, task: AiUseTask, compass: Point) => void
+  setActiveData: (project: HrMicroproject, task: AiUseTask) => void
   setCompassPosition: (point: Point) => void
   setFreeText: (text: string) => void
   signDocument: (signed: boolean) => void
@@ -206,20 +206,27 @@ export const useAppStore = create<AppState>((set, get) => {
       return { currentStep: step }
     }),
     setSelectedCaseId: (id) => set((s) => (s.isMakerChecked ? {} : { selectedCaseId: id })),
-    setActiveData: (project, task, compass) =>
-      set((s) => s.isMakerChecked ? {} : {
-        activeProject: project,
-        activeTask: task,
-        compassPosition: compass,
-        valueJudgments: { ...INITIAL_VALUE_JUDGMENTS },
-        checkpointAnswers: {},
-        isDecisionLogComplete: false,
-        decisionLogText: emptyDecisionLogText(),
-        isSigned: false,
-        makerName: '',
-        isMakerChecked: false,
-        userBlindTestAnswer: null,
-        stopRuleDiscussed: {},
+    setActiveData: (project, task) =>
+      set((s) => {
+        if (s.isMakerChecked) return {}
+        // Kjør motoren med en gang slik at rolle/stoppregler/trafikklys er
+        // motor-derivert (konsistent) allerede i steg 1 — ingen hopp til steg 2.
+        const judgments = { ...INITIAL_VALUE_JUDGMENTS }
+        const calculated = runCalculationEngine(task, judgments, false, s.calculationModel, false)
+        return {
+          activeProject: project,
+          activeTask: calculated,
+          compassPosition: calculateCompassPosition(calculated, s.calculationModel),
+          valueJudgments: judgments,
+          checkpointAnswers: {},
+          isDecisionLogComplete: false,
+          decisionLogText: emptyDecisionLogText(),
+          isSigned: false,
+          makerName: '',
+          isMakerChecked: false,
+          userBlindTestAnswer: null,
+          stopRuleDiscussed: {},
+        }
       }),
     setCompassPosition: (point) => set((s) => (s.isMakerChecked ? {} : { compassPosition: point })),
     setFreeText: (text) => set((s) => (s.isMakerChecked ? {} : { freeText: text })),

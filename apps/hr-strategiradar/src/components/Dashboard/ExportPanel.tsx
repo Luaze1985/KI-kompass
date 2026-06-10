@@ -1,5 +1,6 @@
 import { useAppStore } from '../../store/store'
 import { generateReport, generateJsonExport } from '../../services/reportService'
+import { compareBlindTestRole } from '../../services/mockDiagnosisService'
 
 function downloadFile(content: string, filename: string, mimeType: string) {
   const blob = new Blob([content], { type: mimeType })
@@ -18,10 +19,19 @@ export default function ExportPanel() {
   const decisionLog = useAppStore(s => s.decisionLogText)
   const caseId = useAppStore(s => s.selectedCaseId)
   const allScenarios = useAppStore(s => s.scenarios)
+  const userBlindTestAnswer = useAppStore(s => s.userBlindTestAnswer)
+  const stopRuleDiscussed = useAppStore(s => s.stopRuleDiscussed)
   const scenarios = caseId ? (allScenarios[caseId] || []) : []
 
   if (!project || !task || !judgments) {
     return null
+  }
+
+  const stopRules = task.expectedStopRules || []
+  const reportMeta = {
+    blindTestComparison: compareBlindTestRole(userBlindTestAnswer, task.expectedAllowedRole),
+    stopRulesDiscussed: stopRules.filter(sr => stopRuleDiscussed[sr]).length,
+    totalStopRules: stopRules.length,
   }
 
   const hasAnyScenarioContent = scenarios.some(s => s.simulertHendelse.trim().length > 0)
@@ -29,7 +39,7 @@ export default function ExportPanel() {
 
   function handleMarkdownExport() {
     if (!project || !task || !judgments) return
-    const md = generateReport(project, task, judgments, decisionLog, scenarios)
+    const md = generateReport(project, task, judgments, decisionLog, scenarios, reportMeta)
     downloadFile(md, `beslutningsnotat_${safeFilename}.md`, 'text/markdown;charset=utf-8')
   }
 

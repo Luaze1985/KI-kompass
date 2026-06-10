@@ -44,6 +44,27 @@ describe('Kompass-differensiering — alle cases gir ulik startposisjon', () => 
   })
 })
 
+describe('Kompass-bredde — alle 8 eksponerte saker', () => {
+  const ALL_DASHBOARD_CASES = ['HRR-01', 'HRR-02', 'HRR-03', 'HRR-04', 'HRR-05', 'HRR-06', 'HRR-07', 'HRR-08']
+
+  it('alle 8 saker gir distinkte kompassposisjoner', () => {
+    const positions = ALL_DASHBOARD_CASES.map(id => calculateCompassPosition(getDiagnosisData(id)!.task))
+    const keys = positions.map(p => `${p.x.toFixed(3)},${p.y.toFixed(3)}`)
+    // Minst 6 av 8 unike posisjoner (litt rom for tilfeldig sammenfall)
+    expect(new Set(keys).size).toBeGreaterThanOrEqual(6)
+  })
+
+  it('sakene sprer seg over mer enn én kvadrant (variasjon i prikken)', () => {
+    const quadrants = new Set(
+      ALL_DASHBOARD_CASES.map(id => {
+        const p = calculateCompassPosition(getDiagnosisData(id)!.task)
+        return `${p.x >= 0.5 ? 'H' : 'V'}${p.y >= 0.5 ? 'O' : 'N'}`
+      })
+    )
+    expect(quadrants.size).toBeGreaterThanOrEqual(2)
+  })
+})
+
 describe('Trafikklys — grønt lys er oppnåelig', () => {
   it('minst én lavrisiko-case kan nå grønt lys med komplett logg', () => {
     const greens: string[] = []
