@@ -123,7 +123,8 @@ input[type="checkbox"]:checked::after {
 .dashboard-header {
   border-bottom: 1px solid var(--border);
   background: var(--bg-sidebar);
-  backdrop-filter: blur(20px);
+  /* Ingen backdrop-filter: bakgrunnen er opak, så blur er en no-op og hindrer
+     a11y-verktøy i å beregne ekte kontrast for nav-knappene. */
   padding: 16px 32px;
   position: sticky;
   top: 0;

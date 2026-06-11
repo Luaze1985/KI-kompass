@@ -43,9 +43,9 @@ export default function CompassView() {
   const trafficLight = activeTask.expectedTrafficLight || 'yellow'
 
   const borderColors = {
-    green: '#10b981',
-    yellow: '#f59e0b',
-    red: '#ef4444',
+    green: '#065f46',
+    yellow: '#b45309',
+    red: '#b91c1c',
   }
   const statusLabels = {
     green: 'OK å jobbe videre',
@@ -84,14 +84,14 @@ export default function CompassView() {
           <rect x={padding + gW / 2} y={padding + gH / 2} width={gW / 2} height={gH / 2} fill="rgba(245, 158, 11, 0.08)" />
 
           {/* Quadrant labels */}
-          <text x={padding + gW / 4} y={padding + 14} textAnchor="middle" fontSize="8px" fill="rgba(249,115,22,0.7)" fontWeight="600">Menneske vurderer</text>
-          <text x={padding + gW / 4} y={padding + 24} textAnchor="middle" fontSize="8px" fill="rgba(249,115,22,0.7)" fontWeight="600">KI-formål klart</text>
-          <text x={padding + 3 * gW / 4} y={padding + 14} textAnchor="middle" fontSize="8px" fill="rgba(16,185,129,0.8)" fontWeight="600">Faste regler</text>
-          <text x={padding + 3 * gW / 4} y={padding + 24} textAnchor="middle" fontSize="8px" fill="rgba(16,185,129,0.8)" fontWeight="600">KI-formål klart</text>
-          <text x={padding + gW / 4} y={H - padding - 14} textAnchor="middle" fontSize="8px" fill="rgba(239,68,68,0.7)" fontWeight="600">Menneske vurderer</text>
-          <text x={padding + gW / 4} y={H - padding - 4} textAnchor="middle" fontSize="8px" fill="rgba(239,68,68,0.7)" fontWeight="600">KI-formål uklart</text>
-          <text x={padding + 3 * gW / 4} y={H - padding - 14} textAnchor="middle" fontSize="8px" fill="rgba(245,158,11,0.8)" fontWeight="600">Faste regler</text>
-          <text x={padding + 3 * gW / 4} y={H - padding - 4} textAnchor="middle" fontSize="8px" fill="rgba(245,158,11,0.8)" fontWeight="600">KI-formål uklart</text>
+          <text x={padding + gW / 4} y={padding + 14} textAnchor="middle" fontSize="8px" fill="#9a3412" fontWeight="600">Menneske vurderer</text>
+          <text x={padding + gW / 4} y={padding + 24} textAnchor="middle" fontSize="8px" fill="#9a3412" fontWeight="600">KI-formål klart</text>
+          <text x={padding + 3 * gW / 4} y={padding + 14} textAnchor="middle" fontSize="8px" fill="#065f46" fontWeight="600">Faste regler</text>
+          <text x={padding + 3 * gW / 4} y={padding + 24} textAnchor="middle" fontSize="8px" fill="#065f46" fontWeight="600">KI-formål klart</text>
+          <text x={padding + gW / 4} y={H - padding - 14} textAnchor="middle" fontSize="8px" fill="#b91c1c" fontWeight="600">Menneske vurderer</text>
+          <text x={padding + gW / 4} y={H - padding - 4} textAnchor="middle" fontSize="8px" fill="#b91c1c" fontWeight="600">KI-formål uklart</text>
+          <text x={padding + 3 * gW / 4} y={H - padding - 14} textAnchor="middle" fontSize="8px" fill="#b45309" fontWeight="600">Faste regler</text>
+          <text x={padding + 3 * gW / 4} y={H - padding - 4} textAnchor="middle" fontSize="8px" fill="#b45309" fontWeight="600">KI-formål uklart</text>
 
           {/* Solid Axis lines in the middle (score = 3.0) */}
           <line
@@ -178,7 +178,7 @@ export default function CompassView() {
       {/* Stoppregler utløst — SR-05 er prosessindikator og vises separat via AssessmentStatusBar */}
       {activeTask.expectedStopRules && activeTask.expectedStopRules.filter(sr => sr !== 'SR-05').length > 0 && (
         <div style={{ width: '100%', marginBottom: '20px', padding: '12px 16px', background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.2)', borderRadius: '8px' }}>
-          <span className="small" style={{ color: '#ef4444', display: 'block', fontWeight: 600, marginBottom: '8px' }}>Forhold som må avklares:</span>
+          <span className="small" style={{ color: '#b91c1c', display: 'block', fontWeight: 600, marginBottom: '8px' }}>Forhold som må avklares:</span>
           <ul style={{ margin: 0, paddingLeft: '16px', fontSize: '0.8rem', color: 'var(--text-primary)' }}>
             {activeTask.expectedStopRules.filter(sr => sr !== 'SR-05').map(sr => (
               <li key={sr} style={{ marginBottom: '4px' }}>

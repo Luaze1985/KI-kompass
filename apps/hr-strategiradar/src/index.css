@@ -11,7 +11,7 @@
 
   --text-primary: #0f172a; /* Solid dark text */
   --text-secondary: #334155;
-  --text-muted: #64748b;
+  --text-muted: #475569; /* WCAG AA: 4.5:1 mot lyse paneler */
   --text-sidebar: #334155;
   --text-sidebar-active: #0f172a;
 
@@ -25,9 +25,9 @@
   --zone-orange: #fff7ed;
   --zone-red: #fef2f2;
 
-  /* Solid Municipal Blue primary (Segoe UI/Fluent style) */
-  --accent: #0284c7;
-  --accent-hover: #0369a1;
+  /* Solid Municipal Blue primary (Segoe UI/Fluent style) — WCAG AA mot hvit */
+  --accent: #0369a1;
+  --accent-hover: #025a87;
 
   /* Sizing - Flat rectangular standard */
   --radius: 4px;

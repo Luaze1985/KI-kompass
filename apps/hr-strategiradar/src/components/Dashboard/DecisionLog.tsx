@@ -130,9 +130,9 @@ export default function DecisionLog() {
     red: 'Avklar forholdene i listen over før KI-output brukes. Ta en pause, diskuter i gruppen.',
   }
   const trafficLightColors = {
-    green: '#10b981',
-    yellow: '#f59e0b',
-    red: '#ef4444',
+    green: '#065f46',
+    yellow: '#b45309',
+    red: '#b91c1c',
   }
   const canMakerCheck = isSigned && makerName.trim().length > 0 && !isMakerChecked
 
@@ -221,7 +221,7 @@ export default function DecisionLog() {
         </label>
 
         {isSigned && (
-          <div style={{ marginTop: '16px', padding: '12px', background: 'rgba(16, 185, 129, 0.1)', color: '#10b981', borderRadius: '4px', fontWeight: 600, textAlign: 'center' }}>
+          <div style={{ marginTop: '16px', padding: '12px', background: 'rgba(16, 185, 129, 0.1)', color: '#065f46', borderRadius: '4px', fontWeight: 600, textAlign: 'center' }}>
             Notatet er signert
           </div>
         )}
@@ -260,7 +260,7 @@ export default function DecisionLog() {
           </label>
 
           {isMakerChecked && (
-            <div style={{ padding: '12px', background: 'rgba(16, 185, 129, 0.1)', color: '#10b981', borderRadius: '4px', fontWeight: 600, textAlign: 'center' }}>
+            <div style={{ padding: '12px', background: 'rgba(16, 185, 129, 0.1)', color: '#065f46', borderRadius: '4px', fontWeight: 600, textAlign: 'center' }}>
               Vurderingen er låst
             </div>
           )}

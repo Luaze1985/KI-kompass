@@ -303,7 +303,7 @@ function AssessmentStatusBar({ task }: { task: AiUseTask }) {
   }
 
   const lightConfig = {
-    green:  { emoji: '🟢', label: 'Grønt lys',  color: '#10b981', bg: 'rgba(16,185,129,0.08)',  border: 'rgba(16,185,129,0.25)'  },
+    green:  { emoji: '🟢', label: 'Grønt lys',  color: '#065f46', bg: 'rgba(16,185,129,0.08)',  border: 'rgba(16,185,129,0.25)'  },
     yellow: { emoji: '🟡', label: 'Gult lys',   color: '#b45309', bg: 'rgba(245,158,11,0.08)', border: 'rgba(245,158,11,0.25)'  },
     red:    { emoji: '🔴', label: 'Rødt lys',   color: '#b91c1c', bg: 'rgba(239,68,68,0.08)',  border: 'rgba(239,68,68,0.25)'   },
   }
@@ -327,14 +327,14 @@ function AssessmentStatusBar({ task }: { task: AiUseTask }) {
           <span>Risikonivå: {lc.label}</span>
         </div>
         {assessmentComplete ? (
-          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 12px', background: 'rgba(16,185,129,0.06)', border: '1px solid rgba(16,185,129,0.2)', borderRadius: '20px', fontSize: '0.8125rem', fontWeight: 600, color: '#10b981' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 12px', background: 'rgba(16,185,129,0.06)', border: '1px solid rgba(16,185,129,0.2)', borderRadius: '20px', fontSize: '0.8125rem', fontWeight: 600, color: '#065f46' }}>
             <span>✅</span>
             <span>Vurderingen er ferdig</span>
           </div>
         ) : (
           <button
             onClick={() => setShowMissing((v) => !v)}
-            style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 12px', background: 'rgba(148,163,184,0.1)', border: '1px solid rgba(148,163,184,0.3)', borderRadius: '20px', fontSize: '0.8125rem', fontWeight: 600, color: '#64748b', cursor: 'pointer' }}
+            style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 12px', background: 'rgba(148,163,184,0.1)', border: '1px solid rgba(148,163,184,0.3)', borderRadius: '20px', fontSize: '0.8125rem', fontWeight: 600, color: '#475569', cursor: 'pointer' }}
           >
             <span>⏳</span>
             <span>Notatet er ikke ferdig utfylt</span>
@@ -442,11 +442,11 @@ export default function Dashboard() {
                   fontSize: '0.875rem',
                   fontWeight: isActive ? 600 : 400,
                   borderRadius: '3px',
-                  border: isActive ? '1px solid var(--accent-hover)' : isCompleted ? '1px solid rgba(16, 185, 129, 0.3)' : '1px solid transparent',
-                  background: isActive ? 'var(--accent-hover)' : isCompleted ? 'rgba(16, 185, 129, 0.08)' : 'transparent',
-                  color: isActive ? '#fff' : isCompleted ? '#10b981' : isSelectable ? 'var(--text-primary)' : 'var(--text-muted)',
+                  border: isActive ? '1px solid #025a87' : isCompleted ? '1px solid #6ee7b7' : '1px solid var(--border-light)',
+                  background: isActive ? '#025a87' : isCompleted ? '#ecfdf5' : isSelectable ? '#ffffff' : '#f1f5f9',
+                  color: isActive ? '#fff' : isCompleted ? '#065f46' : isSelectable ? 'var(--text-primary)' : '#475569',
                   cursor: isSelectable ? 'pointer' : 'not-allowed',
-                  transition: 'all 0.1s ease',
+                  transition: 'border-color 0.1s ease',
                 }}
               >
                 {isCompleted ? '\u2713 ' : ''}{st.label}
@@ -586,11 +586,11 @@ export default function Dashboard() {
                         {/* Randsoner / HR-områder som berøres */}
                         {activeTask && (() => {
                           const badges: { label: string; color: string }[] = []
-                          if (activeTask.directEffectOnPeople) badges.push({ label: 'Ansattes rettigheter', color: '#ef4444' })
-                          if (activeTask.usesPersonalOrSensitiveData) badges.push({ label: 'Personvern', color: '#8b5cf6' })
-                          if (activeTask.expectedRiskFlags?.healthSafetyEnvironment) badges.push({ label: 'HMS', color: '#f59e0b' })
-                          if (activeTask.expectedRiskFlags?.workConditionsImpact) badges.push({ label: 'Arbeidsvilkår', color: '#0284c7' })
-                          if (activeTask.expectedRiskFlags?.irreversibleConsequences) badges.push({ label: 'Vanskelig å angre', color: '#dc2626' })
+                          if (activeTask.directEffectOnPeople) badges.push({ label: 'Ansattes rettigheter', color: '#b91c1c' })
+                          if (activeTask.usesPersonalOrSensitiveData) badges.push({ label: 'Personvern', color: '#6d28d9' })
+                          if (activeTask.expectedRiskFlags?.healthSafetyEnvironment) badges.push({ label: 'HMS', color: '#b45309' })
+                          if (activeTask.expectedRiskFlags?.workConditionsImpact) badges.push({ label: 'Arbeidsvilkår', color: '#0369a1' })
+                          if (activeTask.expectedRiskFlags?.irreversibleConsequences) badges.push({ label: 'Vanskelig å angre', color: '#b91c1c' })
                           return badges.length > 0 ? (
                             <div style={{ padding: '12px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px' }}>
                               <span className="small" style={{ color: 'var(--text-secondary)', display: 'block', fontWeight: 600 }}>Områder denne oppgaven berører:</span>
@@ -771,7 +771,7 @@ export default function Dashboard() {
                           const cmp = compareBlindTestRole(userBlindTestAnswer, activeTask.expectedAllowedRole)
                           if (cmp === 'agree') {
                             return (
-                              <p style={{ margin: 0, color: '#10b981' }}>
+                              <p style={{ margin: 0, color: '#065f46' }}>
                                 ✓ <strong>Enig!</strong> Dere og systemet kom frem til det samme.
                               </p>
                             )
@@ -851,7 +851,7 @@ export default function Dashboard() {
                           <span style={{
                             fontSize: '0.8125rem',
                             fontWeight: 700,
-                            color: allDiscussed ? '#10b981' : '#b45309',
+                            color: allDiscussed ? '#065f46' : '#b45309',
                             background: allDiscussed ? 'rgba(16,185,129,0.1)' : 'rgba(245,158,11,0.1)',
                             border: `1px solid ${allDiscussed ? 'rgba(16,185,129,0.25)' : 'rgba(245,158,11,0.25)'}`,
                             padding: '2px 10px',
@@ -903,7 +903,7 @@ export default function Dashboard() {
                           })}
                         </div>
                       ) : (
-                        <div style={{ background: 'rgba(16, 185, 129, 0.05)', border: '1px solid rgba(16, 185, 129, 0.2)', borderRadius: '4px', padding: '14px', color: '#10b981', fontSize: '0.875rem' }}>
+                        <div style={{ background: 'rgba(16, 185, 129, 0.05)', border: '1px solid rgba(16, 185, 129, 0.2)', borderRadius: '4px', padding: '14px', color: '#065f46', fontSize: '0.875rem' }}>
                           Ingen ekstra avklaringer trengs. Saken har lav risiko ut fra det vi vet.
                         </div>
                       )}
@@ -927,7 +927,7 @@ export default function Dashboard() {
                           if (stopRules.length === 0) return null
                           const allDiscussed = stopRules.every((sr) => stopRuleDiscussed[sr])
                           return (
-                            <span style={{ display: 'inline-block', marginTop: '6px', fontSize: '0.75rem', fontWeight: 700, color: allDiscussed ? '#10b981' : '#b45309' }}>
+                            <span style={{ display: 'inline-block', marginTop: '6px', fontSize: '0.75rem', fontWeight: 700, color: allDiscussed ? '#065f46' : '#b45309' }}>
                               {allDiscussed ? '✓ Avklart av gruppen' : 'Foreløpig — avklar forholdene over'}
                             </span>
                           )
