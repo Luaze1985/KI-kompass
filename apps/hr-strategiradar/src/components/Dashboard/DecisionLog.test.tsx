@@ -68,6 +68,40 @@ describe('DecisionLog Step 3 and maker-check', () => {
   })
 })
 
+describe('DecisionLog — lås er endelig (AC2)', () => {
+  afterEach(() => {
+    act(() => { useAppStore.getState().reset() })
+  })
+
+  it('viser lås-checkboxen som avhuket og deaktivert når vurderingen er låst', () => {
+    const data = getDiagnosisData('HRR-01')
+    if (!data) throw new Error('Missing fixture for HRR-01')
+    act(() => {
+      useAppStore.getState().reset()
+      useAppStore.setState({
+        selectedCaseId: data.project.caseId,
+        activeProject: data.project,
+        activeTask: { ...data.task, expectedStopRules: ['SR-08'], expectedTrafficLight: 'red' },
+        compassPosition: calculateCompassPosition(data.task),
+        isDecisionLogComplete: true,
+        decisionLogText: {
+          risikovurdering: 'Vurdert.',
+          menneskeligKontroll: 'Kontroll.',
+          endeligBeslutning: 'Beslutning.',
+          internkontrollTiltak: 'Tiltak.',
+        },
+        isSigned: true,
+        makerName: 'Kari Kontroll',
+        isMakerChecked: true,
+      })
+    })
+    render(<DecisionLog />)
+    const lock = screen.getByLabelText('Lås vurderingen') as HTMLInputElement
+    expect(lock.checked).toBe(true)
+    expect(lock).toBeDisabled()
+  })
+})
+
 describe('DecisionLog — låsing krever alle påkrevde felt (Syklus 1.3 regresjon)', () => {
   afterEach(() => {
     act(() => { useAppStore.getState().reset() })

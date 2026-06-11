@@ -97,6 +97,59 @@ describe('maker-check revision lock', () => {
     expect(after.isMakerChecked).toBe(true)
   })
 
+  it('opphever signaturen når innhold endres etter signering, men før lås (AC1)', () => {
+    setupActiveCase()
+    act(() => {
+      useAppStore.setState({
+        isDecisionLogComplete: true,
+        decisionLogText: {
+          risikovurdering: 'Risiko er vurdert.',
+          menneskeligKontroll: 'Kontroll er vurdert.',
+          endeligBeslutning: 'Beslutning er vurdert.',
+          internkontrollTiltak: 'Tiltak er vurdert.',
+        },
+      })
+      useAppStore.getState().signDocument(true)
+      useAppStore.getState().setMakerName('Kari Kontroll')
+    })
+    expect(useAppStore.getState().isSigned).toBe(true)
+
+    // Maker endrer innholdet ETTER signering (ikke låst ennå)
+    act(() => {
+      useAppStore.getState().updateDecisionLogField('risikovurdering', 'Endret etter signering.')
+    })
+
+    const after = useAppStore.getState()
+    expect(after.isSigned).toBe(false)
+    expect(after.makerName).toBe('')
+  })
+
+  it('opphever signaturen når en risikovurdering (felles vurdering) endres etter signering (AC1b)', () => {
+    setupActiveCase()
+    act(() => {
+      useAppStore.setState({
+        isDecisionLogComplete: true,
+        decisionLogText: {
+          risikovurdering: 'Risiko er vurdert.',
+          menneskeligKontroll: 'Kontroll er vurdert.',
+          endeligBeslutning: 'Beslutning er vurdert.',
+          internkontrollTiltak: 'Tiltak er vurdert.',
+        },
+      })
+      useAppStore.getState().signDocument(true)
+      useAppStore.getState().setMakerName('Kari Kontroll')
+    })
+    expect(useAppStore.getState().isSigned).toBe(true)
+
+    act(() => {
+      useAppStore.getState().setSimplifiedQuestionAnswer('rights', false)
+    })
+
+    const after = useAppStore.getState()
+    expect(after.isSigned).toBe(false)
+    expect(after.makerName).toBe('')
+  })
+
   it('manages userBlindTestAnswer state and respects maker-check lock', () => {
     setupActiveCase()
     const store = useAppStore.getState()

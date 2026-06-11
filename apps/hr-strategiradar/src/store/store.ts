@@ -77,6 +77,13 @@ function isDecisionLogReady(
   return Boolean(log.endeligBeslutning.trim() && log.internkontrollTiltak.trim())
 }
 
+// Maker-checker: en signatur attesterer det innholdet som forelå ved signering.
+// Endres innholdet etterpå (før lås), må signaturen oppheves og makker fjernes,
+// slik at notatet må signeres på nytt.
+function revokeSignatureIfSigned(s: { isSigned: boolean }): { isSigned: false; makerName: string } | Record<string, never> {
+  return s.isSigned ? { isSigned: false, makerName: '' } : {}
+}
+
 interface AppState {
   currentStep: number
   selectedCaseId: string | null
@@ -253,8 +260,10 @@ export const useAppStore = create<AppState>((set, get) => {
     }),
     setMakerName: (name) => set((s) => (s.isMakerChecked ? {} : { makerName: name })),
     setMakerChecked: (checked) => set((s) => {
+      // Lås er endelig: når den først er satt, kan den ikke oppheves (bruk reset()
+      // for å starte på nytt). Krever signering + makker for å kunne låses.
       if (s.isMakerChecked) return {}
-      if (!checked) return { isMakerChecked: false }
+      if (!checked) return {}
       if (!s.isSigned || !s.makerName.trim()) return {}
       return { isMakerChecked: true }
     }),
@@ -275,7 +284,7 @@ export const useAppStore = create<AppState>((set, get) => {
             },
           },
         }
-        return recalculate(updatedTask, s.valueJudgments, s.isDecisionLogComplete)
+        return { ...recalculate(updatedTask, s.valueJudgments, s.isDecisionLogComplete), ...revokeSignatureIfSigned(s) }
       }),
 
     toggleRiskFlag: (flagKey) =>
@@ -299,10 +308,11 @@ export const useAppStore = create<AppState>((set, get) => {
           ...s.valueJudgments,
           [key]: !s.valueJudgments[key],
         }
-        if (!s.activeTask) return { valueJudgments: updatedJudgments }
+        if (!s.activeTask) return { valueJudgments: updatedJudgments, ...revokeSignatureIfSigned(s) }
         return {
           valueJudgments: updatedJudgments,
           ...recalculate(s.activeTask, updatedJudgments, s.isDecisionLogComplete),
+          ...revokeSignatureIfSigned(s),
         }
       }),
 
@@ -327,6 +337,7 @@ export const useAppStore = create<AppState>((set, get) => {
           valueJudgments: judgmentsClone,
           isDecisionLogComplete: isComplete,
           ...recalculate(taskClone, judgmentsClone, isComplete),
+          ...revokeSignatureIfSigned(s),
         }
       }),
 
@@ -339,13 +350,17 @@ export const useAppStore = create<AppState>((set, get) => {
         }
         const isComplete = isDecisionLogReady(s.activeTask, s.valueJudgments, updatedLog)
 
-        if (!s.activeTask) return { decisionLogText: updatedLog, isDecisionLogComplete: isComplete }
+        // Maker-checker-integritet: innhold som endres etter signering må re-signeres.
+        const sigReset = revokeSignatureIfSigned(s)
+
+        if (!s.activeTask) return { decisionLogText: updatedLog, isDecisionLogComplete: isComplete, ...sigReset }
 
         // Recalculate because SR-05 depends on decision log completeness!
         return {
           decisionLogText: updatedLog,
           isDecisionLogComplete: isComplete,
           ...recalculate(s.activeTask, s.valueJudgments, isComplete),
+          ...sigReset,
         }
       }),
 
@@ -427,6 +442,7 @@ export const useAppStore = create<AppState>((set, get) => {
           compassPosition: calculateCompassPosition(calculated, s.calculationModel),
           decisionLogText: updatedLog,
           isDecisionLogComplete: isComplete,
+          ...revokeSignatureIfSigned(s),
         }
       }),
 
@@ -525,6 +541,7 @@ export const useAppStore = create<AppState>((set, get) => {
           isDecisionLogComplete: isComplete,
           activeTask: calculated,
           compassPosition: calculateCompassPosition(calculated, s.calculationModel),
+          ...revokeSignatureIfSigned(s),
         }
       }),
 

@@ -251,7 +251,7 @@ export default function DecisionLog() {
               type="checkbox"
               checked={isMakerChecked}
               onChange={(e) => setMakerChecked(e.target.checked)}
-              disabled={!canMakerCheck && !isMakerChecked}
+              disabled={!canMakerCheck}
               style={{ width: '18px', height: '18px' }}
             />
             <span style={{ fontSize: '0.875rem', color: canMakerCheck || isMakerChecked ? 'var(--text-primary)' : 'var(--text-muted)' }}>
