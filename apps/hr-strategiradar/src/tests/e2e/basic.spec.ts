@@ -17,6 +17,10 @@ test.describe('HR Strategiradar: Basic E2E Test', () => {
     // In Step 2: Answer the Blindtest first
     await page.getByRole('button', { name: 'KI som idégiver (Lav risiko)' }).click()
 
+    // Progresjonsvalidering: alle stoppregler må diskuteres før man kan gå videre
+    await expect(page.getByRole('button', { name: 'Gå til risikovurdering →' })).toBeDisabled()
+    for (const cb of await page.getByRole('checkbox').all()) await cb.check()
+
     // Step 2 -> Step 3
     await page.getByRole('button', { name: 'Gå til risikovurdering →' }).click()
 
@@ -25,6 +29,10 @@ test.describe('HR Strategiradar: Basic E2E Test', () => {
     await page.getByRole('button', { name: 'Brukes personlige eller sensitive opplysninger? Nei' }).click()
     await page.getByRole('button', { name: 'Må du kjenne lokale forhold? Nei' }).click()
     await page.getByRole('button', { name: 'Kan feil rettes opp? Ja' }).click()
+
+    // Progresjonsvalidering: minst ett scenario må fylles ut før man kan gå videre
+    await expect(page.getByRole('button', { name: 'Gå til beslutningsnotat →' })).toBeDisabled()
+    await page.getByLabel('Hva kan gå galt?').first().fill('KI gir misvisende prioritering av ansatte.')
 
     // Step 3 -> Step 4
     await page.getByRole('button', { name: 'Gå til beslutningsnotat →' }).click()

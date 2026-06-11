@@ -29,6 +29,7 @@ export default function CheckpointsAndReflections() {
                 <div style={{ display: 'flex', gap: '8px' }}>
                   <button
                     aria-label={`${q} Ja`}
+                    aria-pressed={checkpointAnswers[i] === 'yes'}
                     className={`btn ${checkpointAnswers[i] === 'yes' ? 'btn-primary' : 'btn-outline'}`}
                     onClick={() => setCheckpointAnswer(i, 'yes')}
                     disabled={isMakerChecked}
@@ -38,6 +39,7 @@ export default function CheckpointsAndReflections() {
                   </button>
                   <button
                     aria-label={`${q} Nei`}
+                    aria-pressed={checkpointAnswers[i] === 'no'}
                     className={`btn ${checkpointAnswers[i] === 'no' ? 'btn-primary' : 'btn-outline'}`}
                     onClick={() => setCheckpointAnswer(i, 'no')}
                     disabled={isMakerChecked}
@@ -47,6 +49,7 @@ export default function CheckpointsAndReflections() {
                   </button>
                   <button
                     aria-label={`${q} Uklart`}
+                    aria-pressed={checkpointAnswers[i] === 'info'}
                     className={`btn ${checkpointAnswers[i] === 'info' ? 'btn-primary' : 'btn-outline'}`}
                     onClick={() => setCheckpointAnswer(i, 'info')}
                     disabled={isMakerChecked}
@@ -103,9 +106,10 @@ function Toggle({ label, value, onChange, disabled = false }: { label: string, v
   return (
     <div style={{ background: 'rgba(255,255,255,0.03)', padding: '16px', borderRadius: '12px', border: '1px solid var(--border-light)', opacity: disabled ? 0.75 : 1 }}>
       <div style={{ fontSize: '0.875rem', fontWeight: 600, marginBottom: '16px', color: 'var(--text-primary)' }}>{label}</div>
-      <div style={{ display: 'flex', gap: '8px' }}>
+      <div role="group" aria-label={label} style={{ display: 'flex', gap: '8px' }}>
         <button
           aria-label={`${label} Ja`}
+          aria-pressed={value === true}
           className={`btn ${value === true ? 'btn-primary' : 'btn-outline'}`}
           onClick={() => onChange(true)}
           disabled={disabled}
@@ -115,6 +119,7 @@ function Toggle({ label, value, onChange, disabled = false }: { label: string, v
         </button>
         <button
           aria-label={`${label} Nei`}
+          aria-pressed={value === false}
           className={`btn ${value === false ? 'btn-primary' : 'btn-outline'}`}
           onClick={() => onChange(false)}
           disabled={disabled}
@@ -124,6 +129,7 @@ function Toggle({ label, value, onChange, disabled = false }: { label: string, v
         </button>
         <button
           aria-label={`${label} Uklart`}
+          aria-pressed={value === null}
           className={`btn ${value === null ? 'btn-primary' : 'btn-outline'}`}
           onClick={() => onChange(null)}
           disabled={disabled}

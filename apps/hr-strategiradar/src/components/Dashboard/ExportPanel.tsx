@@ -24,6 +24,7 @@ export default function ExportPanel() {
   const stopRuleDiscussed = useAppStore(s => s.stopRuleDiscussed)
   const lensFeedback = useAppStore(s => s.lensFeedback)
   const makerName = useAppStore(s => s.makerName)
+  const setStep = useAppStore(s => s.setStep)
   const scenarios = caseId ? (allScenarios[caseId] || []) : []
 
   if (!project || !task || !judgments) {
@@ -55,9 +56,17 @@ export default function ExportPanel() {
   return (
     <div style={{ padding: '16px', borderTop: '1px solid var(--border, #e0e0e0)' }}>
       {!hasAnyScenarioContent && (
-        <p style={{ fontSize: '0.85rem', color: '#b45309', background: 'rgba(245, 158, 11, 0.1)', padding: '8px 12px', borderRadius: '6px', border: '1px solid rgba(245, 158, 11, 0.2)', marginBottom: 12 }}>
-          Ingen risikoer er beskrevet ennå. Gå tilbake til steg 3 og fyll inn minst ett risikopunkt.
-        </p>
+        <div style={{ fontSize: '0.85rem', color: '#b45309', background: 'rgba(245, 158, 11, 0.1)', padding: '8px 12px', borderRadius: '6px', border: '1px solid rgba(245, 158, 11, 0.2)', marginBottom: 12 }}>
+          <p style={{ margin: '0 0 8px 0' }}>
+            Ingen risikoer er beskrevet ennå. Fyll inn minst ett risikopunkt i steg 3.
+          </p>
+          <button
+            onClick={() => setStep(3)}
+            style={{ background: 'none', border: '1px solid #b45309', color: '#b45309', borderRadius: '4px', padding: '4px 10px', fontSize: '0.8125rem', fontWeight: 600, cursor: 'pointer' }}
+          >
+            Gå tilbake til steg 3
+          </button>
+        </div>
       )}
       <p style={{ fontSize: '0.85rem', color: '#92400e', background: 'rgba(245, 158, 11, 0.08)', padding: '8px 12px', borderRadius: '6px', border: '1px solid rgba(245, 158, 11, 0.15)', marginBottom: 12 }}>
         Dette er et utkast fra workshopen. Må gjennomgås av ansvarlig før bruk.

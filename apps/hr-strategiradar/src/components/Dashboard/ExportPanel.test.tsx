@@ -1,4 +1,4 @@
-import { act, render, screen } from '@testing-library/react'
+import { act, fireEvent, render, screen } from '@testing-library/react'
 import { afterEach, describe, expect, it } from 'vitest'
 import { getDiagnosisData, calculateCompassPosition } from '../../services/mockDiagnosisService'
 import { useAppStore } from '../../store/store'
@@ -74,6 +74,18 @@ describe('ExportPanel — nedlasting av beslutningsnotat', () => {
     })
     render(<ExportPanel />)
     expect(screen.getAllByText(/ingen risikoer er beskrevet/i).length).toBeGreaterThanOrEqual(1)
+  })
+
+  it('viser "Gå tilbake til steg 3"-knapp i advarselen og navigerer til steg 3', () => {
+    setupStore()
+    act(() => {
+      useAppStore.setState({ scenarios: { 'HRR-01': [] }, currentStep: 4 })
+    })
+    render(<ExportPanel />)
+    const backBtn = screen.getByRole('button', { name: /tilbake til steg 3/i })
+    expect(backBtn).toBeTruthy()
+    fireEvent.click(backBtn)
+    expect(useAppStore.getState().currentStep).toBe(3)
   })
 
   it('skjuler advarsel når scenarioer har innhold', () => {

@@ -291,8 +291,16 @@ function RegulationsModule({ compact = false }: { compact?: boolean }) {
 function AssessmentStatusBar({ task }: { task: AiUseTask }) {
   const trafficLight = task.expectedTrafficLight ?? 'yellow'
   const assessmentComplete = task.assessmentComplete ?? false
-  const { decisionLogText } = useAppStore()
+  const { decisionLogText, setStep } = useAppStore()
   const [showMissing, setShowMissing] = useState(false)
+
+  const focusField = (label: string) => {
+    setStep(4)
+    const id = label.toLowerCase().replace(/\s+/g, '-')
+    const el = document.getElementById(id) as HTMLElement | null
+    el?.focus()
+    el?.scrollIntoView?.({ behavior: 'smooth', block: 'center' })
+  }
 
   const lightConfig = {
     green:  { emoji: '🟢', label: 'Grønt lys',  color: '#10b981', bg: 'rgba(16,185,129,0.08)',  border: 'rgba(16,185,129,0.25)'  },
@@ -337,9 +345,16 @@ function AssessmentStatusBar({ task }: { task: AiUseTask }) {
       {!assessmentComplete && showMissing && missingFields.length > 0 && (
         <div style={{ marginTop: '8px', padding: '10px 14px', background: '#f8fafc', border: '1px solid var(--border)', borderRadius: '8px', fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>
           <div style={{ fontWeight: 600, marginBottom: '6px', color: 'var(--text-primary)' }}>Mangler utfylling:</div>
-          <ul style={{ margin: 0, paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+          <ul style={{ margin: 0, paddingLeft: '0', listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '4px' }}>
             {missingFields.map((k) => (
-              <li key={k}>{fieldLabels[k]}</li>
+              <li key={k}>
+                <button
+                  onClick={() => focusField(fieldLabels[k])}
+                  style={{ background: 'none', border: 'none', padding: 0, color: 'var(--accent)', fontSize: '0.8125rem', textAlign: 'left', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                  {fieldLabels[k]}
+                </button>
+              </li>
             ))}
           </ul>
         </div>
@@ -931,15 +946,27 @@ export default function Dashboard() {
                     </div>
 
                     {/* Next Step Button */}
-                    <div style={{ marginTop: '24px', textAlign: 'right' }}>
-                      <button
-                        className="btn btn-primary"
-                        onClick={() => setStep(3)}
-                        style={{ padding: '10px 24px', fontWeight: 700 }}
-                      >
-                        Gå til risikovurdering →
-                      </button>
-                    </div>
+                    {(() => {
+                      const stopRules = activeTask.expectedStopRules || []
+                      const allDiscussed = stopRules.length === 0 || stopRules.every((sr) => stopRuleDiscussed[sr])
+                      return (
+                        <div style={{ marginTop: '24px', textAlign: 'right' }}>
+                          {!allDiscussed && (
+                            <p className="small" style={{ margin: '0 0 8px 0', color: '#b45309' }}>
+                              Diskuter alle forhold over før du går videre.
+                            </p>
+                          )}
+                          <button
+                            className="btn btn-primary"
+                            onClick={() => setStep(3)}
+                            disabled={!allDiscussed}
+                            style={{ padding: '10px 24px', fontWeight: 700, cursor: allDiscussed ? 'pointer' : 'not-allowed', opacity: allDiscussed ? 1 : 0.6 }}
+                          >
+                            Gå til risikovurdering →
+                          </button>
+                        </div>
+                      )
+                    })()}
                   </div>
                 )}
               </div>
@@ -1076,15 +1103,27 @@ export default function Dashboard() {
                 <LensPanel />
 
                 {/* Next Step Button */}
-                <div style={{ marginTop: '24px', textAlign: 'right' }}>
-                  <button
-                    className="btn btn-primary"
-                    onClick={() => setStep(4)}
-                    style={{ padding: '10px 24px', fontWeight: 700 }}
-                  >
-                    Gå til beslutningsnotat →
-                  </button>
-                </div>
+                {(() => {
+                  const caseScenarios = (selectedCaseId && scenarios[selectedCaseId]) || []
+                  const hasAnyScenarioContent = caseScenarios.some((s) => s.simulertHendelse.trim().length > 0)
+                  return (
+                    <div style={{ marginTop: '24px', textAlign: 'right' }}>
+                      {!hasAnyScenarioContent && (
+                        <p className="small" style={{ margin: '0 0 8px 0', color: '#b45309' }}>
+                          Beskriv minst ett risikoscenario før du går videre.
+                        </p>
+                      )}
+                      <button
+                        className="btn btn-primary"
+                        onClick={() => setStep(4)}
+                        disabled={!hasAnyScenarioContent}
+                        style={{ padding: '10px 24px', fontWeight: 700, cursor: hasAnyScenarioContent ? 'pointer' : 'not-allowed', opacity: hasAnyScenarioContent ? 1 : 0.6 }}
+                      >
+                        Gå til beslutningsnotat →
+                      </button>
+                    </div>
+                  )
+                })()}
               </div>
 
               {/* Right Column: Compass */}

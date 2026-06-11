@@ -67,3 +67,52 @@ describe('DecisionLog Step 3 and maker-check', () => {
     expect(screen.getByLabelText('Kollega som har lest notatet')).toBeDisabled()
   })
 })
+
+describe('DecisionLog — låsing krever alle påkrevde felt (Syklus 1.3 regresjon)', () => {
+  afterEach(() => {
+    act(() => { useAppStore.getState().reset() })
+  })
+
+  function setupHighRisk() {
+    const data = getDiagnosisData('HRR-01')
+    if (!data) throw new Error('Missing fixture for HRR-01')
+    act(() => {
+      useAppStore.getState().reset()
+      useAppStore.setState({
+        selectedCaseId: data.project.caseId,
+        activeProject: data.project,
+        activeTask: { ...data.task, expectedStopRules: ['SR-08'], expectedTrafficLight: 'red' },
+        compassPosition: calculateCompassPosition(data.task),
+        valueJudgments: {
+          relationalTrustImportant: true,
+          humanPresencePartOfValue: false,
+          localExceptionsMatter: true,
+          valueConflictPresent: false,
+          errorReversible: false,
+          rightsOrWorkImpact: true,
+          sensitiveOrPersonalDataRisk: false,
+        },
+        decisionLogText: {
+          risikovurdering: 'Vurdert.',
+          menneskeligKontroll: 'Kontroll.',
+          endeligBeslutning: 'Beslutning.',
+          internkontrollTiltak: 'Tiltak.',
+        },
+        isDecisionLogComplete: true,
+      })
+    })
+  }
+
+  it('deaktiverer signering når et påkrevd felt er tomt, og aktiverer når alle er fylt', () => {
+    setupHighRisk()
+    render(<DecisionLog />)
+
+    // Tøm ett påkrevd felt via store-action (rekalkulerer isDecisionLogReady)
+    act(() => { useAppStore.getState().updateDecisionLogField('risikovurdering', '') })
+    expect(screen.getByLabelText('Signer at notatet er gjennomgått')).toBeDisabled()
+
+    // Fyll det igjen → signering blir mulig
+    act(() => { useAppStore.getState().updateDecisionLogField('risikovurdering', 'Vurdert igjen.') })
+    expect(screen.getByLabelText('Signer at notatet er gjennomgått')).not.toBeDisabled()
+  })
+})

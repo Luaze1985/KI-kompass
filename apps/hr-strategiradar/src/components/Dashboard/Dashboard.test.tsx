@@ -1,4 +1,4 @@
-import { act, render, screen } from '@testing-library/react'
+import { act, fireEvent, render, screen } from '@testing-library/react'
 import { describe, it, expect, afterEach } from 'vitest'
 import { useAppStore } from '../../store/store'
 import { getDiagnosisData, calculateCompassPosition, runCalculationEngine, INITIAL_VALUE_JUDGMENTS } from '../../services/mockDiagnosisService'
@@ -99,6 +99,132 @@ describe('Dashboard — AssessmentStatusBar (C1–C4)', () => {
     render(<Dashboard />)
     expect(screen.getByText(/Risikonivå:/i)).toBeTruthy()
     expect(screen.getByText(/Notatet er ikke ferdig utfylt/i)).toBeTruthy()
+  })
+})
+
+describe('Dashboard — progresjonsvalidering steg 2 (Syklus 1.1)', () => {
+  function setupStep2Gating(allDiscussed: boolean) {
+    const data = getDiagnosisData('HRR-01')
+    if (!data) throw new Error('Missing fixture')
+    const task = runCalculationEngine(data.task, INITIAL_VALUE_JUDGMENTS, false, 'linear', false)
+    const discussed: Record<string, boolean> = {}
+    if (allDiscussed) {
+      for (const sr of task.expectedStopRules) discussed[sr] = true
+    }
+    act(() => {
+      useAppStore.getState().reset()
+      useAppStore.setState({
+        selectedCaseId: data.project.caseId,
+        activeProject: data.project,
+        activeTask: task,
+        compassPosition: calculateCompassPosition(task),
+        isAssumptionsConfirmed: true,
+        currentStep: 2,
+        userBlindTestAnswer: 'utforskende_støtte',
+        stopRuleDiscussed: discussed,
+      })
+    })
+    return task
+  }
+
+  it('deaktiverer "Gå til risikovurdering" når ikke alle stoppregler er diskutert', () => {
+    const task = setupStep2Gating(false)
+    expect(task.expectedStopRules.length).toBeGreaterThan(0)
+    render(<Dashboard />)
+    expect(screen.getByRole('button', { name: /Gå til risikovurdering/ })).toBeDisabled()
+  })
+
+  it('aktiverer "Gå til risikovurdering" når alle stoppregler er diskutert', () => {
+    setupStep2Gating(true)
+    render(<Dashboard />)
+    expect(screen.getByRole('button', { name: /Gå til risikovurdering/ })).not.toBeDisabled()
+  })
+})
+
+describe('Dashboard — progresjonsvalidering steg 3 (Syklus 1.2)', () => {
+  function setupStep3(withScenarioContent: boolean) {
+    const data = getDiagnosisData('HRR-01')
+    if (!data) throw new Error('Missing fixture')
+    act(() => {
+      useAppStore.getState().reset()
+      useAppStore.setState({
+        selectedCaseId: data.project.caseId,
+        activeProject: data.project,
+        activeTask: data.task,
+        compassPosition: calculateCompassPosition(data.task),
+        isAssumptionsConfirmed: true,
+        currentStep: 3,
+        userBlindTestAnswer: 'utforskende_støtte',
+        scenarios: {
+          'HRR-01': withScenarioContent
+            ? [{
+                temaKey: 'test',
+                temaTittel: 'Test',
+                simulertHendelse: 'Noe kan gå galt',
+                utløsendeAntakelse: '',
+                berørteParter: '',
+                tidligeSignaler: '',
+                konsekvensHvisIkkeHåndtert: '',
+                lokalVerifikasjon: '',
+                ansvarligEier: '',
+                bekymringsniva: 'middels' as const,
+                utfallstype: 'operasjonell' as const,
+                tidshorisont: '1-3 mnd',
+              }]
+            : [],
+        },
+      })
+    })
+  }
+
+  it('deaktiverer "Gå til beslutningsnotat" når ingen scenarier har innhold', () => {
+    setupStep3(false)
+    render(<Dashboard />)
+    expect(screen.getByRole('button', { name: /Gå til beslutningsnotat/ })).toBeDisabled()
+  })
+
+  it('aktiverer "Gå til beslutningsnotat" når minst ett scenario har innhold', () => {
+    setupStep3(true)
+    render(<Dashboard />)
+    expect(screen.getByRole('button', { name: /Gå til beslutningsnotat/ })).not.toBeDisabled()
+  })
+})
+
+describe('Dashboard — klikkbare manglende-felt (Syklus 3.1)', () => {
+  it('setter fokus på riktig felt når man klikker et manglende-felt', () => {
+    const data = getDiagnosisData('HRR-01')
+    if (!data) throw new Error('Missing fixture')
+    const task = runCalculationEngine(data.task, INITIAL_VALUE_JUDGMENTS, false, 'linear', false)
+    act(() => {
+      useAppStore.getState().reset()
+      useAppStore.setState({
+        selectedCaseId: data.project.caseId,
+        activeProject: data.project,
+        activeTask: task,
+        compassPosition: calculateCompassPosition(task),
+        isAssumptionsConfirmed: true,
+        currentStep: 4,
+        userBlindTestAnswer: 'utforskende_støtte',
+        isDecisionLogComplete: false,
+        decisionLogText: {
+          risikovurdering: '',
+          menneskeligKontroll: 'Fylt.',
+          endeligBeslutning: 'Fylt.',
+          internkontrollTiltak: 'Fylt.',
+        },
+      })
+    })
+    render(<Dashboard />)
+
+    // Åpne "mangler"-lista via chipen
+    fireEvent.click(screen.getByRole('button', { name: /Notatet er ikke ferdig utfylt/ }))
+
+    // Klikk manglende-feltet → fokus skal flyttes til tekstfeltet
+    fireEvent.click(screen.getByRole('button', { name: 'Risikovurdering' }))
+
+    const textarea = document.getElementById('risikovurdering')
+    expect(textarea).not.toBeNull()
+    expect(document.activeElement).toBe(textarea)
   })
 })
 
